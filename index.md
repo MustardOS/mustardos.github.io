@@ -1,35 +1,38 @@
 ---
-title: Home
+title: Welcome
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Welcome
+So you've decided to try out the muOS custom firmware for the various Anbernic handhelds. This all started out as a personal hobby project of mine and it has now grown into an awesome community which I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort. We hope that all the development we put into this CFW make it as enjoyable as we've had creating it.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+## Features
+One of the main features of muOS is how easy it is to get it set up and running.  Just like other CFWs all you have to do is use your favourite image flash program to put it on your SD Card (_don't use the stock SD card!_). Put the SD Card into your handheld, turn it on, and it will take care of the rest.
 
-More specifically, the created site:
+## Handy Hotkeys
+| Type                    | Control                  |
+|:------------------------|:-------------------------|
+| Brightness              | MENU + Volume            |
+| Screenshot              | L2 + R2                  |
+| Sleep Suspend           | Hold POWER for 2 seconds |
+| (Re)Select Core         | Press SELECT on content  |
+| Content Root            | Press START on content   |
+| RetroArch Menu          | MENU + X                 |
+| RetroArch Close Content | Start + Select           |
+| Fast Forward Toggle     | MENU + R1                |
+| Load State              | MENU + R2                |
+| Save State              | MENU + L2                |
+| Slow Motion             | MENU + L1                |
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## Download
+[Click here to download the latest releases]
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+## Support muOS
+If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Community
+muOS is open to all kinds of suggestions, fixes, and bug reports. Come on over and have a chat with the crew!
+[Join the Discord server]
 
-To get started with creating a site, simply:
-
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
-
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[Click here to download the latest releases]: https://dl.muos.dev/RG35XX-PLUSH24/
+[Join the Discord server]: https://discord.gg/USS5ybVtDz
