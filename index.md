@@ -1,12 +1,26 @@
 ---
+layout: default
 title: Welcome
-layout: home
+nav_order: 1
+has_children: false
 ---
 
-# Welcome
-So you've decided to try out the muOS custom firmware for the various Anbernic handhelds. This all started out as a personal hobby project of mine and it has now grown into an awesome community which I am super thankful to have.
+# Welcome to muOS
+muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, themeable, friendly, easy-to-use.
+{: .fs-6 .fw-300 }
 
-It is built with simplicity in mind to play your favourite games with little effort. We hope that all the development we put into this CFW make it as enjoyable as we've had creating it.
+[Download here](https://dl.muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Join our Discord server](https://discord.gg/USS5ybVtDz){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+***
+
+{: .note }
+> Always ensure you download from our official website or supported mirrors.
+>
+> Double check the SHA256 with the checksum on this
+
+## About
+This all started out as a personal hobby project of mine and it has now grown into an awesome community which I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort. We hope that all the development we put into this CFW make it as enjoyable as we've had creating it.
 
 ## Features
 One of the main features of muOS is how easy it is to get it set up and running. Just like other CFWs all you have to do is use your favourite image flash program to install it on your SD Card. Put the SD Card into your handheld, turn it on, and it will take care of the rest.
@@ -27,16 +41,26 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Save State              | MENU + L2                |
 | Slow Motion             | MENU + L1                |
 
-## Download
-[Click here to download the latest releases]
+## Screenshots
+_tbd_
 
-## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!
+## Supported Devices
 
-## Community
-muOS is open to all kinds of suggestions, fixes, and bug reports.
-Come on over and have a chat with the crew!
-[Join the Discord server]
+| Anbernic    |
+|:------------|
+| RG35XX OG   |
+| RG35XX PLUS |
+| RG35XX 2024 |
+| RG35XX H    |
+| RG35XX SP   |
+| RG28XX      |
 
-[Click here to download the latest releases]: https://dl.muos.dev/RG35XX-PLUSH24/
-[Join the Discord server]: https://discord.gg/USS5ybVtDz
+| Coming Soon      |
+|:-----------------|
+| Trimui Smart Pro |
+| Anbernic ARC-D   |
+
+<div itemscope itemtype="https://schema.org/WebSite">
+  <meta itemprop="url" content="https://muos.dev"/>
+  <meta itemprop="name" content="muOS - Custom Firmware"/>
+</div>
