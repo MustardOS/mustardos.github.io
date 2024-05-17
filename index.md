@@ -9,7 +9,7 @@ So you've decided to try out the muOS custom firmware for the various Anbernic h
 It is built with simplicity in mind to play your favourite games with little effort. We hope that all the development we put into this CFW make it as enjoyable as we've had creating it.
 
 ## Features
-One of the main features of muOS is how easy it is to get it set up and running.  Just like other CFWs all you have to do is use your favourite image flash program to put it on your SD Card (_don't use the stock SD card!_). Put the SD Card into your handheld, turn it on, and it will take care of the rest.
+One of the main features of muOS is how easy it is to get it set up and running. Just like other CFWs all you have to do is use your favourite image flash program to install it on your SD Card. Put the SD Card into your handheld, turn it on, and it will take care of the rest.
 
 ## Handy Hotkeys
 
