@@ -1,8 +1,10 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: muOS
+description: Custom Firmware (CFW) primarily for handheld devices. Configurable, themeable, friendly, easy-to-use.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://muos.dev
+
+color_scheme: muos
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
