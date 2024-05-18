@@ -5,10 +5,10 @@ nav_order: 1
 ---
 
 
-====== Contributors and Supporters
+## Contributors and Supporters
 Here are the list of super amazing people that have contributed to or supported muOS during the development of **muOS 2405**.
 
-//In alphabetical order//
+_In alphabetical order_
   * acmeplus
   * antikk
   * applechipper
