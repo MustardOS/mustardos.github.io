@@ -1,8 +1,7 @@
 ---
-layout: default
 title: 2405 Beans
+layout: default
 nav_exclude: true
-opens_in_new_tab: true
 ---
 
 # muOS 2405 Beans
