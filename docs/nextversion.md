@@ -3,7 +3,6 @@ title: 2407 ?
 layout: default
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
-nav_exclude: true
 nav_order: 2
 ---
 
