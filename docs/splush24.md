@@ -10,7 +10,7 @@ has_toc: false
 [Download 2405 Beans](beans.md)
 
 ## Progress
-[2407 ?]()
+[2407 ?](nextversion.md)
 
 ## Archived Releases
 [2403 Origin]()
