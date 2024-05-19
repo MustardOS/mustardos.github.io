@@ -7,7 +7,7 @@ has_toc: false
 ---
 
 # Current Release
-[Download 2405 Beans](2405beans.md)
+[Download 2405 Beans](beans.md)
 
 ## Progress
 [2407 ?]()
