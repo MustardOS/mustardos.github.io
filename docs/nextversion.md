@@ -1,8 +1,10 @@
 ---
-layout: default
 title: 2407 ?
+layout: default
+parent: RG35XX 2024, Plus, H, SP
+grand_parent: Release
 nav_exclude: true
-opens_in_new_tab: true
+nav_order: 2
 ---
 
 # muOS 2407 ???
