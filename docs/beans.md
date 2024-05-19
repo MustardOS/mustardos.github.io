@@ -13,11 +13,11 @@ opens_in_new_tab: true
 ## Alternative
 [Torrent File](https://dl.muos.dev/RG35XX-PLUSH24/muOS-RG35XX-2405-BEANS_t1.torrent)
 
-# Support muOS
+## Support muOS
 If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!
 [Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
 
-# Significant Changes
+## Significant Changes
   * ``AARCH64`` is now default architecture (Major thanks to both @siliconexarch and @acmeplus)
     * This is a major change to the underlying system and _should_ bring some performance benefits!
     * Would not have been possible if not for @siliconexarch finding a 64-bit compatible system!
@@ -75,7 +75,7 @@ If you like using muOS and would like to see it grow, and potentially support mo
   * Wallpapers now supported for individual list items (_where supported_)
     * Animated GIF support is included
     * More information can be found here: [Generic Program Wallpapers **LINK TBC**](../index.md)
-# General Changes
+## General Changes
   * Added "A+B Button Swap" to Advanced Settings
   * Added "Colour Temperature" in General Settings
     * This replaced "Night Mode"
