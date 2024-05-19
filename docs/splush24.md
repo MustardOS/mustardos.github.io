@@ -1,5 +1,5 @@
 ---
-title: RG35XX 2024, Plus, H, and SP
+title: RG35XX 2024, Plus, H, SP
 layout: default
 parent: Release
 nav_order: 1
