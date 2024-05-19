@@ -1,7 +1,8 @@
 ---
 title: Contributors
 layout: default
-nav_order: 2
+parent: Welcome
+nav_order: 1
 ---
 
 
