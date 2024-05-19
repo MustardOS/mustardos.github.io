@@ -3,6 +3,7 @@ title: 2405 Beans
 layout: default
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
+nav_order: 1
 ---
 
 # muOS 2405 Beans
@@ -15,6 +16,7 @@ grand_parent: Release
 
 ## Support muOS
 If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!
+
 [Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
 
 ## Significant Changes
@@ -75,6 +77,7 @@ If you like using muOS and would like to see it grow, and potentially support mo
   * Wallpapers now supported for individual list items (_where supported_)
     * Animated GIF support is included
     * More information can be found here: [Generic Program Wallpapers **LINK TBC**](../index.md)
+
 ## General Changes
   * Added "A+B Button Swap" to Advanced Settings
   * Added "Colour Temperature" in General Settings
