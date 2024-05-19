@@ -11,7 +11,7 @@ Thank you for your interest in potentially donating or subscribing to muOS. Ever
 [Support muOS through Ko-fi](https://ko-fi.com/xonglebongle/)
 
 # Artificer
-![](docs/docs/assets/images/donate-artificer.jpg)
+![](/assets/images/donate-artificer.jpg)
 ### $6 per month
 Gain access to the muOS testing crew to preview new features and fixes before everybody else!
   * Weekly testing updates
