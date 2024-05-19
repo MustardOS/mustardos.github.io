@@ -55,29 +55,24 @@ In this example the `Final Fantasy VII.m3u` would contain the following.
 ## Incorrect M3U Files
 Please note that some created ROM sets like TinyBestSet come with incorrect M3U formatting and will need to be modified for it to work with muOS!
 ## What about BIOS files?
-muOS conforms to libretro standards for BIOS files.
-
+muOS conforms to libretro standards for BIOS files.  
 For information around which particular BIOS you need, please consult their documentation:
 
 [https://docs.libretro.com/library/bios/](https://docs.libretro.com/library/bios/)
 
 NOTE: muOS does not supply any BIOS files!{: .label .label-yellow }
 
-muOS requires that its BIOS files be located in:
-```
-SD1/MUOS/bios
-```
+muOS requires that its BIOS files be located in ``/mnt/mmc/MUOS/bios``  
 Most files can be placed in the root of that folder unless otherwise specified by the libretro docs.
 
 ## How does muOS know what my content is?
 This is one of the key features of muOS.
 
-When you first browse through to a folder, simply try launching some content.
-
+When you first browse through to a folder, simply try launching some content.  
 If muOS doesn't know what it is, it will prompt you to select which system it's for.
 
 ### Example
-If I attempt to launch content from my SNES folder it will prompt which system.\\ 
+If I attempt to launch content from my SNES folder it will prompt which system.  
 Here I'm selecting the system ``Nintendo SNES-SFC``
 
 You can then select which core you would like to use. In this case I'd select ``Beetle Supafaust``.
@@ -85,6 +80,5 @@ You can then select which core you would like to use. In this case I'd select ``
 Once done, muOS knows that folder contains ``Nintendo SNES`` content and will no longer prompt.
 
 ## I chose poorly
-What happens if you inadvertently choose a core you don't want or like?
-
+What happens if you inadvertently choose a core you don't want or like?  
 No problem. Simply hit `SELECT` on a game and it'll prompt you to choose again!
