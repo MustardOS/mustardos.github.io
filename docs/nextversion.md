@@ -9,7 +9,8 @@ nav_order: 2
 # muOS 2407 ???
 
 ## Download
-[Not Yet available!](nextversion.md) 
+[Not Yet available!](nextversion.md)
+
 ``Come back later!``
 
 ## Support muOS
@@ -21,6 +22,7 @@ If you like using muOS and would like to see it grow, and potentially support mo
   * Brand new SDL2 modules with built-in Bilinear/Quilez filtering (thanks @johhnyonflame)
     * Can be changed globally in muOS Advanced Settings
     * This change corrects RG28XX graphical issues
+
 ## General Changes
   * Added DraStic (Steward Edition) (thanks @trngaje)
   * Added GBA bios info (thanks @antiKk)
