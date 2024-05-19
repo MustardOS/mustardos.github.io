@@ -23,7 +23,7 @@ If you like using muOS and would like to see it grow, and potentially support mo
     * Would not have been possible if not for @siliconexarch finding a 64-bit compatible system!
   * Archive Manager introduction
     * Place your specially crafted ``.zip`` files in a folder called ARCHIVE on your SD cards to install them
-    * [Guide to create archives **LINK TBC**()
+    * [Guide to create archives **LINK TBC**](../index.md)
   * Automatic assigned cores to content folders
     * Pre-defined folder names are automatically assigned cores so you can start playing straight away!
   * Backup Manager introduction
@@ -74,7 +74,7 @@ If you like using muOS and would like to see it grow, and potentially support mo
     * New option in Advanced Settings to boot with low volume
   * Wallpapers now supported for individual list items (_where supported_)
     * Animated GIF support is included
-    * More information can be found here: [Generic Program Wallpapers **LINK TBC**]()
+    * More information can be found here: [Generic Program Wallpapers **LINK TBC**](../index.md)
 # General Changes
   * Added "A+B Button Swap" to Advanced Settings
   * Added "Colour Temperature" in General Settings
