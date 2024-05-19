@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VS Code Extension
+title: Installation
 permalink: /help/install
 nav_order: 1
 parent: Help
@@ -36,7 +36,8 @@ There are several recommended programs you can use to flash your SD card
 If you're not afraid of using command line tools you can use dd to get the job done.
 You will need to find out what device path your SD card is located.
 Make sure to replace `sd_device` with your SD card device location and `muos_image` with the image name.
-`sudo dd if=muos_image of=sd_device bs=4M status=progress && sync`
+
+``sudo dd if=muos_image of=sd_device bs=4M status=progress && sync``
 
 # Finishing Up
 Once flashing to an SD card is successful you can put it in your device and switch it on
