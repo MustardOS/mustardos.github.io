@@ -60,7 +60,8 @@ For information around which particular BIOS you need, please consult their docu
 
 [https://docs.libretro.com/library/bios/](https://docs.libretro.com/library/bios/)
 
-NOTE: muOS does not supply any BIOS files!{: .label .label-yellow }
+NOTE: muOS does not supply any BIOS files!
+{: .label .label-yellow }
 
 muOS requires that its BIOS files be located in ``/mnt/mmc/MUOS/bios``  
 Most files can be placed in the root of that folder unless otherwise specified by the libretro docs.
