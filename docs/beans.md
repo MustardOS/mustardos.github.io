@@ -2,7 +2,7 @@
 title: 2405 Beans
 layout: default
 parent: RG35XX 2024, Plus, H, SP
-grandparent: Release
+grand_parent: Release
 ---
 
 # muOS 2405 Beans
