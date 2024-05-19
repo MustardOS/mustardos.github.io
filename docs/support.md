@@ -1,7 +1,8 @@
 ---
 title: Supporting muOS
 layout: default
-nav_order: 3
+parent: Welcome
+nav_order: 2
 has_toc: true
 ---
 
