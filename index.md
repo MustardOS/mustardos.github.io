@@ -3,7 +3,7 @@ layout: default
 title: Welcome
 nav_enabled: true
 nav_order: 1
-has_children: false
+has_children: true
 ---
 
 # Welcome to muOS
