@@ -1,7 +1,6 @@
 ---
 title: 2405 Beans
 layout: default
-nav_exclude: true
 ---
 
 # muOS 2405 Beans
