@@ -8,7 +8,8 @@ has_children: false
 ---
 
 # Archive Manager
-**muOS Beans** introduces a new archive manager for easily restoring backup up content.  
+**muOS Beans** introduces a new archive manager for easily restoring backup up content.
+
 NOTE: Only install archives that you trust!
 {: .label .label-yellow }
 
