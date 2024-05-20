@@ -1,6 +1,7 @@
 ---
-title: 2407 ?
 layout: default
+title: 2407 ?
+permalink: /release/splush24/2407
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
 nav_order: 2
