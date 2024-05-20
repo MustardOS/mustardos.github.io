@@ -1,6 +1,7 @@
 ---
-title: Origin
 layout: default
+title: Origin
+permalink: /release/splush24/origin
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
 nav_order: 3

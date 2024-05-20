@@ -1,6 +1,7 @@
 ---
-title: 2405 Beans
 layout: default
+title: 2405 Beans
+permalink: /release/splush24/beans
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
 nav_order: 1
