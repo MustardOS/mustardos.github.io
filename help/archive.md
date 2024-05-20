@@ -8,13 +8,14 @@ has_children: false
 ---
 
 # Archive Manager
-**muOS Bean** introduces a new archive manager for easily restoring backup up content.  
+**muOS Beans** introduces a new archive manager for easily restoring backup up content.  
 NOTE: Only install archives that you trust!
 {: .label .label-yellow }
 
 **We accept no responsibility for either the content of your archives or any loss of data or functionality as a result of using this feature.**  
 
-The Archive Manager is located at `Configuration > Archive Manager`
+The Archive Manager is located at `Applications > Archive Manager`
+![](assets/images/archive.png)
 
 ## How does it work?
 If it doesn't exist, you can create a folder named `ARCHIVE` in the root of `SD1, SD2, USB`   
