@@ -3,7 +3,7 @@ title: 2405 Beans
 layout: default
 parent: RG35XX 2024, Plus, H, SP
 grand_parent: Release
-permalink: /docs/
+permalink: /docs/splush24/
 nav_order: 1
 ---
 
