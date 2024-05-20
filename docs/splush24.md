@@ -8,10 +8,10 @@ has_toc: false
 ---
 
 # Current Release
-[Download 2405 Beans](beans.md)
+[Download 2405 Beans](beans)
 
 ## Progress
-[2407 ?](nextversion.md)
+[2407 ?](nextversion)
 
 ## Archived Releases
-[2403 Origin](origin.md)
+[2403 Origin](origin)
