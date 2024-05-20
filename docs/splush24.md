@@ -9,10 +9,10 @@ has_toc: false
 ---
 
 # Current Version
-[Download muOS 2045 Beans](/release/splush24/beans){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download muOS 2045 Beans](/docs/release/splush24/beans){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## In Progress
-[muOS 2407 ???](/release/splush24/2407)
+[muOS 2407 ???](/docs/release/splush24/2407)
 
 ## Archived Versions
-[muOS Origin](/release/splush24/origin)
+[muOS Origin](/docs/release/splush24/origin)
