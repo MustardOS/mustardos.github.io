@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Issue with SD2
-permalink: /help/sd2issues
+title: Artwork
+permalink: /help/artwork
 nav_order: 6
 parent: Help
 has_children: false
