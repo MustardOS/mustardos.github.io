@@ -9,7 +9,7 @@ has_children: false
 
 # Themes
 
-You can find all themes for muOS here. Click on a Theme title to download a zip, and place that file on your device within `/MUOS/theme`.
+You can find all themes for muOS here. Click on a theme title to download a zip, place that file on your device within `/ARCHIVE`, and use the on-device Archive Manager to install it. Alternatively, you can download all muOS themes as a single installable archive [here](https://github.com/MustardOS/theme/releases/download/2024-05-31_1018/@_Complete_Theme_Archive.zip).
 
 |   |   |   |
 | :-----------------------------------------------------------: | :-----------------------------------------------------------: | :-----------------------------------------------------------: |
