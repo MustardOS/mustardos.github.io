@@ -96,7 +96,8 @@ muxnetwork - Wi-Fi Network page
 - enable / identifier / password / type / address / subnet / gateway / dns
   / status / connect
 muxnetscan - Shows when scanning for networks
-muxwebserv - Web Services page
+CURRENTLY DISABLED >>> muxwebserv - Web Services page
+                       - shell / browser / terminal / sync / ntp
 muxrtc - Date and Time page
 - year / month / day / hour / minute / notation / timezone
 muxdevice - Device type page (will differ for muOS on RG28XX)
