@@ -64,30 +64,22 @@ Check out the updated naming conventions of all muxprograms below;
 |:--:|:--|:--|
 |muxcharge|Charging Screen|-|
 |muxlaunch|Main Menu|explore / favourite / history / apps / info / config / reboot / shutdown|
-||||
 |muxplore|Content Explore Page|*Use `/MUOS/catalogue` outside of themes to create list item wallpapers.*|
 |muxassign|Shows when assigning a core to a folder.|-|
-||||
 |muxfavourite|Favourites page|-|
 |muxhistory|History page|-|
-||||
-|*~muxapps~*|*CURRENTLY INACTIVE - Applications page*|*~archive / dingux / gmu / portmaster / retroarch / terminal / commander~*|
-||||
+|*muxapps*|*CURRENTLY INACTIVE - Applications page*|*archive / dingux / gmu / portmaster / retroarch / terminal / commander*|
 |muxinfo|Information page|tester / system / credit|
 |muxtester|Input Tester|-|
 |muxcredits|Supporters page|-|
 |muxsysinfo|System details|version / kernel / uptime / cpu / speed / governor / memory / temp / service / capacity / voltage|
-||||
 |muxconfig|Configuration page|general / theme / network / service / clock / device|
-||||
 |muxtweakgen|General Settings|hidden / bgm / startup / colour / brightness / hdmi / sleep / shutdown / battery / sleep / interface / advanced|
 |muxvisual|Interface Options (within General Settings)|battery / network / clock / boxart|
 |muxtweakadv|Advanced (within General Settings)|swap / thermal / font / volume / offset / lock / led|
-||||
 |muxtheme|Theme Picker page|-|
 |muxnetwork|Wi-Fi Network Page|enable / identifier / password / type / address / subnet / gateway / DNS / status / connect|
 |muxnetscan|Shows when scanning for networks.|-|
-||||
-|*~muxwebserv~*|*CURRENTLY INACTIVE - Web Services page*|*~shell / browser / terminal / sync / ntp~*|
+|*muxwebserv*|*CURRENTLY INACTIVE - Web Services page*|*shell / browser / terminal / sync / ntp*|
 |muxrtc|Date and Time page|year / month / day / hour / minute / notation / timezone|
 |muxdevice|Device type page (will differ for muOS on RG28XX)|rg35xx-h / rg35xx-plus / rg35xx-sp / rg35xx-2024|
