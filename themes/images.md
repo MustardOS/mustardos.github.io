@@ -20,7 +20,7 @@ What is consistent across most of these uses is that the resolution has to be **
 
 # Menu Graphic Design 
 If you are new to graphic design in this context, there are many places you can start with to get the most out of the muOS theme engine.
-Most people designing visual assets will use software such as Photoshop, Photopea (this one is [online and free to use](https://www.photopea.com/)), Illustrator, GIMP, Aseprite (pixel art app), or Affinity.
+Most people designing visual assets will use software such as Photoshop, Photopea (this one is [online and free to use](https://www.photopea.com/)), Illustrator, GIMP, Procreate, Aseprite (pixel art app), or Affinity.
 
 With the introduction of individual list item images (in muOS Beans), themers can now simulate complex navigation you would see in other CFWs or software menus. The most common use case example for muOS is altering the main menu (`muxlaunch`) from vertical lists to icon-based navigation. Here are three examples of this;
 
