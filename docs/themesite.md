@@ -4,7 +4,6 @@ title: Themes
 permalink: /themes
 nav_enabled: true
 nav_order: 4
-has_toc: true
 has_children: true
 ---
 
