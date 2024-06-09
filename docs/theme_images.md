@@ -23,8 +23,10 @@ Most people designing visual assets will use software such as Photoshop, Photope
 
 With the introduction of individual list item images (in muOS Beans), themers can now simulate complex navigation you would see in other CFWs or software menus. The most common use case example for muOS is altering the main menu (`muxlaunch`) from vertical lists to icon-based navigation. Here are three examples of this;
 
-| !["GamePal" by vacarotti](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GamePal.gif "GamePal (by vacarotti)") <br>*Single row horizontal <br>navigation across two pages*  | !["GbOS" by ciskao](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GbOS.gif "GbOS (by ciskao)") <br> *Multi-row horizontal navigation*  | !["Plexus" by LMarcoMiranda](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/Plexus.gif "Plexus (by LMarcoMiranda)") <br> *Vertical scrolling navigation*  |
-|---|---|---|
+<table>
+<tr><th>!["GamePal" by vacarotti](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GamePal.gif "GamePal (by vacarotti)") <br>*Single row horizontal <br>navigation across two pages*</th><th>!["GbOS" by ciskao](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GbOS.gif "GbOS (by ciskao)") <br> *Multi-row horizontal navigation*</th><th>!["Plexus" by LMarcoMiranda](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/Plexus.gif "Plexus (by LMarcoMiranda)") <br> *Vertical scrolling navigation*</th><th></th></tr>
+
+</table>
 
 To achieve this, refer to both the Theme Structure and Scheme File pages - but to put it simply in these three specific cases...
 
