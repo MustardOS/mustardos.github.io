@@ -33,6 +33,12 @@ To achieve this, refer to both the Theme Structure and Scheme File pages - but t
 - Create an image folder within `./images/wall/` named `muxlaunch`, with files named; `explore.png`, `favourite.png`, `history.png`, `apps.png`, `info.png`, `config.png`, `reboot.png`, and `shutdown.png`.
 - Duplicate `.scheme/default.txt` and rename it to `muxlaunch.txt`. All values here under `[LIST]` must have their alphas set to `=0` to make the list items invisible, and `[MISC] NAVIGATION_TYPE=0` or `=1` (`0` is vertical navigation, `1` is horizontal navigation).
 
+
+| <img src="https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/PS%20Blue.gif" title="PS Blue (by VagueParade)" alt="PS Blue (by VagueParade)" width="360"/> |
+|:---:|
+| *Animated background with <br>static images on top* |
+
+
 If you would like an animated background, place your background named `default.gif` or `mux_example.gif` in `./images/wall/` and set `[MISC] ANIMATED_BACKGROUND=1` in order to tell the corresponding program(s) that it is expecting a `.gif` file (instead of a `.png`).
 
 > Static Images: *These are very useful when using animated backgrounds, as you can save your theme size + quality by placing icons on top of a looping background. The file structure is the same as if you were placing an* `muxlaunch` *folder in* `./images/wall/`, *but **you cannot use a*** `default.png` ***in this case***.
