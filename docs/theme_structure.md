@@ -60,6 +60,7 @@ from sections. Be wary of this when creating graphics that show all the options 
 
 Check out the updated naming conventions of all muxprograms below;
 ```
+muxcharge - Charging Screen
 muxlaunch - Main menu
 - explore / favourite / history / apps / info / config / reboot / shutdown
 
