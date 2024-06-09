@@ -17,14 +17,16 @@ What is consistent across most of these uses is that the resolution has to be **
 
 > *Tip: If you are struggling to find a method to easily convert an image to a 24-bit* `.bmp` *file, there are many [online converters](https://online-converting.com/image/convert2bmp/) that
 > can do this for you. There are also similar places to convert a video file to a* `.gif` *file [easily](https://ezgif.com/video-to-gif) as well.*
+
 # Menu Graphic Design 
 If you are new to graphic design in this context, there are many places you can start with to get the most out of the muOS theme engine.
 Most people designing visual assets will use software such as Photoshop, Photopea (this one is [online and free to use](https://www.photopea.com/)), Illustrator, GIMP, Aseprite (pixel art app), or Affinity.
 
 With the introduction of individual list item images (in muOS Beans), themers can now simulate complex navigation you would see in other CFWs or software menus. The most common use case example for muOS is altering the main menu (`muxlaunch`) from vertical lists to icon-based navigation. Here are three examples of this;
 
-| test | test | test |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| !["GamePal" by vacarotti](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GamePal.gif "GamePal (by vacarotti)") | !["GbOS" by ciskao](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GbOS.gif "GbOS (by ciskao)") | !["Plexus" by LMarcoMiranda](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/Plexus.gif "Plexus (by LMarcoMiranda)") |
+|:----:|:----:|:----:|
+| *Single row horizontal <br>navigation across two pages* | *Multi-row horizontal navigation* | *Vertical scrolling navigation* |
 
 To achieve this, refer to both the Theme Structure and Scheme File pages - but to put it simply in these three specific cases...
 
