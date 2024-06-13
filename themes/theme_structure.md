@@ -68,7 +68,7 @@ Check out the updated naming conventions of all muxprograms below;
 |muxassign|Shows when assigning a core to a folder.|-|
 |muxfavourite|Favourites page|-|
 |muxhistory|History page|-|
-|*muxapps*|*CURRENTLY INACTIVE - Applications page*|*archive / dingux / gmu / portmaster / retroarch / terminal / commander*|
+|muxapp|Dynamic applications page|*Applications are named per user, and use .pngs with muxapp to match these names character for character.*|
 |muxinfo|Information page|tester / system / credit|
 |muxtester|Input Tester|-|
 |muxcredits|Supporters page|-|
@@ -80,6 +80,6 @@ Check out the updated naming conventions of all muxprograms below;
 |muxtheme|Theme Picker page|-|
 |muxnetwork|Wi-Fi Network Page|enable / identifier / password / type / address / subnet / gateway / DNS / status / connect|
 |muxnetscan|Shows when scanning for networks.|-|
-|*muxwebserv*|*CURRENTLY INACTIVE - Web Services page*|*shell / browser / terminal / sync / ntp*|
+|muxwebserv|Web Services page|shell / browser / terminal / sync / ntp|
 |muxrtc|Date and Time page|year / month / day / hour / minute / notation / timezone|
 |muxdevice|Device type page (will differ for muOS on RG28XX)|rg35xx-h / rg35xx-plus / rg35xx-sp / rg35xx-2024|
