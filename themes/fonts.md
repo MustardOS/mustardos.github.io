@@ -6,8 +6,8 @@ nav_order: 3
 has_toc: false
 ---
 
-# Installing the font conversion script
-For themes on muOS, you can implement custom fonts! To do this, you must first install the script that will convert your
+# Converting fonts into a Binary file
+For themes on muOS, you can implement custom fonts! To do this, you can either use this [website](https://lvgl.io/tools/fontconverter), or you can do so offline using terminal commands. For the later, you must first install the script that will convert your
 `.ttf`, `.otf`, or `.woff` type font into a specific `.bin` file that muOS will accept. 
 
 - You will first need node.js installed. Install a pre-built packaged version of this [here](https://nodejs.org/en/download/prebuilt-installer).
@@ -25,6 +25,9 @@ Paste this line of code, replacing the `username/folder/example.ttf` with your f
 or pasting the file path), and you can convert your font to the right format.
 
 This will place your font in your current user directory's Downloads folder. If you want to change this, just type in your preferred output path at the end of the command line.
+
+The information below is applicable to users converting fonts with the offline scripts or [online website](https://lvgl.io/tools/fontconverter);
+
 - Feel free to adjust the size value. 20 is a good size for most of the elements on screen.
 - Where it states `0x00-0xFF` is the range of symbols in the font.
   - 0x20-0x7F is a standard range.
