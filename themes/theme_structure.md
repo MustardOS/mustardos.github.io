@@ -82,3 +82,4 @@ Check out the updated naming conventions of all muxprograms below;
 |muxwebserv|Web Services page|shell / browser / terminal / sync / ntp|
 |muxrtc|Date and Time page|year / month / day / hour / minute / notation / timezone|
 |muxdevice|Device type page (will differ for muOS on RG28XX)|rg35xx-h / rg35xx-plus / rg35xx-sp / rg35xx-2024|
+|muxpass|Passcode Lock Screen|-|
