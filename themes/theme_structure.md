@@ -69,6 +69,8 @@ Check out the updated naming conventions of all muxprograms below;
 |muxfavourite|Favourites page|-|
 |muxhistory|History page|-|
 |muxapp|Dynamic applications page|Archive Manager / Dingux Commander / GMU Music Player / Moonlight / PortMaster / RetroArch / Simple Terminal / Task Commander|
+|muxarchive|Archive Manager page|-|
+|muxtask|Task commander page|-|
 |muxinfo|Information page|tester / system / credit|
 |muxtester|Input Tester|-|
 |muxsysinfo|System details|version / kernel / uptime / cpu / speed / governor / memory / temp / service / capacity / voltage|
