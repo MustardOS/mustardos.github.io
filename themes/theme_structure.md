@@ -68,15 +68,15 @@ Check out the updated naming conventions of all muxprograms below;
 |muxassign|Shows when assigning a core to a folder.|-|
 |muxfavourite|Favourites page|-|
 |muxhistory|History page|-|
-|muxapp|Dynamic applications page|Archive Manager / Dingux Commander / GMU Music Player / Moonlight / PortMaster / RetroArch / Simple Terminal / Task Commander|
+|muxapp|Dynamic applications page|*List item wallpapers named directly after application names. Default example here;* <br>Archive Manager / Dingux Commander / GMU Music Player / Moonlight / PortMaster / RetroArch / Simple Terminal / Task Toolkit|
 |muxarchive|Archive Manager page|-|
-|muxtask|Task commander page|-|
+|muxtask|Task toolkit page|-|
 |muxinfo|Information page|tester / system / credit|
 |muxtester|Input Tester|-|
 |muxsysinfo|System details|version / kernel / uptime / cpu / speed / governor / memory / temp / service / capacity / voltage|
 |muxconfig|Configuration page|general / theme / network / service / clock / device|
 |muxtweakgen|General Settings|hidden / bgm / startup / colour / brightness / hdmi / sleep / shutdown / battery / sleep / interface / advanced|
-|muxvisual|Interface Options (within General Settings)|battery / network / clock / boxart|
+|muxvisual|Interface Options (within General Settings)| battery / network / bluetooth / mux_clock / boxart / name / dash |
 |muxtweakadv|Advanced (within General Settings)|swap / thermal / font / volume / brightness / offset / lock / led / theme / retrowait
 |muxtheme|Theme Picker page|-|
 |muxnetwork|Wi-Fi Network Page|enable / identifier / password / type / address / subnet / gateway / DNS / status / connect|
