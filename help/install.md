@@ -49,6 +49,19 @@ This will create all the needed files and folders for you to put your favourite 
 If you find that your device is stuck during "Factory Reset" please give it at least 5-10 minutes before hitting the reset button.
 This should not happen, but if it does please make a post in the Discord issues channel.
 
+# Updating An Existing Install
+Currently, muOS only supports updating versions by re-flashing the SD card, which can erase important data
+if you're not careful!
+
+A second SD can be used to preserve ROM files, but keep in mind that save data and configuration are still on SD1.
+To preserve this data, use the backup feature built into muOS. On 2405.1 and above, this is under the Task Toolkit menu.
+
+1. Create a backup .zip file from the muOS menu and store it on an external device.
+2. If using a single SD card, back up all ROM files.
+3. When you are CERTAIN that your data is safe, proceed with the flashing and installation method above.
+4. Unzip the backup in the root of SD1 ROMS/ partition, so that the folders merge with one another.
+5. If using a single SD card, copy ROM files back onto the SD Card.
+
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
   <meta itemprop="name" content="muOS - Custom Firmware"/>
