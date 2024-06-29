@@ -71,6 +71,7 @@ Check out the updated naming conventions of all muxprograms below;
 |muxapp|Dynamic applications page|*List item wallpapers named directly after application names. Default example here;* <br>Archive Manager / Dingux Commander / GMU Music Player / Moonlight / PortMaster / RetroArch / Simple Terminal / Task Toolkit|
 |muxarchive|Archive Manager page|-|
 |muxtask|Task toolkit page|-|
+|muxlog|Archive and toolkit installation logger page|-|
 |muxinfo|Information page|tester / system / credit|
 |muxtester|Input Tester|-|
 |muxsysinfo|System details|version / kernel / uptime / cpu / speed / governor / memory / temp / service / capacity / voltage|
