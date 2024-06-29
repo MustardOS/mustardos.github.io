@@ -6,6 +6,11 @@ nav_order: 2
 has_toc: false
 ---
 
+# Troubleshooting Info
+Many people when making their first themes will bump into a few hiccups due to missed steps, bad image files, or font files. Don't panic! You can copy over or delete incorrect
+elements within your active theme on your device, instead of resorting to reflashing your device from scratch if your work in progress theme freezes your device.
+
+Replace your active theme on your device's SD1 card within; `./MUOS/theme/active`
 # Image Format
 There are currently three compatible image formats for themes with specific use cases; 
 
