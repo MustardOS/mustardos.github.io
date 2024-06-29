@@ -163,6 +163,13 @@ CHARGER_TEXT=000000             <--  Charging banner text colour.
 CHARGER_TEXT_ALPHA=255          <--  Charging banner text transparency.
 CHARGER_Y_POS=100               <--  Position of the banner from the centre. -100 is up, 100 is down.
 
+[verbose]                          Previously used for a more verbose booting page. Currently inactive.
+VERBOSE_BOOT_BACKGROUND=100808     ...however, some parts are used within the archive/task log page.
+VERBOSE_BOOT_BACKGROUND_ALPHA=000
+VERBOSE_BOOT_TEXT=464646           <--  This will currently change the text colour within muxlog.
+VERBOSE_BOOT_TEXT_ALPHA=255        <--  This will currently change the text transparency within muxlog.
+VERBOSE_BOOT_Y_POS=200
+
 [keyboard]
 OSK_BACKGROUND=5d0014                      <--  On-screen keyboard background window colour.
 OSK_BACKGROUND_ALPHA=255                   <--  On-screen keyboard background window transparency.
