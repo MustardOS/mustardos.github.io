@@ -303,6 +303,7 @@ This relates to the passcode/lock screen when enabled in settings.
 This section controls displaying a position counter while navigation the Context Explorer.  It would be recommended to include this in your theme.  There are menu settings the user can set to disable the counter.
 Configuration -> General Settings -> Interface Options -> Menu Counter Folder = Displays file counter on Content Explorer screens that only contain folders.
 Configuration -> General Settings -> Interface Options -> Menu Counter File = Displays file counter on Content Explorer screens that contain at least one file.
+**Note:** This version must be on at least Cool Beans to use this feature
 | Setting                  |  Description                                                                     |
 |--------------------------|----------------------------------------------------------------------------------|
 | COUNTER_ALIGNMENT        | 0 = aligned to the left, 1 = central aligned, 2 = aligned to the right.  |
