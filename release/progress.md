@@ -8,6 +8,6 @@ nav_order: 2
 
 # Progress
 
-[2405.3 COOL BEANS](/release/coolbeans)
+[2405.3 COOL BEANS]({{site.baseurl}}/release/coolbeans)
 
 [2410 BANANA]()
