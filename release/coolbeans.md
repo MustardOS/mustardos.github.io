@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Cool Beans
+title: 2405.3 COOL BEANS
 permalink: /release/progress/coolbeans
 parent: Progress
 grandparent: Release
