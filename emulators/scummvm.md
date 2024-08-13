@@ -16,7 +16,7 @@ has_toc: false
 | Standalone    | ext-scummvm         | 2.8.1 |
 
 {: .warning}
-> Please consider ScummVM Stanalone support to be experimental!
+> Please consider ScummVM Standalone support to be experimental!
 
 ## Where should I put my games?
 ScummVM game files should all exist in a sub-directory of your main ScummVM folder inside your muOS roms folder.  
