@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Cool Beans
-permalink: /release/coolbeans
+permalink: /release/progress/coolbeans
 parent: Progress
 grandparent: Release
 nav_order: 1
@@ -11,7 +11,7 @@ has_toc: false
 
 # muOS 2405.3 COOL BEANS
 ## Download
-[Not available yet!]({{site.baseurl}}/release/coolbeans)  
+[Not available yet!]({{site.baseurl}}/release/progress/coolbeans)  
 ``Come back later!``
 
 ## Support muOS
