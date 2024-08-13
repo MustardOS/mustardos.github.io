@@ -1,18 +1,20 @@
 ---
 layout: default
 title: DraStic
+parent: Emulators
 permalink: /emulators/drastic
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
-![](/assets/images/drastic_new.png)
+![](assets/images/drastic_new.png)
 
 {: .important}
 > muOS includes both DraStic, and the modified version by steward-fu
 > For most uses the modified version is preferred.
 
 ## DraStic (Steward) Keys
+
 | Button             | Action             |
 |:-------------------|:-------------------|
 | F+Select           | Main Drastic Menu  |
@@ -27,18 +29,23 @@ has_toc: false
 | F+L1               | Quit Drastic |
 | Just R2            | Change Main/Secondary Screens |
 | Just L2            | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
+
 **When in D-Pad to Stylus mode**
+
 | Button             | Action             |
 |:-------------------|:-------------------|
 | F+D-Pad Up/Down    | Change Stylus focus screen |
 | F+Y                | Change Stylus Icon/Style |
+
 **Devices with analogue sticks**
+
 | Button             | Action             |
 |:-------------------|:-------------------|
 | Left Analog        | Stylus Controls |
 | R3                 | Stylus Click |
 
 ## DraStic Keys
+
 | Button             | Action             |
 |:-------------------|:-------------------|
 | R2                 | Enable/Disable D-Pad Stylus Mode |

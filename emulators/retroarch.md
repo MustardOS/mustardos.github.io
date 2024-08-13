@@ -2,22 +2,25 @@
 layout: default
 title: RetroArch
 permalink: /emulators/retroarch
+parent: Emulators
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
 
-![](/assets/images/retroarch_logo.png)
+![](assets/images/retroarch_logo.png)
 
-{: .note}
+{: .note-title}
+> NOTE
+>
 > This page serves as a quick reference for RetroArch configuration.
 
 ## RetroArch Configuration Priority
 RetroArch applies configurations in the following order  
 - Load Global Config - `MUOS/retroarch/retroarch.cfg`
-- Apply Core Overrides - `MUOS/info/config/<corename>/<corename>.cfg` | `<corename>.rmp`
-- Apply Content Directory Overrides - `MUOS/info/config/<corename>/<directoryname>.cfg` | `<directoryname>.rmp`
-- Apply Game Overrides - `MUOS/info/config/<corename>/<gamename>.cfg` | `<gamename>.rmp`
+- Apply Core Overrides - `MUOS/info/config/<corename>/<corename>.cfg` - `<corename>.rmp`
+- Apply Content Directory Overrides - `MUOS/info/config/<corename>/<directoryname>.cfg` - `<directoryname>.rmp`
+- Apply Game Overrides - `MUOS/info/config/<corename>/<gamename>.cfg` - `<gamename>.rmp`
 
 
 ## Modifying RetroArch Settings

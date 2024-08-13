@@ -2,12 +2,14 @@
 layout: default
 title: EasyRPG
 permalink: /emulators/easyrpg
+parent: Emulators
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
 
-![](/assets/images/easyrpg_logo.png)
+![](assets/images/easyrpg_logo.png)
+
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
 | Libretro Core | easyrpg_libretro.so | 0.8 |
