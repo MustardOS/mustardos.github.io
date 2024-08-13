@@ -60,8 +60,8 @@ For information around which particular BIOS you need, please consult their docu
 
 [https://docs.libretro.com/library/bios/](https://docs.libretro.com/library/bios/)
 
-NOTE: muOS does not supply any BIOS files!
-{: .label .label-yellow }
+{: .note }
+muOS does not supply any BIOS files!
 
 muOS requires that its BIOS files be located in ``/mnt/mmc/MUOS/bios``  
 Most files can be placed in the root of that folder unless otherwise specified by the libretro docs.
@@ -69,8 +69,14 @@ Most files can be placed in the root of that folder unless otherwise specified b
 ## How does muOS know what my content is?
 This is one of the key features of muOS.
 
-When you first browse through to a folder, simply try launching some content.  
-If muOS doesn't know what it is, it will prompt you to select which system it's for.
+muOS will attempt to determine the contents of your folders by matching the **folder name** with commonly used names.  
+It stores the list of known names in ``/mnt/mmc/MUOS/info/assign.json``.  
+If muOS has detected a known name it will automatically assign a **default core** to that folder.  
+{: .note }
+muOS will never use a default core that requires a BIOS to function.
+
+If muOS is unable to automatically assign a core, simply try launching some content.  
+At this point muOS will prompt you to select which system it's for.
 
 ### Example
 If I attempt to launch content from my SNES folder it will prompt which system.  

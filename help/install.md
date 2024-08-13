@@ -30,7 +30,6 @@ There are several recommended programs you can use to flash your SD card
 *   Win32 Disk Imager - [https://sourceforge.net/projects/win32diskimager/](https://sourceforge.net/projects/win32diskimager/)
 *   USBImager - [https://gitlab.com/bztsrc/usbimager](https://gitlab.com/bztsrc/usbimager)
 *   Raspberry Pi Imager - [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)
-*   Balena Etcher - [https://etcher.balena.io/](https://etcher.balena.io/)
 
 # Advanced Flashing
 If you're not afraid of using command line tools you can use dd to get the job done.
