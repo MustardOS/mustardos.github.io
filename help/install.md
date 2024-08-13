@@ -44,10 +44,10 @@ Once flashing to an SD card is successful you can put it in your device and swit
 It will run through a few menus to help get setup first and it will then do the rest of the setup for you. 
 This will create all the needed files and folders for you to put your favourite content on.
 
-**Be Patient**
-
-If you find that your device is stuck during "Factory Reset" please give it at least 5-10 minutes before hitting the reset button.
-This should not happen, but if it does please make a post in the Discord issues channel.
+{: .important-title }
+> Be Patient
+>
+>If you find that your device is stuck during "Factory Reset" please give it at least 5-10 minutes before hitting the reset button. This should not happen, but if it does please make a post in the Discord issues channel.
 
 # Updating An Existing Install
 Currently, muOS only supports updating versions by re-flashing the SD card, which can erase important data
