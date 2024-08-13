@@ -2,12 +2,14 @@
 layout: default
 title: Doom
 permalink: /emulators/doom
+parent: Emulators
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
 
-![](/assets/images/prboom.png)  
+![](assets/images/prboom.png)
+
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
 | Libretro Core | prboom_libretro.so | 2.5.0 (6ec8549) |
