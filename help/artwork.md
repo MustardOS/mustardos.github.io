@@ -2,7 +2,7 @@
 layout: default
 title: Artwork
 permalink: /help/artwork
-nav_order: 6
+nav_order: 7
 parent: Help
 has_children: false
 ---
