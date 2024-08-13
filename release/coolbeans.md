@@ -9,7 +9,7 @@ has_toc: false
 
 # muOS 2405.3 COOL BEANS
 ## Download
-[Not available yet!](/release/coolbeans)  
+[Not available yet!]({{site.baseurl}}/release/coolbeans)
 ``Come back later!``
 
 ## Support muOS
