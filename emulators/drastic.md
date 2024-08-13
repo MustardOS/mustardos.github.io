@@ -9,7 +9,7 @@ has_toc: false
 ---
 ![](assets/images/drastic_new.png)
 
-{: .important}
+{: .new}
 > muOS includes both DraStic, and the modified version by steward-fu
 > For most uses the modified version is preferred.
 
@@ -57,9 +57,9 @@ has_toc: false
 | Select + X         | Screen Orientation B |
 
 ## Toggle Bilinear / Nearest Filter
+
 {: .warning}
 > This is not for DraStic Steward
->
 > This script needs updating for newer muOS versions.
 
 ```bash
