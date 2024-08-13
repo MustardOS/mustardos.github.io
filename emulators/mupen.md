@@ -2,18 +2,21 @@
 layout: default
 title: Mupen64
 permalink: /emulators/mupen
+parent: Emulators
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
 
-![](/assets/images/mupen64plus.png)
+![](assets/images/mupen64plus.png)
+
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
 | Libretro Core | tbd_libretro.so    | TBD |
 | Standalone    | ext-mupen?         | TBD |
 
 ## Mupen Standalone Keys
+
 | Button             | Action             |
 |:-------------------|:-------------------|
 | Menu (F) + DPAD Right (Hold) | Fast Forward |

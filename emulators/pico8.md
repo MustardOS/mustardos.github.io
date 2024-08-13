@@ -2,12 +2,13 @@
 layout: default
 title: PICO-8
 permalink: /emulators/pico8
+parent: Emulators
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
 
-![](/assets/images/pico8.png)
+![](assets/images/pico8.png)
 
 ## PICO-8 Emulator Files
 
