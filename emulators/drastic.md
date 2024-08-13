@@ -59,7 +59,7 @@ has_toc: false
 ## Toggle Bilinear / Nearest Filter
 
 {: .warning}
-> This is not for DraStic Steward
+> This is not for DraStic Steward  
 > This script needs updating for newer muOS versions.
 
 ```bash
