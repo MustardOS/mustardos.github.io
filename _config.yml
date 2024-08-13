@@ -10,3 +10,19 @@ aux_links:
   Download: https://dl.muos.dev/
   Discord: https://discord.gg/USS5ybVtDz
   Support: https://ko-fi.com/xonglebongle
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  highlight:
+    color: yellow
+  note:
+    title: note
+    color: purple
+  important:
+    title: Important
+    color: blue
+  new:
+    title: new
+    color: green
