@@ -3,7 +3,7 @@ layout: default
 title: 2405.3 COOL BEANS
 permalink: /release/progress/coolbeans
 parent: Progress
-grandparent: Release
+grand_parent: Release
 nav_order: 1
 has_toc: false
 ---
