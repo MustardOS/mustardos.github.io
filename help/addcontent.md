@@ -73,7 +73,8 @@ This is one of the key features of muOS.
 
 muOS will attempt to determine the contents of your folders by matching the **folder name** with commonly used names.  
 It stores the list of known names in ``/mnt/mmc/MUOS/info/assign.json``.  
-If muOS has detected a known name it will automatically assign a **default core** to that folder.  
+If muOS has detected a known name it will automatically assign a **default core** to that folder.
+
 {: .note-title }
 > NOTE
 > 
