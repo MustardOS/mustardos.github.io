@@ -1,11 +1,10 @@
 ---
 layout: default
 title: 2405.2 Baked Beans
-permalink: /release/current/2405.2
+permalink: /release/current/baked
 parent: Current
 grand_parent: Release
 nav_order: 2
-has_children: false
 has_toc: false
 ---
 
