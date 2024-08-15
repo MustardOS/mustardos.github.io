@@ -1,11 +1,10 @@
 ---
 layout: default
 title: 2405.1 Refried Beans
-permalink: /release/current/2405.1
+permalink: /release/current/refried
 parent: Current
 grand_parent: Release
 nav_order: 1
-has_children: false
 has_toc: false
 ---
 
