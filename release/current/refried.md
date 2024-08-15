@@ -18,7 +18,7 @@ has_toc: false
 ```
 
 ## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!\\ 
+If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!  
 [Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
 
 ## Significant Changes
