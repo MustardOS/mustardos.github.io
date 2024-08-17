@@ -27,12 +27,14 @@ Below you will find all the available attributes you can change in a scheme file
 This is an example of a random `./scheme/default.txt` file from the theme library.
 
 ### Section [background]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |BACKGROUND=000000              |  Background colour. Most used in [list] gradients.|
 |BACKGROUND_ALPHA=0             |  Background colour transparency.|
 
 ### Section [font]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |FONT_HEADER_PAD_TOP=6              |  Number of pixels from top of header area to header text.|
@@ -51,11 +53,13 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |FONT_LIST_PAD_BOTTOM=0             |  Number of pixels from bottom of an item area to a list item text.|
 
 ### Section [status]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |PADDING_RIGHT=47             |  Number of pixels from the right side of the screen to the battery icon.|
 
 ### Section [battery]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |BATTERY_NORMAL=000000             |  Battery icon standard colour.|
@@ -66,6 +70,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |BATTERY_LOW_ALPHA=255             |  Low battery icon transparency.|
 
 ### Section [network]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |NETWORK_NORMAL=53422e           |  Disconnected network icon colour.|
@@ -74,6 +79,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |NETWORK_ACTIVE_ALPHA=255        |  Connected network icon transparency.|
 
 ### Section [bluetooth]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |BLUETOOTH_NORMAL=53422e           |  Disconnected bluetooth icon colour. Yet to be implemented.|
@@ -82,6 +88,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |BLUETOOTH_ACTIVE_ALPHA=255        |  Connected bluetooth icon transparency. Yet to be implemented.|
 
 ### Section [date]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |DATETIME_TEXT=000000        |  Time text colour.|
@@ -89,6 +96,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |PADDING_LEFT=49             |  Number of pixels from the left side of the screen to the time text.|
 
 ### Section [footer]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |FOOTER_BACKGROUND=000000        |  Footer area/background colour.|
@@ -97,6 +105,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |FOOTER_TEXT_ALPHA=255           |  Footer text transparency, not including any navigation buttons.|
 
 ### Section [header]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |HEADER_BACKGROUND=000000        |  Header area/background colour.|
@@ -105,6 +114,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |HEADER_TEXT_ALPHA=255           |  Header text transparency, not including time text.|
 
 ### Section [help]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |HELP_BACKGROUND=5d0014            |  Help/info background window colour.|
@@ -116,10 +126,10 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 |HELP_RADIUS=10                    |  Border roundness. 0 is a right angle. 10+ is very round.|
 
 ### Section [navigation]
-Regarding all navigation buttons in the footer. 0 = aligned to the left,
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-|ALIGNMENT=1                  |  1 = central aligned, 2 = aligned to the right. Anything above is a secret.|
+|ALIGNMENT=1                  |  Regarding all navigation buttons in the footer. 0 = aligned to the left, 1 = central aligned, 2 = aligned to the right. Anything above is a secret.|
 |NAV_A_GLYPH=000000           |  The device's "A" button - icon colour. |
 |NAV_A_GLYPH_ALPHA=255        |  The device's "A" button - icon transparency.|
 |NAV_A_TEXT=000000            |  Text describing the function of the "A" button - colour.|
@@ -151,6 +161,7 @@ Regarding all navigation buttons in the footer. 0 = aligned to the left,
 
 ### Section [list]
 For all list item backgrounds, gradients can be applied. L-R = 0-255.
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |LIST_DEFAULT_RADIUS=0                 |  Background window border radius. 0 = square, 5+ = round. This applies setting applies to LIST_DEFAULT_BACKGROUND & LIST_FOCUS_BACKGROUND |
@@ -181,6 +192,7 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 
 ### Section [image_list]
 Alters properties of list images. Unconfirmed if this has an effect.
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |IMAGE_LIST_ALPHA=255               |  Image transparency|
@@ -194,6 +206,7 @@ Alters properties of list images. Unconfirmed if this has an effect.
 
 ### Section [charging]
 When placed on charge without booting, the charging screen will appear.
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |CHARGER_BACKGROUND=100808       |  Charging banner background colour. |
@@ -203,6 +216,7 @@ When placed on charge without booting, the charging screen will appear.
 |CHARGER_Y_POS=100               |  Position of the banner from the centre. -100 is up, 100 is down.|
 
 ### Section [keyboard]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |OSK_BACKGROUND=5d0014                      |  On-screen keyboard background window colour.|
@@ -225,6 +239,7 @@ When placed on charge without booting, the charging screen will appear.
 |OSK_ITEM_RADIUS=5                          |  All button border radius. 0 = square, 5+ = round.|
 
 ### Section [notification]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |MSG_BACKGROUND=5d0014           |  Pop-up message background colour.|
@@ -237,6 +252,7 @@ When placed on charge without booting, the charging screen will appear.
 
 ### Section [bar]
 This is the horizontal bar showing volume/brightness.
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |BAR_BACKGROUND=5d0014                            |  Background of the bar window - colour.|
@@ -254,6 +270,7 @@ This is the horizontal bar showing volume/brightness.
 
 ### Section [roll]
 This relates to the passcode/lock screen when enabled in settings.
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |ROLL_TEXT=53422e                       |  Unselected passcode text colour.|
@@ -271,6 +288,7 @@ This relates to the passcode/lock screen when enabled in settings.
 |ROLL_BORDER_RADIUS=10                  |  Window border roundness. 0 = square, 5+ = round.|
 
 ### Section [counter]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 | COUNTER_ALIGNMENT=2            | 0 = aligned to the left, 1 = central aligned, 2 = aligned to the right.  |
@@ -289,11 +307,13 @@ This relates to the passcode/lock screen when enabled in settings.
 | COUNTER_TEXT_SEPARATOR= of     | Separator in between the current item index and the number of items in the list.  Default value " of " which would display as "1 of 50". |
 
 ### Section [meta]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |META_CUT=40                     |  Number of characters on each line in help/info windows before making a new one.|
 
 ### Section [misc]
+
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
 |ANIMATED_BACKGROUND=0         |  Do you want to use a .gif file in /wall? 0 is no. 1 is yes.|
