@@ -99,6 +99,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
+| FOOTER_HEIGHT=42                |  Adjust the height of the footer by pixels.|
 | FOOTER_BACKGROUND=000000        |  Footer area/background colour.|
 | FOOTER_BACKGROUND_ALPHA=0       |  Footer area/background transparency.|
 | FOOTER_TEXT=000000              |  Footer text colour, not including any navigation buttons.|
@@ -108,6 +109,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
+| HEADER_HEIGHT=42                |  Adjust the height of the header by pixels.|
 | HEADER_BACKGROUND=000000        |  Header area/background colour.|
 | HEADER_BACKGROUND_ALPHA=0       |  Header area/background transparency.|
 | HEADER_TEXT=000000              |  Header text colour, not including time text.|

@@ -15,6 +15,10 @@ place. Below is an example of the correct structure that you can replicate if yo
 ├── credits.txt
 ├── font
 │   └── default.bin
+│   ├── header
+|   │   └── default.bin
+│   ├── footer
+|   │   └── default.bin
 │   ├── panel
 |   │   └── default.bin
 ├── glyph
@@ -53,7 +57,7 @@ place. Below is an example of the correct structure that you can replicate if yo
 ```
 In the above example, there are some files here that are not necessary to have a *working* theme - however the elements included
 above show off the amount of possible customisation available.
-- **font** - Here is where you can place custom fonts compiled into a `.bin` format.  Fonts placed in the panel subfolder will override the font used for list items.
+- **font** - Here is where you can place custom fonts compiled into a `.bin` format.  Fonts placed in the panel subfolder will override the font used for list items.  Fonts placed in the header subfolder will override the font used for the header.  Fonts placed in the footer subfolder will override the font used for the footer.
 - **glyph** - Place png images for list item glyphs.  See Program names section for full list of names.
 - **image** - Place all image assets of your theme here. Animated images are also supported (use `.gif`).
   - **static** - Images can be set to sit on top of other elements. They are named following their associated program.
