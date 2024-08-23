@@ -31,7 +31,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Type                    | Control                  |
 |:------------------------|:-------------------------|
 | Brightness              | MENU + Volume            |
-| Screenshot              | L2 + R2                  |
+| Screenshot              | MENU + POWER             |
 | Sleep Suspend           | Hold POWER for 2 seconds |
 | (Re)Select Core         | Press SELECT on content  |
 | Content Root            | Press START on content   |
@@ -41,6 +41,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Load State              | MENU + R2                |
 | Save State              | MENU + L2                |
 | Slow Motion             | MENU + L1                |
+| Show FPS Toggle         | MENU + Y                 |
 
 ## Screenshots
 _tbd_
@@ -57,6 +58,10 @@ _tbd_
 | RG28XX      |
 
 | Coming Soon      |
+|:-----------------|
+| RG40XX           |
+
+| Planned          |
 |:-----------------|
 | Trimui Smart Pro |
 | Anbernic ARC-D   |
