@@ -41,7 +41,12 @@ SD1
             │    └── text
             │        └── romname.txt
             ├── Folder
-            │    └── foldername.png
+            │    ├── box
+            │    │   └── foldername.png
+            │    ├── preview
+            │    │   └── foldername.png
+            │    └── text
+            │        └── foldername.txt
             └── Root
                 └── box
                      ├── sd1.png
@@ -65,9 +70,10 @@ To have folder icons for all subdirectories listed, you would need:
 ```
 catalogue
 └── Folder
-    ├── nintendo.png
-    ├── snes.png
-    └── action.png
+    └── box
+        ├── nintendo.png
+        ├── snes.png
+        └── action.png
 ```
 ## antiKk's muOS Artwork
 Skraper mixes, and Artwork for the Tiny Best Set are available here:  
