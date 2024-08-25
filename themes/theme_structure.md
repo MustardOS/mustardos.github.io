@@ -67,8 +67,13 @@ above show off the amount of possible customisation available.
 - **music** + **sound** - These folders will contain files heard during your time in the muOS menus. Yet to be implemented.
   
 # Theme Folder Structure Glyphs
-The following images are used for populating the glyphs displayed in the headers, footers, and list items.
-
+The following images are used for populating the glyphs displayed in the headers, footers, and list items. 
+<br><br>**Note:** If your theme does not supply images for the glyphs below then it will fall back to built in default images.  If you want to hide glyphs you will need to adjust the appropriate settings in your scheme file.  For example disable list item glyphs you would set these settings in your scheme file:
+```
+[list]
+LIST_DEFAULT_GLYPH_ALPHA=0
+LIST_FOCUS_GLYPH_ALPHA=0
+```
 ```
 .
 ├── credits.txt

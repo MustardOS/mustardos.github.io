@@ -188,10 +188,10 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_DEFAULT_INDICATOR_ALPHA=0        |  Unselected list item " | " indicator transparency.|
 | LIST_DEFAULT_TEXT=53422e              |  Unselected list item text colour.|
 | LIST_DEFAULT_TEXT_ALPHA=255           |  Unselected list item text transparency.|
-| LIST_DEFAULT_GLYPH_PAD_LEFT           |  List item glyph are horizontally centered to each other.  This adjusts the padding in pixels to left of the list item glyph.|
-| LIST_DEFAULT_GLYPH_ALPHA              |  List item glyph transparency|
-| LIST_DEFAULT_GLYPH_RECOLOUR           |  Unselected list item glyph recolour.|
-| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA     |  Transparency of this colour.|
+| LIST_DEFAULT_GLYPH_PAD_LEFT=19        |  List item glyph are horizontally centered to each other.  This adjusts the padding in pixels to left of the list item glyph.|
+| LIST_DEFAULT_GLYPH_ALPHA=255          |  List item glyph transparency|
+| LIST_DEFAULT_GLYPH_RECOLOUR=53422e    |  Unselected list item glyph recolour.|
+| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255 |  Transparency of this colour.|
 | LIST_DISABLED_TEXT=a78b65             |  Unavailable list item text colour.|
 | LIST_DISABLED_TEXT_ALPHA=255          |  Unavailable list item text transparency.|
 | LIST_FOCUS_BACKGROUND=000000          |  Selected list item main background colour.|
@@ -202,9 +202,9 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_FOCUS_INDICATOR_ALPHA=255        |  Selected list item " | " indicator transparency.|
 | LIST_FOCUS_TEXT=5d0014                |  Selected list item text colour.|
 | LIST_FOCUS_TEXT_ALPHA=255             |  Selected list item text transparency.|
-| LIST_FOCUS_GLYPH_ALPHA                |  Selected List item glyph transparency.|
-| LIST_FOCUS_GLYPH_RECOLOUR             |  Selected list item glyph recolour.|
-| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA       |  Transparency of this colour.|
+| LIST_FOCUS_GLYPH_ALPHA=255            |  Selected List item glyph transparency.|
+| LIST_FOCUS_GLYPH_RECOLOUR=5d0014      |  Selected list item glyph recolour.|
+| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255   |  Transparency of this colour.|
 
 ### Section [image_list]
 Alters properties of list images. Unconfirmed if this has an effect.
