@@ -37,10 +37,10 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| FONT_HEADER_PAD_TOP=6              |  Number of pixels from top of header area to header text.|
+| FONT_HEADER_PAD_TOP=0              |  Number of pixels from top of header area to header text.|
 | FONT_HEADER_PAD_BOTTOM=0           |  Number of pixels from bottom of header area to header text.|
 | FONT_HEADER_ICON_PAD_TOP=0         |  Number of pixels from top of header area to header icons.|
-| FONT_HEADER_ICON_PAD_BOTTOM=13     |  Number of pixels from bottom of header area to header icons.|
+| FONT_HEADER_ICON_PAD_BOTTOM=0      |  Number of pixels from bottom of header area to header icons.|
 | FONT_FOOTER_PAD_TOP=0              |  Number of pixels from top of footer area to footer text.|
 | FONT_FOOTER_PAD_BOTTOM=0           |  Number of pixels from bottom of footer area to footer text.|
 | FONT_FOOTER_ICON_PAD_TOP=0         |  Number of pixels from top of footer area to footer icons.|
@@ -49,8 +49,14 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 | FONT_MESSAGE_PAD_BOTTOM=0          |  Number of pixels from bottom of message area to message text.|
 | FONT_MESSAGE_ICON_PAD_TOP=0        |  Number of pixels from top of message area to message icons.|
 | FONT_MESSAGE_ICON_PAD_BOTTOM=0     |  Number of pixels from bottom of message area to message icons.|
-| FONT_LIST_PAD_TOP=-3               |  Number of pixels from top of a list item area to a list item text.|
+| FONT_LIST_PAD_TOP=0                |  Number of pixels from top of a list item area to a list item text.|
 | FONT_LIST_PAD_BOTTOM=0             |  Number of pixels from bottom of an item area to a list item text.|
+| FONT_LIST_PAD_LEFT=0               |  Number of pixels from left of a list item area to a list item text.|
+| FONT_LIST_PAD_RIGHT=0              |  Number of pixels from right of an item area to a list item text.|
+| FONT_LIST_ICON_PAD_TOP=0           |  Number of pixels from top of a list item area to a list item glyph.|
+| FONT_LIST_ICON_PAD_BOTTOM=0        |  Number of pixels from bottom of an item area to a list item glyph.|
+
+**Note:** By default text and glyphs in the header, footer, and list items will be centered vertically.  It is recommended to start with a value of 0.  Depending on the font used you may need to adjust the FONT_LIST_PAD_TOP or FONT_LIST_PAD_BOTTOM settings. FONT_LIST_PAD_TOP to move the text down and FONT_LIST_PAD_BOTTOM to move the text up.  Do not use both settings at the same time.
 
 ### Section [status]
 
@@ -62,21 +68,21 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| BATTERY_NORMAL=000000             |  Battery icon standard colour.|
-| BATTERY_ACTIVE=207d0e             |  On-charge battery icon colour. |
-| BATTERY_LOW=7d0e0e                |  Low battery icon colour.|
-| BATTERY_NORMAL_ALPHA=255          |  Battery icon standard transparency. |
-| BATTERY_ACTIVE_ALPHA=255          |  On-charge battery icon transparency.|
-| BATTERY_LOW_ALPHA=255             |  Low battery icon transparency.|
+| BATTERY_NORMAL=000000             |  Battery icon standard recolour .|
+| BATTERY_ACTIVE=207d0e             |  On-charge battery icon recolour . |
+| BATTERY_LOW=7d0e0e                |  Low battery icon recolour .|
+| BATTERY_NORMAL_ALPHA=255          |  Battery icon standard recolour transparency. |
+| BATTERY_ACTIVE_ALPHA=255          |  On-charge battery icon recolour transparency.|
+| BATTERY_LOW_ALPHA=255             |  Low battery icon recolour transparency.|
 
 ### Section [network]
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| NETWORK_NORMAL=53422e           |  Disconnected network icon colour.|
-| NETWORK_ACTIVE=000000           |  Connected network icon colour.|
-| NETWORK_NORMAL_ALPHA=255        |  Disconnected network icon transparency.|
-| NETWORK_ACTIVE_ALPHA=255        |  Connected network icon transparency.|
+| NETWORK_NORMAL=53422e           |  Disconnected network icon recolour .|
+| NETWORK_ACTIVE=000000           |  Connected network icon recolour .|
+| NETWORK_NORMAL_ALPHA=255        |  Disconnected network icon recolour transparency.|
+| NETWORK_ACTIVE_ALPHA=255        |  Connected network icon recolour transparency.|
 
 ### Section [bluetooth]
 
@@ -131,35 +137,42 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| ALIGNMENT=1                  |  Regarding all navigation buttons in the footer. 0 = aligned to the left, 1 = central aligned, 2 = aligned to the right. Anything above is a secret.|
-| NAV_A_GLYPH=000000           |  The device's "A" button - icon colour. |
-| NAV_A_GLYPH_ALPHA=255        |  The device's "A" button - icon transparency.|
-| NAV_A_TEXT=000000            |  Text describing the function of the "A" button - colour.|
-| NAV_A_TEXT_ALPHA=255         |  Text describing the function of the "A" button - transparency.|
-| NAV_B_GLYPH=000000           |  The device's "B" button - icon colour.|
-| NAV_B_GLYPH_ALPHA=255        |  The device's "B" button - icon transparency.|
-| NAV_B_TEXT=000000            |  Text describing the function of the "B" button - colour.|
-| NAV_B_TEXT_ALPHA=255         |  Text describing the function of the "B" button - transparency.|
-| NAV_C_GLYPH=000000           |  The device's "C" button - icon colour.|
-| NAV_C_GLYPH_ALPHA=255        |  The device's "C" button - icon transparency.|
-| NAV_C_TEXT=000000            |  Text describing the function of the "C" button - colour.|
-| NAV_C_TEXT_ALPHA=255         |  Text describing the function of the "C" button - transparency.|
-| NAV_X_GLYPH=000000           |  The device's "X" button - icon colour.|
-| NAV_X_GLYPH_ALPHA=255        |  The device's "X" button - icon transparency.|
-| NAV_X_TEXT=000000            |  Text describing the function of the "X" button - colour.|
-| NAV_X_TEXT_ALPHA=255         |  Text describing the function of the "X" button - transparency.|
-| NAV_Y_GLYPH=000000           |  The device's "Y" button - icon colour.|
-| NAV_Y_GLYPH_ALPHA=255        |  The device's "Y" button - icon transparency.|
-| NAV_Y_TEXT=000000            |  Text describing the function of the "Y" button - colour.|
-| NAV_Y_TEXT_ALPHA=255         |  Text describing the function of the "Y" button - transparency.|
-| NAV_Z_GLYPH=000000           |  The device's "Z" button - icon colour.|
-| NAV_Z_GLYPH_ALPHA=255        |  The device's "Z" button - icon transparency.|
-| NAV_Z_TEXT=000000            |  Text describing the function of the "Z" button - colour.|
-| NAV_Z_TEXT_ALPHA=255         |  Text describing the function of the "Z" button - transparency.|
-| NAV_MENU_GLYPH=000000        |  The device's "M/MENU" button - icon colour.|
-| NAV_MENU_GLYPH_ALPHA=255     |  The device's "M/MENU" button - icon transparency.|
-| NAV_MENU_TEXT=000000         |  Text describing the function of the "M" button - colour.|
-| NAV_MENU_TEXT_ALPHA=255      |  Text describing the function of the "M" button - transparency.|
+| ALIGNMENT=1                    |  Regarding all navigation buttons in the footer. 0 = aligned to the left, 1 = central aligned, 2 = aligned to the right. Anything above is a secret.|
+| NAV_A_GLYPH=000000             |  The device's "A" button - icon recolour . |
+| NAV_A_GLYPH_ALPHA=255          |  The device's "A" button - icon transparency.|
+| NAV_A_GLYPH_RECOLOUR_ALPHA=255 |  The device's "A" button - icon recolour transparency.|
+| NAV_A_TEXT=000000              |  Text describing the function of the "A" button - recolour .|
+| NAV_A_TEXT_ALPHA=255           |  Text describing the function of the "A" button - transparency.|
+| NAV_B_GLYPH=000000             |  The device's "B" button - icon colour.|
+| NAV_B_GLYPH_ALPHA=255          |  The device's "B" button - icon transparency.|
+| NAV_B_GLYPH_RECOLOUR_ALPHA=255 |  The device's "B" button - icon recolour transparency.|
+| NAV_B_TEXT=000000              |  Text describing the function of the "B" button - recolour .|
+| NAV_B_TEXT_ALPHA=255           |  Text describing the function of the "B" button - transparency.|
+| NAV_C_GLYPH=000000             |  The device's "C" button - icon colour.|
+| NAV_C_GLYPH_ALPHA=255          |  The device's "C" button - icon transparency.|
+| NAV_C_GLYPH_RECOLOUR_ALPHA=255 |  The device's "C" button - icon recolour transparency.|
+| NAV_C_TEXT=000000              |  Text describing the function of the "C" button - recolour .|
+| NAV_C_TEXT_ALPHA=255           |  Text describing the function of the "C" button - transparency.|
+| NAV_X_GLYPH=000000             |  The device's "X" button - icon colour.|
+| NAV_X_GLYPH_ALPHA=255          |  The device's "X" button - icon transparency.|
+| NAV_X_GLYPH_RECOLOUR_ALPHA=255 |  The device's "X" button - icon recolour transparency.|
+| NAV_X_TEXT=000000              |  Text describing the function of the "X" button - recolour .|
+| NAV_X_TEXT_ALPHA=255           |  Text describing the function of the "X" button - transparency.|
+| NAV_Y_GLYPH=000000             |  The device's "Y" button - icon colour.|
+| NAV_Y_GLYPH_ALPHA=255          |  The device's "Y" button - icon transparency.|
+| NAV_Y_GLYPH_RECOLOUR_ALPHA=255 |  The device's "Y" button - icon recolour transparency.|
+| NAV_Y_TEXT=000000              |  Text describing the function of the "Y" button - recolour .|
+| NAV_Y_TEXT_ALPHA=255           |  Text describing the function of the "Y" button - transparency.|
+| NAV_Z_GLYPH=000000             |  The device's "Z" button - icon colour.|
+| NAV_Z_GLYPH_ALPHA=255          |  The device's "Z" button - icon transparency.|
+| NAV_Z_GLYPH_RECOLOUR_ALPHA=255 |  The device's "Z" button - icon recolour transparency.|
+| NAV_Z_TEXT=000000              |  Text describing the function of the "Z" button - recolour .|
+| NAV_Z_TEXT_ALPHA=255           |  Text describing the function of the "Z" button - transparency.|
+| NAV_MENU_GLYPH=000000          |  The device's "M/MENU" button - icon colour.|
+| NAV_MENU_GLYPH_ALPHA=255       |  The device's "M/MENU" button - icon transparency.|
+| NAV_MENU_GLYPH_RECOLOUR_ALPHA=255 |  The device's "M/MENU" button - icon recolour transparency.|
+| NAV_MENU_TEXT=000000           |  Text describing the function of the "M" button - recolour .|
+| NAV_MENU_TEXT_ALPHA=255        |  Text describing the function of the "M" button - transparency.|
 
 ### Section [list]
 For all list item backgrounds, gradients can be applied. L-R = 0-255.
@@ -175,10 +188,10 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_DEFAULT_INDICATOR_ALPHA=0        |  Unselected list item " | " indicator transparency.|
 | LIST_DEFAULT_TEXT=53422e              |  Unselected list item text colour.|
 | LIST_DEFAULT_TEXT_ALPHA=255           |  Unselected list item text transparency.|
-| LIST_DEFAULT_GLYPH_PAD_LEFT           |  List item glyph are horizontally centered to each other.  This adjusts the padding in pixels to left of the list item glyph.|
-| LIST_DEFAULT_GLYPH_ALPHA              |  List item glyph transparency|
-| LIST_DEFAULT_GLYPH_RECOLOUR           |  Unselected list item glyph recolour.|
-| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA     |  Transparency of this colour.|
+| LIST_DEFAULT_GLYPH_PAD_LEFT=19        |  Adjusts the padding in pixels from the left side of the list item to the center of the glyph.<br><br>![](assets/images/LIST_DEFAULT_GLYPH_PAD_LEFT.png)|
+| LIST_DEFAULT_GLYPH_ALPHA=255          |  List item glyph transparency|
+| LIST_DEFAULT_GLYPH_RECOLOUR=53422e    |  Unselected list item glyph recolour.|
+| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255 |  Transparency of this colour.|
 | LIST_DISABLED_TEXT=a78b65             |  Unavailable list item text colour.|
 | LIST_DISABLED_TEXT_ALPHA=255          |  Unavailable list item text transparency.|
 | LIST_FOCUS_BACKGROUND=000000          |  Selected list item main background colour.|
@@ -189,8 +202,9 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_FOCUS_INDICATOR_ALPHA=255        |  Selected list item " | " indicator transparency.|
 | LIST_FOCUS_TEXT=5d0014                |  Selected list item text colour.|
 | LIST_FOCUS_TEXT_ALPHA=255             |  Selected list item text transparency.|
-| LIST_FOCUS_GLYPH_RECOLOUR             |  Selected list item glyph recolour.|
-| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA       |  Transparency of this colour.|
+| LIST_FOCUS_GLYPH_ALPHA=255            |  Selected List item glyph transparency.|
+| LIST_FOCUS_GLYPH_RECOLOUR=5d0014      |  Selected list item glyph recolour.|
+| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255   |  Transparency of this colour.|
 
 ### Section [image_list]
 Alters properties of list images. Unconfirmed if this has an effect.
@@ -321,12 +335,12 @@ This relates to the passcode/lock screen when enabled in settings.
 | ANIMATED_BACKGROUND=0         |  Do you want to use a .gif file in /wall? 0 is no. 1 is yes.|
 | CONTENT_SIZE_TO_CONTENT=0     | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.|
 | CONTENT_ALIGNMENT=0           | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.  |
-| CONTENT_ITEM_COUNT=13        | Number of list items displayed in content panel. This setting along with CONTENT_HEIGHT to determine the height of each item. For example if CONTENT_HEIGHT = 300 and CONTENT_ITEM_COUNT = 10 then each item will be 30px tall. The first 28px will be used to display the item followed by a 2px gap. <br> **Note:** This field has a minimum value of 5 and a maximum value of 13. The value set here also controls paging up and down in the list.|
+| CONTENT_ITEM_COUNT=13         | Number of list items displayed in content panel. This setting along with CONTENT_HEIGHT to determine the height of each item. For example if CONTENT_HEIGHT = 300 and CONTENT_ITEM_COUNT = 10 then each item will be 30px tall. The first 28px will be used to display the item followed by a 2px gap. <br> **Note:** This field has a minimum value of 5 and a maximum value of 13. The value set here also controls paging up and down in the list.|
 | CONTENT_PADDING_LEFT=0        |  Number of pixels from screen left to list items. Commonly on 0.|
-| CONTENT_PADDING_TOP=0        |  Number of pixels from screen top to list items.  <br> **Note:** By default the list is already 44px from the top in order for it to be past the header.  If you want the content list to take up the full screen you can use a value of -44 here.|
-| CONTENT_HEIGHT=392           |  Adjust the height of the content panel by pixels.  (Minimum value = 100 Maximum value = Device Screen Height) |
+| CONTENT_PADDING_TOP=0         |  Number of pixels from screen top to list items.  <br> **Note:** By default the list is positioned based on header height + 2px. With a default header height of 42px the list will start 44px from the top in order for it to be past the header.  If you want the content list to take up the full screen you can use a value of -44 here.  If your header height is larger you would need to adjust accordingly.|
+| CONTENT_HEIGHT=392            |  Adjust the height of the content panel by pixels.  (Minimum value = 100 Maximum value = Device Screen Height) |
 | CONTENT_WIDTH=640             |  Adjust the width of list item content by horizontal pixels.|
-| NAVIGATION_TYPE=0             |  0 for vertical (up/down) navigation. 1 for horizontal (left/right).|
+| NAVIGATION_TYPE=0             |  0: For vertical (up/down) navigation. <br>1: For horizontal (left/right). <br>2: For launch menu with two rows of 4 icons. (left/right/up/down)<br>3: For launch menu with two rows of icons. Top row has 3 icons and bottom row has 5 icons. (left/right/up/down) <br>4: Same as 2 except that left/right wraps around on the active row. <br>5: Same as 3 except that left/right wraps around on the active row.  |
 | STATIC_ALIGNMENT=0            |  Custom images that can outside of wallpapers. See below for details.|
 | OVERLAY_IMAGE=0               |  Do you want to use an overlay .png image? 0 is no. 1 is yes.|
 
