@@ -14,7 +14,7 @@ Download the latest image from one of the following channels.
 [Download here](https://dl.muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 # Extracting
-You will need either [https://7-zip.org](7-Zip) or equivalent to extract the image (`.img`) file.
+You will need either [7-Zip](https://7-zip.org) or equivalent to extract the image (`.img`) file.
 Using your favourite imaging program you can then flash the image to your SD card.
 **There is no need to format first**
 

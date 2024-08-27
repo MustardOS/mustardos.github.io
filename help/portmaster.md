@@ -8,7 +8,7 @@ has_children: false
 ---
 
 ## PortMaster in muOS
-Massive thanks to @kloptops, @Cebion and the rest of the fine folks over at [https://portmaster.games](PortMaster).
+Massive thanks to @kloptops, @Cebion and the rest of the fine folks over at [PortMaster](https://portmaster.games).
 
 ## Compatibility
 Starting with muOS Beans we have full Multi-Arch `aarch64` and `amrhf` support which increases compatibility significantly!
@@ -33,4 +33,4 @@ If SD2 isn't available SD1 is used. The following example shows the relative pat
 
 ## What if a port doesn't run?the 
 Look for a `log.txt` in `/ports/<portname>` for any possible issues.  
-Head over to [https://discord.gg/SR4vbp5c3p](PortMaster Discord) and let them know!
+Head over to [PortMaster Discord](https://discord.gg/SR4vbp5c3p) and let them know!
