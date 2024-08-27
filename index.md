@@ -57,14 +57,16 @@ _tbd_
 | RG35XX SP   |
 | RG28XX      |
 
-| Coming Soon      |
-|:-----------------|
-| RG40XX           |
+| Coming Soon       |
+|:------------------|
+| RG40XX-H          |
+| RG40XX-V          |
 
-| Planned          |
-|:-----------------|
-| Trimui Smart Pro |
-| Anbernic ARC-D   |
+| Planned           |
+|:------------------|
+| MagicX XU Mini M+ |
+| Trimui Smart Pro  |
+| Anbernic ARC-D    |
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
