@@ -15,9 +15,11 @@ has_toc: false
 Starting with muOS v10. Native PICO-8 is now supported!  
 The files required to run PICO-8 natively are stored on SD1 in the /MUOS/emulator/pico8 folder.  
 In order to use native PICO-8 you'll need to place your own purchased binaries in there.  
-You will need a copy of the following files from the Raspberry Pi version:  
+You will need a copy of the following files from the **Raspberry Pi** version:  
 - pico8_64
 - pico8.dat
+
+![](assets/images/pico-8.png)
 
 For muOS v10 you need the 32bit binary.
 - pico8_dyn
