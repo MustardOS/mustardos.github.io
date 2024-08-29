@@ -17,8 +17,6 @@ muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, t
 
 {: .note }
 > Always ensure you download from our official website or supported mirrors.
->
-> Double check the SHA256 with the checksum on this
 
 ## About
 This all started out as a personal hobby project of mine and it has now grown into an awesome community which I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort. We hope that all the development we put into this CFW make it as enjoyable as we've had creating it.
@@ -48,19 +46,22 @@ _tbd_
 
 ## Supported Devices
 
-| Anbernic    |
-|:------------|
-| RG35XX OG   |
-| RG35XX PLUS |
-| RG35XX 2024 |
-| RG35XX H    |
-| RG35XX SP   |
-| RG28XX      |
+| Current              |
+|:---------------------|
+| Anbernic RG28XX      |
+| Anbernic RG35XX 2024 |
+| Anbernic RG35XX PLUS |
+| Anbernic RG35XX H    |
+| Anbernic RG35XX SP   |
 
 | Coming Soon       |
 |:------------------|
 | RG40XX-H          |
 | RG40XX-V          |
+
+| On Hiatus |
+|:----------|
+| RG35XX OG |
 
 | Planned           |
 |:------------------|
