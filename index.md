@@ -34,7 +34,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | (Re)Select Core         | Press SELECT on content  |
 | Content Root            | Press START on content   |
 | RetroArch Menu          | MENU + X                 |
-| RetroArch Close Content | Start + Select           |
+| RetroArch Close Content | Menu + Start             |
 | Fast Forward Toggle     | MENU + R1                |
 | Load State              | MENU + R2                |
 | Save State              | MENU + L2                |
