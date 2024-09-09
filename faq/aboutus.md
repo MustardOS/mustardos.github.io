@@ -9,3 +9,14 @@ has_children: false
 
 # Meet the team
 ![](assets/images/team_muos.png)
+
+## xonglebongle
+Big Cheese
+
+## antiKk
+Additional Cheese
+
+## corey
+Additional Cheese
+
+_Art by @ravenstoroses_
