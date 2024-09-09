@@ -9,6 +9,7 @@ has_children: false
 
 # Meet the team
 ![](assets/images/team_muos.png)
+_Art by @ravenstoroses_
 
 ## xonglebongle
 Big Cheese
@@ -18,5 +19,3 @@ Additional Cheese
 
 ## corey
 Additional Cheese
-
-_Art by @ravenstoroses_
