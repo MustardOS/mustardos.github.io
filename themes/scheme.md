@@ -328,11 +328,17 @@ This relates to the passcode/lock screen when enabled in settings.
 |------------------|---------------------------------------------------|
 | META_CUT=40                     |  Number of characters on each line in help/info windows before making a new one.|
 
+### Section [animation]
+
+| Setting             | Description                                       |
+|---------------------|---------------------------------------------------|
+| ANIMATION_DELAY=100 |  When ANIMATED_BACKGROUND is set to 2 (png sequence) controls the duration of each frame in milliseconds.|
+
 ### Section [misc]
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| ANIMATED_BACKGROUND=0         |  Do you want to use a .gif file in /wall? 0 is no. 1 is yes.|
+| ANIMATED_BACKGROUND=0         |  0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {programname}.{frameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting |
 | CONTENT_SIZE_TO_CONTENT=0     | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.|
 | CONTENT_ALIGNMENT=0           | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.  |
 | CONTENT_ITEM_COUNT=13         | Number of list items displayed in content panel. This setting along with CONTENT_HEIGHT to determine the height of each item. For example if CONTENT_HEIGHT = 300 and CONTENT_ITEM_COUNT = 10 then each item will be 30px tall. The first 28px will be used to display the item followed by a 2px gap. <br> **Note:** This field has a minimum value of 5 and a maximum value of 13. The value set here also controls paging up and down in the list.|
