@@ -31,13 +31,16 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Brightness              | MENU + Volume            |
 | Screenshot              | MENU + POWER             |
 | Sleep Suspend           | Hold POWER for 2 seconds |
-| (Re)Select Core         | Press SELECT on content  |
+| Safe Restart            | POWER + L1 + L2 + R1 + R2|
+| Modify Core / Governor  | Press SELECT on content  |
 | Content Root            | Press START on content   |
 | RetroArch Menu          | MENU + X                 |
 | RetroArch Close Content | Menu + Start             |
 | Fast Forward Toggle     | MENU + R1                |
-| Load State              | MENU + R2                |
-| Save State              | MENU + L2                |
+| Load State              | MENU + L2                |
+| Save State              | MENU + R2                |
+| Save State Decrement    | Menu + DPAD Left         |
+| Save State Increment    | Menu + DPAD Right        |
 | Slow Motion             | MENU + L1                |
 | Show FPS Toggle         | MENU + Y                 |
 
@@ -65,9 +68,10 @@ _tbd_
 
 | Planned           |
 |:------------------|
+| Anbernic ARC-D    |
+| GKD Bubble        |
 | MagicX XU Mini M+ |
 | Trimui Smart Pro  |
-| Anbernic ARC-D    |
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
