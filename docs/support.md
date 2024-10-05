@@ -12,7 +12,7 @@ Thank you for your interest in potentially donating or subscribing to muOS. Ever
 [Support muOS through Ko-fi](https://ko-fi.com/xonglebongle/)
 
 # Artificer
-![](assets/images/donate-artificer.jpg)
+![](assets/images/artificers.png)
 ### $6 per month
 Gain access to the muOS testing crew to preview new features and fixes before everybody else!
   * Weekly testing updates
@@ -21,7 +21,7 @@ Gain access to the muOS testing crew to preview new features and fixes before ev
 [Subscribe to the Knight tier!](https://ko-fi.com/summary/1f8db546-b1c4-460a-8071-b5c51caba440)
 
 # Knight
-![](assets/images/donate-knight.jpg)
+![](assets/images/knights.png)
 ### $9 per month
 Gain access to the exclusive testing group and test brand new content and features before anybody else! All ideas will be highly considered and may be implemented in a future update.
   * Weekly testing updates
@@ -31,7 +31,7 @@ Gain access to the exclusive testing group and test brand new content and featur
 [Subscribe to the Artificer tier!](https://ko-fi.com/summary/06452d9a-0046-42c2-8b2b-78290ef6c1ce)
 
 # Hero
-![](assets/images/donate-hero.jpg)
+![](assets/images/heroes.png)
 ### $12 per month
 Complete behind the scene access to all nightly development ramblings. Have your input fully considered into brand new not seen before programs. Help guide muOS in a unique way to improve it for everyone!
   * Nightly development exclusives
