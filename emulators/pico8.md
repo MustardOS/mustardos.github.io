@@ -12,7 +12,7 @@ has_toc: false
 
 ## PICO-8 Emulator Files
 
-Starting with muOS v10. Native PICO-8 is now supported!  
+Native PICO-8 is now supported!  
 The files required to run PICO-8 natively are stored on SD1 in the /MUOS/emulator/pico8 folder.  
 In order to use native PICO-8 you'll need to place your own purchased binaries in there.  
 You will need a copy of the following files from the **Raspberry Pi** version:  
@@ -21,6 +21,13 @@ You will need a copy of the following files from the **Raspberry Pi** version:
 
 ![](assets/images/pico-8.png)
 
+muOS by default uses the Fake-08 libretro core for PICO-8 as it doesn't require users to purchase PICO-8.
+Once you add your purchased files from Lexaloffle you'll need to set muOS to use the PICO-8 External emulator.
+- Browse to where your PICO-8 games are in muOS content explorer.
+- Press select on any of the items and change core.
+- Select ``PICO-8 (External)`` 
+
+**Legacy Instructions**
 For muOS v10 you need the 32bit binary.
 - pico8_dyn
 - pico8.dat
