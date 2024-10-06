@@ -11,9 +11,6 @@ has_toc: false
 
 # muOS 2410 BANANA
 
-{: .new}
-> That's right all, Cool Beans is now Banana!
-
 ## Download
 [Not available yet!]({{site.baseurl}}/release/progress/coolbeans)  
 ``Come back later!``
@@ -27,12 +24,12 @@ Due to recent changes with the H700 firmware this has to unfortunately be a full
 
 Apologies to those who dislike re-flashing their device constantly, however with this update which includes the new storage preference module this should no longer be a hassle to update to full images in the future!
 ## Significant Changes
+- Added Language support (thanks @Bitter_Bizarro)
 - Added PipeWire support (thanks @koolkidcorey)
   - Falls back to standard ALSA for some applications and ports
 - Added RG40XX device support
-- Added storage preference module
-  - This allows users to switch to SD2 for configurations, catalogue metadata, save games etc.
-  - This can be found in general settings
+- Added method of storing user configurable data on SD2
+  - No need to worry about data loss when reflashing
 - Analogue sticks on RG35XX-H and RG40XX no longer have snapping (thanks @thegammasqueeze)
 ## General Changes
 - Added 2x4 and 3x5 navigation icon support for main menu launcher (thanks @mehstrongbadmeh)
@@ -43,81 +40,154 @@ Apologies to those who dislike re-flashing their device constantly, however with
 - Added additional suspend power state
 - Added audio and brightness init switch
 - Added back navigation sound support
+- Added bind mount for Syncthing (thanks @bcat)
 - Added BlueMSX BIOS files
 - Added border variables to item counter
+- Added check of AXP boot_mode for charger detection on boot (thanks @bcat)
 - Added checks for RetroArch configurations and muX themes for mount preparation
+- Added common library to handle gamepad inputs (thanks @bcat)
 - Added compressed content support for mupen64plus emulator (thanks @bcat and @voodatari)
 - Added counter visual options to global configuration
 - Added CPU core count to device configuration
+- Added default values for config, friendly folder option, extra network dialogue, and help messages
+- Added device serial number for stable hostname (thanks @bcat)
 - Added device specific suspend script
 - Added Discord Rich Presence support files (thanks @koolkidcorey)
+- Added DraStic Steward saves to migrate script (thanks @antiKk)
 - Added extra padding variables to item counter
+- Added extra theme engine parameters for header elements
 - Added fade to item counter
+- Added fade to screen message when adding or removing favourites (thanks @Bitter_Bizarro)
 - Added file counter to context explorer (thanks @bitter_bizarro)
 - Added framebuffer virtual terminal support for archive and task modules
+- Added friendly name look up to volume label (thanks @Bitter_Bizarro)
 - Added frontend HDMI support for devices with rotated displays (thanks @ajmandourah)
+- Added full support for ARMHF Pipewire (massive thanks to both @corey and @Duncanyoyo1)
+- Added gdb and strace binaries (thanks @bcat)
+- Added generic language translation support
+- Added HDMI audio output switch
 - Added home permission correction
+- Added hotkeys for RGB control (thanks @bcat and @JanTrueno)
+- Added idle display and sleep function
 - Added item content to global configuration
 - Added item counter to visual options for file/folder visibility (thanks @bitter_bizarro)
+- Added language fallback font support (thanks @Bitter_Bizarro)
 - Added LED control support to RG40XX (thanks @thegammasqueeze and @koolkidkorey)
+- Added memory of content item index on core/governor select
+- Added method for manually doing ellipse (thanks @Bitter_Bizarro)
+- Added method to read preview.png directly in theme archives
 - Added method to sync themes from SD1 to storage preference (thanks @antikk)
+- Added MTP support to USB settings (thanks @bcat)
+- Added muhotkey to monitor key combos and idle time (thanks @bcat)
 - Added multiple character string removal function
+- Added muX force refresh on HDMI plug
+- Added muX method of loading base Noto Sans fonts via external libraries (thanks @Bitter_Bizarro)
 - Added mux_audio_source to func.sh (thanks @duncanyoyo1)
+- Added network connectivity verification
 - Added network operating state variable
+- Added network profile loader, storage preference, and global support
 - Added new framebuffer switch to some external emulators
+- Added new input library (thanks @bcat)
+- Added new option for toggling whether root drive is displayed in content explorer title (thanks @Bitter_Bizarro)
+- Added new secret - Be the first one to find it for a prize! (Did you find it? DM @xonglebongle)
+- Added new settings for box art alignment (thanks @Bitter_Bizarro)
 - Added new shutdown and reboot method (thanks @bcat)
 - Added OpenBOR support (thanks @antikk)
+- Added partition label retrieval for content root title
+- Added password encryption for profile save without connect first
+- Added power settings to own module
 - Added power state global variable
 - Added power state in advanced settings
 - Added PPSSPP graphics backend fix
+- Added random background support for themes
+- Added reusable input handling library (thanks @bcat)
 - Added RG40XX N64 support (thanks @koolkidcorey)
+- Added RGB Controller app and theme RGB checks (thanks @JanTrueno)
+- Added screen refresh before joystick task and general common functions
 - Added scrolling text to context explorer (thanks @bitter_bizarro)
 - Added secondary storage directory prep
 - Added separate font support for panels with dynamic elements (thanks @bitter_bizarro)
 - Added setting variable init on startup
+- Added startup/shutdown/sleep rumble option to advanced settings
 - Added storage preference link to frontend launcher
 - Added storage preference to global config
 - Added storage preference to launch scripts
 - Added task to clear SFTPGO Keys (thanks @antikk)
 - Added text separator option to item counter
+- Added theme overrides to allow the user to override FONT_LIST_PAD_RIGHT and CONTENT_WIDTH of a theme (thanks @Bitter_Bizarro)
+- Added theme support for placeholder box, preview art, and disabling background animations
+- Added title setting for displaying root drive (thanks @Bitter_Bizarro)
 - Added unset variables to external emulators
+- Added user configurable menu acceleration in advanced settings
 - Added verbose key to global configuration
 - Added verbose messages to junk cleanup kit
 - Added WASM-4 libretro configuration (thanks @joyrider3774)
+- Added zero IP check on network connection
 - Added zxs to `assign.json` (thanks @birdie)
 - Adjusted content counter theme values
 - Adjusted default theme with item counter variables
+- Adjusted screen refresh, wait, and joystick task for responsiveness (thanks @Bitter_Bizarro)
 - Adjusted udevadm settle message
 - Adjusted visual options module for UI builder
+- Changed AXIS max value to signed to fix comparisons (thanks @bcat)
+- Changed button swap language to retro/modern
 - Changed item counter visual options icon
 - Changed screen suspend to screen blank
+- Changed theme engine to auto center items in header vertically (thanks @Bitter_Bizarro)
 - Changed to network state variable for network connection
+- Clear network info on scan selection
+- Clear wpa supplicant configuration on network disable
+- Core assignment per directory has been fixed
+- Decouple screen update rate from menu acceleration (thanks @bcat)
+- Disabled displaying help menu when screenshot is taken (thanks @Bitter_Bizarro)
+- Disabled framebuffer blanking if HDMI is currently being used
+- Disabled HDMI on the RG28XX
 - Disabled mouse/XY device for all mame cores (thanks @duncanyoyo1)
+- Disabled network changes and scanning while connected
 - Enabled power sleep triggers after first init finish
 - Fixed 2048 aspect ratio (thanks @antikk)
+- Fixed ARMHF Pipewire (thanks @corey)
+- Fixed awake brightness from idle sleep state
 - Fixed cave story bios location
 - Fixed checking for sleep method
+- Fixed content explorer launch as device startup
 - Fixed debounce power press after wake from suspend (thanks @bcat)
+- Fixed default colour temperature value
+- Fixed device board checking, remaps, graphical issues, and info text in Content Explorer
+- Fixed DPAD switch on close content, charger boot messages, and various control timings
 - Fixed drastic steward to use storage preference path for save states
+- Fixed DS-Steward and 32-Bit external port audio issues
 - Fixed external scummvm save file location
 - Fixed extra trailing spaces in assign.json file names (thanks @bcat)
 - Fixed favourite and history loading from SD2
 - Fixed favourite and history size 0 deletion
+- Fixed friendly folder setting save/load (thanks @bcat)
 - Fixed garbled framebuffer on PPSSPP load
+- Fixed governor auto select to choose default system governor
 - Fixed image preview using wrong setting for radius
 - Fixed image refresh routine on content explorer start
 - Fixed image_list_radius only applying the radius to the background and not the image itself
+- Fixed issue with catalogue text files not showing for games that haven't been launched at least once (thanks @Bitter_Bizarro)
+- Fixed issue with content explorer items scrolling vertically (thanks @Bitter_Bizarro)
+- Fixed issue with preview images for themes not displaying due to LVGL image cache (thanks @Bitter_Bizarro)
+- Fixed issue with UI count in muxvisual (thanks @Bitter_Bizarro)
 - Fixed item counter foreground priority
 - Fixed last selection for muxplore (thanks @bitter_bizarro)
 - Fixed library paths for drastic-steward
 - Fixed mali gpu kernel mode loading
+- Fixed message box horizontal scrolling issue
 - Fixed missing footer glyphs for muxplore (thanks @bitter_bizarro)
+- Fixed muxtester to be compatible with hall sticks (thanks @bcat)
+- Fixed navigation issue when leaving on connect in network manager
 - Fixed navigation speed issues for muxplore (thanks @bitter_bizarro)
 - Fixed navigation wrap around for themes using PNG
 - Fixed network interface variables
+- Fixed network progress, placeholder image path, sleep/resume bug, and screen animation timing
 - Fixed network status comparison
+- Fixed ondemand reset (thanks @Duncanyoyo1)
 - Fixed padding issue where values where not aligned with labels (thanks @bitter_bizarro)
 - Fixed pipewire node ID retrieval
+- Fixed PPSSPP 28XX Menu/Select Binding (thanks @antiKk)
 - Fixed prboom bios location
 - Fixed RetroArch device controls (thanks @koolkidcorey)
 - Fixed RetroArch hangs and delays on content close during sleep timeout (thanks @bcat)
@@ -125,16 +195,25 @@ Apologies to those who dislike re-flashing their device constantly, however with
 - Fixed screenshot storage
 - Fixed scripts still using old "mp3play" process
 - Fixed scrolling text for muxplore (thanks @bitter_bizarro)
+- Fixed signed/unsigned comparison bug with device.INPUT.AXIS (thanks @bcat)
+- Fixed Sleep Shutdown w/ verbose messages enabled (thanks @bcat)
 - Fixed sorting of history list entries (thanks @bcat)
 - Fixed static art delay for muxplore (thanks @bitter_bizarro)
 - Fixed storage preference common variables
 - Fixed storage preference locations
 - Fixed storage preference previous selection
 - Fixed string comparison function (thanks @bcat)
+- Fixed strings in incorrect translation sections
+- Fixed subdirectory start path for core and governor assign
 - Fixed theme module to load from storage preference
 - Fixed toolkit tasks with storage preference
 - Forced 32 bit ports to use ALSA (thanks @koolkidcorey)
 - Guard verbose shutdown output by advanced setting (thanks @bcat)
+- Humongous variable and script backend changes to help with future development and application creation
+- Low Battery Indicator - You can now adjust at what value the red LED should flash!
+- Merged storage detect functions and optimised UI counts
+- Migrated input.sh event loops to use muhotkey (thanks @bcat)
+- Minor tweaks to default emulator configs (thanks @bcat)
 - Modified analogue values for new non-snap kernel
 - Modified archive process to use virtual terminal
 - Modified auto-assign with simplified assign structure (thanks @Matsyir)
@@ -147,18 +226,29 @@ Apologies to those who dislike re-flashing their device constantly, however with
 - Modified task scripts to use virtual terminal
 - Modified theme engine to support more element customisation (thanks @bitter_bizarro)
 - Modified theme loader to fallback to internal theme
+- Modify RetroArch config to reflect modern/retro controller style (thanks @antiKk)
 - Moved catalogue and favourite storage to global variable
+- Moved general setting power options to own module
 - Moved reboot and shutdown routine to frontend script
+- Moved retroarch.device.cfg out of retroarch mount (thanks @bcat)
 - Moved suspend script to global scripts
 - Moved to rsync for first init move
+- New Screen Timing - Huge thanks to @shauninman for finding out correct screen timings for these devices
 - Optimised catalogue folder creation
 - Optimised Discord Rich Presence method
 - Optimised notation string variable
 - Optimised pattern skipping routine by loading all into memory first
 - Optimised `assign.json` file to reduce character comparison
+- Optimise epoll_wait timeout to save CPU (thanks @bcat)
+- Optimise input loop further & port more apps (thanks @bcat)
+- Optimise password encoding script
+- Overhauled menu acceleration to improve Hall-effect stick compatibility (thanks @bcat)
+- Reduced configuration axis value to single point of entry
 - Refactored how the status bar is displayed and aligned to the bottom (thanks @bitter_bizarro)
+- Relocated `skip.ini` into config folder so that it can be stored on SD2 (thanks @Bitter_Bizarro)
 - Removed device change from configuration
 - Removed device firmware binaries
+- Removed duplicated refresh, help header, unused code, and short menu input
 - Removed enabled variable from item counter
 - Removed H specific mupen64plus files (thanks @koolkidcorey)
 - Removed more hardcoded path variables
@@ -168,17 +258,38 @@ Apologies to those who dislike re-flashing their device constantly, however with
 - Removed ping script for frontend network status
 - Removed RetroArch from system information
 - Removed touch notification displayed when swap screen (thanks @trngaje)
+- Removed translation fonts as they are no longer required
+- Removed useless health status on charging screen
 - Removed wget from Pico-8 emulator pack
 - Removed whitespace from `assign.json` keys (thanks @Matsyir)
 - Renamed item counter element name
 - Renamed power in general settings
+- Replaced drastic with aarch64 build (thanks @antiKk and @trngaje)
 - Replaced launch `pkill` to `killall` for 32-bit ports
+- Replaced sdljoytest with sdl2-jstest (thanks @bcat)
+- Reverted GIF timing that would slow down old themes (thanks @Bitter_Bizarro)
 - Set dpad function to digital on PPSSPP application exit (thanks @duncanyoyo1)
+- Set gpSP RTC enabled by default (thanks @antiKk)
 - Sorted `assign.json` by key value
+- Speaking of settings, there are a whole bunch of exciting new options to check out!
+- Split controller map into its own script and added to tweak.sh (thanks @antiKk)
+- Split PCE/PCECD, SG-1000, retroarch.cfg, and tidied general configurations
+- Startup device storage mounting has been improved for faster boot times (thanks @bcat)
 - Switched to mpg123 for factory init sound
+- This also adds full language based PNG and Font support
+- This also fixes the weird RG35XX-SP 120hz screen timing!
+- This is a rename of drastic-steward as you may have known it as.  We just dropped the "steward" part.
+- This will flash the red LED every 10 seconds for 0.5 seconds at whatever value you set (Default is 25)
+- Translation updates and fixes, updated default theme
+- Updated and fixed RA device controls (thanks @antiKk)
+- Updated default theme for Banana (thanks @Lmarcomiranda)
+- Updated default theme with HDMI Audio Output glyph
+- Updated favourites button to toggle between adding and removing favourites (thanks @Bitter_Bizarro)
 - Updated init.d scripts with proper start/stop actions (thanks @bcat)
 - Updated input testing to use device values
 - Updated menus to use theme settings (thanks @bitter_bizarro)
+- Updated migrate script for external emulators (thanks @antiKk)
+- Updated RetroArch cores (thanks @antiKk)
 - Updated secret mode
 - Updated static menus to scroll (thanks @bitter_bizarro)
 - Updated sync_storage.sh to accept arguments (thanks @antikk)
