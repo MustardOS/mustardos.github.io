@@ -15,8 +15,19 @@ has_toc: false
 | Libretro Core | scummvm_libretro.so | 2.9.0-git |
 | Standalone    | ext-scummvm         | 2.8.1 |
 
-{: .warning}
-> Please consider ScummVM Standalone support to be experimental!
+{: .new}
+> Starting with muOS Banana ScummVM Standalone is the default.
+
+## ScummVM (Standalone) Keys _(WIP)_
+
+| Button                        | Action             |
+|:------------------------------|:-------------------|
+| Left Stick                    | Move virtual mouse |
+| DPAD (Stickless devices only) | Move virtual mouse |
+| A                             | Interact           |
+| Y                             | Skip Cutscene      |
+| Select                        | Virtual Keyboard   |
+| Start                         | Menu               |
 
 ## Where should I put my games?
 ScummVM game files should all exist in a sub-directory of your main ScummVM folder inside your muOS roms folder.  
