@@ -12,7 +12,7 @@ has_toc: false
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
-| Libretro Core | scummvm_libretro.so | 2.8.0 |
+| Libretro Core | scummvm_libretro.so | 2.9.0-git |
 | Standalone    | ext-scummvm         | 2.8.1 |
 
 {: .warning}
@@ -53,8 +53,5 @@ So simply rename that folder to `.Day of the Tentacle`
 ```
 
 ## Known Issues with ScummVM Standalone
-- muOS hotkeys don't function
-- Can't adjust volume
-- Can't take screenshots
-- Can't adjust brightness
-- Analogue sticks don't function
+- Native mouse movement for the DPAD isn't working. For now we're leveraging muOS analogue<>dpad swap functionality for stickless devices.
+- Menu cursor in Grim Fandango is invisible. This can be fixed by forcing the Software renderer, but performance is much worse.
