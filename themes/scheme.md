@@ -62,7 +62,9 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| PADDING_RIGHT=47             |  Number of pixels from the right side of the screen to the battery icon.|
+| ALIGN=1          | Alignment of header icons<br>0 = Left<br>1 = Right<br>2 = Center<br>3 = Icons spaced evenly across header<br>4 = icons evenly distributed with equal space around them<br>5 = First icon aligned left last icon aligned right all other icons evenly distributed |
+| PADDING_LEFT=0   |  Number of pixels of space to add to left side of the header icons.  |
+| PADDING_RIGHT=0  |  Number of pixels of space to add to right side of the header icons.  |
 
 ### Section [battery]
 
@@ -95,11 +97,13 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 ### Section [date]
 
-| Setting          | Description                                       |
-|------------------|---------------------------------------------------|
-| DATETIME_TEXT=000000        |  Time text colour.|
-| DATETIME_ALPHA=255          |  Time text transparency.|
-| PADDING_LEFT=49             |  Number of pixels from the left side of the screen to the time text.|
+| Setting                | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| DATETIME_TEXT=000000   |  Time text colour.                                                          |
+| DATETIME_ALPHA=255     |  Time text transparency.                                                    |
+| DATETIME_ALIGN=1       |  Alignment of time text<br>0 = Auto<br>1 = Left<br>2 = Center<br>3 = Right  |
+| PADDING_LEFT=0         |  Number of pixels of space to add to left side of the time text.            |
+| PADDING_RIGHT=0        |  Number of pixels of space to add to right side of the time text.           |
 
 ### Section [footer]
 
@@ -113,13 +117,16 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 
 ### Section [header]
 
-| Setting          | Description                                       |
-|------------------|---------------------------------------------------|
-| HEADER_HEIGHT=42                |  Adjust the height of the header by pixels.|
-| HEADER_BACKGROUND=000000        |  Header area/background colour.|
-| HEADER_BACKGROUND_ALPHA=0       |  Header area/background transparency.|
-| HEADER_TEXT=000000              |  Header text colour, not including time text.|
-| HEADER_TEXT_ALPHA=255           |  Header text transparency, not including time text.|
+| Setting                    | Description                                       |
+|----------------------------|---------------------------------------------------|
+| HEADER_HEIGHT=42           |  Adjust the height of the header by pixels.|
+| HEADER_BACKGROUND=000000   |  Header area/background colour.|
+| HEADER_BACKGROUND_ALPHA=0  |  Header area/background transparency.|
+| HEADER_TEXT=000000         |  Header text colour, not including time text.|
+| HEADER_TEXT_ALPHA=255      |  Header text transparency, not including time text.|
+| HEADER_TEXT_ALIGN=2        |  Alignment of header title text<br>0 = Auto<br>1 = Left<br>2 = Center<br>3 = Right |
+| PADDING_LEFT=0             |  Number of pixels of space to add to left side of the title text. |
+| PADDING_RIGHT=0            |  Number of pixels of space to add to right side of the title text. |
 
 ### Section [help]
 
@@ -326,13 +333,20 @@ This relates to the passcode/lock screen when enabled in settings.
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| META_CUT=40                     |  Number of characters on each line in help/info windows before making a new one.|
+| META_CUT=40      |  Number of characters on each line in help/info windows before making a new one.|
+
+### Section [animation]
+
+| Setting             | Description                                       |
+|---------------------|---------------------------------------------------|
+| ANIMATION_DELAY=100 |  When ANIMATED_BACKGROUND is set to 2 (png sequence) controls the duration of each frame in milliseconds.|
 
 ### Section [misc]
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| ANIMATED_BACKGROUND=0         |  Do you want to use a .gif file in /wall? 0 is no. 1 is yes.|
+| ANIMATED_BACKGROUND=0         |  0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {programname}.{frameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting |
+| RANDOM_BACKGROUND=0           | If set to 1 randomly select background image based on PNG sequence.  Uses the naming convention {programname}.{Index}.png for example to have the background for muxlaunch randomly selected you would name the images: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png...  |
 | CONTENT_SIZE_TO_CONTENT=0     | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.|
 | CONTENT_ALIGNMENT=0           | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.  |
 | CONTENT_ITEM_COUNT=13         | Number of list items displayed in content panel. This setting along with CONTENT_HEIGHT to determine the height of each item. For example if CONTENT_HEIGHT = 300 and CONTENT_ITEM_COUNT = 10 then each item will be 30px tall. The first 28px will be used to display the item followed by a 2px gap. <br> **Note:** This field has a minimum value of 5 and a maximum value of 13. The value set here also controls paging up and down in the list.|
