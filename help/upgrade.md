@@ -10,7 +10,7 @@ has_children: false
 ## Requirements
 - This guide is designed for people running muOS **Baked Beans**.
 - Any other version is not supported!
-- You **must** be using a 2 SD card setup.
+- To use the migrate script you **must** be using a 2 SD card setup.
 
 ## Can I directly upgrade over the top of muOS Baked Beans?
 Unfortunately no.
