@@ -8,7 +8,7 @@ has_children: false
 ---
 
 # Download
-[File]("https://github.com/antiKk/muOS-docs/raw/refs/heads/banana/help/assets/files/Migrate Script Installer.zip")
+[File](https://github.com/antiKk/muOS-docs/raw/refs/heads/banana/help/assets/files/Migrate_Script_Installer.zip)
 
 
 
