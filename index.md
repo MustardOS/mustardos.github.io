@@ -64,11 +64,8 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Anbernic RG35XX PLUS |
 | Anbernic RG35XX H    |
 | Anbernic RG35XX SP   |
-
-| Coming Soon       |
-|:------------------|
-| RG40XX-H          |
-| RG40XX-V          |
+| Anbernic RG40XX-H    |
+| Anbernic RG40XX-V    |
 
 | On Hiatus |
 |:----------|
@@ -77,7 +74,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Planned           |
 |:------------------|
 | Anbernic ARC-D    |
-| GKD Bubble        |
+| Game Kiddy Bubble |
 | MagicX XU Mini M+ |
 | Trimui Smart Pro  |
 
