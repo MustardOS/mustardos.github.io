@@ -42,6 +42,19 @@ To faciliate this migration we have prepared the following script which can be i
 - Once completed, ensure once more you have backed up your data and turn off your console.
 - Flash muOS Banana to an SD card, leaving your old SD2 inserted.
 
+## What does it migrate to SD2?
+The migrate script will **copy** (not move) the following to SD2 into a location usable by muOS Banana
+The script also exists in Banana and is used to move to a 2 SD Card setup.
+- BIOS
+- Catalogue (Artwork)
+- Config (Retroarch core config/overrides)
+- Content (Core assignment, history, favourites) (Not applicable to Baked Beans)
+- Languages (Not applicable to Baked Beans)
+- Music
+- Name (Not applicaple to Baked Beans)
+- PICO-8 Files
+- Saves (Drastic-Steward, Retroarch, OpenBOR, PPSSPP)
+
 ## Known Issues
 - DraStic saves are not migrated as we only have DraStic-Steward in muOS Banana
 - Themes are not migrated due to theme changes in muOS Banana
