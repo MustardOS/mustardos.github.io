@@ -44,8 +44,16 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Slow Motion             | MENU + L1                |
 | Show FPS Toggle         | MENU + Y                 |
 
-## Screenshots
-_tbd_
+## RG40XX-H LED Hotkeys
+
+| Type                    | Control                  |
+|:------------------------|:-------------------------|
+| Change Mode             | MENU + R3                |
+| Increase Brightness     | MENU + Right Stick Up    |
+| Decrease Brightness     | MENU + Right Stick Down  |
+| Previous Colour         | MENU + Right Stick Left  |
+| Next Colour             | MENU + Right Stick Right |
+
 
 ## Supported Devices
 

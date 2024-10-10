@@ -24,6 +24,7 @@ has_toc: false
 |:------------------------------|:-------------------|
 | Left Stick                    | Move virtual mouse |
 | DPAD (Stickless devices only) | Move virtual mouse |
+| R1                            | Slow Virtual Mouse |
 | A                             | Interact           |
 | Y                             | Skip Cutscene      |
 | Select                        | Virtual Keyboard   |
