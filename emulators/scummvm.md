@@ -12,11 +12,23 @@ has_toc: false
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
-| Libretro Core | scummvm_libretro.so | 2.8.0 |
+| Libretro Core | scummvm_libretro.so | 2.9.0-git |
 | Standalone    | ext-scummvm         | 2.8.1 |
 
-{: .warning}
-> Please consider ScummVM Standalone support to be experimental!
+{: .new}
+> Starting with muOS Banana ScummVM Standalone is the default.
+
+## ScummVM (Standalone) Keys _(WIP)_
+
+| Button                        | Action             |
+|:------------------------------|:-------------------|
+| Left Stick                    | Move virtual mouse |
+| DPAD (Stickless devices only) | Move virtual mouse |
+| R1                            | Slow Virtual Mouse |
+| A                             | Interact           |
+| Y                             | Skip Cutscene      |
+| Select                        | Virtual Keyboard   |
+| Start                         | Menu               |
 
 ## Where should I put my games?
 ScummVM game files should all exist in a sub-directory of your main ScummVM folder inside your muOS roms folder.  
@@ -53,8 +65,5 @@ So simply rename that folder to `.Day of the Tentacle`
 ```
 
 ## Known Issues with ScummVM Standalone
-- muOS hotkeys don't function
-- Can't adjust volume
-- Can't take screenshots
-- Can't adjust brightness
-- Analogue sticks don't function
+- Native mouse movement for the DPAD isn't working. For now we're leveraging muOS analogue<>dpad swap functionality for stickless devices.
+- Menu cursor in Grim Fandango is invisible. This can be fixed by forcing the Software renderer, but performance is much worse.

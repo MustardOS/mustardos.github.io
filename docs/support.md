@@ -18,7 +18,7 @@ Gain access to the muOS testing crew to preview new features and fixes before ev
   * Weekly testing updates
   * Special Discord access
 
-[Subscribe to the Knight tier!](https://ko-fi.com/summary/1f8db546-b1c4-460a-8071-b5c51caba440)
+[Subscribe to the Artificer tier!](https://ko-fi.com/summary/06452d9a-0046-42c2-8b2b-78290ef6c1ce)
 
 # Knight
 ![](assets/images/knights-small.png)
@@ -28,7 +28,7 @@ Gain access to the exclusive testing group and test brand new content and featur
   * Your name on the credits screen
   * Special Discord access
 
-[Subscribe to the Artificer tier!](https://ko-fi.com/summary/06452d9a-0046-42c2-8b2b-78290ef6c1ce)
+[Subscribe to the Knight tier!](https://ko-fi.com/summary/1f8db546-b1c4-460a-8071-b5c51caba440)
 
 # Hero
 ![](assets/images/heroes-small.png)

@@ -2,7 +2,7 @@
 layout: default
 title: muOS Structure
 permalink: /help/structure
-nav_order: 4
+nav_order: 5
 parent: Help
 has_children: false
 ---

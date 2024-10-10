@@ -16,12 +16,11 @@ has_toc: false
 | Standalone    | ext-mupen?         | TBD |
 
 ## Mupen Standalone Keys
-
-| Button             | Action             |
-|:-------------------|:-------------------|
-| Menu (F) + DPAD Right (Hold) | Fast Forward |
-| Menu (F) + Y | Save State |
-| Menu (F) + X | Load State |
-| Menu (F) + DPAD Up | Cycle Save State Slot |
-| Menu (F) + A | Restart Game |
-| Menu (F) + Start | Quit Mupen64 | 
+| Type                    | Control                  |
+|:------------------------|:-------------------------|
+| Fast Forward Toggle     | MENU + R1                |
+| Load State              | MENU + L2                |
+| Save State              | MENU + R2                |
+| Save State Cycle        | Menu + DPAD Right        |
+| Restart Game            | MENU + A                 |
+| Quit Mupen64            | MENU + Start             |
