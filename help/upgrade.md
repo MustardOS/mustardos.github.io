@@ -24,8 +24,8 @@ Starting with muOS Banana you can store saves, configs, artwork, bios and more o
 To faciliate this migration we have prepared the following script which can be installed using the Archive Manager in muOS Baked Beans.
 
 {: .warning}
-> While we do our best to ensure this script works correctly, **please backup** any data you do not want to lose!
-> Use of this script is at your own risk!
+> While we do our best to ensure this script works correctly, **please backup** any data you do not want to lose!  
+> Use of this script is at your own risk!  
 > The Migrate Script **Does not** remove any data from SD1
 
 ### Download
