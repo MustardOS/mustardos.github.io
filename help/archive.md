@@ -2,7 +2,7 @@
 layout: default
 title: Archive Manager
 permalink: /help/archive
-nav_order: 3
+nav_order: 4
 parent: Help
 has_children: false
 ---

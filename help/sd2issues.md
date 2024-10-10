@@ -2,7 +2,7 @@
 layout: default
 title: Issue with SD2
 permalink: /help/sd2issues
-nav_order: 5
+nav_order: 6
 parent: Help
 has_children: false
 ---

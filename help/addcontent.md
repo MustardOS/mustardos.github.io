@@ -2,7 +2,7 @@
 layout: default
 title: Add Content
 permalink: /help/addcontent
-nav_order: 2
+nav_order: 3
 parent: Help
 has_children: false
 ---

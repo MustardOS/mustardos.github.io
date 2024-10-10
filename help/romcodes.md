@@ -2,7 +2,7 @@
 layout: default
 title: ROM Codes
 permalink: /help/romcodes
-nav_order: 9
+nav_order: 10
 parent: Help
 has_children: false
 ---
