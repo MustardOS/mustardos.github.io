@@ -25,8 +25,8 @@ To faciliate this migration we have prepared the following script which can be i
 
 {: .warning}
 > While we do our best to ensure this script works correctly, **please backup** any data you do not want to lose!  
-> Use of this script is at your own risk!  
-> The Migrate Script **Does not** remove any data from SD1
+> **Use of this script is at your own risk!**  
+> The Migrate Script **does not** remove any data from SD1
 
 ### Download
 [Migrate_Script_Installer.zip](https://github.com/antiKk/muOS-docs/raw/refs/heads/banana/help/assets/files/Migrate_Script_Installer.zip)
