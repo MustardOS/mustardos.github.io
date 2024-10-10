@@ -8,9 +8,9 @@ has_children: false
 ---
 
 ## Requirements
-This guide is designed for people running muOS Baked Beans.
-Any other version is not supported.
-You must also be using a 2 SD card setup.
+- This guide is designed for people running muOS **Baked Beans**.
+- Any other version is not supported!
+- You **must** be using a 2 SD card setup.
 
 ## Can I directly upgrade over the top of muOS Baked Beans?
 Unfortunately no.
@@ -30,6 +30,21 @@ To faciliate this migration we have prepared the following script which can be i
 
 ### Download
 [Migrate_Script_Installer.zip](https://github.com/antiKk/muOS-docs/raw/refs/heads/banana/help/assets/files/Migrate_Script_Installer.zip)
+
+## How to use
+- **BACKUP YOUR IMPORTANT DATA**
+- Copy ``Migrate_Script_Installer.zip`` into the Archive folder in the root of either SD Card
+- In muOS, navigate to Applications > Archive Manager
+- Install the ``Migrate_Script_Installer.zip``archive
+- Reboot your console
+- In muOS, navigate to Applications > Task Toolkit
+- Run ``Migrate to SD2``
+- Once completed, ensure once more you have backed up your data and turn off your console.
+- Flash muOS Banana to an SD card, leaving your old SD2 inserted.
+
+## Known Issues
+- DraStic saves are not migrated as we only have DraStic-Steward in muOS Banana
+- Themes are not migrated due to theme changes in muOS Banana
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
