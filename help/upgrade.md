@@ -29,7 +29,7 @@ To faciliate this migration we have prepared the following script which can be i
 > The Migrate Script **does not** remove any data from SD1
 
 ### Download
-[Migrate_Script_Installer.zip](https://github.com/antiKk/muOS-docs/raw/refs/heads/banana/help/assets/files/Migrate_Script_Installer.zip)
+[Migrate_Script_Installer.zip](https://github.com/MustardOS/mustardos.github.io/raw/refs/heads/main/help/assets/files/Migrate_Script_Installer.zip)
 
 ## How to use
 - **BACKUP YOUR IMPORTANT DATA**
