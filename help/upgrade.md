@@ -52,7 +52,7 @@ The script also exists in Banana and is used to move to a 2 SD Card setup.
 - Languages (Not applicable to Baked Beans)
 - Music
 - Name (Not applicaple to Baked Beans)
-- Network Profiles (Not applicaple to Baked Beans)
+- Network Profiles (Not applicable to Baked Beans)
 - PICO-8 Files
 - Saves (Drastic-Steward, Retroarch, OpenBOR, PPSSPP)
 
