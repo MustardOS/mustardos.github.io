@@ -18,7 +18,7 @@ The move from muOS Baked Beans to muOS Banana involved a huge rework of the unde
 The changes to the file system makes a direct upgrade **impossible**.
 
 ## Migrating Data
-The answer to this dilemma is migrating all of your user data to SD Card 2.
+The answer to this dilemma is migrating all of your user data to SD Card 2.  
 Starting with muOS Banana you can store saves, configs, artwork, bios and more on SD2.
 
 To faciliate this migration we have prepared the following script which can be installed using the Archive Manager in muOS Baked Beans.
