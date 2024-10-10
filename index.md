@@ -44,7 +44,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 | Slow Motion             | MENU + L1                |
 | Show FPS Toggle         | MENU + Y                 |
 
-## RG40XX-H LED Hotkeys
+### RG40XX-H LED Hotkeys
 
 | Type                    | Control                  |
 |:------------------------|:-------------------------|
