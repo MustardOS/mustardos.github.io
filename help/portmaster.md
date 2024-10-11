@@ -7,6 +7,11 @@ parent: Help
 has_children: false
 ---
 
+## Disclaimer
+PortMaster does not endorse or support any form of piracy. All ready-to-run ports included in our software are provided with full respect to the wishes and licenses of the respective copyright holders. We take intellectual property rights very seriously and ensure that our offerings comply with all relevant legal requirements and permissions.
+
+It is important to note that game files for ports that are not ready-to-run must be obtained legally. Users are required to purchase or otherwise acquire these games through legitimate means to include support for them in PortMaster. By using our software, you agree to abide by these terms and respect the rights of content creators and developers.
+
 ## PortMaster in muOS
 Massive thanks to @kloptops, @Cebion and the rest of the fine folks over at [PortMaster](https://portmaster.games).
 
