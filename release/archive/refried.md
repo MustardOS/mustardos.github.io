@@ -1,26 +1,20 @@
 ---
 layout: default
-title: 2405.1 Refried Beans
-permalink: /release/current/refried
-parent: Current
+title: 2405.1 REFRIED BEANS
+permalink: /release/archive/refried
+parent: Archive
 grand_parent: Release
-nav_order: 1
+nav_order: 3
 has_toc: false
 ---
 
 # muOS 2405.1 REFRIED BEANS
-
 ## Download
-[Download it from our release build page!](https://dl.muos.dev/)
+_This release is now archived._
 ```
 4d538985e82eef5aa98b438f88276bb69c015533b0ee537ddac3d8642d2f8e94  muOS-RG28XX-2405.1-REFRIED.img
 60b556c123825c586b02da6e257d6e385a70ef64a7c542f4287c373f8b853405  muOS-RG35XX-2405.1-REFRIED.img
 ```
-
-## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!  
-[Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
-
 ## Significant Changes
 - Added RG28XX and RG35XX-SP support
 - Added Lid mode support for RG35XX-SP
@@ -40,4 +34,4 @@ If you like using muOS and would like to see it grow, and potentially support mo
 - Updated secret mode
 - Updated supporter screen
 ## General Changes
-- Way too many to list here unfortunately!
+- _Way too many to list here unfortunately!_

@@ -1,21 +1,19 @@
 ---
 layout: default
-title: 2405.2 Baked Beans
-permalink: /release/current/baked
-parent: Current
+title: 2405.2 BAKED BEANS
+permalink: /release/archive/baked
+parent: Archive
 grand_parent: Release
-nav_order: 2
+nav_order: 4
 has_toc: false
 ---
 
 # muOS 2405.2 BAKED BEANS
-
 ## Download
-[Download it from our release build page!](https://dl.muos.dev/)
+_This release is now archived._
 ```
 46a6793941b3b0879a4976f97b55d7bac04b92b6390430b1b4f77eab5fd29d9e  muOS-2405.2-BAKED-c293d8af.zip
 ```
-
 ## This is an update package
 Please ensure that you are on the current [Refried Beans](/release/current/2405.1) version before updating to 2405.2
 

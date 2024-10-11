@@ -1,21 +1,19 @@
 ---
 layout: default
-title: 2403 Origin
+title: 2403 ORIGIN
 permalink: /release/archive/origin
 parent: Archive
 grand_parent: Release
+nav_order: 1
+has_toc: false
 ---
 
 # muOS 2403 ORIGIN
-
 ## Download
-_This release has now been archived._
-```f78f881aa18ea692e40964814b5ffdc46231e8fa32df77f38a26b7f9750d43a4  muOS-2403PLUSH-v10.img```
-
-## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!  
-[Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
-
+_This release is now archived._
+```
+f78f881aa18ea692e40964814b5ffdc46231e8fa32df77f38a26b7f9750d43a4  muOS-2403PLUSH-v10.img
+```
 ## Significant Changes
 - Added basic HDMI support
   - Sound output is on-device - _a future update will potentially fix this!_ 

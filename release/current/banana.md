@@ -1,37 +1,52 @@
 ---
 layout: default
-title: 2410 Banana
-permalink: /release/progress/banana
-parent: Progress
+title: 2410.1 BANANA
+permalink: /release/current/banana
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
 ---
 
-
 # muOS 2410.1 BANANA
-
 ## Download
-[Not available yet!]({{site.baseurl}}/release/progress/banana)
-``Come back later!``
+You can download both images and torrent files from MEGA below.  Images are currently being uploaded to the general
+website and will also soon be available on our GitHub repositories.  _This will take some time, so be patient._
+
+[Download Images + Torrents from MEGA](https://mega.nz/folder/cjpSHQTL#NGXwbz_PWO1p2GVZA23v_A)
+
+Hashes can be found in the MEGA link above or at the bottom of this page!
 ## Support muOS
-Love muOS? Want to help us on this crazy journey? Here's how to get involved.
-This can be done a few ways:
-- Be helpful around the Discord community
-- [Contribute code directly](https://github.com/MustardOS)
-Or you can join the testing crew directly:
-- Support us on Ko-fi
-- Boost the discord server
-## Important - Please Read
-Due to recent changes with firmware this release has to unfortunately be a full-image release and not a simple update. This contains a partition layout change along with a few internal backend changes which helps bring simple changes for development purposes and closer to support smaller patches and possible OTA updates in the near future. Apologies to those who dislike re-flashing their device constantly, however with this update which includes the new storage preference module this should no longer be a hassle to update to full images in the future!
+Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
+
+**This can be done a few ways:**
+- Be helpful around the Discord community server
+- [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
+- Spread the word about muOS and all its features
+
+**Or you can join the testing crew directly by:**
+- Supporting us via Ko-fi subscription
+- Boosting the Discord community server
+## Important - PLEASE READ
+Due to recent changes with firmware this release has to unfortunately be a full-image release and not a simple update.
+This contains a partition layout change along with a few internal backend changes which helps bring simple changes for
+development purposes and closer to support smaller patches and possible OTA updates in the near future. Apologies to
+those who dislike re-flashing their device constantly, however with this update which includes the new storage
+preference module this should no longer be a hassle to update to full images in the future!
+
+{: .note }
+> Please read our guide to help upgrade or migrate your data from a previous version.
+> This can be found in the HELP section on the sidebar.
+
 ## Significant Changes
 - Added full PipeWire support (thanks @koolkidcorey)
 - Added individual and recursive system/core and governor selection
-- Added language support (thanks @Bitter_Bizarro)
+- Added language support (thanks @bitter_bizarro)
 - Added method of storing user configurable data on SD2
 - Added network profile support
 - Added RG40XX line device support
 - Fixed analogue sticks on RG35XX-H and RG40XX to remove cardinal snapping (thanks @thegammasqueeze)
+
 ## General Changes
 - Added 2x4 and 3x5 navigation icon support for main menu launcher (thanks @mehstrongbadmeh)
 - Added acceleration to `muxlaunch` (thanks @bitter_bizarro)
@@ -99,6 +114,7 @@ Due to recent changes with firmware this release has to unfortunately be a full-
 - Added new settings for box art alignment (thanks @bitter_bizarro)
 - Added new shutdown and reboot method (thanks @bcat)
 - Added OpenBOR support (thanks @antikk)
+- Added overrides for `FONT_LIST_PAD_RIGHT` and `CONTENT_WIDTH` in a theme (thanks @bitter_bizarro)
 - Added partition label retrieval for content root title
 - Added password encryption for profile save without connect first
 - Added power settings to own module
@@ -123,7 +139,6 @@ Due to recent changes with firmware this release has to unfortunately be a full-
 - Added task to clear SFTPGO Keys (thanks @antikk)
 - Added task to restore default RetroArch override files (thanks @bcat)
 - Added text separator option to item counter
-- Added theme overrides to allow the user to override `FONT_LIST_PAD_RIGHT` and `CONTENT_WIDTH` of a theme (thanks @bitter_bizarro)
 - Added theme support for placeholder box, preview art, and disabling background animations
 - Added title setting for displaying root drive (thanks @bitter_bizarro)
 - Added unset variables to external emulators
@@ -330,3 +345,14 @@ Due to recent changes with firmware this release has to unfortunately be a full-
 - Updated web services management
 - Update internal theme scheme
 - Various Pico-8 Fixes (thanks @duncanyoyo1)
+
+## Hashes
+```
+e4bb53d8fc308c8d2f5250c5d5e715881033841b6893b6dda650b5e2bda1c43c muOS-RG40XX-V-2410.1-BANANA-d1bae326.img.gz
+b3bcca660d953ea75a5ca9b1445304afd3e674e027c115aadc5795af71e0a54d muOS-RG40XX-H-2410.1-BANANA-d1bae326.img.gz
+42474c269148d387c24580db6287de93099ac6001389ee5dddbff801594327f5 muOS-RG35XX-SP-2410.1-BANANA-d1bae326.img.gz
+5ab20e7a3427dead07d5291ff93d0859cb22a07437a0bdc69c177badd390237e muOS-RG35XX-PLUS-2410.1-BANANA-d1bae326.img.gz
+00a6ba492499ffd3b0cd8d48b0fa3a999c3d3c1747c6833a9621b621cf2c1d98 muOS-RG35XX-H-2410.1-BANANA-d1bae326.img.gz
+d9b897b0586abdcd3dc2fab214e8192169c38f71d6641833df9d0a2f7dc45eb0 muOS-RG35XX-2024-2410.1-BANANA-d1bae326.img.gz
+58b63e26ddb09779a447657af79e1322acc14d5e2eb9eab18f7518816556bd9e muOS-RG28XX-2410.1-BANANA-d1bae326.img.gz
+```
