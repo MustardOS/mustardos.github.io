@@ -29,10 +29,22 @@ This will place your font in your current user directory's Downloads folder. If 
 The information below is applicable to users converting fonts with the offline scripts or [online website](https://lvgl.io/tools/fontconverter);
 
 - Feel free to adjust the size value. 20 is a good size for most of the elements on screen.
-- Where it states `0x00-0xFF` is the range of symbols in the font.
-  - 0x20-0x7F is a standard range.
-  - 0x00-0xFF is the extended range. Some fonts may fail to convert with the extended range, but try extended range first!
-  - You can go from `0x0-0xFFFF` to include _**all**_ glyphs within the normal range for most fonts.  You can also do `0x0-0xFFFFF` which covers a lot of unicode based glyphs too.
+- Where it states `0x00-0xFF` is the range of symbols in the font.  It is recommended to include the following ranges in your font to support the most languages while still maintaining performance.
+
+| Range                           | Description                |
+|---------------------------------|----------------------------|
+| 0x0020-0x007E                   | Basic Latin                |
+| 0x00A1-0x00AC<br>0x00AE-0x00FF  | Latin-1 Supplement         |
+| 0x0100-0x017F                   | Latin Extended-A           |
+| 0x0180-0x024F                   | Latin Extended-B           |
+| 0x0400-0x04FF                   | Cyrillic                   |
+| 0x0900-0x097F                   | Devanagari                 |
+| 0x1E00-0x1EFF                   | Latin Extended Additional  |
+| 0x2010-0x2027<br>0x2030-0x205E  | General Punctuation        |
+
+The resulting command would look like this: <br>
+`lv_font_conv --bpp 4 --size 20 --font "username/folder/example.ttf" -r 0x0020-0x007E,0x00A1-0x00AC,0x00AE-0x00FF,0x0100-0x017F,0x0180-0x024F,0x0400-0x04FF,0x0900-0x097F,0x1E00-0x1EFF,0x2010-0x2027,0x2030-0x205E --format bin --no-compress --no-prefilter -o "./Downloads/default.bin"`
+
 - bpp is used for smoothness.  4 is a good value for most fonts. You can change this to either 1, 2, 4, or 8.
 
 > *You may have an issue generating* `.bin` *files if the font you are trying to convert has ` ` (spaces) in the path.
