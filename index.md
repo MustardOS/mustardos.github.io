@@ -35,6 +35,7 @@ to do is use your favourite image flash program to install it on your SD Card. P
 turn it on, and it will take care of the rest.
 
 ## Handy Hotkeys
+
 | Type                    | Control                  |
 |:------------------------|:-------------------------|
 | Brightness              | MENU + Volume            |
@@ -54,6 +55,7 @@ turn it on, and it will take care of the rest.
 | Show FPS Toggle         | MENU + Y                 |
 
 ### RG40XX-H LED Hotkeys
+
 | Type                    | Control                  |
 |:------------------------|:-------------------------|
 | Change Mode             | MENU + R3                |
@@ -63,6 +65,7 @@ turn it on, and it will take care of the rest.
 | Next Colour             | MENU + Right Stick Right |
 
 ## Devices
+
 | Supported            |
 |:---------------------|
 | Anbernic RG28XX      |
