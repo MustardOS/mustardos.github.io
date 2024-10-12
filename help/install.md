@@ -38,6 +38,15 @@ Make sure to replace `sd_device` with your SD card device location and `muos_ima
 
 ``sudo dd if=muos_image of=sd_device bs=4M status=progress && sync``
 
+For MacOS users (determine your SD card label with diskutil GUI or `diskutil list` command and replace `X`):
+```bash
+# To get rid of "dd: /dev/rdiskX: Resource busy"
+sudo diskutil unmountDisk force /dev/diskX
+
+# For best performance use the "RAW" device:
+sudo dd if=/PATH/TO/MUOS-IMAGE-FILE.img of=/dev/rdiskX bs=4M status=progress && sync
+```
+
 # Finishing Up
 Once flashing to an SD card is successful you can put it in your device and switch it on
 It will run through a few menus to help get setup first and it will then do the rest of the setup for you. 
