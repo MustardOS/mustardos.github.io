@@ -2,7 +2,7 @@
 layout: default
 title: RG28XX
 permalink: /devices/anbernic/rg28xx
-parent: Anbernice
+parent: Anbernic
 nav_enabled: true
 has_children: false
 has_toc: false
@@ -11,7 +11,7 @@ has_toc: false
 ## General Information
 | | |
 |:-------------------|:-------------------|
-| Support            | Yes                |
+| Supported          | Yes                |
 
 ## Offical Store Page
 [https://anbernic.com/products/rg28xx](https://anbernic.com/products/rg28xx)
@@ -20,7 +20,7 @@ has_toc: false
 | | |
 |:-------------------|:-------------------|
 | Screen             | 2.8 Inch LCD       |
-| More Deets         |                    |
+| More Deets         | Info Here          |
 
 ## Pictures
 Coming Soon?

@@ -8,4 +8,4 @@ has_children: true
 has_toc: true
 ---
 
-[Anbernice](https://www.anbernic.com)
+[Anbernic](https://www.anbernic.com)
