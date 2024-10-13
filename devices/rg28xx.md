@@ -11,28 +11,30 @@ has_toc: false
 
 ## General Information
 
-| | |
 |:-------------------|:-------------------|
 | Supported          | Yes                |
+
+### Wifi Support
+Currently Wi-Fi support is only via USB adapters using to 8188eu chipset.  
+To enable it, install this file via muOS Archive Manager.  
+[Enable 8188eu Wi-Fi](../assets/files/Enable_8188eu_28xx.zip)
 
 ## Offical Store Page
 [https://anbernic.com/products/rg28xx](https://anbernic.com/products/rg28xx)
 
 ## Specs
 
-| | |
 |:-------------------|:-------------------|
 | Screen             | 2.8 Inch LCD       |
 | More Deets         | Info Here          |
 
 ## Pictures
 
-| |
-|:------------------------------------------:|
+|:---------------------------------------------:|
 | ![](../assets/images/RG28XX-01-small.png)     |
-| RG28XX PCB Front                           |
+| **RG28XX PCB Front**                          |
 | [Large Image](../assets/images/RG28XX-01.png) |
-|                                            |
+|                                               |
 | ![](../assets/images/RG28XX-02-small.png)     |
-| RG28XX PCB Back                            |
+| **RG28XX PCB Back**                           |
 | [Large Image](../assets/images/RG28XX-02.png) |
