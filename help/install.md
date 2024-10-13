@@ -16,7 +16,6 @@ Download the latest image from one of the following channels.
 # Extracting
 muOS images are distributed as ``.img.gz`` files and most imaging software shouldn't require them to be extracted.
 
-
 # SD Card Quality
 Please make sure that you flash any CFW on a **quality SD card**.
 This will ensure your data stays safe and doesn't fail on you in the middle of catching that rare Pokémon!
@@ -42,7 +41,7 @@ After countless flashes we have determined that the most user friendly tool with
 | ![](assets/images/rpi-005.png)  | ![](assets/images/rpi-006.png)  |
 | Choose SD Card Reader           | Click Next                      |
 | ![](assets/images/rpi-007.png)  | ![](assets/images/rpi-008.png)  |
-| No OS Customisation             | Yes Erase AD Card               |
+| No OS Customisation             | Yes Erase SD Card               |
 | ![](assets/images/rpi-009.png)  | ![](assets/images/rpi-010.png)  |
 | Approve Elevation               | Card begins Writing             |
 | ![](assets/images/rpi-011.png)  | ![](assets/images/rpi-012.png)  |
@@ -53,15 +52,15 @@ If you're not afraid of using command line tools you can use dd to get the job d
 You will need to find out what device path your SD card is located.
 Make sure to replace `sd_device` with your SD card device location and `muos_image` with the image name.
 
-``sudo dd if=muos_image of=sd_device bs=4M status=progress && sync``
+``gunzip -c < "image_name_here.img.gz" | sudo dd of=/dev/sdxyz bs=4M conv=fsync status=progress``
 
-For MacOS users (determine your SD card label with diskutil GUI or `diskutil list` command and replace `X`):
+For MacOS users (determine your SD card label with diskutil GUI or `diskutil list` command and replace the `X` in `/dev/diskX`):
 ```bash
 # To get rid of "dd: /dev/rdiskX: Resource busy"
 sudo diskutil unmountDisk force /dev/diskX
 
 # For best performance use the "RAW" device:
-sudo dd if=/path/to/muos_image_file.img of=/dev/rdiskX bs=4M status=progress && sync
+sudo dd if=/path/to/image_name_here.img of=/dev/rdiskX bs=4M status=progress && sync
 ```
 
 # Finishing Up
