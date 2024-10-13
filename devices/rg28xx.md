@@ -10,6 +10,7 @@ has_toc: false
 ---
 
 ## General Information
+
 | | |
 |:-------------------|:-------------------|
 | Supported          | Yes                |
@@ -18,12 +19,14 @@ has_toc: false
 [https://anbernic.com/products/rg28xx](https://anbernic.com/products/rg28xx)
 
 ## Specs
+
 | | |
 |:-------------------|:-------------------|
 | Screen             | 2.8 Inch LCD       |
 | More Deets         | Info Here          |
 
 ## Pictures
+
 | |
 |:------------------------------------------:|
 | ![](assets/images/RG28XX-01-small.png)     |
