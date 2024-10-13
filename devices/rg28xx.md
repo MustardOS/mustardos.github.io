@@ -23,4 +23,12 @@ has_toc: false
 | More Deets         | Info Here          |
 
 ## Pictures
-Coming Soon?
+| |
+|:------------------------------------------:|
+| ![](assets/images/RG28XX-01-small.png)     |
+| RG28XX PCB Front                           |
+| [Large Image](assets/images/RG28XX-01.png) |
+|                                            |
+| ![](assets/images/RG28XX-02-small.png)     |
+| RG28XX PCB Back                            |
+| [Large Image](assets/images/RG28XX-02.png) |
