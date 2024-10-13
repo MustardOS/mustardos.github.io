@@ -29,10 +29,10 @@ has_toc: false
 
 | |
 |:------------------------------------------:|
-| ![](assets/images/RG28XX-01-small.png)     |
+| ![](../assets/images/RG28XX-01-small.png)     |
 | RG28XX PCB Front                           |
-| [Large Image](assets/images/RG28XX-01.png) |
+| [Large Image](../assets/images/RG28XX-01.png) |
 |                                            |
-| ![](assets/images/RG28XX-02-small.png)     |
+| ![](../assets/images/RG28XX-02-small.png)     |
 | RG28XX PCB Back                            |
-| [Large Image](assets/images/RG28XX-02.png) |
+| [Large Image](../assets/images/RG28XX-02.png) |
