@@ -35,10 +35,18 @@ After countless flashes we have determined that the most user friendly tool with
 
 | | |
 |:-------------------------------:|:-------------------------------:|
-| Choose Device                   | No Filtering                    |
 | ![](assets/images/rpi-001.png)  | ![](assets/images/rpi-002.png)  |
-| Choose Use Custom OS            | Select the muOS .img.gz         |
+| Choose Device                   | No Filtering                    |
 | ![](assets/images/rpi-003.png)  | ![](assets/images/rpi-004.png)  |
+| Choose Use Custom OS            | Select the muOS .img.gz         |
+| ![](assets/images/rpi-005.png)  | ![](assets/images/rpi-006.png)  |
+| Choose SD Card Reader           | Click Next                      |
+| ![](assets/images/rpi-007.png)  | ![](assets/images/rpi-008.png)  |
+| No OS Customisation             | Yes Erase AD Card               |
+| ![](assets/images/rpi-009.png)  | ![](assets/images/rpi-010.png)  |
+| Approve Elevation               | Card begins Writing             |
+| ![](assets/images/rpi-011.png)  | ![](assets/images/rpi-012.png)  |
+| Verify Begins                   | Eject and insert into console   |
 
 # Advanced Flashing
 If you're not afraid of using command line tools you can use dd to get the job done.
