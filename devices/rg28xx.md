@@ -3,6 +3,7 @@ layout: default
 title: RG28XX
 permalink: /devices/anbernic/rg28xx
 parent: Anbernic
+grand_parent: Devices
 nav_enabled: true
 has_children: false
 has_toc: false
