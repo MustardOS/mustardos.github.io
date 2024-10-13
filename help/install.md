@@ -33,13 +33,11 @@ There are several recommended programs you can use to flash your SD card
 ## Raspberry Pi Imager
 After countless flashes we have determined that the most user friendly tool with the highest chance of success is Raspberry Pi Imager so we'll focus on that for now.
 
-| Choose Device                   | No Filtering                     |
-|:--------------------------------|:---------------------------------|
-| ![](assets/images/rpi-001.png) | ![](assets/images/rpi-002.png)  |
-
-| Choose Use Custom OS            | Select the muOS .img.gz          |
-|:--------------------------------|:---------------------------------|
-| ![](assets/images/rpi-003.png) | ![](assets/images/rpi-004.png)  |
+| :-----------------------------: | :-----------------------------: |
+| Choose Device                   | No Filtering                    |
+| ![](assets/images/rpi-001.png)  | ![](assets/images/rpi-002.png)  |
+| Choose Use Custom OS            | Select the muOS .img.gz         |
+| ![](assets/images/rpi-003.png)  | ![](assets/images/rpi-004.png)  |
 
 # Advanced Flashing
 If you're not afraid of using command line tools you can use dd to get the job done.
