@@ -75,6 +75,29 @@ catalogue
         ├── snes.png
         └── action.png
 ```
+
+## Theme overrides for Artwork
+The max width text for an item in content explorer is controlled by the theme.  this can result in scenarios where the item text is partially covered by the boxart.
+![](assets/images/muox_boxart_override_eample_1.png)
+You can override this behaviour so regardless of what theme you have installed the text will stop at a defined length.  In `/theme/override` you will find 3 files `muxfavourite.txt`, `muxhistory.txt`, and `muxplore.txt`.  <br><br>
+
+If you want to adjust just where the text auto ellipses you can set a value for FONT_LIST_PAD_RIGHT.  Example:
+```
+[font]
+FONT_LIST_PAD_RIGHT=280
+[misc]
+CONTENT_WIDTH=-1
+```
+![](assets/images/muox_boxart_override_eample_2.png)
+If you also want the background bar of the item to resize you would instead adjust CONTENT_WIDTH. Example:
+```
+[font]
+FONT_LIST_PAD_RIGHT=10
+[misc]
+CONTENT_WIDTH=360
+```
+![](assets/images/muox_boxart_override_eample_3.png)
+
 ## antiKk's muOS Artwork
 Skraper mixes, and Artwork for the Tiny Best Set are available here:  
 [https://github.com/antiKk/muOS-Artwork](https://github.com/antiKk/muOS-Artwork)
