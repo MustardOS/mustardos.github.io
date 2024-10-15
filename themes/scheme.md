@@ -214,7 +214,7 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255   |  Transparency of this colour.|
 
 ### Section [image_list]
-Alters properties of list images. Unconfirmed if this has an effect.
+Alters properties of list images.
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
@@ -345,7 +345,7 @@ This relates to the passcode/lock screen when enabled in settings.
 
 | Setting          | Description                                       |
 |------------------|---------------------------------------------------|
-| ANIMATED_BACKGROUND=0         |  0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {programname}.{frameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting |
+| ANIMATED_BACKGROUND=0         |  0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention ProgramName}.{FrameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting |
 | RANDOM_BACKGROUND=0           | If set to 1 randomly select background image based on PNG sequence.  Uses the naming convention {programname}.{Index}.png for example to have the background for muxlaunch randomly selected you would name the images: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png...  |
 | CONTENT_SIZE_TO_CONTENT=0     | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.|
 | CONTENT_ALIGNMENT=0           | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.  |
@@ -356,7 +356,7 @@ This relates to the passcode/lock screen when enabled in settings.
 | CONTENT_WIDTH=640             |  Adjust the width of list item content by horizontal pixels.|
 | NAVIGATION_TYPE=0             |  0: For vertical (up/down) navigation. <br>1: For horizontal (left/right). <br>2: For launch menu with two rows of 4 icons. (left/right/up/down)<br>3: For launch menu with two rows of icons. Top row has 3 icons and bottom row has 5 icons. (left/right/up/down) <br>4: Same as 2 except that left/right wraps around on the active row. <br>5: Same as 3 except that left/right wraps around on the active row.  |
 | STATIC_ALIGNMENT=0            |  Custom images that can outside of wallpapers. See below for details.|
-| OVERLAY_IMAGE=0               |  Do you want to use an overlay .png image? 0 is no. 1 is yes.|
+| IMAGE_OVERLAY=0               |  Do you want to use an overlay .png image? 0 is no. 1 is yes.|
 
 Static Alignment Values 
 * Describes the layering and position of static images with other elements.
