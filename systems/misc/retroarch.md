@@ -1,8 +1,9 @@
 ---
 layout: default
 title: RetroArch
-permalink: /emulators/retroarch
-parent: Emulators
+permalink: /systems/misc/retroarch
+parent: Miscellaneous
+grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false

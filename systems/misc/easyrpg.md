@@ -1,8 +1,9 @@
 ---
 layout: default
 title: EasyRPG
-permalink: /emulators/easyrpg
-parent: Emulators
+permalink: /systems/misc/easyrpg
+parent: Miscellaneous
+grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false

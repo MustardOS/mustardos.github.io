@@ -24,12 +24,15 @@ To enable it, install this file via muOS Archive Manager.
 
 ## Specs
 
-|:-------------------|:-------------------|
-| Screen             | 2.8 Inch LCD       |
-| More Deets         | Info Here          |
+|:-------------------|:---------------------------|
+| Screen             | 2.8 Inch IPS               |
+| CPU                | H700 ARM Cortex-A53 1.5GHz |
+| GPU                | Mali-G31                   |
+| RAM                | 1 GB                       |
 
 ## Pictures
 
+|                                               |
 |:---------------------------------------------:|
 | ![](../assets/images/RG28XX-01-small.png)     |
 | **RG28XX PCB Front**                          |

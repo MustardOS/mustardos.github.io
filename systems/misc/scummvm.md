@@ -1,8 +1,9 @@
 ---
 layout: default
 title: ScummVM
-permalink: /emulators/scummvm
-parent: Emulators
+permalink: /systems/misc/scummvm
+parent: Miscellaneous
+grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false
