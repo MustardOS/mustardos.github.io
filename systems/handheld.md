@@ -4,6 +4,6 @@ title: Handheld
 permalink: /systems/handheld
 parent: Systems
 nav_enabled: true
-has_children: false
+has_children: true
 has_toc: true
 ---
