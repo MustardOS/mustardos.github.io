@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Doom
-permalink: /emulators/doom
-parent: Emulators
+permalink: /systems/misc/doom
+parent: Miscellaneous
+grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false

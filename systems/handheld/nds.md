@@ -1,12 +1,14 @@
 ---
 layout: default
-title: DraStic
-parent: Emulators
-permalink: /emulators/drastic
+title: Nintendo DS
+parent: Handheld
+grand_parent: Systems
+permalink: /systems/handheld/nds
 nav_enabled: true
 has_children: false
 has_toc: false
 ---
+
 ![](assets/images/drastic_new.png)
 
 {: .new}

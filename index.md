@@ -53,6 +53,10 @@ turn it on, and it will take care of the rest.
 | Save State Increment    | Menu + DPAD Right        |
 | Slow Motion             | MENU + L1                |
 | Show FPS Toggle         | MENU + Y                 |
+| Swap Dpad <> Analogue   | Short Press POWER        |
+
+{: .note }
+> Swap Dpad <> Analogue is only for devices without analogue sticks.
 
 ### RG40XX-H LED Hotkeys
 
@@ -84,7 +88,7 @@ turn it on, and it will take care of the rest.
 |:------------------|
 | Anbernic ARC-D    |
 | Game Kiddy Bubble |
-| MagicX XU Mini M+ |
+| MagicX XU Mini28  |
 | Trimui Smart Pro  |
 
 <div itemscope itemtype="https://schema.org/WebSite">

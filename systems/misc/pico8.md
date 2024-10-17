@@ -1,8 +1,9 @@
 ---
 layout: default
 title: PICO-8
-permalink: /emulators/pico8
-parent: Emulators
+permalink: /systems/misc/pico8
+parent: Miscellaneous
+grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false
@@ -13,6 +14,8 @@ has_toc: false
 ## PICO-8 Emulator Files
 
 Native PICO-8 is now supported!  
+Starting with muOS Banana, the pico8 files can go in your `MUOS/bios/pico8` on either SD1 or SD2 depending on where you've chosen to put those.  
+Older version of muOS require the files here: `/MUOS/emulator/pico8`
 The files required to run PICO-8 natively are stored on SD1 in the /MUOS/emulator/pico8 folder.  
 In order to use native PICO-8 you'll need to place your own purchased binaries in there.  
 You will need a copy of the following files from the **Raspberry Pi** version:  
