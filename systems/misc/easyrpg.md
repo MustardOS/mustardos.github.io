@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/easyrpg_logo.png)
+![](../assets/images/easyrpg_logo.png)
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|

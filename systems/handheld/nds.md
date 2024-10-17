@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/drastic_new.png)
+![](../assets/images/drastic_new.png)
 
 {: .new}
 > muOS includes both DraStic, and the modified version by steward-fu

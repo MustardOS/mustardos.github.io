@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/pico8.png)
+![](../assets/images/pico8.png)
 
 ## PICO-8 Emulator Files
 

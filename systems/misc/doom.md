@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/prboom.png)
+![](../assets/images/prboom.png)
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|

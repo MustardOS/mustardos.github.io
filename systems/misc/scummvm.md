@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/scummvm__modern_remastered__logo.png)
+![](../assets/images/scummvm__modern_remastered__logo.png)
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|

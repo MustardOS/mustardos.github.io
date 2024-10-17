@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-![](assets/images/retroarch_logo.png)
+![](../assets/images/retroarch_logo.png)
 
 {: .note-title}
 > NOTE
