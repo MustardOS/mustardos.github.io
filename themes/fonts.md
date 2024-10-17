@@ -43,7 +43,8 @@ The information below is applicable to users converting fonts with the offline s
 | 0x2010-0x2027<br>0x2030-0x205E  | General Punctuation        |
 
 The resulting command would look like this: <br>
-`lv_font_conv --bpp 4 --size 20 --font "username/folder/example.ttf" -r 0x0020-0x007E,0x00A1-0x00AC,0x00AE-0x00FF,0x0100-0x017F,0x0180-0x024F,0x0400-0x04FF,0x0900-0x097F,0x1E00-0x1EFF,0x2010-0x2027,0x2030-0x205E --format bin --no-compress --no-prefilter -o "./Downloads/default.bin"`
+`lv_font_conv --bpp 4 --size 20 --font "username/folder/example.ttf" -r 0x0020-0x007E,0x00A1-0x00AC,0x00AE-0x00FF,0x0100-0x017F,0x0180-0x024F,0x0400-0x04FF,0x0900-0x097F,0x1E00-0x1EFF,0x2010-0x2027,0x2030-0x205E --format bin --no-compress --no-prefilter -o "./Downloads/default.bin"` <br><br>
+**Note:** Not all fonts support the character ranges listed above.  You may receive a message a message like `Font "Font_Name.ttf" doesn't have any characters included in range 0x900-0x97f` If this happens you can either try a different font or try the lv_font_conv again without that range.
 
 - bpp is used for smoothness.  4 is a good value for most fonts. You can change this to either 1, 2, 4, or 8.
 
