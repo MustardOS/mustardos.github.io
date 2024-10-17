@@ -21,7 +21,7 @@ has_toc: false
 ## Specs
 
 |:-------------------|:---------------------------|
-| Screen             | 3.5 Inch IPS               |
+| Screen             | 3.5 Inch 640x480 IPS       |
 | CPU                | H700 ARM Cortex-A53 1.5GHz |
 | GPU                | Mali-G31                   |
 | RAM                | 1 GB                       |
