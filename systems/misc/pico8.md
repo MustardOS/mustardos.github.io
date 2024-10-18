@@ -57,6 +57,9 @@ Once you add your purchased files from Lexaloffle you'll need to set muOS to use
 | B (Mouse Mode) | Right Mouse        |
 | Start + Select | Quit               |
 
+{: .new}
+> Mouse Mode coming soon!
+
 **Legacy Instructions**
 For muOS v10 you need the 32bit binary.
 - pico8_dyn
