@@ -27,16 +27,25 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 **Or you can join the testing crew directly by:**
 - Supporting us via Ko-fi subscription
 - Boosting the Discord community server
+
 ## Important - PLEASE READ
-Due to recent changes with firmware this release has to unfortunately be a full-image release and not a simple update.
-This contains a partition layout change along with a few internal backend changes which helps bring simple changes for
-development purposes and closer to support smaller patches and possible OTA updates in the near future. Apologies to
-those who dislike re-flashing their device constantly, however with this update which includes the new storage
-preference module this should no longer be a hassle to update to full images in the future!
+
+{: .highlight }
+> Due to recent changes with firmware this release has to unfortunately be a full-image release and not a simple update.
+> This contains a partition layout change along with a few internal backend changes which helps bring simple changes for
+> development purposes and closer to support smaller patches and possible OTA updates in the near future.
+>
+> Apologies to those who dislike re-flashing their device constantly, however with this update which includes the new
+> storage preference module this should no longer be a hassle to update to full images in the future!
 
 {: .note }
 > Please read our guide to help upgrade or migrate your data from a previous version.
 > This can be found in the HELP section on the sidebar.
+
+{: .warning }
+> The RetroArch configuration structure has changed to allow RetroArch settings to be shared across devices. Manually
+> copying a `retroarch.cfg` file from an older release to a device running Banana may break your controls, hotkeys, etc.
+> (If this happens, use the "Restore RetroArch Configuration" script in Task Toolkit to revert to defaults.)
 
 ## Significant Changes
 - Added full PipeWire support (thanks @koolkidcorey)

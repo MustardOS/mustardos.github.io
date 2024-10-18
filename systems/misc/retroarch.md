@@ -17,8 +17,8 @@ has_toc: false
 > This page serves as a quick reference for RetroArch configuration.
 
 ## RetroArch Configuration Priority
-RetroArch applies configurations in the following order  
-- Load Global Config - `MUOS/retroarch/retroarch.cfg`
+RetroArch applies configurations in the following order. These files can live on either SD1 or SD2.
+- Load Global Config - `MUOS/info/config/retroarch.cfg`
 - Apply Core Overrides - `MUOS/info/config/<corename>/<corename>.cfg` - `<corename>.rmp`
 - Apply Content Directory Overrides - `MUOS/info/config/<corename>/<directoryname>.cfg` - `<directoryname>.rmp`
 - Apply Game Overrides - `MUOS/info/config/<corename>/<gamename>.cfg` - `<gamename>.rmp`

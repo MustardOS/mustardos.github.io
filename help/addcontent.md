@@ -29,6 +29,30 @@ This can be on SD1, SD2 or both.
    └── SNES
        └── <game files here>
 ```
+
+## How do I transfer content to the device?
+
+Of course, you can always eject the SD card (shut down the device first!) and plug it into a card reader to transfer files from a computer.
+However, there are other options you may find more convenient.
+
+### Wireless file transfer (for devices with Wi-Fi)
+
+* Enable the "Configuration > Web Services > SFTP + Filebrowser" setting.
+* In a Web browser, connect to your device's IP address on port 9090. 
+  You can find the IP address in the bottom-right corner of the muOS Wi-Fi Network app.
+  (The full URL will usually look something like http://192.168.1.XX:9090/.)
+* The default user name and password are "muos". This can be changed in the filebrowser settings.
+* You can also use an SFTP client (e.g., the `sftp` command on Linux, [WinSCP](https://winscp.net/) on Windows, etc.). Connect to the same IP address on port 2022 using the user name and password given above.
+
+### USB file transfer via MTP
+
+* Change the "Configuration > General Settings > Advanced Settings > USB Function" setting to MTP, and then connect a USB cable from your device's USB port to your computer or phone.
+* On some platforms, the file explorer will open automatically and show the contents of the device.
+  Other platforms may require you to manually install and use an MTP application.
+* The quality of MTP implementations varies across platforms.
+  Additionally, USB functionality on many of the devices muOS supports can be inconsistent at times.
+  If the connection doesn't succeed at first, try a different cable, a different USB port, or a different MTP program.
+
 ## What about Multi-Disc Content?
 Some systems split their content over multiple discs. The preferred way to handle these so that your content list isn't cluttered with all the disc names is to use `.m3u` & `.chd` files.
 
