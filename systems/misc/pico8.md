@@ -11,6 +11,20 @@ has_toc: false
 
 ![](../assets/images/pico8.png)
 
+# Available Emulators
+
+| Name                                                        | Type             | Version           |
+|:------------------------------------------------------------|:-----------------|:------------------|
+| [PICO-8](https://www.lexaloffle.com/pico-8.php)             | Standalone       |                   |
+| [fake-08](https://github.com/jtothebell/fake-08)            | Libretro Core    | 0.0.2.19          |
+| [Retro8](https://github.com/Jakz/retro8)                    | Libretro Core    |                   |
+
+## Default Emulator
+
+By default muOS uses the fake-08 libretro core.  
+This is only the default because it doesn't require you to purchase the native PICO-8 application.  
+We strongly suggest you purchase the native application to support this wonderful system!
+
 ## PICO-8 Emulator Files
 
 Native PICO-8 is now supported!  
@@ -24,11 +38,27 @@ You will need a copy of the following files from the **Raspberry Pi** version:
 
 ![](assets/images/pico-8.png)
 
-muOS by default uses the Fake-08 libretro core for PICO-8 as it doesn't require users to purchase PICO-8.
 Once you add your purchased files from Lexaloffle you'll need to set muOS to use the PICO-8 External emulator.
 - Browse to where your PICO-8 games are in muOS content explorer.
 - Press select on any of the items and change core.
-- Select ``PICO-8 (External)`` 
+- Select ``PICO-8 (External)`` and press ``X`` to set this core for the whole directory! 
+
+## PICO-8 Standalone Keys
+
+| Button         | Action             |
+|:---------------|:-------------------|
+| DPAD           | Move               |
+| A / R1         | Button X           |
+| B / L1         | Burron O           |
+| Start          | Pause              |
+| Select         | Cancel             |
+| L2             | Toggle Mouse Mode  |
+| A (Mouse Mode) | Left Mouse         |
+| B (Mouse Mode) | Right Mouse        |
+| Start + Select | Quit               |
+
+{: .new}
+> Mouse Mode coming soon!
 
 **Legacy Instructions**
 For muOS v10 you need the 32bit binary.
