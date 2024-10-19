@@ -1,8 +1,8 @@
 ---
 layout: default
 title: PICO-8
-permalink: /systems/misc/pico8
-parent: Miscellaneous
+permalink: /systems/fantasy/pico8
+parent: Fantasy Console
 grand_parent: Systems
 nav_enabled: true
 has_children: false
@@ -49,10 +49,11 @@ Once you add your purchased files from Lexaloffle you'll need to set muOS to use
 |:---------------|:-------------------|
 | DPAD           | Move               |
 | A / R1         | Button X           |
-| B / L1         | Burron O           |
+| B / L1         | Button O           |
 | Start          | Pause              |
 | Select         | Cancel             |
 | L2             | Toggle Mouse Mode  |
+| Left Stick     | Mouse              |
 | A (Mouse Mode) | Left Mouse         |
 | B (Mouse Mode) | Right Mouse        |
 | Start + Select | Quit               |
