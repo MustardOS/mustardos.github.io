@@ -1,9 +1,10 @@
 ---
-title: Terms of Use
 layout: default
-parent: Welcome
+title: Terms of Use
+permalink: /docs/tou
 nav_order: 1
-has_toc: false
+parent: Welcome
+has_children: false
 ---
 
 ## Terms of Use for MustardOS (muOS)

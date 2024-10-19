@@ -1,13 +1,17 @@
 ---
-title: Supporting muOS
 layout: default
-parent: Welcome
+title: Supporting muOS
+permalink: /docs/support
 nav_order: 2
-has_toc: true
+parent: Welcome
+has_children: false
 ---
 
-# Supporting MuOS
-Thank you for your interest in potentially donating or subscribing to muOS. Everything goes towards software, hardware, and other accessories to benefit the development of muOS. If you would like to support us you can either send a single one-off donation or you can subscribe which will give you additional benefits if you are part of our Discord community.
+# Supporting muOS
+Thank you for your interest in potentially donating or subscribing to muOS. Everything goes towards software,
+hardware, and other accessories to benefit the development of muOS. If you would like to support us you can either
+send a single one-off donation or you can subscribe which will give you additional benefits
+if you are part of our Discord community.
 
 [Support muOS through Ko-fi](https://ko-fi.com/xonglebongle/)
 
@@ -23,7 +27,8 @@ Gain access to the muOS testing crew to preview new features and fixes before ev
 # Knight
 ![](assets/images/knights-small.png)
 ### $9 per month
-Gain access to the exclusive testing group and test brand new content and features before anybody else! All ideas will be highly considered and may be implemented in a future update.
+Gain access to the exclusive testing group and test brand new content and features before anybody else! All ideas
+will be highly considered and may be implemented in a future update.
   * Weekly testing updates
   * Your name on the credits screen
   * Special Discord access
@@ -33,7 +38,8 @@ Gain access to the exclusive testing group and test brand new content and featur
 # Hero
 ![](assets/images/heroes-small.png)
 ### $12 per month
-Complete behind the scene access to all nightly development ramblings. Have your input fully considered into brand new not seen before programs. Help guide muOS in a unique way to improve it for everyone!
+Complete behind the scene access to all nightly development ramblings. Have your input fully considered into brand
+new not seen before programs. Help guide muOS in a unique way to improve it for everyone!
   * Nightly development exclusives
   * Your name on the credits screen
   * Special Discord access
