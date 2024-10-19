@@ -28,3 +28,12 @@ has_toc: false
 
 ## Pictures
 
+|                                                  |
+|:------------------------------------------------:|
+| ![](../assets/images/RG40XX-H-01-small.png)      |
+| **RG40XX-H PCB Front**                           |
+| [Large Image](../assets/images/RG40XX-H-01.png)  |
+|                                                  |
+| ![](../assets/images/RG40XX-H-02-small.png)      |
+| **RG40XX-H PCB Back**                            |
+| [Large Image](../assets/images/RG40XX-H-02.png)  |
