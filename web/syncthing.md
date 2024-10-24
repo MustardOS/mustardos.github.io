@@ -87,6 +87,10 @@ Go back to [https://127.0.0.1:8384/](https://127.0.0.1:8384/) and click on the f
 
 ![PC Add Folder Sharing](assets/images/pc_sharing.png)
 
+## Caveats
+
+Please note that that "Watch for Changes" option in Syncthing will not work on muOS due to the way fuseblk is used to mount the SD card. Make sure that this option is disabled on your muOS device and set the Full Rescan Interval to something appropriate for your setup (it will default to 60 seconds when this option is turned off).
+
 ## The End
 
 At this point your muOS would send your save files to your PC :)
