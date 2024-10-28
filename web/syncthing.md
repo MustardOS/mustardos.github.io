@@ -87,6 +87,10 @@ Go back to [https://127.0.0.1:8384/](https://127.0.0.1:8384/) and click on the f
 
 ![PC Add Folder Sharing](assets/images/pc_sharing.png)
 
+## Caveats
+
+Please note that that "Watch for Changes" option in Syncthing will only work on FAT32 partitions; for exFAT make sure this option is disabled.
+
 ## The End
 
 At this point your muOS would send your save files to your PC :)
