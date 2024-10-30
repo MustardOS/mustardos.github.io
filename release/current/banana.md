@@ -10,12 +10,12 @@ has_toc: false
 
 # muOS 2410.1 BANANA
 ## Download
-You can download both images and torrent files from MEGA below.  Images are currently being uploaded to the general
-website and will also soon be available on our GitHub repositories.  _This will take some time, so be patient._
+You can download both images and torrent files from links below.
+
+[Download Images + Torrents from muOS.dev](https://dl.muos.dev/RELEASE/2410.1/)
 
 [Download Images + Torrents from MEGA](https://mega.nz/folder/cjpSHQTL#NGXwbz_PWO1p2GVZA23v_A)
 
-Hashes can be found in the MEGA link above or at the bottom of this page!
 ## Support muOS
 Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
@@ -354,14 +354,3 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Updated web services management
 - Update internal theme scheme
 - Various Pico-8 Fixes (thanks @duncanyoyo1)
-
-## Hashes
-```
-e4bb53d8fc308c8d2f5250c5d5e715881033841b6893b6dda650b5e2bda1c43c muOS-RG40XX-V-2410.1-BANANA-d1bae326.img.gz
-b3bcca660d953ea75a5ca9b1445304afd3e674e027c115aadc5795af71e0a54d muOS-RG40XX-H-2410.1-BANANA-d1bae326.img.gz
-42474c269148d387c24580db6287de93099ac6001389ee5dddbff801594327f5 muOS-RG35XX-SP-2410.1-BANANA-d1bae326.img.gz
-5ab20e7a3427dead07d5291ff93d0859cb22a07437a0bdc69c177badd390237e muOS-RG35XX-PLUS-2410.1-BANANA-d1bae326.img.gz
-00a6ba492499ffd3b0cd8d48b0fa3a999c3d3c1747c6833a9621b621cf2c1d98 muOS-RG35XX-H-2410.1-BANANA-d1bae326.img.gz
-d9b897b0586abdcd3dc2fab214e8192169c38f71d6641833df9d0a2f7dc45eb0 muOS-RG35XX-2024-2410.1-BANANA-d1bae326.img.gz
-58b63e26ddb09779a447657af79e1322acc14d5e2eb9eab18f7518816556bd9e muOS-RG28XX-2410.1-BANANA-d1bae326.img.gz
-```
