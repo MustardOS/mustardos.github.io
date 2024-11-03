@@ -46,17 +46,22 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added "Display Empty Folder" visual option
 - Added GBA overlays
 - Added device variable to indicate RGB support
+- Added fade to black animation support
 - Added INI assign files for MegaDuck and Sega Pico systems
+- Added migrate and sync scripts for storage module
 - Added mReader application for general content launching
 - Added MPV player
 - Added PICO-8 Mouse Support
 - Added PICO-8 Pixel Perfect Scaler
 - Added `pgm.zip` to skipped files
+- Added progress bar support for `muxstart` module for first init setup
+- Added splash image on content launching support
 - Added support for displaying assigned core
+- Added support for device specific theme previews
 - Added task scripts to restore friendly names and themes
 - Defaulted to `performance` governor for CD-i
 - Enabled PICO-8 to respect modern/retro control flag
-- Factored idle logic to common script and inhibited idle during ffplay video playback
+- Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed auto assign routine to avoid running on storage selection or content root
 - Fixed bind mount typo for DraStic-Legacy
 - Fixed content count display on explore content root
@@ -64,16 +69,18 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed default BANANA theme layout
 - Fixed issue with advanced artwork config for favourite and history box art display
 - Fixed issue with overlay being applied twice
-- Fixed issue with wallpaper and muxtheme preview
-- Fixed L1 and R1 glyphs in muxtester
-- Fixed main muX element priority loading and improved wallpaper loading logic
+- Fixed issue with wallpaper and `muxtheme` preview
+- Fixed L1 and R1 glyphs in `muxtester`
+- Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
+- Fixed overlay image priority
 - Fixed save and load hotkeys for RG35XX-PLUS and RG35XX-2024 devices
 - Fixed ScummVM log directory
 - Fixed skeleton directory path in RA config backup and removed RA config during factory reset
 - Fixed theme preview alignment and GIF file lock issue when switching themes
 - Fully separated idle display and sleep timers
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
+- Modified screen refresh to accept wait value
 - Moved internal fallback theme to default directory
 - Moved storage preference module to configuration module
 - Preserved empty directories and added progress bars during archive install
@@ -87,13 +94,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Removed theme max item count
 - Renamed `/opt/muos/backup` to `/opt/muos/default` and documented restore script
 - Renamed Video Player to Media Player
-- Save default values of new vars after patch update
 - Suppressed idle sleep while charging to ease file transfers
 - Updated languages
-- Updated moonlight to use aarch64 gptokeyb
+- Updated moonlight to use aarch64 `gptokeyb`
+- Updated `muxsplash` to support screen resolutions
 - Updated PCSX Libretro core
 - Updated reader and gptk files for load/save state of files
 - Updated Sameboy Libretro core
 - Updated supporter credits
 - Updated theme overrides for radius and size
+- Updated theme picker to support scrolling text
 - Updated Vircon32 and Ardens Libretro cores for save state compatibility
