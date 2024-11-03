@@ -47,6 +47,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added GBA overlays
 - Added device variable to indicate RGB support
 - Added fade to black animation support
+- Added formatted script logging system
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added migrate and sync scripts for storage module
 - Added mReader application for general content launching
@@ -62,22 +63,23 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Defaulted to `performance` governor for CD-i
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
+- Fixed advanced artwork config for favourite and history box art display
 - Fixed auto assign routine to avoid running on storage selection or content root
 - Fixed bind mount typo for DraStic-Legacy
 - Fixed content count display on explore content root
 - Fixed credit names and visual swap issue on friendly folder
 - Fixed default BANANA theme layout
-- Fixed issue with advanced artwork config for favourite and history box art display
-- Fixed issue with overlay being applied twice
-- Fixed issue with wallpaper and `muxtheme` preview
 - Fixed L1 and R1 glyphs in `muxtester`
 - Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
+- Fixed network options being shown when network disabled
+- Fixed overlay image being applied twice
 - Fixed overlay image priority
 - Fixed save and load hotkeys for RG35XX-PLUS and RG35XX-2024 devices
 - Fixed ScummVM log directory
 - Fixed skeleton directory path in RA config backup and removed RA config during factory reset
 - Fixed theme preview alignment and GIF file lock issue when switching themes
+- Fixed wallpaper and `muxtheme` preview
 - Fully separated idle display and sleep timers
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
 - Modified screen refresh to accept wait value
