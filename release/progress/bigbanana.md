@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 2410.2 BIG BANANA
-permalink: /release/current/bigbanana
+permalink: /release/progress/bigbanana
 parent: Progress
 grand_parent: Release
 nav_order: 1
@@ -31,7 +31,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 > 
 > Using modified muOS installations or previous versions may have strange outcomes.
 
-## Current Contributors
+## Contributors
 - antiKk
 - mattyj513
 - Bitter_Bizarro
@@ -41,8 +41,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - nmqanh
 - xonglebongle
 
-## General Changes
+## Changes
 - Added ability to use specific fonts, images, and schemes based on device resolution
+- Added column mode to advanced box art config
 - Added "Display Empty Folder" visual option
 - Added GBA overlays
 - Added device variable to indicate RGB support
@@ -69,6 +70,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed content count display on explore content root
 - Fixed credit names and visual swap issue on friendly folder
 - Fixed default BANANA theme layout
+- Fixed inconsistent behaviour of scroll wrapping in interface options
 - Fixed L1 and R1 glyphs in `muxtester`
 - Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
@@ -100,7 +102,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Updated languages
 - Updated moonlight to use aarch64 `gptokeyb`
 - Updated `muxsplash` to support screen resolutions
+- Updated RetroArch overlays
 - Updated PCSX Libretro core
+- Updated PPSSPP external emulator to 1.18
 - Updated reader and gptk files for load/save state of files
 - Updated Sameboy Libretro core
 - Updated supporter credits
