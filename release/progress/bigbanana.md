@@ -39,6 +39,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - bcat
 - joyrider3774
 - nmqanh
+- illumini_85
 - xonglebongle
 
 ## Changes
@@ -72,6 +73,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed default BANANA theme layout
 - Fixed inconsistent behaviour of scroll wrapping in interface options
 - Fixed L1 and R1 glyphs in `muxtester`
+- Fixed low level brightness bug on sleep wake
 - Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
 - Fixed network options being shown when network disabled
