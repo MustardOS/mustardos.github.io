@@ -91,14 +91,14 @@ catalogue
 ## Advanced Box Art Configuration
 
 Advanced Box Art Configuration allows for overriding how box art is displayed within content explore. Up to 5 images can
-be displayed. Images are loaded from separate sub folders of '/MUOS/info/catalogue/' as defined in the configuration.
+be displayed. Images are loaded from separate sub folders of `/MUOS/info/catalogue/` as defined in the configuration.
 See examples below.
 
 ### File Structure
 
-Configuration files must be created in catalogue folder to enable this feature. You can have one configuration per
+Configuration files must be created in the catalogue folder to enable this feature. You can have one configuration per
 catalogue folder for example `Sega Mega Drive - Genesis.ini`. If a configuration file does not exist for the
-folder `default.ini` will be used.<br>
+folder then `default.ini` will be used.<br><br>
 **Example File Structure**
 
 ```
@@ -115,7 +115,7 @@ SD1
 
 ### Section [viewport]
 
-The viewport sections configures the canvas that all images will be drawn on. Alignment of the view port is controlled
+The viewport section configures the canvas that all images will be drawn on. Alignment of the view port is controlled
 by `Configuration -> General Settings -> Interface Options -> Content Box Art Alignment`
 
 | Setting                 | Description                                                                                                            |
