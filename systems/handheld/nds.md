@@ -66,51 +66,51 @@ has_toc: false
 
 ```bash
 #!/bin/sh
-    
+
 # Scaling adjustment script created for muOS 2405 Beans +
 # Lets you switch between Nearest Neighbour (sharper) and Bilinear (smoother)
-     
+
 # Fire up the logger!
 /opt/muos/extra/muxlog &
 sleep 1
-     
-echo "Waiting..." > /tmp/muxlog_info
+
+echo "Waiting..." >/tmp/muxlog_info
 sleep 1
-     
+
 TMP_FILE=/tmp/muxlog_global
 rm -rf "$TMP_FILE"
-     
+
 EMU_DIR=/mnt/mmc/MUOS/emulator/drastic
-     
+
 cd $EMU_DIR
-     
-xxd drastic > drastic.txt
-     
+
+xxd drastic >drastic.txt
+
 # Check for Bilinear Scaling
 if grep -q "6c69 6e65 6172" drastic.txt; then
-    echo "Bilinear Scaling detected" > /tmp/muxlog_info
-    # Swap Scaling Method
-    sed -i 's/6c69 6e65 6172/3000 0000 0000/g' drastic.txt
-    xxd -r drastic.txt > drastic
-    echo "Setting to Nearest Neighbour" > /tmp/muxlog_info
-    rm drastic.txt
-     
+	echo "Bilinear Scaling detected" >/tmp/muxlog_info
+	# Swap Scaling Method
+	sed -i 's/6c69 6e65 6172/3000 0000 0000/g' drastic.txt
+	xxd -r drastic.txt >drastic
+	echo "Setting to Nearest Neighbour" >/tmp/muxlog_info
+	rm drastic.txt
+
 # Check for Nearest Neighbour Scaling
 elif grep -q "3000 0000 0000" drastic.txt; then
-    echo "Nearest Neighbour Scaling detected" > /tmp/muxlog_info
-    # Swap Scaling Method
-    sed -i 's/3000 0000 0000/6c69 6e65 6172/g' drastic.txt
-    xxd -r drastic.txt > drastic
-    echo "Setting to Bilinear" > /tmp/muxlog_info
-    rm drastic.txt
+	echo "Nearest Neighbour Scaling detected" >/tmp/muxlog_info
+	# Swap Scaling Method
+	sed -i 's/3000 0000 0000/6c69 6e65 6172/g' drastic.txt
+	xxd -r drastic.txt >drastic
+	echo "Setting to Bilinear" >/tmp/muxlog_info
+	rm drastic.txt
 fi
-     
-echo "All Done!" > /tmp/muxlog_info
+
+echo "All Done!" >/tmp/muxlog_info
 sleep 1
-     
+
 # Cleanup after myself
 killall -q muxlog
 rm -rf "$MUX_TEMP" /tmp/muxlog_*
-     
+
 killall -q "DraStic Switcher.sh"
 ```

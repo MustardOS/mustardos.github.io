@@ -8,7 +8,9 @@ has_children: false
 ---
 
 # muOS Folder Structure
+
 This is a quick rundown of the structure of SD1 `/mnt/mmc`
+
 ```
 .
 ├── ARCHIVE

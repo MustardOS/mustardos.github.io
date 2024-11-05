@@ -75,7 +75,7 @@ Click "Add Device"
 
 Pick a name of the device and click "Save"
 
-Now you need to setup which folder in muOS to sync with your PC, under Folders section click "Add Folder", here it's pretty much the same as how you added a folder in PC, the Folder Label could be anything but the Folder ID needs to be same as the Folder ID you had in PC (wmtcf-gbjgs in this case), and you would need to set the folder path to `/mnt/mmc/MUOS/save` if you only want to backup the saves. It would be nice to setup File Versioning and change Advances to Send only to make sure the sync is going one way from muOS to PC in this setup
+Now you need to setup which folder in muOS to sync with your PC, under Folders section click "Add Folder", here it's pretty much the same as how you added a folder in PC, the Folder Label could be anything but the Folder ID needs to be same as the Folder ID you had in PC (wmtcf-gbjgs in this case), and you would need to set the folder path to `/run/muos/global/save` if you only want to backup the saves. It would be nice to setup File Versioning and change Advances to Send only to make sure the sync is going one way from muOS to PC in this setup
 
 In "Sharing" tab also make sure to check your PC
 
