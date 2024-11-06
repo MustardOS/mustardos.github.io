@@ -231,6 +231,30 @@ CONTENT_WIDTH=360
 
 ![](assets/images/muox_boxart_override_eample_3.png)<br>
 
+## Special Folders
+
+There are three special folders within the catalogue: `Application`, `Archive`, and `Task`.
+
+```
+└─ MUOS
+    └── info
+        └── catalogue
+            └── <special_folder_name>
+                ├── box
+                │   └── name_of_file.png
+                └── wall
+                    └── 640x480
+                    │   └── name_of_file.png
+                    └── 720x720
+                        └── name_of_file.png
+```
+
+* Within these folders are the names of the Application, Archive, or Task Toolkit
+* These will take precedence over the active theme
+
+{: .highlight }
+> If you are distributing an application, archive, or task you could bundle these up too!
+
 ## antiKk's muOS Artwork
 
 Skraper mixes, and Artwork for the Tiny Best Set are available here:  
