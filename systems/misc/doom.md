@@ -13,16 +13,23 @@ has_toc: false
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
-| Libretro Core | prboom_libretro.so | 2.5.0 (6ec8549) |
+| Libretro Core | prboom_libretro.so | 2.5.0 (9d412db) |
 
 ## Where to create in the ROMs folder
-Doom game files should all exist in a subdirectory of your main Doom folder in your ROMS directory. For example `ROMS/Doom/.Sigil` or `ROMS/Doom/.Ultimate Doom`
+
+Doom game files should all exist in a subdirectory of your main Doom folder in your ROMS directory.
+For example `ROMS/Doom/.Sigil` or `ROMS/Doom/.Ultimate Doom`
 
 ## IWADs or PWADs?
-Doom uses two categories to separate content, you have IWAD (internal WAD) and PWAD (patch WAD). You will need to place all IWAD files into their own directory `ROMS/Doom/.IWADS`. These are the main commercial WADs for Doom, Doom 2, Ultimate Doom, Heretic etc. These are important and are required for games to run. 
+
+Doom uses two categories to separate content, you have IWAD (internal WAD) and PWAD (patch WAD). You will need to place
+all IWAD files into their own directory `ROMS/Doom/.IWAD`. These are the main commercial WADs for Doom, Doom 2,
+Ultimate Doom, Heretic etc. These are important and are required for games to run.
 
 ## Creation of Files to run Doom Content
+
 In to root of the `ROMS/Doom` directory create a text file named `<name of game>.doom` with the following contents:
+
 ```
 parentwad ""
 wadfile_1 ""
@@ -38,6 +45,7 @@ dehfile_2 ""
 ```
 
 ## An Example of Loading SIGIL
+
 ```
 parentwad "DOOM.WAD"
 wadfile_1 "SIGILC.WAD"
@@ -53,7 +61,9 @@ dehfile_2 ""
 ```
 
 ## Directory Structure
+
 Example Layout of Doom Games
+
 ```
 .
 └─ ROMS
@@ -66,7 +76,19 @@ Example Layout of Doom Games
        ├── Sigil.doom
        └── Ultimate Doom.doom
 ```
-As you can see "Ultimate Doom" will requires no additional PWAD files however the directory "Ultimate Doom" still needs to be created.
+
+As you can see "Ultimate Doom" will requires no additional PWAD files however the directory "Ultimate Doom" still needs
+to be created.
 
 ## Compatibility
-Please note that not all PWADs you find on the internet will be compatible with PrBoom, if you search for vanilla mods you will have full compatibility. 
+
+Please note that not all PWADs you find on the internet will be compatible with PrBoom, if you search for vanilla mods
+you will have full compatibility.
+
+## File Extensions
+
+Some operating systems like to hide extensions by default leading sometimes to files being renamed improperly.
+Ensure that your `<name of game>.doom` file has the `.doom` extension only by allowing your system to show extensions.
+
+* For MacOS you can follow, https://support.apple.com/en-au/guide/mac-help/mchlp2304/mac
+* For Windows you can follow, https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/
