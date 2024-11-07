@@ -90,5 +90,5 @@ you will have full compatibility.
 Some operating systems like to hide extensions by default leading sometimes to files being renamed improperly.
 Ensure that your `<name of game>.doom` file has the `.doom` extension only by allowing your system to show extensions.
 
-* For MacOS you can follow, https://support.apple.com/en-au/guide/mac-help/mchlp2304/mac
-* For Windows you can follow, https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/
+* For MacOS you can follow, [https://support.apple.com/en-au/guide/mac-help/mchlp2304/mac](https://support.apple.com/en-au/guide/mac-help/mchlp2304/mac)
+* For Windows you can follow, [https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/)
