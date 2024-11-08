@@ -9,18 +9,23 @@ has_toc: false
 ---
 
 # muOS 2410.2 BIG BANANA
+
 ## Download
+
 Not ready just yet!
 
 ## Support muOS
+
 Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
 **This can be done a few ways:**
+
 - Be helpful around the Discord community server
 - [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
 - Spread the word about muOS and all its features
 
 **Or you can join the testing crew directly by:**
+
 - Supporting us via Ko-fi subscription
 - Boosting the Discord community server
 
@@ -28,28 +33,34 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 {: .highlight }
 > This requires you to already have 2410.1 BANANA already setup and installed on your device!
-> 
-> Using modified muOS installations or previous versions may have strange outcomes.
+>
+> Using modified muOS installations or previous versions may have strange or breaking outcomes.
 
 ## Contributors
+
 - antiKk
-- mattyj513
-- Bitter_Bizarro
-- j0tt
 - bcat
-- joyrider3774
-- nmqanh
+- Bitter_Bizarro
 - illumini_85
+- j0tt
+- joyrider3774
+- koolkidkorey
+- __krt__
+- mattyj513
+- nmqanh
+- solojazz
 - xonglebongle
 
 ## Changes
+
 - Added ability to use specific fonts, images, and schemes based on device resolution
+- Added catalogue priority image loader for applications, archives, and tasks
 - Added column mode to advanced box art config
 - Added "Display Empty Folder" visual option
-- Added GBA overlays
 - Added device variable to indicate RGB support
 - Added fade to black animation support
 - Added formatted script logging system
+- Added GBA overlays
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added migrate and sync scripts for storage module
 - Added mReader application for general content launching
@@ -61,7 +72,10 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added splash image on content launching support
 - Added support for displaying assigned core
 - Added support for device specific theme previews
+- Added support for empty WiFi passwords
+- Added support for user initialisation scripts
 - Added task scripts to restore friendly names and themes
+- Changed archive module to use collections
 - Defaulted to `performance` governor for CD-i
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
@@ -72,6 +86,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed credit names and visual swap issue on friendly folder
 - Fixed default BANANA theme layout
 - Fixed inconsistent behaviour of scroll wrapping in interface options
+- Fixed language setting for network configuration module
 - Fixed L1 and R1 glyphs in `muxtester`
 - Fixed low level brightness bug on sleep wake
 - Fixed muX element priority loading and improved wallpaper loading logic
@@ -85,6 +100,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed theme preview alignment and GIF file lock issue when switching themes
 - Fixed wallpaper and `muxtheme` preview
 - Fully separated idle display and sleep timers
+- Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
 - Modified screen refresh to accept wait value
 - Moved internal fallback theme to default directory
@@ -101,12 +117,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Renamed `/opt/muos/backup` to `/opt/muos/default` and documented restore script
 - Renamed Video Player to Media Player
 - Suppressed idle sleep while charging to ease file transfers
+- Updated `muxplore` to default to SD1 if no content found
 - Updated languages
 - Updated moonlight to use aarch64 `gptokeyb`
 - Updated `muxsplash` to support screen resolutions
 - Updated RetroArch overlays
 - Updated PCSX Libretro core
-- Updated PPSSPP external emulator to 1.18
+- Updated PPSSPP external emulator to 1.18.1
 - Updated reader and gptk files for load/save state of files
 - Updated Sameboy Libretro core
 - Updated supporter credits
