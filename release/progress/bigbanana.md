@@ -65,6 +65,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added migrate and sync scripts for storage module
 - Added mReader application for general content launching
 - Added MPV player
+- Added network wait for web services before initialisation
 - Added PICO-8 Mouse Support
 - Added PICO-8 Pixel Perfect Scaler
 - Added `pgm.zip` to skipped files
@@ -98,6 +99,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed ScummVM log directory
 - Fixed skeleton directory path in RA config backup and removed RA config during factory reset
 - Fixed theme preview alignment and GIF file lock issue when switching themes
+- Fixed upper bound on random image range
 - Fixed wallpaper and `muxtheme` preview
 - Fully separated idle display and sleep timers
 - Increase upper bound on random image range
@@ -116,6 +118,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Removed theme max item count
 - Renamed `/opt/muos/backup` to `/opt/muos/default` and documented restore script
 - Renamed Video Player to Media Player
+- Replaced Drastic with Drastic-trngaje
 - Suppressed idle sleep while charging to ease file transfers
 - Updated `muxplore` to default to SD1 if no content found
 - Updated languages
