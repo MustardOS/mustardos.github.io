@@ -54,13 +54,21 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 ## Changes
 
 - Added ability to use specific fonts, images, and schemes based on device resolution
+- Added additional catalogue directories
+- Added binary size check for Syncthing
 - Added catalogue priority image loader for applications, archives, and tasks
 - Added column mode to advanced box art config
-- Added "Display Empty Folder" visual option
+- Added DAT extension to `skip.ini` file
 - Added device variable to indicate RGB support
+- Added Diagnostics script to task toolkit
+- Added "Display Empty Folder" visual option
+- Added DPAD Swap variable for hotkey listener
+- Added external Flycast directories
 - Added fade to black animation support
 - Added formatted script logging system
 - Added GBA overlays
+- Added grid panel theme support to `muxlaunch` and `muxplore`
+- Added Hebrew, Irish, and Persian languages
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added migrate and sync scripts for storage module
 - Added mReader application for general content launching
@@ -72,11 +80,15 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added progress bar support for `muxstart` module for first init setup
 - Added splash image on content launching support
 - Added support for displaying assigned core
+- Added support for disabling grid panel in `muxplore` with a `.nogrid` file
 - Added support for device specific theme previews
 - Added support for empty WiFi passwords
 - Added support for user initialisation scripts
 - Added task scripts to restore friendly names and themes
 - Changed archive module to use collections
+- Changed in-game working LED to be off on charge + sleep
+- Changed Pipewire to use global configuration with realtime priority
+- Changed SNES/SFC core to Snes9x as default
 - Defaulted to `performance` governor for CD-i
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
@@ -86,10 +98,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed content count display on explore content root
 - Fixed credit names and visual swap issue on friendly folder
 - Fixed default BANANA theme layout
+- Fixed DPAD stylus press on A button for drastic-trngaje
+- Fixed drastic-trngaje slow stylus
 - Fixed inconsistent behaviour of scroll wrapping in interface options
 - Fixed language setting for network configuration module
 - Fixed L1 and R1 glyphs in `muxtester`
 - Fixed low level brightness bug on sleep wake
+- Fixed masked password issue for network configuration
 - Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
 - Fixed network options being shown when network disabled
@@ -105,31 +120,43 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
 - Modified screen refresh to accept wait value
+- Modified skip entry file with wildcard suffix
+- Moved BGM Kill function to general function script
 - Moved internal fallback theme to default directory
 - Moved storage preference module to configuration module
+- Optimised web services script
 - Preserved empty directories and added progress bars during archive install
 - Removed `evsieve` idle inhibitor
 - Removed extra copy of default theme to avoid sync issues
 - Removed global core auto assign options on directory change
+- Removed `golden.sh` script
 - Removed L3 Binding from devices without analogues
+- Removed loading of network profile when network is active
 - Removed naming of visible/hidden in favour of enabled/disabled
 - Removed storage vars that are now unused
 - Removed `sync_storage.sh` after storage mount updates
 - Removed theme max item count
 - Renamed `/opt/muos/backup` to `/opt/muos/default` and documented restore script
 - Renamed Video Player to Media Player
+- Renamed web service processes
 - Replaced Drastic with Drastic-trngaje
+- Replaced `gotty` with `ttyd`
 - Suppressed idle sleep while charging to ease file transfers
-- Updated `muxplore` to default to SD1 if no content found
+- Updated grid panel to use panel font if available
+- Updated grid panel width to be calculated off column width
 - Updated languages
 - Updated moonlight to use aarch64 `gptokeyb`
+- Updated `muxplore` to default to SD1 if no content found
 - Updated `muxsplash` to support screen resolutions
+- Updated RetroArch cheat archive
+- Updated RetroArch configurations for all working systems
 - Updated RetroArch overlays
 - Updated PCSX Libretro core
 - Updated PPSSPP external emulator to 1.18.1
 - Updated reader and gptk files for load/save state of files
 - Updated Sameboy Libretro core
 - Updated supporter credits
+- Updated Syncthing and Tailscale
 - Updated theme overrides for radius and size
 - Updated theme picker to support scrolling text
 - Updated Vircon32 and Ardens Libretro cores for save state compatibility
