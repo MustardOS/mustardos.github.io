@@ -32,29 +32,35 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 ## Important
 
 {: .highlight }
-> This requires you to already have 2410.1 BANANA already setup and installed on your device!
+> This requires you to already have 2410.1 BANANA already setup and installed on your device.
 >
 > Using modified muOS installations or previous versions may have strange or breaking outcomes.
+>
+> You can also download the full image from the links above and start fresh!
 
 ## Contributors
 
 - antiKk
 - bcat
 - Bitter_Bizarro
+- cgimenes
+- duncanyoyo1
 - illumini_85
 - j0tt
 - joyrider3774
 - koolkidkorey
-- __krt__
+- \_\_krt\_\_
 - mattyj513
 - nmqanh
-- solojazz
+- roastbean
 - xonglebongle
 
 ## Changes
 
 - Added ability to use specific fonts, images, and schemes based on device resolution
 - Added additional catalogue directories
+- Added async audio option for specific navigation block sounds
+  - Additional sounds are: `keypress.wav` (_OSK_) and `muos.wav`
 - Added binary size check for Syncthing
 - Added catalogue priority image loader for applications, archives, and tasks
 - Added column mode to advanced box art config
@@ -66,30 +72,35 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added external Flycast directories
 - Added fade to black animation support
 - Added formatted script logging system
+- Added function to load grid muxlaunch images through muxlaunch folder
 - Added GBA overlays
 - Added grid panel theme support to `muxlaunch` and `muxplore`
 - Added Hebrew, Irish, and Persian languages
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added migrate and sync scripts for storage module
-- Added mReader application for general content launching
 - Added MPV player
+- Added mReader application for general content launching
 - Added network wait for web services before initialisation
 - Added PICO-8 Mouse Support
 - Added PICO-8 Pixel Perfect Scaler
 - Added `pgm.zip` to skipped files
 - Added progress bar support for `muxstart` module for first init setup
 - Added splash image on content launching support
-- Added support for displaying assigned core
-- Added support for disabling grid panel in `muxplore` with a `.nogrid` file
 - Added support for device specific theme previews
+- Added support for disabling grid panel in `muxplore` with a `.nogrid` file
+- Added support for displaying assigned core
 - Added support for empty WiFi passwords
 - Added support for user initialisation scripts
+- Added Tailscale to Web Services
 - Added task scripts to restore friendly names and themes
 - Changed archive module to use collections
+- Changed async sound for all modules
 - Changed in-game working LED to be off on charge + sleep
 - Changed Pipewire to use global configuration with realtime priority
 - Changed SNES/SFC core to Snes9x as default
 - Defaulted to `performance` governor for CD-i
+- Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt)
+  and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed advanced artwork config for favourite and history box art display
@@ -101,12 +112,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed DPAD stylus press on A button for drastic-trngaje
 - Fixed drastic-trngaje slow stylus
 - Fixed inconsistent behaviour of scroll wrapping in interface options
-- Fixed language setting for network configuration module
 - Fixed L1 and R1 glyphs in `muxtester`
+- Fixed language setting for network configuration module
 - Fixed low level brightness bug on sleep wake
 - Fixed masked password issue for network configuration
-- Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed missing strings in translations
+- Fixed muX element priority loading and improved wallpaper loading logic
 - Fixed network options being shown when network disabled
 - Fixed overlay image being applied twice
 - Fixed overlay image priority
@@ -117,14 +128,16 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed upper bound on random image range
 - Fixed wallpaper and `muxtheme` preview
 - Fully separated idle display and sleep timers
+- Increase close-content timeout from 5s to 10s
 - Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
 - Modified screen refresh to accept wait value
 - Modified skip entry file with wildcard suffix
 - Moved BGM Kill function to general function script
+- Moved boxart behind headers and footers
 - Moved internal fallback theme to default directory
 - Moved storage preference module to configuration module
-- Optimised web services script
+- Optimised internal scripts
 - Preserved empty directories and added progress bars during archive install
 - Removed `evsieve` idle inhibitor
 - Removed extra copy of default theme to avoid sync issues
@@ -136,6 +149,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Removed storage vars that are now unused
 - Removed `sync_storage.sh` after storage mount updates
 - Removed theme max item count
+- Removed unused input_disable function
 - Renamed `/opt/muos/backup` to `/opt/muos/default` and documented restore script
 - Renamed Video Player to Media Player
 - Renamed web service processes
@@ -148,12 +162,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Updated moonlight to use aarch64 `gptokeyb`
 - Updated `muxplore` to default to SD1 if no content found
 - Updated `muxsplash` to support screen resolutions
-- Updated RetroArch cheat archive
-- Updated RetroArch configurations for all working systems
-- Updated RetroArch overlays
 - Updated PCSX Libretro core
 - Updated PPSSPP external emulator to 1.18.1
 - Updated reader and gptk files for load/save state of files
+- Updated RetroArch cheat archive
+- Updated RetroArch configurations for all working systems
+- Updated RetroArch overlays
 - Updated Sameboy Libretro core
 - Updated supporter credits
 - Updated Syncthing and Tailscale
