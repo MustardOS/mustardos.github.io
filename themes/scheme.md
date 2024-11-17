@@ -187,6 +187,48 @@ not use both settings at the same time.
 | NAV_MENU_TEXT=000000              | Text describing the function of the "M" button - recolour .                                                                                         |
 | NAV_MENU_TEXT_ALPHA=255           | Text describing the function of the "M" button - transparency.                                                                                      |
 
+### Section [grid]
+
+Allows for displaying a grid of icons for the main menu or content explorer.  Content Explorer will only be displayed for directories that only contain folders.  You can disable grid view for a specific folder by adding an empty `.nogrid` text file to the root of the directory.
+
+| Setting                              | Description                                                                     |
+|--------------------------------------|---------------------------------------------------------------------------------|
+| NAVIGATION_TYPE=2                    |  2: Left/right/up/down navigation. Left/Right navigation at beginning or end of row moves to previous or next row.<br>4: Same as 2 except that left/right wraps around on the active row.  |
+| BACKGROUND=000000                    |  Grid main background colour.                                                   |
+| BACKGROUND_ALPHA=0                   |  Grid main background transparency.                                             |
+| LOCATION_X=0                         |  Horizontal position of grid in pixels                                          |
+| LOCATION_Y=0                         |  Vertical position of grid in pixels                                            |
+| COLUMN_COUNT=0                       |  Number of columns                                                              |
+| ROW_COUNT=0                          |  Number of rows displayed on screen at one time                                 |
+| ROW_HEIGHT=0                         |  Height in pixels of each row                                                   |
+| COLUMN_WIDTH=0                       |  Width in pixels of each column                                                 |
+| CELL_WIDTH=200                       |  Width of cell in pixels.  Cell will be centered horizontally and vertically.   |
+| CELL_HEIGHT=200                      |  Height of cell in pixels.  Cell will be centered horizontally and vertically.  |
+| CELL_RADIUS=10                       |  Add radius to cell corners. 0 is a right angle. 10+ is very round.             |
+| CELL_BORDER_WIDTH=5                  |  Cell border width in pixels.                                                   |
+| CELL_IMAGE_PADDING_TOP=5             |  Amount of padding between top edge of cell and cell image.  **Note:** If text alpha is set to 0 image will be centered in the cell by default.  |
+| CELL_TEXT_PADDING_BOTTOM=5           |  Amount of padding between bottom edge of cell and text label.                  |
+| CELL_TEXT_PADDING_SIDE=5             |  Amount of padding between edge of cell and text label.                         |
+| CELL_TEXT_LINE_SPACING=0             |  Adjust spacing between lines for text labels that wrap text.  Negative values can be used to bring lines closer together.  |
+| CELL_DEFAULT_BACKGROUND=000000       |  Unselected cell background colour.            |
+| CELL_DEFAULT_BACKGROUND_ALPHA=255    |  Unselected cell background transparency.      |
+| CELL_DEFAULT_BORDER=000000           |  Unselected cell border colour.                |
+| CELL_DEFAULT_BORDER_ALPHA=255        |  Unselected cell border transparency.          |
+| CELL_DEFAULT_IMAGE_ALPHA=255         |  Unselected cell image transparency.           |
+| CELL_DEFAULT_IMAGE_RECOLOUR=000000   |  Unselected cell image recolour.               |
+| CELL_DEFAULT_IMAGE_RECOLOUR_ALPHA=0  |  Unselected cell image recolour transparency.  |
+| CELL_DEFAULT_TEXT=000000             |  Unselected cell text colour.                  |
+| CELL_DEFAULT_TEXT_ALPHA=255          |  Unselected cell text transparency.            |
+| CELL_FOCUS_BACKGROUND=000000         |  Selected cell background colour.              |
+| CELL_FOCUS_BACKGROUND_ALPHA=255      |  Selected cell background transparency.        |
+| CELL_FOCUS_BORDER=000000             |  Selected cell border colour.                  |
+| CELL_FOCUS_BORDER_ALPHA=255          |  Selected cell border transparency.            |
+| CELL_FOCUS_IMAGE_ALPHA=255           |  Selected cell image transparency.             |
+| CELL_FOCUS_IMAGE_RECOLOUR=000000     |  Selected cell image recolour.                 |
+| CELL_FOCUS_IMAGE_RECOLOUR_ALPHA=0    |  Selected cell image recolour transparency.    |
+| CELL_FOCUS_TEXT=000000               |  Selected cell text colour.                    |
+| CELL_FOCUS_TEXT_ALPHA=255            |  Selected cell text transparency.              |
+
 ### Section [list]
 
 For all list item backgrounds, gradients can be applied. L-R = 0-255.
