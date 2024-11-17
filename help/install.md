@@ -80,7 +80,7 @@ if you're not careful!
 A second SD can be used to preserve ROM files, but keep in mind that save data and configuration are still on SD1.
 To preserve this data, use the backup feature built into muOS. On 2405.1 and above, this is under the Task Toolkit menu.
 
-1. Create a backup .zip file from the muOS menu and store it on an external device.
+1. Create a backup .zip file from the muOS menu and store it on an external device(APPS -> TASK TOOLKIT -> BACKUP).
 2. If using a single SD card, back up all ROM files.
 3. When you are CERTAIN that your data is safe, proceed with the flashing and installation method above.
 4. Unzip the backup in the root of SD1 ROMS/ partition, so that the folders merge with one another.
