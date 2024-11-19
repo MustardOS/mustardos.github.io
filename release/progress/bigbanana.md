@@ -103,7 +103,6 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added Tailscale to Web Services
 - Added task scripts to restore friendly names and themes
 - Adjusted default sound rate to 48000
-  and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
 - Changed archive module to use collections
 - Changed async sound for all modules
 - Changed in-game working LED to be off on charge + sleep
@@ -112,7 +111,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Check for `skip.ini` on SD2 first on content search
 - Consolidated grid mode input navigation handler
 - Defaulted to `performance` governor for CD-i
-- Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt)
+- Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt) and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed advanced artwork config for favourite and history box art display
