@@ -40,11 +40,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Contributors
 
+- achillespdx
 - antiKk
 - bcat
 - Bitter_Bizarro
 - duncanyoyo1
 - gordenfreemant
+- harryarry
 - ikaruga921196
 - illumini_85
 - j0tt
@@ -68,7 +70,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added binary size check for Syncthing
 - Added catalogue priority image loader for applications, archives, and tasks
 - Added column mode to advanced box art config
+- Added controller support for DPADs that register as buttons
 - Added DAT extension to `skip.ini` file
+- Added device specific RetroArch overrides on default configuration
 - Added device variable to indicate RGB support
 - Added Diagnostics script to task toolkit
 - Added "Display Empty Folder" visual option
@@ -84,7 +88,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added `LIST_*_GRADIENT_DIRECTION` support to the `[list]` section of theme schemas
 - Added Mednafen PCE core to SuperGrafx system
+- Added menu controller support
 - Added migrate and sync scripts for storage module
+- Added missing make inclusion for `muhotkey`
 - Added MPV player
 - Added mReader application for general content launching
 - Added network wait for web services before initialisation
@@ -92,17 +98,25 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added PICO-8 Mouse Support
 - Added PICO-8 Pixel Perfect Scaler
 - Added progress bar support for `muxstart` module for first init setup
+- Added script to save active theme as installable theme
 - Added search content feature - Press `SELECT` on content and select search
 - Added splash image on content launching support
 - Added string extraction function
+- Added support for controller profiles
 - Added support for device specific theme previews
 - Added support for disabling grid panel in `muxplore` with a `.nogrid` file
 - Added support for displaying assigned core
 - Added support for empty WiFi passwords
+- Added support for user defined custom packages for catalogue and RetroArch configurations
 - Added support for user initialisation scripts
 - Added Tailscale to Web Services
 - Added task scripts to restore friendly names and themes
+- Added tasks for saving current catalogue and RetroArch configurations
+- Added theme support for boxart padding
+- Added YabaSanshiro external core to SEGA Saturn system
+- Added YabaSanshiro restore controls task
 - Adjusted default sound rate to 48000
+- Bind all Pico-8 data to save folder
 - Changed archive module to use collections
 - Changed async sound for all modules
 - Changed in-game working LED to be off on charge + sleep
@@ -112,6 +126,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Consolidated grid mode input navigation handler
 - Defaulted to `performance` governor for CD-i
 - Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt) and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
+- Enabled core option categories
+- Enabled core updater with muOS core builder URL
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed advanced artwork config for favourite and history box art display
@@ -125,6 +141,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed drastic-trngaje slow stylus
 - Fixed icon alignment in `muxsearch` when using size to content
 - Fixed inconsistent behaviour of scroll wrapping in interface options
+- Fixed issue with item text being displayed on main menu when using grid mode
 - Fixed issue with searching root path
 - Fixed issue with wrong game being selected from search
 - Fixed L1 and R1 glyphs in `muxtester`
@@ -176,6 +193,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Replaced `gotty` with `ttyd`
 - Rework find script to search multiple storage paths
 - Suppressed idle sleep while charging to ease file transfers
+- Update controller profile name to include vendor and product id
 - Updated grid panel to use panel font if available
 - Updated grid panel width to be calculated off column width
 - Updated languages
@@ -194,4 +212,5 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Updated Syncthing and Tailscale
 - Updated theme overrides for radius and size
 - Updated theme picker to support scrolling text
+- Updated version format
 - Updated Vircon32 and Ardens Libretro cores for save state compatibility
