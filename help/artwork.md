@@ -14,22 +14,7 @@ has_children: false
 
 ## muOS Catalogue Structure
 
-Folders for all available systems should be automatically created for you.  
-These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`
-
-### Example INI file
-
-```ini
-[global]
-name = Atari 2600
-default = Stella
-catalogue = Atari 2600
-cache = 0
-```
-
-Here we can see the catalogue folder for this system is `Atari 2600`.
-
-**All game artwork should be named to match your ROMs.**
+muOS's catalogue (which contains information on your ROMs, as well as associated images) is structured as such:
 
 ```
 SD1
@@ -58,21 +43,34 @@ SD1
                      └── sd2.png
 ```
 
-As muOS assigns artwork by system, you will need to assign a core before artwork is displayed.  
-Starting in `muOS Beans` it should attempt to assign a system automatically.
+These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`
+Folders for all available systems should be automatically created for you.  
 
-**Example**  
-If you have some ROMs in:
+### Example INI file
 
-```
-/mnt/sdcard/roms/Nintendo/SNES/Action/*.zip
+```ini
+[global]
+name = Atari 2600
+default = Stella
+catalogue = Atari 2600
+cache = 0
 ```
 
-Artwork files for this system go in:
+Here we can see the catalogue folder for this system is `Atari 2600`.
 
-```
-MUOS/info/catalogue/Nintendo SNES-SFC/
-```
+## Matching image files to your ROMs
+
+To have your artwork properly show up, ensure these three things:
+
+1. Your artwork filename should match the ROM filename. For example, if you have a ROM called `Chrono Trigger (USA).zip`, the artwork filename should be `Chrono Trigger (USA).png`
+2. Your artwork must be placed in the correct location: `box/` (for boxart) or `preview/` (for preview images/screenshots) inside `MUOS/info/catalogue/<SystemName>/`.
+For example, we would store our chrono trigger artwork as `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. We use *Nintendo SNES-SFC* because as stated earlier, this is the defined catalogue folder name for SNES content.
+3. Have the correct system assigned to your folder(s).
+   - Starting in `muOS Beans`, muOS should attempt to assign systems to your folders automatically. But in edge cases where it doesn't, and you see no artwork being shown, simply navigate to the folder in the content explorer (for example, `Nintendo/SNES/`), press Select, and assign a core. Either choose to assign to the directory, or recursively so that all subfolders are also matched. 
+
+Note: muOS will check for artwork independently of a system's subfolders. So, say your ROM file is located at `SD2/roms/Nintendo/SNES/JRPGs/Chrono Trigger (USA).zip`, muOS will only check in the *root* of `MUOS/info/catalogue/Nintendo SNES-SFC/box/`, and will ignore subfolders inside the boxart folder. So if you place your art in `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs`, it won't detect the artwork.
+
+## Folder artwork
 
 The folder named **Folder** can be used to apply artwork to any folder in content explorer and just needs to match the
 folder name.  
