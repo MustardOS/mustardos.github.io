@@ -87,6 +87,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added Hebrew, Irish, and Persian languages
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added `LIST_*_GRADIENT_DIRECTION` support to the `[list]` section of theme schemas
+- Added lookup (and reverse lookup) module dependency for frontend
 - Added Mednafen PCE core to SuperGrafx system
 - Added menu controller support
 - Added migrate and sync scripts for storage module
@@ -107,6 +108,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added support for disabling grid panel in `muxplore` with a `.nogrid` file
 - Added support for displaying assigned core
 - Added support for empty WiFi passwords
+- Added support for theme specific BGM
 - Added support for user defined custom packages for catalogue and RetroArch configurations
 - Added support for user initialisation scripts
 - Added Tailscale to Web Services
@@ -115,6 +117,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added theme support for boxart padding
 - Added YabaSanshiro external core to SEGA Saturn system
 - Added YabaSanshiro restore controls task
+- Adjusted BGM script to play any valid audio file via `mpv`
 - Adjusted default sound rate to 48000
 - Bind all Pico-8 data to save folder
 - Changed archive module to use collections
@@ -126,6 +129,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Consolidated grid mode input navigation handler
 - Defaulted to `performance` governor for CD-i
 - Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt) and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
+- Disabled SDL blitter to fix YabaSanshiro flickering
 - Enabled core option categories
 - Enabled core updater with muOS core builder URL
 - Enabled PICO-8 to respect modern/retro control flag
@@ -153,6 +157,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed network options being shown when network disabled
 - Fixed overlay image being applied twice
 - Fixed overlay image priority
+- Fixed package content deletion logic
 - Fixed save and load hotkeys for RG35XX-PLUS and RG35XX-2024 devices
 - Fixed ScummVM log directory
 - Fixed search module holding on to box art
@@ -164,15 +169,21 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Increase close-content timeout from 5s to 10s
 - Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
+- Modified module screen userdata to use module process name
 - Modified screen refresh to accept wait value
 - Modified skip entry file with wildcard suffix
 - Moved BGM Kill function to general function script
 - Moved boxart behind headers and footers
+- Moved colour temperature to singular values
+- Moved from cache JSON to internal lookup table
 - Moved internal fallback theme to default directory
 - Moved storage preference module to configuration module
 - Moved to catalogue path define
 - Optimised internal scripts
+- Optimised item generation function
 - Preserved empty directories and added progress bars during archive install
+- Purged cache info directory
+- Purged core specific name files in favour of lookup table
 - Removed `evsieve` idle inhibitor
 - Removed extra copy of default theme to avoid sync issues
 - Removed global core auto assign options on directory change
@@ -194,6 +205,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Rework find script to search multiple storage paths
 - Suppressed idle sleep while charging to ease file transfers
 - Update controller profile name to include vendor and product id
+- Updated assign to convert cache to lookup
 - Updated grid panel to use panel font if available
 - Updated grid panel width to be calculated off column width
 - Updated languages
