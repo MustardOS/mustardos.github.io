@@ -1,0 +1,69 @@
+// Callouts
+
+// note
+p.note, blockquote.note {
+    background: rgba($purple-100, 0.1);
+
+    &::before {
+        color: $purple-000;
+    }
+}
+
+p.note-title, blockquote.note-title {
+    background: rgba($purple-100, 0.1);
+
+    p:first-child {
+        color: $purple-100;
+    }
+}
+
+// warning
+p.warning, blockquote.warning {
+    background: rgba($red-100, 0.1);
+
+    &::before {
+        color: $red-000;
+    }
+}
+
+p.warning-title, blockquote.warning-title {
+    background: rgba($red-100, 0.1);
+    
+    p:first-child {
+        color: $red-100;
+    }
+}
+
+// important
+p.important, blockquote.important {
+    background: rgba($blue-100, 0.1);
+
+    &::before {
+        color: $blue-000;
+    }
+}
+
+p.important-title, blockquote.important-title {
+    background: rgba($blue-100, 0.1);
+    
+    p:first-child {
+        color: $blue-100;
+    }
+}
+
+// new
+p.new, blockquote.new {
+    background: rgba($green-100, 0.1);
+
+    &::before {
+        color: $green-000;
+    }
+}
+
+p.new-title, blockquote.new-title {
+    background: rgba($green-100, 0.1);
+    
+    p:first-child {
+        color: $green-100;
+    }
+}

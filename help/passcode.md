@@ -2,7 +2,7 @@
 layout: default
 title: Passcode Lock
 permalink: /help/passcode
-nav_order: 10
+nav_order: 11
 parent: Help
 has_children: false
 ---

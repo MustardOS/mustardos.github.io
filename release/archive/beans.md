@@ -1,22 +1,19 @@
 ---
 layout: default
-title: 2405 Beans
+title: 2405 BEANS
 permalink: /release/archive/beans
 parent: Archive
 grand_parent: Release
+nav_order: 2
+has_toc: false
 ---
 
-# muOS 2405 Beans
+# muOS 2405 BEANS
 ## Download
-_This release has now **bean** archived._
-
-``2b0796202dfcb010dcf47b8cd3ed35100d0dace9909560306e748cbb2d4633c7  muOS-RG35XX-2405-BEANS.img``
-
-## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!
-
-[Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
-
+_This release is now archived._
+```
+2b0796202dfcb010dcf47b8cd3ed35100d0dace9909560306e748cbb2d4633c7  muOS-RG35XX-2405-BEANS.img
+```
 ## Significant Changes
 - ``AARCH64`` is now default architecture (Major thanks to both @siliconexarch and @acmeplus)
   - This is a major change to the underlying system and _should_ bring some performance benefits!
