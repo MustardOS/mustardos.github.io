@@ -28,11 +28,11 @@ has_toc: false
 | Y                       | A                        |
 | B                       | B                        |
 | A                       | C                        |
-| L2                      | X                        |
-| X                       | Y                        |
-| R2                      | Z                        |
-| L1                      | L                        |
-| R1                      | R                        |
+| X                       | X                        |
+| L1                      | Y                        |
+| R1                      | Z                        |
+| L2                      | L                        |
+| R2                      | R                        |
 
 ## YabaSanshiro Standalone Compatibility List
 [RG ARC Saturn Compatibility List](https://docs.google.com/spreadsheets/d/1GJfdZuFZLvtn6l6K16dvRrBRXopnKWZLqA42QmHhqQU/edit?gid=0#gid=0)  
