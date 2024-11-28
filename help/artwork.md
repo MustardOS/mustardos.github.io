@@ -43,7 +43,7 @@ SD1
                      └── sd2.png
 ```
 
-These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`
+These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`  
 Folders for all available systems should be automatically created for you.  
 
 ### Example INI file
