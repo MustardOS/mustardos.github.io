@@ -14,22 +14,7 @@ has_children: false
 
 ## muOS Catalogue Structure
 
-Folders for all available systems should be automatically created for you.  
-These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`
-
-### Example INI file
-
-```ini
-[global]
-name = Atari 2600
-default = Stella
-catalogue = Atari 2600
-cache = 0
-```
-
-Here we can see the catalogue folder for this system is `Atari 2600`.
-
-**All game artwork should be named to match your ROMs.**
+muOS's catalogue (which contains information on your ROMs, as well as associated images) is structured as such:
 
 ```
 SD1
@@ -58,21 +43,35 @@ SD1
                      └── sd2.png
 ```
 
-As muOS assigns artwork by system, you will need to assign a core before artwork is displayed.  
-Starting in `muOS Beans` it should attempt to assign a system automatically.
+These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`
+Folders for all available systems should be automatically created for you.  
+
+### Example INI file
+
+```ini
+[global]
+name = Atari 2600
+default = Stella
+catalogue = Atari 2600
+cache = 0
+```
+
+Here we can see the catalogue folder for this system is `Atari 2600`.
+
+## Matching image files to your ROMs
+
+**All game artwork should be named to match your ROMs.**
+
+Note that since muOS assigns artwork by system, *you will need to manually assign a core to your folders and subfolders before artwork is displayed.*
 
 **Example**  
-If you have some ROMs in:
+If you have some ROMs in `/mnt/sdcard/roms/Nintendo/SNES/Action/*.zip`, artwork files for this system go in `MUOS/info/catalogue/Nintendo SNES-SFC/`
 
-```
-/mnt/sdcard/roms/Nintendo/SNES/Action/*.zip
-```
+Any ROM that is in your chosen system folder or any of it's subfolders will match, as long as it's name matches with your ROM. 
 
-Artwork files for this system go in:
+Say we have `Chrono Trigger (USA).zip`, and it's in `/mnt/sdcard/roms/Nintendo/SNES/JRPGs/`. You would need to place your artwork as such: `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. You do **not** want `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs/Chrono Trigger.jpg`, that will not work.
 
-```
-MUOS/info/catalogue/Nintendo SNES-SFC/
-```
+## Folder artwork
 
 The folder named **Folder** can be used to apply artwork to any folder in content explorer and just needs to match the
 folder name.  
