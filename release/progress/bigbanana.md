@@ -71,6 +71,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added catalogue priority image loader for applications, archives, and tasks
 - Added column mode to advanced box art config
 - Added controller support for DPADs that register as buttons
+- Added custom lookup table support
 - Added DAT extension to `skip.ini` file
 - Added device specific RetroArch overrides on default configuration
 - Added device variable to indicate RGB support
@@ -87,7 +88,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added Hebrew, Irish, and Persian languages
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added `LIST_*_GRADIENT_DIRECTION` support to the `[list]` section of theme schemas
-- Added lookup (and reverse lookup) module dependency for frontend
+- Added lookup (_and reverse lookup_) module dependency for frontend
 - Added Mednafen PCE core to SuperGrafx system
 - Added menu controller support
 - Added migrate and sync scripts for storage module
@@ -101,6 +102,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added progress bar support for `muxstart` module for first init setup
 - Added script to save active theme as installable theme
 - Added search content feature - Press `SELECT` on content and select search
+- Added separate HDMI configuration module
 - Added splash image on content launching support
 - Added string extraction function
 - Added support for controller profiles
@@ -120,6 +122,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Adjusted BGM script to play any valid audio file via `mpv`
 - Adjusted default sound rate to 48000
 - Bind all Pico-8 data to save folder
+- Bind current device on startup
 - Changed archive module to use collections
 - Changed async sound for all modules
 - Changed in-game working LED to be off on charge + sleep
@@ -143,6 +146,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed default BANANA theme layout
 - Fixed DPAD stylus press on A button for drastic-trngaje
 - Fixed drastic-trngaje slow stylus
+- Fixed favourite and history deletion
 - Fixed icon alignment in `muxsearch` when using size to content
 - Fixed inconsistent behaviour of scroll wrapping in interface options
 - Fixed issue with item text being displayed on main menu when using grid mode
@@ -158,6 +162,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed overlay image being applied twice
 - Fixed overlay image priority
 - Fixed package content deletion logic
+- Fixed random selection double hit issue
 - Fixed save and load hotkeys for RG35XX-PLUS and RG35XX-2024 devices
 - Fixed ScummVM log directory
 - Fixed search module holding on to box art
@@ -181,9 +186,10 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Moved to catalogue path define
 - Optimised internal scripts
 - Optimised item generation function
+- Optimised lookup table functions
 - Preserved empty directories and added progress bars during archive install
 - Purged cache info directory
-- Purged core specific name files in favour of lookup table
+- Purged core specific name files in favour of internal lookup table
 - Removed `evsieve` idle inhibitor
 - Removed extra copy of default theme to avoid sync issues
 - Removed global core auto assign options on directory change
