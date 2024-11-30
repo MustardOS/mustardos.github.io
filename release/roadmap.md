@@ -7,8 +7,12 @@ nav_order: 4
 ---
 
 # Roadmap
-- Bluetooth support
-- Content searching
-- External emulator bezels
-- Screensaver support
-- WPA3 support
+- Bluetooth
+- Catalogue Music
+- External Emulator Bezels
+- HDMI Aspect Ratio
+- Kiosk/Kids Mode
+- Network Configuration Improvements
+  - AP Mode 
+  - Direct WPA3
+  - Multiple Network
