@@ -65,7 +65,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added ability to use specific fonts, images, and schemes based on device resolution
 - Added additional catalogue directories
 - Added additional controller profiles
-- Added additional navigation sounds: `keypress.wav` (_OSK_) and `muos.wav` (_?_)
+- Added additional navigation sounds: `keypress.wav` (_OSK_), `error.wav`, and `muos.wav` (_?_)
 - Added async audio option for specific navigation block sounds
 - Added audio overdrive support
 - Added Beetle GBA core to Gameboy Advance system
