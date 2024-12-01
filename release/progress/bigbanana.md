@@ -64,8 +64,10 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added ability to directly load search from content root
 - Added ability to use specific fonts, images, and schemes based on device resolution
 - Added additional catalogue directories
+- Added additional controller profiles
 - Added additional navigation sounds: `keypress.wav` (_OSK_) and `muos.wav` (_?_)
 - Added async audio option for specific navigation block sounds
+- Added audio overdrive support
 - Added Beetle GBA core to Gameboy Advance system
 - Added binary size check for Syncthing
 - Added catalogue priority image loader for applications, archives, and tasks
@@ -86,12 +88,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added GBA overlays
 - Added grid panel theme support to `muxapp`, `muxlaunch` and `muxplore`
 - Added Hebrew, Irish, and Persian languages
+- Added hidden SSID network connection support
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added `LIST_*_GRADIENT_DIRECTION` support to the `[list]` section of theme schemas
 - Added lookup (_and reverse lookup_) module dependency for frontend
 - Added Mednafen PCE core to SuperGrafx system
 - Added menu controller support
 - Added migrate and sync scripts for storage module
+- Added missing HDMI audio `userdata` field
 - Added missing make inclusion for `muhotkey`
 - Added MPV player
 - Added mReader application for general content launching
@@ -142,13 +146,17 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed bind mount typo for DraStic-Legacy
 - Fixed boxart disappearing issue on search results
 - Fixed content count display on explore content root
+- Fixed content explorer previous directory location
 - Fixed credit names and visual swap issue on friendly folder
 - Fixed default BANANA theme layout
+- Fixed default global configuration values
 - Fixed DPAD stylus press on A button for drastic-trngaje
 - Fixed drastic-trngaje slow stylus
 - Fixed favourite and history deletion
+- Fixed HDMI start stop logic
 - Fixed icon alignment in `muxsearch` when using size to content
 - Fixed inconsistent behaviour of scroll wrapping in interface options
+- Fixed issue with customisation page defaulting to RetroArch Configurations
 - Fixed issue with item text being displayed on main menu when using grid mode
 - Fixed issue with searching root path
 - Fixed issue with wrong game being selected from search
@@ -174,7 +182,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Increase close-content timeout from 5s to 10s
 - Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
-- Modified module screen userdata to use module process name
+- Modified module screen `userdata` to use module process name
 - Modified screen refresh to accept wait value
 - Modified skip entry file with wildcard suffix
 - Moved BGM Kill function to general function script
@@ -212,6 +220,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Suppressed idle sleep while charging to ease file transfers
 - Update controller profile name to include vendor and product id
 - Updated assign to convert cache to lookup
+- Updated extraction script to properly detect multi resolution theme files
 - Updated grid panel to use panel font if available
 - Updated grid panel width to be calculated off column width
 - Updated languages
