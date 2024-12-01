@@ -153,6 +153,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed DPAD stylus press on A button for drastic-trngaje
 - Fixed drastic-trngaje slow stylus
 - Fixed favourite and history deletion
+- Fixed governor loading issue for favourites, history, and last load launch
 - Fixed HDMI start stop logic
 - Fixed icon alignment in `muxsearch` when using size to content
 - Fixed inconsistent behaviour of scroll wrapping in interface options
