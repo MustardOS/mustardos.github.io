@@ -82,6 +82,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added DPAD Swap variable for hotkey listener
 - Added external Flycast directories
 - Added fade to black animation support
+- Added favourites and history modules to use internal name lookup table
 - Added formatted script logging system
 - Added friendly file lookup for search results
 - Added function to load grid muxlaunch images through muxlaunch folder
@@ -91,6 +92,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added hidden SSID network connection support
 - Added INI assign files for MegaDuck and Sega Pico systems
 - Added `LIST_*_GRADIENT_DIRECTION` support to the `[list]` section of theme schemas
+- Added kiosk mode support
 - Added lookup (_and reverse lookup_) module dependency for frontend
 - Added Mednafen PCE core to SuperGrafx system
 - Added menu controller support
@@ -117,6 +119,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added support for theme specific BGM
 - Added support for user defined custom packages for catalogue and RetroArch configurations
 - Added support for user initialisation scripts
+- Added system swap file to advanced settings
 - Added Tailscale to Web Services
 - Added task scripts to restore friendly names and themes
 - Added tasks for saving current catalogue and RetroArch configurations
@@ -143,6 +146,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed advanced artwork config for favourite and history box art display
 - Fixed auto assign routine to avoid running on storage selection or content root
+- Fixed BGM for device power and sleep states
+- Fixed BGM loading logic
+- Fixed BGM state for applications
 - Fixed bind mount typo for DraStic-Legacy
 - Fixed boxart disappearing issue on search results
 - Fixed content count display on explore content root
@@ -183,6 +189,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Increase close-content timeout from 5s to 10s
 - Increase upper bound on random image range
 - Merged device-specific `input.sh` scripts into `hotkey.sh` configured via JSON
+- Modified `fbpad` to accept background and foreground colouring via themes
 - Modified module screen `userdata` to use module process name
 - Modified screen refresh to accept wait value
 - Modified skip entry file with wildcard suffix
@@ -221,6 +228,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Suppressed idle sleep while charging to ease file transfers
 - Update controller profile name to include vendor and product id
 - Updated assign to convert cache to lookup
+- Updated collection to use natural sorting
 - Updated extraction script to properly detect multi resolution theme files
 - Updated grid panel to use panel font if available
 - Updated grid panel width to be calculated off column width
