@@ -28,6 +28,7 @@ webserv = 0
 core = 0
 governor = 0
 option = 0
+retroarch = 0
 search = 0
 
 [custom]
@@ -71,6 +72,7 @@ Change the `0` to `1` to disable the functionality of the specific element.
 | `content/core`         | Content Core Assign         |
 | `content/governor`     | Content Governor Assign     |
 | `content/option`       | Content Options             |
+| `content/retroarch`    | RetroArch Kiosk Mode        |
 | `content/search`       | Content Searching           |
 | `custom/catalogue`     | Catalogue Customisation     |
 | `custom/configuration` | Configuration Customisation |
