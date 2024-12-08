@@ -106,10 +106,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Added PICO-8 Mouse Support
 - Added PICO-8 Pixel Perfect Scaler
 - Added progress bar support for `muxstart` module for first init setup
+- Added RetroArch kiosk support mode
 - Added script to save active theme as installable theme
 - Added search content feature - Press `SELECT` on content and select search
 - Added separate HDMI configuration module
 - Added splash image on content launching support
+- Added storage schedule option
 - Added string extraction function
 - Added support for controller profiles
 - Added support for device specific theme previews
@@ -148,6 +150,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed auto assign routine to avoid running on storage selection or content root
 - Fixed BGM for device power and sleep states
 - Fixed BGM loading logic
+- Fixed BGM sleep state
 - Fixed BGM state for applications
 - Fixed bind mount typo for DraStic-Legacy
 - Fixed boxart disappearing issue on search results
@@ -167,6 +170,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Fixed issue with item text being displayed on main menu when using grid mode
 - Fixed issue with searching root path
 - Fixed issue with wrong game being selected from search
+- Fixed kiosk temporary disable mode
 - Fixed L1 and R1 glyphs in `muxtester`
 - Fixed language setting for network configuration module
 - Fixed low level brightness bug on sleep wake
@@ -236,17 +240,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Updated moonlight to use aarch64 `gptokeyb`
 - Updated `muxplore` to default to SD1 if no content found
 - Updated `muxsplash` to support screen resolutions
-- Updated PCE Engine Libretro core
-- Updated PCSX Libretro core
 - Updated PPSSPP external emulator to 1.18.1
 - Updated reader and gptk files for load/save state of files
 - Updated RetroArch cheat archive
 - Updated RetroArch configurations for all working systems
+- Updated RetroArch cores
 - Updated RetroArch overlays
-- Updated Sameboy Libretro core
 - Updated supporter credits
 - Updated Syncthing and Tailscale
 - Updated theme overrides for radius and size
 - Updated theme picker to support scrolling text
 - Updated version format
-- Updated Vircon32 and Ardens Libretro cores for save state compatibility
