@@ -91,10 +91,11 @@ Change the `0` to `1` to disable the functionality of the specific element.
 | `setting/power`        | Power Settings Menu         |
 | `setting/visual`       | Interface Options Menu      |
 
-Upon device boot the `kiosk.ini` file will be moved to `/opt/muos/config/kiosk.ini` so sticky fingers can't get access!
-If a clever cookie decides to create another file at `MUOS/kiosk.ini` it won't work because the above exists.
+Upon device boot the `kiosk.ini` file will be moved from `MUOS/kiosk.ini` to `/opt/muos/config/kiosk.ini` so sticky
+fingers can't get access! If a clever cookie decides to create another file at `MUOS/kiosk.ini` it won't work because
+the above exists.
 
-You can omit certain sections if need be, so if you want to disable, for example:
+You can omit certain sections if need be, for example if you wanted to:
 
 * Disable Task Toolkit
 * Disable Favourites
@@ -115,11 +116,10 @@ advanced = 1
 
 ## Temporarily Disable
 
-Press `L1 + R2 + Y` on the Reboot item. This will copy the `kiosk.ini` from `/opt/muos/config` back to `MUOS/kiosk.ini`
-and purge the file in `/opt/muos/config` so that upon _next_ reboot it will process the `kiosk.ini` file. Think of it
-like a quick change, there is no save mechanism for the `kiosk.ini` as we believe this should be done _outside_ of the
-device itself.
+Press `L1 + R2 + Y` on the Reboot item. This will move `/opt/muos/config/kiosk.ini` back to `MUOS/kiosk.ini` and
+reload the muOS frontend without the need of a reboot.
 
 ## Permanently Disable
 
-Press `L1 + R2 + X` on the **Reboot** item. This will purge the file at `/opt/muos/config/kiosk.ini` and reboot.
+Press `L1 + R2 + X` on the **Reboot** item. This will disable kiosk mode and purge the file at
+`/opt/muos/config/kiosk.ini` and reload the muOS frontend without the need of a reboot.
