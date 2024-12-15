@@ -10,16 +10,16 @@ has_children: true
 muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, themeable, friendly, easy-to-use.
 {: .fs-6 .fw-300 }
 
-[Download Here](https://dl.muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Download Latest Here](release/current/bigbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Discord Server](https://discord.gg/USS5ybVtDz){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .note }
-> Always ensure you download from our official website or supported mirrors.
+> Always ensure you download from our official download page or supported mirrors.
 
 ***
 
 # Socials
-[Instagram](https://instagram.com/muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Instagram](https://instagram.com/muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Twitter/X](https://x.com/@_mustardOS){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ***
@@ -58,7 +58,7 @@ turn it on, and it will take care of the rest.
 {: .note }
 > Swap Dpad <> Analogue is only for devices without analogue sticks.
 
-### RG40XX-H LED Hotkeys
+### LED Hotkeys
 
 | Type                    | Control                  |
 |:------------------------|:-------------------------|
@@ -67,6 +67,9 @@ turn it on, and it will take care of the rest.
 | Decrease Brightness     | MENU + Right Stick Down  |
 | Previous Colour         | MENU + Right Stick Left  |
 | Next Colour             | MENU + Right Stick Right |
+
+{: .note }
+> Exchange right stick for left stick on the RG40XX-V device.
 
 ## Devices
 
@@ -79,6 +82,11 @@ turn it on, and it will take care of the rest.
 | Anbernic RG35XX SP   |
 | Anbernic RG40XX H    |
 | Anbernic RG40XX V    |
+| Anbernic RGCUBEXX    |
+
+| Development     |
+|:----------------|
+| Anbernic RG34XX |
 
 | Limited            |
 |:-------------------|

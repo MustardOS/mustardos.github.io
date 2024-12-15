@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2410.1 BANANA
-permalink: /release/current/banana
-parent: Current
+permalink: /release/archive/banana
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -10,11 +10,7 @@ has_toc: false
 
 # muOS 2410.1 BANANA
 ## Download
-You can download both images and torrent files from links below.
-
-[Download Images + Torrents from muOS.dev](https://dl.muos.dev/RELEASE/2410.1/)
-
-[Download Images + Torrents from MEGA](https://mega.nz/folder/cjpSHQTL#NGXwbz_PWO1p2GVZA23v_A)
+_This release is now archived._
 
 ## Support muOS
 Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2410.2 BIG BANANA
-permalink: /release/progress/bigbanana
-parent: Progress
+permalink: /release/current/bigbanana
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -12,7 +12,10 @@ has_toc: false
 
 ## Download
 
-Not ready just yet!
+[Download from MEGA](https://mega.nz/folder/gvpxmRST#lCTnrq90MnQOB_L2QEfOpw){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from Gofile](https://gofile.io/d/bkHtf2){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+_If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!_
 
 ## Support muOS
 
@@ -32,11 +35,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 ## Important
 
 {: .highlight }
-> This requires you to already have 2410.1 BANANA already setup and installed on your device.
+> The update requires you to already have 2410.1 BANANA already setup and installed on your device.
 >
 > Using modified muOS installations or previous versions may have strange or breaking outcomes.
 >
-> You can also download the full image from the links above and start fresh!
+> You can download the full image from the links above and start fresh!
 
 ## Contributors
 
