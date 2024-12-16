@@ -12,10 +12,15 @@ has_toc: false
 
 ## Download
 
-[Download from MEGA](https://mega.nz/folder/gvpxmRST#lCTnrq90MnQOB_L2QEfOpw){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
-[Download from Gofile](https://gofile.io/d/bkHtf2){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Download from Gofile](https://gofile.io/d/bkHtf2){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/gvpxmRST#lCTnrq90MnQOB_L2QEfOpw){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-_If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!_
+{: .highlight }
+> If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
+> 
+> So everybody is aware, MEGA has restrictions on certain countries and places a download limit.  Use either Gofile or
+> the Torrents if you cannot use MEGA.  And for goodness sake we are **not** moving to a paid subscription like some
+> people might be thinking.  _The absurdity..._
 
 ## Support muOS
 
