@@ -10,10 +10,15 @@ has_toc: false
 
 # muOS 2410.2 BIG BANANA
 
-## Download
+## Download Full Image
 
 [Download from Gofile](https://gofile.io/d/bkHtf2){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Download from MEGA](https://mega.nz/folder/gvpxmRST#lCTnrq90MnQOB_L2QEfOpw){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+## Download Update Only
+
+[Download from Gofile](https://gofile.io/d/PyspvT){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/MzhHVIoC#4imi8wesThvpqLK6jhxojg){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .highlight }
 > If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
