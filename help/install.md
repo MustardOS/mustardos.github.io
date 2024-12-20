@@ -11,7 +11,7 @@ has_children: false
 Download the latest image from one of the following channels.
 {: .fs-6 .fw-300 }
 
-[Download Latest Here](release/current/bigbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download Latest Here](/release/current/bigbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 # Extracting
 muOS images are distributed as ``.img.gz`` files and most imaging software shouldn't require them to be extracted.
