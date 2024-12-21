@@ -22,9 +22,9 @@ has_toc: false
 
 {: .highlight }
 > If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
-> 
-> So everybody is aware, MEGA has restrictions on certain countries and places a download limit.  Use either Gofile or
-> the Torrents if you cannot use MEGA.  And for goodness sake we are **not** moving to a paid subscription like some
+>
+> So everybody is aware, MEGA has restrictions on certain countries and places a download limit. Use either Gofile or
+> the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
 > people might be thinking.  _The absurdity..._
 
 ## Support muOS
@@ -153,7 +153,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Check for `skip.ini` on SD2 first on content search
 - Consolidated grid mode input navigation handler
 - Defaulted to `performance` governor for CD-i
-- Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt) and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
+- Disable drastic threaded 3D - [Drastic Link](https://drastic-ds.com/drastic_readme.txt)
+  and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
 - Disabled SDL blitter to fix YabaSanshiro flickering
 - Enabled core option categories
 - Enabled core updater with muOS core builder URL
