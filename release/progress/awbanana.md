@@ -51,18 +51,41 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * antikk
 * bgelmini
 * duncanyoyo1
+* \_\_krt\_\_
 * thegammasqueeze
 * xonglebongle
 
 ## Changes
+* Added disk health check through `fsck` on device startup
+* Added extra PICO-8 favourite directory checking
+* Added Odyssey2/VideoPac assignable system
 * Added RG34XX-H device support
+* Adjusted default backlight brightness on first boot
+* Adjusted device panel timings
+* Adjusted mSD card frequency
 * Disabled forced power off functionality
+* Fixed charging module brightness path structure
+* Fixed CPU core count variable on suspend
+* Fixed default RetroArch resolution for RG34XX-H
+* Fixed HDMI startup values
+* Fixed low power indicator
+* Fixed network module element count
+* Fixed NX-Engine download script
+* Fixed ports not having sound when line is commented
+* Fixed power light while charging logic
+* Fixed RetroArch network wait status messages
 * Fixed RG28XX-H screenshot rotation
 * Fixed RG35XX-SP charging and sleep conflict issue
 * Fixed ScummVM launch script getting stuck with trailing spaces
-* Fixed charging module brightness path structure
-* Fixed display panel timing for the RG34XX-H, RG35XX-SP, and RGCUBEXX-H devices
-* Fixed ports not having sound when line is commented
+* Fixed virtual terminal service saving
+* Modified `fastfetch` information with muOS logo
+* Modified GPU maximum frequency
+* Moved low power indicator and RetroArch precache to after charge mode
+* Optimised frontend modules
+* Reduced power script CPU usage by delaying power off functionality
+* Removed 4:3 overlays from RG34XX-H
 * Removed retro achievements on RetroArch configuration set save
 * Updated Microsoft MSX assignable system
+* Updated ScummVM to 2.9.0 with TWP fix
+* Updated SFTPgo system
 * Updated theme for RG34XX-H device resolution
