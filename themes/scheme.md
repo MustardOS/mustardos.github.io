@@ -291,6 +291,10 @@ Alters properties of list images.
 | IMAGE_LIST_RADIUS=3            | Image window radius. 0 = no change. 10+ = heavily rounded window. |
 | IMAGE_LIST_RECOLOUR=ad0000     | Image recolour.                                                   |
 | IMAGE_LIST_RECOLOUR_ALPHA=0    | Transparency of this colour.                                      |
+| IMAGE_LIST_PAD_TOP=0           | Number of pixels of space to add to top side of the image.        |
+| IMAGE_LIST_PAD_BOTTOM=0        | Number of pixels of space to add to bottom side of the image.     |
+| IMAGE_LIST_PAD_LEFT=0          | Number of pixels of space to add to left side of the image.       |
+| IMAGE_LIST_PAD_RIGHT=0         | Number of pixels of space to add to right side of the image.      |
 | IMAGE_PREVIEW_ALPHA=255        | Preview image transparency                                        |
 | IMAGE_PREVIEW_RADIUS=3         | Image window radius. 0 = no change. 10+ = heavily rounded window. |
 | IMAGE_PREVIEW_RECOLOUR=ad0000  | Image recolour.                                                   |
