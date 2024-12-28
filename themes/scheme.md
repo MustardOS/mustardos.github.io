@@ -193,6 +193,25 @@ Allows for displaying a grid of icons for the main menu or content explorer.  Co
 
 | Setting                              | Description                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------|
+| CURRENT_ITEM_LABEL_ALIGNMENT=9             | Label alignment:<br>1=Top Left<br>2=Top Middle<br>3=Top Right<br>4=Bottom Left<br>5=Bottom Middle<br>6=Bottom Right<br>7=Left Middle<br>8=Right Middle<br>9=Center |
+| CURRENT_ITEM_LABEL_WIDTH=600               | Width of label. A value of 0 will size to content.                        |
+| CURRENT_ITEM_LABEL_HEIGHT=0                | Height of label. A value of 0 will size to content.                       |
+| CURRENT_ITEM_LABEL_OFFSET_X=0              | Horizontal offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                  |
+| CURRENT_ITEM_LABEL_OFFSET_Y=260            | Vertical offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                    |
+| CURRENT_ITEM_LABEL_RADIUS=10               | Add radius to label corners. 0 is a right angle. 10+ is very round.       |
+| CURRENT_ITEM_LABEL_BORDER_WIDTH=5          | Border width in pixels.                                                   |
+| CURRENT_ITEM_LABEL_BORDER=FFFFFF           | Label border colour.                                                      |
+| CURRENT_ITEM_LABEL_BORDER_ALPHA=255        | Label border transparency.                                                |
+| CURRENT_ITEM_LABEL_BACKGROUND=000000       | Label background colour.                                                  |
+| CURRENT_ITEM_LABEL_BACKGROUND_ALPHA=255    | Label background transparency.                                            |
+| CURRENT_ITEM_LABEL_TEXT=FFFFFF             | Label text colour.                                                        |
+| CURRENT_ITEM_LABEL_TEXT_ALPHA=255          | Label text transparency.                                                  |
+| CURRENT_ITEM_LABEL_TEXT_ALIGNMENT=2        | Text horizontal alignment:<br>1=Left<br>2=Center<br>3=Right               |
+| CURRENT_ITEM_LABEL_TEXT_LINE_SPACING=0     | Amount of spacing between lines of text.  Negative values can be used.    |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_BOTTOM=10  | Amount of padding between bottom edge of label and text.                  |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_LEFT=10    | Amount of padding between left edge of label and text.                    |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_RIGHT=10   | Amount of padding between right edge of label and text.                   |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_TOP=10     | Amount of padding between top edge of label and text.                     |
 | NAVIGATION_TYPE=2                    |  2: Left/right/up/down navigation. Left/Right navigation at beginning or end of row moves to previous or next row.<br>4: Same as 2 except that left/right wraps around on the active row.  |
 | BACKGROUND=000000                    |  Grid main background colour.                                                   |
 | BACKGROUND_ALPHA=0                   |  Grid main background transparency.                                             |
@@ -272,6 +291,10 @@ Alters properties of list images.
 | IMAGE_LIST_RADIUS=3            | Image window radius. 0 = no change. 10+ = heavily rounded window. |
 | IMAGE_LIST_RECOLOUR=ad0000     | Image recolour.                                                   |
 | IMAGE_LIST_RECOLOUR_ALPHA=0    | Transparency of this colour.                                      |
+| IMAGE_LIST_PAD_TOP=0           | Number of pixels of space to add to top side of the image.        |
+| IMAGE_LIST_PAD_BOTTOM=0        | Number of pixels of space to add to bottom side of the image.     |
+| IMAGE_LIST_PAD_LEFT=0          | Number of pixels of space to add to left side of the image.       |
+| IMAGE_LIST_PAD_RIGHT=0         | Number of pixels of space to add to right side of the image.      |
 | IMAGE_PREVIEW_ALPHA=255        | Preview image transparency                                        |
 | IMAGE_PREVIEW_RADIUS=3         | Image window radius. 0 = no change. 10+ = heavily rounded window. |
 | IMAGE_PREVIEW_RECOLOUR=ad0000  | Image recolour.                                                   |
