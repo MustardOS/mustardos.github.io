@@ -54,16 +54,22 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * \_\_krt\_\_
 * thegammasqueeze
 * xonglebongle
+* yomama78
 
 ## Changes
 * Added disk health check through `fsck` on device startup
 * Added extra PICO-8 favourite directory checking
+* Added friendly names for ChannelF, IPTV, J2ME, Odyssey2, TIC-80 and Amstrad CPC/GX4000
 * Added Odyssey2/VideoPac assignable system
+* Added resolution change hack for HDMI output change
 * Added RG34XX-H device support
 * Adjusted default backlight brightness on first boot
 * Adjusted device panel timings
 * Adjusted mSD card frequency
+* Centralised language layout and separated most OSK functions
 * Disabled forced power off functionality
+* Disable HDMI changes whilst in use
+* Ensure muX resolution is restored on startup
 * Fixed charging module brightness path structure
 * Fixed CPU core count variable on suspend
 * Fixed default RetroArch resolution for RG34XX-H
@@ -81,10 +87,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Modified `fastfetch` information with muOS logo
 * Modified GPU maximum frequency
 * Moved low power indicator and RetroArch precache to after charge mode
+* Obtain output resolution for HDMI modes
 * Optimised frontend modules
 * Reduced power script CPU usage by delaying power off functionality
 * Removed 4:3 overlays from RG34XX-H
 * Removed retro achievements on RetroArch configuration set save
+* Revised HDMI output logic
+* Updated Application grid mode to use catalogue images
+* Updated default theme for `720x576` and `1280x720` support
 * Updated Microsoft MSX assignable system
 * Updated ScummVM to 2.9.0 with TWP fix
 * Updated SFTPgo system
