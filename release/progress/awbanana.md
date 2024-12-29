@@ -66,6 +66,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 * antikk
 * bgelmini
+* Bitter_Bizarro
 * duncanyoyo1
 * \_\_krt\_\_
 * thegammasqueeze
