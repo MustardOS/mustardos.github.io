@@ -18,12 +18,16 @@ _Not ready just yet!_
 
 _Not ready just yet!_
 
-{: .highlight }
+<hr>
+
+{: .note }
 > If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
 >
 > So everybody is aware, MEGA has restrictions on certain countries and places a download limit. Use either Gofile or
 > the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
-> people might be thinking.  _The absurdity..._
+> people might be thinking.  <small>_The absurdity..._</small>
+
+<hr>
 
 ## Support muOS
 
@@ -31,20 +35,32 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 **This can be done a few ways:**
 
-- Be helpful around the Discord community server
-- [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-- Spread the word about muOS and all its features
+* Be helpful around the Discord community server
+* [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
+* Spread the word about muOS and all its features
 
 **Or you can join the testing crew directly by:**
 
-- Supporting us via Ko-fi subscription
-- Boosting the Discord community server
+* Supporting us via Ko-fi subscription
+* Boosting the Discord community server
 
-## Important
+<hr>
 
-{: .highlight }
+## Please Read Carefully
+
+{: .new }
 > The update requires you to already have **2410.1 BANANA** or **2410.2 BIG BANANA** already setup and installed
 > on your device. Using modified muOS installations or previous versions may have strange or breaking outcomes.
+
+{: .important }
+> * To get the most benefit out of this testing release you will **need to reflash!**
+> * We now set threaded video to off and set the display timing to `60.00hz` for all devices
+> * If you are running into any weird stuttering ensure you reset (_or remove_) your current RetroArch configuration set
+> * You can install the update straight over the top of **any existing Banana**, or **Big Banana**, release including
+    those who have previously installed updates 1080p resolution via HDMI has been temporarily disabled due to video
+    memory issues with muX. This is not a breaking issue and will be fixed for Pixie.
+
+<hr>
 
 ## Contributors
 
@@ -57,9 +73,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * yomama78
 
 ## Changes
+
 * Added disk health check through `fsck` on device startup
 * Added extra PICO-8 favourite directory checking
 * Added friendly names for ChannelF, IPTV, J2ME, Odyssey2, TIC-80 and Amstrad CPC/GX4000
+* Added navigation sound `error.wav` for the times where something goes wrong
 * Added Odyssey2/VideoPac assignable system
 * Added resolution change hack for HDMI output change
 * Added RG34XX-H device support
