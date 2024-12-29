@@ -53,12 +53,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 > on your device. Using modified muOS installations or previous versions may have strange or breaking outcomes.
 
 {: .important }
-> * To get the most benefit out of this testing release you will **need to reflash!**
+> * To get the most benefit out of this release you will **need to reflash!**
 > * We now set threaded video to off and set the display timing to `60.00hz` for all devices
 > * If you are running into any weird stuttering ensure you reset (_or remove_) your current RetroArch configuration set
 > * You can install the update straight over the top of **any existing Banana**, or **Big Banana**, release including
-    those who have previously installed updates 1080p resolution via HDMI has been temporarily disabled due to video
-    memory issues with muX. This is not a breaking issue and will be fixed for Pixie.
+    those who have previously installed updates
+> * 1080p resolution via HDMI has been temporarily disabled due to video memory issues with muX. This is not a breaking
+    issue and will be fixed for Pixie.
 
 <hr>
 
