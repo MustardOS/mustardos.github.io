@@ -10,7 +10,7 @@ has_children: true
 muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, themeable, friendly, easy-to-use.
 {: .fs-6 .fw-300 }
 
-[Download Latest Here](release/current/bigbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download Latest Here](release/current/awbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Discord Server](https://discord.gg/USS5ybVtDz){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .note }

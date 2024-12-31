@@ -1,14 +1,17 @@
 ---
 layout: default
 title: 2410.2 BIG BANANA
-permalink: /release/current/bigbanana
-parent: Current
+permalink: /release/archive/bigbanana
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false
 ---
 
 # muOS 2410.2 BIG BANANA
+
+#### _Pronunciation_
+/bɪɡ bəˈnæn.ə/
 
 ## Download Full Image
 

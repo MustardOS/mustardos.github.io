@@ -10,7 +10,6 @@ nav_order: 4
 - Bluetooth
 - Catalogue Music
 - External Emulator Bezels
-- HDMI Aspect Ratio
 - Network Configuration Improvements
   - AP Mode 
   - Direct WPA3

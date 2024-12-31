@@ -9,6 +9,10 @@ has_toc: false
 ---
 
 # muOS 2410.1 BANANA
+
+#### _Pronunciation_
+/bəˈnæn.ə/
+
 ## Download
 _This release is now archived._
 

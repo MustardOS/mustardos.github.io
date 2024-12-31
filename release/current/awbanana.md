@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2410.3 AW BANANA
-permalink: /release/progress/awbanana
-parent: Progress
+permalink: /release/current/awbanana
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -10,18 +10,23 @@ has_toc: false
 
 # muOS 2410.3 AW BANANA
 
+#### _Pronunciation_
+/ˌeɪ ˈdʌb.l̩.juː bəˈnæn.ə/
+
 ## Download Full Image
 
-_Not ready just yet!_
+[Download from Gofile](https://gofile.io/d/BwXOqY){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/4iJyFQTR#FUEPC-zID0WzGukTsHHLDg){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ## Download Update Only
 
-_Not ready just yet!_
+[Download from Gofile](https://gofile.io/d/kTJWRA){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/53pxgIbB#ZoEPgwNofI82JB2zxDSswQ){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 <hr>
 
 {: .note }
-> If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
+> If you have alternative storage support please reach out to **xonglebongle** on the muOS Community Discord server!
 >
 > So everybody is aware, MEGA has restrictions on certain countries and places a download limit. Use either Gofile or
 > the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
@@ -76,6 +81,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Changes
 
+* Added additional assignable cores and systems
 * Added disk health check through `fsck` on device startup
 * Added extra PICO-8 favourite directory checking
 * Added friendly names for ChannelF, IPTV, J2ME, Odyssey2, TIC-80 and Amstrad CPC/GX4000
@@ -115,6 +121,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Revised HDMI output logic
 * Updated Application grid mode to use catalogue images
 * Updated default theme for `720x576` and `1280x720` support
+* Updated Libretro cores
 * Updated Microsoft MSX assignable system
 * Updated ScummVM to 2.9.0 with TWP fix
 * Updated SFTPgo system
