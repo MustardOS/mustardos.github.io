@@ -76,6 +76,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * duncanyoyo1
 * \_\_krt\_\_
 * thegammasqueeze
+* trngaje
 * xonglebongle
 * yomama78
 
