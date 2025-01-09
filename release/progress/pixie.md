@@ -67,14 +67,16 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed displaying box art in history
 * Fixed first item not being focused in collections
 * Fixed keyboard navigation when using grid mode
+* Fixed low power detection script
 * Fixed overwriting user overrides for RetroArch
 * Fixed theme fallback except for factory reset
-* Modified package internal name system to name.txt
+* Modified package internal name system to `name.txt`
+* Moved `favourite` nomenclature to `collection` for themes
 * Optimise launch scripts for uniformity
 * Optimised task toolkit module
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
-* Reserved `muOS-keys` as Port 1 of controller in RetroArch
+* Reserved `muOS-keys` as **Port 1** of controller in RetroArch
 * Separated NES and FDS systems due to ROM name overlap
 * Split content explorer module into individual history and collection modules
 * Update advanced-drastic
