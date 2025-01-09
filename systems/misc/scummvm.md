@@ -13,13 +13,13 @@ has_toc: false
 
 | Version       | Core               | Build           |
 |:--------------|:-------------------|:----------------|
-| Libretro Core | scummvm_libretro.so | 2.9.0-git |
-| Standalone    | ext-scummvm         | 2.8.1 |
+| Libretro Core | scummvm_libretro.so | 2.9.0 |
+| Standalone    | ext-scummvm         | 2.9.0 |
 
 {: .new}
 > Starting with muOS Banana ScummVM Standalone is the default.
 
-## ScummVM (Standalone) Keys _(WIP)_
+## ScummVM (Standalone) Keys
 
 | Button                        | Action             |
 |:------------------------------|:-------------------|
@@ -67,4 +67,4 @@ So simply rename that folder to `.Day of the Tentacle`
 
 ## Known Issues with ScummVM Standalone
 - Native mouse movement for the DPAD isn't working. For now we're leveraging muOS analogue<>dpad swap functionality for stickless devices.
-- Menu cursor in Grim Fandango is invisible. This can be fixed by forcing the Software renderer, but performance is much worse.
+- Menu cursor in games that require OpenGL (Grim Fandango, Thimbleweed Park) is invisible. This can be fixed by forcing the Software renderer, but performance is much worse.
