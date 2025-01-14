@@ -76,5 +76,5 @@ You can purchase PICO-8 from lexaloffle.
 ## Can I use Splore?
 You sure can!  
 You will need to create a blank file named `Splore.p8` [case sensitive] in your PICO-8 ROMs folder.  
-You can also download a suitable file ![here](../assets/files/Splore.p8)  
+You can also download a suitable file [here](https://raw.githubusercontent.com/MustardOS/mustardos.github.io/refs/heads/main/systems/assets/files/Splore.p8)  
 **Simply launch that Splore file from muOS and you're in!**
