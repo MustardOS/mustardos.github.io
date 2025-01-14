@@ -36,7 +36,10 @@ You will need a copy of the following files from the **Raspberry Pi** version:
 - pico8_64
 - pico8.dat
 
-![](assets/images/pico-8.png)
+![](../assets/images/pico-8.png)
+
+Starting with muOS Pixie you can now drop your official pico-8 zip into `/ARCHIVE` on either SD Card and install using muOS Archive Manager.  
+The file is named `pico-8_0.2.6b_raspi.zip` as of the writing of this page.
 
 Once you add your purchased files from Lexaloffle you'll need to set muOS to use the PICO-8 External emulator.
 - Browse to where your PICO-8 games are in muOS content explorer.
@@ -72,5 +75,6 @@ You can purchase PICO-8 from lexaloffle.
 
 ## Can I use Splore?
 You sure can!  
-You can either create a blank file named Splore.p8 [case sensitive] in your PICO-8 ROMs folder, or it will be automatically created for you when you first assign the PICO-8 (External) core.  
-**Simply launch that Splore file and you're in!**
+You will need to create a blank file named `Splore.p8` [case sensitive] in your PICO-8 ROMs folder.  
+You can also download a suitable file ![here](../assets/files/Splore.p8)  
+**Simply launch that Splore file from muOS and you're in!**
