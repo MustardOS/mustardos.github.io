@@ -76,6 +76,8 @@ turn it on, and it will take care of the rest.
 | Supported            |
 |:---------------------|
 | Anbernic RG28XX      |
+| Anbernic RG28XX      |
+| Anbernic RG34XX      |
 | Anbernic RG35XX 2024 |
 | Anbernic RG35XX PLUS |
 | Anbernic RG35XX H    |
@@ -86,7 +88,7 @@ turn it on, and it will take care of the rest.
 
 | Development     |
 |:----------------|
-| Anbernic RG34XX |
+
 
 | Limited            |
 |:-------------------|
