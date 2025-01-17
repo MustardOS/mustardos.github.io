@@ -12,9 +12,11 @@ has_children: false
 One of the key differentiators between muOS and other CFW's is its flexibility with content storage.
 Essentially, it _most_ doesn't care where you put things.
 
-The only firm rule is that all your content **must be in sub-folders** under a folder named **roms**.
-
-This can be on SD1, SD2 or both.
+{: .important-title }
+> Important
+>
+>The only firm rule is that all your content **must be in sub-folders** under a folder named **roms**.
+>This can be on SD1, SD2 or both.
 
 ### Example
 
