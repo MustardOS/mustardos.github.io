@@ -9,4 +9,10 @@ has_children: false
 has_toc: false
 ---
 
-TBC
+The default option has been ***marked***.
+
+# Available Emulators
+
+| System              | Core                | Supported Extensions | Bios Required       |
+| Sony Playstation Portable | ***PPSSPP (External)*** | .elf .iso .cso .prx .pbp .chd | No |
+| Sony Playstation Portable | PPSSPP | .elf .iso .cso .prx .pbp .chd | No |
