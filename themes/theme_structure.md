@@ -32,27 +32,32 @@ correct place. Below is an example of the correct structure that you can replica
 │   |   ├── config.png
 │   |   ├── reboot.png
 │   |   ├── shutdown.png
-├── image
-│   ├── bootlogo.bmp
-│   ├── overlay.png
-│   ├── static
-│   |   ├── muxlaunch
-│   |   |   ├── explore.png
-│   |   |   ├── favourite.png
-│   |   |   ├── history.png
-│   |   |   ├── apps.png
-│   |   |   ├── info.png
-│   |   |   ├── config.png
-│   |   |   ├── reboot.png
-│   |   |   └── shutdown.png
-│   |   └── muxinfo.png
-│   └── wall
-│       ├── default.png
-│       ├── muxtester.png
-│       └── muxcharge.png
-├── scheme
-│   ├── default.txt
-│   └── muxtester.txt
+├── 640x480
+│   ├── image
+│   |   ├── bootlogo.bmp
+│   |   ├── overlay.png
+│   |   ├── static
+│   |   |   ├── muxlaunch
+│   |   |   |   ├── explore.png
+│   |   |   |   ├── favourite.png
+│   |   |   |   ├── history.png
+│   |   |   |   ├── apps.png
+│   |   |   |   ├── info.png
+│   |   |   |   ├── config.png
+│   |   |   |   ├── reboot.png
+│   |   |   |   └── shutdown.png
+│   |   |   └── muxinfo.png
+│   |   └── wall
+│   |       ├── default.png
+│   |       ├── muxtester.png
+│   |       └── muxcharge.png
+│   ├── scheme
+│   |   ├── default.txt
+│   |   └── muxtester.txt
+├── 720x480
+├── 720x576
+├── 720x720
+├── 1280x720
 └── sound  
 ```
 
@@ -73,6 +78,16 @@ above show off the amount of possible customisation available.
   and will also
   tell your device how to use the files you have dropped into your image folder.
 - **sound** - These folders will contain files heard during your time in the muOS menus.
+
+Themes can support multiple device resolutions by including resolution-specific folders (e.g., `640x480`, `720x480`).  Each resolution folder can contain subfolders such as `font`, `image`, `scheme`, and `glyph`.
+
+When a device resolution matches a folder, muOS will use the content from that specific resolution folder.
+
+To ensure muOS can detect the resolutions a theme can support, it is essential to create a subfolder for each resolution your theme is designed to support.
+
+For shared resources across all resolutions, you can place them in the root (outside of the resolution subfolder) of the theme. For example, if all resolutions will use the same fonts and glyphs, you can create a `font` and `glyph` folder(s) in the root directory.
+
+The default muOS theme is a good example of what can be done on a basic theme level.
 
 # Theme Folder Structure Glyphs
 

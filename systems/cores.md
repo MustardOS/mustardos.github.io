@@ -85,10 +85,10 @@ The default option for each system has been ***marked***.
 | Microsoft - MSX | ***blueMSX*** | .rom .ri .mx1 .mx2 .col .dsk .cas .sg .sc .sf .m3u | Included |
 | Microsoft - MSX | fMSX | .rom .mx1 .mx2 .dsk .fdi .cas .m3u | Yes |
 | NEC PC Engine CD | ***Beetle PCE Fast*** | .pce .cue .ccd .chd .toc .m3u | Yes |
-| NEC PC Engine CD | Mednafen PCE | .pce .sgx .cue .ccd .chd .toc .m3u | Yes |
+| NEC PC Engine CD | Beetle PCE | .pce .sgx .cue .ccd .chd .toc .m3u | Yes |
 | NEC PC Engine SuperGrafx | ***Beetle SuperGrafx*** | .pce .sgx .cue .ccd .chd | No |
 | NEC PC Engine SuperGrafx | Geargrafx | .pce .sgx .bin .rom | No |
-| NEC PC Engine SuperGrafx | Mednafen PCE | .pce .sgx .cue .ccd .chd .toc .m3u | No |
+| NEC PC Engine SuperGrafx | Beetle PCE | .pce .sgx .cue .ccd .chd .toc .m3u | No |
 | NEC PC Engine | ***Beetle PCE Fast*** | .pce .cue .ccd .chd .toc .m3u | No |
 | NEC PC Engine | Beetle PCE | .pce .sgx .cue .ccd .chd .toc .m3u | No |
 | NEC PC-8000 - PC-8800 series | QUASI8800 | .d88 .u88 .m3u | No |
@@ -106,10 +106,9 @@ The default option for each system has been ***marked***.
 | Nintendo Game Boy Advance | mGBA Rumble | .gb .gbc .gba | Optional |
 | Nintendo Game Boy Advance | mGBA | .gb .gbc .gba | Optional |
 | Nintendo Game Boy Advance | ***gpSP*** | .gba .bin | Optional |
-| Nintendo Game Boy Advance | Mednafen GBA | .gba .agb .bin | Optional |
+| Nintendo Game Boy Advance | Beetle GBA | .gba .agb .bin | Optional |
 | Nintendo Game Boy Advance | VBA-M | .dmg .gb .gbc .cgb .sgb .gba | Optional |
 | Nintendo Game Boy Advance | VBA-Next | .gba | Optional |
-| Nintendo Game Boy Advance | Beetle GBA | .gba .agb .bin | Optional |
 | Nintendo Game Boy Color | DoubleCherryGB | .cgb .dmg .gb .gbc .sgb | Optional |
 | Nintendo Game Boy Color | FixGB | .gb .gbc .gbs | Optional |
 | Nintendo Game Boy Color | ***Gambatte*** | .gb .gbc .dmg | Optional |
@@ -203,7 +202,7 @@ The default option for each system has been ***marked***.
 | Sega SG-1000 | blueMSX | .rom .ri .mx1 .mx2 .col .dsk .cas .sg .sc .sf .m3u | Included |
 | Sega SG-1000 | Gearsystem | .sms .gg .sg .bin .rom | No |
 | Sega SG-1000 | ***Genesis Plus GX*** | .mdx .md .smd .gen .bin .cue .iso .sms .bms .gg .sg .68k .sgd .chd .m3u | No |
-| Sega Saturn | Mednafen Saturn | .ccd .chd .cue .toc .m3u | No |
+| Sega Saturn | Beetle Saturn | .ccd .chd .cue .toc .m3u | No |
 | Sega Saturn | YabaSanshiro | .bin .ccd .chd .cue .iso .mds .zip | No |
 | Sega Saturn | YabaSanshiro (External - No BIOS) | .bin .ccd .chd .cue .iso .mds .zip | No |
 | Sega Saturn | ***YabaSanshiro (External)*** | .bin .ccd .chd .cue .iso .mds .zip | Optional |
