@@ -9,9 +9,11 @@ has_toc: false
 ---
 
 # muOS 2502.0 Pixie
+
 _<small>Date Not Confirmed</small>_
 
 #### _Pronunciation_
+
 /ˌpɪk ˈsiː/
 
 ## Download Full Image
@@ -46,17 +48,29 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * antikk
 * Bitter_Bizarro
 * duncanyoyo1
+* fishcu
+* illumini_85
+* kloptops
 * pete.woods_35330
+* TheWalruzz
 * trngaje
 * xonglebongle
 
 ## Changes
 
+* Added animated background repeat count for themes
+* Added background process safe quit for frontend modules for faster loading
+* Added collections module to replace favourites
+* Added support global structure within theme scheme files
 * Added UnionFS userspace utility
 * Added `mugwomp93` perfect overlays for RetroArch
 * Adjust storage mount scripts for union mount
 * Adjusted start progress bar with background visual
-* Centralise screenshot functionality
+* Allow official PICO-8 `.zip` to be installed via Archive Manager
+* Allow only single directory from root in collections
+* Centralised frontend display initialise functions
+* Centralised screenshot functionality
+* Created standard CLI based shutdown and reboot method scripts
 * Deprecated standard text files over formatted INI for theme scheme files
 * Fixed Dingux Commander not launching on devices without analogue sticks
 * Fixed advanced box art not working in history
@@ -66,14 +80,23 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed description displaying for collection folder
 * Fixed displaying box art in history
 * Fixed first item not being focused in collections
+* Fixed HDMI output variable reading on content exit
 * Fixed keyboard navigation when using grid mode
 * Fixed low power detection script
 * Fixed overwriting user overrides for RetroArch
+* Fixed PICO-8 favourites not saving in launched content folder
+* Fixed speaker swap issue for the RGCUBEXX-H device
 * Fixed theme fallback except for factory reset
+* Fixed toast messages from randomly disappearing
+* Lowered default HDMI resolution mode
 * Modified package internal name system to `name.txt`
 * Moved `favourite` nomenclature to `collection` for themes
-* Optimise launch scripts for uniformity
+* Moved frontend to use SDL2 instead of fbdev
+* Optimised content loading for large item lists (_30k items load in < 1s_)
+* Optimised launch scripts for uniformity
 * Optimised task toolkit module
+* Removed favourites in favour of collections module
+* Removed file entries from showing in content explore root
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
@@ -83,10 +106,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated Drastic layouts for updated SDL
 * Updated Portmaster with internal tool
 * Updated RetroArch cores
-* Updated RetroArch shaders
+* Updated RetroArch GLSL shaders
+* Updated RetroArch info files
 * Updated RetroArch to 1.20.0
 * Updated collection unique ID
 * Updated default themes to support RG34XX and HDMI resolutions
 * Updated fall back for game names for collections and history
 * Updated naming of history pointers to include hash to avoid collisions
+* Updated system information module
 * Updated theme engine to fall back to 640x480 resolution
