@@ -14,7 +14,7 @@ There are currently three compatible image formats for themes with specific use 
 - **`.png`** - any static images within `./images/static/`, backgrounds in `./images/wall/`, and overlay.png
 - **`.gif`** - creating animated backgrounds within `./images/wall`
 
-**If you decide to use images for your these please ensure that you use the correct resolution for the device!**
+**If you decide to use images for your themes please ensure that you use the correct resolution for the device!**
 
 {: .note }
 > If you are struggling to find a method to easily convert an image to a 24-bit `.bmp` file, there are

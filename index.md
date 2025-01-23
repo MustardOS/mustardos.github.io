@@ -85,10 +85,6 @@ turn it on, and it will take care of the rest.
 | Anbernic RG40XX V    |
 | Anbernic RGCUBEXX    |
 
-| Development     |
-|:----------------|
-
-
 | Limited            |
 |:-------------------|
 | Anbernic RG35XX OG |
