@@ -13,15 +13,25 @@ has_toc: false
 #### _Pronunciation_
 /ˌeɪ ˈdʌb.l̩.juː bəˈnæn.ə/
 
-## Download Full Image
+<hr>
+
+## Download **Full Image**
 
 [Download from Gofile](https://gofile.io/d/BwXOqY){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Download from MEGA](https://mega.nz/folder/4iJyFQTR#FUEPC-zID0WzGukTsHHLDg){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-## Download Update Only
+#### OneDrive Mirror - Provided by IonutBarna
+[Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/Esab5mtJ_aROug_SagXr7EUB7VgBVZFrT-6pbOTgzBD1Iw?e=HH6ql0){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+<hr>
+
+## Download **Update Only**
 
 [Download from Gofile](https://gofile.io/d/kTJWRA){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Download from MEGA](https://mega.nz/folder/53pxgIbB#ZoEPgwNofI82JB2zxDSswQ){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+#### OneDrive Mirror - Provided by IonutBarna
+[Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/EuCAD6zGLOtPvzNb7oM8E6ABKH9Saw7pYwnaSfIEDp47Fg?e=l3bOCZ){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 <hr>
 
