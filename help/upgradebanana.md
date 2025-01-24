@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Upgrade to Pixie
-permalink: /help/upgradepixie
+title: Upgrading from Banana
+permalink: /help/upgradebanana
 nav_order: 2
 parent: Help
 has_children: false
 ---
 
 ## Requirements
-- This guide is designed for all previous version of muOS
+- This guide is designed for people running muOS **Banana or Big Banana**.
+- Any other version is not supported!
 
-## Can I directly upgrade over the top of muOS Banana/Beans/ETC?
-No. You must perform a full flash as there is significant changes that will not be able to apply without the full build.
+## Can I directly upgrade over the top of muOS Banana/Big Banana?
+Yes, but only to AW Banana, this guide will not apply to the upcoming version **Pixie**
+However, it is always recommended to perform a full flash as there is changes in updates that will not be able to apply without the full build.
 
 ## Migrating Data
 The answer to this dilemma is migrating all of your user data to SD Card 2.  
