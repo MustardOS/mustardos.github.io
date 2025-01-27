@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gameboy Colour
+title: Nintendo Game Boy Color
 parent: Handheld
 grand_parent: Systems
 permalink: /systems/handheld/gbc
@@ -9,20 +9,22 @@ has_children: false
 has_toc: false
 ---
 
-The default option has been ***marked***.
-
 # Available Emulators
 
-| Nintendo Game Boy Color | DoubleCherryGB | .cgb .dmg .gb .gbc .sgb | Optional |
-| Nintendo Game Boy Color | FixGB | .gb .gbc .gbs | Optional |
-| Nintendo Game Boy Color | ***Gambatte*** | .gb .gbc .dmg | Optional |
-| Nintendo Game Boy Color | Gearboy | .gb .dmg .gbc .cgb .sgb | Optional |
-| Nintendo Game Boy Color | mGBA | .gb .gbc .gba | Optional |
-| Nintendo Game Boy Color | SameBoy | .gb .gbc | Optional |
-| Nintendo Game Boy Color | TGB Dual | .cgb .dmg .gb .gbc .sgb | Optional |
-| Nintendo Game Boy Color | VBA-M | .dmg .gb .gbc .cgb .sgb | Optional |
+The default option has been ***marked***.
+
+| Name               | Type             | Version           |
+|:-------------------|:-----------------|:------------------|
+| DoubleCherryGB     | Libretro Core    | 0.17.0            |
+| FixGB              | Libretro Core    | 0.8.2             |
+| **Gambatte**       | Libretro Core    | 0.5.0             |
+| Gearboy            | Libretro Core    | 3.6.1.2           |
+| mGBA               | Libretro Core    | 0.11              |
+| SameBoy            | Libretro Core    | 1.0               |
+| TGB Dual           | Libretro Core    | 0.8.3             |
+| VBA-M              | Libretro Core    | 2.1.3             |
 
 
 # Keybinds 
 
-Please refer to Handyhotkeys on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/#handyhotkeys) on the homepage for keybindings.

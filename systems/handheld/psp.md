@@ -9,10 +9,12 @@ has_children: false
 has_toc: false
 ---
 
-The default option has been ***marked***.
-
 # Available Emulators
 
-| System              | Core                | Supported Extensions | Bios Required       |
-| Sony Playstation Portable | ***PPSSPP (External)*** | .elf .iso .cso .prx .pbp .chd | No |
-| Sony Playstation Portable | PPSSPP | .elf .iso .cso .prx .pbp .chd | No |
+The default option has been ***marked***.
+
+| Name               | Type             | Version           |
+|:-------------------|:-----------------|:------------------|
+| PPSSPP             | Libretro Core    | 1.18.1            |
+| **PPSSPP-Ext**     | Standalone       | 1.17.1            |
+

@@ -9,20 +9,20 @@ has_children: false
 has_toc: false
 ---
 
-The default option has been ***marked***.
-
 # Available Emulators
 
-| System              | Core                | Supported Extensions | Bios Required       |
-| Nintendo Game Boy Advance | mGBA Rumble | .gb .gbc .gba | Optional |
-| Nintendo Game Boy Advance | mGBA | .gb .gbc .gba | Optional |
-| Nintendo Game Boy Advance | ***gpSP*** | .gba .bin | Optional |
-| Nintendo Game Boy Advance | Mednafen GBA | .gba .agb .bin | Optional |
-| Nintendo Game Boy Advance | VBA-M | .dmg .gb .gbc .cgb .sgb .gba | Optional |
-| Nintendo Game Boy Advance | VBA-Next | .gba | Optional |
-| Nintendo Game Boy Advance | Beetle GBA | .gba .agb .bin | Optional |
+The default option has been ***marked***.
+
+| Name               | Type             | Version           |
+|:-------------------|:-----------------|:------------------|
+| Beetle GBA         | Libretro Core    | 0.9.36            |
+| **gpSP**           | Libretro Core    | 1.0.0             |
+| mGBA               | Libretro Core    | 0.11              |
+| mGBA Rumble        | Libretro Core    | 0.11              |
+| VBA-Next           | Libretro Core    | 1.0.2             |
+| VBA-M              | Libretro Core    | 2.1.3             |
 
 
 # Keybinds 
 
-Please refer to Handyhotkeys on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/#handyhotkeys) on the homepage for keybindings.

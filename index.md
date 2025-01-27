@@ -34,7 +34,7 @@ One of the main features of muOS is how easy it is to get it set up and running.
 to do is use your favourite image flash program to install it on your SD Card. Put the SD Card into your handheld,
 turn it on, and it will take care of the rest.
 
-## Handy Hotkeys
+## <a name="handyhotkeys"></a>Handy Hotkeys
 
 | Type                    | Control                  |
 |:------------------------|:-------------------------|

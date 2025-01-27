@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Super Nintendo Entertainment System
+title: Nintendo SNES-SFC
 parent: Home Console
 grand_parent: Systems
 permalink: /systems/homeconsole/snes
@@ -9,22 +9,26 @@ has_children: false
 has_toc: false
 ---
 
-The default option has been ***marked***.
-
 # Available Emulators
 
-| System              | Core                | Supported Extensions | Bios Required       |
-| Nintendo SNES-SFC | Beetle Supafaust | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
-| Nintendo SNES-SFC | BSNES | .smc .sfc .swc .fig .gb .gbc .bs | No |
-| Nintendo SNES-SFC | BSNES 2014 Performance | .sfc .smc .bml .gb .gbc .st .bs | No |
-| Nintendo SNES-SFC | BSNES C++98 | .sfc .smc .gb .gbc .st .bs | No |
-| Nintendo SNES-SFC | BSNES Mercury | .sfc .smc .bml .gb .gbc .st .bs | No |
-| Nintendo SNES-SFC | ChimeraSNES | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .bs .swc .st | No |
-| Nintendo SNES-SFC | Mesen-S | .sfc .smc .fig .swc .bs .gb .gbc | No |
-| Nintendo SNES-SFC | ***Snes9x*** | .smc .sfc .swc .fig .bs .st | No |
-| Nintendo SNES-SFC | Snes9x 2002 | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
-| Nintendo SNES-SFC | Snes9x 2005 | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
-| Nintendo SNES-SFC | Snes9x 2005 Plus | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
-| Nintendo SNES-SFC | Snes9x 2010 | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
-| Nintendo SNES-SFC | Snes9x Next | .smc .fig .sfc .gd3 .gd7 .dx2 .bsx .swc | No |
+The default option has been ***marked***.
 
+| Name                   | Type             | Version           |
+|:-----------------------|:-----------------|:------------------|
+| Beetle Supafaust       | Libretro Core    | 1.29.0            |
+| BSNES                  | Libretro Core    | v115              |
+| BSNES 2014 Performance | Libretro Core    | v094              |
+| BSNES C++98            | Libretro Core    | v085              |
+| BSNES Mercury          | Libretro Core    | v094              |
+| ChimeraSNES            | Libretro Core    | 04c57c2           |
+| **Snes9x**             | Libretro Core    | 1.63              |
+| Snes9x 2002            | Libretro Core    | 1.39              |
+| Snes9x 2005            | Libretro Core    | 1.36              |
+| Snes9x 2005 Plus       | Libretro Core    | 1.36              |
+| Snes9x 2010            | Libretro Core    | 1.52.4            |
+| Snes9x Next            | Libretro Core    | 1.52.4            |
+
+
+# Keybinds 
+
+Please refer to the [Handy Hotkeys](/#handyhotkeys) on the homepage for keybindings.

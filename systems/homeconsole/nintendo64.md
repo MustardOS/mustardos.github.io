@@ -11,10 +11,17 @@ has_toc: false
 
 ![](../assets/images/mupen64plus.png)
 
-| Version       | Core               | Build           |
-|:--------------|:-------------------|:----------------|
-| Libretro Core | tbd_libretro.so    | TBD |
-| Standalone    | ext-mupen?         | TBD |
+# Available Emulators
+
+The default option has been ***marked***.
+
+| Name                       | Type             | Version           |
+|:---------------------------|:-----------------|:------------------|
+| Mupen64Plus-ext (GlideN64) | External         | 2.0.0             |
+| Mupen64Plus-ext (Rice)     | External         | 2.0.0             |
+| Mupen64Plus                | Libretro Core    | 2.0               |
+| **Mupen64Plus-Next**       | Libretro Core    | 2.6               |
+| Parallel N64               | Libretro Core    | 2.0               |
 
 ## Mupen Standalone Keys
 

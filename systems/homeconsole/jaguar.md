@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Sony PlayStation
+title: Atari Jaguar
 parent: Home Console
 grand_parent: Systems
-permalink: /systems/homeconsole/ps1
+permalink: /systems/homeconsole/jaguar
 nav_enabled: true
 has_children: false
 has_toc: false
@@ -15,10 +15,7 @@ The default option has been ***marked***.
 
 | Name               | Type             | Version           |
 |:-------------------|:-----------------|:------------------|
-| Beetle PSX         | Libretro Core    | 0.9.44.1          |
-| DuckStation        | Libretro Core    | 0.1-4795          |
-| **PCSX ReARMed**   | Libretro Core    | r24               |
-| SwanStation        | Libretro Core    | 1.0.0             |
+| **Virtual Jaguar** | Libretro Core    | 2.1.0             |
 
 
 # Keybinds 
