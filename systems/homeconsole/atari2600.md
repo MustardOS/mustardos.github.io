@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Sony PlayStation
+title: Atari 2600
 parent: Home Console
 grand_parent: Systems
-permalink: /systems/homeconsole/ps1
+permalink: /systems/homeconsole/atari2600
 nav_enabled: true
 has_children: false
 has_toc: false
@@ -15,10 +15,8 @@ The default option has been ***marked***.
 
 | Name               | Type             | Version           |
 |:-------------------|:-----------------|:------------------|
-| Beetle PSX         | Libretro Core    | 0.9.44.1          |
-| DuckStation        | Libretro Core    | 0.1-4795          |
-| **PCSX ReARMed**   | Libretro Core    | r24               |
-| SwanStation        | Libretro Core    | 1.0.0             |
+| **Stella**         | Libretro Core    | 7.1               |
+| Stella 2014        | Libretro Core    | 3.9.3             |
 
 
 # Keybinds 

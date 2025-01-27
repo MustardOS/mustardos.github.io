@@ -13,11 +13,13 @@ has_toc: false
 
 # Available Emulators
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| YabaSanshiro       | Libretro Core    | 2.6.8             |
-| YabaSanshiro-Ext   | Standalone       | 1.9.0             |
-| Yabause            | Libretro Core    | 0.9.15            |
+The default option has been ***marked***.
+
+| Name                 | Type             | Version           |
+|:---------------------|:-----------------|:------------------|
+| YabaSanshiro         | Libretro Core    | 2.6.8             |
+| **YabaSanshiro-Ext** | Standalone       | 1.9.0             |
+| Yabause              | Libretro Core    | 0.9.15            |
 
 ## YabaSanshiro Standalone Button Mapping
 

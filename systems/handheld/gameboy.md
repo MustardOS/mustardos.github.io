@@ -9,16 +9,22 @@ has_children: false
 has_toc: false
 ---
 
-The default option has been ***marked***.
-
 # Available Emulators
 
-| System              | Core                | Supported Extensions | Bios Required       |
-| Nintendo Game Boy | DoubleCherryGB | .cgb .dmg .gb .gbc .sgb | Optional |
-| Nintendo Game Boy | FixGB | .gb .gbc .gbs | Optional |
-| Nintendo Game Boy | ***Gambatte*** | .gb .gbc .dmg | Optional |
-| Nintendo Game Boy | Gearboy | .gb .dmg .gbc .cgb .sgb | Optional |
-| Nintendo Game Boy | mGBA | .gb .gbc .gba | Optional |
-| Nintendo Game Boy | SameBoy | .gb .gbc | Optional |
-| Nintendo Game Boy | TGB Dual | .cgb .dmg .gb .gbc .sgb | Optional |
-| Nintendo Game Boy | VBA-M | .dmg .gb .gbc .cgb .sgb | Optional |
+The default option has been ***marked***.
+
+| Name               | Type             | Version           |
+|:-------------------|:-----------------|:------------------|
+| DoubleCherryGB     | Libretro Core    | 0.17.0            |
+| FixGB              | Libretro Core    | 0.8.2             |
+| **Gambatte**       | Libretro Core    | 0.5.0             |
+| Gearboy            | Libretro Core    | 3.6.1.2           |
+| mGBA               | Libretro Core    | 0.11              |
+| SameBoy            | Libretro Core    | 1.0               |
+| TGB Dual           | Libretro Core    | 0.8.3             |
+| VBA-M              | Libretro Core    | 2.1.3             |
+
+
+# Keybinds 
+
+Please refer to the [Handy Hotkeys](/#handyhotkeys) on the homepage for keybindings.

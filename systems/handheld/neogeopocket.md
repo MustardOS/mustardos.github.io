@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Sony PlayStation
-parent: Home Console
+title: SNK Neo Geo Pocket - Color
+parent: Handheld
 grand_parent: Systems
-permalink: /systems/homeconsole/ps1
+permalink: /systems/handheld/neogeopocket
 nav_enabled: true
 has_children: false
 has_toc: false
@@ -15,10 +15,8 @@ The default option has been ***marked***.
 
 | Name               | Type             | Version           |
 |:-------------------|:-----------------|:------------------|
-| Beetle PSX         | Libretro Core    | 0.9.44.1          |
-| DuckStation        | Libretro Core    | 0.1-4795          |
-| **PCSX ReARMed**   | Libretro Core    | r24               |
-| SwanStation        | Libretro Core    | 1.0.0             |
+| **Beetle NeoPop**  | Libretro Core    | 1.29.0.0          |
+| RACE               | Libretro Core    | 2.16              |
 
 
 # Keybinds 
