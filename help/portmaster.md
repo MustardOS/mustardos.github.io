@@ -42,17 +42,17 @@ Head over to [PortMaster Discord](https://discord.gg/SR4vbp5c3p) and let them kn
 
 ## Offline Install Instructions
 
-If you have a device that doesn't support Wifi (such as the Rg35xx) or otherwise cannot access WiFi, it is possible to install games. **This is not reccomended** as it is significantly more difficult. 
+If you have a device that doesn't support Wifi (such as the RG3533 2024 / RG28XX) or otherwise cannot access WiFi, it is possible to install games. **This is not recommended** as it is significantly more difficult. 
 
 
 ### Update PortMaster 
-In order to ensure compatability of games, first download and install the latest release of PortMaster.
+In order to ensure compatibility of games, first download and install the latest release of PortMaster.
 
 1) Download the latest version of the **muos.portmaster.zip** file from here https://github.com/PortsMaster/PortMaster-GUI/releases
 
 2) Open the primary SD card and open the /ARCHIVE/ folder. Place the .zip file here. 
 
-3) From MuOS, open Applications -> Archive Manager -> muos.portmaster
+3) From muOS, open Applications -> Archive Manager -> muos.portmaster
 
 ### Retrieve game runtimes
 
@@ -81,7 +81,7 @@ If you are installing Stardew Valley, you will end up with:
 
 ***Note:*** You might have to create the /ports/ folder in both cases.
 
-4) Follow any additional instructions for the game. For example, Stardew Valley asks you to copy content into /ports/StardewValley/gamedata/
+4) Follow any additional instructions for the game. For example, on the [PortMaster Games page for Stardew Valley](https://portmaster.games/detail.html?name=stardewvalley), the Instructions section asks you to copy content into /ports/StardewValley/gamedata/ 
 
 ### Launch the game
 
