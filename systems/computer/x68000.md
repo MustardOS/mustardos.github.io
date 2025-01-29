@@ -20,4 +20,4 @@ The default option has been ***marked***.
 
 # Keybinds 
 
-Please refer to the [Handy Hotkeys](/#handyhotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
