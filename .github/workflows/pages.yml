@@ -61,4 +61,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          artifact_name: _site
+          artifact_name: github-pages
