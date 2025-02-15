@@ -46,6 +46,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 ## Contributors
 
 * antikk
+* baxysquare
+* bgelmini
 * cmclark00
 * Bitter_Bizarro
 * duncanyoyo1
@@ -74,9 +76,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added global splash image
 * Added icon for theme alternates
 * Added `midssio.zip` to skipped files
+* Added MinUI compatibility to `assign.json`
 * Added `mugwomp93` perfect overlays for RetroArch
+* Added on-device screenshot manager
+* Added open sourced GBA BIOS for compatibility
 * Added pause menu exit functionality to PPSSPP
 * Added sdcard `skip.ini` check
+* Added specific volume set to general settings
 * Added splash image fallbacks
 * Added subfolder support to `muxpicker`
 * Added supporter music to credits when viewed from information module
@@ -99,6 +105,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Centralised frontend display initialise functions
 * Centralised screenshot functionality
 * Changed Pipewire to use different output sample rates instead of resampling
+* Closed additional joystick events on module exit
+* Configuration Menu Refactor
 * Created standard CLI based shutdown and reboot method scripts
 * Deprecated standard text files over formatted INI for theme scheme files
 * Enabled network module by default
@@ -111,6 +119,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed Dingux Commander not launching on devices without analogue sticks
 * Fixed displaying box art in history
 * Fixed first item not being focused in collections
+* Fixed folder count and collections
 * Fixed graphical glitches on HDMI disable
 * Fixed HDMI output variable reading on content exit
 * Fixed issue on last/resume boot with external content
@@ -129,9 +138,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed theme previews with new theme structure for Pixie
 * Fixed toast messages from randomly disappearing
 * Fixed unplug to power off issue in charge mode
+* Fixed volume variable setter
 * Initial Pipewire work for `a113p` devices
 * Lowered default HDMI resolution mode
 * Modified customisation package extraction script to use specific extensions
+* Modified device scripts to get volume from global config
 * Modified package internal name system to `name.txt`
 * Moved `favourite` nomenclature to `collection` for themes
 * Moved friendly folder to be a lowercase check
@@ -145,6 +156,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
 * Removed SDL clear render routine in LVGL display window update
+* Renamed internal assign location definition for uniformity
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
 * Restrict archive manager to specific extensions
 * Restrict customisation picker to specific archive extensions
@@ -157,17 +169,21 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated archive extensions to match frontend
 * Updated archive manager to detect catalogue and info archives
 * Updated brick input descriptors
+* Updated BIOS for PUAE RetroArch core
 * Updated collection unique ID
 * Updated default themes to new Pixie structure
 * Updated default themes to support RG34XX and HDMI resolutions
 * Updated default theme with 1024x768 resolution
-* Updated Drastic layouts for updated SDL
+* Updated Drastic layouts
+* Updated Drastic SDL2 library
+* Update default theme overrides
+* Updated extract script to with new extensions
 * Updated fall back for game names for collections and history
 * Updated Languages
 * Updated `muxcharge` and `muxsplash` to use background theme colours
 * Updated `muxsplash` to centre image
 * Updated naming of history pointers to include hash to avoid collisions
-* Updated Portmaster with internal tool
+* Updated PortMaster
 * Updated preinstalled themes with version information
 * Updated RetroArch cores
 * Updated RetroArch GLSL shaders
@@ -176,3 +192,4 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated system information module
 * Updated theme engine to fall back to 640x480 resolution
 * Updated theme loading to use new Pixie theme structure
+* Updated theme overrides to support all settings
