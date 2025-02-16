@@ -84,6 +84,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added sdcard `skip.ini` check
 * Added specific volume set to general settings
 * Added splash image fallbacks
+* Added storage space module for checking free space
 * Added subfolder support to `muxpicker`
 * Added supporter music to credits when viewed from information module
 * Added support for 1024x768 to default themes
