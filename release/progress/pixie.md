@@ -90,6 +90,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added support for grid cell drop shadow
 * Added support for theme alternates
 * Added support global structure within theme scheme files
+* Added tasks for toggling grid mode
 * Added theme alternates menu option
 * Added theme compatibility via version detection
 * Added theme gradient
@@ -123,6 +124,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed graphical glitches on HDMI disable
 * Fixed HDMI output variable reading on content exit
 * Fixed issue on last/resume boot with external content
+* Fixed issue with collection start
 * Fixed issue with loading certain theme scheme files
 * Fixed issue with selecting search result
 * Fixed issue with wrong item being focused on search results
@@ -171,6 +173,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated brick input descriptors
 * Updated BIOS for PUAE RetroArch core
 * Updated collection unique ID
+* Updated content description to scroll manually
 * Updated default themes to new Pixie structure
 * Updated default themes to support RG34XX and HDMI resolutions
 * Updated default theme with 1024x768 resolution
