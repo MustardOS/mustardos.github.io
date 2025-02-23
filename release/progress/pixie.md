@@ -64,14 +64,20 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Changes
 
+* Added additional modes to brightness and volume settings
 * Added additional names to internal lookup table
 * Added animated background repeat count for themes
+* Added antialiasing toggle for themes
+* Added audio mute on idle detection
 * Added background process safe quit for frontend modules for faster loading
 * Added basic gradient support to background and grid cells
 * Added collections module to replace favourites
 * Added custom event input type reading
 * Added custom framebuffer set module
+* Added `default.png` fallback for static images
 * Added device folders for brick and teaspoon
+* Added dither and blur options to background gradient
+* Added double buffering back into display initialisation
 * Added extra input value descriptors
 * Added global splash image
 * Added icon for theme alternates
@@ -82,8 +88,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added open sourced GBA BIOS for compatibility
 * Added pause menu exit functionality to PPSSPP
 * Added sdcard `skip.ini` check
+* Added SDL rotation and zoom method to display driver
+* Added short name support for `muxapp` and `muxlaunch` grid mode
 * Added specific volume set to general settings
 * Added splash image fallbacks
+* Added SSID check for network startup
 * Added storage space module for checking free space
 * Added subfolder support to `muxpicker`
 * Added supporter music to credits when viewed from information module
@@ -91,6 +100,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added support for grid cell drop shadow
 * Added support for theme alternates
 * Added support global structure within theme scheme files
+* Added Syncthing scanner process on quit
 * Added tasks for toggling grid mode
 * Added theme alternates menu option
 * Added theme compatibility via version detection
@@ -98,6 +108,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added theme picker compatible version checking
 * Added theme version to default theme
 * Added UnionFS userspace utility
+* Added zoom variable to device configurations
 * Adjusted device configurations and scripts to use new input descriptors
 * Adjusted start progress bar with background visual
 * Adjust storage mount scripts for union mount
@@ -113,28 +124,41 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Deprecated standard text files over formatted INI for theme scheme files
 * Enabled network module by default
 * Fixed advanced box art not working in history
+* Fixed and updated supporter credits
+* Fixed audio resuming sound on sleep shutdown
 * Fixed box art displaying for collection folder
 * Fixed box art not loading in collections
 * Fixed content description in history
 * Fixed CPU core count on sleep resume
+* Fixed custom module navigation
 * Fixed description displaying for collection folder
 * Fixed Dingux Commander not launching on devices without analogue sticks
 * Fixed displaying box art in history
+* Fixed error with restore volume variable for Pipewire initialisation
 * Fixed first item not being focused in collections
 * Fixed folder count and collections
 * Fixed graphical glitches on HDMI disable
 * Fixed HDMI output variable reading on content exit
+* Fixed input testing module refresh
+* Fixed issue exiting customisation menu
 * Fixed issue on last/resume boot with external content
 * Fixed issue with collection start
+* Fixed issue with launching app in grid mode
 * Fixed issue with loading certain theme scheme files
 * Fixed issue with selecting search result
 * Fixed issue with wrong item being focused on search results
 * Fixed keyboard navigation when using grid mode
+* Fixed launching applications when using passlock
+* Fixed loading current alternative with factory reset mode
 * Fixed low power detection script
+* Fixed `muxapp` to only use grid names in grid mode
+* Fixed `muxstart` information wallpaper image location
 * Fixed navigation bugs in grid mode
 * Fixed navigation glyphs for `muxarchive` and `muxtask` modules
 * Fixed overwriting user overrides for RetroArch
+* Fixed passlock screen
 * Fixed PICO-8 favourites not saving in launched content folder
+* Fixed pre-installed archives
 * Fixed spacing in file counter for default theme
 * Fixed speaker swap issue for the RGCUBEXX-H device
 * Fixed theme fallback except for factory reset
@@ -142,17 +166,21 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed toast messages from randomly disappearing
 * Fixed unplug to power off issue in charge mode
 * Fixed volume variable setter
+* Ignore idle script functions during factory reset
 * Initial Pipewire work for `a113p` devices
 * Lowered default HDMI resolution mode
 * Modified customisation package extraction script to use specific extensions
 * Modified device scripts to get volume from global config
 * Modified package internal name system to `name.txt`
+* Moved and renamed theme picker and theme alternative options
 * Moved `favourite` nomenclature to `collection` for themes
 * Moved friendly folder to be a lowercase check
 * Moved frontend to use SDL2 instead of fbdev
+* Moved refresh timer intialisation
 * Optimised content loading for large item lists (_30k items load in < 1s_)
 * Optimised launch scripts for uniformity
 * Optimised task toolkit module
+* Reformatted theme initialisers
 * Removed active option in network as the network will always be active
 * Removed favourites in favour of collections module
 * Removed file entries from showing in content explore root
@@ -164,6 +192,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Restrict archive manager to specific extensions
 * Restrict customisation picker to specific archive extensions
 * Sanitise slash characters in network profile names
+* SDL display driver cleanup
 * Separated NES and FDS systems due to ROM name overlap
 * Sorted options for alternate themes
 * Split content explorer module into individual history and collection modules
@@ -171,8 +200,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Update advanced-drastic
 * Updated archive extensions to match frontend
 * Updated archive manager to detect catalogue and info archives
-* Updated brick input descriptors
 * Updated BIOS for PUAE RetroArch core
+* Updated brick input descriptors
 * Updated collection unique ID
 * Updated content description to scroll manually
 * Updated default themes to new Pixie structure
