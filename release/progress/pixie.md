@@ -72,15 +72,24 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added background process safe quit for frontend modules for faster loading
 * Added basic gradient support to background and grid cells
 * Added collections module to replace favourites
+* Added common input options for input initialisation
 * Added custom event input type reading
 * Added custom framebuffer set module
+* Added default input combo to common input initialisation
+* Added `default.png` fallback for static images
 * Added `default.png` fallback for static images
 * Added device folders for brick and teaspoon
+* Added dither and blur options to background gradient
 * Added dither and blur options to background gradient
 * Added double buffering back into display initialisation
 * Added extra input value descriptors
 * Added global splash image
+* Added gradient and dithering to default theme
 * Added icon for theme alternates
+* Added input tester glyph recolour theme settings
+* Added input tester image glyphs
+* Added internal display blanking on zero brightness
+* Added menu button to input tester
 * Added `midssio.zip` to skipped files
 * Added MinUI compatibility to `assign.json`
 * Added `mugwomp93` perfect overlays for RetroArch
@@ -90,6 +99,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added sdcard `skip.ini` check
 * Added SDL rotation and zoom method to display driver
 * Added short name support for `muxapp` and `muxlaunch` grid mode
+* Added space to file counter default theme
 * Added specific volume set to general settings
 * Added splash image fallbacks
 * Added SSID check for network startup
@@ -106,6 +116,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added theme compatibility via version detection
 * Added theme gradient
 * Added theme picker compatible version checking
+* Added theme support for RGB settings for alternates
 * Added theme version to default theme
 * Added UnionFS userspace utility
 * Added zoom variable to device configurations
@@ -117,7 +128,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Allow only single directory from root in collections
 * Centralised frontend display initialise functions
 * Centralised screenshot functionality
+* Changed default HDMI modes to reduce external display incompatibilities
+* Changed OSF to support both reboot and shutdown methods
 * Changed Pipewire to use different output sample rates instead of resampling
+* Cleaned default theme charging image
+* Cleared explore directory before launching muxplore
 * Closed additional joystick events on module exit
 * Configuration Menu Refactor
 * Created standard CLI based shutdown and reboot method scripts
@@ -128,6 +143,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed audio resuming sound on sleep shutdown
 * Fixed box art displaying for collection folder
 * Fixed box art not loading in collections
+* Fixed charger text Y position on default PIXIE theme
 * Fixed content description in history
 * Fixed CPU core count on sleep resume
 * Fixed custom module navigation
@@ -135,16 +151,20 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed Dingux Commander not launching on devices without analogue sticks
 * Fixed displaying box art in history
 * Fixed error with restore volume variable for Pipewire initialisation
+* Fixed extra navigation glyphs showing if no screenshots available
 * Fixed first item not being focused in collections
 * Fixed folder count and collections
 * Fixed graphical glitches on HDMI disable
 * Fixed HDMI output variable reading on content exit
 * Fixed input testing module refresh
+* Fixed installation of incorrect versioned theme
 * Fixed issue exiting customisation menu
 * Fixed issue on last/resume boot with external content
+* Fixed issue with background gradient overlap
 * Fixed issue with collection start
 * Fixed issue with launching app in grid mode
 * Fixed issue with loading certain theme scheme files
+* Fixed issue with RG28XX framebuffer rotation
 * Fixed issue with selecting search result
 * Fixed issue with wrong item being focused on search results
 * Fixed keyboard navigation when using grid mode
@@ -159,12 +179,17 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed passlock screen
 * Fixed PICO-8 favourites not saving in launched content folder
 * Fixed pre-installed archives
+* Fixed RG40XX device rotation in device configuration
+* Fixed RGCUBEXX initial rotation value
+* Fixed search display name
 * Fixed spacing in file counter for default theme
 * Fixed speaker swap issue for the RGCUBEXX-H device
+* Fixed SSID scanning to show spaces correctly
 * Fixed theme fallback except for factory reset
 * Fixed theme previews with new theme structure for Pixie
 * Fixed toast messages from randomly disappearing
 * Fixed unplug to power off issue in charge mode
+* Fixed volume and brightness bar location default theme
 * Fixed volume variable setter
 * Ignore idle script functions during factory reset
 * Initial Pipewire work for `a113p` devices
@@ -176,16 +201,20 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved `favourite` nomenclature to `collection` for themes
 * Moved friendly folder to be a lowercase check
 * Moved frontend to use SDL2 instead of fbdev
+* Moved input tester values to use image glyphs instead of hardcoded font
 * Moved refresh timer intialisation
 * Optimised content loading for large item lists (_30k items load in < 1s_)
 * Optimised launch scripts for uniformity
 * Optimised task toolkit module
 * Reformatted theme initialisers
 * Removed active option in network as the network will always be active
+* Removed `awesome_small` font as it is no longer required
 * Removed favourites in favour of collections module
 * Removed file entries from showing in content explore root
+* Removed `gamepad` font as it is no longer required
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
+* Removed referenced `gamepad` and `awesome_small` fonts
 * Removed SDL clear render routine in LVGL display window update
 * Renamed internal assign location definition for uniformity
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
@@ -196,6 +225,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Separated NES and FDS systems due to ROM name overlap
 * Sorted options for alternate themes
 * Split content explorer module into individual history and collection modules
+* Stop background music if credits are played
+* Swapped archive extraction return values to reduce mild confusion
 * Swapped grep 'deeplay' with 'muOS-keys'
 * Update advanced-drastic
 * Updated archive extensions to match frontend
@@ -206,12 +237,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated content description to scroll manually
 * Updated default themes to new Pixie structure
 * Updated default themes to support RG34XX and HDMI resolutions
+* Updated default theme to include alternate RGB
 * Updated default theme with 1024x768 resolution
 * Updated Drastic layouts
 * Updated Drastic SDL2 library
 * Update default theme overrides
 * Updated extract script to with new extensions
 * Updated fall back for game names for collections and history
+* Updated gradient settings for HDMI resolution
 * Updated Languages
 * Updated `muxcharge` and `muxsplash` to use background theme colours
 * Updated `muxsplash` to centre image
@@ -226,3 +259,4 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated theme engine to fall back to 640x480 resolution
 * Updated theme loading to use new Pixie theme structure
 * Updated theme overrides to support all settings
+* Updated volume and brightness bar to use icon images
