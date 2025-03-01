@@ -21,33 +21,32 @@ In this guide we will be navigating with some basic assumptions
 
 ## Steps
 
-### 1 Turn on your device and navigate to Configuration
+### 1. Turn on your device and navigate to Configuration
 
 Ensure your Wi-Fi is already connected, and note the IP, this may or may not match the examples shown.
 
 Select Webservices, then enabled "SFTP + Filebrowser"
 
-On your PC, navigate to <Ip Address>:9090
+## 2. Login to the Web Interface and Basic Navigation
 
+On your PC, open a browser and go to http://\<IP Address>:9090 or connect directly with a SFTP client to sftp://\<IP Address>:2022
 
-## 2 Login to the Web Interface and Basic Navigation
+Important to note, the default username/password is:
 
-Important to note, the default username/password is 
-
-USERNAME: muos
-PASSWORD: muos
+**USERNAME**: muos  
+**PASSWORD**: muos
 
 When logged in, you will see basic file structure.
 
-MUX: Internal, unlikely to touch this folder.
-MMC: SD1, this can contain all your saves, roms, configurations.
-SDCARD: SD2, if it has been inserted, this is another storage location (and preferred for integrity reasons)
-USB: Externally connected devices
+**MUX**: Internal, unlikely to touch this folder.  
+**MMC**: SD1, this can contain all your saves, roms, configurations.  
+**SDCARD**: SD2, if it has been inserted, this is another storage location (and preferred for integrity reasons)  
+**USB**: Externally connected devices
 
-## 3 Basic File Transfers
+## 3. Basic File Transfers
 
 Screenshots.
 
-## 4 Further Assistance
+## 4. Further Assistance
 
 For further assistance on the above, please refer to the Discord
