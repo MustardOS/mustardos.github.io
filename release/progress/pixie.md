@@ -77,22 +77,25 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added custom framebuffer set module
 * Added default input combo to common input initialisation
 * Added `default.png` fallback for static images
-* Added `default.png` fallback for static images
 * Added device folders for brick and teaspoon
-* Added dither and blur options to background gradient
 * Added dither and blur options to background gradient
 * Added double buffering back into display initialisation
 * Added extra input value descriptors
+* Added force install option for themes
 * Added global splash image
 * Added gradient and dithering to default theme
 * Added icon for theme alternates
 * Added input tester glyph recolour theme settings
 * Added input tester image glyphs
 * Added internal display blanking on zero brightness
+* Added keyboard support for muX frontend
+* Added keyboard support OSK
 * Added menu button to input tester
 * Added `midssio.zip` to skipped files
 * Added MinUI compatibility to `assign.json`
+* Added missing image for theme previews
 * Added `mugwomp93` perfect overlays for RetroArch
+* Added muX blanking element for zero brightness
 * Added on-device screenshot manager
 * Added open sourced GBA BIOS for compatibility
 * Added pause menu exit functionality to PPSSPP
@@ -116,6 +119,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added theme compatibility via version detection
 * Added theme gradient
 * Added theme picker compatible version checking
+* Added theme resolution check
 * Added theme support for RGB settings for alternates
 * Added theme version to default theme
 * Added UnionFS userspace utility
@@ -221,6 +225,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Restrict archive manager to specific extensions
 * Restrict customisation picker to specific archive extensions
 * Sanitise slash characters in network profile names
+* Scaled theme resolution to fit on HDMI
+* Scaled theme supported resolution to target resolution
 * SDL display driver cleanup
 * Separated NES and FDS systems due to ROM name overlap
 * Sorted options for alternate themes
@@ -229,8 +235,10 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Swapped archive extraction return values to reduce mild confusion
 * Swapped grep 'deeplay' with 'muOS-keys'
 * Update advanced-drastic
+* Update archive manager glyphs
 * Updated archive extensions to match frontend
 * Updated archive manager to detect catalogue and info archives
+* Updated archive manager to support scrolling text
 * Updated BIOS for PUAE RetroArch core
 * Updated brick input descriptors
 * Updated collection unique ID
@@ -239,9 +247,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated default themes to support RG34XX and HDMI resolutions
 * Updated default theme to include alternate RGB
 * Updated default theme with 1024x768 resolution
+* Updated Discord presence integration
 * Updated Drastic layouts
 * Updated Drastic SDL2 library
 * Update default theme overrides
+* Updated extraction script to use switch statements
 * Updated extract script to with new extensions
 * Updated fall back for game names for collections and history
 * Updated gradient settings for HDMI resolution
