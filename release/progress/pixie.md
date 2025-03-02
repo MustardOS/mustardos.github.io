@@ -88,8 +88,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added input tester glyph recolour theme settings
 * Added input tester image glyphs
 * Added internal display blanking on zero brightness
-* Added keyboard support for muX frontend
-* Added keyboard support OSK
+* Added keyboard support for muX frontend and OSK
 * Added menu button to input tester
 * Added `midssio.zip` to skipped files
 * Added MinUI compatibility to `assign.json`
@@ -128,7 +127,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Adjusted start progress bar with background visual
 * Adjust storage mount scripts for union mount
 * Allow for outside set custom defined idle power values
-* Allow official PICO-8 `.zip` to be installed via Archive Manager
+* Allow official PICO-8 archive to be installed via Archive Manager
+  * _Rename extension to `.muxzip` for it to show!_
 * Allow only single directory from root in collections
 * Centralised frontend display initialise functions
 * Centralised screenshot functionality
@@ -185,7 +185,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed pre-installed archives
 * Fixed RG40XX device rotation in device configuration
 * Fixed RGCUBEXX initial rotation value
-* Fixed search display name
+* Fixed search result display name fullpath issue
 * Fixed spacing in file counter for default theme
 * Fixed speaker swap issue for the RGCUBEXX-H device
 * Fixed SSID scanning to show spaces correctly
@@ -206,19 +206,18 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved friendly folder to be a lowercase check
 * Moved frontend to use SDL2 instead of fbdev
 * Moved input tester values to use image glyphs instead of hardcoded font
+* Moved random theme from startup to shutdown
 * Moved refresh timer intialisation
 * Optimised content loading for large item lists (_30k items load in < 1s_)
 * Optimised launch scripts for uniformity
 * Optimised task toolkit module
 * Reformatted theme initialisers
 * Removed active option in network as the network will always be active
-* Removed `awesome_small` font as it is no longer required
+* Removed `awesome_small` and `gamepad` hardcoded fonts as they are no longer required
 * Removed favourites in favour of collections module
 * Removed file entries from showing in content explore root
-* Removed `gamepad` font as it is no longer required
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
-* Removed referenced `gamepad` and `awesome_small` fonts
 * Removed SDL clear render routine in LVGL display window update
 * Renamed internal assign location definition for uniformity
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
@@ -255,6 +254,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated extract script to with new extensions
 * Updated fall back for game names for collections and history
 * Updated gradient settings for HDMI resolution
+* Updated HDMI output to only show supported theme resolutions
 * Updated Languages
 * Updated `muxcharge` and `muxsplash` to use background theme colours
 * Updated `muxsplash` to centre image
@@ -269,4 +269,5 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated theme engine to fall back to 640x480 resolution
 * Updated theme loading to use new Pixie theme structure
 * Updated theme overrides to support all settings
+* Updated theme resolution check for any resolution
 * Updated volume and brightness bar to use icon images
