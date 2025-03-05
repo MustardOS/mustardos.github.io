@@ -22,12 +22,22 @@ of your theme. You'll be able to change variables per program here such as;
 Below you will find all the available attributes you can change in a scheme file, and explanations for every line.
 
 > *Tip: Refer to the Theme Structure page to find the `muxprogram` list. Each individual page
-> can have unique properties by creating another* `.txt` *file within the* `./scheme/` *folder with
+> can have unique properties by creating another* `.ini` *file within the* `./scheme/` *folder with
 > matching names to that program.*
+
+# Scheme File Hierarchy
+
+Multiple scheme files can be loaded for each screen in muOS. The files are loaded in an additive manner with each setting present in a scheme file overriding the previously read file settings.  This allows for you to have a global file containing most of your theme settings in a centrallized location and separate files with minimal settings to adjust resolution or screen specific settings.
+
+| Scheme Path | Description |
+|--------------------|---------------------------------------------------|
+| `/scheme/global.ini`                | Main scheme for your file.  Settings in this file are for the entire theme regardless of resolution or screen. |
+| `/{Resolution}/scheme/default.ini`  | Default scheme settings for this settings related to all screens for a specific resolution. For example changing `CONTENT_ITEM_COUNT` to a larger amount of items for specific resolutions. |
+| `/{Resolution}/scheme/{module}.ini` | Settings that only apply to a specific screen at a specific resolution.  For example you may want to adjust `CONTENT_WIDTH` in a `muxplore.ini` file to allow room for displaying box art. |
 
 # Scheme File Line-By-Line
 
-This is an example of a random `./scheme/default.txt` file from the theme library.
+This is an example of a random `./scheme/default.ini` file from the theme library.
 
 ### Section [background]
 

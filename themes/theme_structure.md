@@ -32,7 +32,21 @@ correct place. Below is an example of the correct structure that you can replica
 │   |   ├── config.png
 │   |   ├── reboot.png
 │   |   ├── shutdown.png
+├── scheme
+│   └── global.ini
 ├── 640x480
+│   ├── font
+│   │   └── default.bin
+│   ├── glyph
+│   │   ├── muxlaunch
+│   │   |   ├── explore.png
+│   │   |   ├── favourite.png
+│   │   |   ├── history.png
+│   │   |   ├── apps.png
+│   │   |   ├── info.png
+│   │   |   ├── config.png
+│   │   |   ├── reboot.png
+│   │   |   ├── shutdown.png
 │   ├── image
 │   |   ├── bootlogo.bmp
 │   |   ├── overlay.png
@@ -52,8 +66,8 @@ correct place. Below is an example of the correct structure that you can replica
 │   |       ├── muxtester.png
 │   |       └── muxcharge.png
 │   ├── scheme
-│   |   ├── default.txt
-│   |   └── muxtester.txt
+│   |   ├── default.ini
+│   |   └── muxtester.ini
 ├── 720x480
 ├── 720x576
 ├── 720x720
