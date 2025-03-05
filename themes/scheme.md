@@ -38,7 +38,7 @@ This is an example of a random `./scheme/default.txt` file from the theme librar
 | BACKGROUND_GRADIENT_COLOR=000000 | 2nd colour in gradient                            |
 | BACKGROUND_GRADIENT_START=0      | Start point of gradient change. [BACKGROUND] changes to [BACKGROUND_GRADIENT_COLOR] colour. |
 | BACKGROUND_GRADIENT_STOP=255     | End point of gradient change. |
-| BACKGROUND_GRADIENT_DIRECTION=0  | Direction of gradient. <br>0 = none<br>1 = Vertical<br>2 = Horizontal |
+| BACKGROUND_GRADIENT_DIRECTION=0  | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
 | BACKGROUND_GRADIENT_DITHER=0     | Apply dithering effect to background gradient to help smooth out banding in the background gradient. <br>0 = Disabled<br>1 = Enabled |
 | BACKGROUND_GRADIENT_BLUR=0       | Apply blur to background gradient. <br>0 = Disabled<br>1 or greater = Level of blur.  |
 
@@ -246,7 +246,7 @@ Allows for displaying a grid of icons for the main menu or content explorer.  Co
 | CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR=000000 |  2nd colour in gradient   |
 | CELL_DEFAULT_BACKGROUND_GRADIENT_START=0      |  Start point of gradient change. [CELL_DEFAULT_BACKGROUND] changes to [CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR] colour.   |
 | CELL_DEFAULT_BACKGROUND_GRADIENT_STOP=255     |  End point of gradient change.   |
-| CELL_DEFAULT_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = none<br>1 = Vertical<br>2 = Horizontal |
+| CELL_DEFAULT_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
 | CELL_DEFAULT_BORDER=000000           |  Unselected cell border colour.                |
 | CELL_DEFAULT_BORDER_ALPHA=255        |  Unselected cell border transparency.          |
 | CELL_DEFAULT_IMAGE_ALPHA=255         |  Unselected cell image transparency.           |
@@ -259,7 +259,7 @@ Allows for displaying a grid of icons for the main menu or content explorer.  Co
 | CELL_FOCUS_BACKGROUND_GRADIENT_COLOR=000000 |  2nd colour in gradient   |
 | CELL_FOCUS_BACKGROUND_GRADIENT_START=0      |  Start point of gradient change. [CELL_FOCUS_BACKGROUND] changes to [CELL_FOCUS_BACKGROUND_GRADIENT_COLOR] colour.   |
 | CELL_FOCUS_BACKGROUND_GRADIENT_STOP=255     |  End point of gradient change.   |
-| CELL_FOCUS_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = none<br>1 = Vertical<br>2 = Horizontal |
+| CELL_FOCUS_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
 | CELL_FOCUS_BORDER=000000             |  Selected cell border colour.                  |
 | CELL_FOCUS_BORDER_ALPHA=255          |  Selected cell border transparency.            |
 | CELL_FOCUS_IMAGE_ALPHA=255           |  Selected cell image transparency.             |
@@ -279,7 +279,7 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_DEFAULT_BACKGROUND_ALPHA=0       | Unselected list item main background transparency.                                                                                                      |
 | LIST_DEFAULT_GRADIENT_START=0         | Start point of gradient change. [background] changes 2nd colour.                                                                                        |
 | LIST_DEFAULT_GRADIENT_STOP=0          | End point of gradient change.                                                                                                                           |
-| LIST_DEFAULT_GRADIENT_DIRECTION=0     | Direction of gradient. <br>0 = none<br>1 = Vertical<br>2 = Horizontal                                                                                   |
+| LIST_DEFAULT_GRADIENT_DIRECTION=0     | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                   |
 | LIST_DEFAULT_BORDER_WIDTH=5           | Unselected list item border width in pixels.                                                                                                            |
 | LIST_DEFAULT_BORDER_SIDE=4            | Unselected list item border sides.<br>0 = None<br>1 = Bottom<br>2 = Top<br>4 = Left<br>8 = Right<br>**Note:** To do multiple sides add the values.  For example to do top, bottom, left, and right you would add the 4 values together to get 15. |
 | LIST_DEFAULT_INDICATOR=ececec         | Unselected list item indicator/border colour.                                                                                                           |
@@ -297,7 +297,7 @@ For all list item backgrounds, gradients can be applied. L-R = 0-255.
 | LIST_FOCUS_BACKGROUND_ALPHA=0         | Selected list item main background transparency.                                                                                                        |
 | LIST_FOCUS_GRADIENT_START=0           | Start point of gradient change. [background] changes 2nd colour.                                                                                        |
 | LIST_FOCUS_GRADIENT_STOP=0            | End point of gradient change.                                                                                                                           |
-| LIST_FOCUS_GRADIENT_DIRECTION=0       | Direction of gradient. <br>0 = none<br>1 = Vertical<br>2 = Horizontal                                                                                   |
+| LIST_FOCUS_GRADIENT_DIRECTION=0       | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                   |
 | LIST_FOCUS_BORDER_WIDTH=5             | Selected list item border width in pixels.                                                                                                              |
 | LIST_FOCUS_BORDER_SIDE=4              | Selected list item border sides.<br>0 = None<br>1 = Bottom<br>2 = Top<br>4 = Left<br>8 = Right<br>**Note:** To do multiple sides add the values.  For example to do top, bottom, left, and right you would add the 4 values together to get 15. |
 | LIST_FOCUS_INDICATOR=5d0014           | Selected list item indicator/border colour.                                                                                                             |
