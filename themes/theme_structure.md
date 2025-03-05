@@ -103,10 +103,13 @@ LIST_FOCUS_GLYPH_ALPHA=0
 ```
 
 ```
-.
-├── credits.txt
-├── font
 ├── glyph
+│   ├── bar
+│   |   ├── brightness.png
+│   |   ├── volume_0.png
+│   |   ├── volume_1.png
+│   |   ├── volume_2.png
+│   |   ├── volume_3.png
 │   ├── footer
 │   |   ├── a.png
 │   |   ├── b.png
@@ -119,6 +122,7 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── bluetooth.png
 │   |   ├── capacity_0.png
 │   |   ├── capacity_10.png
+│   |   ├── capacity_100.png
 │   |   ├── capacity_20.png
 │   |   ├── capacity_30.png
 │   |   ├── capacity_40.png
@@ -127,9 +131,9 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── capacity_70.png
 │   |   ├── capacity_80.png
 │   |   ├── capacity_90.png
-│   |   ├── capacity_100.png
 │   |   ├── capacity_charging_0.png
 │   |   ├── capacity_charging_10.png
+│   |   ├── capacity_charging_100.png
 │   |   ├── capacity_charging_20.png
 │   |   ├── capacity_charging_30.png
 │   |   ├── capacity_charging_40.png
@@ -138,7 +142,6 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── capacity_charging_70.png
 │   |   ├── capacity_charging_80.png
 │   |   ├── capacity_charging_90.png
-│   |   ├── capacity_charging_100.png
 │   |   ├── network_active.png
 │   |   ├── network_normal.png
 │   ├── muxapp
@@ -152,6 +155,7 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── ppsspp.png
 │   |   ├── retroarch.png
 │   |   ├── rgbcontroller.png
+│   |   ├── scummvm.png
 │   |   ├── task.png
 │   |   ├── terminal.png
 │   ├── muxarchive
@@ -161,18 +165,55 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── core.png
 │   |   ├── default.png
 │   |   ├── system.png
+│   ├── muxcollect
+│   |   ├── collection.png
+│   |   ├── folder.png
 │   ├── muxconfig
-│   |   ├── clock.png
+│   |   ├── connect.png
+│   |   ├── custom.png
 │   |   ├── general.png
+│   |   ├── interface.png
 │   |   ├── language.png
+│   |   ├── power.png
+│   |   ├── storage.png
+│   |   ├── theme.png
+│   ├── muxconnect
+│   |   ├── bluetooth.png
 │   |   ├── network.png
 │   |   ├── service.png
+│   |   ├── usbfunction.png
+│   ├── muxcustom
+│   |   ├── backgroundanimation.png
+│   |   ├── bgm.png
+│   |   ├── blackfade.png
+│   |   ├── boxart.png
+│   |   ├── boxartalign.png
+│   |   ├── catalogue.png
+│   |   ├── config.png
+│   |   ├── font.png
+│   |   ├── launchsplash.png
+│   |   ├── sound.png
 │   |   ├── theme.png
+│   |   ├── themealternate.png
 │   ├── muxgov
 │   |   ├── default.png
 │   |   ├── governor.png
+│   ├── muxhdmi
+│   |   ├── audio.png
+│   |   ├── depth.png
+│   |   ├── enable.png
+│   |   ├── range.png
+│   |   ├── resolution.png
+│   |   ├── scan.png
+│   |   ├── space.png
+│   |   ├── theme_resolution.png
+│   ├── muxhistory
+│   |   ├── collection.png
+│   |   ├── history.png
 │   ├── muxinfo
 │   |   ├── credit.png
+│   |   ├── screenshot.png
+│   |   ├── space.png
 │   |   ├── system.png
 │   |   ├── tester.png
 │   |   ├── tracker.png
@@ -180,6 +221,7 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── language.png
 │   ├── muxlaunch
 │   |   ├── apps.png
+│   |   ├── collection.png
 │   |   ├── config.png
 │   |   ├── explore.png
 │   |   ├── favourite.png
@@ -199,22 +241,31 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── gateway.png
 │   |   ├── identifier.png
 │   |   ├── password.png
+│   |   ├── scan.png
 │   |   ├── status.png
 │   |   ├── subnet.png
 │   |   ├── type.png
 │   ├── muxoption
 │   |   ├── core.png
+│   |   ├── folder.png
 │   |   ├── governor.png
+│   |   ├── rom.png
+│   |   ├── search.png
+│   ├── muxpicker
+│   |   ├── catalogue.png
+│   |   ├── config.png
+│   |   ├── folder.png
+│   |   ├── theme.png
 │   ├── muxplore
-│   |   ├── favourite.png
+│   |   ├── collection.png
 │   |   ├── folder.png
 │   |   ├── history.png
 │   |   ├── rom.png
-│   ├── muxfavourite
-│   |   ├── favourite.png
-│   ├── muxhistory
-│   |   ├── favourite.png
-│   |   ├── history.png
+│   ├── muxpower
+│   |   ├── battery.png
+│   |   ├── idle_display.png
+│   |   ├── idle_sleep.png
+│   |   ├── shutdown.png
 │   ├── muxrtc
 │   |   ├── day.png
 │   |   ├── hour.png
@@ -223,17 +274,40 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   |   ├── notation.png
 │   |   ├── timezone.png
 │   |   ├── year.png
+│   ├── muxsearch
+│   |   ├── content.png
+│   |   ├── folder.png
+│   |   ├── global.png
+│   |   ├── local.png
+│   |   ├── lookup.png
+│   ├── muxshot
+│   |   ├── screenshot.png
+│   ├── muxspace
+│   |   ├── rfs.png
+│   |   ├── sd1.png
+│   |   ├── sd2.png
+│   |   ├── usb.png
 │   ├── muxstorage
 │   |   ├── bios.png
 │   |   ├── catalogue.png
+│   |   ├── collection.png
 │   |   ├── config.png
 │   |   ├── content.png
+│   |   ├── core.png
+│   |   ├── favourite.png
+│   |   ├── history.png
 │   |   ├── language.png
 │   |   ├── music.png
+│   |   ├── name.png
 │   |   ├── network.png
+│   |   ├── pack-catalogue.png
+│   |   ├── pack-config.png
+│   |   ├── retroarch.png
 │   |   ├── save.png
 │   |   ├── screenshot.png
+│   |   ├── syncthing.png
 │   |   ├── theme.png
+│   |   ├── userinit.png
 │   ├── muxsysinfo
 │   |   ├── capacity.png
 │   |   ├── cpu.png
@@ -250,11 +324,43 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   ├── muxtask
 │   |   ├── backup.png
 │   |   ├── clear.png
+│   |   ├── diagnostic.png
 │   |   ├── ethernet.png
 │   |   ├── junk.png
 │   |   ├── network.png
 │   |   ├── retroarch.png
 │   |   ├── sdcard.png
+│   |   ├── theme.png
+│   ├── muxtester
+│   |   ├── btn_a.png
+│   |   ├── btn_b.png
+│   |   ├── btn_c.png
+│   |   ├── btn_l1.png
+│   |   ├── btn_l2.png
+│   |   ├── btn_l3.png
+│   |   ├── btn_menu.png
+│   |   ├── btn_r1.png
+│   |   ├── btn_r2.png
+│   |   ├── btn_r3.png
+│   |   ├── btn_select.png
+│   |   ├── btn_start.png
+│   |   ├── btn_x.png
+│   |   ├── btn_y.png
+│   |   ├── btn_z.png
+│   |   ├── dpad_down.png
+│   |   ├── dpad_left.png
+│   |   ├── dpad_right.png
+│   |   ├── dpad_up.png
+│   |   ├── ls_down.png
+│   |   ├── ls_left.png
+│   |   ├── ls_right.png
+│   |   ├── ls_up.png
+│   |   ├── rs_down.png
+│   |   ├── rs_left.png
+│   |   ├── rs_right.png
+│   |   ├── rs_up.png
+│   |   ├── vol_down.png
+│   |   ├── vol_up.png
 │   ├── muxtheme
 │   |   ├── theme.png
 │   ├── muxtimezone
@@ -262,52 +368,52 @@ LIST_FOCUS_GLYPH_ALPHA=0
 │   ├── muxtweakadv
 │   |   ├── accelerate.png
 │   |   ├── brightness.png
-│   |   ├── font.png
+│   |   ├── cardmode.png
+│   |   ├── dpadswap.png
 │   |   ├── led.png
 │   |   ├── lock.png
 │   |   ├── offset.png
+│   |   ├── overdrive.png
 │   |   ├── retrowait.png
+│   |   ├── rumble.png
 │   |   ├── state.png
-│   |   ├── storage.png
 │   |   ├── swap.png
+│   |   ├── swapfile.png
 │   |   ├── theme.png
 │   |   ├── thermal.png
-│   |   ├── usbfunction.png
+│   |   ├── userinit.png
 │   |   ├── verbose.png
 │   |   ├── volume.png
 │   ├── muxtweakgen
 │   |   ├── advanced.png
-│   |   ├── battery.png
-│   |   ├── bgm.png
 │   |   ├── brightness.png
+│   |   ├── clock.png
 │   |   ├── colour.png
 │   |   ├── hdmi.png
-│   |   ├── hidden.png
-│   |   ├── interface.png
-│   |   ├── shutdown.png
-│   |   ├── sound.png
 │   |   ├── startup.png
+│   |   ├── volume.png
 │   ├── muxvisual
-│   |   ├── backgroundanimation.png
 │   |   ├── battery.png
-│   |   ├── bluetooth.png
-│   |   ├── boxart.png
 │   |   ├── clock.png
 │   |   ├── counterfile.png
 │   |   ├── counterfolder.png
 │   |   ├── dash.png
+│   |   ├── folderempty.png
 │   |   ├── folderitemcount.png
 │   |   ├── friendlyfolder.png
+│   |   ├── hidden.png
 │   |   ├── name.png
 │   |   ├── network.png
 │   |   ├── thetitleformat.png
+│   |   ├── titleincluderootdrive.png
 │   ├── muxwebserv
-│   |   ├── browser.png
 │   |   ├── ntp.png
-│   |   ├── resilio.png
-│   |   ├── shell.png
-│   |   ├── sync.png
-│   |   ├── terminal.png
+│   |   ├── rslsync.png
+│   |   ├── sftpgo.png
+│   |   ├── sshd.png
+│   |   ├── syncthing.png
+│   |   ├── tailscaled.png
+│   |   ├── ttyd.png
 ├── image
 ├── scheme
 └── sound
