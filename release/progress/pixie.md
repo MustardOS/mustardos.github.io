@@ -68,6 +68,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added additional names to internal lookup table
 * Added animated background repeat count for themes
 * Added antialiasing toggle for themes
+* Added application container support
 * Added audio mute on idle detection
 * Added background process safe quit for frontend modules for faster loading
 * Added basic gradient support to background and grid cells
@@ -78,6 +79,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added default input combo to common input initialisation
 * Added `default.png` fallback for static images
 * Added device folders for brick and teaspoon
+* Added display backlight change on system suspend
 * Added dither and blur options to background gradient
 * Added double buffering back into display initialisation
 * Added extra input value descriptors
@@ -89,6 +91,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added input tester image glyphs
 * Added internal display blanking on zero brightness
 * Added keyboard support for muX frontend and OSK
+* Added labels to default theme splash screens
 * Added menu button to input tester
 * Added `midssio.zip` to skipped files
 * Added MinUI compatibility to `assign.json`
@@ -97,6 +100,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added muX blanking element for zero brightness
 * Added on-device screenshot manager
 * Added open sourced GBA BIOS for compatibility
+* Added overlay image and transparency visual options
 * Added pause menu exit functionality to PPSSPP
 * Added sdcard `skip.ini` check
 * Added SDL rotation and zoom method to display driver
@@ -110,6 +114,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added supporter music to credits when viewed from information module
 * Added support for 1024x768 to default themes
 * Added support for grid cell drop shadow
+* Added support for resolution specific overlays
 * Added support for theme alternates
 * Added support global structure within theme scheme files
 * Added Syncthing scanner process on quit
@@ -124,6 +129,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added UnionFS userspace utility
 * Added zoom variable to device configurations
 * Adjusted device configurations and scripts to use new input descriptors
+* Adjusted device specific audio and brightness input scripts
 * Adjusted start progress bar with background visual
 * Adjust storage mount scripts for union mount
 * Allow for outside set custom defined idle power values
@@ -153,15 +159,23 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed custom module navigation
 * Fixed description displaying for collection folder
 * Fixed Dingux Commander not launching on devices without analogue sticks
+* Fixed display blanking and improved sleep triggers
 * Fixed displaying box art in history
+* Fixed empty SSID scans showing
 * Fixed error with restore volume variable for Pipewire initialisation
 * Fixed extra navigation glyphs showing if no screenshots available
 * Fixed first item not being focused in collections
 * Fixed folder count and collections
+* Fixed framebuffer issue with PPSSPP
 * Fixed graphical glitches on HDMI disable
+* Fixed HDMI Console Mode audio output
+* Fixed HDMI detection on device startup
+* Fixed HDMI framebuffer output
 * Fixed HDMI output variable reading on content exit
+* Fixed HDMI scaling at all resolutions
 * Fixed input testing module refresh
 * Fixed installation of incorrect versioned theme
+* Fixed invalid reference in `muxtask`
 * Fixed issue exiting customisation menu
 * Fixed issue on last/resume boot with external content
 * Fixed issue with background gradient overlap
@@ -185,10 +199,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed pre-installed archives
 * Fixed RG40XX device rotation in device configuration
 * Fixed RGCUBEXX initial rotation value
+* Fixed scrolling to previous directory in grid mode
 * Fixed search result display name fullpath issue
 * Fixed spacing in file counter for default theme
 * Fixed speaker swap issue for the RGCUBEXX-H device
 * Fixed SSID scanning to show spaces correctly
+* Fixed SSID scan results with certain bytecodes
 * Fixed theme fallback except for factory reset
 * Fixed theme previews with new theme structure for Pixie
 * Fixed toast messages from randomly disappearing
@@ -200,7 +216,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Lowered default HDMI resolution mode
 * Modified customisation package extraction script to use specific extensions
 * Modified device scripts to get volume from global config
+* Modified HDMI enable function for Console Mode startup
+* Modified LED control to not start in Console Mode
 * Modified package internal name system to `name.txt`
+* Modified safe quit to close module earlier
+* Modified startup script to init audio/brightness/led functions
 * Moved and renamed theme picker and theme alternative options
 * Moved `favourite` nomenclature to `collection` for themes
 * Moved friendly folder to be a lowercase check
@@ -208,6 +228,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved input tester values to use image glyphs instead of hardcoded font
 * Moved random theme from startup to shutdown
 * Moved refresh timer intialisation
+* Moved to sleep suspend using RTC method
 * Optimised content loading for large item lists (_30k items load in < 1s_)
 * Optimised launch scripts for uniformity
 * Optimised task toolkit module
@@ -218,7 +239,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Removed file entries from showing in content explore root
 * Removed hardcoded device paths in archive manager
 * Removed hardcoded path in collection log
+* Removed HDMI and network enabled variable instances
+* Removed HDMI enable toggle for Console Mode
+* Removed network enable toggle global variable
 * Removed SDL clear render routine in LVGL display window update
+* Renamed device specific RTC variables
 * Renamed internal assign location definition for uniformity
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
 * Restrict archive manager to specific extensions
@@ -252,9 +277,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Update default theme overrides
 * Updated extraction script to use switch statements
 * Updated extract script to with new extensions
+* Updated `extract.sh` for other archive types
 * Updated fall back for game names for collections and history
+* Updated file counter to use LVGL for fade
 * Updated gradient settings for HDMI resolution
 * Updated HDMI output to only show supported theme resolutions
+* Updated input paths for audio and brightness controls
 * Updated Languages
 * Updated `muxcharge` and `muxsplash` to use background theme colours
 * Updated `muxsplash` to centre image
