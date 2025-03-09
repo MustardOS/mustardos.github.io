@@ -16,5 +16,6 @@ To zip your theme correctly, you must compress the folder structure together **N
 - Select `credits.txt`, `preview.png`, `./images/`, `./scheme/`, and the rest of your folders for your theme together.
 - Use a program such as WinRar (Windows), Keka (macOS), and 7zip (Linux/Windows) to compress those as one zip.
 - Name your zip whatever you choose.
+- Replace the zip extension with muxthm, example: `theme_name.muxthm`
 
 And you're done! Enjoy your theme on your device.
