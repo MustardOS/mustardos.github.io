@@ -15,4 +15,41 @@ $search-background-color: $grey-dk-250;
 $search-result-preview-color: $grey-dk-000;
 $border-color: $grey-dk-200;
 
+/* Filter checkboxes */
+.filters {
+    margin-bottom: 15px;
+}
+
+/* Grid container */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: flex-start; 
+}
+
+/* Grid items */
+.grid-item {
+    width: 243px;
+    min-height: 232px;
+    border: 1px solid $border-color;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: $table-background-color;
+}
+
+/* Image styling */
+.grid-item img {
+    max-width: 219px;
+    max-height: 164px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hide elements when filtered */
+.hidden {
+    display: none;
+}
+
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
