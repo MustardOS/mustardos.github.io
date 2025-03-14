@@ -51,7 +51,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Contributors
 
-* acemplus
+* acmeplus
 * antikk
 * baxysquare
 * bgelmini
