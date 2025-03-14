@@ -9,8 +9,6 @@ has_children: false
 
 # Archive Manager
 
-**muOS Beans** introduces a new archive manager for easily restoring backup up content.
-
 NOTE: Only install archives that you trust!
 {: .label .label-yellow }
 
@@ -23,21 +21,22 @@ The Archive Manager is located at `Applications > Archive Manager`
 ## How does it work?
 
 If it doesn't exist, you can create a folder named `ARCHIVE` in the root of `SD1, SD2, USB`   
-Here you can place specially created archive manager `.zip` files.  
-The archive manager will extract the contents of **any** `.zip` file, so it's important that they are created correctly.
+Here you can place specially created archive manager `.muxzip` files.  
+The archive manager will extract the contents of **any** `.muxzip` file, so it's important that they are created
+correctly.
 
 ### Example
 
 ```
 SD2
 └── Archive
-    ├── BIOS Files.zip
-    ├── Retroarch Overrides.zip
-    ├── Save Games.zip
-    └── WiFi Config.zip
+    ├── BIOS Files.muxzip
+    ├── Retroarch Overrides.muxzip
+    ├── Save Games.muxzip
+    └── WiFi Config.muxzip
 USB
 └── Archive
-    └── Box Art.zip
+    └── Box Art.muxzip
 ```
 
 ## How should I structure the Archive .zip files?
@@ -69,7 +68,7 @@ USB root is `/mnt/usb`
 ## What can I restore with this Archive Manager?
 
 It's very flexible and can be used for pretty much anything.  
-Simply create a `.zip` file with the correct path.
+Simply create a `.muxzip` file with the correct path.
 
 ### Example
 

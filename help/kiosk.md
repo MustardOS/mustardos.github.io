@@ -44,7 +44,7 @@ timezone = 0
 application = 0
 config = 0
 explore = 0
-favourite = 0
+collection = 0
 history = 0
 info = 0
 
@@ -82,7 +82,7 @@ Change the `0` to `1` to disable the functionality of the specific element.
 | `launch/application`   | Main Menu - Application     |
 | `launch/config`        | Main Menu - Configuration   |
 | `launch/explore`       | Main Menu - Content Explore |
-| `launch/favourite`     | Main Menu - Favourites      |
+| `launch/collection`    | Main Menu - Collections     |
 | `launch/history`       | Main Menu - History         |
 | `launch/info`          | Main Menu - Information     |
 | `setting/advanced`     | Advanced Settings Menu      |
