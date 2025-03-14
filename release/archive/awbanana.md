@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2410.3 AW BANANA
-permalink: /release/current/awbanana
-parent: Current
+permalink: /release/archive/awbanana
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false

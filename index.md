@@ -10,7 +10,7 @@ has_children: true
 muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, themeable, friendly, easy-to-use.
 {: .fs-6 .fw-300 }
 
-[Download Latest Here](release/current/awbanana){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download Latest Here](release/current/pixie){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Discord Server](https://discord.gg/USS5ybVtDz){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .note }
@@ -41,7 +41,8 @@ turn it on, and it will take care of the rest.
 | Brightness              | MENU + Volume            |
 | Screenshot              | MENU + POWER             |
 | Sleep Suspend           | Hold POWER for 2 seconds |
-| Safe Restart            | POWER + L1 + L2 + R1 + R2|
+| Safe Restart            | L2 + R2 + START          |
+| Safe Shutdown           | L2 + R2 + SELECT         |
 | Modify Core / Governor  | Press SELECT on content  |
 | Content Root            | Press START on content   |
 | RetroArch Menu          | MENU + X                 |

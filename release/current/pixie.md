@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2502.0 PIXIE
-permalink: /release/progress/pixie
-parent: Progress
+permalink: /release/current/pixie
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -10,15 +10,21 @@ has_toc: false
 
 # muOS 2502.0 Pixie
 
-_<small>Date Not Confirmed</small>_
-
 #### _Pronunciation_
 
 /ˌpɪk ˈsiː/
 
-## Download Full Image
+## Download **Full Image**
 
-_Not ready just yet_
+[Download from Gofile](https://gofile.io/d/qsjQVI){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/suBlXAiZ#xIVmGP7M8aly-aHmRDecRw){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+#### OneDrive Mirror - Provided by IonutBarna
+[Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/EhfWDavw04ZKvKzoIbPEC1gBFQoTJrdxZ0J-fZh8veyUvA){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+{: .important }
+> If you are updating from Banana please ensure that you do **NOT** have any themes or RetroArch configurations as
+> major changes have occurred.  You can find most converted themes from https://theme.muos.dev page.
 
 {: .important }
 > As this is a major release you will be required to reflash to update your device to this version. Updates are only
@@ -45,6 +51,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Contributors
 
+* acemplus
 * antikk
 * baxysquare
 * bgelmini
@@ -64,6 +71,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Changes
 
+* Added activity tracking
 * Added additional modes to brightness and volume settings
 * Added additional names to internal lookup table
 * Added animated background repeat count for themes
@@ -103,7 +111,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added overlay image and transparency visual options
 * Added pause menu exit functionality to PPSSPP
 * Added sdcard `skip.ini` check
+* Added `sdljoymap` and `sdljoytest` binaries
 * Added SDL rotation and zoom method to display driver
+* Added setting to toggle activity tracker
 * Added short name support for `muxapp` and `muxlaunch` grid mode
 * Added space to file counter default theme
 * Added specific volume set to general settings
@@ -128,6 +138,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added theme version to default theme
 * Added UnionFS userspace utility
 * Added zoom variable to device configurations
+* Added Zram support
 * Adjusted device configurations and scripts to use new input descriptors
 * Adjusted device specific audio and brightness input scripts
 * Adjusted start progress bar with background visual
@@ -164,6 +175,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed empty SSID scans showing
 * Fixed error with restore volume variable for Pipewire initialisation
 * Fixed extra navigation glyphs showing if no screenshots available
+* Fixed factory reset mode change
 * Fixed first item not being focused in collections
 * Fixed folder count and collections
 * Fixed framebuffer issue with PPSSPP
@@ -180,6 +192,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed issue on last/resume boot with external content
 * Fixed issue with background gradient overlap
 * Fixed issue with collection start
+* Fixed issue with device being stuck in console mode
 * Fixed issue with launching app in grid mode
 * Fixed issue with loading certain theme scheme files
 * Fixed issue with RG28XX framebuffer rotation
@@ -198,6 +211,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed PICO-8 favourites not saving in launched content folder
 * Fixed pre-installed archives
 * Fixed RG40XX device rotation in device configuration
+* Fixed RGB Controller hotkey location
 * Fixed RGCUBEXX initial rotation value
 * Fixed scrolling to previous directory in grid mode
 * Fixed search result display name fullpath issue
@@ -228,6 +242,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved input tester values to use image glyphs instead of hardcoded font
 * Moved random theme from startup to shutdown
 * Moved refresh timer intialisation
+* Moved to alsathread for Flycast cores
 * Moved to sleep suspend using RTC method
 * Optimised content loading for large item lists (_30k items load in < 1s_)
 * Optimised launch scripts for uniformity
@@ -242,12 +257,15 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Removed HDMI and network enabled variable instances
 * Removed HDMI enable toggle for Console Mode
 * Removed network enable toggle global variable
+* Removed resolution switch for PPSSPP
+* Removed SDL blitter from external ScummVM launcher
 * Removed SDL clear render routine in LVGL display window update
 * Renamed device specific RTC variables
 * Renamed internal assign location definition for uniformity
 * Reserved `muOS-keys` as **Port 1** of controller in RetroArch
 * Restrict archive manager to specific extensions
 * Restrict customisation picker to specific archive extensions
+* Reworked suspend script as to not trigger DPAD switch
 * Sanitise slash characters in network profile names
 * Scaled theme resolution to fit on HDMI
 * Scaled theme supported resolution to target resolution
@@ -288,11 +306,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated `muxsplash` to centre image
 * Updated naming of history pointers to include hash to avoid collisions
 * Updated PortMaster
+* Updated PPSSPP with UI scaling
 * Updated preinstalled themes with version information
 * Updated RetroArch cores
 * Updated RetroArch GLSL shaders
 * Updated RetroArch info files
-* Updated RetroArch to 1.20.0
+* Updated RetroArch to `c94e4cf`
 * Updated system information module
 * Updated theme engine to fall back to 640x480 resolution
 * Updated theme loading to use new Pixie theme structure
