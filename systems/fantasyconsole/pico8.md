@@ -40,7 +40,7 @@ You will need a copy of the following files from the **Raspberry Pi** version:
 
 Starting with muOS Pixie you can now drop your official pico-8 zip into `/ARCHIVE` on either SD Card and install using muOS Archive Manager.  
 The file is named `pico-8_0.2.6b_raspi.zip` as of the writing of this page.  
-The extension will need to be changed to `.muzip` firstly to be recognised. 
+The extension will need to be changed to `.muxzip` firstly to be recognised. 
 
 Once you add your purchased files from Lexaloffle you'll need to set muOS to use the PICO-8 External emulator.
 - Browse to where your PICO-8 games are in muOS content explorer.
