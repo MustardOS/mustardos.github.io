@@ -2,7 +2,7 @@
 title: Finishing your Theme
 layout: default
 parent: Themes
-nav_order: 5
+nav_order: 7
 has_toc: false
 ---
 

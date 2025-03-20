@@ -13,7 +13,19 @@ correct place. Below is an example of the correct structure that you can replica
 
 ```
 .
+├── active.txt
+├── assets.muxzip
 ├── credits.txt
+├── alternate
+│   └── {alternate 1}.ini
+│   └── {alternate 1}.muzip
+│   └── {altrenate 2}.ini
+│   └── {altrenate 2}.muxzip
+│   ├── rgb
+│   │   ├── {alternate 1}
+|   |   │   └── rgbconf.sh
+│   │   ├── {alternate 2}
+|   |   │   └── rgbconf.sh
 ├── font
 │   └── default.bin
 │   ├── header
