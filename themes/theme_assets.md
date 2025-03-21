@@ -48,7 +48,34 @@ When creating an `assets.muxzip` you should follow the structure of `/catalogue/
 |   |   |   │   └── ...
 ```
 
-> *When displaying system images muOS will first look for an image that matches the rom folder name.  If it does not find a match it will then look for an image that matches the catalogue name of the folder's assigned core.  For this reason it is important to use the catalogue names for the image file names like `/catalogue/Folder/grid/Sega Mega Drive - Genesis.png`.  This ensures that muOS is able to display the correct image regardless of what user has named their folders.*
+# Displaying Grid Images
+When displaying grid images muOS will look in the following locations:
+
+| Screen | Grid Path | File Name |
+|--------|------------|-----------------|
+| Applications     | `/catalogue/Application/grid/` | File name is pulled from `ICON` variable at the top of the application script file. <br> If `ICON` variable does not exist in the script `app` will be used |
+| Collections      | `/catalogue/Collection/grid/`  | Matches the name of the Collection |
+| Content Explorer | `/catalogue/Folder/grid/`      | Matches on rom folder name.<br> If it does not find a match it will then look for an image that matches the catalogue name of the folder's assigned core.|
+
+When display a grid image muOS will search for images in this order:
+
+`/{Grid Path}/{Resolution}/{Filename}.png`<br>
+`/{Grid Path}/{Resolution}/default.png`
+
+If the image is not found it will then search the root of the image folder:
+
+`/{Grid Path}/{Filename}.png`<br>
+`/{Grid Path}/default.png`
+
+**Note:** `default.png` is a fall back in case muOS cannot find an image associated with the grid item.  Typically theme creators would use an image to indicate that this grid item does not have it's own image file like a question mark.
+
+After all grid items are populated muOS will overlay a focused image on top of the grid item image.  The focused image is not required but allows the user to provide a custom indicator for denoting the currently selected item.  You have two options for focused image files:
+
+* `{Filename}_focused.png` allows for having a custom focused image per grid item.
+* `default_focused.png` this applies to all items that do not have their own specific focused image.  
+It will search for these images in the same locations as the regular grid icons.
+
+> *Rom folders will vary from user to use so it is a good idea to use the catalogue names for the image file names like `/catalogue/Folder/grid/Sega Mega Drive - Genesis.png`.  This ensures that muOS is able to display the correct image regardless of what user has named their folders.*
 
 # Zipping Your Assets
 - Select files and folders you want to include in your assets file.  In the case of grid images this would be the `catalogue` folder.
