@@ -20,7 +20,7 @@ has_toc: false
 [Download from MEGA](https://mega.nz/folder/suBlXAiZ#xIVmGP7M8aly-aHmRDecRw){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 #### OneDrive Mirror - Provided by IonutBarna
-[Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/EhfWDavw04ZKvKzoIbPEC1gBFQoTJrdxZ0J-fZh8veyUvA){: .btn .fs-5 .mb-4 .mb-md-0 }
+[Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/EuAq_yV9NelAhxFXs02JefcB_1xr41BQwLj59MGYB5kYKw){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .important }
 > If you are updating from Banana please ensure that you do **NOT** have any themes or RetroArch configurations as
