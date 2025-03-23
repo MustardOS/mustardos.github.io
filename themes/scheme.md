@@ -492,7 +492,7 @@ This relates to the passcode/lock screen when enabled in settings.
 | CONTENT_HEIGHT=392        | Adjust the height of the content panel by pixels.  (Minimum value = 100 Maximum value = Device Screen Height) |
 | CONTENT_WIDTH=640         | Adjust the width of list item content by horizontal pixels. |
 | NAVIGATION_TYPE=0         | 0: For vertical (up/down) navigation. <br>1: For horizontal (left/right). <br>2: For launch menu with two rows of 4 icons. (left/right/up/down)<br>3: For launch menu with two rows of icons. Top row has 3 icons and bottom row has 5 icons. (left/right/up/down) <br>4: Same as 2 except that left/right wraps around on the active row. <br>5: Same as 3 except that left/right wraps around on the active row. |
-| STATIC_ALIGNMENT=0        | Custom images that can outside of wallpapers. See below for details. |
+| STATIC_ALIGNMENT=0        | Controls layering and position of static images with other elements. See below for details. |
 | IMAGE_OVERLAY=0           | Do you want to use an overlay .png image? 0 is no. 1 is yes. |
 | ANTIALIASING=1            | Apply atialieasing to fonts <br>0 = Disabled<br>1 = Enabled |
 
@@ -500,7 +500,7 @@ Static Alignment Values
 
 * Describes the layering and position of static images with other elements.
 * Place static images in ./images/static/ named similarly to wall images.
-* You cannot use a default.png as a static image.
+* You can use default.png as a static fallback image.
 * You can use static images for individual list items and programs.
 
 | Value | Description                           |
