@@ -204,7 +204,7 @@ the item text is partially covered by the boxart. <br>
 
 ![](assets/images/muox_boxart_override_eample_1.png) <br>
 You can override this behaviour so regardless of what theme you have installed the text will stop at a defined length.
-In `/theme/override` you will find 3 files `muxfavourite.txt`, `muxhistory.txt`, and `muxplore.txt`.<br>
+In `/theme/override` you will find 3 files `muxcollect.ini`, `muxhistory.ini`, and `muxplore.ini`.<br>
 
 If you want to adjust just where the text auto ellipses you can set a value for FONT_LIST_PAD_RIGHT. Example:
 
