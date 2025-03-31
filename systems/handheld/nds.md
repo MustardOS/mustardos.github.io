@@ -12,7 +12,7 @@ has_toc: false
 ![](../assets/images/drastic_new.png)
 
 {: .new}
-> muOS includes both DraStic, and the modified version by trngaje
+> muOS includes both DraStic, and the modified version by trngaje  
 > For most uses the modified version is preferred.
 
 ## Advanced DraStic (trngaje) Keys
