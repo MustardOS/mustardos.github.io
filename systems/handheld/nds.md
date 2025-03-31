@@ -22,8 +22,6 @@ has_toc: false
 | F+Select           | `???` |
 | F+Start            | Quit Drastic |
 | F+X                | Main Drastic Menu |
-| F+Y                | `Unmapped` |
-| F+A                | `Unmapped` |
 | F+B                | Change Pixel/Blur Filter |
 | F+D-pad Left/Right | Change Screens Layout |
 | F+R2               | Quick Save |
@@ -31,7 +29,6 @@ has_toc: false
 | F+R1               | Fast Forward |
 | F+L1               | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
 | Just R2            | Change Main/Secondary Screens |
-| Just L2            | `Unmapped` |
 
 **When in D-Pad to Stylus mode**
 
