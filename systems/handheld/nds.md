@@ -12,10 +12,10 @@ has_toc: false
 ![](../assets/images/drastic_new.png)
 
 {: .new}
-> muOS includes both DraStic, and the modified version by steward-fu
+> muOS includes both DraStic, and the modified version by trngaje
 > For most uses the modified version is preferred.
 
-## DraStic (Steward) Keys
+## DraStic (trngaje) Keys
 
 | Button             | Action             |
 |:-------------------|:-------------------|
