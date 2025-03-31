@@ -37,7 +37,6 @@ has_toc: false
 
 | Button             | Action             |
 |:-------------------|:-------------------|
-| `???`              | Change Stylus focus screen |
 | F+Y                | Change Stylus Icon/Style |
 
 **Devices with analogue sticks**
