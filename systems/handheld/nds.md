@@ -19,7 +19,6 @@ has_toc: false
 
 | Button             | Action             |
 |:-------------------|:-------------------|
-| F+Select           | `???` |
 | F+Start            | Quit Drastic |
 | F+X                | Main Drastic Menu |
 | F+B                | Change Pixel/Blur Filter |
