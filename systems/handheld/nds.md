@@ -12,31 +12,27 @@ has_toc: false
 ![](../assets/images/drastic_new.png)
 
 {: .new}
-> muOS includes both DraStic, and the modified version by steward-fu
+> muOS includes both DraStic, and the modified version by trngaje  
 > For most uses the modified version is preferred.
 
-## DraStic (Steward) Keys
+## Advanced DraStic (trngaje) Keys
 
 | Button             | Action             |
 |:-------------------|:-------------------|
-| F+Select           | Main Drastic Menu  |
-| F+Start            | Steward Menu(new options) |
-| F+Y                | Change Overlays/Wallpaper |
-| F+A                | Set Alt. Display mode On/Off |
+| F+Start            | Quit Drastic |
+| F+X                | Main Drastic Menu |
 | F+B                | Change Pixel/Blur Filter |
 | F+D-pad Left/Right | Change Screens Layout |
 | F+R2               | Quick Save |
 | F+L2               | Quick Load |
 | F+R1               | Fast Forward |
-| F+L1               | Quit Drastic |
+| F+L1               | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
 | Just R2            | Change Main/Secondary Screens |
-| Just L2            | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
 
 **When in D-Pad to Stylus mode**
 
 | Button             | Action             |
 |:-------------------|:-------------------|
-| F+D-Pad Up/Down    | Change Stylus focus screen |
 | F+Y                | Change Stylus Icon/Style |
 
 **Devices with analogue sticks**
