@@ -10,7 +10,7 @@ has_children: false
 ## Where do I put my content?
 
 One of the key differentiators between muOS and other CFW's is its flexibility with content storage.
-Essentially, it _most_ doesn't care where you put things.
+Essentially, it _mostly_ doesn't care where you put things.
 
 {: .important-title }
 > Important
