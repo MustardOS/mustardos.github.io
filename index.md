@@ -24,6 +24,12 @@ muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, t
 
 ***
 
+# Community
+[Discord](https://discord.gg/muos){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Forums](https://community.muos.dev/){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+***
+
 ## About
 This all started out as a personal hobby project and it has exponentially grown into an awesome community which
 I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort. 
@@ -86,6 +92,11 @@ turn it on, and it will take care of the rest.
 | Anbernic RG40XX V    |
 | Anbernic RGCUBEXX    |
 
+| In Development       |
+|:---------------------|
+| Trimui Smart Pro     |
+| Trimui Brick         |
+
 | Limited            |
 |:-------------------|
 | Anbernic RG35XX OG |
@@ -95,7 +106,7 @@ turn it on, and it will take care of the rest.
 | Anbernic ARC-D    |
 | Game Kiddy Bubble |
 | MagicX XU Mini28  |
-| Trimui Smart Pro  |
+
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
