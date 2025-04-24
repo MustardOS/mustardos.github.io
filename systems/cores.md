@@ -93,7 +93,7 @@ The default option for each system has been ***marked***.
 | [NEC PC Engine](./homeconsole/pcengine) | Beetle PCE | .pce .sgx .cue .ccd .chd .toc .m3u | No |
 | [NEC PC-8000 - PC-8800 series](./computer/pc8000) | QUASI8800 | .d88 .u88 .m3u | No |
 | [NEC PC-FX](./computer/pcfx) | Beetle PC-FX | .cue .ccd .toc .chd | No |
-| [NEC PC98](./computer/pc98) | ***Neko Project II Kai*** | .d98 .zip .98d .fdi .fdd .2hd .tfd .d88 .88d .hdm .xdf .dup .cmd .hdi .thd .nhd .hdd .hdn | No |
+| [NEC PC98](./computer/pc98) | ***Neko Project II Kai*** | .d98 .zip .98d .fdi .fdd .2hd .tfd .d88 .88d .hdm .xdf .dup .cmd .hdi .thd .nhd .hdd .hdn | Yes |
 | [NEC PC98](./computer/pc98) | Neko Project II | .d98 .zip .98d .fdi .fdd .2hd .tfd .d88 .88d .hdm .xdf .dup .cmd .hdi .thd .nhd .hdd | No |
 | [Nintendo DS](./handheld/nds) | DeSmuME 2015 | .nds .ids .bin | No |
 | [Nintendo DS](./handheld/nds) | ***DraStic (External)*** | .nds | No |
