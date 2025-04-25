@@ -218,7 +218,7 @@ The default option for each system has been ***marked***.
 | [Sony Playstation Portable](./handheld/psp) | ***PPSSPP (External)*** | .elf .iso .cso .prx .pbp .chd | No |
 | [Sony Playstation Portable](./handheld/psp) | PPSSPP | .elf .iso .cso .prx .pbp .chd | No |
 | [TIC-80](./fantasy/tic80) | ***TIC-80*** | .tic | No |
-| [Texas Instruments TI-83](./handheld/ti83) | ***Numero*** | .8xp .8xk .8xg | No |
+| [Texas Instruments TI-83](./handheld/ti83) | ***Numero*** | .8xp .8xk .8xg | Yes |
 | [The 3DO Company - 3DO](./homeconsole/3do) | ***Opera*** | .iso .bin .chd .cue | No |
 | [Uzebox](./misc/uzebox) | ***Uzem*** | .uze | No |
 | [VeMUlator](./handheld/vemulator) | ***VeMUlator*** | .vms .dci .bin | No |
