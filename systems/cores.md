@@ -208,7 +208,7 @@ The default option for each system has been ***marked***.
 | [Sega Saturn](./homeconsole/saturn) | ***YabaSanshiro (External)*** | .bin .ccd .chd .cue .iso .mds .zip | Optional |
 | [Sega Saturn](./homeconsole/saturn) | Yabause | .bin .ccd .chd .cue .iso .mds .zip .m3u | No |
 | [Sharp X1](./computer/x1) | ***X Millennium*** | .dx1 .zip .2d .2hd .tfd .d88 .88d .hdm .xdf .dup .tap .cmd | No |
-| [Sharp X68000](./computer/x68000) | ***PX68k*** | .dim .img .d88 .88d .hdm .dup .2hd .xdf .hdf .cmd .m3u | No |
+| [Sharp X68000](./computer/x68000) | ***PX68k*** | .dim .img .d88 .88d .hdm .dup .2hd .xdf .hdf .cmd .m3u | Yes |
 | [Sinclair ZX 81](./computer/zx81) | ***EightyOne*** | .p .tzx .t81 | No |
 | [Sinclair ZX Spectrum](./computer/zxspectrum) | ***Fuse*** | .tzx .tap .z80 .rzx .scl .trd .dsk .zip | No |
 | [Sony Playstation](./homeconsole/ps1) | Beetle PSX | .cue .toc .m3u .ccd .exe .pbp .chd | No |
