@@ -3,7 +3,7 @@ layout: default
 title: muOS Structure
 permalink: /starthere/structure
 nav_order: 6
-parent: starthere
+parent: Start here!
 has_children: false
 ---
 

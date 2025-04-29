@@ -3,7 +3,7 @@ layout: default
 title: About Us
 permalink: /theteam/about
 nav_order: 1
-parent: theteam
+parent: The Team
 has_children: false
 ---
 

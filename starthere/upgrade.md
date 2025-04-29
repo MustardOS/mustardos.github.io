@@ -3,7 +3,7 @@ layout: default
 title: Upgrade to Pixie
 permalink: /starthere/upgradepixie
 nav_order: 2
-parent: starthere
+parent: Start here!
 has_children: false
 ---
 

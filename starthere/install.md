@@ -3,7 +3,7 @@ layout: default
 title: Installation
 permalink: /starthere/install
 nav_order: 1
-parent: starthere
+parent: Start here!
 has_children: false
 ---
 

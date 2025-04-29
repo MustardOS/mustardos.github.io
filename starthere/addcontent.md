@@ -3,7 +3,7 @@ layout: default
 title: Add Content
 permalink: /starthere/addcontent
 nav_order: 3
-parent: starthere
+parent: Start here!
 has_children: false
 ---
 
