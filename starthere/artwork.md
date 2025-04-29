@@ -3,7 +3,7 @@ layout: default
 title: Artwork
 permalink: /starthere/artwork
 nav_order: 9
-parent: Help
+parent: starthere
 has_children: false
 ---
 

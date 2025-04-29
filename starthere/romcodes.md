@@ -3,7 +3,7 @@ layout: default
 title: ROM Codes
 permalink: /starthere/romcodes
 nav_order: 11
-parent: Help
+parent: starthere
 has_children: false
 ---
 

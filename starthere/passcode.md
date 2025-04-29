@@ -3,7 +3,7 @@ layout: default
 title: Passcode Lock
 permalink: /starthere/passcode
 nav_order: 12
-parent: Help
+parent: starthere
 has_children: false
 ---
 

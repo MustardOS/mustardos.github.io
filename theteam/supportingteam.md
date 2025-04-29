@@ -3,7 +3,7 @@ layout: default
 title: Supporting Team
 permalink: /theteam/supporting
 nav_order: 2
-parent: FAQs
+parent: theteam
 has_children: false
 ---
 

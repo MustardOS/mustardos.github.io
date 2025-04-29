@@ -3,7 +3,7 @@ layout: default
 title: PortMaster
 permalink: /starthere/portmaster
 nav_order: 10
-parent: Help
+parent: starthere
 has_children: false
 ---
 

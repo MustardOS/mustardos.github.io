@@ -3,7 +3,7 @@ layout: default
 title: Kiosk Mode
 permalink: /starthere/kiosk
 nav_order: 5
-parent: Help
+parent: starthere
 has_children: false
 ---
 
