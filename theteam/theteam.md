@@ -3,15 +3,13 @@ layout: default
 title: Team
 permalink: /theteam
 nav_enabled: true
-nav_order: 4
+nav_order: 2
 has_children: true
 has_toc: true
 ---
 # The Team
 
 # Commanders
-![](assets/images/team_muos.png)
-_Art by @ravenstoroses_
 
 ## XongleBongle
 THE Big Cheese
