@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PortMaster
-permalink: /help/portmaster
+permalink: /starthere/portmaster
 nav_order: 10
 parent: Help
 has_children: false

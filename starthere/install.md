@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installation
-permalink: /help/install
+permalink: /starthere/install
 nav_order: 1
 parent: Help
 has_children: false

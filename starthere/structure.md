@@ -1,7 +1,7 @@
 ---
 layout: default
 title: muOS Structure
-permalink: /help/structure
+permalink: /starthere/structure
 nav_order: 6
 parent: Help
 has_children: false

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Passcode Lock
-permalink: /help/passcode
+permalink: /starthere/passcode
 nav_order: 12
 parent: Help
 has_children: false

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Artwork
-permalink: /help/artwork
+permalink: /starthere/artwork
 nav_order: 9
 parent: Help
 has_children: false

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: ROM Codes
-permalink: /help/romcodes
+permalink: /starthere/romcodes
 nav_order: 11
 parent: Help
 has_children: false

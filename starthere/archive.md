@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Archive Manager
-permalink: /help/archive
+permalink: /starthere/archive
 nav_order: 4
 parent: Help
 has_children: false

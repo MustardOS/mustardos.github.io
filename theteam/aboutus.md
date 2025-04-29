@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About Us
-permalink: /faq/about
+permalink: /theteam/about
 nav_order: 1
 parent: FAQs
 has_children: false

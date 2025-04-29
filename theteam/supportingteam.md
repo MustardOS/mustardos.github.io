@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Supporting Team
-permalink: /faq/supporting
+permalink: /theteam/supporting
 nav_order: 2
 parent: FAQs
 has_children: false

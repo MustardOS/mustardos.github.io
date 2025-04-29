@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kiosk Mode
-permalink: /help/kiosk
+permalink: /starthere/kiosk
 nav_order: 5
 parent: Help
 has_children: false
