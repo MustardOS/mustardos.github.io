@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Add Content
-permalink: /help/addcontent
+permalink: /starthere/addcontent
 nav_order: 3
 parent: Help
 has_children: false
