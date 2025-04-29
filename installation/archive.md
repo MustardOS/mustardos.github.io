@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Archive Manager
-permalink: /starthere/archive
+permalink: /installation/archive
 nav_order: 4
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

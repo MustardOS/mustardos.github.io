@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Artwork
-permalink: /starthere/artwork
+permalink: /installation/artwork
 nav_order: 9
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

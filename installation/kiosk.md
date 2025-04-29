@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Kiosk Mode
-permalink: /starthere/kiosk
+permalink: /installation/kiosk
 nav_order: 5
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

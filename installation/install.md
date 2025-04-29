@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Installation
-permalink: /starthere/install
+permalink: /installation/install
 nav_order: 1
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

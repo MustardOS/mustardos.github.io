@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Upgrade to Pixie
-permalink: /starthere/upgradepixie
+permalink: /installation/upgradepixie
 nav_order: 2
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

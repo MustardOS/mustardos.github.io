@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Passcode Lock
-permalink: /starthere/passcode
+permalink: /installation/passcode
 nav_order: 12
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

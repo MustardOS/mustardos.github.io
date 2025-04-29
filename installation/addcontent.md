@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Add Content
-permalink: /starthere/addcontent
+permalink: /installation/addcontent
 nav_order: 3
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

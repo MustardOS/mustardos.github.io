@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Installation
-permalink: /starthere
+permalink: /installation
 nav_enabled: true
 nav_order: 3
 has_children: true

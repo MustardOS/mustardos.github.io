@@ -1,9 +1,9 @@
 ---
 layout: default
 title: ROM Codes
-permalink: /starthere/romcodes
+permalink: /installation/romcodes
 nav_order: 11
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

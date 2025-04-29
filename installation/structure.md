@@ -1,9 +1,9 @@
 ---
 layout: default
 title: muOS Structure
-permalink: /starthere/structure
+permalink: /installation/structure
 nav_order: 6
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: PortMaster
-permalink: /starthere/portmaster
+permalink: /installation/portmaster
 nav_order: 10
-parent: Start here!
+parent: Installation
 has_children: false
 ---
 
