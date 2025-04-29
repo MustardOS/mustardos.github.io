@@ -27,38 +27,38 @@ New Cheese
 
 # Enforcers
 
-*acmeplus
-*bgelmini
-*ilfordhp5
-*duncanyoyo1
-*illumini_85
-*delibirb77
+* acmeplus
+* bgelmini
+* ilfordhp5
+* duncanyoyo1
+* illumini_85
+* delibirb77
 
 # Wizards
 
-*xquader
-*ee1000
-*kloptops
-*thegammasqueeze
-*tokyovigilante
-*joyrider3774
-*.cebion
-*irilivibi
-*vagueparade
-*shengy.
-*siliconexarch
-*shauninman
-*johnnyonflame
-*snowram
-*vq37vhrgang
-*trngaje
-*rosemelody254
-*skorpy
-*stanley_00
-*ajmandourah
-*bcat24
-*xanxic
-*midwan
-*retrogfx_
-*aeverdyn
-*spycat88
+* xquader
+* ee1000
+* kloptops
+* thegammasqueeze
+* tokyovigilante
+* joyrider3774
+* .cebion
+* irilivibi
+* vagueparade
+* shengy.
+* siliconexarch
+* shauninman
+* johnnyonflame
+* snowram
+* vq37vhrgang
+* trngaje
+* rosemelody254
+* skorpy
+* stanley_00
+* ajmandourah
+* bcat24
+* xanxic
+* midwan
+* retrogfx_
+* aeverdyn
+* spycat88
