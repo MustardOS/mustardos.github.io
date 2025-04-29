@@ -1,10 +1,9 @@
 ---
 layout: default
-title: FAQs
-permalink: /faq
+title: Start here!
+permalink: /starthere
 nav_enabled: true
-nav_order: 3
+nav_order: 2
 has_children: true
 has_toc: true
 ---
-# Frequently Asked Questions

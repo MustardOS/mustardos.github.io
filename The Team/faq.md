@@ -1,9 +1,10 @@
 ---
 layout: default
-title: Help
-permalink: /help
+title: The Team
+permalink: /team
 nav_enabled: true
-nav_order: 5
+nav_order: 2
 has_children: true
 has_toc: true
 ---
+# The Team
