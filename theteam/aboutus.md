@@ -1,9 +1,9 @@
 ---
 layout: default
 title: About Us
-permalink: /theteam/about
+permalink: /team/about
 nav_order: 1
-parent: The Team
+parent: Team
 has_children: false
 ---
 

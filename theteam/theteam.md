@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Team
+title: Team
 permalink: /team
 nav_enabled: true
 nav_order: 4

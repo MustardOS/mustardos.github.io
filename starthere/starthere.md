@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Start here!
+title: Installation
 permalink: /starthere
 nav_enabled: true
 nav_order: 3

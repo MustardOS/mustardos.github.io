@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Supporting Team
-permalink: /theteam/supporting
+permalink: /team/supporting
 nav_order: 2
-parent: The Team
+parent: Team
 has_children: false
 ---
 
