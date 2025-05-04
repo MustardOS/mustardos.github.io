@@ -18,4 +18,4 @@ All these themes were made by members of the muOS community. Join the community 
 - You can find all themes for muOS [here](https://theme.muos.dev/).  Click on a theme title to download a `.muxthm` file. Place that file on your device within `MUOS/theme`.
 - Additional themes can be found on the [muOS Forum](https://community.muos.dev/).
 
-> *Some themes have matching folder artwork whilst navigating Explore Content, this is installed separately from themes. To see if a theme has these available, navigate to the specific theme's release page on the [muOS Forum]([https://discord.gg/muos](https://community.muos.dev/)).*
+> *Some themes have matching folder artwork whilst navigating Explore Content, this is installed separately from themes. To see if a theme has these available, navigate to the specific theme's release page on the [muOS Forum](https://community.muos.dev/).*
