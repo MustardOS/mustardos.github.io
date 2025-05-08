@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Passcode Lock
-permalink: /help/passcode
+permalink: /installation/passcode
 nav_order: 12
-parent: Help
+parent: Installation
 has_children: false
 ---
 

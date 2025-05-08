@@ -1,9 +1,9 @@
 ---
 layout: default
 title: PortMaster
-permalink: /help/portmaster
+permalink: /installation/portmaster
 nav_order: 10
-parent: Help
+parent: Installation
 has_children: false
 ---
 

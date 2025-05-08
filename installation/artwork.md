@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Artwork
-permalink: /help/artwork
+permalink: /installation/artwork
 nav_order: 9
-parent: Help
+parent: Installation
 has_children: false
 ---
 

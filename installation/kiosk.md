@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Kiosk Mode
-permalink: /help/kiosk
+permalink: /installation/kiosk
 nav_order: 5
-parent: Help
+parent: Installation
 has_children: false
 ---
 

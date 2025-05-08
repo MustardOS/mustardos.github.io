@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Upgrade to Pixie
-permalink: /help/upgradepixie
+permalink: /installation/upgradepixie
 nav_order: 2
-parent: Help
+parent: Installation
 has_children: false
 ---
 

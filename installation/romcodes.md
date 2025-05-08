@@ -1,9 +1,9 @@
 ---
 layout: default
 title: ROM Codes
-permalink: /help/romcodes
+permalink: /installation/romcodes
 nav_order: 11
-parent: Help
+parent: Installation
 has_children: false
 ---
 

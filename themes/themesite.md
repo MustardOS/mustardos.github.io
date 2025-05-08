@@ -3,7 +3,7 @@ layout: default
 title: Themes
 permalink: /themes
 nav_enabled: true
-nav_order: 4
+nav_order: 5
 has_children: true
 ---
 
