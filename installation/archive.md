@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Archive Manager
-permalink: /help/archive
+permalink: /installation/archive
 nav_order: 4
-parent: Help
+parent: Installation
 has_children: false
 ---
 

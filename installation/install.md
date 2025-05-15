@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Installation
-permalink: /help/install
+title: Install Guide
+permalink: /installation/install
 nav_order: 1
-parent: Help
+parent: Installation
 has_children: false
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: default
 title: muOS Structure
-permalink: /help/structure
+permalink: /installation/structure
 nav_order: 6
-parent: Help
+parent: Installation
 has_children: false
 ---
 

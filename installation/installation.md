@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Help
-permalink: /help
+title: Installation
+permalink: /installation
 nav_enabled: true
-nav_order: 5
+nav_order: 4
 has_children: true
 has_toc: true
 ---
