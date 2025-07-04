@@ -96,6 +96,10 @@ turn it on, and it will take care of the rest.
 |:---------------------|
 | Trimui Smart Pro     |
 | Trimui Brick         |
+| Anbernic RG34XX SP   |
+| Anbernic RG35XX PRO  |
+| Magic Zero28         |
+| H36S                 |
 
 | Limited            |
 |:-------------------|
