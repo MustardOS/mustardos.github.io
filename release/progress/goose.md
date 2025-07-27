@@ -44,18 +44,24 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 ## Contributors
 
 * acmeplus
+* aeverdyn
 * antikk
 * arkun
 * bgelmini
-* Bitter_Bizarro
+* bitter_bizarro
+* cart-su
 * chronoss09
 * duncanyoyo1
-* Habbening
+* imcokeman
+* incognitoman
 * johnnyonflame
 * koolkidcorey
 * kriznick
+* mikhailzrick
 * synthic
+* vq37vhrgang
 * xonglebongle
+* zarquon
 
 ## Changes
 
@@ -65,31 +71,45 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added additional logging to frontend start
 * Added additional navigation sounds
 * Added additional zram and swap values
+* Added assigned core information to launch pointers
 * Added audio initialisation retry
+* Added automatic friendly core assign generator
 * Added available governor pointer to device specifics
 * Added background process execution support
+* Added backwards compatible theme checking
 * Added basic network details module
 * Added BGM music tracks from previous muOS versions
+* Added blank overlay due to weird RetroArch performance delay
 * Added boot logo package installer
 * Added box art layering to shared function
 * Added cached navigation sounds
+* Added catalogue match check script
 * Added channel information to network detail module
+* Added check for display suspend option for LCD toggle
 * Added check for in use theme resources
 * Added check for navigation for less than 2 items on screen
 * Added check for zram/swap file before purge
 * Added comparison check for idle display and idle sleep in power settings
+* Added config and device variable collection to diagnostics
 * Added content collection export task toolkit script
 * Added content tagging system
 * Added custom boot logo picker to customisation menu
+* Added custom name lookup by content directory name
 * Added default fallback font for `muterm`
+* Added device lid switch toggle to advanced options
 * Added device module script with (un)load methods
+* Added device RGB light toggle to general settings
 * Added direct audio mute upon halt
 * Added directory support to task toolkit
 * Added disclaimer on first install
+* Added display suspend variable to advanced settings
+* Added Drastic layout files for Brick
 * Added `error` sound to collection error
+* Added "External" option to Device Backup
 * Added fallback collection export template
 * Added fallback for input hold handling
 * Added first install disclaimer module
+* Added friendly association pointers to assign files
 * Added frontend stop/start function to global
 * Added full refresh option to display initialisation
 * Added Geolith core override
@@ -97,17 +117,26 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added global governor deletion on change
 * Added global sound support
 * Added governor and tag glyphs to default theme
+* Added hardcoded calibration files for TrimUI input modules
 * Added help and icon to collection export task
 * Added hidden dangerous config module
 * Added HOME to global function
+* Added hostfile restore on network connection
 * Added hostname editing and MAC changing
+* Added idle mute configuration variable and modified idle script
 * Added initial Anbernic RG34XX-SP support
 * Added initial MagicX Zero28 device support
+* Added initial rumble for TrimUI and modified rumble path
 * Added inline IAID calculation for network connections
 * Added kernel tuning variables
+* Added launch exec to existing assignable systems
+* Added LCD display toggle on brightness
 * Added left/right footer navigation glyph for options
 * Added live listen support to message module
+* Added logic in `halt.sh` to gracefully shut down Syncthing
 * Added LR glyphs to default theme
+* Added Ludicrous N64 core to `extra` repo
+* Added MAC retrieval from interface otherwise from stored MAC
 * Added main menu launch to mux modules
 * Added main menu launch to muX modules
 * Added method to hide storage menu item if SD2 is not present
@@ -115,68 +144,101 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added method to reload network module before connection
 * Added method to skip last play if frontend module is specified outside of default start
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
+* Added muOS settings to backup support
+* Added mute on display timeout power option
 * Added `muterm` SDL2 virtual terminal emulator
 * Added `muxbackup` module
 * Added `mux_dimension` to device init
+* Added network profile hostname entry support
 * Added network reconnecting from suspend
 * Added network throughput statistics
+* Added network watchdog and network on boot option
 * Added new sounds and glyphs to default theme
 * Added `NOGEN` flag to static item generation
 * Added `.ogg` sound support
 * Added "option" adjustment sound
 * Added OSK safety checks
+* Added panel fix hotkey
 * Added parameter to display initialisation in specific modules
+* Added partition check for backup module
 * Added physical switch support for TrimUI devices
 * Added play sound to global functions
 * Added PPSSPP Restore Config Task Toolkit Script
 * Added quotes around RetroArch config variable for device specific control
+* Added reboot and shutdown messages for themes without splashes
 * Added reboot and shutdown sounds
 * Added reboot/shutdown sounds to default share
 * Added reset button usage warning
+* Added RG35XX-PRO Support
 * Added routine to stop rumble motor on content quit
 * Added RTC frequency change to startup
 * Added SAFE_QUIT global definition
 * Added saving messages to configurable modules
 * Added SDL and RA environment setup functions
 * Added SDL cleanup to independent modules
+* Added secondary and external partition mount option in advanced settings
 * Added settings for adjusting rotation pivot
 * Added shared navigation bar builder
 * Added startup chime support
+* Added static animation time and delay for credits
+* Added supporter credits infinite loop
+* Added support for additional XRoar machine types
 * Added support for devices that treat DPAD as buttons
 * Added support for `EV_ABS` for TrimUI shoulder buttons
+* Added support for RGB light toggle
+* Added Syncthing auto-scan toggle and add back API calls to launch and quit scripts
 * Added sync to config changes
 * Added system core and governor to options menu on content only
 * Added target backup storage option
 * Added terminal resource loader and optimised `run_exec` function for terminal loading
 * Added TrimUI specific PPSSPP emulator
 * Added `ui_count` checks on navigation
+* Added wait for interface before MAC change and store MAC value
+* Added XRoar Tandy TRS-80 color computer emulator to extra
 * Adjust 1024x768 default scheme Y position for messages
+* Adjusted archive creation logic to handle multiple files and directories for external sources
+* Adjusted charging logic
 * Adjusted content information to shared common function
+* Adjusted default Drastic input mappings for Brick
 * Adjusted device specific startup scripts
 * Adjusted help handler with fixed info box sound
 * Adjusted random selection function to use `ui_count` on selected index
 * Adjusted SSID scan log message
+* Adjust existing drastic-trngaje device configurations
+* Bypass charging mode if device is in console mode
 * Centralised device dimension variable
 * Changed mGBA default governor to `ondemand`
+* Default to sharp bilinear simple shader
 * Disable shutting off CPU cores on TrimUI devices
+* Enhance backup script with external source handling
 * Factory reset improvements with rsync changes and progress integer validation
 * Fixed adding to collections from history
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
 * Fixed assign core and governor modules
+* Fixed assign global name to match directory
+* Fixed assign system information
+* Fixed automatic assign JSON
 * Fixed `back` sound not playing on custom exit
 * Fixed battery charging module
 * Fixed brightness combo glyph interpretation
+* Fixed catalogue entries
 * Fixed catalogue generation script
+* Fixed catalogue name for NES Famicom system
+* Fixed catalogue references
 * Fixed changing month but day not changing to a valid day
 * Fixed clearing network profile items from memory
+* Fixed collection adding and internal name lookup
 * Fixed collection screen navbar
+* Fixed content being displayed all lower case
 * Fixed copy paste whoopsie with RG40XX-H start script
+* Fixed core assignment builder to obtain assign system
 * Fixed credits screens
 * Fixed customisation menu nav items
 * Fixed customisation module with theme alternates
 * Fixed default theme LED scripts
 * Fixed entering date time module
+* Fixed existing device RA key duplication
 * Fixed external PPSSPP controls
 * Fixed factory reset LED lights
 * Fixed factory reset theme font location
@@ -188,19 +250,25 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed halt verbose messages
 * Fixed HDMI resolution count
 * Fixed incorrect width on Archive Manager due to not excluding file extension
+* Fixed INI files for XRoar coco3 and dragon machines
 * Fixed installing theme while theme music playing
 * Fixed internal display check function
 * Fixed issue getting stuck in grid mode
+* Fixed issue installing themes
 * Fixed issue loading wallpapers
 * Fixed issue reloading application menu
 * Fixed issue with bar values getting in the way of outside modules
+* Fixed issue with box art not loading for first item
 * Fixed issue with brightness bar not displaying
 * Fixed issue with brightness setting decreasing
 * Fixed issue with centering footer elements
+* Fixed issue with fallback to catalogue name for Folder box art
 * Fixed issue with glyph padding for folder labels on search screen
 * Fixed issue with screen freeze on themes using grid mode with focus images
 * Fixed issue with writing uptime variable for sleep
 * Fixed last focused navigation element
+* Fixed launch script with corrected parsed lines
+* Fixed LED lights on TrimUI devices
 * Fixed live brightness and volume adjustments
 * Fixed loading network profiles
 * Fixed loading non muX applications
@@ -216,34 +284,56 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed network module LR nav bar
 * Fixed options navigation generation issue
 * Fixed option value sound playing if there are zero options
+* Fixed OSK element reuse issue and added safe delete define
 * Fixed playing sound on no content
+* Fixed PPSSPP launch script to correct Vulkan backend on H700
+* Fixed RG34XX-SP configuration specifics
 * Fixed saving theme resolution setting
 * Fixed scaling of Dracula, Faux Dark, muVB, and Orange themes
+* Fixed script logging to use consistent date time
 * Fixed scrolling text when language set to Korean
 * Fixed scrolling to all content options
+* Fixed SDL2 libraries for TrimUI devices
+* Fixed SDL "Game Controller" paths
+* Fixed SDL input names for TrimUI devices
 * Fixed SD/USB hot mounting
 * Fixed search module panel priority reference
 * Fixed shifting text issue in OSK text area
 * Fixed size to content not being disabled on Connectivity and Customisation screens
+* Fixed sleep references
+* Fixed small mistake with external port launching via correct script
 * Fixed static list navigation functions
 * Fixed storage migration and sync scripts
 * Fixed storage module init values
 * Fixed system core assignment files
+* Fixed theme backwards compatibility
 * Fixed theme installer on usage error
+* Fixed theme scaling
+* Fixed theme version check
+* Fixed TrimUI analogue swap
+* Fixed TrimUI device input
 * Fixed TrimUI device min/max frequency pointer key
 * Fixed typo in controller name
+* Fixed UI count in network module
+* Fixed USB connection version point
 * Fixed wrong width on Applications and Task Toolkit screens when using LOTE
+* Improved error handling for missing destination paths and source validation
+* Included missing stat header to appease the compiler
 * Merged content and help information box functions
 * Merged content governor loading to shared function
+* Merged device specific input bright and audio to script directory
+* Modified archive install script to overwrite existing files from PICO-8 archive
 * Modified bar behaviour to avoid covering modules
 * Modified charging module brightness
 * Modified chime to ensure it is only played once on startup
 * Modified console mode checking routine
 * Modified debug log message for EXEC_MUX function
+* Modified default RetroArch audio latency to 64
 * Modified frontend paths to new internal structure
 * Modified general settings to live update brightness and volume options
 * Modified keepalive to disable idle network disconnect
 * Modified label elements to use formatted strings
+* Modified LOG output to match script logging with uptime information
 * Modified low power script to use device specific LED scripts
 * Modified `muxfrontend` to be modular
 * Modified network module loading to be separate functions
@@ -254,7 +344,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Modified ScummVM launch script to use `gameid`
 * Modified storage mount to use user defined kernel tuning variables
 * Modified volume and brightness bar behaviour
+* Moved `assign.json` to inside assign directory
+* Moved back to `alsathread` instead of `pipewire` for RetroArch audio driver
 * Moved BGM support to `.ogg` specific to muX
+* Moved card mode to danger and created display suspend in advanced settings
+* Moved cardmode to danger options
 * Moved configuration fields to global options
 * Moved default governor setter to global functions
 * Moved file counter function to shared file
@@ -262,7 +356,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved frontend audio init to own function
 * Moved help message builder to UI common
 * Moved internal build and version info to config structure
+* Moved LED RGB control to global function
 * Moved LVGL element hide and float flags to single define
+* Moved manual Syncthing scan to a dedicated script
 * Moved `muxplore` to central list move function
 * Moved `muxstart` to `muxmessage`
 * Moved muxstart to muxmessage and fixed message issues
@@ -270,13 +366,21 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved panel adjustments to separate function
 * Moved partition mount and storage info functions to common
 * Moved reboot/shutdown sound play to frontend module
+* Moved RetroArch device resolution setting to common function
+* Moved screenshot to L2+R2+MENU
 * Moved SDL and RA setup to global functions
 * Moved SP lid switch kill to top of halt list
+* Moved subsection of systems to extra packages and changed emulator and application repo locations
+* Moved system power state to danger options
+* Moved system suspend state to danger options
 * Moved task toolkit scripts to directories
 * Moved theme resolution setting
+* Moved to modular based content launch system with pre and post launch configurable scripts
+* Moved TrimUI rumble support to early startup instead
 * Moved viewport refresh and directory item count functions to shared file
 * Optimised brightness and volume scripts
 * Optimised datetime RTC module
+* Optimised default RetroArch global config
 * Optimised list navigation functions
 * Optimised module element structure generation
 * Optimised mounting routines
@@ -286,9 +390,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Optimised static panel elements in network config
 * Optimised supporter screen with additional triggers
 * Optimised suspend script with constant start values
+* Rearranged advanced settings options
 * Redesigned content detail options module
+* Re-enable RA content load animation
+* Refactored backup.sh to support backing up external emulator files and directories
 * Refactored frontend to centralised define structure
 * Refactored system core and governor assignment modules
+* Refactor Syncthing scan logic and improve shutdown
+* Refactor to allow loading content from root
 * Reformatted factory reset logic
 * Removed animated background option from custom module
 * Removed animations and static images
@@ -300,7 +409,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Removed direct sound from module exit
 * Removed first sync on startup
 * Removed global configuration backup
+* Removed global RetroArch shader
 * Removed HDMI scripts from TrimUI devices
+* Removed incorrect friendly associations
 * Removed internal process extraction for PM content
 * Removed kernel panic halt mode
 * Removed leftover language strings
@@ -308,23 +419,30 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Removed `muplay` program
 * Removed network info module if there is no network capability
 * Removed old HDMI code in main menu module
+* Removed per element wallpaper loading
+* Removed pre-installed cheat archives
 * Removed random theme on boot
+* Removed Resilio Sync due to distribution licensing
 * Removed script based BGM player
 * Removed sound wait function
+* Removed specific config line for mGBA audio latency
 * Removed temporary extraction directory on startup
 * Removed toast and counter label fade
 * Removed unnecessary library path in frontend script
 * Removed unneeded shared variables
 * Removed verbose message option
 * Removed waking display backlight just to power off
+* Remove extraneous compiler stubs
 * Remove newlines from configuration pointers
+* Rename global fallback friendly file name
 * Replaced `fbpad` with `muterm`
 * Replaced `rsync` copy with itemised file list method for factory reset
 * Replaced silence WAVE with OGG
+* Reset time on timezone change at factory reset
+* Reverted back to current item index due to grid layout
 * Reverted progress method back to separate piped function
 * Reverted `ripgrep` binary
 * Reworked UI/UX for network information upon editing values
-* Simplified key handlers to ternary operators
 * Unload kernel modules on halt and suspend
 * Updated and improved credits module
 * Updated archive icons for default theme
@@ -343,14 +461,22 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated extraction script to use frontend function
 * Updated factory reset routine
 * Updated factory reset scripts for new muX procedures
+* Updated factory reset to use compressed init user data
 * Updated `ffplay` launch to start in fullscreen
+* Updated first install messages
 * Updated font functions to use internal theme path on factory reset
+* Updated `gptokeyb2` binaries
+* Updated info credit option text
+* Updated input modules for TrimUI devices
 * Updated input to check TrimUI switch state
+* Updated internal device specific drastic-trngaje configs
 * Updated languages
 * Updated launch scripts for PPSSPP on TrimUI devices
 * Updated logic for collection freeze on boot
+* Updated low power script to adhere to user RGB settings
 * Updated message padding default theme
 * Updated messages to include header for new muX message module
+* Updated `message.txt` with additional entries
 * Updated `muxstart` to support message file on loop
 * Updated muX with a major refactored frontend to work as a single process
 * Updated option and value items with index support
@@ -363,4 +489,6 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated ScummVM launch script
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
+* Updated thermal setting to be in reverse setting
 * Updated unknown module handling
+* Updated XRoar system support INI files
