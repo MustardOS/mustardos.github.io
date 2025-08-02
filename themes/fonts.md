@@ -7,7 +7,7 @@ has_toc: false
 ---
 
 # Converting fonts into a Binary file
-For themes on muOS, you can implement custom fonts! To do this, you can either use this [website](https://lvgl.io/tools/fontconverter), or you can do so offline using terminal commands. For the later, you must first install the script that will convert your
+For themes on muOS, you can implement custom fonts! To do this, you can either use this [website](https://lvgl.io/tools/fontconverter), or you can do so offline using terminal commands. For the latter, you must first install the script that will convert your
 `.ttf`, `.otf`, or `.woff` type font into a specific `.bin` file that muOS will accept. 
 
 - You will first need node.js installed. Install a pre-built packaged version of this [here](https://nodejs.org/en/download/prebuilt-installer).
