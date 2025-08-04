@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 250?.0 Goose
+# muOS 2508.0 Goose
 
 #### _Pronunciation_
 
@@ -89,6 +89,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added check for in use theme resources
 * Added check for navigation for less than 2 items on screen
 * Added check for zram/swap file before purge
+* Added collection modification toggles to kiosk mode
 * Added comparison check for idle display and idle sleep in power settings
 * Added config and device variable collection to diagnostics
 * Added content collection export task toolkit script
@@ -120,6 +121,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added hardcoded calibration files for TrimUI input modules
 * Added help and icon to collection export task
 * Added hidden dangerous config module
+* Added hidden device specific settings module
+* Added history removal toggle to kiosk mode
 * Added HOME to global function
 * Added hostfile restore on network connection
 * Added hostname editing and MAC changing
@@ -139,11 +142,13 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added MAC retrieval from interface otherwise from stored MAC
 * Added main menu launch to mux modules
 * Added main menu launch to muX modules
+* Added menu short release combo to hotkey reader
 * Added method to hide storage menu item if SD2 is not present
 * Added method to refresh config on save
 * Added method to reload network module before connection
 * Added method to skip last play if frontend module is specified outside of default start
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
+* Added modified GPU parameters to TUI devices
 * Added muOS settings to backup support
 * Added mute on display timeout power option
 * Added `muterm` SDL2 virtual terminal emulator
@@ -153,6 +158,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added network reconnecting from suspend
 * Added network throughput statistics
 * Added network watchdog and network on boot option
+* Added new kiosk values
 * Added new sounds and glyphs to default theme
 * Added `NOGEN` flag to static item generation
 * Added `.ogg` sound support
@@ -163,13 +169,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added partition check for backup module
 * Added physical switch support for TrimUI devices
 * Added play sound to global functions
+* Added playtime track data to bind mount
 * Added PPSSPP Restore Config Task Toolkit Script
 * Added quotes around RetroArch config variable for device specific control
 * Added reboot and shutdown messages for themes without splashes
 * Added reboot and shutdown sounds
 * Added reboot/shutdown sounds to default share
 * Added reset button usage warning
-* Added RG35XX-PRO Support
+* Added reset DPAD switch on content exit for TUI devices
 * Added routine to stop rumble motor on content quit
 * Added RTC frequency change to startup
 * Added SAFE_QUIT global definition
@@ -191,6 +198,8 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added system core and governor to options menu on content only
 * Added target backup storage option
 * Added terminal resource loader and optimised `run_exec` function for terminal loading
+* Added time played to content options
+* Added TrimUI DPAD swap mechanism
 * Added TrimUI specific PPSSPP emulator
 * Added `ui_count` checks on navigation
 * Added wait for interface before MAC change and store MAC value
@@ -200,6 +209,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Adjusted charging logic
 * Adjusted content information to shared common function
 * Adjusted default Drastic input mappings for Brick
+* Adjusted device hotkeys
 * Adjusted device specific startup scripts
 * Adjusted help handler with fixed info box sound
 * Adjusted random selection function to use `ui_count` on selected index
@@ -207,6 +217,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Adjust existing drastic-trngaje device configurations
 * Bypass charging mode if device is in console mode
 * Centralised device dimension variable
+* Changed input tester due to hotkey change
 * Changed mGBA default governor to `ondemand`
 * Default to sharp bilinear simple shader
 * Disable shutting off CPU cores on TrimUI devices
@@ -237,12 +248,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed customisation menu nav items
 * Fixed customisation module with theme alternates
 * Fixed default theme LED scripts
+* Fixed DPAD switch variable error in hotkey
 * Fixed entering date time module
 * Fixed existing device RA key duplication
 * Fixed external PPSSPP controls
 * Fixed factory reset LED lights
 * Fixed factory reset theme font location
 * Fixed freeze when device startup set to history
+* Fixed freeze with scrolling text
 * Fixed freezing issue collecting content with no assigned system
 * Fixed frontend taking care of used reset
 * Fixed glyph icon spelling
@@ -267,6 +280,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed issue with screen freeze on themes using grid mode with focus images
 * Fixed issue with writing uptime variable for sleep
 * Fixed last focused navigation element
+* Fixed launch script to affect H700 specific classes
 * Fixed launch script with corrected parsed lines
 * Fixed LED lights on TrimUI devices
 * Fixed live brightness and volume adjustments
@@ -285,9 +299,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed options navigation generation issue
 * Fixed option value sound playing if there are zero options
 * Fixed OSK element reuse issue and added safe delete define
+* Fixed pivot point if pivot specific doesn't exist
 * Fixed playing sound on no content
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
 * Fixed RG34XX-SP configuration specifics
+* Fixed RGB lights displaying after low power warning whilst in idle mode
 * Fixed saving theme resolution setting
 * Fixed scaling of Dracula, Faux Dark, muVB, and Orange themes
 * Fixed script logging to use consistent date time
@@ -298,6 +314,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed SDL input names for TrimUI devices
 * Fixed SD/USB hot mounting
 * Fixed search module panel priority reference
+* Fixed setting long label mode on no content
 * Fixed shifting text issue in OSK text area
 * Fixed size to content not being disabled on Connectivity and Customisation screens
 * Fixed sleep references
@@ -308,6 +325,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed system core assignment files
 * Fixed theme backwards compatibility
 * Fixed theme installer on usage error
+* Fixed theme resolution with themes that do not support all resolutions
 * Fixed theme scaling
 * Fixed theme version check
 * Fixed TrimUI analogue swap
@@ -322,6 +340,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Merged content and help information box functions
 * Merged content governor loading to shared function
 * Merged device specific input bright and audio to script directory
+* Minor Pico-8 external launch changes
 * Modified archive install script to overwrite existing files from PICO-8 archive
 * Modified bar behaviour to avoid covering modules
 * Modified charging module brightness
@@ -332,7 +351,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Modified frontend paths to new internal structure
 * Modified general settings to live update brightness and volume options
 * Modified keepalive to disable idle network disconnect
+* Modified kiosk denied message function
 * Modified label elements to use formatted strings
+* Modified LED RGB control routine
 * Modified LOG output to match script logging with uptime information
 * Modified low power script to use device specific LED scripts
 * Modified `muxfrontend` to be modular
@@ -353,9 +374,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved default governor setter to global functions
 * Moved file counter function to shared file
 * Moved friendly folder, title update, and item label generation to shared functions
+* Moved from define to enum for simple core content reading
 * Moved frontend audio init to own function
 * Moved help message builder to UI common
 * Moved internal build and version info to config structure
+* Moved kiosk language from enable/disable to allowed/restricted
 * Moved LED RGB control to global function
 * Moved LVGL element hide and float flags to single define
 * Moved manual Syncthing scan to a dedicated script
@@ -379,6 +402,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved TrimUI rumble support to early startup instead
 * Moved viewport refresh and directory item count functions to shared file
 * Optimised brightness and volume scripts
+* Optimised collection navigation bar generation routine
 * Optimised datetime RTC module
 * Optimised default RetroArch global config
 * Optimised list navigation functions
@@ -387,6 +411,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Optimised network code maintainability
 * Optimised quit and halt scripts
 * Optimised SDL2 driver to flush element regions
+* Optimised SDL environment setup function
 * Optimised static panel elements in network config
 * Optimised supporter screen with additional triggers
 * Optimised suspend script with constant start values
@@ -486,7 +511,9 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated preinstalled global music
 * Updated pre-installed task scripts to use frontend function
 * Updated RetroArch to 1.21.0
+* Updated RG34XX-SP SDL control mapping
 * Updated ScummVM launch script
+* Updated SDL gamecontrollerdb controls
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
 * Updated thermal setting to be in reverse setting
