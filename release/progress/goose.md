@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 250?.0 GOOSE
+title: 2508.0 GOOSE
 permalink: /release/progress/goose
 parent: Progress
 grand_parent: Release
