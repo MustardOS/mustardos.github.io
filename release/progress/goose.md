@@ -52,6 +52,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * cart-su
 * chronoss09
 * duncanyoyo1
+* habbening
 * imcokeman
 * incognitoman
 * johnnyonflame
@@ -59,7 +60,6 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * kriznick
 * mikhailzrick
 * synthic
-* vq37vhrgang
 * xonglebongle
 * zarquon
 
@@ -89,10 +89,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added check for in use theme resources
 * Added check for navigation for less than 2 items on screen
 * Added check for zram/swap file before purge
+* Added collection access kiosk variable
 * Added collection modification toggles to kiosk mode
 * Added comparison check for idle display and idle sleep in power settings
 * Added config and device variable collection to diagnostics
 * Added content collection export task toolkit script
+* Added content control scheme mapping functionality
 * Added content tagging system
 * Added custom boot logo picker to customisation menu
 * Added custom name lookup by content directory name
@@ -132,6 +134,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added initial rumble for TrimUI and modified rumble path
 * Added inline IAID calculation for network connections
 * Added kernel tuning variables
+* Added kiosk restricted message toggle
 * Added launch exec to existing assignable systems
 * Added LCD display toggle on brightness
 * Added left/right footer navigation glyph for options
@@ -153,6 +156,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added mute on display timeout power option
 * Added `muterm` SDL2 virtual terminal emulator
 * Added `muxbackup` module
+* Added `muxbackup` to idle inhibit
 * Added `mux_dimension` to device init
 * Added network profile hostname entry support
 * Added network reconnecting from suspend
@@ -186,6 +190,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added secondary and external partition mount option in advanced settings
 * Added settings for adjusting rotation pivot
 * Added shared navigation bar builder
+* Added special kiosk collection folder support
 * Added startup chime support
 * Added static animation time and delay for credits
 * Added supporter credits infinite loop
@@ -283,6 +288,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed launch script to affect H700 specific classes
 * Fixed launch script with corrected parsed lines
 * Fixed LED lights on TrimUI devices
+* Fixed live battery capacity indicator
 * Fixed live brightness and volume adjustments
 * Fixed loading network profiles
 * Fixed loading non muX applications
