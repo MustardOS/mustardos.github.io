@@ -60,6 +60,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * kriznick
 * mikhailzrick
 * synthic
+* voodatari
 * xonglebongle
 * zarquon
 
@@ -70,6 +71,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added additional date time setting safety checks
 * Added additional logging to frontend start
 * Added additional navigation sounds
+* Added additional "Wi-Fi Enable" scripts for RG28XX-H and RG35XX-2024 devices
 * Added additional zram and swap values
 * Added assigned core information to launch pointers
 * Added audio initialisation retry
@@ -89,15 +91,18 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added check for in use theme resources
 * Added check for navigation for less than 2 items on screen
 * Added check for zram/swap file before purge
+* Added chime done to last/resume content launch
 * Added collection access kiosk variable
 * Added collection modification toggles to kiosk mode
 * Added comparison check for idle display and idle sleep in power settings
 * Added config and device variable collection to diagnostics
 * Added content collection export task toolkit script
 * Added content control scheme mapping functionality
+* Added content loader handler to ignore RetroArch auto load
 * Added content tagging system
 * Added custom boot logo picker to customisation menu
 * Added custom name lookup by content directory name
+* Added custom toggle for content shuffle
 * Added default fallback font for `muterm`
 * Added device lid switch toggle to advanced options
 * Added device module script with (un)load methods
@@ -130,11 +135,12 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added hostname editing and MAC changing
 * Added idle mute configuration variable and modified idle script
 * Added initial Anbernic RG34XX-SP support
-* Added initial MagicX Zero28 device support
 * Added initial rumble for TrimUI and modified rumble path
 * Added inline IAID calculation for network connections
+* Added joystick GUID grabber binary
 * Added kernel tuning variables
 * Added kiosk restricted message toggle
+* Added L2 hold and release for specific hotkey combos in content explorer
 * Added launch exec to existing assignable systems
 * Added LCD display toggle on brightness
 * Added left/right footer navigation glyph for options
@@ -145,12 +151,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added MAC retrieval from interface otherwise from stored MAC
 * Added main menu launch to mux modules
 * Added main menu launch to muX modules
+* Added manual loading to collections and history
 * Added menu short release combo to hotkey reader
 * Added method to hide storage menu item if SD2 is not present
 * Added method to refresh config on save
 * Added method to reload network module before connection
 * Added method to skip last play if frontend module is specified outside of default start
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
+* Added missing names to the lookup tables
 * Added modified GPU parameters to TUI devices
 * Added muOS settings to backup support
 * Added mute on display timeout power option
@@ -203,6 +211,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added system core and governor to options menu on content only
 * Added target backup storage option
 * Added terminal resource loader and optimised `run_exec` function for terminal loading
+* Added times launched to content options info panel
 * Added time played to content options
 * Added TrimUI DPAD swap mechanism
 * Added TrimUI specific PPSSPP emulator
@@ -228,6 +237,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Disable shutting off CPU cores on TrimUI devices
 * Enhance backup script with external source handling
 * Factory reset improvements with rsync changes and progress integer validation
+* Fixed A<>B X<>Y remapping for control schemes
 * Fixed adding to collections from history
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
@@ -238,15 +248,18 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed `back` sound not playing on custom exit
 * Fixed battery charging module
 * Fixed brightness combo glyph interpretation
+* Fixed broken screenshots on RG28XX-H device
 * Fixed catalogue entries
 * Fixed catalogue generation script
 * Fixed catalogue name for NES Famicom system
 * Fixed catalogue references
 * Fixed changing month but day not changing to a valid day
+* Fixed charger boot message to hide battery/voltage labels
 * Fixed clearing network profile items from memory
 * Fixed collection adding and internal name lookup
 * Fixed collection screen navbar
 * Fixed content being displayed all lower case
+* Fixed content loading for control schemes
 * Fixed copy paste whoopsie with RG40XX-H start script
 * Fixed core assignment builder to obtain assign system
 * Fixed credits screens
@@ -281,6 +294,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed issue with brightness setting decreasing
 * Fixed issue with centering footer elements
 * Fixed issue with fallback to catalogue name for Folder box art
+* Fixed issue with freeing playtime JSON data
 * Fixed issue with glyph padding for folder labels on search screen
 * Fixed issue with screen freeze on themes using grid mode with focus images
 * Fixed issue with writing uptime variable for sleep
@@ -299,6 +313,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed message label not auto sizing
 * Fixed minor compile complaint issues
 * Fixed missing name sound logging
+* Fixed missing partition entries
 * Fixed muX looking for incorrect theme path on factory reset mode
 * Fixed navigation sound on first module start
 * Fixed network module LR nav bar
@@ -308,16 +323,20 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed pivot point if pivot specific doesn't exist
 * Fixed playing sound on no content
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
+* Fixed purging of SDL mapper due to symlinking
+* Fixed RetroArch auto saving/loading for resume/last device boot
 * Fixed RG34XX-SP configuration specifics
 * Fixed RGB lights displaying after low power warning whilst in idle mode
 * Fixed saving theme resolution setting
 * Fixed scaling of Dracula, Faux Dark, muVB, and Orange themes
+* Fixed screenshot width for other devices
 * Fixed script logging to use consistent date time
 * Fixed scrolling text when language set to Korean
 * Fixed scrolling to all content options
 * Fixed SDL2 libraries for TrimUI devices
 * Fixed SDL "Game Controller" paths
 * Fixed SDL input names for TrimUI devices
+* Fixed SDL mapping logic
 * Fixed SD/USB hot mounting
 * Fixed search module panel priority reference
 * Fixed setting long label mode on no content
@@ -348,6 +367,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Merged device specific input bright and audio to script directory
 * Minor Pico-8 external launch changes
 * Modified archive install script to overwrite existing files from PICO-8 archive
+* Modified backlight resume amounts
 * Modified bar behaviour to avoid covering modules
 * Modified charging module brightness
 * Modified chime to ensure it is only played once on startup
@@ -378,6 +398,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved cardmode to danger options
 * Moved configuration fields to global options
 * Moved default governor setter to global functions
+* Moved external port assign back for Portmaster compatibility
 * Moved file counter function to shared file
 * Moved friendly folder, title update, and item label generation to shared functions
 * Moved from define to enum for simple core content reading
@@ -395,6 +416,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved panel adjustments to separate function
 * Moved partition mount and storage info functions to common
 * Moved reboot/shutdown sound play to frontend module
+* Moved RetroArch config to auto load/save with content loader change
 * Moved RetroArch device resolution setting to common function
 * Moved screenshot to L2+R2+MENU
 * Moved SDL and RA setup to global functions
@@ -489,6 +511,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated default `muterm` font size
 * Updated default theme with larger font for reboot/shutdown images
 * Updated diagnostics task toolkit script
+* Updated diagnostics to grab kiosk files
 * Updated extraction script to use frontend function
 * Updated factory reset routine
 * Updated factory reset scripts for new muX procedures
