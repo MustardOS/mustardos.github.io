@@ -119,5 +119,5 @@ turn it on, and it will take care of the rest.
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
-  <meta itemprop="name" content="muOS - Custom Firmware"/>
+  <meta itemprop="name" content="MustardOS - Custom Firmware"/>
 </div>
