@@ -8,7 +8,7 @@ nav_order: 3
 has_toc: false
 ---
 
-# muOS 2405.1 REFRIED BEANS
+# MustardOS 2405.1 REFRIED BEANS
 ## Download
 _This release is now archived._
 ```
@@ -28,7 +28,7 @@ _This release is now archived._
 - Backup Manager and System Refresh have been merged to Task Toolkit
 - Menu is now more responsive
 - Visual indicators for volume and brightness are more accurate
-- muOS is now device agnostic - Reliance on hardcoded pathing is reduced by 90%
+- MustardOS is now device agnostic - Reliance on hardcoded pathing is reduced by 90%
   - This will make it easier to support more devices in the future
 - Updated RetroArch to 1.19.1 and multiple core updates
 - Updated secret mode

@@ -24,12 +24,12 @@ There are currently three compatible image formats for themes with specific use 
 # Menu Graphic Design
 
 If you are new to graphic design in this context, there are many places you can start with to get the most out of the
-muOS theme engine. Most people designing visual assets will use software such as Photoshop, Photopea (this one
+MustardOS theme engine. Most people designing visual assets will use software such as Photoshop, Photopea (this one
 is [online and free to use](https://www.photopea.com/)), Illustrator, GIMP, Procreate, Aseprite (pixel art app), or
 Affinity.
 
-With the introduction of individual list item images (in muOS Beans), themers can now simulate complex navigation you
-would see in other CFWs or software menus. The most common use case example for muOS is altering the main
+With the introduction of individual list item images (in MustardOS Beans), themers can now simulate complex navigation
+you would see in other CFWs or software menus. The most common use case example for MustardOS is altering the main
 menu (`muxlaunch`) from vertical lists to icon-based navigation. Here are three examples of this;
 
 | !["GamePal" by vacarotti](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GamePal.gif "GamePal (by vacarotti)") | !["GbOS" by ciskao](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GbOS.gif "GbOS (by ciskao)") | !["Plexus" by LMarcoMiranda](https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/Plexus.gif "Plexus (by LMarcoMiranda)") |
@@ -57,7 +57,7 @@ corresponding program(s) that it should use the sequenced PNG files (instead of 
 
 {: .warning }
 > GIFs are still somewhat supported by using `[MISC] ANIMATED_BACKGROUND=1` however this is being deprecated and will be
-> removed in future muOS updates!
+> removed in future MustardOS updates!
 
 {: .note }
 > Static Images: These are very useful when using animated backgrounds, as you can save your theme size and quality by

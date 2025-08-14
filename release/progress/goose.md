@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 2508.0 Goose
+# MustardOS 2508.0 Goose
 
 #### _Pronunciation_
 
@@ -24,15 +24,15 @@ _Not yet available!_
 
 <hr>
 
-## Support muOS
+## Support MustardOS
 
-Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
+Love MustardOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
 **This can be done a few ways:**
 
 * Be helpful around the Discord community server
 * [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-* Spread the word about muOS and all its features
+* Spread the word about MustardOS and all its features
 
 **Or you can join the testing crew directly by:**
 
@@ -90,7 +90,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added background process execution support
 * Added backwards compatible theme checking
 * Added basic network details module
-* Added BGM music tracks from previous muOS versions
+* Added BGM music tracks from previous MustardOS versions
 * Added blank overlay due to weird RetroArch performance delay
 * Added boot logo package installer
 * Added box art layering to shared function
@@ -179,7 +179,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
 * Added missing names to the lookup tables
 * Added modified GPU parameters to TUI devices
-* Added muOS settings to backup support
+* Added MustardOS settings to backup support
 * Added mute on display timeout power option
 * Added `muterm` SDL2 virtual terminal emulator
 * Added `muxbackup` module

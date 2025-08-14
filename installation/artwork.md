@@ -7,14 +7,14 @@ parent: Installation
 has_children: false
 ---
 
-# muOS Artwork
+# MustardOS Artwork
 
 ![](assets/images/muos_boxart.png)
 ![](assets/images/muos_preview.png)
 
-## muOS Catalogue Structure
+## MustardOS Catalogue Structure
 
-muOS's catalogue (which contains information on your ROMs, as well as associated images) is structured as such:
+MustardOS's catalogue (which contains information on your ROMs, as well as associated images) is structured as such:
 
 ```
 SD1
@@ -44,7 +44,7 @@ SD1
 ```
 
 These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`  
-Folders for all available systems should be automatically created for you.  
+Folders for all available systems should be automatically created for you.
 
 ### Example INI file
 
@@ -62,13 +62,23 @@ Here we can see the catalogue folder for this system is `Atari 2600`.
 
 To have your artwork properly show up, ensure these three things:
 
-1. Your artwork filename should match the ROM filename. For example, if you have a ROM called `Chrono Trigger (USA).zip`, the artwork filename should be `Chrono Trigger (USA).png`
-2. Your artwork must be placed in the correct location: `box/` (for boxart) or `preview/` (for preview images/screenshots) inside `MUOS/info/catalogue/<SystemName>/`.
-For example, we would store our chrono trigger artwork as `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. We use *Nintendo SNES-SFC* because as stated earlier, this is the defined catalogue folder name for SNES content.
+1. Your artwork filename should match the ROM filename. For example, if you have a ROM
+   called `Chrono Trigger (USA).zip`, the artwork filename should be `Chrono Trigger (USA).png`
+2. Your artwork must be placed in the correct location: `box/` (for boxart) or `preview/` (for preview
+   images/screenshots) inside `MUOS/info/catalogue/<SystemName>/`.
+   For example, we would store our chrono trigger artwork
+   as `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. We use *Nintendo SNES-SFC* because as stated
+   earlier, this is the defined catalogue folder name for SNES content.
 3. Have the correct system assigned to your folder(s).
-   - muOS attempts to assign systems to your folders automatically. But in edge cases where it doesn't, and you see no artwork being shown, simply navigate to the folder in the content explorer (for example, `Nintendo/SNES/`), press Select, and assign a core. Either choose to assign to the directory, or recursively so that all subfolders are also matched. 
+    - MustardOS attempts to assign systems to your folders automatically. But in edge cases where it doesn't, and you
+      see no artwork being shown, simply navigate to the folder in the content explorer (for example, `Nintendo/SNES/`),
+      press Select, and assign a core. Either choose to assign to the directory, or recursively so that all subfolders
+      are also matched.
 
-Note: muOS will check for artwork independently of a system's subfolders. So, say your ROM file is located at `SD2/roms/Nintendo/SNES/JRPGs/Chrono Trigger (USA).zip`, muOS will only check in the *root* of `MUOS/info/catalogue/Nintendo SNES-SFC/box/`, and will ignore subfolders inside the boxart folder. So if you place your art in `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs`, it won't detect the artwork.
+Note: MustardOS will check for artwork independently of a system's subfolders. So, say your ROM file is located
+at `SD2/roms/Nintendo/SNES/JRPGs/Chrono Trigger (USA).zip`, MustardOS will only check in the *root*
+of `MUOS/info/catalogue/Nintendo SNES-SFC/box/`, and will ignore subfolders inside the boxart folder. So if you place
+your art in `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs`, it won't detect the artwork.
 
 ## Folder artwork
 
@@ -145,37 +155,37 @@ scrolling. It is recommended to leave these settings at 0 and instead resize you
 
 ```ini
 [viewport]
-WIDTH=354
-HEIGHT=0
-COLUMN_MODE=1
-COLUMN_MODE_ALIGNMENT=2
+WIDTH = 354
+HEIGHT = 0
+COLUMN_MODE = 1
+COLUMN_MODE_ALIGNMENT = 2
 
 [image1]
-FOLDER=box324x300
+FOLDER = box324x300
 
 [image2]
-FOLDER=preview324x300
-PAD_TOP=15
+FOLDER = preview324x300
+PAD_TOP = 15
 ```
 
 ### Example ini configuration for Standard Mode
 
 ```ini
 [viewport]
-WIDTH=354
-HEIGHT=480
-COLUMN_MODE=0
-COLUMN_MODE_ALIGNMENT=0
+WIDTH = 354
+HEIGHT = 480
+COLUMN_MODE = 0
+COLUMN_MODE_ALIGNMENT = 0
 
 [image1]
-FOLDER=box324
-ALIGN=8
-MAX_WIDTH=0
-MAX_HEIGHT=0
-PAD_LEFT=0
-PAD_RIGHT=15
-PAD_TOP=0
-PAD_BOTTOM=0
+FOLDER = box324
+ALIGN = 8
+MAX_WIDTH = 0
+MAX_HEIGHT = 0
+PAD_LEFT = 0
+PAD_RIGHT = 15
+PAD_TOP = 0
+PAD_BOTTOM = 0
 ```
 
 ### Example file tree for Column Mode example
@@ -210,10 +220,10 @@ If you want to adjust just where the text auto ellipses you can set a value for 
 
 ```ini
 [font]
-FONT_LIST_PAD_RIGHT=280
+FONT_LIST_PAD_RIGHT = 280
 
 [misc]
-CONTENT_WIDTH=-1
+CONTENT_WIDTH = -1
 ```
 
 ![](assets/images/muox_boxart_override_eample_2.png)<br>
@@ -221,10 +231,10 @@ If you also want the background bar of the item to resize you would instead adju
 
 ```ini
 [font]
-FONT_LIST_PAD_RIGHT=10
+FONT_LIST_PAD_RIGHT = 10
 
 [misc]
-CONTENT_WIDTH=360
+CONTENT_WIDTH = 360
 ```
 
 ![](assets/images/muox_boxart_override_eample_3.png)<br>
@@ -253,7 +263,7 @@ There are three special folders within the catalogue: `Application`, `Archive`, 
 {: .highlight }
 > If you are distributing an application, archive, or task you could bundle these up too!
 
-## antiKk's muOS Artwork
+## antiKk's MustardOS Artwork
 
 Skraper mixes, and Artwork for the Tiny Best Set are available here:  
 [https://github.com/antiKk/muOS-Artwork](https://github.com/antiKk/muOS-Artwork)

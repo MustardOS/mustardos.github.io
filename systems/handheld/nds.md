@@ -12,7 +12,7 @@ has_toc: false
 ![](../assets/images/drastic_new.png)
 
 {: .new}
-> muOS includes both DraStic, and the modified version by trngaje  
+> MustardOS includes both DraStic, and the modified version by trngaje  
 > For most uses the modified version is preferred.
 
 ## Advanced DraStic (trngaje) Keys
@@ -58,7 +58,7 @@ has_toc: false
 
 {: .warning}
 > This is not for DraStic Steward  
-> This script needs updating for newer muOS versions.
+> This script needs updating for newer MustardOS versions.
 
 ```bash
 #!/bin/sh

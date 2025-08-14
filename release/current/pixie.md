@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 2502.0 Pixie
+# MustardOS 2502.0 Pixie
 
 #### _Pronunciation_
 
@@ -32,15 +32,15 @@ has_toc: false
 
 <hr>
 
-## Support muOS
+## Support MustardOS
 
-Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
+Love MustardOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
 **This can be done a few ways:**
 
 * Be helpful around the Discord community server
 * [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-* Spread the word about muOS and all its features
+* Spread the word about MustardOS and all its features
 
 **Or you can join the testing crew directly by:**
 

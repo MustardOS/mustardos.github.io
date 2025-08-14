@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 2403 ORIGIN
+# MustardOS 2403 ORIGIN
 ## Download
 _This release is now archived._
 ```
@@ -52,7 +52,7 @@ f78f881aa18ea692e40964814b5ffdc46231e8fa32df77f38a26b7f9750d43a4  muOS-2403PLUSH
   - All thanks to `@jupyter` for their hard work developing this!
   - This is still a work-in-progress
   - Themes now support custom fonts which can be easily compiled following this guide: 
-  - A whole slew of fantastic themes have been made by various muOS folk have been preinstalled
+  - A whole slew of fantastic themes have been made by various MustardOS folk have been preinstalled
 
 ## RetroArch Changes
 - Added baseline shader config to remove frame jitters

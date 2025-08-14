@@ -117,9 +117,9 @@ advanced = 1
 ## Temporarily Disable
 
 Press `L1 + R2 + Y` on the Reboot item. This will move `/opt/muos/config/kiosk.ini` back to `MUOS/kiosk.ini` and
-reload the muOS frontend without the need of a reboot.
+reload the MustardOS frontend without the need of a reboot.
 
 ## Permanently Disable
 
 Press `L1 + R2 + X` on the **Reboot** item. This will disable kiosk mode and purge the file at
-`/opt/muos/config/kiosk.ini` and reload the muOS frontend without the need of a reboot.
+`/opt/muos/config/kiosk.ini` and reload the MustardOS frontend without the need of a reboot.

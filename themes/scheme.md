@@ -27,13 +27,16 @@ Below you will find all the available attributes you can change in a scheme file
 
 # Scheme File Hierarchy
 
-Multiple scheme files can be loaded for each screen in muOS. The files are loaded in an additive manner with each setting present in a scheme file overriding the previously read file settings.  This allows for you to have a global file containing most of your theme settings in a centrallized location and separate files with minimal settings to adjust resolution or screen specific settings.
+Multiple scheme files can be loaded for each screen in MustardOS. The files are loaded in an additive manner with each
+setting present in a scheme file overriding the previously read file settings. This allows for you to have a global file
+containing most of your theme settings in a centralised location and separate files with minimal settings to adjust
+resolution or screen specific settings.
 
-| Scheme Path | Description |
-|--------------------|---------------------------------------------------|
-| `/scheme/global.ini`                | Main scheme for your file.  Settings in this file are for the entire theme regardless of resolution or screen. |
+| Scheme Path                         | Description                                                                                                                                                                                 |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/scheme/global.ini`                | Main scheme for your file.  Settings in this file are for the entire theme regardless of resolution or screen.                                                                              |
 | `/{Resolution}/scheme/default.ini`  | Default scheme settings for this settings related to all screens for a specific resolution. For example changing `CONTENT_ITEM_COUNT` to a larger amount of items for specific resolutions. |
-| `/{Resolution}/scheme/{module}.ini` | Settings that only apply to a specific screen at a specific resolution.  For example you may want to adjust `CONTENT_WIDTH` in a `muxplore.ini` file to allow room for displaying box art. |
+| `/{Resolution}/scheme/{module}.ini` | Settings that only apply to a specific screen at a specific resolution.  For example you may want to adjust `CONTENT_WIDTH` in a `muxplore.ini` file to allow room for displaying box art.  |
 
 # Scheme File Line-By-Line
 
@@ -41,16 +44,16 @@ This is an example of a random `./scheme/default.ini` file from the theme librar
 
 ### Section [background]
 
-| Setting                          | Description                                       |
-|--------------------              |---------------------------------------------------|
-| BACKGROUND=000000                | Background colour. Most used in [list] gradients. |
-| BACKGROUND_ALPHA=0               | Background colour transparency.                   |
-| BACKGROUND_GRADIENT_COLOR=000000 | 2nd colour in gradient                            |
-| BACKGROUND_GRADIENT_START=0      | Start point of gradient change. [BACKGROUND] changes to [BACKGROUND_GRADIENT_COLOR] colour. |
-| BACKGROUND_GRADIENT_STOP=255     | End point of gradient change. |
-| BACKGROUND_GRADIENT_DIRECTION=0  | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
+| Setting                          | Description                                                                                                                          |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| BACKGROUND=000000                | Background colour. Most used in [list] gradients.                                                                                    |
+| BACKGROUND_ALPHA=0               | Background colour transparency.                                                                                                      |
+| BACKGROUND_GRADIENT_COLOR=000000 | 2nd colour in gradient                                                                                                               |
+| BACKGROUND_GRADIENT_START=0      | Start point of gradient change. [BACKGROUND] changes to [BACKGROUND_GRADIENT_COLOR] colour.                                          |
+| BACKGROUND_GRADIENT_STOP=255     | End point of gradient change.                                                                                                        |
+| BACKGROUND_GRADIENT_DIRECTION=0  | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                |
 | BACKGROUND_GRADIENT_DITHER=0     | Apply dithering effect to background gradient to help smooth out banding in the background gradient. <br>0 = Disabled<br>1 = Enabled |
-| BACKGROUND_GRADIENT_BLUR=0       | Apply blur to background gradient. <br>0 = Disabled<br>1 or greater = Level of blur.  |
+| BACKGROUND_GRADIENT_BLUR=0       | Apply blur to background gradient. <br>0 = Disabled<br>1 or greater = Level of blur.                                                 |
 
 ### Section [font]
 
@@ -82,11 +85,11 @@ not use both settings at the same time.
 
 ### Section [status]
 
-| Setting         | Description                                                                         |
-|-----------------|-------------------------------------------------------------------------------------|
+| Setting         | Description                                                                                                                                                                                                                                                      |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ALIGN=1         | Alignment of header icons<br>0 = Left<br>1 = Right<br>2 = Center<br>3 = Icons spaced evenly across header<br>4 = icons evenly distributed with equal space around them<br>5 = First icon aligned left last icon aligned right all other icons evenly distributed |
-| PADDING_LEFT=0  | Number of pixels of space to add to left side of the header icons.                  |
-| PADDING_RIGHT=0 | Number of pixels of space to add to right side of the header icons.                 |
+| PADDING_LEFT=0  | Number of pixels of space to add to left side of the header icons.                                                                                                                                                                                               |
+| PADDING_RIGHT=0 | Number of pixels of space to add to right side of the header icons.                                                                                                                                                                                              |
 
 ### Section [battery]
 
@@ -205,118 +208,120 @@ not use both settings at the same time.
 
 ### Section [grid]
 
-Allows for displaying a grid of icons for the main menu or content explorer.  Content Explorer will only be displayed for directories that only contain folders.  You can disable grid view for a specific folder by adding an empty `.nogrid` text file to the root of the directory.
+Allows for displaying a grid of icons for the main menu or content explorer. Content Explorer will only be displayed for
+directories that only contain folders. You can disable grid view for a specific folder by adding an empty `.nogrid` text
+file to the root of the directory.
 
-| Setting                              | Description                                                                     |
-|--------------------------------------|---------------------------------------------------------------------------------|
-| CURRENT_ITEM_LABEL_ALIGNMENT=9             | Label alignment:<br>1=Top Left<br>2=Top Middle<br>3=Top Right<br>4=Bottom Left<br>5=Bottom Middle<br>6=Bottom Right<br>7=Left Middle<br>8=Right Middle<br>9=Center |
-| CURRENT_ITEM_LABEL_WIDTH=600               | Width of label. A value of 0 will size to content.                        |
-| CURRENT_ITEM_LABEL_HEIGHT=0                | Height of label. A value of 0 will size to content.                       |
-| CURRENT_ITEM_LABEL_OFFSET_X=0              | Horizontal offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                  |
-| CURRENT_ITEM_LABEL_OFFSET_Y=260            | Vertical offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                    |
-| CURRENT_ITEM_LABEL_RADIUS=10               | Add radius to label corners. 0 is a right angle. 10+ is very round.       |
-| CURRENT_ITEM_LABEL_BORDER_WIDTH=5          | Border width in pixels.                                                   |
-| CURRENT_ITEM_LABEL_BORDER=FFFFFF           | Label border colour.                                                      |
-| CURRENT_ITEM_LABEL_BORDER_ALPHA=255        | Label border transparency.                                                |
-| CURRENT_ITEM_LABEL_BACKGROUND=000000       | Label background colour.                                                  |
-| CURRENT_ITEM_LABEL_BACKGROUND_ALPHA=255    | Label background transparency.                                            |
-| CURRENT_ITEM_LABEL_TEXT=FFFFFF             | Label text colour.                                                        |
-| CURRENT_ITEM_LABEL_TEXT_ALPHA=255          | Label text transparency.                                                  |
-| CURRENT_ITEM_LABEL_TEXT_ALIGNMENT=2        | Text horizontal alignment:<br>1=Left<br>2=Center<br>3=Right               |
-| CURRENT_ITEM_LABEL_TEXT_LINE_SPACING=0     | Amount of spacing between lines of text.  Negative values can be used.    |
-| CURRENT_ITEM_LABEL_TEXT_PADDING_BOTTOM=10  | Amount of padding between bottom edge of label and text.                  |
-| CURRENT_ITEM_LABEL_TEXT_PADDING_LEFT=10    | Amount of padding between left edge of label and text.                    |
-| CURRENT_ITEM_LABEL_TEXT_PADDING_RIGHT=10   | Amount of padding between right edge of label and text.                   |
-| CURRENT_ITEM_LABEL_TEXT_PADDING_TOP=10     | Amount of padding between top edge of label and text.                     |
-| NAVIGATION_TYPE=2                    |  2: Left/right/up/down navigation. Left/Right navigation at beginning or end of row moves to previous or next row.<br>4: Same as 2 except that left/right wraps around on the active row.  |
-| BACKGROUND=000000                    |  Grid main background colour.                                                   |
-| BACKGROUND_ALPHA=0                   |  Grid main background transparency.                                             |
-| LOCATION_X=0                         |  Horizontal position of grid in pixels                                          |
-| LOCATION_Y=0                         |  Vertical position of grid in pixels                                            |
-| COLUMN_COUNT=0                       |  Number of columns                                                              |
-| ROW_COUNT=0                          |  Number of rows displayed on screen at one time                                 |
-| ROW_HEIGHT=0                         |  Height in pixels of each row                                                   |
-| COLUMN_WIDTH=0                       |  Width in pixels of each column                                                 |
-| CELL_COLUMN_ALIGN=1                  |  Alignment of grid cell to column. <br>0 = Left<br>1 = Center<br>2 = Right      |
-| CELL_ROW_ALIGN=1                     |  Alignment of grid cell to row. <br>0 = Top<br>1 = Center<br>2 = Bottom         |
-| CELL_WIDTH=200                       |  Width of cell in pixels.  Cell will be centered horizontally and vertically.   |
-| CELL_HEIGHT=200                      |  Height of cell in pixels.  Cell will be centered horizontally and vertically.  |
-| CELL_RADIUS=10                       |  Add radius to cell corners. 0 is a right angle. 10+ is very round.             |
-| CELL_BORDER_WIDTH=5                  |  Cell border width in pixels.                                                   |
-| CELL_IMAGE_PADDING_TOP=5             |  Amount of padding between top edge of cell and cell image.  **Note:** If text alpha is set to 0 image will be centered in the cell by default.  |
-| CELL_TEXT_PADDING_BOTTOM=5           |  Amount of padding between bottom edge of cell and text label.                  |
-| CELL_TEXT_PADDING_SIDE=5             |  Amount of padding between edge of cell and text label.                         |
-| CELL_TEXT_LINE_SPACING=0             |  Adjust spacing between lines for text labels that wrap text.  Negative values can be used to bring lines closer together.  |
-| CELL_SHADOW=000000                   |  Grid cell shadow colour                       |
-| CELL_SHADOW_WIDTH=0                  |  Width in pixels of the shadow                 |
-| CELL_SHADOW_X_OFFSET=10              |  Horizontal offset in pixels of the shadow     |
-| CELL_SHADOW_Y_OFFSET=10              |  Vertical offset in pixels of the shadow       |
-| CELL_DEFAULT_BACKGROUND=000000       |  Unselected cell background colour.            |
-| CELL_DEFAULT_BACKGROUND_ALPHA=255    |  Unselected cell background transparency.      |
-| CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR=000000 |  2nd colour in gradient   |
-| CELL_DEFAULT_BACKGROUND_GRADIENT_START=0      |  Start point of gradient change. [CELL_DEFAULT_BACKGROUND] changes to [CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR] colour.   |
-| CELL_DEFAULT_BACKGROUND_GRADIENT_STOP=255     |  End point of gradient change.   |
-| CELL_DEFAULT_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
-| CELL_DEFAULT_BORDER=000000           |  Unselected cell border colour.                |
-| CELL_DEFAULT_BORDER_ALPHA=255        |  Unselected cell border transparency.          |
-| CELL_DEFAULT_IMAGE_ALPHA=255         |  Unselected cell image transparency.           |
-| CELL_DEFAULT_IMAGE_RECOLOUR=000000   |  Unselected cell image recolour.               |
-| CELL_DEFAULT_IMAGE_RECOLOUR_ALPHA=0  |  Unselected cell image recolour transparency.  |
-| CELL_DEFAULT_TEXT=000000             |  Unselected cell text colour.                  |
-| CELL_DEFAULT_TEXT_ALPHA=255          |  Unselected cell text transparency.            |
-| CELL_FOCUS_BACKGROUND=000000         |  Selected cell background colour.              |
-| CELL_FOCUS_BACKGROUND_ALPHA=255      |  Selected cell background transparency.        |
-| CELL_FOCUS_BACKGROUND_GRADIENT_COLOR=000000 |  2nd colour in gradient   |
-| CELL_FOCUS_BACKGROUND_GRADIENT_START=0      |  Start point of gradient change. [CELL_FOCUS_BACKGROUND] changes to [CELL_FOCUS_BACKGROUND_GRADIENT_COLOR] colour.   |
-| CELL_FOCUS_BACKGROUND_GRADIENT_STOP=255     |  End point of gradient change.   |
-| CELL_FOCUS_BACKGROUND_GRADIENT_DIRECTION=0  |  Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal |
-| CELL_FOCUS_BORDER=000000             |  Selected cell border colour.                  |
-| CELL_FOCUS_BORDER_ALPHA=255          |  Selected cell border transparency.            |
-| CELL_FOCUS_IMAGE_ALPHA=255           |  Selected cell image transparency.             |
-| CELL_FOCUS_IMAGE_RECOLOUR=000000     |  Selected cell image recolour.                 |
-| CELL_FOCUS_IMAGE_RECOLOUR_ALPHA=0    |  Selected cell image recolour transparency.    |
-| CELL_FOCUS_TEXT=000000               |  Selected cell text colour.                    |
-| CELL_FOCUS_TEXT_ALPHA=255            |  Selected cell text transparency.              |
+| Setting                                       | Description                                                                                                                                                                              |
+|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CURRENT_ITEM_LABEL_ALIGNMENT=9                | Label alignment:<br>1=Top Left<br>2=Top Middle<br>3=Top Right<br>4=Bottom Left<br>5=Bottom Middle<br>6=Bottom Right<br>7=Left Middle<br>8=Right Middle<br>9=Center                       |
+| CURRENT_ITEM_LABEL_WIDTH=600                  | Width of label. A value of 0 will size to content.                                                                                                                                       |
+| CURRENT_ITEM_LABEL_HEIGHT=0                   | Height of label. A value of 0 will size to content.                                                                                                                                      |
+| CURRENT_ITEM_LABEL_OFFSET_X=0                 | Horizontal offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                                                                                                                                 |
+| CURRENT_ITEM_LABEL_OFFSET_Y=260               | Vertical offset based on CURRENT_ITEM_LABEL_ALIGNMENT.                                                                                                                                   |
+| CURRENT_ITEM_LABEL_RADIUS=10                  | Add radius to label corners. 0 is a right angle. 10+ is very round.                                                                                                                      |
+| CURRENT_ITEM_LABEL_BORDER_WIDTH=5             | Border width in pixels.                                                                                                                                                                  |
+| CURRENT_ITEM_LABEL_BORDER=FFFFFF              | Label border colour.                                                                                                                                                                     |
+| CURRENT_ITEM_LABEL_BORDER_ALPHA=255           | Label border transparency.                                                                                                                                                               |
+| CURRENT_ITEM_LABEL_BACKGROUND=000000          | Label background colour.                                                                                                                                                                 |
+| CURRENT_ITEM_LABEL_BACKGROUND_ALPHA=255       | Label background transparency.                                                                                                                                                           |
+| CURRENT_ITEM_LABEL_TEXT=FFFFFF                | Label text colour.                                                                                                                                                                       |
+| CURRENT_ITEM_LABEL_TEXT_ALPHA=255             | Label text transparency.                                                                                                                                                                 |
+| CURRENT_ITEM_LABEL_TEXT_ALIGNMENT=2           | Text horizontal alignment:<br>1=Left<br>2=Center<br>3=Right                                                                                                                              |
+| CURRENT_ITEM_LABEL_TEXT_LINE_SPACING=0        | Amount of spacing between lines of text.  Negative values can be used.                                                                                                                   |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_BOTTOM=10     | Amount of padding between bottom edge of label and text.                                                                                                                                 |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_LEFT=10       | Amount of padding between left edge of label and text.                                                                                                                                   |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_RIGHT=10      | Amount of padding between right edge of label and text.                                                                                                                                  |
+| CURRENT_ITEM_LABEL_TEXT_PADDING_TOP=10        | Amount of padding between top edge of label and text.                                                                                                                                    |
+| NAVIGATION_TYPE=2                             | 2: Left/right/up/down navigation. Left/Right navigation at beginning or end of row moves to previous or next row.<br>4: Same as 2 except that left/right wraps around on the active row. |
+| BACKGROUND=000000                             | Grid main background colour.                                                                                                                                                             |
+| BACKGROUND_ALPHA=0                            | Grid main background transparency.                                                                                                                                                       |
+| LOCATION_X=0                                  | Horizontal position of grid in pixels                                                                                                                                                    |
+| LOCATION_Y=0                                  | Vertical position of grid in pixels                                                                                                                                                      |
+| COLUMN_COUNT=0                                | Number of columns                                                                                                                                                                        |
+| ROW_COUNT=0                                   | Number of rows displayed on screen at one time                                                                                                                                           |
+| ROW_HEIGHT=0                                  | Height in pixels of each row                                                                                                                                                             |
+| COLUMN_WIDTH=0                                | Width in pixels of each column                                                                                                                                                           |
+| CELL_COLUMN_ALIGN=1                           | Alignment of grid cell to column. <br>0 = Left<br>1 = Center<br>2 = Right                                                                                                                |
+| CELL_ROW_ALIGN=1                              | Alignment of grid cell to row. <br>0 = Top<br>1 = Center<br>2 = Bottom                                                                                                                   |
+| CELL_WIDTH=200                                | Width of cell in pixels.  Cell will be centered horizontally and vertically.                                                                                                             |
+| CELL_HEIGHT=200                               | Height of cell in pixels.  Cell will be centered horizontally and vertically.                                                                                                            |
+| CELL_RADIUS=10                                | Add radius to cell corners. 0 is a right angle. 10+ is very round.                                                                                                                       |
+| CELL_BORDER_WIDTH=5                           | Cell border width in pixels.                                                                                                                                                             |
+| CELL_IMAGE_PADDING_TOP=5                      | Amount of padding between top edge of cell and cell image.  **Note:** If text alpha is set to 0 image will be centered in the cell by default.                                           |
+| CELL_TEXT_PADDING_BOTTOM=5                    | Amount of padding between bottom edge of cell and text label.                                                                                                                            |
+| CELL_TEXT_PADDING_SIDE=5                      | Amount of padding between edge of cell and text label.                                                                                                                                   |
+| CELL_TEXT_LINE_SPACING=0                      | Adjust spacing between lines for text labels that wrap text.  Negative values can be used to bring lines closer together.                                                                |
+| CELL_SHADOW=000000                            | Grid cell shadow colour                                                                                                                                                                  |
+| CELL_SHADOW_WIDTH=0                           | Width in pixels of the shadow                                                                                                                                                            |
+| CELL_SHADOW_X_OFFSET=10                       | Horizontal offset in pixels of the shadow                                                                                                                                                |
+| CELL_SHADOW_Y_OFFSET=10                       | Vertical offset in pixels of the shadow                                                                                                                                                  |
+| CELL_DEFAULT_BACKGROUND=000000                | Unselected cell background colour.                                                                                                                                                       |
+| CELL_DEFAULT_BACKGROUND_ALPHA=255             | Unselected cell background transparency.                                                                                                                                                 |
+| CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR=000000 | 2nd colour in gradient                                                                                                                                                                   |
+| CELL_DEFAULT_BACKGROUND_GRADIENT_START=0      | Start point of gradient change. [CELL_DEFAULT_BACKGROUND] changes to [CELL_DEFAULT_BACKGROUND_GRADIENT_COLOR] colour.                                                                    |
+| CELL_DEFAULT_BACKGROUND_GRADIENT_STOP=255     | End point of gradient change.                                                                                                                                                            |
+| CELL_DEFAULT_BACKGROUND_GRADIENT_DIRECTION=0  | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                                                    |
+| CELL_DEFAULT_BORDER=000000                    | Unselected cell border colour.                                                                                                                                                           |
+| CELL_DEFAULT_BORDER_ALPHA=255                 | Unselected cell border transparency.                                                                                                                                                     |
+| CELL_DEFAULT_IMAGE_ALPHA=255                  | Unselected cell image transparency.                                                                                                                                                      |
+| CELL_DEFAULT_IMAGE_RECOLOUR=000000            | Unselected cell image recolour.                                                                                                                                                          |
+| CELL_DEFAULT_IMAGE_RECOLOUR_ALPHA=0           | Unselected cell image recolour transparency.                                                                                                                                             |
+| CELL_DEFAULT_TEXT=000000                      | Unselected cell text colour.                                                                                                                                                             |
+| CELL_DEFAULT_TEXT_ALPHA=255                   | Unselected cell text transparency.                                                                                                                                                       |
+| CELL_FOCUS_BACKGROUND=000000                  | Selected cell background colour.                                                                                                                                                         |
+| CELL_FOCUS_BACKGROUND_ALPHA=255               | Selected cell background transparency.                                                                                                                                                   |
+| CELL_FOCUS_BACKGROUND_GRADIENT_COLOR=000000   | 2nd colour in gradient                                                                                                                                                                   |
+| CELL_FOCUS_BACKGROUND_GRADIENT_START=0        | Start point of gradient change. [CELL_FOCUS_BACKGROUND] changes to [CELL_FOCUS_BACKGROUND_GRADIENT_COLOR] colour.                                                                        |
+| CELL_FOCUS_BACKGROUND_GRADIENT_STOP=255       | End point of gradient change.                                                                                                                                                            |
+| CELL_FOCUS_BACKGROUND_GRADIENT_DIRECTION=0    | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                                                    |
+| CELL_FOCUS_BORDER=000000                      | Selected cell border colour.                                                                                                                                                             |
+| CELL_FOCUS_BORDER_ALPHA=255                   | Selected cell border transparency.                                                                                                                                                       |
+| CELL_FOCUS_IMAGE_ALPHA=255                    | Selected cell image transparency.                                                                                                                                                        |
+| CELL_FOCUS_IMAGE_RECOLOUR=000000              | Selected cell image recolour.                                                                                                                                                            |
+| CELL_FOCUS_IMAGE_RECOLOUR_ALPHA=0             | Selected cell image recolour transparency.                                                                                                                                               |
+| CELL_FOCUS_TEXT=000000                        | Selected cell text colour.                                                                                                                                                               |
+| CELL_FOCUS_TEXT_ALPHA=255                     | Selected cell text transparency.                                                                                                                                                         |
 
 ### Section [list]
 
 For all list item backgrounds, gradients can be applied. L-R = 0-255.
 
-| Setting                               | Description                                                                                                                                             |
-|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LIST_DEFAULT_RADIUS=0                 | Background window border radius. 0 = square, 5+ = round. This applies setting applies to LIST_DEFAULT_BACKGROUND & LIST_FOCUS_BACKGROUND                |
-| LIST_DEFAULT_BACKGROUND=ececec        | Unselected list item main background colour.                                                                                                            |
-| LIST_DEFAULT_BACKGROUND_ALPHA=0       | Unselected list item main background transparency.                                                                                                      |
-| LIST_DEFAULT_GRADIENT_START=0         | Start point of gradient change. [background] changes 2nd colour.                                                                                        |
-| LIST_DEFAULT_GRADIENT_STOP=0          | End point of gradient change.                                                                                                                           |
-| LIST_DEFAULT_GRADIENT_DIRECTION=0     | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                   |
-| LIST_DEFAULT_BORDER_WIDTH=5           | Unselected list item border width in pixels.                                                                                                            |
+| Setting                               | Description                                                                                                                                                                                                                                       |
+|---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LIST_DEFAULT_RADIUS=0                 | Background window border radius. 0 = square, 5+ = round. This applies setting applies to LIST_DEFAULT_BACKGROUND & LIST_FOCUS_BACKGROUND                                                                                                          |
+| LIST_DEFAULT_BACKGROUND=ececec        | Unselected list item main background colour.                                                                                                                                                                                                      |
+| LIST_DEFAULT_BACKGROUND_ALPHA=0       | Unselected list item main background transparency.                                                                                                                                                                                                |
+| LIST_DEFAULT_GRADIENT_START=0         | Start point of gradient change. [background] changes 2nd colour.                                                                                                                                                                                  |
+| LIST_DEFAULT_GRADIENT_STOP=0          | End point of gradient change.                                                                                                                                                                                                                     |
+| LIST_DEFAULT_GRADIENT_DIRECTION=0     | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                                                                                                             |
+| LIST_DEFAULT_BORDER_WIDTH=5           | Unselected list item border width in pixels.                                                                                                                                                                                                      |
 | LIST_DEFAULT_BORDER_SIDE=4            | Unselected list item border sides.<br>0 = None<br>1 = Bottom<br>2 = Top<br>4 = Left<br>8 = Right<br>**Note:** To do multiple sides add the values.  For example to do top, bottom, left, and right you would add the 4 values together to get 15. |
-| LIST_DEFAULT_INDICATOR=ececec         | Unselected list item indicator/border colour.                                                                                                           |
-| LIST_DEFAULT_INDICATOR_ALPHA=0        | Unselected list item indicator/border transparency.                                                                                                     |
-| LIST_DEFAULT_TEXT=53422e              | Unselected list item text colour.                                                                                                                       |
-| LIST_DEFAULT_TEXT_ALPHA=255           | Unselected list item text transparency.                                                                                                                 |
-| LIST_DEFAULT_GLYPH_PAD_LEFT=19        | Adjusts the padding in pixels from the left side of the list item to the center of the glyph.<br><br>![](assets/images/LIST_DEFAULT_GLYPH_PAD_LEFT.png) |
-| LIST_DEFAULT_GLYPH_ALPHA=255          | List item glyph transparency                                                                                                                            |
-| LIST_DEFAULT_GLYPH_RECOLOUR=53422e    | Unselected list item glyph recolour.                                                                                                                    |
-| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255 | Transparency of this colour.                                                                                                                            |
-| LIST_DEFAULT_LABEL_LONG_MODE=1        | Long mode behavior for label text. <br>0 = Wrap long lines<br>1 = Show elipse when unselected. Scroll text when item selected.                          |
-| LIST_DISABLED_TEXT=a78b65             | Unavailable list item text colour.                                                                                                                      |
-| LIST_DISABLED_TEXT_ALPHA=255          | Unavailable list item text transparency.                                                                                                                |
-| LIST_FOCUS_BACKGROUND=000000          | Selected list item main background colour.                                                                                                              |
-| LIST_FOCUS_BACKGROUND_ALPHA=0         | Selected list item main background transparency.                                                                                                        |
-| LIST_FOCUS_GRADIENT_START=0           | Start point of gradient change. [background] changes 2nd colour.                                                                                        |
-| LIST_FOCUS_GRADIENT_STOP=0            | End point of gradient change.                                                                                                                           |
-| LIST_FOCUS_GRADIENT_DIRECTION=0       | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                   |
-| LIST_FOCUS_BORDER_WIDTH=5             | Selected list item border width in pixels.                                                                                                              |
-| LIST_FOCUS_BORDER_SIDE=4              | Selected list item border sides.<br>0 = None<br>1 = Bottom<br>2 = Top<br>4 = Left<br>8 = Right<br>**Note:** To do multiple sides add the values.  For example to do top, bottom, left, and right you would add the 4 values together to get 15. |
-| LIST_FOCUS_INDICATOR=5d0014           | Selected list item indicator/border colour.                                                                                                             |
-| LIST_FOCUS_INDICATOR_ALPHA=255        | Selected list item indicator/border transparency.                                                                                                       |
-| LIST_FOCUS_TEXT=5d0014                | Selected list item text colour.                                                                                                                         |
-| LIST_FOCUS_TEXT_ALPHA=255             | Selected list item text transparency.                                                                                                                   |
-| LIST_FOCUS_GLYPH_ALPHA=255            | Selected List item glyph transparency.                                                                                                                  |
-| LIST_FOCUS_GLYPH_RECOLOUR=5d0014      | Selected list item glyph recolour.                                                                                                                      |
-| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255   | Transparency of this colour.                                                                                                                            |
+| LIST_DEFAULT_INDICATOR=ececec         | Unselected list item indicator/border colour.                                                                                                                                                                                                     |
+| LIST_DEFAULT_INDICATOR_ALPHA=0        | Unselected list item indicator/border transparency.                                                                                                                                                                                               |
+| LIST_DEFAULT_TEXT=53422e              | Unselected list item text colour.                                                                                                                                                                                                                 |
+| LIST_DEFAULT_TEXT_ALPHA=255           | Unselected list item text transparency.                                                                                                                                                                                                           |
+| LIST_DEFAULT_GLYPH_PAD_LEFT=19        | Adjusts the padding in pixels from the left side of the list item to the center of the glyph.<br><br>![](assets/images/LIST_DEFAULT_GLYPH_PAD_LEFT.png)                                                                                           |
+| LIST_DEFAULT_GLYPH_ALPHA=255          | List item glyph transparency                                                                                                                                                                                                                      |
+| LIST_DEFAULT_GLYPH_RECOLOUR=53422e    | Unselected list item glyph recolour.                                                                                                                                                                                                              |
+| LIST_DEFAULT_GLYPH_RECOLOUR_ALPHA=255 | Transparency of this colour.                                                                                                                                                                                                                      |
+| LIST_DEFAULT_LABEL_LONG_MODE=1        | Long mode behavior for label text. <br>0 = Wrap long lines<br>1 = Show elipse when unselected. Scroll text when item selected.                                                                                                                    |
+| LIST_DISABLED_TEXT=a78b65             | Unavailable list item text colour.                                                                                                                                                                                                                |
+| LIST_DISABLED_TEXT_ALPHA=255          | Unavailable list item text transparency.                                                                                                                                                                                                          |
+| LIST_FOCUS_BACKGROUND=000000          | Selected list item main background colour.                                                                                                                                                                                                        |
+| LIST_FOCUS_BACKGROUND_ALPHA=0         | Selected list item main background transparency.                                                                                                                                                                                                  |
+| LIST_FOCUS_GRADIENT_START=0           | Start point of gradient change. [background] changes 2nd colour.                                                                                                                                                                                  |
+| LIST_FOCUS_GRADIENT_STOP=0            | End point of gradient change.                                                                                                                                                                                                                     |
+| LIST_FOCUS_GRADIENT_DIRECTION=0       | Direction of gradient. <br>0 = None<br>1 = Vertical<br>2 = Horizontal                                                                                                                                                                             |
+| LIST_FOCUS_BORDER_WIDTH=5             | Selected list item border width in pixels.                                                                                                                                                                                                        |
+| LIST_FOCUS_BORDER_SIDE=4              | Selected list item border sides.<br>0 = None<br>1 = Bottom<br>2 = Top<br>4 = Left<br>8 = Right<br>**Note:** To do multiple sides add the values.  For example to do top, bottom, left, and right you would add the 4 values together to get 15.   |
+| LIST_FOCUS_INDICATOR=5d0014           | Selected list item indicator/border colour.                                                                                                                                                                                                       |
+| LIST_FOCUS_INDICATOR_ALPHA=255        | Selected list item indicator/border transparency.                                                                                                                                                                                                 |
+| LIST_FOCUS_TEXT=5d0014                | Selected list item text colour.                                                                                                                                                                                                                   |
+| LIST_FOCUS_TEXT_ALPHA=255             | Selected list item text transparency.                                                                                                                                                                                                             |
+| LIST_FOCUS_GLYPH_ALPHA=255            | Selected List item glyph transparency.                                                                                                                                                                                                            |
+| LIST_FOCUS_GLYPH_RECOLOUR=5d0014      | Selected list item glyph recolour.                                                                                                                                                                                                                |
+| LIST_FOCUS_GLYPH_RECOLOUR_ALPHA=255   | Transparency of this colour.                                                                                                                                                                                                                      |
 
 ### Section [image_list]
 
@@ -455,46 +460,46 @@ This relates to the passcode/lock screen when enabled in settings.
 
 ### Section [terminal]
 
-| Setting           | Description                                                                   |
-|-------------------|-------------------------------------------------------------------------------|
-| FOREGROUND=FFFFFF | Font colour of terminal window                                                |
-| BACKGROUND=000000 | Background colour of terminal window                                          |
+| Setting           | Description                          |
+|-------------------|--------------------------------------|
+| FOREGROUND=FFFFFF | Font colour of terminal window       |
+| BACKGROUND=000000 | Background colour of terminal window |
 
 ### Section [verbose]
 
-| Setting     | Description                                                                     |
-|-------------|---------------------------------------------------------------------------------|
-| VERBOSE_BOOT_BACKGROUND=000000    | Background colour of verbose boot messages.               |
-| VERBOSE_BOOT_BACKGROUND_ALPHA=255 | Background colour transparency.                           |
-| VERBOSE_BOOT_TEXT=FFFFFF          | Text colour of verbose boot messages.                     |
-| VERBOSE_BOOT_TEXT_ALPHA=255       | Text colour transparency.                                 |
-| VERBOSE_BOOT_Y_POS=165            | Vertical position of verbose boot messages in pixels.     |
+| Setting                           | Description                                           |
+|-----------------------------------|-------------------------------------------------------|
+| VERBOSE_BOOT_BACKGROUND=000000    | Background colour of verbose boot messages.           |
+| VERBOSE_BOOT_BACKGROUND_ALPHA=255 | Background colour transparency.                       |
+| VERBOSE_BOOT_TEXT=FFFFFF          | Text colour of verbose boot messages.                 |
+| VERBOSE_BOOT_TEXT_ALPHA=255       | Text colour transparency.                             |
+| VERBOSE_BOOT_Y_POS=165            | Vertical position of verbose boot messages in pixels. |
 
 ### Section [animation]
 
-| Setting              | Description                                                                                              |
-|----------------------|----------------------------------------------------------------------------------------------------------|
-| ANIMATION_DELAY=100  | When ANIMATED_BACKGROUND is set to 2 (png sequence) controls the duration of each frame in milliseconds. |
-| ANIMATION_REPEAT=0   | Number of times to repeat animation.  A setting of zero will repeat the animation inifinitely.           |
+| Setting             | Description                                                                                              |
+|---------------------|----------------------------------------------------------------------------------------------------------|
+| ANIMATION_DELAY=100 | When ANIMATED_BACKGROUND is set to 2 (png sequence) controls the duration of each frame in milliseconds. |
+| ANIMATION_REPEAT=0  | Number of times to repeat animation.  A setting of zero will repeat the animation inifinitely.           |
 
 ### Section [misc]
 
-| Setting                   | Description                                                                                          |
-|---------------------------|------------------------------------------------------------------------------------------------------|
-| ANIMATED_BACKGROUND=0     | 0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {ProgramName}.{FrameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting                                                                           |
-| RANDOM_BACKGROUND=0       | If set to 1 randomly select background image based on PNG sequence.  Uses the naming convention {programname}.{Index}.png for example to have the background for muxlaunch randomly selected you would name the images: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png... |
-| CONTENT_SIZE_TO_CONTENT=0 | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width. |
-| CONTENT_ALIGNMENT=0       | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right. |
+| Setting                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ANIMATED_BACKGROUND=0     | 0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {ProgramName}.{FrameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting                                                                          |
+| RANDOM_BACKGROUND=0       | If set to 1 randomly select background image based on PNG sequence.  Uses the naming convention {programname}.{Index}.png for example to have the background for muxlaunch randomly selected you would name the images: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png...                                                                                                                                                                          |
+| CONTENT_SIZE_TO_CONTENT=0 | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.                                                                                                                                                                                                                                                                                                                                                         |
+| CONTENT_ALIGNMENT=0       | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.                                                                                                                                                                                                                                                                      |
 | CONTENT_ITEM_COUNT=13     | Number of list items displayed in content panel. This setting along with CONTENT_HEIGHT to determine the height of each item. For example if CONTENT_HEIGHT = 300 and CONTENT_ITEM_COUNT = 10 then each item will be 30px tall. The first 28px will be used to display the item followed by a 2px gap. <br> **Note:** This field has a minimum value of 5 and a maximum value of 13. The value set here also controls paging up and down in the list. |
-| CONTENT_ITEM_HEIGHT=0     | Sets a static height for each list item.  If used number of items will be calculated based CONTENT_HEIGHT size.  **Note:** Should only be used if not using CONTENT_ITEM_COUNT |
-| CONTENT_PADDING_LEFT=0    | Number of pixels from screen left to list items. Commonly on 0. |
-| CONTENT_PADDING_TOP=0     | Number of pixels from screen top to list items.  <br> **Note:** By default the list is positioned based on header height + 2px. With a default header height of 42px the list will start 44px from the top in order for it to be past the header.  If you want the content list to take up the full screen you can use a value of -44 here.  If your header height is larger you would need to adjust accordingly. |
-| CONTENT_HEIGHT=392        | Adjust the height of the content panel by pixels.  (Minimum value = 100 Maximum value = Device Screen Height) |
-| CONTENT_WIDTH=640         | Adjust the width of list item content by horizontal pixels. |
-| NAVIGATION_TYPE=0         | 0: For vertical (up/down) navigation. <br>1: For horizontal (left/right). <br>2: For launch menu with two rows of 4 icons. (left/right/up/down)<br>3: For launch menu with two rows of icons. Top row has 3 icons and bottom row has 5 icons. (left/right/up/down) <br>4: Same as 2 except that left/right wraps around on the active row. <br>5: Same as 3 except that left/right wraps around on the active row. |
-| STATIC_ALIGNMENT=0        | Controls layering and position of static images with other elements. See below for details. |
-| IMAGE_OVERLAY=0           | Do you want to use an overlay .png image? 0 is no. 1 is yes. |
-| ANTIALIASING=1            | Apply atialieasing to fonts <br>0 = Disabled<br>1 = Enabled |
+| CONTENT_ITEM_HEIGHT=0     | Sets a static height for each list item.  If used number of items will be calculated based CONTENT_HEIGHT size.  **Note:** Should only be used if not using CONTENT_ITEM_COUNT                                                                                                                                                                                                                                                                        |
+| CONTENT_PADDING_LEFT=0    | Number of pixels from screen left to list items. Commonly on 0.                                                                                                                                                                                                                                                                                                                                                                                       |
+| CONTENT_PADDING_TOP=0     | Number of pixels from screen top to list items.  <br> **Note:** By default the list is positioned based on header height + 2px. With a default header height of 42px the list will start 44px from the top in order for it to be past the header.  If you want the content list to take up the full screen you can use a value of -44 here.  If your header height is larger you would need to adjust accordingly.                                    |
+| CONTENT_HEIGHT=392        | Adjust the height of the content panel by pixels.  (Minimum value = 100 Maximum value = Device Screen Height)                                                                                                                                                                                                                                                                                                                                         |
+| CONTENT_WIDTH=640         | Adjust the width of list item content by horizontal pixels.                                                                                                                                                                                                                                                                                                                                                                                           |
+| NAVIGATION_TYPE=0         | 0: For vertical (up/down) navigation. <br>1: For horizontal (left/right). <br>2: For launch menu with two rows of 4 icons. (left/right/up/down)<br>3: For launch menu with two rows of icons. Top row has 3 icons and bottom row has 5 icons. (left/right/up/down) <br>4: Same as 2 except that left/right wraps around on the active row. <br>5: Same as 3 except that left/right wraps around on the active row.                                    |
+| STATIC_ALIGNMENT=0        | Controls layering and position of static images with other elements. See below for details.                                                                                                                                                                                                                                                                                                                                                           |
+| IMAGE_OVERLAY=0           | Do you want to use an overlay .png image? 0 is no. 1 is yes.                                                                                                                                                                                                                                                                                                                                                                                          |
+| ANTIALIASING=1            | Apply atialieasing to fonts <br>0 = Disabled<br>1 = Enabled                                                                                                                                                                                                                                                                                                                                                                                           |
 
 Static Alignment Values
 

@@ -8,7 +8,7 @@ nav_order: 2
 has_toc: false
 ---
 
-# muOS 2405 BEANS
+# MustardOS 2405 BEANS
 ## Download
 _This release is now archived._
 ```

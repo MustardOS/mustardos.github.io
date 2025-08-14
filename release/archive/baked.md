@@ -8,7 +8,7 @@ nav_order: 4
 has_toc: false
 ---
 
-# muOS 2405.2 BAKED BEANS
+# MustardOS 2405.2 BAKED BEANS
 ## Download
 _This release is now archived._
 ```
@@ -23,9 +23,9 @@ Add the ``muOS-2405.2-BAKED.zip`` file to either SD1, SD2, or USB in the ``ARCHI
 
 ## MAKE SURE TO REBOOT AFTER INSTALL
 
-## Support muOS
-If you like using muOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!  
-[Support muOS via Ko-fi](https://ko-fi.com/xonglebongle)
+## Support MustardOS
+If you like using MustardOS and would like to see it grow, and potentially support more devices, feel free to give a tip or subscribe and get access to extra goodies within our Discord server!  
+[Support MustardOS via Ko-fi](https://ko-fi.com/xonglebongle)
 
 ## Important
 This update will render existing favourite and history entries useless.  An internal change has been made to ensure that favourites and history will always use the current core configuration set.  They are no longer singular launch files.  Please ensure you clear these out by using the task toolkit options.

@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 2410.2 BIG BANANA
+# MustardOS 2410.2 BIG BANANA
 
 #### _Pronunciation_
 /bɪɡ bəˈnæn.ə/
@@ -24,21 +24,21 @@ has_toc: false
 [Download from MEGA](https://mega.nz/folder/MzhHVIoC#4imi8wesThvpqLK6jhxojg){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .highlight }
-> If you have alternative storage support please reach out to @xonglebongle on the muOS Community Discord server!
+> If you have alternative storage support please reach out to @xonglebongle on the MustardOS Community Discord server!
 >
 > So everybody is aware, MEGA has restrictions on certain countries and places a download limit. Use either Gofile or
 > the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
 > people might be thinking.  _The absurdity..._
 
-## Support muOS
+## Support MustardOS
 
-Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
+Love MustardOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
 **This can be done a few ways:**
 
 - Be helpful around the Discord community server
 - [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-- Spread the word about muOS and all its features
+- Spread the word about MustardOS and all its features
 
 **Or you can join the testing crew directly by:**
 
@@ -50,7 +50,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 {: .highlight }
 > The update requires you to already have 2410.1 BANANA already setup and installed on your device.
 >
-> Using modified muOS installations or previous versions may have strange or breaking outcomes.
+> Using modified MustardOS installations or previous versions may have strange or breaking outcomes.
 >
 > You can download the full image from the links above and start fresh!
 
@@ -160,7 +160,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
   and [Reddit Link](https://old.reddit.com/r/EmulationOnAndroid/comments/1csvtic/pro_tip_do_not_use_the_multithreaded_renderer_in/)
 - Disabled SDL blitter to fix YabaSanshiro flickering
 - Enabled core option categories
-- Enabled core updater with muOS core builder URL
+- Enabled core updater with MustardOS core builder URL
 - Enabled PICO-8 to respect modern/retro control flag
 - Factored idle logic to common script and inhibited idle during `ffplay` video playback
 - Fixed advanced artwork config for favourite and history box art display
@@ -234,7 +234,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 - Removed L3 Binding from devices without analogues
 - Removed loading of network profile when network is active
 - Removed naming of visible/hidden in favour of enabled/disabled
-- Removed older muOS default themes
+- Removed older MustardOS default themes
 - Removed storage vars that are now unused
 - Removed `sync_storage.sh` after storage mount updates
 - Removed theme max item count

@@ -8,7 +8,7 @@ has_children: true
 has_toc: true
 ---
 
-## Overview of All Available Cores in muOS
+## Overview of All Available Cores in MustardOS
 
 The default option for each system has been ***marked***.
 

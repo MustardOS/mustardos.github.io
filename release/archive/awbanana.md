@@ -8,7 +8,7 @@ nav_order: 1
 has_toc: false
 ---
 
-# muOS 2410.3 AW BANANA
+# MustardOS 2410.3 AW BANANA
 
 #### _Pronunciation_
 /ˌeɪ ˈdʌb.l̩.juː bəˈnæn.ə/
@@ -36,7 +36,7 @@ has_toc: false
 <hr>
 
 {: .note }
-> If you have alternative storage support please reach out to **xonglebongle** on the muOS Community Discord server!
+> If you have alternative storage support please reach out to **xonglebongle** on the MustardOS Community Discord server!
 >
 > So everybody is aware, MEGA has restrictions on certain countries and places a download limit. Use either Gofile or
 > the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
@@ -44,15 +44,15 @@ has_toc: false
 
 <hr>
 
-## Support muOS
+## Support MustardOS
 
-Love muOS? Want to help us on this **crazy** journey? Here's how to get involved.
+Love MustardOS? Want to help us on this **crazy** journey? Here's how to get involved.
 
 **This can be done a few ways:**
 
 * Be helpful around the Discord community server
 * [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-* Spread the word about muOS and all its features
+* Spread the word about MustardOS and all its features
 
 **Or you can join the testing crew directly by:**
 
@@ -65,7 +65,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 {: .new }
 > The update requires you to already have **2410.1 BANANA** or **2410.2 BIG BANANA** already setup and installed
-> on your device. Using modified muOS installations or previous versions may have strange or breaking outcomes.
+> on your device. Using modified MustardOS installations or previous versions may have strange or breaking outcomes.
 
 {: .important }
 > * To get the most benefit out of this release you will **need to reflash!**
@@ -121,7 +121,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed RG35XX-SP charging and sleep conflict issue
 * Fixed ScummVM launch script getting stuck with trailing spaces
 * Fixed virtual terminal service saving
-* Modified `fastfetch` information with muOS logo
+* Modified `fastfetch` information with MustardOS logo
 * Modified GPU maximum frequency
 * Moved low power indicator and RetroArch precache to after charge mode
 * Obtain output resolution for HDMI modes

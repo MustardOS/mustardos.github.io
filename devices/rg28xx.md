@@ -16,7 +16,7 @@ has_toc: false
 
 ### Wifi Support
 Currently Wi-Fi support is only via USB adapters using to 8188eu chipset.  
-To enable it, install this file via muOS Archive Manager.  
+To enable it, install this file via MustardOS Archive Manager.  
 [Enable 8188eu Wi-Fi](../assets/files/Enable_8188eu_28xx.zip)
 
 ## Offical Store Page

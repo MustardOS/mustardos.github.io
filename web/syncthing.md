@@ -73,7 +73,7 @@ recognizing a new device on network, add it in by clicking "Add Device", pick a 
 ![PC Add Device](assets/images/add_device.png)
 
 At this point you added MustardOS in PC, but on PC's "Remove Devices" section you would see "muos" showing as "
-Disconnected(Unused). Now you need to add PC in MustardOS
+Disconnected(Unused)". Now you need to add PC in MustardOS.
 
 ### 2.1 Add PC to MustardOS's Syncthing
 

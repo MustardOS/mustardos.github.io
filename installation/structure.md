@@ -1,13 +1,13 @@
 ---
 layout: default
-title: muOS Structure
+title: MustardOS Structure
 permalink: /installation/structure
 nav_order: 6
 parent: Installation
 has_children: false
 ---
 
-# muOS Folder Structure
+# MustardOS Folder Structure
 
 This is a quick rundown of the structure of SD1 `/mnt/mmc`
 

@@ -8,19 +8,19 @@ has_children: false
 ---
 
 ## Requirements
-- This guide is designed for all previous version of muOS
+- This guide is designed for all previous version of MustardOS
 
-## Can I directly upgrade over the top of muOS Banana/Beans/ETC?
+## Can I directly upgrade over the top of MustardOS Banana/Beans/ETC?
 No. You must perform a full flash as there is significant changes that will not be able to apply without the full build.
 
 ## Migrating Data
 The answer to this dilemma is migrating all of your user data to SD Card 2.  
-Starting with muOS Banana you can store saves, configs, artwork, bios and more on SD2.
+Starting with MustardOS Banana you can store saves, configs, artwork, bios and more on SD2.
 
 To faciliate this migration please navigate to Applications > Task Toolkit and run **Migrate to SD2**
 
 ## What does it migrate to SD2?
-The migrate script will **copy** (not move) the following to SD2 into a location usable by muOS Banana
+The migrate script will **copy** (not move) the following to SD2 into a location usable by MustardOS Banana
 The script also exists in Banana and is used to move to a 2 SD Card setup.
 - BIOS
 - Catalogue (Artwork)
@@ -38,5 +38,5 @@ Once the script is completed you will be able to navigate to Configuration > Sto
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
-  <meta itemprop="name" content="muOS - Custom Firmware"/>
+  <meta itemprop="name" content="MustardOS - Custom Firmware"/>
 </div>

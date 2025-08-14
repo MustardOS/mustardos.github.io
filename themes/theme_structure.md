@@ -103,17 +103,21 @@ above show off the amount of possible customisation available.
 - **scheme** - The brain of the theme. This file will tell your device how windows and text should appear per program,
   and will also
   tell your device how to use the files you have dropped into your image folder.
-- **sound** - These folders will contain files heard during your time in the muOS menus.
+- **sound** - These folders will contain files heard during your time in the MustardOS menus.
 
-Themes can support multiple device resolutions by including resolution-specific folders (e.g., `640x480`, `720x480`).  Each resolution folder can contain subfolders such as `font`, `image`, `scheme`, and `glyph`.
+Themes can support multiple device resolutions by including resolution-specific folders (e.g., `640x480`, `720x480`).
+Each resolution folder can contain subfolders such as `font`, `image`, `scheme`, and `glyph`.
 
-When a device resolution matches a folder, muOS will use the content from that specific resolution folder.
+When a device resolution matches a folder, MustardOS will use the content from that specific resolution folder.
 
-To ensure muOS can detect the resolutions a theme can support, it is essential to create a subfolder for each resolution your theme is designed to support.
+To ensure MustardOS can detect the resolutions a theme can support, it is essential to create a subfolder for each
+resolution your theme is designed to support.
 
-For shared resources across all resolutions, you can place them in the root (outside of the resolution subfolder) of the theme. For example, if all resolutions will use the same fonts and glyphs, you can create a `font` and `glyph` folder(s) in the root directory.
+For shared resources across all resolutions, you can place them in the root (outside of the resolution subfolder) of the
+theme. For example, if all resolutions will use the same fonts and glyphs, you can create a `font` and `glyph` folder(s)
+in the root directory.
 
-The default muOS theme is a good example of what can be done on a basic theme level.
+The default MustardOS theme is a good example of what can be done on a basic theme level.
 
 # Theme Folder Structure Glyphs
 
@@ -447,13 +451,13 @@ LIST_FOCUS_GLYPH_ALPHA=0
 
 # Program Names
 
-muOS has numerous programs, so they are individually named so that you Themers can set different properties for every
-single page if you so wish to do so! Anything named ```default.xxx``` in the above folder structure can be renamed
+MustardOS has numerous programs, so they are individually named so that you Themers can set different properties for
+every single page if you so wish to do so! Anything named ```default.xxx``` in the above folder structure can be renamed
 to  ```mux...``` to apply ideas to single pages.
 
 You can also set images to appear for individual list items (see the files above under `./image/static/muxlaunch/`.
-> *Caution - as muOS is a constantly updating system, there is a high chance that in time, list items will be added or
-removed from sections. Be wary of this when creating graphics that show all the options for a program.*
+> *Caution - as MustardOS is a constantly updating system, there is a high chance that in time, list items will be added
+or removed from sections. Be wary of this when creating graphics that show all the options for a program.*
 
 Check out the updated naming conventions of all modules below;
 
