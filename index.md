@@ -6,8 +6,10 @@ nav_order: 1
 has_children: true
 ---
 
-# Welcome to muOS
-muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, themeable, friendly, easy-to-use.
+# Welcome to MustardOS
+
+MustardOS (muOS) is a Custom Firmware (CFW) primarily for handheld devices. Configurable, themeable, friendly,
+easy-to-use.
 {: .fs-6 .fw-300 }
 
 [Download Latest Here](release/current/pixie){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
@@ -19,24 +21,28 @@ muOS is a Custom Firmware (CFW) primarily for handheld devices.  Configurable, t
 ***
 
 # Socials
+
 [Instagram](https://instagram.com/muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Twitter/X](https://x.com/@_mustardOS){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ***
 
 # Community
+
 [Discord](https://discord.gg/muos){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Forums](https://community.muos.dev/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ***
 
 ## About
+
 This all started out as a personal hobby project and it has exponentially grown into an awesome community which
-I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort. 
+I am super thankful to have. It is built with simplicity in mind to play your favourite games with little effort.
 We hope this custom firmware brings you as much enjoyment as we've had developing it.
 
 ## Features
-One of the main features of muOS is how easy it is to get it set up and running. Just like other CFWs all you have
+
+One of the main features of MustardOS is how easy it is to get it set up and running. Just like other CFWs all you have
 to do is use your favourite image flash program to install it on your SD Card. Put the SD Card into your handheld,
 turn it on, and it will take care of the rest.
 
@@ -67,13 +73,13 @@ turn it on, and it will take care of the rest.
 
 ### LED Hotkeys
 
-| Type                    | Control                  |
-|:------------------------|:-------------------------|
-| Change Mode             | MENU + R3                |
-| Increase Brightness     | MENU + Right Stick Up    |
-| Decrease Brightness     | MENU + Right Stick Down  |
-| Previous Colour         | MENU + Right Stick Left  |
-| Next Colour             | MENU + Right Stick Right |
+| Type                | Control                  |
+|:--------------------|:-------------------------|
+| Change Mode         | MENU + R3                |
+| Increase Brightness | MENU + Right Stick Up    |
+| Decrease Brightness | MENU + Right Stick Down  |
+| Previous Colour     | MENU + Right Stick Left  |
+| Next Colour         | MENU + Right Stick Right |
 
 {: .note }
 > Exchange right stick for left stick on the RG40XX-V device.
@@ -92,14 +98,14 @@ turn it on, and it will take care of the rest.
 | Anbernic RG40XX V    |
 | Anbernic RGCUBEXX    |
 
-| In Development       |
-|:---------------------|
-| Trimui Smart Pro     |
-| Trimui Brick         |
-| Anbernic RG34XX SP   |
-| Anbernic RG35XX PRO  |
-| Magic Zero28         |
-| H36S                 |
+| In Development      |
+|:--------------------|
+| Trimui Smart Pro    |
+| Trimui Brick        |
+| Anbernic RG34XX SP  |
+| Anbernic RG35XX PRO |
+| Magic Zero28        |
+| H36S                |
 
 | Limited            |
 |:-------------------|
@@ -110,7 +116,6 @@ turn it on, and it will take care of the rest.
 | Anbernic ARC-D    |
 | Game Kiddy Bubble |
 | MagicX XU Mini28  |
-
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
