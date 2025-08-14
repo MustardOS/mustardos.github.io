@@ -41,6 +41,15 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 <hr>
 
+## Fun Facts
+
+* There are over **500** changes with **20** contributors
+* This release took over **6 months** of hard work
+* Rotated screens are still **annoying** as ever
+* The goose is a highly social animal and is often seen in large groups known as flocks or gaggles. They have a strong
+  sense of community and rely on their flock for protection, foraging, and navigation during migration. They communicate
+  with each other through a variety of vocalizations, including honking and hissing sounds.
+
 ## Contributors
 
 * acmeplus
@@ -66,6 +75,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 
 ## Changes
 
+* Added Activity Tracker to backup options
 * Added additional checks for union mounting
 * Added additional dangerous options
 * Added additional date time setting safety checks
@@ -84,9 +94,11 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added blank overlay due to weird RetroArch performance delay
 * Added boot logo package installer
 * Added box art layering to shared function
+* Added brightness clamping to potentially fix brightness drops in general settings
 * Added cached navigation sounds
 * Added catalogue match check script
 * Added channel information to network detail module
+* Added charger specific check to blank LCD
 * Added check for display suspend option for LCD toggle
 * Added check for in use theme resources
 * Added check for navigation for less than 2 items on screen
@@ -107,19 +119,26 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added device lid switch toggle to advanced options
 * Added device module script with (un)load methods
 * Added device RGB light toggle to general settings
+* Added device specific RetroArch global shaders
 * Added direct audio mute upon halt
+* Added directory slash detection for skip file
 * Added directory support to task toolkit
 * Added disclaimer on first install
 * Added display suspend variable to advanced settings
 * Added Drastic layout files for Brick
+* Added dynamic `gamecontrollerdb.txt` scheme support
 * Added `error` sound to collection error
 * Added "External" option to Device Backup
 * Added fallback collection export template
 * Added fallback for input hold handling
+* Added file locking to brightness script
+* Added filtering to theme downloader
 * Added first install disclaimer module
+* Added forced reset brightness
 * Added friendly association pointers to assign files
 * Added frontend stop/start function to global
 * Added full refresh option to display initialisation
+* Added `gamecontrollerdb.txt` scheme to backup and storage modules
 * Added Geolith core override
 * Added getting ready message on first init
 * Added global governor deletion on change
@@ -183,16 +202,24 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added play sound to global functions
 * Added playtime track data to bind mount
 * Added PPSSPP Restore Config Task Toolkit Script
+* Added preset launch swap variable
 * Added quotes around RetroArch config variable for device specific control
 * Added reboot and shutdown messages for themes without splashes
 * Added reboot and shutdown sounds
 * Added reboot/shutdown sounds to default share
+* Added removal of charger bright temp file on charger exit
 * Added reset button usage warning
 * Added reset DPAD switch on content exit for TUI devices
+* Added RetroArch config freedom check
+* Added RetroArch configuration freedom to advanced settings
+* Added RetroArch menu toggle on suspend and resume
+* Added RGB config check for alternative theme switch
 * Added routine to stop rumble motor on content quit
 * Added RTC frequency change to startup
 * Added SAFE_QUIT global definition
+* Added save state launch swap toggle
 * Added saving messages to configurable modules
+* Added scaling to theme downloader previews
 * Added SDL and RA environment setup functions
 * Added SDL cleanup to independent modules
 * Added secondary and external partition mount option in advanced settings
@@ -211,8 +238,10 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Added system core and governor to options menu on content only
 * Added target backup storage option
 * Added terminal resource loader and optimised `run_exec` function for terminal loading
-* Added times launched to content options info panel
+* Added theme downloader module
+* Added theme downloader to kiosk module and added device network check
 * Added time played to content options
+* Added times launched to content options info panel
 * Added TrimUI DPAD swap mechanism
 * Added TrimUI specific PPSSPP emulator
 * Added `ui_count` checks on navigation
@@ -226,6 +255,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Adjusted device hotkeys
 * Adjusted device specific startup scripts
 * Adjusted help handler with fixed info box sound
+* Adjusted LVGL colour mixing and gradient settings
 * Adjusted random selection function to use `ui_count` on selected index
 * Adjusted SSID scan log message
 * Adjust existing drastic-trngaje device configurations
@@ -323,6 +353,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed pivot point if pivot specific doesn't exist
 * Fixed playing sound on no content
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
+* Fixed PPSSPP modern controls and adapted SDL environment with priority control scheme switching
 * Fixed purging of SDL mapper due to symlinking
 * Fixed RetroArch auto saving/loading for resume/last device boot
 * Fixed RG34XX-SP configuration specifics
@@ -347,12 +378,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Fixed static list navigation functions
 * Fixed storage migration and sync scripts
 * Fixed storage module init values
+* Fixed suspend state with RetroArch
 * Fixed system core assignment files
 * Fixed theme backwards compatibility
 * Fixed theme installer on usage error
 * Fixed theme resolution with themes that do not support all resolutions
 * Fixed theme scaling
 * Fixed theme version check
+* Fixed Toggle Ethernet to reflect correct operstate
 * Fixed TrimUI analogue swap
 * Fixed TrimUI device input
 * Fixed TrimUI device min/max frequency pointer key
@@ -431,6 +464,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Moved viewport refresh and directory item count functions to shared file
 * Optimised brightness and volume scripts
 * Optimised collection navigation bar generation routine
+* Optimised content index shuffling
 * Optimised datetime RTC module
 * Optimised default RetroArch global config
 * Optimised list navigation functions
@@ -506,12 +540,14 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated built in fonts to TTF
 * Updated Cave Story launch script
 * Updated 'Clear Favorites' to 'Clear Collections' in Task Toolkit
+* Updated Clear System Cache Task
 * Updated core and governor assignment fix
 * Updated current index is set before terminal execution
 * Updated default `muterm` font size
 * Updated default theme with larger font for reboot/shutdown images
 * Updated diagnostics task toolkit script
 * Updated diagnostics to grab kiosk files
+* Updated Drastic-trngaje libraries
 * Updated extraction script to use frontend function
 * Updated factory reset routine
 * Updated factory reset scripts for new muX procedures
@@ -542,7 +578,7 @@ Love muOS? Want to help us on this **crazy** journey? Here's how to get involved
 * Updated RetroArch to 1.21.0
 * Updated RG34XX-SP SDL control mapping
 * Updated ScummVM launch script
-* Updated SDL gamecontrollerdb controls
+* Updated SDL `gamecontrollerdb.txt` controls
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
 * Updated thermal setting to be in reverse setting
