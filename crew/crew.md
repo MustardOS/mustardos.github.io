@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Team
+title: The Crew
 permalink: /crew
 nav_enabled: true
 nav_order: 2
