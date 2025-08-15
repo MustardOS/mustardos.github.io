@@ -164,6 +164,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added LCD display toggle on brightness
 * Added left/right footer navigation glyph for options
 * Added live listen support to message module
+* Added loading message to custom module sub menus
 * Added logic in `halt.sh` to gracefully shut down Syncthing
 * Added LR glyphs to default theme
 * Added Ludicrous N64 core to `extra` repo
@@ -296,6 +297,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed customisation menu nav items
 * Fixed customisation module with theme alternates
 * Fixed default theme LED scripts
+* Fixed delayed custom module modification saving
 * Fixed DPAD switch variable error in hotkey
 * Fixed entering date time module
 * Fixed existing device RA key duplication
@@ -423,6 +425,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Modified scope of grid element to focused and unfocused events
 * Modified ScummVM launch script to use `gameid`
 * Modified storage mount to use user defined kernel tuning variables
+* Modified theme preview images to scale by device resolution
 * Modified volume and brightness bar behaviour
 * Moved `assign.json` to inside assign directory
 * Moved back to `alsathread` instead of `pipewire` for RetroArch audio driver
@@ -579,6 +582,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated RG34XX-SP SDL control mapping
 * Updated ScummVM launch script
 * Updated SDL `gamecontrollerdb.txt` controls
+* Updated `skip.ini` to exclude Disc and Track files
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
 * Updated thermal setting to be in reverse setting
