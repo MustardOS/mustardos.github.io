@@ -272,6 +272,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed adding to collections from history
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
+* Fixed Archive Manager loading after installing theme
 * Fixed assign core and governor modules
 * Fixed assign global name to match directory
 * Fixed assign system information
@@ -357,6 +358,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
 * Fixed PPSSPP modern controls and adapted SDL environment with priority control scheme switching
 * Fixed purging of SDL mapper due to symlinking
+* Fixed restoring folder index theme picker
 * Fixed RetroArch auto saving/loading for resume/last device boot
 * Fixed RG34XX-SP configuration specifics
 * Fixed RGB lights displaying after low power warning whilst in idle mode
@@ -384,6 +386,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed system core assignment files
 * Fixed theme backwards compatibility
 * Fixed theme installer on usage error
+* Fixed theme picker showing preview on folders and download option
 * Fixed theme resolution with themes that do not support all resolutions
 * Fixed theme scaling
 * Fixed theme version check
@@ -548,6 +551,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated current index is set before terminal execution
 * Updated default `muterm` font size
 * Updated default theme with larger font for reboot/shutdown images
+* Updated default theme with new Lineicons
 * Updated diagnostics task toolkit script
 * Updated diagnostics to grab kiosk files
 * Updated Drastic-trngaje libraries
@@ -583,6 +587,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated ScummVM launch script
 * Updated SDL `gamecontrollerdb.txt` controls
 * Updated `skip.ini` to exclude Disc and Track files
+* Updated Syncthing to 2.0.2
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
 * Updated thermal setting to be in reverse setting
