@@ -75,6 +75,10 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 
 ## Changes
 
+### Added
+
+<details>
+
 * Added Activity Tracker to backup options
 * Added additional checks for union mounting
 * Added additional dangerous options
@@ -252,28 +256,13 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added `ui_count` checks on navigation
 * Added wait for interface before MAC change and store MAC value
 * Added XRoar Tandy TRS-80 color computer emulator to extra
-* Adjust 1024x768 default scheme Y position for messages
-* Adjusted archive creation logic to handle multiple files and directories for external sources
-* Adjusted charging logic
-* Adjusted content information to shared common function
-* Adjusted default Drastic input mappings for Brick
-* Adjusted device hotkeys
-* Adjusted device specific startup scripts
-* Adjusted help handler with fixed info box sound
-* Adjusted LVGL colour mixing and gradient settings
-* Adjusted random selection function to use `ui_count` on selected index
-* Adjusted SSID scan log message
-* Adjust existing drastic-trngaje device configurations
-* Bypass charging mode if device is in console mode
-* Centralised device dimension variable
-* Changed input tester due to hotkey change
-* Changed mGBA default governor to `ondemand`
-* Default to sharp bilinear simple shader
-* Disable shutting off CPU cores on TrimUI devices
-* Enhance backup script with external source handling
-* Ensure blank element does not exist if not on zero brightness
-* Ensure compatibility for future apps
-* Factory reset improvements with rsync changes and progress integer validation
+
+</details>
+
+### Fixed
+
+<details>
+
 * Fixed A<>B X<>Y remapping for control schemes
 * Fixed adding to collections from history
 * Fixed additional sleep calls
@@ -409,6 +398,35 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed UI count in network module
 * Fixed USB connection version point
 * Fixed wrong width on Applications and Task Toolkit screens when using LOTE
+
+</details>
+
+### Optimised
+
+<details>
+
+* Adjusted 1024x768 default scheme Y position for messages
+* Adjusted archive creation logic to handle multiple files and directories for external sources
+* Adjusted charging logic
+* Adjusted content information to shared common function
+* Adjusted default Drastic input mappings for Brick
+* Adjusted device hotkeys
+* Adjusted device specific startup scripts
+* Adjusted help handler with fixed info box sound
+* Adjusted LVGL colour mixing and gradient settings
+* Adjusted random selection function to use `ui_count` on selected index
+* Adjusted SSID scan log message
+* Adjust existing drastic-trngaje device configurations
+* Bypass charging mode if device is in console mode
+* Centralised device dimension variable
+* Changed input tester due to hotkey change
+* Changed mGBA default governor to `ondemand`
+* Default to sharp bilinear simple shader
+* Disable shutting off CPU cores on TrimUI devices
+* Enhance backup script with external source handling
+* Ensure blank element does not exist if not on zero brightness
+* Ensure compatibility for future apps
+* Factory reset improvements with rsync changes and progress integer validation
 * Improved error handling for missing destination paths and source validation
 * Included missing stat header to appease the compiler
 * Merged content and help information box functions
@@ -508,6 +526,23 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Refactor Syncthing scan logic and improve shutdown
 * Refactor to allow loading content from root
 * Reformatted factory reset logic
+* Rename global fallback friendly file name
+* Replaced `fbpad` with `muterm`
+* Replaced `rsync` copy with itemised file list method for factory reset
+* Replaced silence WAVE with OGG
+* Reset time on timezone change at factory reset
+* Reverted back to current item index due to grid layout
+* Reverted progress method back to separate piped function
+* Reverted `ripgrep` binary
+* Reworked UI/UX for network information upon editing values
+* Unload kernel modules on halt and suspend
+
+</details>
+
+### Removed
+
+<details>
+
 * Removed animated background option from custom module
 * Removed animations and static images
 * Removed any active theme terminal fonts before installing a new theme
@@ -542,18 +577,15 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Removed unneeded shared variables
 * Removed verbose message option
 * Removed waking display backlight just to power off
-* Remove extraneous compiler stubs
-* Remove newlines from configuration pointers
-* Rename global fallback friendly file name
-* Replaced `fbpad` with `muterm`
-* Replaced `rsync` copy with itemised file list method for factory reset
-* Replaced silence WAVE with OGG
-* Reset time on timezone change at factory reset
-* Reverted back to current item index due to grid layout
-* Reverted progress method back to separate piped function
-* Reverted `ripgrep` binary
-* Reworked UI/UX for network information upon editing values
-* Unload kernel modules on halt and suspend
+* Removed extraneous compiler stubs
+* Removed newlines from configuration pointers
+
+</details>
+
+### Updated
+
+<details>
+
 * Updated and improved credits module
 * Updated archive icons for default theme
 * Updated assign files to remove invalid characters
@@ -612,3 +644,5 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated thermal setting to be in reverse setting
 * Updated unknown module handling
 * Updated XRoar system support INI files
+
+</details>
