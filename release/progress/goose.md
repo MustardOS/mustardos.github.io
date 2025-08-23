@@ -41,11 +41,25 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 
 <hr>
 
+## Support Development Crew
+
+We are a small lead team and with your generous support we can hopefully grow and spread some of that sweet MustardOS
+across other devices. So if you can help out the following MustardOS development crew:
+
+### AntiKk - https://buymeacoffee.com/antikk
+
+### Corey - https://ko-fi.com/cmclark00
+
+### Bitter Bizarro - https://ko-fi.com/bitterbizarro
+
+<hr>
+
 ## Fun Facts
 
-* There are over **500** changes with **20** contributors
-* This release took over **6 months** of hard work
+* There are over **500** changes with **21** contributors
+* This release took over **6 months** of hard work and dedication
 * Rotated screens are still **annoying** as ever
+* Compiling specific emulators _still_ suck...
 * The goose is a highly social animal and is often seen in large groups known as flocks or gaggles. They have a strong
   sense of community and rely on their flock for protection, foraging, and navigation during migration. They communicate
   with each other through a variety of vocalizations, including honking and hissing sounds.
@@ -84,7 +98,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added additional date time setting safety checks
 * Added additional logging to frontend start
 * Added additional navigation sounds
-* Added additional "Wi-Fi Enable" scripts for RG28XX-H and RG35XX-2024 devices
+* Added additional "Wi-Fi Enable" scripts to Task Toolkit
 * Added additional zram and swap values
 * Added assigned core information to launch pointers
 * Added audio initialisation retry
@@ -99,7 +113,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added blitter skipping to SDL environment export
 * Added boot logo package installer
 * Added box art layering to shared function
-* Added brightness clamping to potentially fix brightness drops in general settings
+* Added brightness clamping to potentially fix drops in general settings
 * Added cached navigation sounds
 * Added catalogue match check script
 * Added channel information to network detail module
@@ -113,7 +127,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added collection modification toggles to kiosk mode
 * Added comparison check for idle display and idle sleep in power settings
 * Added config and device variable collection to diagnostics
-* Added content collection export task toolkit script
+* Added content collection export Task Toolkit script
 * Added content control scheme mapping functionality
 * Added content launch override script support
 * Added content loader handler to ignore RetroArch auto load
@@ -128,7 +142,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added device specific RetroArch global shaders
 * Added direct audio mute upon halt
 * Added directory slash detection for skip file
-* Added directory support to task toolkit
+* Added directory support to Task Toolkit
 * Added disclaimer on first install
 * Added display suspend variable to advanced settings
 * Added Drastic layout files for Brick
@@ -182,14 +196,13 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added LR glyphs to default theme
 * Added Ludicrous N64 core to `extra` repo
 * Added MAC retrieval from interface otherwise from stored MAC
-* Added main menu launch to mux modules
 * Added main menu launch to muX modules
 * Added manual loading to collections and history
 * Added menu short release combo to hotkey reader
 * Added method to hide storage menu item if SD2 is not present
 * Added method to refresh config on save
 * Added method to reload network module before connection
-* Added method to skip last play if frontend module is specified outside of default start
+* Added method to skip last play if specified outside of default start
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
 * Added missing names to the lookup tables
 * Added modified GPU parameters to TUI devices
@@ -200,7 +213,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added `muxbackup` to idle inhibit
 * Added `mux_dimension` to device init
 * Added navigation glyphs to help screens
-* Added network check for core download
+* Added network check for download modules
 * Added network profile hostname entry support
 * Added network reconnecting from suspend
 * Added network throughput statistics
@@ -218,6 +231,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added play sound to global functions
 * Added playtime track data to bind mount
 * Added PPSSPP Restore Config Task Toolkit Script
+* Added pre and post launch configurable scripts
 * Added preset launch swap variable
 * Added program to list writable module parameters
 * Added quotes around RetroArch config variable for device specific control
@@ -250,13 +264,14 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Added support for devices that treat DPAD as buttons
 * Added support for `EV_ABS` for TrimUI shoulder buttons
 * Added support for RGB light toggle
-* Added Syncthing auto-scan toggle and add back API calls to launch and quit scripts
+* Added Syncthing API calls to launch and quit scripts
+* Added Syncthing auto-scan toggle
 * Added sync to config changes
 * Added system core and governor to options menu on content only
 * Added target backup storage option
-* Added terminal resource loader and optimised `run_exec` function for terminal loading
+* Added terminal resource loader
 * Added theme downloader module
-* Added theme downloader to kiosk module and added device network check
+* Added theme downloader to kiosk module
 * Added time played to content options
 * Added times launched to content options info panel
 * Added TrimUI DPAD swap mechanism
@@ -272,7 +287,8 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed adding to collections from history
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
-* Fixed archive manager and task toolkit loader
+* Fixed application menu reloading
+* Fixed Archive Manager and Task Toolkit loader
 * Fixed Archive Manager loading after installing theme
 * Fixed assign core and governor modules
 * Fixed assign global name to match directory
@@ -280,7 +296,11 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed automatic assign JSON
 * Fixed `back` sound not playing on custom exit
 * Fixed battery charging module
+* Fixed bar values getting in the way of outside modules
+* Fixed box art not loading for the first item
+* Fixed brightness bar not displaying in some instances
 * Fixed brightness combo glyph interpretation
+* Fixed brightness setting randomly decreasing
 * Fixed broken screenshots on RG28XX-H device
 * Fixed built-in application loader for LOTE
 * Fixed catalogue entries
@@ -293,6 +313,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed collection adding and internal name lookup
 * Fixed collection screen navbar
 * Fixed content being displayed all lower case
+* Fixed content help glyphs being hidden
 * Fixed content loading for control schemes
 * Fixed copy paste whoopsie with RG40XX-H start script
 * Fixed core assignment builder to obtain assign system
@@ -307,11 +328,16 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed external PPSSPP controls
 * Fixed factory reset LED lights
 * Fixed factory reset theme font location
+* Fixed fallback to catalogue name for `Folder` box art
+* Fixed footer element centering
+* Fixed freeing of playtime JSON data
 * Fixed freeze when device startup set to history
 * Fixed freeze with scrolling text
 * Fixed freezing issue collecting content with no assigned system
 * Fixed frontend taking care of used reset
+* Fixed getting stuck in grid mode
 * Fixed glyph icon spelling
+* Fixed glyph padding for folder labels on the search screen
 * Fixed governor change on loading
 * Fixed halt verbose messages
 * Fixed HDMI resolution count
@@ -319,21 +345,6 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed INI files for XRoar coco3 and dragon machines
 * Fixed installing theme while theme music playing
 * Fixed internal display check function
-* Fixed issue getting stuck in grid mode
-* Fixed issue installing themes
-* Fixed issue loading wallpapers
-* Fixed issue reloading application menu
-* Fixed issue with bar values getting in the way of outside modules
-* Fixed issue with box art not loading for first item
-* Fixed issue with brightness bar not displaying
-* Fixed issue with brightness setting decreasing
-* Fixed issue with centering footer elements
-* Fixed issue with content help glyphs being hidden
-* Fixed issue with fallback to catalogue name for Folder box art
-* Fixed issue with freeing playtime JSON data
-* Fixed issue with glyph padding for folder labels on search screen
-* Fixed issue with screen freeze on themes using grid mode with focus images
-* Fixed issue with writing uptime variable for sleep
 * Fixed item scroll position for option modules
 * Fixed last focused navigation element
 * Fixed launch script to affect H700 specific classes
@@ -361,8 +372,8 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed playing sound on no content
 * Fixed PPSSPP home directory path on content launch
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
-* Fixed PPSSPP modern controls and adapted SDL environment with priority control scheme switching
-* Fixed purging of SDL mapper due to symlinking
+* Fixed PPSSPP modern controls
+* Fixed purging of SDL mapper due to symlinks
 * Fixed reboot/shutdown chime
 * Fixed restoring folder index theme picker
 * Fixed RetroArch auto saving/loading for resume/last device boot
@@ -370,6 +381,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed RGB lights displaying after low power warning whilst in idle mode
 * Fixed saving theme resolution setting
 * Fixed scaling of Dracula, Faux Dark, muVB, and Orange themes
+* Fixed screen freeze on themes using grid mode with focus images
 * Fixed screenshot width for other devices
 * Fixed script logging to use consistent date time
 * Fixed scrolling text when language set to Korean
@@ -385,7 +397,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed size to content not being disabled on Connectivity and Customisation screens
 * Fixed sleep references
 * Fixed small mistake with external port launching via correct script
-* Fixed standalone key mapping files for YabaSanshiro
+* Fixed standalone key mapping files for YabaSanshiro emulator
 * Fixed static list navigation functions
 * Fixed storage migration and sync scripts
 * Fixed storage module init values
@@ -393,22 +405,26 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Fixed suspend state with RetroArch
 * Fixed system core assignment files
 * Fixed theme backwards compatibility
+* Fixed theme installation
 * Fixed theme installer on usage error
 * Fixed theme picker showing preview on folders and download option
 * Fixed theme resolution with themes that do not support all resolutions
 * Fixed theme scaling
 * Fixed theme version check
-* Fixed Toggle Ethernet to reflect correct operstate
+* Fixed Toggle Ethernet to reflect correct `operstate`
 * Fixed TrimUI analogue swap
 * Fixed TrimUI device input
 * Fixed TrimUI device min/max frequency pointer key
 * Fixed typo in controller name
 * Fixed UI count in network module
 * Fixed USB connection version point
+* Fixed wallpaper loading
+* Fixed writing the uptime variable for sleep
 * Fixed wrong width on Applications and Task Toolkit screens when using LOTE
 
 ### Optimised
 
+* Adapted SDL environment with priority control scheme switching
 * Adjusted 1024x768 default scheme Y position for messages
 * Adjusted archive creation logic to handle multiple files and directories for external sources
 * Adjusted charging logic
@@ -420,14 +436,13 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Adjusted LVGL colour mixing and gradient settings
 * Adjusted random selection function to use `ui_count` on selected index
 * Adjusted SSID scan log message
-* Adjust existing drastic-trngaje device configurations
-* Bypass charging mode if device is in console mode
+* Adjusted startup to bypass charging module when in Console Mode
+* Adjusted existing drastic-trngaje device configurations
 * Centralised device dimension variable
 * Changed input tester due to hotkey change
 * Changed mGBA default governor to `ondemand`
-* Default to sharp bilinear simple shader
-* Disable shutting off CPU cores on TrimUI devices
-* Enhance backup script with external source handling
+* Disabled shutting off CPU cores on TrimUI devices
+* Enhanced backup script with external source handling
 * Ensure blank element does not exist if not on zero brightness
 * Ensure compatibility for future apps
 * Factory reset improvements with rsync changes and progress integer validation
@@ -472,6 +487,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Moved card mode to danger and created display suspend in advanced settings
 * Moved cardmode to danger options
 * Moved charging module boot from POWER to START to avoid potential hotkey conflicts
+* Moved Clear Favorites to Clear Collections in Task Toolkit
 * Moved configuration fields to global options
 * Moved default governor setter to global functions
 * Moved external port assign back for Portmaster compatibility
@@ -487,7 +503,6 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Moved manual Syncthing scan to a dedicated script
 * Moved `muxplore` to central list move function
 * Moved `muxstart` to `muxmessage`
-* Moved muxstart to muxmessage and fixed message issues
 * Moved navigation support to `.wav` specific to muX
 * Moved panel adjustments to separate function
 * Moved partition mount and storage info functions to common
@@ -498,12 +513,12 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Moved screenshot to L2+R2+MENU
 * Moved SDL and RA setup to global functions
 * Moved SP lid switch kill to top of halt list
-* Moved subsection of systems to extra packages and changed emulator and application repo locations
+* Moved subsection of systems to extra packages
 * Moved system power state to danger options
 * Moved system suspend state to danger options
-* Moved task toolkit scripts to directories
+* Moved Task Toolkit scripts to directories
 * Moved theme resolution setting
-* Moved to modular based content launch system with pre and post launch configurable scripts
+* Moved to modular based content launch system
 * Moved TrimUI rumble support to early startup instead
 * Moved viewport refresh and directory item count functions to shared file
 * Optimised brightness and volume scripts
@@ -517,6 +532,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Optimised mounting routines
 * Optimised network code maintainability
 * Optimised quit and halt scripts
+* Optimised `run_exec` function for terminal loading
 * Optimised SDL2 driver to flush element regions
 * Optimised SDL environment setup function
 * Optimised static panel elements in network config
@@ -567,7 +583,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Removed network info module if there is no network capability
 * Removed old HDMI code in main menu module
 * Removed per element wallpaper loading
-* Removed pre-installed cheat archives
+* Removed preinstalled cheat archives
 * Removed random theme on boot
 * Removed Resilio Sync due to distribution licensing
 * Removed script based BGM player
@@ -592,7 +608,6 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated `bootlogo.bmp` update function
 * Updated built in fonts to TTF
 * Updated Cave Story launch script
-* Updated 'Clear Favorites' to 'Clear Collections' in Task Toolkit
 * Updated Clear System Cache Task
 * Updated content explorer to auto hide files
 * Updated core and governor assignment fix
@@ -600,9 +615,9 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated default `muterm` font size
 * Updated default theme with larger font for reboot/shutdown images
 * Updated default theme with new Lineicons
-* Updated diagnostics task toolkit script
+* Updated diagnostics Task Toolkit script
 * Updated diagnostics to grab kiosk files
-* Updated Drastic-trngaje libraries
+* Updated drastic-trngaje libraries
 * Updated extraction script to use frontend function
 * Updated factory reset routine
 * Updated factory reset scripts for new muX procedures
@@ -629,7 +644,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Updated package picker scripts to use frontend function
 * Updated Pipewire script to run device specific audio script
 * Updated preinstalled global music
-* Updated pre-installed task scripts to use frontend function
+* Updated preinstalled task scripts to use frontend function
 * Updated RetroArch to 1.21.0
 * Updated RG34XX-SP SDL control mapping
 * Updated ScummVM launch script
