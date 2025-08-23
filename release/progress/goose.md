@@ -46,11 +46,11 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 We are a small lead team and with your generous support we can hopefully grow and spread some of that sweet MustardOS
 across other devices. So if you can help out the following MustardOS development crew:
 
-### AntiKk - https://buymeacoffee.com/antikk
+### AntiKk - <a href="https://buymeacoffee.com/antikk">https://buymeacoffee.com/antikk</a>
 
-### Corey - https://ko-fi.com/cmclark00
+### Corey - <a href="https://ko-fi.com/cmclark00">https://ko-fi.com/cmclark00</a>
 
-### Bitter Bizarro - https://ko-fi.com/bitterbizarro
+### Bitter Bizarro - <a href="https://ko-fi.com/bitterbizarro">https://ko-fi.com/bitterbizarro</a>
 
 <hr>
 
