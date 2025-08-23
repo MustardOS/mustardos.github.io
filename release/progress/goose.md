@@ -177,6 +177,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added HOME to global function
 * Added hostfile restore on network connection
 * Added hostname editing and MAC changing
+* Added hotkey and frontend safety stops to system halt
 * Added hotkey service to global function
 * Added idle mute configuration variable and modified idle script
 * Added initial Anbernic RG34XX-SP support
@@ -490,11 +491,13 @@ across other devices. So if you can help out the following MustardOS development
 * Moved Clear Favorites to Clear Collections in Task Toolkit
 * Moved configuration fields to global options
 * Moved default governor setter to global functions
+* Moved direct toybox binary reference to global variable
 * Moved external port assign back for Portmaster compatibility
 * Moved file counter function to shared file
 * Moved friendly folder, title update, and item label generation to shared functions
 * Moved from define to enum for simple core content reading
 * Moved frontend audio init to own function
+* Moved global function muOS path back to static path
 * Moved help message builder to UI common
 * Moved internal build and version info to config structure
 * Moved kiosk language from enable/disable to allowed/restricted
@@ -570,6 +573,7 @@ across other devices. So if you can help out the following MustardOS development
 * Removed control scheme for all applications and content except for RetroArch and associated cores
 * Removed debug message about history and search boxart not active
 * Removed direct sound from module exit
+* Removed extraneous compiler stubs
 * Removed first sync on startup
 * Removed global configuration backup
 * Removed global RetroArch shader
@@ -581,6 +585,7 @@ across other devices. So if you can help out the following MustardOS development
 * Removed line break from start message
 * Removed `muplay` program
 * Removed network info module if there is no network capability
+* Removed newlines from configuration pointers
 * Removed old HDMI code in main menu module
 * Removed per element wallpaper loading
 * Removed preinstalled cheat archives
@@ -592,11 +597,10 @@ across other devices. So if you can help out the following MustardOS development
 * Removed temporary extraction directory on startup
 * Removed toast and counter label fade
 * Removed unnecessary library path in frontend script
-* Removed unneeded shared variables
+* Removed unused shared global variables
+* Removed unused variables in muX executing in global functions
 * Removed verbose message option
 * Removed waking display backlight just to power off
-* Removed extraneous compiler stubs
-* Removed newlines from configuration pointers
 
 ### Updated
 
