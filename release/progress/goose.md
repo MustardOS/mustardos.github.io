@@ -504,6 +504,7 @@ across other devices. So if you can help out the following MustardOS development
 * Moved help message builder to UI common
 * Moved internal build and version info to config structure
 * Moved junk file cleanup function to global function script
+* Moved junk file cleanup to first init only
 * Moved kiosk language from enable/disable to allowed/restricted
 * Moved LED RGB control to global function
 * Moved LVGL element hide and float flags to single define
