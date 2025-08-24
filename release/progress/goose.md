@@ -184,6 +184,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added initial rumble for TrimUI and modified rumble path
 * Added inline IAID calculation for network connections
 * Added joystick GUID grabber binary
+* Added junk file cleanup on storage mount
 * Added kernel tuning variables
 * Added kiosk restricted message toggle
 * Added L2 hold and release for specific hotkey combos in content explorer
@@ -319,6 +320,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed copy paste whoopsie with RG40XX-H start script
 * Fixed core assignment builder to obtain assign system
 * Fixed credits screens
+* Fixed customisation picker to use specific preview alignment
 * Fixed customisation menu nav items
 * Fixed customisation module with theme alternates
 * Fixed default theme LED scripts
@@ -406,6 +408,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed suspend state with RetroArch
 * Fixed system core assignment files
 * Fixed theme backwards compatibility
+* Fixed theme download preview to use specific alignment
 * Fixed theme installation
 * Fixed theme installer on usage error
 * Fixed theme picker showing preview on folders and download option
@@ -500,6 +503,7 @@ across other devices. So if you can help out the following MustardOS development
 * Moved global function muOS path back to static path
 * Moved help message builder to UI common
 * Moved internal build and version info to config structure
+* Moved junk file cleanup function to global function script
 * Moved kiosk language from enable/disable to allowed/restricted
 * Moved LED RGB control to global function
 * Moved LVGL element hide and float flags to single define
