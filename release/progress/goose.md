@@ -92,6 +92,7 @@ across other devices. So if you can help out the following MustardOS development
 
 ### Added
 
+* Added active storage check on mount and eject
 * Added Activity Tracker to backup options
 * Added additional checks for union mounting
 * Added additional dangerous options
@@ -115,6 +116,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added box art layering to shared function
 * Added brightness clamping to potentially fix drops in general settings
 * Added cached navigation sounds
+* Added catalogue clear task toolkit scripts
 * Added catalogue match check script
 * Added channel information to network detail module
 * Added charger specific check to blank LCD
@@ -152,6 +154,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added extra core download mechanism
 * Added fallback collection export template
 * Added fallback for input hold handling
+* Added file check and sync to global function script
 * Added file locking to brightness script
 * Added filtering to theme downloader
 * Added first boot screen refresh
@@ -167,6 +170,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added global governor deletion on change
 * Added global function init to root login profile
 * Added global sound support
+* Added glyph tag file check for storage mounts
 * Added governor and control scheme support for applications
 * Added governor and tag glyphs to default theme
 * Added hardcoded calibration files for TrimUI input modules
@@ -249,13 +253,16 @@ across other devices. So if you can help out the following MustardOS development
 * Added RGB config check for alternative theme switch
 * Added routine to stop rumble motor on content quit
 * Added RTC frequency change to startup
+* Added safer friendly file lookup checks
 * Added SAFE_QUIT global definition
 * Added save state launch swap toggle
 * Added saving messages to configurable modules
 * Added scaling to theme downloader previews
 * Added SDL and RA environment setup functions
 * Added SDL cleanup to independent modules
+* Added secondary and external eject and mount task toolkit scripts
 * Added secondary and external partition mount option in advanced settings
+* Added separate file sync global variable script
 * Added settings for adjusting rotation pivot
 * Added shared navigation bar builder
 * Added special kiosk collection folder support
@@ -289,6 +296,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed adding to collections from history
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
+* Fixed alignment on theme download previews
 * Fixed application menu reloading
 * Fixed Archive Manager and Task Toolkit loader
 * Fixed Archive Manager loading after installing theme
@@ -326,6 +334,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed default theme LED scripts
 * Fixed delayed custom module modification saving
 * Fixed DPAD switch variable error in hotkey
+* Fixed empty tag file being assigned if no tags exist
 * Fixed entering date time module
 * Fixed existing device RA key duplication
 * Fixed external PPSSPP controls
@@ -348,6 +357,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed INI files for XRoar coco3 and dragon machines
 * Fixed installing theme while theme music playing
 * Fixed internal display check function
+* Fixed item hidden bool for previous element selection
 * Fixed item scroll position for option modules
 * Fixed last focused navigation element
 * Fixed launch script to affect H700 specific classes
@@ -365,6 +375,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed minor compile complaint issues
 * Fixed missing name sound logging
 * Fixed missing partition entries
+* Fixed module first open navigation sounds
 * Fixed muX looking for incorrect theme path on factory reset mode
 * Fixed navigation sound on first module start
 * Fixed network module LR nav bar
@@ -376,6 +387,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed PPSSPP home directory path on content launch
 * Fixed PPSSPP launch script to correct Vulkan backend on H700
 * Fixed PPSSPP modern controls
+* Fixed preview image overriding picker type name value
 * Fixed purging of SDL mapper due to symlinks
 * Fixed reboot/shutdown chime
 * Fixed restoring folder index theme picker
@@ -402,6 +414,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed small mistake with external port launching via correct script
 * Fixed standalone key mapping files for YabaSanshiro emulator
 * Fixed static list navigation functions
+* Fixed storage information help on element focus
 * Fixed storage migration and sync scripts
 * Fixed storage module init values
 * Fixed suspend brightness issue
@@ -412,6 +425,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed theme installation
 * Fixed theme installer on usage error
 * Fixed theme picker showing preview on folders and download option
+* Fixed theme preview extraction to catalogue
 * Fixed theme resolution with themes that do not support all resolutions
 * Fixed theme scaling
 * Fixed theme version check
@@ -456,9 +470,11 @@ across other devices. So if you can help out the following MustardOS development
 * Merged content governor loading to shared function
 * Merged device specific input bright and audio to script directory
 * Minor Pico-8 external launch changes
+* Modified active speaker script to be executed alone on Pipewire start
 * Modified archive install script to overwrite existing files from PICO-8 archive
 * Modified backlight resume amounts
 * Modified bar behaviour to avoid covering modules
+* Modified catalogue generator to skip over files within assign directory
 * Modified charger brightness logic for same values
 * Modified charging module brightness
 * Modified charging module to check for blank state first
@@ -466,6 +482,7 @@ across other devices. So if you can help out the following MustardOS development
 * Modified console mode checking routine
 * Modified debug log message for EXEC_MUX function
 * Modified default RetroArch audio latency to 64
+* Modified download options to only appear if network connected
 * Modified frontend paths to new internal structure
 * Modified general settings to live update brightness and volume options
 * Modified keepalive to disable idle network disconnect
@@ -482,7 +499,9 @@ across other devices. So if you can help out the following MustardOS development
 * Modified Retroarch audio latency
 * Modified scope of grid element to focused and unfocused events
 * Modified ScummVM launch script to use `gameid`
+* Modified secondary and external mount scripts with mount and eject capabilities
 * Modified storage mount to use user defined kernel tuning variables
+* Modified theme picker to use capitalised 'Theme' in catalogue
 * Modified theme preview images to scale by device resolution
 * Modified volume and brightness bar behaviour
 * Moved `assign.json` to inside assign directory
@@ -626,6 +645,7 @@ across other devices. So if you can help out the following MustardOS development
 * Updated default theme with new Lineicons
 * Updated diagnostics Task Toolkit script
 * Updated diagnostics to grab kiosk files
+* Updated drastic-trngaje layout and controls for TrimUI Smart Pro
 * Updated drastic-trngaje libraries
 * Updated extraction script to use frontend function
 * Updated factory reset routine
@@ -664,5 +684,6 @@ across other devices. So if you can help out the following MustardOS development
 * Updated the fix for launching PPSSPP after Vulkan is set on RG devices
 * Updated theme resolution setting
 * Updated thermal setting to be in reverse setting
+* Updated union mounting script to have single lock mechanism on multiple mounts
 * Updated unknown module handling
 * Updated XRoar system support INI files
