@@ -97,6 +97,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added additional checks for union mounting
 * Added additional dangerous options
 * Added additional date time setting safety checks
+* Added additional loading state options
 * Added additional logging to frontend start
 * Added additional navigation sounds
 * Added additional "Wi-Fi Enable" scripts to Task Toolkit
@@ -125,6 +126,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added check for navigation for less than 2 items on screen
 * Added check for zram/swap file before purge
 * Added chime done to last/resume content launch
+* Added clear playtime data task toolkit script
 * Added collection access kiosk variable
 * Added collection modification toggles to kiosk mode
 * Added comparison check for idle display and idle sleep in power settings
@@ -210,6 +212,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added method to reload network module before connection
 * Added method to skip last play if specified outside of default start
 * Added `min_freq` and `max_freq` for device specific `ondemand` governor
+* Added missing hold calls to modules
 * Added missing names to the lookup tables
 * Added modified GPU parameters to TUI devices
 * Added MustardOS settings to backup support
@@ -537,7 +540,6 @@ across other devices. So if you can help out the following MustardOS development
 * Moved reboot/shutdown sound play to frontend module
 * Moved RetroArch config to auto load/save with content loader change
 * Moved RetroArch device resolution setting to common function
-* Moved screenshot to L2+R2+MENU
 * Moved SDL and RA setup to global functions
 * Moved SP lid switch kill to top of halt list
 * Moved subsection of systems to extra packages
