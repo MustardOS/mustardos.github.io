@@ -56,7 +56,7 @@ across other devices. So if you can help out the following MustardOS development
 
 ## Fun Facts
 
-* There are over **500** changes with **21** contributors
+* There are over **600** changes with **21** contributors
 * This release took over **6 months** of hard work and dedication
 * Rotated screens are still **annoying** as ever
 * Compiling specific emulators _still_ suck...
@@ -92,6 +92,7 @@ across other devices. So if you can help out the following MustardOS development
 
 ### Added
 
+* Added active speaker module
 * Added active storage check on mount and eject
 * Added Activity Tracker to backup options
 * Added additional checks for union mounting
@@ -107,6 +108,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added automatic friendly core assign generator
 * Added available governor pointer to device specifics
 * Added background process execution support
+* Added backup module to kiosk modes
 * Added backwards compatible theme checking
 * Added basic network details module
 * Added BGM music tracks from previous MustardOS versions
@@ -192,6 +194,8 @@ across other devices. So if you can help out the following MustardOS development
 * Added joystick GUID grabber binary
 * Added junk file cleanup on storage mount
 * Added kernel tuning variables
+* Added kiosk mode global check
+* Added kiosk passing for reboot and shutdown options
 * Added kiosk restricted message toggle
 * Added L2 hold and release for specific hotkey combos in content explorer
 * Added launch exec to existing assignable systems
@@ -257,6 +261,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added routine to stop rumble motor on content quit
 * Added RTC frequency change to startup
 * Added safer friendly file lookup checks
+* Added safer secondary and external mount path checks
 * Added SAFE_QUIT global definition
 * Added save state launch swap toggle
 * Added saving messages to configurable modules
@@ -268,6 +273,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added separate file sync global variable script
 * Added settings for adjusting rotation pivot
 * Added shared navigation bar builder
+* Added small delay to show content refresh message
 * Added special kiosk collection folder support
 * Added startup chime support
 * Added static animation time and delay for credits
@@ -297,6 +303,7 @@ across other devices. So if you can help out the following MustardOS development
 
 * Fixed A<>B X<>Y remapping for control schemes
 * Fixed adding to collections from history
+* Fixed additional RG34XX-SP controls
 * Fixed additional sleep calls
 * Fixed advance settings scroll going off-screen
 * Fixed alignment on theme download previews
@@ -316,15 +323,18 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed brightness setting randomly decreasing
 * Fixed broken screenshots on RG28XX-H device
 * Fixed built-in application loader for LOTE
+* Fixed card mode and state restore values in danger module
 * Fixed catalogue entries
 * Fixed catalogue generation script
 * Fixed catalogue name for NES Famicom system
 * Fixed catalogue references
 * Fixed changing month but day not changing to a valid day
 * Fixed charger boot message to hide battery/voltage labels
+* Fixed charging module shutdown on blank screen
 * Fixed clearing network profile items from memory
 * Fixed collection adding and internal name lookup
 * Fixed collection screen navbar
+* Fixed content base level directory name string
 * Fixed content being displayed all lower case
 * Fixed content help glyphs being hidden
 * Fixed content loading for control schemes
@@ -396,6 +406,7 @@ across other devices. So if you can help out the following MustardOS development
 * Fixed restoring folder index theme picker
 * Fixed RetroArch auto saving/loading for resume/last device boot
 * Fixed RG34XX-SP configuration specifics
+* Fixed RetroArch default control for RG34XX-SP
 * Fixed RGB lights displaying after low power warning whilst in idle mode
 * Fixed saving theme resolution setting
 * Fixed scaling of Dracula, Faux Dark, muVB, and Orange themes
@@ -453,12 +464,13 @@ across other devices. So if you can help out the following MustardOS development
 * Adjusted default Drastic input mappings for Brick
 * Adjusted device hotkeys
 * Adjusted device specific startup scripts
+* Adjusted existing drastic-trngaje device configurations
 * Adjusted help handler with fixed info box sound
 * Adjusted LVGL colour mixing and gradient settings
 * Adjusted random selection function to use `ui_count` on selected index
 * Adjusted SSID scan log message
 * Adjusted startup to bypass charging module when in Console Mode
-* Adjusted existing drastic-trngaje device configurations
+* Adjusted usage messages for mount scripts
 * Centralised device dimension variable
 * Changed input tester due to hotkey change
 * Changed mGBA default governor to `ondemand`
@@ -494,6 +506,7 @@ across other devices. So if you can help out the following MustardOS development
 * Modified LED RGB control routine
 * Modified LOG output to match script logging with uptime information
 * Modified low power script to use device specific LED scripts
+* Modified mount scripts to only create directory paths when required
 * Modified `muxfrontend` to be modular
 * Modified network module loading to be separate functions
 * Modified network timeout period to 20 seconds each
@@ -549,6 +562,7 @@ across other devices. So if you can help out the following MustardOS development
 * Moved theme resolution setting
 * Moved to modular based content launch system
 * Moved TrimUI rumble support to early startup instead
+* Moved union validation and path creation on union mount start
 * Moved viewport refresh and directory item count functions to shared file
 * Optimised brightness and volume scripts
 * Optimised collection navigation bar generation routine
@@ -577,7 +591,8 @@ across other devices. So if you can help out the following MustardOS development
 * Refactor Syncthing scan logic and improve shutdown
 * Refactor to allow loading content from root
 * Reformatted factory reset logic
-* Rename global fallback friendly file name
+* Renamed global fallback friendly file name
+* Renamed kiosk values for kiosk module changes
 * Replaced `fbpad` with `muterm`
 * Replaced `rsync` copy with itemised file list method for factory reset
 * Replaced silence WAVE with OGG
@@ -590,6 +605,7 @@ across other devices. So if you can help out the following MustardOS development
 
 ### Removed
 
+* Removed active speaker script in favour of active speaker module
 * Removed animated background option from custom module
 * Removed animations and static images
 * Removed any active theme terminal fonts before installing a new theme
@@ -597,6 +613,7 @@ across other devices. So if you can help out the following MustardOS development
 * Removed collection timing debug generation
 * Removed confusing no-unroll-loops with unroll-loops in Makefiles
 * Removed control scheme for all applications and content except for RetroArch and associated cores
+* Removed copy-on-write for union mounting
 * Removed debug message about history and search boxart not active
 * Removed direct sound from module exit
 * Removed extraneous compiler stubs
@@ -622,6 +639,7 @@ across other devices. So if you can help out the following MustardOS development
 * Removed specific config line for mGBA audio latency
 * Removed temporary extraction directory on startup
 * Removed toast and counter label fade
+* Removed union mounting lock mechanism due to single user system only
 * Removed unnecessary library path in frontend script
 * Removed unused shared global variables
 * Removed unused variables in muX executing in global functions
@@ -680,6 +698,7 @@ across other devices. So if you can help out the following MustardOS development
 * Updated RG34XX-SP SDL control mapping
 * Updated ScummVM launch script
 * Updated SDL `gamecontrollerdb.txt` controls
+* Updated SFTPgo to 2.6.6
 * Updated `skip.ini` to exclude Disc and Track files
 * Updated storage mount path generation
 * Updated Syncthing to 2.0.2
