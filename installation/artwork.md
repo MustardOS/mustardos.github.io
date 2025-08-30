@@ -43,7 +43,7 @@ SD1
                      └── sd2.png
 ```
 
-These systems match the `catalogue=` entry in `MUOS/info/assign/<system>.ini`  
+These systems match the `catalogue=` entry in `MUOS/info/assign/<system>/global.ini`  
 Folders for all available systems should be automatically created for you.
 
 ### Example INI file
@@ -51,34 +51,37 @@ Folders for all available systems should be automatically created for you.
 ```ini
 [global]
 name = Atari 2600
-default = Stella
+default = stella 2014
 catalogue = Atari 2600
-cache = 0
+lookup = 0
+governor = ondemand
 ```
 
 Here we can see the catalogue folder for this system is `Atari 2600`.
 
-## Matching image files to your ROMs
+## Matching image files to your content
 
 To have your artwork properly show up, ensure these three things:
 
-1. Your artwork filename should match the ROM filename. For example, if you have a ROM
+1. Your artwork filename should match the content filename. For example, if you have content
    called `Chrono Trigger (USA).zip`, the artwork filename should be `Chrono Trigger (USA).png`
-2. Your artwork must be placed in the correct location: `box/` (for boxart) or `preview/` (for preview
-   images/screenshots) inside `MUOS/info/catalogue/<SystemName>/`.
-   For example, we would store our chrono trigger artwork
-   as `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. We use *Nintendo SNES-SFC* because as stated
-   earlier, this is the defined catalogue folder name for SNES content.
+2. Your artwork must be placed in the correct location: `box/` (for box art) or `preview/` (for preview
+   images / screenshots) inside `MUOS/info/catalogue/<system>/`.
+    * For example, we would store our Chrono Trigger artwork
+      as `MUOS/info/catalogue/Nintendo SNES-SFC/box/Chrono Trigger (USA).png`. We use `Nintendo SNES-SFC` because as
+      stated earlier, this is the defined catalogue folder name for SNES content.
 3. Have the correct system assigned to your folder(s).
-    - MustardOS attempts to assign systems to your folders automatically. But in edge cases where it doesn't, and you
+    * MustardOS attempts to assign systems to your folders automatically. But in edge cases where it doesn't, and you
       see no artwork being shown, simply navigate to the folder in the content explorer (for example, `Nintendo/SNES/`),
-      press Select, and assign a core. Either choose to assign to the directory, or recursively so that all subfolders
-      are also matched.
+      press `SELECT`, and assign a core. Either choose to assign to the directory, or recursively so that all sub
+      folders are also matched.
 
-Note: MustardOS will check for artwork independently of a system's subfolders. So, say your ROM file is located
-at `SD2/roms/Nintendo/SNES/JRPGs/Chrono Trigger (USA).zip`, MustardOS will only check in the *root*
-of `MUOS/info/catalogue/Nintendo SNES-SFC/box/`, and will ignore subfolders inside the boxart folder. So if you place
-your art in `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs`, it won't detect the artwork.
+{: .note}
+> MustardOS will check for artwork independently of system sub folders. If your content file is located
+> at `Nintendo/SNES/JRPGs/Chrono Trigger (USA).zip`, MustardOS will only check in the *root*
+> of `MUOS/info/catalogue/Nintendo SNES-SFC/box/`, and will ignore sub folders inside the box art folder. So if you
+> place your art in `MUOS/info/catalogue/Nintendo SNES-SFC/box/JRPGs`, that is incorrect and it will not detect the
+> artwork properly.
 
 ## Folder artwork
 

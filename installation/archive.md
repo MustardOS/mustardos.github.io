@@ -13,16 +13,17 @@ NOTE: Only install archives that you trust!
 {: .label .label-yellow }
 
 **We accept no responsibility for either the content of your archives or any loss of data or functionality as a result
-of using this feature.**
+of using this feature!**
 
 The Archive Manager is located at `Applications > Archive Manager`
+
 ![](assets/images/archive.png)
 
 ## How does it work?
 
 If it doesn't exist, you can create a folder named `ARCHIVE` in the root of `SD1, SD2, USB`   
 Here you can place specially created archive manager `.mux*` files (
-see [Pixie Archive Formats](#pixie-archive-formats).  
+see [Archive Formats](#archive-formats).  
 The archive manager will extract the contents of **any** `.mux*` file, so it's important that they are created
 correctly.
 
@@ -40,11 +41,11 @@ USB
     └── Box Art.muxzip
 ```
 
-## Pixie Archive Formats
+## Archive Formats
 
-With the release of MustardOS Pixie, 6 new archive formats were introduced. Each of these file types can be created by
-making a zip file with the appropriate internal structure, then renaming to the desired extension. All formats will be
-detailed below, but know that *most* archives will use `.muxupd` or `.muxzip`. When in doubt, go with `.muxzip`.
+These file types can be created by making a zip file with the appropriate internal structure, then renaming to the
+desired extension. All formats will be detailed below, but know that *most* archives will use `.muxupd` or `.muxzip`.
+When in doubt, go with `.muxzip`.
 
 #### `.muxapp`
 
@@ -61,13 +62,13 @@ This format will be moved to the appropriate place at `MUOS/package/catalogue`.
 #### `.muxzip`
 
 This is an ordinary archive package (
-See [How should I structure the Archive .muxzip files?](##how-should-i-structure-the-archive-muxzip-files) section
+See [How should I structure the Archive .muxzip files?](#how-should-i-structure-the-archive-muxzip-files) section
 below).
 
 #### `.muxupd`
 
 Similar to `.muxzip`, but with the additional step of running a shell script upon install (
-See [How do I make use of Archive .muxupd files?](##how-do-i-make-use-of-archive-muxupd-files) section below).
+See [How do I make use of Archive .muxupd files?](#how-do-i-make-use-of-archive-muxupd-files) section below).
 
 ## How should I structure the Archive .muxzip files?
 
@@ -95,10 +96,10 @@ SD1 root is `/mnt/mmc`
 SD2 root is `/mnt/sdcard`   
 USB root is `/mnt/usb`
 
-## How do I make use of Archive .muxupd files?
+## How do I make use of `.muxupd` files?
 
-Archive files in the `.muxupd` format work very similar to `.muxzip` files, extracting the contents to / and requiring
-the internal structure of the Archive match the **Full Path** you wish to extract to. The key difference is
+Archive files in the `.muxupd` format work very similar to `.muxzip` files, extracting the contents to `/` (_root_) and
+requiring the internal structure of the Archive match the **Full Path** you wish to extract to. The key difference is
 that `.muxupd` files must also include a file named `update.sh` in the `/opt` directory. This update script is
 automatically run upon installation.
 
@@ -108,10 +109,10 @@ To package an application install/update should contain the complete file path
 
 ```
 ├── mnt
-│   └── mmc
-│       └── MUOS
-│           └── application
-│               └── <application folder>
+│   └── mmc
+│       └── MUOS
+│           └── application
+│               └── <application folder>
 └── opt
     ├── muos
     │   └── default
@@ -130,8 +131,8 @@ USB root is `/mnt/usb`
 
 ## What can I restore with this Archive Manager?
 
-It's very flexible and can be used for pretty much anything.  
-Simply create a `.muxzip` file with the correct path.
+* It's very flexible and can be used for pretty much anything.
+* Simply create a `.muxzip` file with the correct path.
 
 ### Example
 

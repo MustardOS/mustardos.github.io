@@ -38,9 +38,9 @@ You will need a copy of the following files from the **Raspberry Pi** version:
 
 ![](../assets/images/pico-8.png)
 
-Starting with MustardOS Pixie you can now drop your official pico-8 zip into `/ARCHIVE` on either SD Card and install
-using MustardOS Archive Manager. The file is named `pico-8_0.2.6b_raspi.zip` as of the writing of this page. The
-extension will need to be changed to `.muxzip` firstly to be recognised.
+You can now drop your official PICO-8 zip into `/ARCHIVE` on either SD Card and install using the MustardOS Archive
+Manager. The file is named along the lines of `pico-8_ver_raspi.zip` with `ver` being replaced with the current PICO-8
+release. The extension will need to be changed to `.muxzip` firstly to be recognised.
 
 Once you add your purchased files from Lexaloffle you'll need to set MustardOS to use the PICO-8 External emulator.
 

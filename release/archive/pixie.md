@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2502.0 PIXIE
-permalink: /release/current/pixie
-parent: Current
+permalink: /release/archive/pixie
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -30,7 +30,7 @@ has_toc: false
 > As this is a major release you will be required to reflash to update your device to this version. Updates are only
 > for subsequent releases within the same version.
 
-<hr>
+***
 
 ## Support MustardOS
 
@@ -47,7 +47,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Supporting us via Ko-fi subscription
 * Boosting the Discord community server
 
-<hr>
+***
 
 ## Contributors
 

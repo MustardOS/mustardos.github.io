@@ -12,13 +12,15 @@ Theme Alternatives allows you to include multiple version of your theme in one t
 the user will be able to navigate to the  `Congiguration -> Customisation` menu and set which `Alternative Theme` to
 use. The user would then press `A` to activate or press `B` to activate and exit the `Customisation` menu.
 
-<img src="assets/images/alternate_selection.gif" width="300" />
+<img src="assets/images/alternate_selection.gif" width="320"/>
 
-> *Examples of using Theme Alternatives can be found on the [theme](https://theme.muos.dev/) website.<br>
-`MustardOS - Pixie - Grid` By: Bitter Bizarro<br>
-`Aurora` By: Rosabel*
+Examples of using 'Theme Alternatives' can be found on the [theme](https://theme.muos.dev/) website.
 
-# Alternative Scheme .ini
+`MustardOS - Pixie - Grid` Created By: Bitter Bizarro
+
+`Aurora` Created By: Rosabel
+
+# Alternative Scheme `.ini` Files
 
 The first way of creating a `Alternative Theme` options is by creating scheme files that adjust the styling of the
 theme. The files should be located in `alternate` folder at root level of your theme archive. The name used for

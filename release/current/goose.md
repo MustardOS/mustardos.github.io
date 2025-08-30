@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.0 GOOSE
-permalink: /release/progress/goose
-parent: Progress
+permalink: /release/current/goose
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -16,35 +16,49 @@ has_toc: false
 
 ## Download
 
-_Not yet available!_
+[Download from Gofile](https://gofile.io/d/VAfGUZ){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/kzRGRbpK#CHR1G3KlaHdcdm590Wg6ag){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+{: .important }
+> If you are updating from Banana please ensure that you do **NOT** have any themes or RetroArch configurations as
+> major changes have occurred. You can find all compatible themes from the
+> <a href="https://theme.muos.dev">https://theme.muos.dev</a> page or from the on-device theme download module.
 
 {: .important }
 > As this is a major release you will be required to reflash to update your device to this version. Updates are only
 > for subsequent releases within the same version.
 
-<hr>
+{: .note }
+> Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as there
+> are a few changes that have been made. Including the change from **POWER** to **START** for the charging module along
+> with the screenshot and DPAD swap hotkey changes.
+
+***
 
 ## Support MustardOS
 
-Love MustardOS? Want to help us on this **crazy** journey? Here's how to get involved.
+Want to join us on this **crazy** and rewarding journey?
 
 **This can be done a few ways:**
 
-* Be helpful around the Discord community server
-* [Contribute code directly to our GitHub repositories](https://github.com/MustardOS)
-* Spread the word about MustardOS and all its features
+* Take part in the [Community Forum](https://community.muos.dev)
+* Be helpful around the [Discord Server](https://discord.gg/muos)
+* Contribute code directly to our [GitHub Repositories](https://github.com/MustardOS)
+* Spread the good word about MustardOS and all the amazing features
 
-**Or you can join the testing crew directly by:**
+**You can join the testing crew directly by:**
 
-* Supporting us via Ko-fi subscription
-* Boosting the Discord community server
+* Supporting xonglebongle via a [Ko-fi Subscription](https://ko-fi.com/xonglebongle)
+* Boosting the [Discord Server](https://discord.gg/muos)
+* Contributing major code pull requests on our [GitHub Repositories](https://github.com/MustardOS)
+* Showing exceptional values and building rapport
 
-<hr>
+***
 
 ## Support Development Crew
 
-We are a small lead team and with your generous support we can hopefully grow and spread some of that sweet MustardOS
-across other devices. So if you can help out the following MustardOS development crew:
+We are a small team and with your generous support we can hopefully grow and spread some of that sweet MustardOS
+across other devices. So if you can, help out the following MustardOS development crew:
 
 ### AntiKk - <a href="https://buymeacoffee.com/antikk">https://buymeacoffee.com/antikk</a>
 
@@ -52,7 +66,7 @@ across other devices. So if you can help out the following MustardOS development
 
 ### Bitter Bizarro - <a href="https://ko-fi.com/bitterbizarro">https://ko-fi.com/bitterbizarro</a>
 
-<hr>
+***
 
 ## Fun Facts
 
@@ -63,6 +77,8 @@ across other devices. So if you can help out the following MustardOS development
 * The goose is a highly social animal and is often seen in large groups known as flocks or gaggles. They have a strong
   sense of community and rely on their flock for protection, foraging, and navigation during migration. They communicate
   with each other through a variety of vocalizations, including honking and hissing sounds.
+
+***
 
 ## Contributors
 
@@ -88,6 +104,8 @@ across other devices. So if you can help out the following MustardOS development
 * xonglebongle
 * zarquon
 
+***
+
 ## Changes
 
 ### Added
@@ -95,6 +113,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added active speaker module
 * Added active storage check on mount and eject
 * Added Activity Tracker to backup options
+* Added additional checks for clearing governor and control scheme files
 * Added additional checks for union mounting
 * Added additional dangerous options
 * Added additional date time setting safety checks
@@ -251,6 +270,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added reboot and shutdown messages for themes without splashes
 * Added reboot and shutdown sounds
 * Added reboot/shutdown sounds to default share
+* Added removal assurance function
 * Added removal of charger bright temp file on charger exit
 * Added reset button usage warning
 * Added reset DPAD switch on content exit for TUI devices
@@ -273,6 +293,7 @@ across other devices. So if you can help out the following MustardOS development
 * Added separate file sync global variable script
 * Added settings for adjusting rotation pivot
 * Added shared navigation bar builder
+* Added signal watchdog to frontend to safely quit upon script shutdown initiation
 * Added small delay to show content refresh message
 * Added special kiosk collection folder support
 * Added startup chime support
@@ -499,7 +520,9 @@ across other devices. So if you can help out the following MustardOS development
 * Modified default RetroArch audio latency to 64
 * Modified download options to only appear if network connected
 * Modified frontend paths to new internal structure
+* Modified frontend service function
 * Modified general settings to live update brightness and volume options
+* Modified junk file removal function
 * Modified keepalive to disable idle network disconnect
 * Modified kiosk denied message function
 * Modified label elements to use formatted strings
@@ -569,11 +592,13 @@ across other devices. So if you can help out the following MustardOS development
 * Optimised content index shuffling
 * Optimised datetime RTC module
 * Optimised default RetroArch global config
+* Optimised frontend input handler to stop epoll blocking on frontend stops
 * Optimised idle inhibit script for current running processes
 * Optimised list navigation functions
 * Optimised module element structure generation
 * Optimised mounting routines
 * Optimised network code maintainability
+* Optimised pre-installed application scripts
 * Optimised quit and halt scripts
 * Optimised `run_exec` function for terminal loading
 * Optimised SDL2 driver to flush element regions

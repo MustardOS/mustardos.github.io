@@ -13,7 +13,7 @@ has_toc: false
 #### _Pronunciation_
 /ˌeɪ ˈdʌb.l̩.juː bəˈnæn.ə/
 
-<hr>
+***
 
 ## Download **Full Image**
 
@@ -23,7 +23,7 @@ has_toc: false
 #### OneDrive Mirror - Provided by IonutBarna
 [Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/Esab5mtJ_aROug_SagXr7EUB7VgBVZFrT-6pbOTgzBD1Iw?e=HH6ql0){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-<hr>
+***
 
 ## Download **Update Only**
 
@@ -33,7 +33,7 @@ has_toc: false
 #### OneDrive Mirror - Provided by IonutBarna
 [Download from OneDrive](https://1drv.ms/f/c/4b74904a7f19bbfb/EuCAD6zGLOtPvzNb7oM8E6ABKH9Saw7pYwnaSfIEDp47Fg?e=l3bOCZ){: .btn .fs-5 .mb-4 .mb-md-0 }
 
-<hr>
+***
 
 {: .note }
 > If you have alternative storage support please reach out to **xonglebongle** on the MustardOS Community Discord server!
@@ -42,7 +42,7 @@ has_toc: false
 > the Torrents if you cannot use MEGA. And for goodness sake we are **not** moving to a paid subscription like some
 > people might be thinking.  <small>_The absurdity..._</small>
 
-<hr>
+***
 
 ## Support MustardOS
 
@@ -59,7 +59,7 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 * Supporting us via Ko-fi subscription
 * Boosting the Discord community server
 
-<hr>
+***
 
 ## Please Read Carefully
 
@@ -73,10 +73,8 @@ Love MustardOS? Want to help us on this **crazy** journey? Here's how to get inv
 > * If you are running into any weird stuttering ensure you reset (_or remove_) your current RetroArch configuration set
 > * You can install the update straight over the top of **any existing Banana**, or **Big Banana**, release including
     those who have previously installed updates
-> * 1080p resolution via HDMI has been temporarily disabled due to video memory issues with muX. This is not a breaking
-    issue and will be fixed for Pixie.
 
-<hr>
+***
 
 ## Contributors
 

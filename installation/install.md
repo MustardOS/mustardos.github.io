@@ -9,14 +9,14 @@ has_children: false
 
 # Download
 
-Download the latest image from one of the following channels.
-{: .fs-6 .fw-300 }
+[Latest](release/current/goose){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
-[Download Latest Here](/release/current){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+{: .note }
+> Always ensure you download from our official download page or supported mirrors!
 
 # Extracting
 
-MustardOS images are distributed as ``.img.gz`` files and most imaging software shouldn't require them to be extracted.
+MustardOS images are distributed as `.img.gz` files and most imaging software shouldn't require them to be extracted.
 
 # SD Card Quality
 
@@ -45,9 +45,8 @@ There are several recommended programs you can use to flash your SD card
 After countless flashes we have determined that the most user friendly tool with the highest chance of success is
 Raspberry Pi Imager so we'll focus on that for now.
 
-|                                |                                |
-|:------------------------------:|:------------------------------:|
 | ![](assets/images/rpi-001.png) | ![](assets/images/rpi-002.png) |
+|:------------------------------:|:------------------------------:|
 |         Choose Device          |          No Filtering          |
 | ![](assets/images/rpi-003.png) | ![](assets/images/rpi-004.png) |
 |      Choose Use Custom OS      |  Select the MustardOS .img.gz  |
@@ -68,8 +67,7 @@ Make sure to replace `sd_device` with your SD card device location and `muos_ima
 
 ``gunzip -c < "image_name_here.img.gz" | sudo dd of=/dev/sdxyz bs=4M conv=fsync status=progress``
 
-For MacOS users (determine your SD card label with diskutil GUI or `diskutil list` command and replace the `X`
-in `/dev/diskX`):
+For MacOS users (determine your SD card label with `diskutil list` command and replace the `X` in `/dev/diskX`):
 
 ```bash
 # To get rid of "dd: /dev/rdiskX: Resource busy"
@@ -86,10 +84,10 @@ It will run through a few menus to help get setup first and it will then do the 
 This will create all the needed files and folders for you to put your favourite content on.
 
 {: .important-title }
-> Be Patient
+> **Be Patient**
 >
 >If you find that your device is stuck during "Factory Reset" please give it at least 5-10 minutes before hitting the
-> reset button. This should not happen, but if it does please make a post in the Discord issues channel.
+> reset button. This should not happen, but if it does please make a post in the Community Forum issues channel.
 
 # Updating An Existing Install
 
@@ -98,10 +96,6 @@ If you have used our Storage options to keep saves, config etc... on SD2 this me
 
 We do often offer a smaller update Archive which can be used to update between versions, but you may miss important
 features when updating this way.
-
-```
-Updated instructions will be added here soon.
-```
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>
