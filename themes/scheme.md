@@ -475,18 +475,10 @@ This relates to the passcode/lock screen when enabled in settings.
 | VERBOSE_BOOT_TEXT_ALPHA=255       | Text colour transparency.                             |
 | VERBOSE_BOOT_Y_POS=165            | Vertical position of verbose boot messages in pixels. |
 
-### Section [animation]
-
-| Setting             | Description                                                                                              |
-|---------------------|----------------------------------------------------------------------------------------------------------|
-| ANIMATION_DELAY=100 | When ANIMATED_BACKGROUND is set to 2 (png sequence) controls the duration of each frame in milliseconds. |
-| ANIMATION_REPEAT=0  | Number of times to repeat animation.  A setting of zero will repeat the animation inifinitely.           |
-
 ### Section [misc]
 
 | Setting                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ANIMATED_BACKGROUND=0     | 0 = Static background<br>1 = Animated GIF background<br>* 2 = Animated PNG sequence background<br><br>***Note:** The preferred animated background is PNG sequence which uses the naming convention {ProgramName}.{FrameIndex}.png for example: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png.  Speed is controlled by the [ANIMATION_DELAY](#section-animation) setting                                                                          |
 | RANDOM_BACKGROUND=0       | If set to 1 randomly select background image based on PNG sequence.  Uses the naming convention {programname}.{Index}.png for example to have the background for muxlaunch randomly selected you would name the images: muxlaunch.0.png, muxlaunch.1.png, muxlaunch.2.png...                                                                                                                                                                          |
 | CONTENT_SIZE_TO_CONTENT=0 | Resizes list items to fit text of item. If enabled CONTENT_WIDTH will be used as a max width.                                                                                                                                                                                                                                                                                                                                                         |
 | CONTENT_ALIGNMENT=0       | Alignment of list item. 0=Left, 1=Center, 2=Right. CONTENT_PADDING_LEFT can be used to adjust postion.  Negative value to shift items left, positive value to shift items right.                                                                                                                                                                                                                                                                      |

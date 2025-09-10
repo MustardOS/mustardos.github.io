@@ -17,8 +17,7 @@ There are currently three compatible image formats for themes with specific use 
 
 {: .note }
 > If you are struggling to find a method to easily convert an image to a 24-bit `.bmp` file, there are
-> many [online converters](https://online-converting.com/image/convert2bmp/) that can do this for you. There are
-> also similar places to convert a video file to a `.gif` file [easily](https://ezgif.com/video-to-gif) as well.
+> many [online converters](https://online-converting.com/image/convert2bmp/) that can do this for you.
 
 # Menu Graphic Design
 
@@ -47,9 +46,9 @@ To achieve this, refer to both the Theme Structure and Scheme File pages - but t
 cases...
 
 - Create an image folder within `./image/wall/` named `muxlaunch`, with files
-  named; `explore.png`, `favourite.png`, `history.png`, `apps.png`, `info.png`, `config.png`, `reboot.png`,
+  named; `explore.png`, `collection.png`, `history.png`, `apps.png`, `info.png`, `config.png`, `reboot.png`,
   and `shutdown.png`
-- Duplicate `./scheme/default.txt` and rename it to `muxlaunch.txt`. All values here under `[LIST]` must have their
+- Duplicate `./scheme/default.ini` and rename it to `muxlaunch.ini`. All values here under `[LIST]` must have their
   alphas set to `=0` to make the list items invisible, and `[MISC] NAVIGATION_TYPE=0` or `=1` (`0` is vertical
   navigation, `1` is horizontal navigation).
 

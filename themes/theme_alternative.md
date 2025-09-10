@@ -75,27 +75,27 @@ installed.
 <img src="assets/images/alternative_theme_example_active.png" /><br>
 *Example `active.txt` file*
 
-# Alternative Scheme .muxzip
+# Alternative Scheme .muxalt
 
-The second way of creating a `Alternative Theme` options is by creating `.muxzip` archive files that are extracted when
+The second way of creating a `Alternative Theme` options is by creating `.muxalt` archive files that are extracted when
 the options is selected. The files should be located in `alternate` folder at root level of your theme archive. The name
-used for each `.muxzip` is the name that will display in the `Congiguration -> Customisation` menu under
+used for each `.muxalt` is the name that will display in the `Congiguration -> Customisation` menu under
 the `Alternative Theme` setting. The `Aurora` theme for example has a structure like this:
 
 ```
 .
 ├── active.txt
 ├── alternate
-│   └── Cloud.muxzip
-│   └── Midnight.muxzip
-│   └── Moon.muxzip
-│   └── Retro.muxzip
-│   └── Twilight.muxzip
+│   └── Cloud.muxalt
+│   └── Midnight.muxalt
+│   └── Moon.muxalt
+│   └── Retro.muxalt
+│   └── Twilight.muxalt
 ```
 
-Each `Alternative Theme` `.muxzip` file will be extracted when a user selects it under `Congiguration -> Customisation`.
+Each `Alternative Theme` `.muxalt` file will be extracted when a user selects it under `Congiguration -> Customisation`.
 The file needs to be structured in a certain way in order for the files to be extracted to the active theme folder.
-Below is an example of how `Cloud.muxzip` from the `Aurora` theme is structured.
+Below is an example of how `Cloud.muxalt` from the `Aurora` theme is structured.
 
 ```
 .
