@@ -121,7 +121,7 @@ The default MustardOS theme is a good example of what can be done on a basic the
 
 # Theme Folder Structure Glyphs
 
-Images for populating menu glyphs frequently change as we add new featues to muOS.  For a list of all glyphs that are supported be sure to check out the `MustardOS.muxthm` theme included with muOS located here `/MUOS/theme`.  You can also view the list of glyph images on our [github](https://github.com/MustardOS/internal/tree/main/init/MUOS/theme/active/glyph) page.  
+Images for populating menu glyphs frequently change as we add new featues to muOS.  For a list of all glyphs that are supported be sure to check out the `MustardOS.muxthm` theme included with muOS located here `/MUOS/theme`.  You can also view the list of glyph images on our [github](https://github.com/MustardOS/internal/tree/main/share/theme/active/glyph) page.  
 <br><br>**Note:** If your theme does not supply images for glyphs then it will fall back to built in default
 images found in `MustardOS.muxthm`. If you want to hide glyphs you will need to adjust the appropriate settings in your scheme file. For example
 disable list item glyphs you would set these settings in your scheme file:
