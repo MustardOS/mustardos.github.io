@@ -23,6 +23,11 @@ _Not available yet!_
 > within the internal structure we have been forced to release this as a full image rather than an update. Apologies for
 > any inconvenience.
 
+{: .warning }
+> Upon installation on devices with SD2 inserted your `MUOS` folder will be moved to `MUOS_old` to ensure update safety.
+> However do not panic, your save games, configurations, and other user data can be safely copied back. However please
+> do so with caution as there may be conflicts.
+
 {: .note }
 > Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as there
 > are a few changes that have been made. Including the change from **POWER** to **START** for the charging module along
@@ -72,22 +77,24 @@ across other devices. So if you can, help out the following MustardOS developmen
 * bgelmini
 * Bitter_Bizarro
 * cart-su
-* chronoss09
+* chrismsnz
+* chronoss0109
+* corey
+* crypto_str
 * duncanyoyo1
 * eqagunn
 * Habbening
 * ImCoKeMaN
 * IncognitoMan
 * johnnyonflame
-* koolkidcorey
 * kriznick
 * mikhailzrick
 * pcorbel
+* rodneyshupe
 * synthic
 * voodatari
 * wakeboxer
 * xonglebongle
-* zarquon
 
 ***
 
@@ -95,6 +102,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 
 * Added additional archive support
 * Added additional RetroArch restore functions to task toolkit script
+* Added application directory generation for SD1
 * Added archive extraction with top level pattern support
 * Added boot logo update function to global
 * Added built-in application support
@@ -117,8 +125,11 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added plugin based system for archive extractors
 * Added separate zip global function script
 * Added string capitalisation global function
+* Added support for SD2/SD1 applications
+    * Priority is `INTERNAL` -> `SD2` -> `SD1`
 * Added theme alternative extraction method
 * Added theme and package deletion function
+* Added theme archive path to Archive Manager
 * Added theme catalogue image support
 * Added toast message delay values
 * Added top level directory structure support for general archives
@@ -127,6 +138,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed ADB/MTP gadget mode
 * Fixed archive specific package extractions
 * Fixed audio initialisation for first init
+* Fixed box art not hiding in grid mode
 * Fixed called script paths
 * Fixed catalogue generation script
 * Fixed catalogue path due to internal change
@@ -134,10 +146,12 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed core assigns from Collection and History modules
 * Fixed device network initialisation hang that happened on certain devices
 * Fixed device speaker pop on shutdown
+* Fixed false display of rotated boot logo message
 * Fixed friendly folder names in 2 card setup
 * Fixed global internal sound path
 * Fixed history and collection glyph on Content Explore module
 * Fixed internal emulator path for restore scripts
+* Fixed issue installing theme assets
 * Fixed issue with glyphs not showing if cores were cleared
 * Fixed issue with sleep wake exceeding maximum brightness
 * Fixed launching apps while in grid mode
@@ -147,6 +161,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed PipeWire console mode audio adjustments
 * Fixed PortMaster extraction location
 * Fixed PPSSPP archive extraction
+* Fixed preinstalled application launch directory location
 * Fixed reboot and shutdown halt processing order
 * Fixed RetroArch configuration appending
 * Fixed RetroArch temporary auto loader file removal
@@ -156,6 +171,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed several RetroArch core issues
 * Fixed storage space bar percentage calculation
 * Fixed Task Toolkit restore scripts
+* Fixed theme name not generating on save
 * Fixed theme previews
 * Merged device specific control scripts
 * Merged device specific tasks and remove tasks
@@ -186,6 +202,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Moved emulators to internal storage
 * Moved languages to internal storage
 * Moved muX controllers to internal storage
+* Moved preinstalled applications to internal system
 * Moved RetroArch and LibRetro cores to internal storage
 * Moved RetroArch configurations to internal storage
 * Moved syncthing API file generation to reset script
@@ -210,6 +227,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Removed PPSSPP minimum frequency setter
 * Removed unused backup and storage options due to internal refactor
 * Removed unused glyphs and updated default theme
+* Swapped PPSSPP font for `wqy-microhei.ttc`
 * Unified several device specific scripts to global script location
 * Updated backup module with additional backup methods
 * Updated Collection and History pointers to use full path to content
@@ -217,10 +235,14 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Updated `folder.json` with new entries and spelling corrections
 * Updated GB Dark theme for higher resolutions
 * Updated `global.ini` with friendly name for Atari 2600
+* Updated LED_CONTROL_CHANGE to run in background
 * Updated `message.txt` with delicious food
 * Updated package installer scripts
 * Updated PortMaster restore task toolkit script to use new archive extractor
+* Updated PPSSPP for TrimUI devices
 * Updated PPSSPP to 1.19.3
 * Updated RGB LED process
 * Updated specific Libretro launch scripts
 * Updated storage info generation function
+* Updated supporter credits
+* Update TrimUI controls for PPSSPP
