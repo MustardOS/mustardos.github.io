@@ -121,9 +121,9 @@ The default MustardOS theme is a good example of what can be done on a basic the
 
 # Theme Folder Structure Glyphs
 
-The following images are used for populating the glyphs displayed in the headers, footers, and list items.
-<br><br>**Note:** If your theme does not supply images for the glyphs below then it will fall back to built in default
-images. If you want to hide glyphs you will need to adjust the appropriate settings in your scheme file. For example
+Images for populating menu glyphs frequently change as we add new featues to muOS.  For a list of all glyphs that are supported be sure to check out the `MustardOS.muxthm` theme included with muOS located here `/MUOS/theme`.  You can also view the list of glyph images on our [github](https://github.com/MustardOS/internal/tree/main/share/theme/active/glyph) page.  
+<br><br>**Note:** If your theme does not supply images for glyphs then it will fall back to built in default
+images found in `MustardOS.muxthm`. If you want to hide glyphs you will need to adjust the appropriate settings in your scheme file. For example
 disable list item glyphs you would set these settings in your scheme file:
 
 ```
@@ -132,380 +132,82 @@ LIST_DEFAULT_GLYPH_ALPHA=0
 LIST_FOCUS_GLYPH_ALPHA=0
 ```
 
-```
-├── glyph
-│   ├── bar
-│   |   ├── brightness.png
-│   |   ├── volume_0.png
-│   |   ├── volume_1.png
-│   |   ├── volume_2.png
-│   |   ├── volume_3.png
-│   ├── footer
-│   |   ├── a.png
-│   |   ├── b.png
-│   |   ├── c.png
-│   |   ├── menu.png
-│   |   ├── x.png
-│   |   ├── y.png
-│   |   ├── z.png
-│   ├── header
-│   |   ├── bluetooth.png
-│   |   ├── capacity_0.png
-│   |   ├── capacity_10.png
-│   |   ├── capacity_100.png
-│   |   ├── capacity_20.png
-│   |   ├── capacity_30.png
-│   |   ├── capacity_40.png
-│   |   ├── capacity_50.png
-│   |   ├── capacity_60.png
-│   |   ├── capacity_70.png
-│   |   ├── capacity_80.png
-│   |   ├── capacity_90.png
-│   |   ├── capacity_charging_0.png
-│   |   ├── capacity_charging_10.png
-│   |   ├── capacity_charging_100.png
-│   |   ├── capacity_charging_20.png
-│   |   ├── capacity_charging_30.png
-│   |   ├── capacity_charging_40.png
-│   |   ├── capacity_charging_50.png
-│   |   ├── capacity_charging_60.png
-│   |   ├── capacity_charging_70.png
-│   |   ├── capacity_charging_80.png
-│   |   ├── capacity_charging_90.png
-│   |   ├── network_active.png
-│   |   ├── network_normal.png
-│   ├── muxapp
-│   |   ├── app.png
-│   |   ├── archive.png
-│   |   ├── dingux.png
-│   |   ├── flip.png
-│   |   ├── moonlight.png
-│   |   ├── music.png
-│   |   ├── portmaster.png
-│   |   ├── ppsspp.png
-│   |   ├── retroarch.png
-│   |   ├── rgbcontroller.png
-│   |   ├── scummvm.png
-│   |   ├── task.png
-│   |   ├── terminal.png
-│   ├── muxarchive
-│   |   ├── archive.png
-│   |   ├── installed.png
-│   ├── muxassign
-│   |   ├── core.png
-│   |   ├── default.png
-│   |   ├── system.png
-│   ├── muxcollect
-│   |   ├── collection.png
-│   |   ├── folder.png
-│   ├── muxconfig
-│   |   ├── connect.png
-│   |   ├── custom.png
-│   |   ├── general.png
-│   |   ├── interface.png
-│   |   ├── language.png
-│   |   ├── power.png
-│   |   ├── storage.png
-│   |   ├── theme.png
-│   ├── muxconnect
-│   |   ├── bluetooth.png
-│   |   ├── network.png
-│   |   ├── service.png
-│   |   ├── usbfunction.png
-│   ├── muxcustom
-│   |   ├── backgroundanimation.png
-│   |   ├── bgm.png
-│   |   ├── blackfade.png
-│   |   ├── boxart.png
-│   |   ├── boxartalign.png
-│   |   ├── catalogue.png
-│   |   ├── config.png
-│   |   ├── font.png
-│   |   ├── launchsplash.png
-│   |   ├── sound.png
-│   |   ├── theme.png
-│   |   ├── themealternate.png
-│   ├── muxgov
-│   |   ├── default.png
-│   |   ├── governor.png
-│   ├── muxhdmi
-│   |   ├── audio.png
-│   |   ├── depth.png
-│   |   ├── enable.png
-│   |   ├── range.png
-│   |   ├── resolution.png
-│   |   ├── scan.png
-│   |   ├── space.png
-│   |   ├── theme_resolution.png
-│   ├── muxhistory
-│   |   ├── collection.png
-│   |   ├── history.png
-│   ├── muxinfo
-│   |   ├── credit.png
-│   |   ├── screenshot.png
-│   |   ├── space.png
-│   |   ├── system.png
-│   |   ├── tester.png
-│   |   ├── tracker.png
-│   ├── muxlanguage
-│   |   ├── language.png
-│   ├── muxlaunch
-│   |   ├── apps.png
-│   |   ├── collection.png
-│   |   ├── config.png
-│   |   ├── explore.png
-│   |   ├── favourite.png
-│   |   ├── history.png
-│   |   ├── info.png
-│   |   ├── reboot.png
-│   |   ├── shutdown.png
-│   ├── muxnetprofile
-│   |   ├── profile.png
-│   ├── muxnetscan
-│   |   ├── netscan.png
-│   ├── muxnetwork
-│   |   ├── address.png
-│   |   ├── connect.png
-│   |   ├── dns.png
-│   |   ├── enable.png
-│   |   ├── gateway.png
-│   |   ├── identifier.png
-│   |   ├── password.png
-│   |   ├── scan.png
-│   |   ├── status.png
-│   |   ├── subnet.png
-│   |   ├── type.png
-│   ├── muxoption
-│   |   ├── core.png
-│   |   ├── folder.png
-│   |   ├── governor.png
-│   |   ├── rom.png
-│   |   ├── search.png
-│   ├── muxpicker
-│   |   ├── catalogue.png
-│   |   ├── config.png
-│   |   ├── folder.png
-│   |   ├── theme.png
-│   ├── muxplore
-│   |   ├── collection.png
-│   |   ├── folder.png
-│   |   ├── history.png
-│   |   ├── rom.png
-│   ├── muxpower
-│   |   ├── battery.png
-│   |   ├── idle_display.png
-│   |   ├── idle_sleep.png
-│   |   ├── shutdown.png
-│   ├── muxrtc
-│   |   ├── day.png
-│   |   ├── hour.png
-│   |   ├── minute.png
-│   |   ├── month.png
-│   |   ├── notation.png
-│   |   ├── timezone.png
-│   |   ├── year.png
-│   ├── muxsearch
-│   |   ├── content.png
-│   |   ├── folder.png
-│   |   ├── global.png
-│   |   ├── local.png
-│   |   ├── lookup.png
-│   ├── muxshot
-│   |   ├── screenshot.png
-│   ├── muxspace
-│   |   ├── rfs.png
-│   |   ├── sd1.png
-│   |   ├── sd2.png
-│   |   ├── usb.png
-│   ├── muxstorage
-│   |   ├── bios.png
-│   |   ├── catalogue.png
-│   |   ├── collection.png
-│   |   ├── config.png
-│   |   ├── content.png
-│   |   ├── core.png
-│   |   ├── favourite.png
-│   |   ├── history.png
-│   |   ├── language.png
-│   |   ├── music.png
-│   |   ├── name.png
-│   |   ├── network.png
-│   |   ├── pack-catalogue.png
-│   |   ├── pack-config.png
-│   |   ├── retroarch.png
-│   |   ├── save.png
-│   |   ├── screenshot.png
-│   |   ├── syncthing.png
-│   |   ├── theme.png
-│   |   ├── userinit.png
-│   ├── muxsysinfo
-│   |   ├── capacity.png
-│   |   ├── cpu.png
-│   |   ├── device.png
-│   |   ├── governor.png
-│   |   ├── kernel.png
-│   |   ├── memory.png
-│   |   ├── service.png
-│   |   ├── speed.png
-│   |   ├── temp.png
-│   |   ├── uptime.png
-│   |   ├── version.png
-│   |   ├── voltage.png
-│   ├── muxtask
-│   |   ├── backup.png
-│   |   ├── clear.png
-│   |   ├── diagnostic.png
-│   |   ├── ethernet.png
-│   |   ├── junk.png
-│   |   ├── network.png
-│   |   ├── retroarch.png
-│   |   ├── sdcard.png
-│   |   ├── theme.png
-│   ├── muxtester
-│   |   ├── btn_a.png
-│   |   ├── btn_b.png
-│   |   ├── btn_c.png
-│   |   ├── btn_l1.png
-│   |   ├── btn_l2.png
-│   |   ├── btn_l3.png
-│   |   ├── btn_menu.png
-│   |   ├── btn_r1.png
-│   |   ├── btn_r2.png
-│   |   ├── btn_r3.png
-│   |   ├── btn_select.png
-│   |   ├── btn_start.png
-│   |   ├── btn_x.png
-│   |   ├── btn_y.png
-│   |   ├── btn_z.png
-│   |   ├── dpad_down.png
-│   |   ├── dpad_left.png
-│   |   ├── dpad_right.png
-│   |   ├── dpad_up.png
-│   |   ├── ls_down.png
-│   |   ├── ls_left.png
-│   |   ├── ls_right.png
-│   |   ├── ls_up.png
-│   |   ├── rs_down.png
-│   |   ├── rs_left.png
-│   |   ├── rs_right.png
-│   |   ├── rs_up.png
-│   |   ├── vol_down.png
-│   |   ├── vol_up.png
-│   ├── muxtheme
-│   |   ├── theme.png
-│   ├── muxtimezone
-│   |   ├── timezone.png
-│   ├── muxtweakadv
-│   |   ├── accelerate.png
-│   |   ├── brightness.png
-│   |   ├── cardmode.png
-│   |   ├── dpadswap.png
-│   |   ├── led.png
-│   |   ├── lock.png
-│   |   ├── offset.png
-│   |   ├── overdrive.png
-│   |   ├── retrowait.png
-│   |   ├── rumble.png
-│   |   ├── state.png
-│   |   ├── swap.png
-│   |   ├── swapfile.png
-│   |   ├── theme.png
-│   |   ├── thermal.png
-│   |   ├── userinit.png
-│   |   ├── verbose.png
-│   |   ├── volume.png
-│   ├── muxtweakgen
-│   |   ├── advanced.png
-│   |   ├── brightness.png
-│   |   ├── clock.png
-│   |   ├── colour.png
-│   |   ├── hdmi.png
-│   |   ├── startup.png
-│   |   ├── volume.png
-│   ├── muxvisual
-│   |   ├── battery.png
-│   |   ├── clock.png
-│   |   ├── counterfile.png
-│   |   ├── counterfolder.png
-│   |   ├── dash.png
-│   |   ├── folderempty.png
-│   |   ├── folderitemcount.png
-│   |   ├── friendlyfolder.png
-│   |   ├── hidden.png
-│   |   ├── name.png
-│   |   ├── network.png
-│   |   ├── thetitleformat.png
-│   |   ├── titleincluderootdrive.png
-│   ├── muxwebserv
-│   |   ├── ntp.png
-│   |   ├── rslsync.png
-│   |   ├── sftpgo.png
-│   |   ├── sshd.png
-│   |   ├── syncthing.png
-│   |   ├── tailscaled.png
-│   |   ├── ttyd.png
-├── image
-├── scheme
-└── sound
-```
-
 # Program Names
 
 MustardOS has numerous programs, so they are individually named so that you Themers can set different properties for
 every single page if you so wish to do so! Anything named ```default.xxx``` in the above folder structure can be renamed
 to  ```mux...``` to apply ideas to single pages.
 
-You can also set images to appear for individual list items (see the files above under `./image/static/muxlaunch/`.
-> *Caution - as MustardOS is a constantly updating system, there is a high chance that in time, list items will be added
-or removed from sections. Be wary of this when creating graphics that show all the options for a program.*
+You can also set images to appear for individual list items on the main launch page (see the files above under `./image/static/muxlaunch/`.
 
 Check out the updated naming conventions of all modules below;
 
 | Program Name  | Function                                    | List Item Names                                                                                                                                                                                                      |
 |:-------------:|:--------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    muxapp     | Dynamic applications page                   | *List item wallpapers named directly after application names. Default example here;* <br>Archive Manager / Dingux Commander / GMU Music Player / Moonlight / PortMaster / RetroArch / Simple Terminal / Task Toolkit |
-|  muxarchive   | Archive Manager page                        | -                                                                                                                                                                                                                    |
-|   muxassign   | Shows when assigning a core to a folder     | -                                                                                                                                                                                                                    |
-|   muxcharge   | Charging Screen                             | -                                                                                                                                                                                                                    |
-|   muxconfig   | Configuration page                          | general / theme / network / service / clock / device                                                                                                                                                                 |
-|  muxcredits   | -                                           | -                                                                                                                                                                                                                    |
-| muxfavourite  | Favourites page                             | -                                                                                                                                                                                                                    |
-|    muxgov     | -                                           | -                                                                                                                                                                                                                    |
-|  muxhistory   | History page                                | -                                                                                                                                                                                                                    |
-|    muxinfo    | Information page                            | tester / system / credit                                                                                                                                                                                             |
-|  muxlanguage  | -                                           | -                                                                                                                                                                                                                    |
-|   muxlaunch   | Main Menu                                   | explore / favourite / history / apps / info / config / reboot / shutdown                                                                                                                                             |
-| muxnetprofile | Network Profiles (within Wi-FI).            | -                                                                                                                                                                                                                    |
-|  muxnetscan   | Shows when scanning for networks.           | -                                                                                                                                                                                                                    |
-|  muxnetwork   | Wi-Fi Network Page                          | enable / identifier / password / type / address / subnet / gateway / DNS / status / connect                                                                                                                          |
-|   muxoption   | -                                           | -                                                                                                                                                                                                                    |
-|    muxpass    | Passcode Lock Screen                        | -                                                                                                                                                                                                                    |
-|   muxplore    | Content Explore Page                        | *Use `MUOS/info/catalogue` outside of themes to create list item wallpapers.*                                                                                                                                        |
-|   muxpower    | -                                           | -                                                                                                                                                                                                                    |
-|    muxrtc     | Date and Time page                          | year / month / day / hour / minute / notation / timezone                                                                                                                                                             |
-|   muxsplash   | -                                           | -                                                                                                                                                                                                                    |
-|   muxstart    | -                                           | -                                                                                                                                                                                                                    |
-|  muxstorage   | Storage Migrate/Sync                        | bios / config / catalogue / fav / music / save / screenshot / theme                                                                                                                                                  |
-|  muxsysinfo   | System details                              | version / kernel / uptime / cpu / speed / governor / memory / temp / service / capacity / voltage                                                                                                                    |
-|    muxtask    | Task toolkit page                           | -                                                                                                                                                                                                                    |
-|   muxtester   | Input Tester                                | -                                                                                                                                                                                                                    |
-|   muxtheme    | Theme Picker page                           | -                                                                                                                                                                                                                    |
-|  muxtimezone  | Timezone Selection                          | -                                                                                                                                                                                                                    |
-|  muxtweakadv  | Advanced (within General Settings)          | swap / thermal / font / volume / brightness / offset / lock / led / theme / retrowait / android / state / verbose                                                                                                    |
-|  muxtweakgen  | General Settings                            | hidden / bgm / sound / startup / colour / brightness / hdmi / shutdown / battery / sleep / interface / storage / advanced                                                                                            |
-|   muxvisual   | Interface Options (within General Settings) | battery / network / bluetooth / mux_clock / boxart / name / dash / counterfolder / counterfile                                                                                                                       |
-|  muxwebserv   | Web Services page                           | shell / browser / terminal / sync / ntp                                                                                                                                                                              |
+|    muxapp     | Dynamic applications page                   | N/A  |
+|  muxarchive   | Archive Manager page                        | N/A  |
+|   muxassign   | Shows when assigning a core to a folder     | N/A  |
+|  muxbackup    | Device Backup                               | N/A  |
+|   muxcharge   | Charging Screen                             | N/A  |
+|  muxcollect   | Collections page                            | N/A  |
+|   muxconfig   | Configuration page                          | N/A  |
+|  muxconnect   | Connectivity                                | N/A  |
+|  muxcontrol   | Setting Content Control                     | N/A  |
+|  muxcredits   | -                                           | N/A  |
+|  muxcustom    | Customisation                               | N/A  |
+|  muxdownload  | Core/Language Downloader                    | N/A  |
+|    muxgov     | -                                           | N/A  |
+|  muxhdmi      | HDMI Output Settings                        | N/A  |
+|  muxhistory   | History page                                | N/A  |
+|    muxinfo    | Information page                            | N/A  |
+|  muxkiosk     | Kiosk Settings                              | N/A  |
+|  muxlanguage  | -                                           | N/A  |
+|   muxlaunch   | Main Menu                                   | explore / collection / history / apps / info / config / reboot / shutdown  |
+|  muxmessage   | -                                           | N/A  |
+|  muxnetinfo   | Network Details                             | N/A  |
+| muxnetprofile | Network Profiles (within Wi-FI).            | N/A  |
+|  muxnetscan   | Shows when scanning for networks.           | N/A  |
+|  muxnetwork   | Wi-Fi Network Page                          | N/A  |
+|   muxoption   | -                                           | N/A  |
+|    muxpass    | Passcode Lock Screen                        | N/A  |
+|  muxpicker    | Catalogue Sets / RetroArch Configurations / Theme Picker | N/A  |
+|   muxplore    | Content Explore Page                        | N/A  |
+|   muxpower    | -                                           | N/A  |
+|    muxrtc     | Date and Time page                          | N/A  |
+|  muxsearch    | Search Content                              | N/A  |
+|  muxshot      | Screenshots                                 | N/A  |
+|  muxstorage   | Storage Space                               | N/A  |
+|   muxsplash   | -                                           | N/A  |
+|   muxstart    | -                                           | N/A  |
+|  muxstorage   | Storage Migrate/Sync                        | N/A  |
+|  muxsysinfo   | System details                              | N/A  |
+|  muxtag       | Tag Content                                 | N/A  |
+|    muxtask    | Task toolkit page                           | N/A  |
+|   muxtester   | Input Tester                                | N/A  |
+|  muxthemedown | Theme Downloader                            | N/A  |
+|  muxthemefilter | Theme Filters                             | N/A  |
+|  muxtimezone  | Timezone Selection                          | N/A  |
+|  muxtweakadv  | Advanced (within General Settings)          | N/A  |
+|  muxtweakgen  | General Settings                            | N/A  |
+|   muxvisual   | Interface Options (within General Settings) | N/A  |
+|  muxwarn      | Reset warning page                          | N/A  |
+|  muxwebserv   | Web Services page                           | N/A  |
 
 # Sound Files - Navigation
 
 You are able to use sounds within your theme. Place `WAVE` files in to the `sound` directory.
 
-|  Sound File  | Function                               |
-|:------------:|:---------------------------------------|
-|   back.wav   | Pressing the back button               |
-| confirm.wav  | Selecting an active item               |
-| keypress.wav | On Screen Keyboard (OSK) key press     |
-|   muos.wav   | Something secret - _What could it be?_ |
-| navigate.wav | Pressing UDLR buttons                  |
-|  reboot.wav  | Rebooting the device                   |
-| shutdown.wav | Shutting down the device               |
+|  Sound File    | Function                               |
+|:--------------:|:---------------------------------------|
+|   back.wav     | Pressing the back button               |
+| confirm.wav    | Selecting an active item               |
+| error.wav      | Error sound                            |
+| info_close.wav | Closing Info Window                    |
+| info_open.wav  | Opening Info window                    |
+| keypress.wav   | On Screen Keyboard (OSK) key press     |
+|   muos.wav     | Something secret - _What could it be?_ |
+| navigate.wav   | Pressing UDLR buttons                  |
+| option.wav     | Change Option Value                    |
+|  reboot.wav    | Rebooting the device                   |
+| shutdown.wav   | Shutting down the device               |
+| startup.wav    | Starting up the device                 |

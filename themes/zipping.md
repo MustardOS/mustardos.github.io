@@ -8,19 +8,15 @@ has_toc: false
 
 # Creating a Preview Image
 
-Most preview images are 288x216 resolution. Create your preview image by taking a screenshot on your device (MENU +
+Most preview images are displayed at 45% the screen resolution. Create your preview image by taking a screenshot on your device (MENU +
 PWR), or generating an image you think best represents your theme. Resize it and **rename it to preview.png**, and drop
-it into your theme's folder before zipping it up.
-
-> *Be warned: the preview image resolution will take up as much space on the screen as the size of the image itself. The
-typical screen for MustardOS is 640x480, so if you use a screenshot without resizing your image, your preview within
-Theme Picker will cover all of your options!*
+it into your theme's resolution folder before zipping it up.
 
 # Zipping your Theme
 
 To zip your theme correctly, you must compress the folder structure together **NOT** the root folder of your theme.
 
-- Select `credits.txt`, `preview.png`, `./images/`, `./scheme/`, and the rest of your folders for your theme together.
+- Select `credits.txt`, `./640x480/preview.png`, `./images/`, `./scheme/`, and the rest of your folders for your theme together.
 - Use a program such as WinRar (Windows), Keka (macOS), and 7zip (Linux/Windows) to compress those as one zip.
 - Name your zip whatever you choose.
 - Replace the zip extension with `muxthm`, example: `theme_name.muxthm`
