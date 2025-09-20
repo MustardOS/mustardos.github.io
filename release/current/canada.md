@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.1 CANADA GOOSE
-permalink: /release/progress/canada
-parent: Progress
+permalink: /release/current/canada
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -16,7 +16,7 @@ has_toc: false
 
 ## Download
 
-_Not available yet!_
+[Download from Gofile](https://gofile.io/d/Ze3VpF){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .important }
 > As this is a major release you will be required to reflash to update your device to this version. Due to the changes
@@ -101,8 +101,10 @@ across other devices. So if you can, help out the following MustardOS developmen
 ## Changes
 
 * Added additional archive support
+* Added additional extraction plugins
 * Added additional RetroArch restore functions to task toolkit script
 * Added application directory generation for SD1
+* Added application path to bind mounts
 * Added archive extraction with top level pattern support
 * Added boot logo update function to global
 * Added built-in application support
@@ -116,23 +118,30 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added direct 2048 launch override (_as an example_)
 * Added emulator archive extractor
 * Added file stream fnv-1a hash calculation
+* Added first time installer module
 * Added FNV-1a hash calculation of default theme
 * Added "game" support bind mount to PPSSPP emulator
 * Added Genesis Plus GX Expanded
+* Added glyph and grid image lookup for applications
+* Added graphics information tool
 * Added missing help strings
 * Added network disconnect and module unload on shutdown
 * Added override path to archive extractor patterns
 * Added plugin based system for archive extractors
+* Added `pre` and `post` support for archive extractor system
 * Added separate zip global function script
+* Added small LCD display delay
+* Added sound file preparation
 * Added string capitalisation global function
-* Added support for SD2/SD1 applications
-    * Priority is `INTERNAL` -> `SD2` -> `SD1`
+* Added support for SD2/SD1 applications - Priority is `INTERNAL` -> `SD2` -> `SD1`
 * Added theme alternative extraction method
 * Added theme and package deletion function
 * Added theme archive path to Archive Manager
 * Added theme catalogue image support
 * Added toast message delay values
 * Added top level directory structure support for general archives
+* Added user installed applications to backup module
+* Added user installed applications to storage module
 * Centralised device specific boot logo images
 * Centralised device specific start scripts
 * Fixed ADB/MTP gadget mode
@@ -143,24 +152,30 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed catalogue generation script
 * Fixed catalogue path due to internal change
 * Fixed catalogue saving script path
+* Fixed collection task to use SD1 mount variable
 * Fixed core assigns from Collection and History modules
 * Fixed device network initialisation hang that happened on certain devices
 * Fixed device speaker pop on shutdown
 * Fixed false display of rotated boot logo message
 * Fixed friendly folder names in 2 card setup
 * Fixed global internal sound path
+* Fixed `gptokeyb` reference launching
+* Fixed grid image location for install module
 * Fixed history and collection glyph on Content Explore module
 * Fixed internal emulator path for restore scripts
 * Fixed issue installing theme assets
+* Fixed issue switching alternate themes
 * Fixed issue with glyphs not showing if cores were cleared
 * Fixed issue with sleep wake exceeding maximum brightness
 * Fixed launching apps while in grid mode
 * Fixed LED control change function
+* Fixed LED control space formatting
 * Fixed loading global user SDL mappings for Pyxel core
 * Fixed picker font deletion
 * Fixed PipeWire console mode audio adjustments
 * Fixed PortMaster extraction location
 * Fixed PPSSPP archive extraction
+* Fixed PPSSPP scaling on H700 devices
 * Fixed preinstalled application launch directory location
 * Fixed reboot and shutdown halt processing order
 * Fixed RetroArch configuration appending
@@ -173,8 +188,13 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed Task Toolkit restore scripts
 * Fixed theme name not generating on save
 * Fixed theme previews
+* Fixed theme schemes for CUBEXX
+* Fixed TrimUI overlays by applying aspect-fill override
+* Fixed TrimUI TSP right stick input detection
 * Merged device specific control scripts
 * Merged device specific tasks and remove tasks
+* Minor startup script optimisations
+* Minor update to disclaimer text
 * Modified backup module to suit archive extraction format
 * Modified backup script to use new archive functions
 * Modified backup script to utilise new archive format
@@ -200,17 +220,23 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Moved core launch configurations to internal storage
 * Moved default and pre-installed themes to internal storage
 * Moved emulators to internal storage
+* Moved first init message further up the chain
 * Moved languages to internal storage
 * Moved muX controllers to internal storage
 * Moved preinstalled applications to internal system
 * Moved RetroArch and LibRetro cores to internal storage
 * Moved RetroArch configurations to internal storage
+* Moved sound initialisation from sub shell
 * Moved syncthing API file generation to reset script
 * Moved tasks, update pointers, and media paths to internal
 * Moved unused emulator scripts to extra repository
 * Optimised archive extraction methods
 * Optimised core and system assign files
 * Optimised LED control change function
+* Optimised OS release file updating
+* Optimised PipeWire initialisation
+* Optimised PipeWire to be less aggressive for audio shutdown
+* Optimised speaker reversal script
 * Optimised startup and function scripts
 * Removed active speaker process from audio stack
 * Removed backup tasks from Task Toolkit
@@ -225,8 +251,12 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Removed leftover network tasks
 * Removed PPSSPP device prefix
 * Removed PPSSPP minimum frequency setter
+* Removed theme hash check
 * Removed unused backup and storage options due to internal refactor
 * Removed unused glyphs and updated default theme
+* Replaced more run references to global variable
+* Simplified default theme existence check
+* Split play sound with prep sound function
 * Swapped PPSSPP font for `wqy-microhei.ttc`
 * Unified several device specific scripts to global script location
 * Updated backup module with additional backup methods

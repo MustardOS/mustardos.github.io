@@ -9,7 +9,7 @@ has_children: false
 
 # Download
 
-[Latest](/release/current/goose){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Latest](release/current/canada){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
@@ -28,12 +28,10 @@ This will ensure your data stays safe and doesn't fail on you in the middle of c
 
 There are several recommended programs you can use to flash your SD card
 
-* Raspberry Pi
-  Imager - [https://github.com/raspberrypi/rpi-imager/releases](https://github.com/raspberrypi/rpi-imager/releases)
+* Raspberry Pi Imager - [https://github.com/raspberrypi/rpi-imager/releases](https://github.com/raspberrypi/rpi-imager/releases)
 * Alex's USB Image Tool - [https://www.alexpage.de/usb-image-tool/](https://www.alexpage.de/usb-image-tool/)
 * Rufus - [https://rufus.ie/en/](https://rufus.ie/en/)
-* Win32 Disk
-  Imager - [https://sourceforge.net/projects/win32diskimager/](https://sourceforge.net/projects/win32diskimager/)
+* Win32 Disk Imager - [https://sourceforge.net/projects/win32diskimager/](https://sourceforge.net/projects/win32diskimager/)
 * USBImager - [https://gitlab.com/bztsrc/usbimager](https://gitlab.com/bztsrc/usbimager)
 
 {: .warning}

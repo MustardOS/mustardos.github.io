@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.0 GOOSE
-permalink: /release/current/goose
-parent: Current
+permalink: /release/archive/goose
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false
