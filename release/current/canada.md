@@ -29,6 +29,11 @@ has_toc: false
 > do so with caution as there may be conflicts.
 
 {: .note }
+> Due to the amount of issues in the past relating to people changing their RetroArch global configuration
+> we have opted to freeze it.  If you would like to know how to unfreeze it please see this [FAQ] (https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823)
+
+
+{: .note }
 > Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as there
 > are a few changes that have been made. Including the change from **POWER** to **START** for the charging module along
 > with the screenshot and DPAD swap hotkey changes.
