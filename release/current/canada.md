@@ -30,7 +30,7 @@ has_toc: false
 
 {: .note }
 > Due to the amount of issues in the past relating to people changing their RetroArch global configuration
-> we have opted to freeze it.  If you would like to know how to unfreeze it please see this [FAQ] (https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823)
+> we have opted to freeze it.  If you would like to know how to unfreeze it please see this [FAQ](https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823)
 
 
 {: .note }
