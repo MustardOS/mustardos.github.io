@@ -74,6 +74,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * guzzloid
 * ImCoKeMaN
 * Shijikori
+* thewalruzz
 * void_linux
 * wakeboxer
 * xonglebongle
