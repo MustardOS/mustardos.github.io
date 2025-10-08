@@ -40,6 +40,7 @@ From everyday play to inquisitive tinkering, MustardOS is built to adapt to you.
 
 [Discord](https://discord.gg/muos){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Forum](https://community.muos.dev/){: .btn .fs-5 .mb-4 .mb-md-0 }
+[IRC](https://web.libera.chat/#MustardOS){: .btn .fs-5 .mb-4 .mb-md-0 }
 [Merch](https://shop.muos.dev/){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ***
