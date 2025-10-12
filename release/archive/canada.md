@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.1 CANADA GOOSE
-permalink: /release/current/canada
-parent: Current
+permalink: /release/archive/canada
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -17,6 +17,7 @@ has_toc: false
 ## Download
 
 [Download from Gofile](https://gofile.io/d/Ze3VpF){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/xnoXzJZI#S5s2cjfyqS9R1t-BDJNBJA){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .important }
 > As this is a major release you will be required to reflash to update your device to this version. Due to the changes
@@ -30,8 +31,8 @@ has_toc: false
 
 {: .note }
 > Due to the amount of issues in the past relating to people changing their RetroArch global configuration
-> we have opted to freeze it.  If you would like to know how to unfreeze it please see this [FAQ](https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823)
-
+> we have opted to freeze it. If you would like to know how to unfreeze it please see
+> the following [FAQ](https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823) page.
 
 {: .note }
 > Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as there

@@ -22,7 +22,7 @@ From everyday play to inquisitive tinkering, MustardOS is built to adapt to you.
 
 # Download
 
-[Latest](release/current/canada){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Latest](release/current/silly){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
