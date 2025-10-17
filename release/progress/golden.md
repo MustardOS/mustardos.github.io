@@ -93,7 +93,6 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added carousel support main menu
 * Added default language files for preinstalled applications
 * Added dynamic hotkey combo builder
-* Added dynamic hotkey combo builder
 * Added grid and carousel mode to history
 * Added hotkey combo archive support
 * Added hotkey combo toggle for DPAD swap and screenshot
