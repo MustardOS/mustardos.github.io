@@ -28,8 +28,8 @@ _Not available yet!_
 _Not available yet!_
 
 {: .important }
-> This is a simple **Archive Manager** installable patch for those of you who are running the MustardOS **2508.1 CANADA
-> GOOSE** version **_OR_** **2508.2 SILLY GOOSE**. However you can download the full image for a reflash.
+> This is a simple **Archive Manager** installable patch for those of you who are running either the MustardOS
+> **2508.1 CANADA GOOSE** or **2508.2 SILLY GOOSE** versions. However you can download the full image for a reflash.
 
 ***
 
