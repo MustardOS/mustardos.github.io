@@ -97,6 +97,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added hotkey combo archive support
 * Added hotkey combo toggle for DPAD swap and screenshot
 * Added individualised language support for applications
+* Added network settings to kiosk mode
 * Added Polish to preinstalled `mux_lang.ini` files
 * Added support for `bootlogo.png` gradient colour
 * Added task toolkit script refresh boot logo
@@ -106,6 +107,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed comparison value for box art splash
 * Fixed network loading specifically for 8188eu dongle
 * Fixed RetroArch running save state file flush on sleep shutdown
+* Fixed volume and brightness bar for the default MustardOS theme,
 * Modified module loader to probe TrimUI GPU initialiser
 * Modified network loader to only remove module for H700 devices
 * Modified swap script to use modprobe force
