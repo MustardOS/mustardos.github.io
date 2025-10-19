@@ -107,6 +107,8 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed comparison value for box art splash
 * Fixed network loading specifically for 8188eu dongle
 * Fixed RetroArch running save state file flush on sleep shutdown
+* Fixed suspend network halting
+* Fixed TrimUI module suspending as they can get cranky
 * Fixed volume and brightness bar for the default MustardOS theme,
 * Modified module loader to probe TrimUI GPU initialiser
 * Modified network loader to only remove module for H700 devices
@@ -114,6 +116,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Modified system information to separate version and build ID
 * Modified ZRAM option to hide for TrimUI devices
 * Moved extra module loading for specific devices
+* Optimised a few extra common paths to variables
 * Separated rumble init to separate device script
 * Updated default theme colours, previews, and larger font for HDMI resolutions
 * Updated grid current item label to use full name
