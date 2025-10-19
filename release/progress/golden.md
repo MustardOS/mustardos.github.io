@@ -83,6 +83,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 ## Contributors
 
 * Bitter_Bizarro
+* imcokeman
 * thewalruzz
 * xonglebongle
 
