@@ -98,6 +98,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added hotkey combo archive support
 * Added hotkey combo toggle for DPAD swap and screenshot
 * Added individualised language support for applications
+* Fixed installer default theme for 1280x720 resolution
 * Added network settings to kiosk mode
 * Added Polish to preinstalled `mux_lang.ini` files
 * Added support for `bootlogo.png` gradient colour
@@ -113,12 +114,18 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed volume and brightness bar for the default MustardOS theme,
 * Modified module loader to probe TrimUI GPU initialiser
 * Modified network loader to only remove module for H700 devices
+* Modified network module loading only if board is network capable
 * Modified swap script to use modprobe force
 * Modified system information to separate version and build ID
 * Modified ZRAM option to hide for TrimUI devices
 * Moved extra module loading for specific devices
 * Optimised a few extra common paths to variables
+* Removed `2048.sh` core override
 * Separated rumble init to separate device script
+* Updated brightness scale for TrimUI devices to 0-255
 * Updated default theme colours, previews, and larger font for HDMI resolutions
 * Updated grid current item label to use full name
+* Updated installer module to be uniform with main menu launcher
+* Updated RGB modes for TrimUI devices
+* Updated RGB script for TrimUI devices
 * Updated temp path for grid toggle scripts
