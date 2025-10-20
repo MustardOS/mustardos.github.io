@@ -126,6 +126,5 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Updated default theme colours, previews, and larger font for HDMI resolutions
 * Updated grid current item label to use full name
 * Updated installer module to be uniform with main menu launcher
-* Updated RGB modes for TrimUI devices
-* Updated RGB script for TrimUI devices
+* Updated RGB modes and script for TrimUI devices
 * Updated temp path for grid toggle scripts
