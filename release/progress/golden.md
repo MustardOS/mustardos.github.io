@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 2508.3 GOLDEN GOOSE
-permalink: /release/current/golden
+permalink: /release/progress/golden
 parent: Progress
 grand_parent: Release
 nav_order: 1
@@ -82,6 +82,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 
 ## Contributors
 
+* antiKk
 * Bitter_Bizarro
 * imcokeman
 * thewalruzz
@@ -92,6 +93,7 @@ across other devices. So if you can, help out the following MustardOS developmen
 ## Changes
 
 * Added carousel support main menu
+* Added control re-init for core downloads where required
 * Added default language files for preinstalled applications
 * Added dynamic hotkey combo builder
 * Added grid and carousel mode to history
@@ -101,9 +103,10 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Fixed installer default theme for 1280x720 resolution
 * Added network settings to kiosk mode
 * Added Polish to preinstalled `mux_lang.ini` files
+* Added Refresh Boot Logo and Restore Hotkeys scripts to Task Toolkit
 * Added support for `bootlogo.png` gradient colour
-* Added task toolkit script refresh boot logo
 * Added toggle script grid mode history
+* Attempted to negate Yabasanshiro flicker
 * Fixed app glyphs not showing for apps located on SD2
 * Fixed application translation support
 * Fixed comparison value for box art splash
@@ -123,8 +126,9 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Removed `2048.sh` core override
 * Separated rumble init to separate device script
 * Updated brightness scale for TrimUI devices to 0-255
-* Updated default theme colours, previews, and larger font for HDMI resolutions
+* Updated default theme colours, glyphs, previews, and larger font for HDMI resolutions
 * Updated grid current item label to use full name
 * Updated installer module to be uniform with main menu launcher
+* Updated preinstalled VBA-M core
 * Updated RGB modes and script for TrimUI devices
 * Updated temp path for grid toggle scripts
