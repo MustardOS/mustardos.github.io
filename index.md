@@ -22,7 +22,7 @@ From everyday play to inquisitive tinkering, MustardOS is built to adapt to you.
 
 # Download
 
-[Latest](release/current/silly){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Latest](release/current/golden){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
@@ -118,8 +118,8 @@ offering plenty of depth and customisation for those who enjoy exploring further
 {: .note }
 > * Exchange right stick for left stick on the RG40XX-V device.
 > * These do **NOT** work on the TrimUI devices.
->  * The Smart Pro has **NO** analogue stick click, no L3, no R3.
->  * The Brick has **NO** analogue sticks for adjustments.
+> * The Smart Pro has **NO** analogue stick click, no L3, no R3.
+> * The Brick has **NO** analogue sticks for adjustments.
 
 ## Devices
 
@@ -145,15 +145,15 @@ offering plenty of depth and customisation for those who enjoy exploring further
 | H36S           |
 | R36S           |
 
-| Limited            |
-|:-------------------|
-| Anbernic RG35XX OG |
-
 | Planned           |
 |:------------------|
 | Anbernic ARC-D    |
 | Game Kiddy Bubble |
 | MagicX XU Mini28  |
+
+| Removed            |
+|:-------------------|
+| Anbernic RG35XX OG |
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>

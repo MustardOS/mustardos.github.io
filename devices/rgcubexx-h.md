@@ -1,7 +1,7 @@
 ---
 layout: default
-title: RG35XX PLUS
-permalink: /devices/anbernic/rg35xx-plus
+title: RGCUBEXX-H
+permalink: /devices/anbernic/rgcubexx-h
 parent: Anbernic
 grand_parent: Devices
 nav_enabled: true
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Anbernic RG35XX PLUS
+# Anbernic RGCUBEXX H
 
 ## General Information
 
@@ -18,12 +18,12 @@ has_toc: false
 
 ## Offical Store Page
 
-[https://anbernic.com/products/rg35xx-plus](https://anbernic.com/products/rg35xx-plus)
+[https://anbernic.com/products/rg-cubexx](https://anbernic.com/products/rg-cubexx)
 
 ## Specs
 
 |:-------------------|:---------------------------|
-| Screen | 3.5 Inch 640x480 IPS |
+| Screen | 3.95 Inch 720x720 IPS |
 | CPU | H700 ARM Cortex-A53 1.5GHz |
 | GPU | Mali-G31 |
 | RAM | 1 GB |

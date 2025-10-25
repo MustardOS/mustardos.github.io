@@ -1,7 +1,7 @@
 ---
 layout: default
-title: RG35XX PLUS
-permalink: /devices/anbernic/rg35xx-plus
+title: RG34XX SP
+permalink: /devices/anbernic/rg34xx-sp
 parent: Anbernic
 grand_parent: Devices
 nav_enabled: true
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Anbernic RG35XX PLUS
+# Anbernic RG34XX SP
 
 ## General Information
 
@@ -18,15 +18,15 @@ has_toc: false
 
 ## Offical Store Page
 
-[https://anbernic.com/products/rg35xx-plus](https://anbernic.com/products/rg35xx-plus)
+[https://anbernic.com/products/rg34xxsp](https://anbernic.com/products/rg34xxsp)
 
 ## Specs
 
 |:-------------------|:---------------------------|
-| Screen | 3.5 Inch 640x480 IPS |
+| Screen | 3.4 Inch 720x480 IPS |
 | CPU | H700 ARM Cortex-A53 1.5GHz |
 | GPU | Mali-G31 |
-| RAM | 1 GB |
+| RAM | 2 GB |
 
 ## Pictures
 

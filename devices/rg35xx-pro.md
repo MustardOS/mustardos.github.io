@@ -1,7 +1,7 @@
 ---
 layout: default
-title: RG35XX PLUS
-permalink: /devices/anbernic/rg35xx-plus
+title: RG35XX PRO
+permalink: /devices/anbernic/rg35xx-pro
 parent: Anbernic
 grand_parent: Devices
 nav_enabled: true
@@ -9,7 +9,7 @@ has_children: false
 has_toc: false
 ---
 
-# Anbernic RG35XX PLUS
+# Anbernic RG35XX PRO
 
 ## General Information
 
@@ -18,7 +18,7 @@ has_toc: false
 
 ## Offical Store Page
 
-[https://anbernic.com/products/rg35xx-plus](https://anbernic.com/products/rg35xx-plus)
+[https://anbernic.com/products/rg35xxpro](https://anbernic.com/products/rg35xxpro)
 
 ## Specs
 

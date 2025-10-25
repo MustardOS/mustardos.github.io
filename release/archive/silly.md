@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.2 SILLY GOOSE
-permalink: /release/current/silly
-parent: Current
+permalink: /release/archive/silly
+parent: Archive
 grand_parent: Release
 nav_order: 1
 has_toc: false

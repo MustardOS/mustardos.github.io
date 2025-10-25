@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 2508.3 GOLDEN GOOSE
-permalink: /release/progress/golden
-parent: Progress
+permalink: /release/current/golden
+parent: Current
 grand_parent: Release
 nav_order: 1
 has_toc: false
@@ -16,7 +16,8 @@ has_toc: false
 
 ## Download - Full Image
 
-_Not available yet!_
+[Download from Gofile](https://gofile.io/d/BjWtbj){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/FjIVxDyR#DRIA6Q7pez9863LSkbRMfQ){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .warning }
 > Upon full image reflash on devices with SD2 inserted your `MUOS` folder will be moved to `MUOS_old` to ensure update
@@ -25,7 +26,8 @@ _Not available yet!_
 
 ## Download - Update Archive
 
-_Not available yet!_
+[Download from Gofile](https://gofile.io/d/XcvWB8){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Download from MEGA](https://mega.nz/folder/Q7JDWIQa#LCTZofUz0gBq5_KEhrkXIg){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 {: .important }
 > This is a simple **Archive Manager** installable patch for those of you who are running either the MustardOS
@@ -96,25 +98,31 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Added control re-init for core downloads where required
 * Added default language files for preinstalled applications
 * Added dynamic hotkey combo builder
+* Added external command run support to hotkey runners
 * Added grid and carousel mode to history
 * Added hotkey combo archive support
 * Added hotkey combo toggle for DPAD swap and screenshot
-* Added individualised language support for applications
-* Fixed installer default theme for 1280x720 resolution
+* Added hotkey sequence combination support with timeout
+* Added individual language support for applications
+* Added modular and extensible JSON hotkey support
 * Added network settings to kiosk mode
 * Added Polish to preinstalled `mux_lang.ini` files
 * Added Refresh Boot Logo and Restore Hotkeys scripts to Task Toolkit
 * Added support for `bootlogo.png` gradient colour
 * Added toggle script grid mode history
+* Added turbo time parameter to run exec function
 * Attempted to negate Yabasanshiro flicker
 * Fixed app glyphs not showing for apps located on SD2
 * Fixed application translation support
 * Fixed comparison value for box art splash
+* Fixed installer default theme for 1280x720 resolution
 * Fixed network loading specifically for 8188eu dongle
 * Fixed RetroArch running save state file flush on sleep shutdown
 * Fixed suspend network halting
 * Fixed TrimUI module suspending as they can get cranky
-* Fixed volume and brightness bar for the default MustardOS theme,
+* Fixed virtual terminal to use login shell
+* Fixed volume and brightness bar for the default MustardOS theme
+* Fixed zombie processes on executable running
 * Modified module loader to probe TrimUI GPU initialiser
 * Modified network loader to only remove module for H700 devices
 * Modified network module loading only if board is network capable
@@ -124,11 +132,13 @@ across other devices. So if you can, help out the following MustardOS developmen
 * Moved extra module loading for specific devices
 * Optimised a few extra common paths to variables
 * Removed `2048.sh` core override
+* Removed device specific hotkeys
 * Separated rumble init to separate device script
 * Updated brightness scale for TrimUI devices to 0-255
-* Updated default theme colours, glyphs, previews, and larger font for HDMI resolutions
+* Updated default theme colours, glyphs, previews
 * Updated grid current item label to use full name
 * Updated installer module to be uniform with main menu launcher
+* Updated larger font for HDMI resolutions
 * Updated preinstalled VBA-M core
 * Updated RGB modes and script for TrimUI devices
 * Updated temp path for grid toggle scripts
