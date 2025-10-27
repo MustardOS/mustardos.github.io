@@ -16,7 +16,9 @@ Designed to give your device a fresh, modern feel, MustardOS puts control and pe
 emphasis on flexibility, it lets you shape the look, style, and behaviour of your handheld so it feels truly your own.
 From everyday play to inquisitive tinkering, MustardOS is built to adapt to you.
 
-<img src="assets/images/mainmenu.png" width="320"/>
+<img src="assets/images/mainmenu.png" width="320" style="border-radius:6px" />
+
+[Take the Grand Tour](tour){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 ***
 

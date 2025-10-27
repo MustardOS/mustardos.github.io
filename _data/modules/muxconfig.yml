@@ -1,0 +1,36 @@
+goback:
+  - link: muxlaunch
+
+visible:
+  - name: General Settings
+    icon: general
+    link: muxtweakgen
+    desc:
+  - name: Connectivity
+    icon: connect
+    link: muxcollect
+    desc:
+  - name: Customisation
+    icon: custom
+    link: muxcustom
+    desc:
+  - name: Interface Options
+    icon: interface
+    link: muxvisual
+    desc:
+  - name: Language
+    icon: language
+    link: muxlanguage
+    desc:
+  - name: Power Settings
+    icon: power
+    link: muxpower
+    desc:
+  - name: Storage
+    icon: storage
+    link: muxstorage
+    desc:
+  - name: Device Backup
+    icon: backup
+    link: muxbackup
+    desc:

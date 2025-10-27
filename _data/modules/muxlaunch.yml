@@ -1,0 +1,39 @@
+visible:
+  - name: Explore Content
+    icon: explore
+    link: muxplore
+    desc: Access games and media found across SD1, SD2, or USB storage.
+  - name: Collection
+    icon: collection
+    link: muxcollect
+    desc: View and manage your saved collections of favourite titles.
+  - name: History
+    icon: history
+    link: muxhistory
+    desc: Return to items that were recently launched or accessed.
+  - name: Applications
+    icon: apps
+    link: muxapp
+    desc: Browse and run installed applications and tools.
+  - name: Information
+    icon: info
+    link: muxinfo
+    desc: Display system status, version information, and diagnostics.
+  - name: Configuration
+    icon: config
+    link: muxconfig
+    desc: Adjust system behaviour, interface layout, and general preferences.
+  - name: Reboot
+    icon: reboot
+    desc: Restart the device safely without powering down.
+  - name: Shutdown
+    icon: shutdown
+    desc: Power off the system cleanly.
+
+hidden:
+  - name: Kiosk Settings
+    link: muxkiosk
+    desc: Configures kiosk and locked demonstration modes.
+
+tip:
+  - info: Use **B** to quickly select **Explore Content**.  

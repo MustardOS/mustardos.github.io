@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+<p>{{ page.description }}</p>
+
+{% assign modset = site.data.modules[page.module] %}
+
+{% if modset.goback and modset.goback.size > 0 %}
+{% for mod in modset.goback %}
+<h3><a href="/tour/modules/{{ mod.link }}">Go Back to {{ page.parent }}</a></h3>
+{% endfor %}
+<hr>
+{% endif %}
+
+{% if modset.visible and modset.visible.size > 0 %}
+<h2>Available Modules</h2>
+<table style="width:100%;">
+    <thead>
+    <tr>
+        <th>Glyph</th>
+        <th>Module</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for mod in modset.visible %}
+    <tr>
+        <td style="text-align:center;">
+            <img src="../assets/glyphs/{{ page.module }}/{{ mod.icon }}.png" style="filter:invert(100%);"/>
+        </td>
+        <td>
+            {% if mod.link %}
+            <a href="/tour/modules/{{ mod.link }}"><strong>{{ mod.name }}</strong></a>
+            {% else %}
+            <strong>{{ mod.name }}</strong>
+            {% endif %}
+        </td>
+        <td>{{ mod.desc }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+{% if modset.hidden and modset.hidden.size > 0 %}
+<hr>
+<h2>Hidden Modules</h2>
+<table style="width:100%;">
+    <thead>
+    <tr>
+        <th>Module</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for mod in modset.hidden %}
+    <tr>
+        <td>
+            {% if mod.link %}
+            <a href="/tour/modules/{{ mod.link }}"><strong>{{ mod.name }}</strong></a>
+            {% else %}
+            <strong>{{ mod.name }}</strong>
+            {% endif %}
+        </td>
+        <td>{{ mod.desc }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+{% if modset.tip and modset.tip.size > 0 %}
+<hr>
+<h2>Quick Tips</h2>
+<ul>
+    {% for mod in modset.tip %}
+    <li>{{ mod.info | markdownify }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
