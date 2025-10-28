@@ -2,33 +2,48 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.description }}</p>
+<h1><strong>{{ page.title }}</strong></h1>
 
 {% assign modset = site.data.modules[page.module] %}
 
-{% if modset.goback and modset.goback.size > 0 %}
-{% for mod in modset.goback %}
-<h3><a href="/tour/modules/{{ mod.link }}">Go Back to {{ page.parent }}</a></h3>
-{% endfor %}
+{% if modset.description %}
+<p>
+    {{ modset.description }}
+</p>
+{% endif %}
+
+{% if modset.goback %}
 <hr>
+
+<h2><strong><a href="/tour/modules/{{ modset.goback }}">Back to {{ page.parent }}</a></strong></h2>
 {% endif %}
 
 {% if modset.visible and modset.visible.size > 0 %}
-<h2>Available Modules</h2>
-<table style="width:100%;">
+<hr>
+
+<h2><strong>Available Options</strong></h2>
+
+<table style="width:100%; table-layout:fixed;">
+    <colgroup>
+        <col style="width:80px;">
+        <col style="width:200px;">
+        <col style="width:auto;">
+    </colgroup>
+
     <thead>
     <tr>
-        <th>Glyph</th>
-        <th>Module</th>
-        <th>Description</th>
+        <th style="text-align:center;">Glyph</th>
+        <th style="text-align:left;">Option</th>
+        <th style="text-align:left;">Description</th>
     </tr>
     </thead>
+
     <tbody>
     {% for mod in modset.visible %}
     <tr>
         <td style="text-align:center;">
-            <img src="../assets/glyphs/{{ page.module }}/{{ mod.icon }}.png" style="filter:invert(100%);"/>
+            <img src="/tour/assets/glyphs/{{ page.module }}/{{ mod.icon }}.png"
+                 style="filter:invert(100%); max-width:48px;">
         </td>
         <td>
             {% if mod.link %}
@@ -46,12 +61,19 @@ layout: default
 
 {% if modset.hidden and modset.hidden.size > 0 %}
 <hr>
-<h2>Hidden Modules</h2>
-<table style="width:100%;">
+
+<h2><strong>Hidden Options</strong></h2>
+
+<table style="width:100%; table-layout:fixed;">
+    <colgroup>
+        <col style="width:200px;">
+        <col style="width:auto;">
+    </colgroup>
+
     <thead>
     <tr>
-        <th>Module</th>
-        <th>Description</th>
+        <th style="text-align:left;">Option</th>
+        <th style="text-align:left;">Description</th>
     </tr>
     </thead>
     <tbody>
@@ -73,7 +95,9 @@ layout: default
 
 {% if modset.tip and modset.tip.size > 0 %}
 <hr>
-<h2>Quick Tips</h2>
+
+<h2><strong>Quick Tips</strong></h2>
+
 <ul>
     {% for mod in modset.tip %}
     <li>{{ mod.info | markdownify }}</li>

@@ -1,5 +1,6 @@
-goback:
-  - link: muxinfo
+description: TODO
+
+goback: muxinfo
 
 visible:
   - name: 

@@ -1,8 +1,11 @@
-goback:
-  - link: muxlaunch
+description: The History module provides a quick way to revisit content you have recently played. It helps you track previously launched items, identify those saved to collections, and resume from where you left off.<br><br>This section is ideal for quickly continuing your gameplay or reviewing recent activity without browsing through your full library.
+
+goback: muxlaunch
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Previously Played Content
+    icon: history
+    desc: Quickly launch previously played content or add the item to a collection.
+  - name: Content within a Collection
+    icon: collection
+    desc: A star is indicative of content that has been added to one or more collections.

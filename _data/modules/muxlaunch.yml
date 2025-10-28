@@ -1,3 +1,5 @@
+description: The Main Menu is the central starting area for MustardOS, providing quick access to all core features and utilities. From exploring your content and managing collections to checking system information or adjusting configuration settings, every essential function begins here.<br><br>It serves as the primary entry point for navigating and operating your device.
+
 visible:
   - name: Explore Content
     icon: explore

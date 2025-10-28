@@ -2,7 +2,6 @@
 layout: module
 title: Configuration
 module: muxconfig
-description: TODO
 permalink: /tour/modules/muxconfig
 parent: Main Menu
 nav_order: 6

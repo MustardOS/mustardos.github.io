@@ -1,5 +1,6 @@
-goback:
-  - link: muxsysinfo
+description: TODO
+
+goback: muxsysinfo
 
 visible:
   - name: 

@@ -1,8 +1,11 @@
-goback:
-  - link: muxlaunch
+description: The Collection module allows you to organise and group your favourite content into personalised sets. Folders can be created to sort collections by theme, genre, or platform, while individual items can be freely combined across systems.<br><br>It provides an easy and flexible way to curate and access the content you enjoy most.
+
+goback: muxlaunch
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Collection Folder
+    icon: folder
+    desc: Create one level deep folders to keep your collection organised.
+  - name: Collection Item
+    icon: collection
+    desc: An item that has been collected and stored. Items with the same name can be stored together, along with items from different systems and cores.

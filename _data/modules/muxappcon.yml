@@ -1,8 +1,11 @@
-goback:
-  - link: muxapp
+description: This module lets you configure per application settings that control performance and other future behaviour. These options determine how each app runs, such as which CPU governor is applied.<br><br>It provides fine grained control for optimising your experience without affecting global settings. Future developments will provide additional functionality to these options.
+
+goback: muxapp
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Name
+    icon: app
+    desc: The name of the application you are changing the options of.
+  - name: Governor
+    icon: governor
+    desc: The governor that will be used upon launch of the application.

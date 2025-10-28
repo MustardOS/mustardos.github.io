@@ -1,5 +1,6 @@
-goback:
-  - link: muxconfig
+description: TODO
+
+goback: muxconfig
 
 visible:
   - name: 
