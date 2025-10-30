@@ -1,9 +1,84 @@
-description: TODO
+description: >
+  Reserved for the bravest of tinkerers, this section provides direct access to low level system controls that affect 
+  storage behaviour, power suspension, and process scheduling. These settings are powerful but risky.<br><br>Altering 
+  them without a clear understanding can impact stability, performance, or data integrity. Adjust only if you know 
+  what you are doing or if you like a bit of excitement in your life.
 
 goback: muxtweakgen
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Swap Tendency
+    icon: vmswap
+    desc: >
+      Controls how aggressively the system moves inactive memory pages to swap storage. Lower values keep data 
+      in RAM longer, improving performance at the cost of higher memory use.
+  - name: Write Back Threshold
+    icon: dirty-ratio
+    desc: >
+      Defines the percentage of system memory that can contain unwritten (dirty) data before the kernel forces 
+      it to be written to disk. Higher values delay writes but risk larger bursts of I/O.
+  - name: Background Write Back
+    icon: dirty-back
+    desc: >
+      Sets the memory percentage that triggers background write-back activity. Lower values reduce latency by 
+      keeping storage more up-to-date but may increase write frequency.
+  - name: Cache Reclamation
+    icon: cache
+    desc: >
+      Determines how aggressively the kernel reclaims cached file data. Higher values free cache space quickly, 
+      while lower values improve access times for frequently used files.
+  - name: I/O Merge Policy
+    icon: merge
+    desc: >
+      Configures how the kernel merges adjacent I/O requests into single operations. Disabling merges may 
+      improve responsiveness on flash storage with low latency.
+  - name: Queue Depth
+    icon: requests
+    desc: >
+      Sets the maximum number of pending I/O operations allowed per device. Higher values increase throughput for 
+      heavy workloads but also raise memory usage.
+  - name: Read Ahead Size
+    icon: readahead
+    desc: >
+      Specifies how much data the kernel preloads before an application requests it. Larger read-ahead values 
+      benefit sequential reads, while smaller ones suit random access patterns.
+  - name: Swap Read-Ahead
+    icon: cluster
+    desc: >
+      Defines how many memory pages are prefetched from swap during reads. Lower values reduce latency; higher 
+      values improve performance for sustained swap activity.
+  - name: Realtime Timeslice
+    icon: timeslice
+    desc: >
+      Determines how long real time tasks can run before being rescheduled. Lower values enhance responsiveness, 
+      while higher values favour long, continuous processing.
+  - name: I/O Stats
+    icon: iostats
+    desc: >
+      Enables or disables kernel level tracking of per-device I/O statistics. Disabling this feature can slightly 
+      improve performance by reducing overhead.
+  - name: Idle Flush Mode
+    icon: idleflush
+    desc: >
+      When enabled, the system flushes dirty data during idle periods instead of waiting for write thresholds. 
+      Useful for flash storage and reducing power draw while inactive.
+  - name: Fork Optimisation
+    icon: child
+    desc: >
+      Prioritises newly created (forked) processes to run before their parent. Can improve perceived load times 
+      in some applications.
+  - name: Scheduler Scaling
+    icon: tunescale
+    desc: >
+      Adjusts kernel scheduler behaviour dynamically based on CPU core count. Disabling this keeps tuning 
+      consistent across multi-core and single-core systems.
+  - name: Disk Tuning
+    icon: cardmode
+    desc: >
+      Switches between predefined disk or card performance profiles. Useful for optimising behaviour on 
+      specific SD cards or external storage.
+  - name: Suspend Power State
+    icon: state
+    desc: >
+      Changes how the system enters and resumes from sleep mode. Different suspend states balance between 
+      faster wake-up and lower idle power consumption.

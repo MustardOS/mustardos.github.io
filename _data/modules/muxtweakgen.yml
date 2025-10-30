@@ -1,9 +1,64 @@
-description: TODO
+description: >
+  The General Settings module provides access to a variety of essential system options that define how the device behaves and interacts with connected hardware. 
+  These settings cover display output, input responsiveness, and system behaviour at startup. 
+  Most of the adjustments here are safe for everyday use and allow users to fine-tune their overall MustardOS experience.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Date and Time
+    icon: clock
+    link: muxrtc
+    desc: >
+      Adjust the systems current date, time, and timezone. Accurate timekeeping helps ensure proper logging, updates, 
+      and synchronisation with network services. Not to forget that some content also requires proper time being set.
+  - name: HDMI Settings
+    icon: hdmi
+    link: muxhdmi
+    desc: >
+      Configure video output options for HDMI capable devices, including resolution, scaling, and other preferences.
+  - name: Advanced Settings
+    icon: advanced
+    link: muxtweakadv
+    desc: >
+      Contains specialised system controls intended for advanced users or developers. Changes here can affect 
+      hardware behaviour, so proceed with caution.
+  - name: Brightness
+    icon: brightness
+    desc: >
+      Adjust the display brightness to a comfortable level. Lower brightness can help conserve power, while 
+      higher levels improve outdoor visibility.
+  - name: Volume
+    icon: volume
+    desc: >
+      Set the master volume level for all sounds, including menus, games, and notifications.
+  - name: Colour Temperature
+    icon: colour
+    desc: >
+      Modify the warmth or coolness of the displays colour output, where supported. Warmer tones reduce eye strain 
+      in low light, while cooler tones enhance clarity.
+  - name: Device RGB Lights
+    icon: rgb
+    desc: >
+      Enable or disable the devices RGB lighting system, adjusting visual effects and theme integration.
+  - name: DPAD Swap Hotkey
+    icon: hkdpad
+    desc: >
+      Configure which button combination toggles the DPAD swap function, useful for adjusting control layouts in 
+      certain games or emulators. This option only appears for specific devices without analogue sticks.
+  - name: Screenshot Hotkey
+    icon: hkshot
+    desc: >
+      Set the preferred button combination for capturing screenshots quickly during gameplay or navigation.
+  - name: Device Startup
+    icon: startup
+    desc: >
+      Choose what MustardOS will boot into after powering on, such as the main menu, content explorer, or whatever 
+      content you were last playing.
+
+hidden:
+  - name: Danger Settings
+    link: muxdanger
+    desc: >
+      Only for the bravest of tinkerers, this section allows you to change very low level settings pertaining to 
+      storage, suspend, and process configuration. Only change values within here if you understand the risks.
