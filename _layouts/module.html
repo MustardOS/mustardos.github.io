@@ -26,7 +26,6 @@ layout: default
 <table style="width:100%; table-layout:fixed;">
     <colgroup>
         <col style="width:80px;">
-        <col style="width:200px;">
         <col style="width:auto;">
     </colgroup>
 
@@ -34,7 +33,6 @@ layout: default
     <tr>
         <th style="text-align:center;">Glyph</th>
         <th style="text-align:left;">Option</th>
-        <th style="text-align:left;">Description</th>
     </tr>
     </thead>
 
@@ -51,8 +49,9 @@ layout: default
             {% else %}
             <strong>{{ mod.name }}</strong>
             {% endif %}
+            <br>
+            <p>{{ mod.desc }}</p>
         </td>
-        <td>{{ mod.desc }}</td>
     </tr>
     {% endfor %}
     </tbody>
@@ -66,14 +65,12 @@ layout: default
 
 <table style="width:100%; table-layout:fixed;">
     <colgroup>
-        <col style="width:200px;">
         <col style="width:auto;">
     </colgroup>
 
     <thead>
     <tr>
         <th style="text-align:left;">Option</th>
-        <th style="text-align:left;">Description</th>
     </tr>
     </thead>
     <tbody>
@@ -85,8 +82,9 @@ layout: default
             {% else %}
             <strong>{{ mod.name }}</strong>
             {% endif %}
+            <br>
+            <p>{{ mod.desc }}</p>
         </td>
-        <td>{{ mod.desc }}</td>
     </tr>
     {% endfor %}
     </tbody>
