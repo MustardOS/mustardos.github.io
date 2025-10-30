@@ -1,9 +1,52 @@
-description: TODO
+description: >
+  The Network Details module provides a full overview of your current network configuration and connectivity status. 
+  It includes information about your hostname, IP and MAC addresses, connected access point, and traffic statistics. 
+  <br><br>This section is useful for troubleshooting network issues, checking connection quality, or managing device 
+  identity when connecting to different networks.
 
 goback: muxinfo
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Hostname
+    icon: hostname
+    desc: >
+      Displays the current hostname used to identify your device on the network. This can be changed from within 
+      the module if required, but only when the network is not actively connected.
+  - name: MAC Address
+    icon: mac
+    desc: >
+      Shows the hardware level MAC address assigned to the network interface. It can also be randomised when 
+      disconnected for privacy, but only when the network is not actively connected.
+  - name: IP Address
+    icon: ip
+    desc: >
+      Displays the current address assigned to the device by your router or access point.
+  - name: Access Point
+    icon: ssid
+    desc: >
+      Indicates the SSID of the wireless network your device is currently connected to.
+  - name: Gateway
+    icon: gateway
+    desc: >
+      Displays the network gateway or router address responsible for managing external connections.
+  - name: DNS
+    icon: dns
+    desc: >
+      Lists the DNS servers currently in use for resolving internet domain names.
+  - name: Signal
+    icon: signal
+    desc: >
+      Shows the current network signal strength, providing an indication of connection quality and range.
+  - name: Channel
+    icon: channel
+    desc: >
+      Displays the wireless channel number, and specific frequency, used by the connected access point, useful for 
+      interference troubleshooting.
+  - name: Accumulated Traffic
+    icon: actraffic
+    desc: >
+      Shows the total amount of data transmitted and received since the network connection was established.
+  - name: Throughput Traffic
+    icon: tptraffic
+    desc: >
+      Displays real time upload and download speeds for monitoring active network performance.

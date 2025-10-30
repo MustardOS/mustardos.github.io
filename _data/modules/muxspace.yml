@@ -1,9 +1,26 @@
-description: TODO
+description: >
+  The Storage Information module provides an overview of all detected storage devices connected to your system. 
+  It lists primary, secondary, external, and internal storage areas, showing how each is used within MustardOS. 
+  <br><br>Monitoring available space here helps maintain system stability and ensures your data and 
+  applications have room to operate smoothly.
 
 goback: muxinfo
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Primary Storage
+    icon: primary
+    desc: >
+      Typically the first, <em>and sometimes only</em>, user data storage mount on the device.
+  - name: Secondary Storage
+    icon: secondary
+    desc: >
+      Some devices come with a secondary storage option allowing you to use it for both content and MustardOS settings.
+  - name: External Storage
+    icon: external
+    desc: >
+      If a device has a USB connection you may be able to mount it via the storage mount Task Toolkit scripts.
+  - name: System Storage
+    icon: system
+    desc: >
+      Internal storage, <em>or the RootFS as we call it</em>, is where most important data is held. It is always 
+      a good idea to keep a watch on this as a typically full system storage may cause issues.

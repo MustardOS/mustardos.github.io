@@ -1,9 +1,38 @@
-description: TODO
+description: >
+  Configure highly specific device level options and integrations. These settings control deep system behaviour 
+  and hardware communication. These should <strong>NOT</strong> be changed unless instructed to do so by a 
+  MustardOS developer, as improper modification may affect system stability or functionality.
 
 goback: muxsysinfo
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Bluetooth Integration
+    icon: bluetooth
+    desc: >
+      Indicates whether Bluetooth hardware is present and supported for wireless peripherals or audio devices.
+  - name: RGB LED Integration
+    icon: rgb
+    desc: >
+      Displays whether the system includes controllable RGB lights, used primarily by themes.
+  - name: Kernel Level DebugFS
+    icon: debugfs
+    desc: >
+      Shows if a debug system is available in the kernel, allowing low level inspection of system internals and 
+      device behaviour. This should always be enabled unless a specific device does not have this functionality.
+  - name: HDMI Integration
+    icon: hdmi
+    desc: >
+      Indicates whether HDMI output is available and functioning, used for connecting to external displays.
+  - name: Lid Switch Integration
+    icon: lid
+    desc: >
+      Displays whether the device supports a lid or sleep switch to automatically suspend upon closure of device lid.
+  - name: Network Integration
+    icon: network
+    desc: >
+      Shows whether network interfaces such as Wi-Fi or Ethernet are detected and integrated within the system.
+  - name: PortMaster Support
+    icon: portmaster
+    desc: >
+      Indicates whether PortMaster is installed and functional, allowing direct access to downloadable 
+      ports, applications, and other community content.

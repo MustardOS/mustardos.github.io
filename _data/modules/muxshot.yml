@@ -1,9 +1,14 @@
-description: TODO
+description: >
+  The Screenshot Viewer displays all captured images taken through MustardOS. It allows you to browse, preview, 
+  and manage your screenshots directly from the device. Use the available controls to navigate, hide the menu 
+  for an unobstructed view, or delete unwanted captures with ease.
 
 goback: muxinfo
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Screenshot Image
+    icon: screenshot
+    desc: >
+      The screenshot image that you have taken. Pressing the <strong>A</strong> button will hide the menu allowing 
+      you to still navigate up and down the list of screenshots. Using the <strong>X</strong> button will remove 
+      the screenshot from the device.

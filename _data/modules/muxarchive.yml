@@ -1,11 +1,18 @@
-description: The Archive Manager provides a convenient way to view and manage installed or available archives within MustardOS. It automatically detects supported archive types, allowing you to browse, identify, and verify package installations.
+description: >
+  The Archive Manager provides a convenient way to view and manage installed or available archives within MustardOS. 
+  It automatically detects supported archive types, allowing you to browse, identify, and verify package installations.
 
 goback: muxapp
 
 visible:
   - name: Name of Archive
     icon: archive
-    desc: Archives with specific extensions will show up here. See <a href="/installation/archive">Archive Manager</a> for more information.
+    desc: >
+      Archives with specific extensions will show up here. 
+      See <a href="/installation/archive">Archive Manager</a> for more information.
   - name: Installed Archive
     icon: installed
-    desc: There is a slight difference to the glyph when an archive is installed. We <strong>do not</strong> remove archives and we <strong>do not</strong> allow to delete on-device. Use Dingux Commander or alternative ways to remove archives from the list.
+    desc: >
+      There is a difference to the glyph when an archive is installed. We <strong>do not</strong> remove 
+      archives and we <strong>do not</strong> allow to delete on-device. Use Dingux Commander or 
+      alternative ways to remove archives from the list.

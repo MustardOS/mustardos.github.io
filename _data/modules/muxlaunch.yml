@@ -1,36 +1,48 @@
-description: The Main Menu is the central starting area for MustardOS, providing quick access to all core features and utilities. From exploring your content and managing collections to checking system information or adjusting configuration settings, every essential function begins here.<br><br>It serves as the primary entry point for navigating and operating your device.
+description: >
+  The Main Menu is the central starting area for MustardOS, providing quick access to all core features and utilities. 
+  From exploring your content and managing collections to checking system information or adjusting configuration 
+  settings, every essential function begins here.<br><br>It serves as the primary entry point for navigating and 
+  operating your device.
 
 visible:
   - name: Explore Content
     icon: explore
     link: muxplore
-    desc: Access games and media found across SD1, SD2, or USB storage.
+    desc: >
+      Access games and media found across SD1, SD2, or USB storage.
   - name: Collection
     icon: collection
     link: muxcollect
-    desc: View and manage your saved collections of favourite titles.
+    desc: >
+      View and manage your saved collections of favourite titles.
   - name: History
     icon: history
     link: muxhistory
-    desc: Return to items that were recently launched or accessed.
+    desc: >
+      Return to items that were recently launched or accessed.
   - name: Applications
     icon: apps
     link: muxapp
-    desc: Browse and run installed applications and tools.
+    desc: >
+      Browse and run installed applications and tools.
   - name: Information
     icon: info
     link: muxinfo
-    desc: Display system status, version information, and diagnostics.
+    desc: >
+      Display system status, version information, and diagnostics.
   - name: Configuration
     icon: config
     link: muxconfig
-    desc: Adjust system behaviour, interface layout, and general preferences.
+    desc: >
+      Adjust system behaviour, interface layout, and general preferences.
   - name: Reboot
     icon: reboot
-    desc: Restart the device safely without powering down.
+    desc: >
+      Restart the device safely without powering down.
   - name: Shutdown
     icon: shutdown
-    desc: Power off the system cleanly.
+    desc: >
+      Power off the system cleanly.
 
 hidden:
   - name: Kiosk Settings

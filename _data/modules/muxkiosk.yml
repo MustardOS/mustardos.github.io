@@ -1,9 +1,169 @@
-description: TODO
+description: >
+  Restrict or permit specific areas of MustardOS. It is primarily used for shared environments, kid modes, or 
+  simplified user modes. Options within this menu define which functions, modules, and applications remain accessible 
+  while the device is locked in kiosk mode.
 
 goback: muxlaunch
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Kiosk Mode
+    icon: enable
+    desc: >
+      Enables or disables kiosk mode, locking the system into a restricted state with only approved functions available.
+  - name: Restricted Messages
+    icon: message
+    desc: >
+      Displays or hides warning messages when attempting to access restricted features while in kiosk mode.
+  - name: Archive Manager
+    icon: archive
+    desc: >
+      Allows or restricts access to the Archive Manager for installing or managing specific created MustardOS archives.
+  - name: Task Toolkit
+    icon: task
+    desc: >
+      Determines whether maintenance, diagnostic, and recovery tools can be accessed.
+  - name: Customisation
+    icon: custom
+    desc: >
+      Toggles access to theme, catalogue, and other visual or functional customisation features.
+  - name: Language
+    icon: language
+    desc: >
+      Controls whether users can change the system language while in kiosk mode.
+  - name: Wi-Fi Network
+    icon: network
+    desc: >
+      Allows or blocks access to wireless network management and configuration.
+  - name: Storage
+    icon: storage
+    desc: >
+      Defines whether users can sync or migrate their user data across from primary to secondary storage.
+  - name: Backup
+    icon: backup
+    desc: >
+      Controls access to the user data backup functionality.
+  - name: Network Settings
+    icon: netadv
+    desc: >
+      Toggles access to advanced network configuration options.
+  - name: Web Services
+    icon: webserv
+    desc: >
+      Enables or disables access to background web services.
+  - name: Content Core
+    icon: core
+    desc: >
+      Determines if users can change default emulator cores used for launching content.
+  - name: Content Governor
+    icon: governor
+    desc: >
+      Allows or restricts the ability to adjust CPU governors for individual content launches.
+  - name: Content Control Scheme
+    icon: control
+    desc: >
+      Controls access to remapping controller layouts for specific content.
+  - name: Content Options
+    icon: option
+    desc: >
+      Toggles ability to access additional content settings such as cores, governors, control schemes, and tags.
+  - name: RetroArch Kiosk
+    icon: retroarch
+    desc: >
+      Locks RetroArch into a kiosk safe configuration with limited access to settings and menus.
+  - name: Content Search
+    icon: search
+    desc: >
+      Enables or disables search functionality within the content explorer.
+  - name: Content Tag
+    icon: tag
+    desc: >
+      Determines whether users can attach content tags to their content.
+  - name: Custom Catalogue
+    icon: catalogue
+    desc: >
+      Allows or blocks the use of custom catalogue sets for curated content.
+  - name: Custom RetroArch Configs
+    icon: raconfig
+    desc: >
+      Toggles access to user defined RetroArch configuration profiles.
+  - name: Custom Themes
+    icon: theme
+    desc: >
+      Controls whether new visual themes can be applied.
+  - name: Theme Download
+    icon: theme_down
+    desc: >
+      Allows or restricts downloading themes directly from the online MustardOS repository.
+  - name: Date and Time
+    icon: clock
+    desc: >
+      Determines if users can adjust system time and date while kiosk mode is active.
+  - name: Timezone
+    icon: timezone
+    desc: >
+      Controls whether timezone settings can be changed.
+  - name: Applications
+    icon: apps
+    desc: >
+      Enables or disables launching installed applications while kiosk mode is active.
+  - name: Configuration
+    icon: config
+    desc: >
+      Restricts or permits access to global configuration menus and general settings.
+  - name: Content Explorer
+    icon: explore
+    desc: >
+      Allows or blocks navigation through the main content library.
+  - name: Collection Viewing
+    icon: collectmod
+    desc: >
+      Determines whether collections can be viewed while kiosk mode is enabled.
+  - name: Collection Adding Content
+    icon: collectadd
+    desc: >
+      Allows or prevents users from adding new content to collections.
+  - name: Collection Folder Creation
+    icon: collectnew
+    desc: >
+      Controls the ability to create new collection folders.
+  - name: Collection Removal
+    icon: collectrem
+    desc: >
+      Toggles permission to delete or remove items from collections.
+  - name: Collection Access
+    icon: collectacc
+    desc: >
+      If a folder called <code>kiosk</code> is created as a folder name, enabling this will use that specific 
+      folder for a curated collection. Allows you to have two completely separate collections.
+  - name: History Viewing
+    icon: historymod
+    desc: >
+      Controls visibility of the launch history list.
+  - name: History Removal
+    icon: historyrem
+    desc: >
+      Allows or prevents clearing history entries.
+  - name: Information
+    icon: info
+    desc: >
+      Toggles access to system information menus such as storage, network, and device status.
+  - name: Advanced Settings
+    icon: advanced
+    desc: >
+      Determines whether expert level configuration options can be viewed or changed.
+  - name: General Settings
+    icon: general
+    desc: >
+      Allows or restricts access to general settings such as brightness, sound, and hotkeys.
+  - name: HDMI Settings
+    icon: hdmi
+    desc: >
+      Controls access to display output and HDMI configuration options.
+  - name: Power Settings
+    icon: power
+    desc: >
+      Determines whether power management features such as sleep and idle modes can be modified.
+  - name: Interface Options
+    icon: visual
+    desc: >
+      Allows or blocks access to interface visibility, theme layout, and menu style options.

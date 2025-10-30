@@ -1,17 +1,26 @@
-description: The Task Toolkit provides a collection of maintenance and recovery utilities designed to keep your system healthy and organised. From clearing caches and restoring essential files to managing storage devices and generating diagnostic reports, it serves as a go to area for troubleshooting.
+description: >
+  The Task Toolkit provides a collection of maintenance and recovery utilities designed to keep your 
+  system healthy and organised. From clearing caches and restoring essential files to managing storage devices and 
+  generating diagnostic reports, it serves as a go to area for troubleshooting.
 
 goback: muxapp
 
 visible:
   - name: Clear Tasks
     icon: clear
-    desc: Quickly clear the catalogue, collections, history, system cache and other items if you are having issues. This is usually the first section to use when troubleshooting various issues.
+    desc: >
+      Quickly clear the catalogue, collections, history, system cache and other items if you are having issues. 
+      This is usually the first section to use when troubleshooting various issues.
   - name: Restore Tasks
     icon: sdcard
-    desc: Various tasks that will help restore specific system files, structure, or content within the MustardOS system.
+    desc: >
+      Various tasks that will help restore specific system files, structure, or content within the MustardOS system.
   - name: Storage Tasks
     icon: storage
-    desc: This section will allow you to safely eject and mount secondary and USB external storage.
+    desc: >
+      This section will allow you to safely eject and mount secondary and USB external storage.
   - name: System Diagnostics
     icon: diagnostic
-    desc: Running this script will created a compressed archive that you can send to MustardOS developers to help diagnose issues with both hardware and software.
+    desc: >
+      Running this script will created a compressed archive that you can send to MustardOS developers to help 
+      diagnose issues with both hardware and software.

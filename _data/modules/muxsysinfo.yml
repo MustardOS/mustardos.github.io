@@ -1,9 +1,68 @@
-description: TODO
+description: >
+  The System Details module provides a realtime view of the device current status and specifications. It displays 
+  software and hardware information such as version, build ID, kernel, CPU statistics, and memory usage, along with 
+  power, temperature, and uptime details. This section is useful for monitoring system performance or confirming 
+  device information after updates and configuration changes.
 
 goback: muxinfo
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Version
+    icon: version
+    desc: >
+      Displays the current MustardOS version installed on the device.
+  - name: Build ID
+    icon: build
+    desc: >
+      Shows the unique identifier for the installed build, useful for verifying update versions and support requests.
+  - name: Device Type
+    icon: device
+    desc: >
+      Indicates the model and hardware variant of the device.
+  - name: Linux Kernel
+    icon: kernel
+    desc: >
+      Displays the Linux kernel version that the device is currently using.
+  - name: System Uptime
+    icon: uptime
+    desc: >
+      Shows how long the device has been running since the last boot or restart.
+  - name: CPU Information
+    icon: cpu
+    desc: >
+      Displays the CPU model, and architecture, detected by the system.
+  - name: CPU Speed
+    icon: speed
+    desc: >
+      Shows the current operating frequency, <em>in MHz</em>, of the CPU in real time.
+  - name: CPU Governor
+    icon: governor
+    desc: >
+      Indicates the active CPU scaling governor, which controls performance and power efficiency.
+  - name: System Memory
+    icon: memory
+    desc: >
+      Displays the total available RAM and current memory usage of the device.
+  - name: Temperature
+    icon: temp
+    desc: >
+      Shows the current operating temperature of the device, usually measured from the CPU sensor.
+  - name: Battery Capacity
+    icon: capacity
+    desc: >
+      Displays the remaining battery percentage based on live current readings.
+  - name: Battery Voltage
+    icon: voltage
+    desc: >
+      Indicates the current battery voltage, useful for diagnosing power or charging issues.
+  - name: Refresh Frontend
+    icon: refresh
+    desc: >
+      Manually refresh the frontend to apply any configuration or theme changes made outside of the interface.
+
+hidden:
+  - name: Device Settings
+    link: muxdevice
+    desc: >
+      Configure very specific device functionality, options within here should <strong>not</strong> be changed 
+      unless otherwise told to do so by a MustardOS developer.

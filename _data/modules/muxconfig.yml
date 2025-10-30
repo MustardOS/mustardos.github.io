@@ -1,4 +1,8 @@
-description: Where you configure and fine tune every aspect of your device. From connectivity and language to interface design, power management, and backups, each module provides focused control over a specific part of the MustardOS environment.<br><br>It is the central place to adapt the system to your personal preferences and hardware capabilities.
+description: >
+  Where you configure and fine tune every aspect of your device. From connectivity and language to interface 
+  design, power management, and backups, each module provides focused control over a specific part of the 
+  MustardOS environment.<br><br>It is the central place to adapt the system to your personal preferences and 
+  hardware capabilities.
 
 goback: muxlaunch
 
@@ -6,32 +10,47 @@ visible:
   - name: General Settings
     icon: general
     link: muxtweakgen
-    desc: Change device specific settings, date and time, brightness and volume, hotkeys, and device startup.
+    desc: >
+      Change device specific settings, date and time, brightness and volume, hotkeys, and device startup.
   - name: Connectivity
     icon: connect
     link: muxconnect
-    desc: A central module to connect to Wi-Fi networks and change device specific network settings. A number of web services can also be enabled from here and device specific USB functionality.
+    desc: >
+      A central module to connect to Wi-Fi networks and change device specific network settings. 
+      A number of web services can also be enabled from here and device specific USB functionality.
   - name: Customisation
     icon: custom
     link: muxcustom
-    desc: Customise the options of various functions within the MustardOS frontend. Catalogue sets, RetroArch configurations, and themes can be downloaded and installed from this module.
+    desc: >
+      Customise the options of various functions within the MustardOS frontend. Catalogue sets, RetroArch 
+      configurations, and themes can be downloaded and installed from this module.
   - name: Interface Options
     icon: interface
     link: muxvisual
-    desc: Customise the look and feel of the MustardOS frontend. Show or hide various options or change how names are displayed through the content explorer.
+    desc: >
+      Customise the look and feel of the MustardOS frontend. Show or hide various options or change how 
+      names are displayed through the content explorer.
   - name: Language
     icon: language
     link: muxlanguage
-    desc: Pick a different language for your device. All languages are supported through a <a href="https://hosted.weblate.org/projects/muos/mux/">Hosted Weblate</a> instance. For all changes, please do so within Weblate and not through our language repository on GitHub.
+    desc: >
+      Pick a different language for your device. All languages are supported through a 
+      <a href="https://hosted.weblate.org/projects/muos/mux/">Hosted Weblate</a> instance. For all changes, 
+      please do so within Weblate and not through our language repository on GitHub.
   - name: Power Settings
     icon: power
     link: muxpower
-    desc: Modify the sleep functionality, low battery indicator, and idle input modes. Idle and default system governors can also be changed within this module.
+    desc: >
+      Modify the sleep functionality, low battery indicator, and idle input modes. 
+      Idle and default system governors can also be changed within this module.
   - name: Storage
     icon: storage
     link: muxstorage
-    desc: Supported devices with an additional mSD slot will allow you to store specific items on a secondary card.
+    desc: >
+      Supported devices with an additional mSD slot will allow you to store specific items on a secondary card.
   - name: Device Backup
     icon: backup
     link: muxbackup
-    desc: A great module to use if you are updating or wanting to share various configurations with another device. Create either individual backups or merge into one big archive for convenience.
+    desc: >
+      A great module to use if you are updating or wanting to share various configurations with another device. 
+      Create either individual backups or merge into one big archive for convenience.

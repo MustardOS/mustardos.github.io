@@ -1,9 +1,40 @@
-description: TODO
+description: >
+  The Information Menu brings together all system details, diagnostics, and reference tools in one place. 
+  From checking storage capacity and input functionality to viewing hardware statistics, network data, and credits, 
+  this section provides insight into both the technical and _community_ sides of MustardOS.
 
 goback: muxlaunch
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Screenshots
+    icon: screenshot
+    link: muxshot
+    desc: >
+      View all the screenshots that have been taken on the device. These are specific to MustardOS and not 
+      screenshots from RetroArch or images. <strong>This is not a general image viewer.</strong>
+  - name: Storage Space
+    icon: space
+    link: muxspace
+    desc: >
+      View the current used space of the mounted storage devices as well as the internal storage.
+  - name: Input Tester
+    icon: tester
+    desc: >
+      Test the various controls on the device to ensure they are working and mapped properly.
+  - name: System Details
+    icon: sysinfo
+    link: muxsysinfo
+    desc: >
+      Access version information and details about the CPU, memory, temperature, and battery info. The frontend can 
+      also be refreshed directly from here if any changes were made manually.
+  - name: Network Details
+    icon: netinfo
+    link: muxnetinfo
+    desc: >
+      Access network information like IP and MAC addresses, Wi-Fi signal range, traffic throughput and more. You are 
+      also able to change the hostname and randomise the MAC address when not connected to a network.
+  - name: Supporters and Credits
+    icon: credit
+    desc: >
+      View all of the current MustardOS developers, supporters, and contributors. 
+      Along with some awesome music to watch it with.
