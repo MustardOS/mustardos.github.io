@@ -1,8 +1,8 @@
 description: >
   Reserved for the bravest of tinkerers, this section provides direct access to low level system controls that affect 
-  storage behaviour, power suspension, and process scheduling. These settings are powerful but risky.<br><br>Altering 
-  them without a clear understanding can impact stability, performance, or data integrity. Adjust only if you know 
-  what you are doing or if you like a bit of excitement in your life.
+  storage behaviour, power suspension, and process scheduling.<br><br><em>These settings are powerful but risky!</em> 
+  <br><br>Altering them without a clear understanding can impact stability, performance, or data integrity. 
+  Adjust only if you know what you are doing or if you like a bit of excitement in your life.
 
 goback: muxtweakgen
 
