@@ -46,10 +46,14 @@ layout: default
         <td>
             {% if mod.link %}
             <a href="/tour/modules/{{ mod.link }}">
-                <h4 style="color:#C7AF26; margin-top: 0.35rem; margin-bottom: 0.35rem;"><strong>{{ mod.name }}</strong></h4>
+                <h4 style="font-size: 1rem !important; color:#C7AF26; margin-top: 0.35rem; margin-bottom: -0.25rem;">
+                    <strong>{{ mod.name }}</strong>
+                </h4>
             </a>
             {% else %}
-            <h4 style="margin-top: 0.35rem; margin-bottom: 0.75rem;"><strong>{{ mod.name }}</strong></h4>
+            <h4 style="font-size: 1rem !important; margin-top: 0.35rem; margin-bottom: 0.65rem;">
+                <strong>{{ mod.name }}</strong>
+            </h4>
             {% endif %}
             <p style="margin-bottom: 0;">{{ mod.desc }}</p>
         </td>
@@ -80,10 +84,14 @@ layout: default
         <td>
             {% if mod.link %}
             <a href="/tour/modules/{{ mod.link }}">
-                <h4 style="color:#C7AF26; margin-top: 0.35rem; margin-bottom: 0.35rem;"><strong>{{ mod.name }}</strong></h4>
+                <h4 style="font-size: 1rem !important; color:#C7AF26; margin-top: 0.35rem; margin-bottom: -0.25rem;">
+                    <strong>{{ mod.name }}</strong>
+                </h4>
             </a>
             {% else %}
-            <h4 style="margin-top: 0.35rem; margin-bottom: 0.35rem;"><strong>{{ mod.name }}</strong></h4>
+            <h4 style="font-size: 1rem !important; margin-top: 0.35rem; margin-bottom: 0.35rem;">
+                <strong>{{ mod.name }}</strong>
+            </h4>
             {% endif %}
             <p style="margin-bottom: 0;">{{ mod.desc }}</p>
         </td>
