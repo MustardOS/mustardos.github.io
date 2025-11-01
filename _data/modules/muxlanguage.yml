@@ -1,9 +1,13 @@
-description: TODO
+description: >
+  Select your preferred language for the MustardOS interface. All translations are community-driven and maintained 
+  through <a href="https://weblate.org/">Weblate</a>.<br><br> Changing the language affects the frontend menu and 
+  interface text only. It does not alter emulator or game language settings.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Language Option
+    icon: language
+    desc: >
+      Switch between available language packs installed on your device. You can update translations on-device by 
+      pressing the <strong>X</strong> button when an active network connection is available.

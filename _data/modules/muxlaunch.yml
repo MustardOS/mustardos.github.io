@@ -9,45 +9,56 @@ visible:
     icon: explore
     link: muxplore
     desc: >
-      Access games and media found across SD1, SD2, or USB storage.
+      Access and browse your content stored across SD1, SD2, or USB devices. This is the primary area for launching 
+      content and exploring the next amazing title. Don't forget that you can organise your content in any named 
+      folder that you like.
   - name: Collection
     icon: collection
     link: muxcollect
     desc: >
-      View and manage your saved collections of favourite titles.
+      View, organise, and manage your curated collections of favourite titles. Create themed or personalised sets for 
+      quick access to your most played or most loved content.
   - name: History
     icon: history
     link: muxhistory
     desc: >
-      Return to items that were recently launched or accessed.
+      Quickly revisit content that was recently launched or accessed. The history log makes it easy to jump back into 
+      your last session without needing to go back and finding it manually.
   - name: Applications
     icon: apps
     link: muxapp
     desc: >
-      Browse and run installed applications and tools.
+      Browse and launch installed applications, tools, and system utilities. This section includes both built-in 
+      MustardOS apps and any compatible third party programs you have added.
   - name: Information
     icon: info
     link: muxinfo
     desc: >
-      Display system status, version information, and diagnostics.
+      Display detailed system information including version and build details, network status, and device diagnostics. 
+      Ideal for checking up on performance or verifying technical details at a glance.
   - name: Configuration
     icon: config
     link: muxconfig
     desc: >
-      Adjust system behaviour, interface layout, and general preferences.
+      Configure and customise how your device behaves and looks. Adjust interface layouts, tweak functionality, and 
+      refine general preferences to match how you want your device to act and feel.
   - name: Reboot
     icon: reboot
     desc: >
-      Restart the device safely without powering down.
+      Safely restart the device without performing a full shutdown. Useful after configuration changes or manual 
+      updates to ensure a clean system state.
   - name: Shutdown
     icon: shutdown
     desc: >
-      Power off the system cleanly.
+      Power down the system cleanly and securely. This ensures that all running processes and mounted storage devices 
+      are safely unmounted before the system turns off. Please be patient and wait before removing any storage devices.
 
 hidden:
   - name: Kiosk Settings
     link: muxkiosk
-    desc: Configures kiosk and locked demonstration modes.
+    desc: >
+      Configure kiosk for device specific restrictions, limiting access to certain features when the device is locked 
+      for shared use, or typically for younger players, or if you would like to see less.
 
 tip:
   - info: Use **B** to quickly select **Explore Content**.  

@@ -1,9 +1,38 @@
-description: TODO
+description: >
+  The Power Settings module allows you to control how MustardOS manages power, performance, and idle behaviour. These 
+  settings define what happens when the device is left inactive, reaches low battery levels, or enters sleep mode. 
+  Switch how the CPU behaves under normal and idle conditions, helping balance performance with battery life.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Sleep Function
+    icon: shutdown
+    desc: >
+      Toggle between several options that changes how the power button acts when the device is powered on. Shutdown 
+      after a period of time during sleep, instant shutdown, or keep the device powered on until the power button is 
+      pressed again.
+  - name: Low Battery Indicator
+    icon: battery
+    desc: >
+      Toggles the LED/RGB light behaviour when the battery reaches a critically low level.
+  - name: Idle Input Sleep Timeout
+    icon: idle_sleep
+    desc: >
+      Sets how long the device remains idle before automatically entering sleep mode.
+  - name: Idle Input Display Timeout
+    icon: idle_display
+    desc: >
+      Defines the duration of inactivity before the display automatically turns off to conserve energy.
+  - name: Mute on Display Timeout
+    icon: idle_mute
+    desc: >
+      Automatically mutes system audio when the display turns off due to inactivity.
+  - name: Idle Governor
+    icon: gov_idle
+    desc: >
+      Determines which CPU governor is applied during the idle display timeout.
+  - name: Default Governor
+    icon: gov_fe
+    desc: >
+      Sets the CPU governor used during normal device operation.

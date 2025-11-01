@@ -15,91 +15,62 @@ layout: default
 {% if modset.goback %}
 <hr>
 
-<h2><strong><a href="/tour/modules/{{ modset.goback }}">Back to {{ page.parent }}</a></strong></h2>
+<h2><strong>
+    <a href="/tour/modules/{{ modset.goback }}">Back to {{ page.parent }}</a>
+</strong></h2>
 {% endif %}
 
-{% if modset.visible and modset.visible.size > 0 %}
+{% assign sections = "visible,Visible Options|hidden,Hidden Options" | split: "|" %}
+
+{% for sec in sections %}
+{% assign parts = sec | split: "," %}
+{% assign key = parts[0] %}
+{% assign title = parts[1] %}
+{% assign items = modset[key] %}
+
+{% if items and items.size > 0 %}
 <hr>
 
-<h2><strong>Available Options</strong></h2>
+<h2><strong>{{ title }}</strong></h2>
 
 <table style="width:100%; table-layout:fixed;">
     <colgroup>
+        {% if key == "visible" %}
         <col style="width:80px;">
+        {% endif %}
         <col style="width:auto;">
     </colgroup>
 
-    <thead>
-    <tr>
-        <th style="text-align:center;"><h3 style="margin-top: 0.35rem;"><strong>Glyph</strong></h3></th>
-        <th style="text-align:left;"><h3 style="margin-top: 0.35rem;"><strong>Option</strong></h3></th>
-    </tr>
-    </thead>
-
     <tbody>
-    {% for mod in modset.visible %}
+    {% for mod in items %}
+    {% assign anchor_id = mod.name | slugify %}
     <tr>
+        {% if key == "visible" %}
         <td style="text-align:center; vertical-align:middle;">
             <img src="/tour/assets/glyphs/{{ page.module }}/{{ mod.icon }}.png"
                  style="filter:invert(100%); max-width:48px; vertical-align:middle;">
         </td>
+        {% endif %}
         <td>
-            {% if mod.link %}
-            <a href="/tour/modules/{{ mod.link }}">
-                <h4 style="font-size: 1rem !important; color:#C7AF26; margin-top: 0.35rem; margin-bottom: -0.25rem;">
+            <h4 style="font-size:1rem !important; margin-top:0.35rem; margin-bottom:0.65rem;">
+                {% if mod.link %}
+                <a href="/tour/modules/{{ mod.link }}" style="color:#C7AF26; text-decoration:none;">
                     <strong>{{ mod.name }}</strong>
-                </h4>
-            </a>
-            {% else %}
-            <h4 style="font-size: 1rem !important; margin-top: 0.35rem; margin-bottom: 0.65rem;">
+                </a>
+                {% else %}
                 <strong>{{ mod.name }}</strong>
+                {% endif %}
+                <a href="#{{ anchor_id }}" title="Anchor to {{ mod.name }}"
+                   style="text-decoration:none; color:#888; margin-left:0.25em;">🔗</a>
             </h4>
-            {% endif %}
-            <p style="font-size: 1rem !important; margin-bottom: 0;">{{ mod.desc }}</p>
+            <p style="font-size:1rem !important; margin-bottom:0;">{{ mod.desc }}</p>
         </td>
     </tr>
     {% endfor %}
     </tbody>
 </table>
 {% endif %}
-
-{% if modset.hidden and modset.hidden.size > 0 %}
-<hr>
-
-<h2><strong>Hidden Options</strong></h2>
-
-<table style="width:100%; table-layout:fixed;">
-    <colgroup>
-        <col style="width:auto;">
-    </colgroup>
-
-    <thead>
-    <tr>
-        <th style="text-align:left;"><h3 style="margin-top: 0.35rem;"><strong>Option</strong></h3></th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for mod in modset.hidden %}
-    <tr>
-        <td>
-            {% if mod.link %}
-            <a href="/tour/modules/{{ mod.link }}">
-                <h4 style="font-size: 1rem !important; color:#C7AF26; margin-top: 0.35rem; margin-bottom: -0.25rem;">
-                    <strong>{{ mod.name }}</strong>
-                </h4>
-            </a>
-            {% else %}
-            <h4 style="font-size: 1rem !important; margin-top: 0.35rem; margin-bottom: 0.35rem;">
-                <strong>{{ mod.name }}</strong>
-            </h4>
-            {% endif %}
-            <p style="font-size: 1rem !important; margin-bottom: 0;">{{ mod.desc }}</p>
-        </td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
-{% endif %}
+{% endfor %}
 
 {% if modset.tip and modset.tip.size > 0 %}
 <hr>
@@ -112,3 +83,14 @@ layout: default
     {% endfor %}
 </ul>
 {% endif %}
+
+<style>
+    h4 a[title] {
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+
+    h4:hover a[title] {
+        opacity: 1;
+    }
+</style>
