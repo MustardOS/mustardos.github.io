@@ -1,9 +1,32 @@
-description: TODO
+description: >
+  The Content Explorer is where all playable and viewable content is displayed. It automatically merges all mounted 
+  storage devices and presents folders and content in an organised way. Each item includes visual indicators showing 
+  whether it has been played before, is part of a collection, or is ready for launch through an assigned core.
 
 goback: muxlaunch
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Content Folder
+    icon: folder
+    link: muxoption
+    desc: >
+      Displays folders containing compatible content. MustardOS does not enforce strict naming conventions, 
+      allowing you to name and structure your folders however you prefer, including nested folders for organisation.
+  - name: Content File
+    icon: rom
+    link: muxoption
+    desc: >
+      Represents an individual content file, such as a game or media item. Files are automatically launched with their
+      assigned system or emulator core, or you will be prompted to select one if no association exists.
+  - name: Previously Played (History)
+    icon: history
+    link: muxoption
+    desc: >
+      Indicates content that has been launched before. This helps you quickly identify items with existing play 
+      history for easy access or relaunching.
+  - name: In Collection
+    icon: collection
+    link: muxoption
+    desc: >
+      Marked content that has been added to one or more collections. These items remain accessible in both their 
+      original folder and any collection they belong to. This can be toggled in Interface Settings.

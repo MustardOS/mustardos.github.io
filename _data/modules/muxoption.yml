@@ -1,9 +1,55 @@
-description: TODO
+description: >
+  The Content Options menu allows you to view and modify detailed information for any selected item within the 
+  Content Explorer. From checking play statistics to assigning emulator cores and adjusting performance governors, 
+  this section provides everything needed to fine tune how individual content behaves when launched.
 
 goback: muxplore
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Directory
+    icon: folder
+    desc: >
+      Displays the full folder path of the selected content, showing where the file is located within your storage.
+  - name: Name
+    icon: rom
+    desc: >
+      The display name of the content item. This can differ from the file name depending on how the content was scanned 
+      or renamed.
+  - name: Time Played
+    icon: time
+    desc: >
+      Shows the total cumulative time the content has been played. This helps track usage and identify your most 
+      frequently played items.
+  - name: Times Launched
+    icon: count
+    desc: >
+      Displays how many times this content has been launched. Ideal for tracking play frequency.
+  - name: Search
+    icon: search
+    link: muxsearch
+    desc: >
+      Opens the search interface to locate similar or related content. Helpful for finding alternate versions or 
+      other entries in a series.
+  - name: Core
+    icon: core
+    link: muxassign
+    desc: >
+      Assigns the specific emulator system and core that will be used to launch this content.
+  - name: Governor
+    icon: governor
+    link: muxgov
+    desc: >
+      Sets the CPU governor profile for this content. Allows you to optimise between performance and battery 
+      efficiency on a per title basis.
+  - name: Control Scheme
+    icon: control
+    link: muxcontrol
+    desc: >
+      Customise the button layout and control scheme for this content. Perfect for titles requiring non standard 
+      input configurations or comfort adjustments.
+  - name: Glyph Tag
+    icon: tag
+    link: muxtag
+    desc: >
+      Assign a custom glyph or tag icon to the content. These icons appear next to content within the Content Explorer, 
+      helping visually distinguish special items or categories.
