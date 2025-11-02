@@ -1,9 +1,31 @@
-description: TODO
+description: >
+  The Connectivity module manages how your device interacts with both local and remote networks. From establishing 
+  Wi-Fi connections to enabling USB data modes or web based access services, this section centralises all network and 
+  connection related functionality.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Wi-Fi Network
+    icon: network
+    link: muxnetwork
+    desc: >
+      Connect to wireless networks either manually or through previously saved profiles. Supports secure, hidden, and 
+      static IP configurations for advanced network setups.
+  - name: Network Settings
+    icon: netadv
+    link: muxnetadv
+    desc: >
+      Fine tune how the system handles network detection, module compatibility, and connection recovery. Useful for 
+      troubleshooting connection issues or optimising startup behaviour. Typically should be left as default.
+  - name: Web Services
+    icon: service
+    link: muxwebserv
+    desc: >
+      Manage built in network enabled services such as SSH, SFTP, and Syncthing. These tools allow remote access, 
+      synchronisation, and system management over an active network connection.
+  - name: USB Function
+    icon: usbfunction
+    desc: >
+      Switch between ADB (Android Debug Bridge) and MTP (Media Transfer Protocol) modes. ADB provides developer access 
+      for debugging and command-line tools, while MTP allows file transfers between the device and a computer.

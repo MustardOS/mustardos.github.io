@@ -1,9 +1,53 @@
-description: TODO
+description: >
+  Configure Wi-Fi and network connection details. These options provide full control over authentication, addressing, 
+  and connection behaviour—useful for networks that do not broadcast automatically or require specific parameters 
+  such as static IPs or private DNS servers.
 
 goback: muxconnect
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Identifier
+    icon: identifier
+    desc: >
+      The SSID or name of the wireless network you wish to connect to. This identifies the access point and must match 
+      exactly, especially for hidden or secured networks. You can also press <strong>X</strong> to scan for networks.
+  - name: Password
+    icon: password
+    desc: >
+      The password, or security key, required to join the selected wireless network. Leave blank for open networks that 
+      do not require authentication.
+  - name: Hidden Network
+    icon: scan
+    desc: >
+      Enables connection to a network that does not broadcast its SSID. When enabled, the device will attempt to 
+      connect even if the network is not visible in scans.
+  - name: Network Type
+    icon: type
+    desc: >
+      Defines the connection mode for the network. Typically set to DHCP for automatic configuration, or Static for 
+      advanced users specifying static IP settings.
+  - name: Device IP
+    icon: address
+    desc: >
+      The IP address assigned to the device when using manual configuration. This defines the unique address on the 
+      network and must not conflict with other devices.
+  - name: Subnet CIDR
+    icon: subnet
+    desc: >
+      Specifies the network subnet mask in CIDR notation. This determines the range of valid IP addresses within the 
+      local network.
+  - name: Gateway IP
+    icon: gateway
+    desc: >
+      The IP address of the network gateway or router used to access external connections. Required for internet 
+      access when using manual network settings.
+  - name: DNS Server
+    icon: dns
+    desc: >
+      Defines the Domain Name System (DNS) server address used to resolve website and service names. You may specify 
+      a local DNS server or a public one such as 1.1.1.1 (Cloudflare) or 8.8.8.8 (Google).
+  - name: Connect
+    icon: connect
+    desc: >
+      Initiates connection to the configured network using the provided credentials and settings. Press it again to
+      disconnect the device from the network. Press <strong>Y</strong> to save the current network to a profile.

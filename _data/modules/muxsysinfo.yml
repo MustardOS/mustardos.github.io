@@ -55,6 +55,10 @@ visible:
     icon: voltage
     desc: >
       Indicates the current battery voltage, useful for diagnosing power or charging issues.
+  - name: Charger
+    icon: charger
+    desc: >
+      Indicates if the device is currently being actively charged.
   - name: Refresh Frontend
     icon: refresh
     desc: >

@@ -1,9 +1,114 @@
-description: TODO
+description: >
+  Access to deeper configuration options that affect system behaviour, user experience, and hardware control. These 
+  options are designed for experienced users beyond typical settings. Adjusting some of these values may impact 
+  stability or device behaviour, so proceed carefully.
 
 goback: muxtweakgen
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Menu Acceleration
+    icon: accelerate
+    desc: >
+      Adjusts how quickly menu navigation accelerates when holding down directional buttons. Higher values make 
+      scrolling faster, while lower values provide more precise control.
+  - name: Menu Repeat Delay
+    icon: repeat
+    desc: >
+      Determines how long a button must be held before it begins repeating its action. Increasing this delay can help 
+      prevent accidental repeated inputs when navigating menus.
+  - name: Battery Offset
+    icon: offset
+    desc: >
+      Applies a correction value to the displayed battery percentage. Useful for calibrating the battery indicator 
+      if readings are consistently higher or lower than expected.
+  - name: Button Swap
+    icon: swap
+    desc: >
+      Globally switches button layouts across the system. Ideal for users preferring alternate control schemes or 
+      region specific button arrangements.
+  - name: Volume On Boot
+    icon: volume
+    desc: >
+      Sets the default system volume level each time the device starts. Useful for ensuring consistent audio 
+      behaviour after reboots.
+  - name: Brightness On Boot
+    icon: brightness
+    desc: >
+      Defines the display brightness applied automatically when the system starts. Adjust this to maintain a 
+      comfortable default viewing level on every boot.
+  - name: Thermal Zone Control
+    icon: thermal
+    desc: >
+      Toggles automatic thermal protection that safely powers down the device when overheating. Disabling this is not 
+      recommended as it prevents the system from responding to high temperature warnings.
+  - name: Passcode Lock
+    icon: lock
+    desc: >
+      Enables a passcode requirement for device startup, launching content, or other features.
+  - name: LED During Play
+    icon: led
+    desc: >
+      Toggles the device’s power LED visibility while launching or running content. Useful for reducing distractions 
+      during gameplay or conserving minor power.
+  - name: RetroArch Network Wait
+    icon: retrowait
+    desc: >
+      Delays RetroArch startup until a network connection is detected. Primarily used for features like 
+      RetroAchievements that require online access before launch.
+  - name: RetroArch Config Freedom
+    icon: retrofree
+    desc: >
+      Removes system enforced configuration restrictions on RetroArch. Allows advanced users to manually customise 
+      RetroArch behaviour, but may cause instability if misconfigured.
+  - name: Device Rumble
+    icon: rumble
+    desc: >
+      Enables or disables vibration feedback for events such as startup, sleep, and shutdown. Enhances tactile 
+      feedback where supported by hardware.
+  - name: User Init Scripts
+    icon: userinit
+    desc: >
+      Controls the execution of user defined startup scripts. When enabled, the system will run shell (<code>.sh</code>) 
+      scripts stored in the <code>MUOS/init</code> directory during boot.
+  - name: DPAD Swap Function
+    icon: dpadswap
+    desc: >
+      Toggles the DPAD swap feature, allowing directional input remapping through a designated hotkey combination.
+  - name: Audio Overdrive
+    icon: overdrive
+    desc: >
+      Extends maximum system audio output from 100% to 200%, providing additional loudness when required. Use 
+      carefully, as excessive volume may cause speaker distortion or hardware strain.
+  - name: Device Lid Switch
+    icon: lidswitch
+    desc: >
+      Enables automatic sleep functionality when closing or opening a physical lid switch, if supported by the device.
+  - name: Display Suspend
+    icon: dispsuspend
+    desc: >
+      Toggles the display suspend behaviour when the device enters sleep mode. Some display panels may not resume 
+      correctly if this setting is enabled, so use with caution.
+  - name: System Swapfile
+    icon: swapfile
+    desc: >
+      Configures the system’s swapfile usage, allowing limited expansion of virtual memory. Useful for memory 
+      intensive content or testing system performance under load.
+  - name: Secondary Partition
+    icon: secondpart
+    desc: >
+      Specifies which partition number the system should mount when accessing secondary storage. Typically used for 
+      advanced configurations or multi partitioned mSD cards.
+  - name: External Partition
+    icon: usbpart
+    desc: >
+      Sets the partition number used when mounting external USB storage devices. Adjust this if the system fails to 
+      detect or mount certain external drives correctly.
+  - name: Brightness Increment
+    icon: incbright
+    desc: >
+      Defines how much the screen brightness changes per adjustment step. Smaller increments provide finer control, 
+      while larger ones allow quicker adjustments.
+  - name: Volume Increment
+    icon: incvolume
+    desc: >
+      Adjusts how much the volume level changes per input step. Ideal for tuning audio to your specific preference.

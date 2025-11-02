@@ -1,9 +1,12 @@
-description: TODO
+description: >
+  Select the correct regional timezone for your device. This ensures that the displayed system time, file timestamps, 
+  and scheduled operations match your local region and daylight saving rules.
 
 goback: muxrtc
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Timezone Region
+    icon: timezone
+    desc: >
+      Sets the timezone for your current country or region. This determines how the system clock adjusts automatically
+      for daylight saving changes and ensures timestamps align with your local time.

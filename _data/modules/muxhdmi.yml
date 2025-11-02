@@ -1,9 +1,38 @@
-description: TODO
+description: >
+  Configure video and audio output for external displays. Adjust resolution, colour settings, and audio routing to 
+  achieve the best possible image and sound when connecting the device via HDMI. These settings may vary depending 
+  on the devices hardware capabilities and the display being used.
 
 goback: muxtweakgen
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Resolution
+    icon: resolution
+    desc: >
+      Selects the output resolution for HDMI display, ranging from 480p to 720p depending on device support. Higher 
+      resolutions provide sharper visuals but may increase power usage. <em>Due to technical limitations 1080p is 
+      currently unavailable as a resolution.</em>
+  - name: Colour Space
+    icon: space
+    desc: >
+      Defines the colour encoding standard used for HDMI output. Choose between <strong>RGB</strong> for full digital 
+      precision or <strong>YUV</strong> values for improved compatibility with certain displays.
+  - name: Colour Depth
+    icon: depth
+    desc: >
+      Sets the number of bits used to represent colour per channel, such as 8-bit or 10-bit. Higher bit depths allow 
+      for smoother gradients and more accurate colour reproduction.
+  - name: Colour Range
+    icon: range
+    desc: >
+      Determines the output range of the RGB colour space. <strong>Full</strong> range outputs all colour levels 
+      (0–255), while <strong>Limited</strong> range (16–235) may be required for certain televisions or monitors.
+  - name: Scan Scale
+    icon: scan
+    desc: >
+      Adjusts the screen scaling between overscan and underscan to ensure the entire image fits properly on the 
+      display. Use this if parts of the picture appear cropped or there are black borders.
+  - name: Audio Output
+    icon: audio
+    desc: >
+      Selects whether audio is played through the devices internal speakers or routed to the connected display.

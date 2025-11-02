@@ -1,9 +1,38 @@
-description: TODO
+description: >
+  Manually adjust the system clock and calendar settings used with the frontend, emulators, and applications alike. 
+  These controls ensure accurate timestamps for files, logs, and saved data even without network access. The module 
+  also provides access to timezone configuration for proper regional time alignment.
 
 goback: muxtweakgen
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Set Timezone
+    icon: timezone
+    link: muxtimezone
+    desc: >
+      Opens the Timezone selection module, where you can set the correct regional timezone for your country or area. 
+      Ensures automatic adjustment for daylight saving time and proper alignment with your local region.
+  - name: Year
+    icon: year
+    desc: >
+      Adjusts the current system year.
+  - name: Month
+    icon: month
+    desc: >
+      Changes the system month value.
+  - name: Day
+    icon: day
+    desc: >
+      Sets the current calendar day.
+  - name: Hour
+    icon: hour
+    desc: >
+      Adjusts the system clock hour value.
+  - name: Minute
+    icon: minute
+    desc: >
+      Sets the minute portion of the system time.
+  - name: Time Notation
+    icon: notation
+    desc: >
+      Switch between 12 hour and 24 hour time formats. This setting changes how time is displayed in the frontend.

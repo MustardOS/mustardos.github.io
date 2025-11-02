@@ -1,9 +1,44 @@
-description: TODO
+description: >
+  The Network Settings module provides fine control over how the system handles wireless and wired network connections 
+  during startup, compatibility checks, and recovery. These options are primarily useful for troubleshooting various
+  network issues, managing module loading behaviour, and improving reliability across different hardware configurations.
 
 goback: muxconnect
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Connection Monitor
+    icon: monitor
+    desc: >
+      Enables periodic connectivity checks and automatically triggers reconnection if the network connection is lost. 
+      Useful for maintaining stable connections in environments with inconsistent Wi-Fi signal strength.
+  - name: Start Network on Boot
+    icon: boot
+    desc: >
+      Automatically starts the network connection during system boot. This ensures connectivity is available as soon 
+      as the device powers on without requiring manual activation.
+  - name: Start Network on Wake
+    icon: wake
+    desc: >
+      Re-connects the Wi-Fi network connection after the device resumes from sleep. Useful for ensuring background 
+      services and online features reconnect automatically after waking.
+  - name: Module Compatibility
+    icon: compat
+    desc: >
+      Enables compatibility mode for network module loading through the Linux kernel. This improves support for 
+      certain Wi-Fi chipsets but can moderately increase boot times.
+  - name: Module Async Load
+    icon: asyncload
+    desc: >
+      Loads compatible network modules asynchronously in the background. This option significantly reduces boot 
+      times when Module Compatibility is enabled and should only be disabled if troubleshooting connection failures.
+  - name: Module Wait Time
+    icon: wait
+    desc: >
+      Sets the maximum time the system will wait for the network interface to appear during boot. Increasing this value 
+      may improve stability on slower devices but will extend startup time. Avoid adjusting if Module Compatibility is 
+      already enabled, as both delays will compound.
+  - name: Module Retry
+    icon: retry
+    desc: >
+      Determines how many times the system will attempt to load the network module when using Module Compatibility mode. 
+      Increasing this value can help with unstable or delayed network drivers, but may extend overall boot duration.

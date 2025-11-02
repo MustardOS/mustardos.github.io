@@ -1,9 +1,41 @@
-description: TODO
+description: >
+  The Web Services module manages background and remote access services available. These tools enable secure 
+  communication, file transfers, and network utilities that extend your device functionality beyond local use.
 
 goback: muxconnect
 
 visible:
-  - name:
-    icon:
-    link:
-    desc:
+  - name: Secure Shell
+    icon: sshd
+    desc: >
+      Enables remote command line access through the SSH protocol. Useful for developers and advanced users who wish 
+      to execute commands or manage files over the network securely.
+      <h5><strong>Service Details</strong></h5><p>Port: <code>22</code><br>Username: <code>root</code><br>Password: <code>root</code></p>
+  - name: SFTP + Filebrowser
+    icon: sftpgo
+    desc: >
+      Provides secure file transfer (SFTP) and a web based file manager interface. This allows browsing, uploading, 
+      and managing files on the device from any computer connected to the same network.
+      <h5><strong>Service Details</strong></h5><p>SFTP Port: <code>2022</code><br>WebUI Port: <code>9090</code><br>Username: <code>muos</code><br>Password: <code>muos</code></p>
+  - name: Virtual Terminal
+    icon: ttyd
+    desc: >
+      Opens a browser accessible shell terminal through the local network. Ideal for quick maintenance or executing 
+      commands without connecting a physical keyboard or SSH client.
+      <h5><strong>Service Details</strong></h5><p>WebUI Port: <code>8080</code></p>
+  - name: Syncthing
+    icon: syncthing
+    desc: >
+      Enables continuous file synchronisation between devices and other computers. Changes to shared folders are 
+      automatically replicated, keeping files up to date across all devices.
+      <h5><strong>Service Details</strong></h5><p>WebUI Port: <code>7070</code></p>
+  - name: Network Time Sync
+    icon: ntp
+    desc: >
+      Automatically synchronises the system clock with online NTP servers. Ensures accurate timestamps for saves, 
+      logs, and network services without manual time adjustment.
+  - name: Tailscale
+    icon: tailscaled
+    desc: >
+      Connects your device to a private, encrypted Tailscale network, allowing secure remote access from anywhere. 
+      This will require some manual configuration at the moment through SSH or a virtual terminal.
