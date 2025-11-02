@@ -1,9 +1,23 @@
-description: TODO
+description: >
+  Customise how button layouts behave for individual content. The following are predefined schemes so you can match 
+  your preferred controller style or preserve authenticity when playing older titles. Each scheme adjusts button 
+  orientation and input mapping without affecting the system wide default, including the frontend.
 
 goback: muxoption
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Modern
+    icon: modern
+    desc: >
+      Reconfigures button layout to reflect contemporary console standards, matching common X/Y and A/B placements 
+      found on modern controllers. Ideal for players accustomed to newer systems.
+  - name: Retro
+    icon: retro
+    desc: >
+      Restores classic button positions inspired by retro consoles and handhelds. Perfect for maintaining the 
+      original feel of older games.
+  - name: System
+    icon: system
+    desc: >
+      Uses the default global control scheme defined by the system settings. Ensures consistency across all emulators
+      and content unless overridden.

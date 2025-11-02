@@ -1,9 +1,45 @@
-description: TODO
+description: >
+  Assign a specific CPU governor to individual content. A CPU governor controls how the processor adjusts its 
+  frequency in response to workload, balancing performance, power consumption, and heat output. The selected governor 
+  is change when the content is launched, then restores the system default once it exits.<br><br>These options are 
+  derived from the standard Linux CPU frequency scaling subsystem and availability may vary depending on your device.
+  <br><br>For more information please see the <a href="https://community.muos.dev/t/cpu-governors-and-how-do-they-work/262">CPU Governors and How Do They Work</a> FAQ page.
 
 goback: muxoption
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Ondemand
+    icon: ondemand
+    desc: >
+      Dynamically scales CPU speed based on system load. Provides a strong balance between performance and efficiency.
+      Ideal for most games and applications.
+  - name: Performance
+    icon: performance
+    desc: >
+      Locks the CPU to its highest possible frequency. Ensures maximum performance at the cost of higher power 
+      draw and increased heat.
+  - name: Powersave
+    icon: powersave
+    desc: >
+      Keeps the CPU fixed at its lowest possible frequency. Great for conserving battery life or reducing heat 
+      during light workloads.
+  - name: Conservative
+    icon: conservative
+    desc: >
+      Similar to **Ondemand** but changes frequency more gradually, avoiding sudden spikes or drops. Provides 
+      smoother performance transitions at slightly lower responsiveness.
+  - name: Interactive
+    icon: interactive
+    desc: >
+      Ramps CPU frequency up quickly when activity is detected. Favourable for input heavy applications but can 
+      cause sudden power spikes on slower hardware.
+  - name: Schedutil
+    icon: schedutil
+    desc: >
+      Integrates with the Linux scheduler to make real time frequency decisions based on task priority. Offers the 
+      best overall balance on newer multi core devices.
+  - name: Userspace
+    icon: userspace
+    desc: >
+      Enables manual control of CPU speed through system tools like SSH or ADB. Intended for advanced users who want 
+      precise frequency tuning.

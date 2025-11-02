@@ -1,9 +1,21 @@
-description: TODO
+description: >
+  Quickly find your content across all storage. Whether you are looking within a single folder or across every 
+  connected storage device, this tool helps you locate specific content without having to browse manually.
 
 goback: muxoption
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Lookup
+    icon: lookup
+    desc: >
+      Enter the name or partial name of the content you wish to find. Searches are not case sensitive.
+  - name: Search Local
+    icon: local
+    desc: >
+      Performs a search within the currently selected folder and all subfolders. Useful when you know roughly where 
+      the file is stored but not its exact name.
+  - name: Search Global
+    icon: global
+    desc: >
+      Searches across all currently mounted and active storage devices, including SD1, SD2, and USB. Ideal for 
+      locating content when you're unsure which device or directory it resides in.

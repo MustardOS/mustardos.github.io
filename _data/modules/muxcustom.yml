@@ -1,9 +1,90 @@
-description: TODO
+description: >
+  Tailor the look, sound, and behaviour of the frontend. From changing themes and fonts to sound effects, these options
+  let you personalise the user experience to your liking. Adjusting these settings affects only the interface and does
+  not alter how content runs or performs.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Catalogue Sets
+    icon: catalogue
+    desc: >
+      Load and apply user created artwork catalogues that customise how content images and metadata are displayed. 
+      These sets can change the overall visual presentation of your library.
+  - name: RetroArch Configurations
+    icon: config
+    desc: >
+      Load custom RetroArch configuration files for finer control over emulator behaviour and performance. Ideal for 
+      users who maintain multiple setups or experimental settings.
+  - name: Theme Picker
+    icon: theme
+    link: muxpicker
+    desc: >
+      Change the appearance of the frontend by selecting from installed themes. You are also able to download themes
+      directly on-device through this option.
+  - name: Theme Resolution
+    icon: resolution
+    desc: >
+      Test themes designed for different resolutions or aspect ratios. Useful for validating theme compatibility 
+      on various devices or displays.
+  - name: Alternative Theme
+    icon: alternate
+    desc: >
+      Switch between alternate versions of a theme, such as different colour palettes or layout variants.
+  - name: Background Music
+    icon: music
+    desc: >
+      Toggles background music in the frontend interface. All music is <code>.ogg</code> and can be switched between
+      <strong>Theme</strong> based or <strong>Global</strong> within the <code>MUOS/music</code> folder
+  - name: Black Fade Animation
+    icon: blackfade
+    desc: >
+      Toggles the fade to black transition animation used when launching content. Disabling this can slightly speed 
+      up launch times.
+  - name: Content Save State Launch
+    icon: launch_swap
+    desc: >
+      Choose between pressing <strong>A</strong> or holding <strong>A</strong> to automatically launch the most 
+      recent save state for the selected content.
+  - name: Content Shuffle
+    icon: shuffle
+    desc: >
+      Enables the ability to shuffle through content in the explorer using the <strong>R2</strong> button. A fun way 
+      to discover random content in your library.
+  - name: Content Box Art
+    icon: boxart
+    desc: >
+      Changes the display priority of content images, or determining whether box art is shown at all.
+  - name: Content Box Art Alignment
+    icon: align
+    desc: >
+      Adjusts the position of content images on screen. Useful for theme designers or users wanting a specific 
+      layout alignment.
+  - name: Content Launch Splash
+    icon: splash
+    desc: >
+      Toggles the display of a splash image when launching content. Adds a stylish transition or can be disabled 
+      for slightly faster load times.
+  - name: Content Grid Mode
+    icon: gridmodecontent
+    desc: >
+      Enables grid view mode in the Content Explorer. Display content in a visual grid instead of a list for a more
+      graphical browsing experience.
+  - name: Hide Grid Mode Box Art
+    icon: boxarthide
+    desc: >
+      Hides system box art images when grid mode is active. Useful for simplifying the interface or highlighting 
+      custom artwork.
+  - name: Interface Font Type
+    icon: font
+    desc: >
+      Chooses how fonts are loaded in the frontend. <strong>Theme</strong> uses fonts included in the theme (with 
+      language fallback), while <strong>Language</strong> forces use of the language-specific font.
+  - name: Navigation Sound
+    icon: sound
+    desc: >
+      Toggles sound effects when navigating the frontend interface. Disabling this results in silent menu movement.
+  - name: Startup Chime
+    icon: chime
+    desc: >
+      Toggles the chime sound played during frontend startup. A small signal the frontend has finished loading.

@@ -1,9 +1,28 @@
-description: TODO
+description: >
+  Manage which emulator cores and systems are linked to specific content. Use these associations to determine how 
+  the selected content should launch. You can download new cores, select a suitable system, and choose between default
+  or alternative cores to customise compatibility and performance for individual titles.
 
 goback: muxoption
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Core Downloader
+    icon: download
+    desc: >
+      Opens the core downloader, where you can install additional systems and emulator cores to expand your available
+      range of systems and cores that you assign to content.
+  - name: System
+    icon: system
+    desc: >
+      Displays a list of recognised systems that are suitable for the selected content. Choosing the correct system 
+      filters available cores to only those compatible with that platform.
+  - name: Core Default
+    icon: default
+    desc: >
+      Indicates the default emulator core automatically used for the selected system. This core will launch the 
+      content unless an alternative is explicitly chosen.
+  - name: Core Alternative
+    icon: core
+    desc: >
+      Lists other compatible emulator cores available for the same system. Selecting an alternative allows you to 
+      fine tune performance, compatibility, or visual features based on your personal preference.

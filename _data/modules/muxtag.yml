@@ -1,9 +1,68 @@
-description: TODO
+description: >
+  Assign alternative visual icons to your content, helping you quickly identify special attributes or personal 
+  categories in your library. Tags can mark progress, status, or content type. Think of these glyphs as tiny visual 
+  notes for how you view or use your content.
 
 goback: muxoption
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Abandoned
+    icon: abandoned
+    desc: >
+      Mark content that you started but decided not to finish. A subtle reminder that some adventures are best 
+      left behind...
+  - name: Alternate
+    icon: alternate
+    desc: >
+      Used for different versions of the same content. Great for distinguishing between regional releases or 
+      enhanced editions.
+  - name: Backlog
+    icon: backlog
+    desc: >
+      Tag items you plan to play later. Keeps your "<em>to play</em>" list visible without too much noise.
+  - name: Complected
+    icon: complected
+    desc: >
+      <em>The content is complected, what more do you want?</em>
+  - name: Completed
+    icon: completed
+    desc: >
+      Marks content that has been fully finished or cleared. Useful for tracking progress across long campaigns.
+  - name: Cursed
+    icon: cursed
+    desc: >
+      For content that causes chaos, crashes, or confusion. Use sparingly, or proudly, depending on your temperament.
+  - name: Experimental
+    icon: experimental
+    desc: >
+      Indicates prototypes, test builds, or early versions. Perfect for tinkerers who like to live dangerously.
+  - name: Homebrew
+    icon: homebrew
+    desc: >
+      Designates community made or unofficial content. Highlights independent creativity within your collection.
+  - name: In Progress
+    icon: inprogress
+    desc: >
+      Marks content that you're currently playing or testing. A helpful visual cue for ongoing sessions.
+  - name: None
+    icon: none
+    desc: >
+      Removes any previously assigned glyph and returns the content to its default untagged state.
+  - name: Patched
+    icon: patched
+    desc: >
+      Used for content that has been modified or fixed with community or developer patches.
+  - name: Replay
+    icon: replay
+    desc: >
+      For content worth revisiting... whether for achievements, nostalgia, or perfectionism!
+  - name: Romhack
+    icon: romhack
+    desc: >
+      Identify content that has been altered or expanded from their original versions. Excellent for modded or fan
+      edited experiences.
+  - name: Translated
+    icon: translated
+    desc: >
+      Denotes content that has been localised or fan translated into another language. Perfect for tracking imported
+      or previously inaccessible titles.

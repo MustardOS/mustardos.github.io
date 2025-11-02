@@ -1,9 +1,23 @@
-description: TODO
+description: >
+  Browse, install, and organise visual themes that change the overall look and feel of the MustardOS frontend. Themes 
+  control everything from background images and icons to colour palettes and font styles, allowing you to personalise 
+  the interface to match your taste or device aesthetic.
 
 goback: muxcustom
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Theme Download
+    icon: download
+    desc: >
+      Download additional themes directly when an active connection is available. This expands your available 
+      selection without needing to install themes manually.
+  - name: Folder
+    icon: folder
+    desc: >
+      Organise themes into folders for easier navigation. Each folder can hold multiple themes, helping you sort them
+      by creator, style, or even resolution.
+  - name: Theme
+    icon: theme
+    desc: >
+      Select and install a compatible theme. Once applied, it will update the appearance of menus, backgrounds, and 
+      the general interface elements throughout the MustardOS frontend.
