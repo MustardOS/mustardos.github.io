@@ -70,3 +70,7 @@ hidden:
     desc: >
       Configure very specific device functionality, options within here should <strong>not</strong> be changed 
       unless otherwise told to do so by a MustardOS developer.
+
+tip:
+  - info: Press **A** on Linux Kernel to show current device Hostname
+  - info: Press **A** on System Memory to drop memory cache
