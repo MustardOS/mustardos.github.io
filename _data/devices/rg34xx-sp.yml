@@ -1,0 +1,9 @@
+manufacturer: Anbernic
+name: RG34XX SP
+internal: rg34xx-sp
+desc: A clamshell device with two analogue sticks.
+downloads:
+  hash: 273db8c424fe8989989cc5cc3da264d9e792db32d93c1202d79304940aefc56a
+  gofile: https://store9.gofile.io/download/direct/e04735a2-3d70-4fe9-b20a-f1b592f449e2/MustardOS_RG34XX-SP_2508.3_GOLDEN_GOOSE-4f83d826.img.gz
+  mega: https://mega.nz/file/lvI2yQQK#LJ4OGZEfd-IOt76bnHi_I5S_n-GAniYbiXuxhZ6756g
+  torrent: MustardOS_RG34XX-SP_2508.3_GOLDEN_GOOSE-4f83d826

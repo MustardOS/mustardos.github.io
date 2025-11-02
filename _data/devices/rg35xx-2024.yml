@@ -1,0 +1,9 @@
+manufacturer: Anbernic
+name: RG35XX 2024
+internal: rg35xx-2024
+desc: A vertical 3.5" device. No Wi-Fi capability.
+downloads:
+  hash: 9ba36fd41d9be12ae1baa1549f7d9264e53e0567423b4cfb2fc97732566fe734
+  gofile: https://store9.gofile.io/download/direct/dcc04246-508e-4a0a-b0b3-4fa87a7a0299/MustardOS_RG35XX-2024_2508.3_GOLDEN_GOOSE-4f83d826.img.gz
+  mega: https://mega.nz/file/1mxEEDZB#d_h0hIagrQyNYxzOJwXnrJYEM8O0_tc9rl0GjAZQVIo
+  torrent: MustardOS_RG35XX-2024_2508.3_GOLDEN_GOOSE-4f83d826

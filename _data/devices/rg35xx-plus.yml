@@ -1,0 +1,9 @@
+manufacturer: Anbernic
+name: RG35XX PLUS
+internal: rg35xx-plus
+desc: A nice typical vertical handheld with a 3.5" display.
+downloads:
+  hash: caa65ae8ce008b24e0ecc701b66de08fdf2d6566fa419f695b4ab644c3e65acd
+  gofile: https://store-na-phx-3.gofile.io/download/direct/242e249a-0417-4c12-9002-65b8d653665f/MustardOS_RG35XX-PLUS_2508.3_GOLDEN_GOOSE-4f83d826.img.gz
+  mega: https://mega.nz/file/VuBXFSDQ#y_NwfXV8U1dIkwygcSNsCKM8FOwoZpgLAfeYqjviCa4
+  torrent: MustardOS_RG35XX-PLUS_2508.3_GOLDEN_GOOSE-4f83d826

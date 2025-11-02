@@ -2,7 +2,7 @@
 layout: default
 title: Welcome
 nav_enabled: true
-nav_order: 1
+nav_order: 0
 has_children: true
 ---
 
@@ -22,23 +22,23 @@ From everyday play to inquisitive tinkering, MustardOS is built to adapt to you.
 
 ***
 
-# Download
+## Download
 
-[Latest](release/current/golden){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[View Supported Devices](devices){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
 
 ***
 
-# Socials
+## Socials
 
 [Instagram](https://instagram.com/muos.dev){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Twitter/X](https://x.com/@_mustardOS){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ***
 
-# Community
+## Community
 
 [Discord](https://discord.gg/muos){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 [Forum](https://community.muos.dev/){: .btn .fs-5 .mb-4 .mb-md-0 }
@@ -122,40 +122,6 @@ offering plenty of depth and customisation for those who enjoy exploring further
 > * These do **NOT** work on the TrimUI devices.
 > * The Smart Pro has **NO** analogue stick click, no L3, no R3.
 > * The Brick has **NO** analogue sticks for adjustments.
-
-## Devices
-
-| Supported            |
-|:---------------------|
-| Anbernic RG28XX      |
-| Anbernic RG34XX      |
-| Anbernic RG34XX SP   |
-| Anbernic RG35XX 2024 |
-| Anbernic RG35XX PLUS |
-| Anbernic RG35XX PRO  |
-| Anbernic RG35XX H    |
-| Anbernic RG35XX SP   |
-| Anbernic RG40XX H    |
-| Anbernic RG40XX V    |
-| Anbernic RGCUBEXX    |
-| Trimui Brick         |
-| Trimui Smart Pro     |
-
-| In Development |
-|:---------------|
-| Magic Zero28   |
-| H36S           |
-| R36S           |
-
-| Planned           |
-|:------------------|
-| Anbernic ARC-D    |
-| Game Kiddy Bubble |
-| MagicX XU Mini28  |
-
-| Removed            |
-|:-------------------|
-| Anbernic RG35XX OG |
 
 <div itemscope itemtype="https://schema.org/WebSite">
   <meta itemprop="url" content="https://muos.dev"/>

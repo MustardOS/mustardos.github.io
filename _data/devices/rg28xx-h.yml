@@ -1,0 +1,9 @@
+manufacturer: Anbernic
+name: RG28XX H
+internal: rg28xx-h
+desc: A small 2.8" screen device. No Wi-Fi capability.
+downloads:
+  hash: 36fcb2d607caee03f7d6b4c147e1ffa482c94170fd459646b3917afb9f84e5a3
+  gofile: https://store9.gofile.io/download/direct/d3dfd3a6-0c0b-45b0-81b0-4c76fec12685/MustardOS_RG28XX-H_2508.3_GOLDEN_GOOSE-4f83d826.img.gz
+  mega: https://mega.nz/file/Ji4HzYzD#FXaRiNLjJ1_0FgnGxMAU7Eho0NZXbVjmRLQlLh2dnYk
+  torrent: MustardOS_RG28XX-H_2508.3_GOLDEN_GOOSE-4f83d826
