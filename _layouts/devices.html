@@ -5,9 +5,30 @@ layout: default
 <h1><strong>{{ page.title }}</strong></h1>
 <p>{{ page.description }}</p>
 
-<h3><strong>Current Release - </strong> 2508.3 Golden Goose</h3>
-<a style="margin-top:0.5rem;" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
-   href="/release/current/golden">View Release Details</a>
+{%- comment -%}
+Find the latest current release (sorted by version and reversed)
+{%- endcomment -%}
+{% assign all_releases = "" | split: "" %}
+{% for item in site.data.releases %}
+{% assign release = item[1] %}
+{% if release.type == "current" %}
+{% assign all_releases = all_releases | push: release %}
+{% endif %}
+{% endfor %}
+
+{% assign sorted_current = all_releases | sort: "ver" | reverse %}
+{% assign latest = sorted_current[0] %}
+
+{% if latest %}
+<h3><strong>Current Release – </strong>{{ latest.ver }} {{ latest.code }}</h3>
+<a style="margin-top:0.5rem;"
+   class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
+   href="/release/current/{{ latest.ver | replace: '.', '_' }}">
+    View Release Details
+</a>
+{% else %}
+<p><em>No current release available!</em></p>
+{% endif %}
 
 {% assign device_pairs = site.data.devices %}
 {% assign all_devices = "" | split: "" %}
@@ -35,19 +56,19 @@ layout: default
             <p style="margin:0.5rem;">
                 <a style="min-width:100%;"
                    class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
-                   href="{{ device.downloads.gofile }}">Gofile</a>
+                   href="{{ device.downloads.gofile }}">Download from Gofile</a>
             </p>
             {% endif %}
             {% if device.downloads.mega %}
             <p style="margin:0.5rem;">
                 <a style="min-width:100%;" class="btn fs-5 mb-4 mb-md-0"
-                   href="{{ device.downloads.mega }}">Mega</a>
+                   href="{{ device.downloads.mega }}">Download from Mega</a>
             </p>
             {% endif %}
             {% if device.downloads.torrent %}
             <p style="margin:0.5rem;">
                 <a style="min-width:100%;" class="btn fs-5 mb-4 mb-md-0"
-                   href="/assets/torrents/{{ device.downloads.torrent }}.torrent">Torrent</a>
+                   href="/assets/torrents/{{ device.downloads.torrent }}.torrent">Download Torrent</a>
             </p>
             {% endif %}
             {% if device.downloads.hash %}
@@ -64,7 +85,7 @@ layout: default
 <style>
     .device-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.65rem;
         margin-top: 1rem;
     }

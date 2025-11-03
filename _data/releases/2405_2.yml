@@ -1,0 +1,91 @@
+ver: "2405.2"
+code: "Baked Beans"
+type: "archive"
+
+changes:
+  - Added additional script function to automatically sync with Syncthing after content close
+  - Added <code>allow-rotation:true</code> to RetroArch configuration
+  - Added Android Debug Bridge support
+  - Added <code>api.txt</code> file for Syncthing fix
+  - Added back button to device selector only if factory reset is 0
+  - Added box art alpha to theme schema
+  - Added check for manually launched content
+  - Added CHIP-8 RetroArch core
+  - Added conditional for RG35XX-SP to switch off if powered on with lid closed
+  - Added disabled option to box art visual options
+  - Added dotclean routine to hotswap mount
+  - Added DPAD/Analogue switch on short <code>POWER</code> press with vibration alert
+  - Added Dreamcast VMU to Save Backup script
+  - Added flipclock application - <code>MENU</code> to quit - <code>A</code> for 12/24 mode
+  - Added FreeJ2ME LibRetro BIOS
+  - Added gptokeyb to Pico8 to allow exiting with key combo
+  - Added latest RetroArch <code>hiscore.dat</code> for FBNeo
+  - Added Mednafen PCE core to assignable list
+  - Added mGBA rumble core RetroArch info file
+  - Added missing background colour and alpha to muxapp module
+  - Added missing MAME cores and fix <code>Arcade.ini</code> assign
+  - Added network loopback device
+  - Added new moonlight application
+  - Added NSO-GBA and NSO-GBC LUT shader
+  - Added PICO-8 files to BIOS Backup script
+  - Added pixel AA shader
+  - Added PortMaster executable process catch all script
+  - Added PPSSPP Cheats archive to archive manager
+  - Added proper foreground process variable to device sleep wake routine
+  - Added skip directory+file system. See <code>MUOS/info/skip.ini</code> file.
+  - Added slight performance gain on content explore items
+  - Added startup removal of update scripts
+  - Added wait auto loader for last and resume game state for RetroArch
+  - Changed default governor from <code>schedutil</code> to <code>ondemand</code> with modified tuning
+  - Changed <code>gamecontrollerdb.txt</code> to symlink from device folder
+  - Changed MAME2003 <code>xy_device</code> from mouse to disabled
+  - Changed PCSX-ReARMed enhanced resolution and speed hack to disabled by default
+  - Changed <code>same_cdi</code> RetroArch to a previous version that runs
+  - Disabled audio and brightness adjustments if HDMI is in use
+  - Modified <code>screen1</code> to keep it as a touch screen for Drastic-steward
+  - Fixed <code>hotkey + L2</code> to be a quick load instead of a quick save for Drastic-steward
+  - Added <code>settings.json</code> to maintain the pixel filter value for Drastic-steward
+  - Fixed application launchers to use module variable system
+  - Fixed audio channel in device specific configuration
+  - Fixed background music restarting between modules
+  - Fixed background music not starting after application launch
+  - Fixed borderless screen for drastic-steward
+  - Fixed core assigned catalogue on manual selection
+  - Fixed favourite and history nav bar issue
+  - Fixed favourite and history not using friendly name
+  - Fixed file permissions
+  - Fixed full-screen + behind for box art
+  - Fixed GMU Music Player HOME directory preventing launch
+  - Fixed HDMI sound not being reset on reboot
+  - Fixed input mapping state machine
+  - Fixed issue with general settings not updating sleep mechanism on some devices
+  - Fixed lower case cached name retrieval
+  - Fixed N64 controls on non H devices
+  - Fixed network SSID in global configuration
+  - Fixed PPSSPP controls across all devices
+  - Fixed PPSSPP menu scaling
+  - Fixed PPSSPP resolution for RG28XX
+  - Fixed preview image recolouring
+  - Fixed random charging state skip issue
+  - Fixed RetroArch command line issue
+  - Fixed root mount location for RG28XX
+  - Fixed screenshot being triggered due to stuck power key input
+  - Fixed task toolkit backup scripts
+  - Fixed task toolkit to use module variable system
+  - Modified application scripts to prevent variable leaks
+  - Modified catalogue generation to add missing Folder and Root structure
+  - Modified <code>ondemand</code> threshold and sampling down factor
+  - Modified skip routine to read all lines and place into memory first
+  - Modified simple terminal to use proper font
+  - Moved all scripts to a modular variable system
+  - Moved device type confirmation to <code>X</code> after factory reset
+  - Moved dotclean script from device startup to task toolkit
+  - Moved input combo states to simplified case switch
+  - Removed extra <code>/</code> on module paths
+  - Removed hardcoded value on UI counted objects on module load
+  - Removed RetroArch save state mechanism on sleep init
+  - Removed sleep vibration
+  - Removed soundfont archive (<em>default now set in base image</em>)
+  - Updated <code>assign.json</code> with additional names
+  - Updated friendly name list
+  - Updated path of hallkey for RG35XX-SP

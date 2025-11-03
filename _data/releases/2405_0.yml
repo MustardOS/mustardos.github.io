@@ -1,0 +1,69 @@
+ver: "2405.0"
+code: "Beans"
+type: "archive"
+
+changes:
+  - Added Archive Manager with support for specially crafted <code>.zip</code> files in the ARCHIVE folder
+  - Added Automatic Core Assignment for predefined content folders
+  - Added Backup Manager with script-based full backup capability
+  - Added brightness and volume onscreen indicators
+  - Added GMU Music Player
+  - Added micro terminal editor accessible via SSH
+  - Added network scanning for surrounding Wi-Fi networks (Press X when enabled)
+  - Added passcode lock for boot, launch, and settings
+  - Added pre-installed background music
+  - Added refreshed header UI with configurable visibility
+  - Added individual wallpapers for list items with GIF animation support
+  - Added "A+B Button Swap” in Advanced Settings
+  - Added "Colour Temperature” in General Settings (replacing Night Mode)
+  - Added DuckStation and SwanStation default configs for improved performance
+  - Added Fish shell as default root shell
+  - Added "HDMI Output” in General Settings
+  - Added individual device script support
+  - Added Ko-fi Support screen after first system init (auto-closes after 10s)
+  - Added LED During Play option
+  - Added logger module for verbose messages
+  - Added menu acceleration
+  - Added Network Configuration restore option
+  - Added "Show Hidden Content” option in General Settings
+  - Modified default architecture to AARCH64
+  - Modified internal build scripts for better flexibility
+  - Modified main configuration defaults for clarity
+  - Modified content explorer to auto-load single SD/USB storage on startup
+  - Modified header/footer behaviour - image support removed, alpha and wallpaper theming added
+  - Modified background music to be theme-independent (now in MUOS/music, MP3 only)
+  - Modified theme schema with independent glyph positioning and new horizontal/vertical navigation
+  - Modified zero-content message positioning to centre
+  - Modified system scripts for improved performance and maintainability
+  - Fixed volume setting persistence across reboots/shutdowns
+  - Fixed box art loading and preferred location
+  - Fixed brightness setting not saving properly
+  - Fixed content explorer UI flashing
+  - Fixed launch issue with filenames containing extra dots
+  - Fixed missing theme engine variables
+  - Fixed network configuration refresh and module loading
+  - Fixed out-of-sync dynamic list items
+  - Fixed RetroArch top-right graphics glitch
+  - Fixed RTC daylight savings bug
+  - Fixed thermal zone control script
+  - Fixed verbose boot colour and alpha values
+  - Fixed update system to handle new compression format
+  - Fixed blue outline on dropdown elements
+  - Updated RetroArch to 1.18.0
+  - Updated gpSP, mGBA, Mupen, and PCSX ReARMed cores
+  - Updated Amiberry
+  - Updated DraStic
+  - Updated Mupen64Plus
+  - Updated PPSSPP
+  - Updated ScummVM
+  - Updated PortMaster to stable release
+  - Updated Filebrowser to SFTPGo with full SFTP and web UI
+  - Updated header and theme defaults to new schema
+  - Updated verbose boot messages for system init
+  - Updated list items from 14 to 13 for future CJK support
+  - Updated screen refresh and system performance
+  - Removed Dropbear (replaced by OpenSSH)
+  - Removed Debug, Battery, and SD Sync from Advanced Settings
+  - Removed Screenshot option in General Settings
+  - Removed legacy header/footer image support
+  - Removed redundant system modules and outdated UI elements

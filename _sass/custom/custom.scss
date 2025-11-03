@@ -19,23 +19,6 @@ p.note-title, blockquote.note-title {
 
 // warning
 p.warning, blockquote.warning {
-    background: rgba($red-100, 0.1);
-
-    &::before {
-        color: $red-000;
-    }
-}
-
-p.warning-title, blockquote.warning-title {
-    background: rgba($red-100, 0.1);
-    
-    p:first-child {
-        color: $red-100;
-    }
-}
-
-// important
-p.important, blockquote.important {
     background: rgba($blue-100, 0.1);
 
     &::before {
@@ -43,11 +26,28 @@ p.important, blockquote.important {
     }
 }
 
-p.important-title, blockquote.important-title {
+p.warning-title, blockquote.warning-title {
     background: rgba($blue-100, 0.1);
-    
+
     p:first-child {
         color: $blue-100;
+    }
+}
+
+// important
+p.important, blockquote.important {
+    background: rgba($red-100, 0.1);
+
+    &::before {
+        color: $red-000;
+    }
+}
+
+p.important-title, blockquote.important-title {
+    background: rgba($red-100, 0.1);
+
+    p:first-child {
+        color: $red-100;
     }
 }
 

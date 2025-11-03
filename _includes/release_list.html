@@ -1,0 +1,39 @@
+{%- assign type = include.type | default: "current" -%}
+
+{%- comment -%}
+Gather all releases of the requested type and build a stable numeric key
+for sorting: key = (major * 1000) + minor
+This ensures 2508.2 > 2410.3 > 2405.1 etc.
+{%- endcomment -%}
+
+{%- assign sortable = "" | split: "" -%}
+{%- for item in site.data.releases -%}
+{%- assign rel = item[1] -%}
+{%- if rel.type == type -%}
+{%- assign parts = rel.ver | split: "." -%}
+{%- assign major = parts[0] | plus: 0 -%}
+{%- assign minor = parts[1] | default: 0 | plus: 0 -%}
+{%- assign key = major | times: 1000 | plus: minor -%}
+{%- capture entry -%}{{ key | prepend: "000000" | slice: -6, 6 }}::{{ rel.ver }}::{{ rel.code }}{%- endcapture -%}
+{%- assign sortable = sortable | push: entry -%}
+{%- endif -%}
+{%- endfor -%}
+
+{%- assign sorted = sortable | sort | reverse -%}
+
+{%- if sorted.size > 0 -%}
+<ul class="release-list">
+    {%- for entry in sorted -%}
+    {%- assign parts = entry | split: "::" -%}
+    {%- assign ver = parts[1] -%}
+    {%- assign code = parts[2] -%}
+    <li>
+        <a href="{{ '/release/' | append: type | append: '/' | append: ver | replace: '.', '_' | relative_url }}">
+            {{ ver }} {{ code }}
+        </a>
+    </li>
+    {%- endfor -%}
+</ul>
+{%- else -%}
+<p><em>No {{ type }} releases available.</em></p>
+{%- endif -%}

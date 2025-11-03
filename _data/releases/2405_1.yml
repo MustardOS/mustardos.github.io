@@ -1,0 +1,21 @@
+ver: "2405.1"
+code: "Refried Beans"
+type: "archive"
+
+changes:
+  - Added RG28XX and RG35XX-SP support
+  - Added Lid mode support for RG35XX-SP
+  - Added Sleep and shutdown mode
+  - Added HDMI audio output
+  - Added HDMI resolution change
+  - Added visual options to remove <code>( ) [ ]</code> and replace <code> - </code> to <code>: </code> on content names
+  - Fixed global configuration corruption for those who like to press the reset button for funsies
+  - Fixed network connection to be a bit more stable
+  - Themes are now placed in SD1 (MUOS/theme/active) for changing on-the-fly or fixing errors easily
+  - Backup Manager and System Refresh have been merged to Task Toolkit
+  - Menu is now more responsive
+  - Visual indicators for volume and brightness are more accurate
+  - Now device agnostic, reliance on hardcoded pathing is reduced by 90%
+  - Updated RetroArch to 1.19.1 and multiple core updates
+  - Updated secret mode
+  - Updated supporter screen

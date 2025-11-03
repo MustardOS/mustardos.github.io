@@ -1,0 +1,85 @@
+ver: "2508.3"
+code: "Golden Goose"
+type: current
+pronunciation: "/ˈɡoʊldən ɡuːs/"
+
+full_image:
+  gofile: https://gofile.io/d/BjWtbj
+  mega: https://mega.nz/folder/FjIVxDyR#DRIA6Q7pez9863LSkbRMfQ
+  warning:
+    - Upon full image reflash on devices with SD2 inserted your <code>MUOS</code> folder will be moved to 
+      <code>MUOS_old</code> to ensure update safety. However do not panic, your save games, configurations, and other 
+      user data can be safely copied back. However please do so with caution as there may be conflicts.
+
+update_archive:
+  gofile: https://gofile.io/d/XcvWB8
+  mega: https://mega.nz/folder/Q7JDWIQa#LCTZofUz0gBq5_KEhrkXIg
+  important:
+    - This is a simple <strong>Archive Manager</strong> installable patch for those of you who are running either the
+      MustardOS <strong>2508.1 Canada Goose</strong> or <strong>2508.2 Silly Goose</strong> versions. However you can
+      download the full image for a reflash.
+
+note:
+  - Due to the amount of issues in the past relating to people changing their RetroArch global configuration
+    we have opted to freeze it. If you would like to know how to unfreeze it please see the following 
+    <a href="https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823">FAQ</a> page.
+  - Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as 
+    there are a few changes that have been made. Including the change from <strong>POWER</strong> to 
+    <strong>START</strong> for the charging module along with the screenshot and DPAD swap hotkey changes.
+
+contributors:
+  - antiKk
+  - bitter_bizarro
+  - imcokeman
+  - thewalruzz
+  - xonglebongle
+
+changes:
+  - Added carousel support main menu
+  - Added control re-init for core downloads where required
+  - Added default language files for preinstalled applications
+  - Added dynamic hotkey combo builder
+  - Added external command run support to hotkey runners
+  - Added grid and carousel mode to history
+  - Added hotkey combo archive support
+  - Added hotkey combo toggle for DPAD swap and screenshot
+  - Added hotkey sequence combination support with timeout
+  - Added individual language support for applications
+  - Added modular and extensible JSON hotkey support
+  - Added network settings to kiosk mode
+  - Added Polish to preinstalled <code>mux_lang.ini</code> files
+  - Added Refresh Boot Logo and Restore Hotkeys scripts to Task Toolkit
+  - Added support for <code>bootlogo.png</code> gradient colour
+  - Added toggle script grid mode history
+  - Added turbo time parameter to run exec function
+  - Attempted to negate Yabasanshiro flicker
+  - Fixed app glyphs not showing for apps located on SD2
+  - Fixed application translation support
+  - Fixed comparison value for box art splash
+  - Fixed installer default theme for 1280x720 resolution
+  - Fixed network loading specifically for 8188eu dongle
+  - Fixed RetroArch running save state file flush on sleep shutdown
+  - Fixed suspend network halting
+  - Fixed TrimUI module suspending as they can get cranky
+  - Fixed virtual terminal to use login shell
+  - Fixed volume and brightness bar for the default MustardOS theme
+  - Fixed zombie processes on executable running
+  - Modified module loader to probe TrimUI GPU initialiser
+  - Modified network loader to only remove module for H700 devices
+  - Modified network module loading only if board is network capable
+  - Modified swap script to use modprobe force
+  - Modified system information to separate version and build ID
+  - Modified ZRAM option to hide for TrimUI devices
+  - Moved extra module loading for specific devices
+  - Optimised a few extra common paths to variables
+  - Removed <code>2048.sh</code> core override
+  - Removed device specific hotkeys
+  - Separated rumble init to separate device script
+  - Updated brightness scale for TrimUI devices to 0-255
+  - Updated default theme colours, glyphs, previews
+  - Updated grid current item label to use full name
+  - Updated installer module to be uniform with main menu launcher
+  - Updated larger font for HDMI resolutions
+  - Updated preinstalled VBA-M core
+  - Updated RGB modes and script for TrimUI devices
+  - Updated temp path for grid toggle scripts

@@ -1,0 +1,47 @@
+ver: "2403.0"
+code: "Origin"
+type: "archive"
+
+changes:
+  - Added basic HDMI support (sound output currently on-device; fix planned for future update)
+  - Added additional preinstalled content
+  - Added battery level glyph (offset adjustable in Advanced Settings for battery accuracy)
+  - Added external emulation support for DraStic, PICO-8, and ScummVM (experimental)
+  - Added new content explorer with artwork and text structured by associated core
+  - Added caching to content explorer for faster loading
+  - Added UNIX-style hidden file and folder support using dot prefix
+  - Added predefined core association lists for easier system selection
+  - Added on-device network configuration with new on-screen keyboard
+  - Added network web service toggle support
+  - Added PortMaster support for ready-to-go content
+  - Added enhanced theme structure with additional functionality
+  - Added theme creator utility
+  - Added custom font support in themes with compilation guide
+  - Added preinstalled community themes
+  - Added baseline RetroArch shader configuration to remove frame jitter
+  - Added additional debug messages for backend development
+  - Added brand new secret feature (report discovery for secret role)
+  - Added device selector
+  - Added factory reset sound effects (bleeps and bloops)
+  - Adjusted maximum brightness value
+  - Adjusted content description to scroll vertically with 2-second delay
+  - Fixed screenshot timing (L2 + R2) with proper rumble feedback
+  - Modified RetroArch to use single global configuration for all content
+  - Modified RetroArch main menu launch to skip confirmation
+  - Modified RetroArch quick menu hotkey to MENU + X
+  - Modified default aspect ratios for numerous cores
+  - Updated majority of RetroArch cores and added new ones
+  - Updated overlays for RetroArch
+  - Modified general codebase for improved performance and stability
+  - Modified navigation messages to display on footer element
+  - Modified datetime display to top-right corner
+  - Modified message display positioning above navigation footer
+  - Modified System Information to auto-update with live data
+  - Removed on-device sync
+  - Removed SD Card tools (no longer required)
+  - Removed <code>hidden.txt</code> requirement for file and folder hiding
+  - Removed confirmation for RetroArch main menu launch
+  - Removed redundant system configuration groupings
+  - Separated Settings into Configuration and Information sections
+  - Redesigned input tester interface
+  - General code cleanup and optimisation pass

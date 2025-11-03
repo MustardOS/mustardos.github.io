@@ -1,0 +1,162 @@
+---
+layout: default
+---
+
+{% assign release = site.data.releases[page.datafile] %}
+
+{% if release == nil %}
+<h2>Release data not found for <strong>{{ page.title }}</strong></h2>
+<p>If you believe this is an error please reach out to the MustardOS crew!</p>
+{% else %}
+
+<h1><strong>MustardOS {{ release.ver }} {{ release.code }}</strong></h1>
+
+{% case release.type %}
+{% when "current" %}
+<p><span class="label label-green">Current Release</span></p>
+{% when "progress" %}
+<p><span class="label label-yellow">In Progress...</span></p>
+{% when "archive" %}
+<p><span class="label label-grey">Archived Release</span></p>
+{% endcase %}
+
+{% if release.pronunciation %}
+<hr>
+<h3><strong>Pronunciation</strong></h3>
+<p>{{ release.pronunciation }}</p>
+{% endif %}
+
+<hr>
+
+{%- assign full_image = release.full_image -%}
+{%- assign update_archive = release.update_archive -%}
+
+{% if full_image or update_archive %}
+{%- assign sections = "full_image,update_archive" | split: "," -%}
+{%- for section in sections -%}
+{%- assign item = release[section] -%}
+{% if item %}
+<h2>
+    Download – {% if section == "full_image" %}Full Image{% else %}Update Archive{% endif %}
+</h2>
+
+<p>
+    {% if item.gofile %}
+    <a href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
+        Download from Gofile
+    </a>
+    {% endif %}
+    {% if item.mega %}
+    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+        Download from MEGA
+    </a>
+    {% endif %}
+</p>
+
+{% assign kinds = "important,warning,note" | split: "," %}
+{% for kind in kinds %}
+{% assign value = item[kind] %}
+{% if value %}
+{% for msg in value %}
+<blockquote class="{{ kind }}">
+    {{ msg | markdownify }}
+</blockquote>
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+{%- endfor -%}
+{% else %}
+<h3><strong>No longer available!</strong></h3>
+<p><em>This release is lost to time...</em></p>
+{% endif %}
+
+<hr>
+
+{% assign kinds = "important,warning,note" | split: "," %}
+{% assign has_info = false %}
+
+{% for kind in kinds %}
+{% assign value = release[kind] %}
+{% if value %}
+{% assign has_info = true %}
+{% endif %}
+{% endfor %}
+
+{% if has_info %}
+<h2><strong>Additional Information</strong></h2>
+{% for kind in kinds %}
+{% assign value = release[kind] %}
+{% if value %}
+{% for msg in value %}
+<blockquote class="{{ kind }}">
+    {{ msg | markdownify }}
+</blockquote>
+{% endfor %}
+{% endif %}
+{% endfor %}
+<hr>
+{% endif %}
+
+<h2><strong>Support MustardOS</strong></h2>
+<p>Want to join us on this <strong>crazy</strong> and rewarding journey?</p>
+
+<p><strong>This can be done a few ways:</strong></p>
+<ul>
+    <li>Take part in the <a href="https://community.muos.dev">Community Forum</a></li>
+    <li>Be helpful around the <a href="https://discord.gg/muos">Discord Server</a></li>
+    <li>Contribute code directly to our <a href="https://github.com/MustardOS">GitHub Repositories</a></li>
+    <li>Spread the good word about MustardOS and all the amazing features</li>
+</ul>
+
+<p><strong>You can join the testing crew directly by:</strong></p>
+<ul>
+    <li>Supporting xonglebongle via a <a href="https://ko-fi.com/xonglebongle">Ko-fi Subscription</a></li>
+    <li>Boosting the <a href="https://discord.gg/muos">Discord Server</a></li>
+    <li>Contributing major code pull requests on our <a href="https://github.com/MustardOS">GitHub Repositories</a></li>
+    <li>Showing exceptional values and building rapport</li>
+</ul>
+
+<hr>
+
+<h2><strong>Support Development Crew</strong></h2>
+<p>
+    We are a small team, and with your generous support we can continue growing and spreading that sweet MustardOS
+    across other devices. If you can, support the development crew below:
+</p>
+
+{% if release.support and release.support.development %}
+{% for dev in release.support.development %}
+<h3>{{ dev.name }} – <a href="{{ dev.url }}">{{ dev.url }}</a></h3>
+{% endfor %}
+{% else %}
+<h3>AntiKk – <a href="https://buymeacoffee.com/antikk">https://buymeacoffee.com/antikk</a></h3>
+<h3>Corey – <a href="https://ko-fi.com/cmclark00">https://ko-fi.com/cmclark00</a></h3>
+<h3>Bitter Bizarro – <a href="https://ko-fi.com/bitterbizarro">https://ko-fi.com/bitterbizarro</a></h3>
+{% endif %}
+
+<hr>
+
+{% if release.contributors %}
+<h2><strong>Contributors</strong></h2>
+<ul>
+    {% for contributor in release.contributors %}
+    <li>{{ contributor }}</li>
+    {% endfor %}
+</ul>
+<hr>
+{% endif %}
+
+{% if release.changes %}
+{% assign changes_sorted = release.changes | sort_natural %}
+<h2><strong>Changes</strong></h2>
+<ul>
+    {% for change in changes_sorted %}
+    <li>{{ change }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p><em>No changes recorded for this release!</em></p>
+{% endif %}
+
+{% endif %}

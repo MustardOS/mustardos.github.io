@@ -1,0 +1,70 @@
+ver: "2410.3"
+code: "AW Banana"
+type: "archive"
+pronunciation: "/ˌeɪ ˈdʌb.l̩.juː bəˈnæn.ə/"
+
+full_image:
+  gofile: https://gofile.io/d/BwXOqY
+  mega: https://mega.nz/folder/4iJyFQTR#FUEPC-zID0WzGukTsHHLDg
+
+update_archive:
+  gofile: https://gofile.io/d/kTJWRA
+  mega: https://mega.nz/folder/53pxgIbB#ZoEPgwNofI82JB2zxDSswQ
+
+contributors:
+  - antikk
+  - bgelmini
+  - bitter_bizarro
+  - duncanyoyo1
+  - __krt__
+  - thegammasqueeze
+  - trngaje
+  - xonglebongle
+  - yomama78
+
+changes:
+  - Added additional assignable cores and systems
+  - Added disk health check through <code>fsck</code> on device startup
+  - Added extra PICO-8 favourite directory checking
+  - Added friendly names for ChannelF, IPTV, J2ME, Odyssey2, TIC-80 and Amstrad CPC/GX4000
+  - Added navigation sound <code>error.wav</code> for the times where something goes wrong
+  - Added Odyssey2/VideoPac assignable system
+  - Added resolution change hack for HDMI output change
+  - Added RG34XX-H device support
+  - Adjusted default backlight brightness on first boot
+  - Adjusted device panel timings
+  - Adjusted mSD card frequency
+  - Centralised language layout and separated most OSK functions
+  - Disabled forced power off functionality
+  - Disable HDMI changes whilst in use
+  - Ensure muX resolution is restored on startup
+  - Fixed charging module brightness path structure
+  - Fixed CPU core count variable on suspend
+  - Fixed default RetroArch resolution for RG34XX-H
+  - Fixed HDMI startup values
+  - Fixed low power indicator
+  - Fixed network module element count
+  - Fixed NX-Engine download script
+  - Fixed ports not having sound when line is commented
+  - Fixed power light while charging logic
+  - Fixed RetroArch network wait status messages
+  - Fixed RG28XX-H screenshot rotation
+  - Fixed RG35XX-SP charging and sleep conflict issue
+  - Fixed ScummVM launch script getting stuck with trailing spaces
+  - Fixed virtual terminal service saving
+  - Modified <code>fastfetch</code> information with MustardOS logo
+  - Modified GPU maximum frequency
+  - Moved low power indicator and RetroArch precache to after charge mode
+  - Obtain output resolution for HDMI modes
+  - Optimised frontend modules
+  - Reduced power script CPU usage by delaying power off functionality
+  - Removed 4:3 overlays from RG34XX-H
+  - Removed retro achievements on RetroArch configuration set save
+  - Revised HDMI output logic
+  - Updated Application grid mode to use catalogue images
+  - Updated default theme for <code>720x576</code> and <code>1280x720</code> support
+  - Updated Libretro cores
+  - Updated Microsoft MSX assignable system
+  - Updated ScummVM to 2.9.0 with TWP fix
+  - Updated SFTPgo system
+  - Updated theme for RG34XX-H device resolution
