@@ -5,9 +5,6 @@ layout: default
 <h1><strong>{{ page.title }}</strong></h1>
 <p>{{ page.description }}</p>
 
-{%- comment -%}
-Find the latest current release (sorted by version and reversed)
-{%- endcomment -%}
 {% assign all_releases = "" | split: "" %}
 {% for item in site.data.releases %}
 {% assign release = item[1] %}

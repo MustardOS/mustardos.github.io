@@ -15,7 +15,7 @@ layout: default
 {% when "current" %}
 <p><span class="label label-green">Current Release</span></p>
 {% when "progress" %}
-<p><span class="label label-yellow">In Progress...</span></p>
+<p><span class="label label-yellow">In Progress</span></p>
 {% when "archive" %}
 <p><span class="label label-grey">Archived Release</span></p>
 {% endcase %}
@@ -67,8 +67,13 @@ layout: default
 {% endif %}
 {%- endfor -%}
 {% else %}
+{% if release.type == "progress" %}
+<h3><strong>Not available yet!</strong></h3>
+<p><em>This release is still in development, check back soon for download links!</em></p>
+{% else %}
 <h3><strong>No longer available!</strong></h3>
 <p><em>This release is lost to time...</em></p>
+{% endif %}
 {% endif %}
 
 <hr>

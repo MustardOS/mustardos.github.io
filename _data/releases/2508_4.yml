@@ -1,0 +1,36 @@
+ver: "2508.4"
+code: "Loose Goose"
+type: progress
+pronunciation: "/luːs ɡuːs/"
+
+note:
+  - Due to the amount of issues in the past relating to people changing their RetroArch global configuration
+    we have opted to freeze it. If you would like to know how to unfreeze it please see the following
+    <a href="https://community.muos.dev/t/my-retroarch-configuration-is-being-repressed/823">FAQ</a> page.
+  - Please ensure you read the handy hotkeys on the front page (<a href="https://muos.dev">https://muos.dev</a>) as
+    there are a few changes that have been made. Including the change from <strong>POWER</strong> to
+    <strong>START</strong> for the charging module along with the screenshot and DPAD swap hotkey changes.
+
+contributors:
+  - bitter_bizarro
+  - corey
+  - imcokeman
+  - xonglebongle
+
+changes:
+  - Added charger status to system information module
+  - Added collection hiding and history glyph visibility to interface options
+  - Added default backup module config settings
+  - Added left analogue controls for DPAD swap on TrimUI Brick
+  - Added network reconnect on device wake option
+  - Fixed brightness adjustment on idle input
+  - Fixed displaying grid images in vertical carousel mode
+  - Fixed grid image alignment
+  - Fixed sleep inhibit when charger status is changed
+  - Fixed sleep suspend governor leak when going from idle display to idle sleep
+  - Fixed TrimUI brightness action as there is no HDMI output
+  - Modified tweak script to always restart hotkey function
+  - Optimised hotkey daemon to use previous governor regardless of idle display or idle sleep
+  - Updated backup module with saving previous changes
+  - Updated default theme with missing kiosk glyph
+  - Updated <code>nomerges</code> to <code>0</code> for data request performance for lower class mSD cards
