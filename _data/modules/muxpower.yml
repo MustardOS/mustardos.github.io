@@ -1,7 +1,8 @@
 description: >
   The Power Settings module allows you to control how MustardOS manages power, performance, and idle behaviour. These 
   settings define what happens when the device is left inactive, reaches low battery levels, or enters sleep mode. 
-  Switch how the CPU behaves under normal and idle conditions, helping balance performance with battery life.
+  <br><br>You are also able to switch how the CPU behaves under normal and idle conditions, helping balance performance
+  with battery life.
 
 goback: muxconfig
 

@@ -1,7 +1,8 @@
 description: >
-  The General Settings module provides access to a variety of essential system options that define how the device behaves and interacts with connected hardware. 
-  These settings cover display output, input responsiveness, and system behaviour at startup. 
-  Most of the adjustments here are safe for everyday use and allow users to fine-tune their overall MustardOS experience.
+  The General Settings module provides access to a variety of essential system options that define how the device
+  behaves and interacts with connected hardware. These settings cover display output, input responsiveness, and system
+  behaviour at startup.<br><br>Most adjustments here are safe for everyday use and allow you to fine tune your
+  <em>general</em> experience.
 
 goback: muxconfig
 

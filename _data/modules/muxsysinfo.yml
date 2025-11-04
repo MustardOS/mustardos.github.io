@@ -1,8 +1,8 @@
 description: >
   The System Details module provides a realtime view of the device current status and specifications. It displays 
   software and hardware information such as version, build ID, kernel, CPU statistics, and memory usage, along with 
-  power, temperature, and uptime details. This section is useful for monitoring system performance or confirming 
-  device information after updates and configuration changes.
+  power, temperature, and uptime details.<br><br>This section is useful for monitoring system performance or
+  confirming device information after updates and configuration changes.
 
 goback: muxinfo
 

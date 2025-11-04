@@ -1,9 +1,71 @@
-description: TODO
+description: >
+  Relocate key user data from SD1 to SD2, if your device supports a secondary card. This ensures that personal data 
+  such as saves, themes, configurations, and collections remain intact even if SD1 needs to be reformatted or
+  reflashed.<br><br>Using this feature helps protect against data loss and simplifies both maintenance and updates.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Applications
+    icon: apps
+    desc: >
+      Moves user installed applications and their data to SD2, ensuring they remain accessible after reflashing SD1.
+  - name: System BIOS
+    icon: bios
+    desc: >
+      Migrates user supplied system BIOS files used by emulators to SD2 for safer storage.
+  - name: Metadata Catalogue
+    icon: catalogue
+    desc: >
+      Transfers box art, grid icons, splash screens, and text metadata to SD2, keeping your content visuals intact.
+  - name: Content Collection
+    icon: collection
+    desc: >
+      Moves all content collection data, preserving your curated lists and favourites.
+  - name: History
+    icon: history
+    desc: >
+      Relocates your play history and recently launched items so these remain consistent after SD1 reflash.
+  - name: User Init Scripts
+    icon: init
+    desc: >
+      Transfers user initialisation scripts from <code>MUOS/init</code> folder, ensuring custom startup routines
+      persist.
+  - name: Background Music
+    icon: music
+    desc: >
+      Moves your chosen background music tracks for the frontend to SD2, preserving your personalised theme audio.
+  - name: Friendly Name System
+    icon: name
+    desc: >
+      Migrates your friendly name configuration files to SD2, maintaining cleaned up or renamed content titles.
+  - name: Network Profiles
+    icon: network
+    desc: >
+      Moves saved Wi-Fi profiles and credentials, reducing the need to reconnect manually after reinstallation.
+  - name: Custom Packages
+    icon: package
+    desc: >
+      Transfers user created packages such as catalogue sets and RetroArch configuration packages to secondary storage.
+  - name: Save Games + Save States
+    icon: save
+    desc: >
+      Moves RetroArch and emulator save files and states to SD2, keeping gameplay progress safe and sound.
+  - name: Screenshots
+    icon: screenshot
+    desc: >
+      Migrates all screenshots taken on the device to SD2, ensuring those precious "retro" achievements remain even 
+      after updates.
+  - name: Syncthing Configs
+    icon: syncthing
+    desc: >
+      Moves Syncthing configuration data, preserving sync configuration and paired device settings.
+  - name: Themes
+    icon: theme
+    desc: >
+      Relocates installed frontend themes and associated assets, preventing awful loss during SD1 reflash. However do
+      keep in mind that future updates may break theme compatibility.
+  - name: Activity Tracker
+    icon: track
+    desc: >
+      Moves your playtime tracking and session data files to SD2, maintaining usage records after any reflash.

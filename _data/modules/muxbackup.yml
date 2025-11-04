@@ -1,7 +1,8 @@
 description: >
   Selectively back up important data such as collections, saves, themes, configurations, and other user created 
-  content. Backups are stored as compressed archives and can be targeted to SD1, SD2, or USB devices. This helps 
-  protect your progress, customisations, and data integrity across updates or install across to other devices.
+  content. Backups are stored as compressed archives on your chosen target device.<br><br>This helps protect your
+  progress, customisations, and other user data across updates. You are also able to install these backups across to
+  other compatible devices.
 
 goback: muxconfig
 

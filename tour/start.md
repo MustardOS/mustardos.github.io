@@ -7,17 +7,16 @@ has_children: true
 has_toc: false
 ---
 
-<h1><strong>The Grand Tour</strong></h1>
+# <strong>The Grand Tour</strong>
 
-Explore each module to learn more about the different menus, options, and settings. Each module will contain their own
-set of options to explore! Who knows you might find something that you've never come across before and learn something
-new and exciting!
+Your complete guide to every part of the current MustardOS release. From the familiar **Main Menu** to the deep reaches
+of advanced settings to system information, and everything in between (_and maybe a secret or two_), this tour will
+take you through every module, menu, and setting that makes MustardOS both powerful, customisable, and configurable.
+
+Each stop along the way opens a new area to explore with helpful detailed explanations, glyph references, and some
+general use tips. Whether you are just getting started or already know your way around, you are bound to discover
+something new.
 
 ---
 
-{: .new }
-> **This is currently a _huge_ work in progress!**
->
-> However feel free to click the link below for a preview!
-
-## ~~**[Begin the Grand Tour](/tour/modules/muxlaunch)**~~
+## **[Begin at the Main Menu](/tour/modules/muxlaunch)**

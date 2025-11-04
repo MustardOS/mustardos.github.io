@@ -1,7 +1,6 @@
 description: >
   Manually adjust the system clock and calendar settings used with the frontend, emulators, and applications alike. 
-  These controls ensure accurate timestamps for files, logs, and saved data even without network access. The module 
-  also provides access to timezone configuration for proper regional time alignment.
+  These controls ensure accurate timestamps for files, logs, and saved data even without network access.
 
 goback: muxtweakgen
 
