@@ -1,9 +1,85 @@
-description: TODO
+description: >
+  Customise the appearance and behaviour of the frontend itself. These options control what visual elements are shown,
+  how content names are formatted, and how navigation details appear within the Explore Content and Collection menus.  
+  <br><br>Adjusting these settings allows you to refine your experience without altering user files or data.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Battery
+    icon: battery
+    desc: >
+      Toggle the visibility of the battery indicator glyph in the frontend header. Useful for users who prefer a 
+      cleaner interface or are using devices without a battery(<em>?</em>).
+  - name: Clock
+    icon: clock
+    desc: >
+      Toggle the visibility of the clock display in the frontend header. Disabling it can create a more minimal 
+      interface if time information feels unnecessary to you.
+  - name: Network
+    icon: network
+    desc: >
+      Toggle the visibility of the network connection glyph. Ideal for offline users who do not need to see Wi-Fi or 
+      network indicators.
+  - name: Content Name Scheme
+    icon: name
+    desc: >
+      Adjust how content names are displayed without renaming actual files. You can remove extra details inside 
+      <code>[ ]</code> or <code>( )</code>, or show full names as is.
+  - name: Content Dash Replacement
+    icon: dash
+    desc: >
+      Replaces dashes (<code>-</code>) with colons (<code>:</code>) in displayed content names. Helps clean up titles
+      and create more readable labels.
+  - name: Friendly Folder Names
+    icon: friendlyfolder
+    desc: >
+      Replaces shortened or system like folder labels with more descriptive, human friendly names. For example,
+      <code>SMS</code> turns into <code>SEGA Master System</code>. 
+  - name: Display Title Reformatting
+    icon: thetitleformat
+    desc: >
+      Moves the word "The" to the front of content titles. For example, converts "Batman and Robin, The" into 
+      "The Batman and Robin".
+  - name: Title Include Root Drive
+    icon: titleincluderootdrive
+    desc: >
+      Displays the current storage device name alongside the folder title at the top of the Explore Content screen.
+  - name: Folder Item Count
+    icon: folderitemcount
+    desc: >
+      Shows or hides the number of items inside each folder when browsing in Explore Content.
+  - name: Empty Folders
+    icon: folderempty
+    desc: >
+      Toggles visibility of empty folders in Explore Content. Useful for cleaning up navigation views.
+  - name: Menu Counter Folder
+    icon: counterfolder
+    desc: >
+      Displays the index and total count of folders (for example, "<code>3 / 15</code>") while navigating through
+      content folders.
+  - name: Menu Counter File
+    icon: counterfile
+    desc: >
+      Displays the index and total count of files (for example, "<code>12 / 78</code>") within a folder when browsing.
+  - name: Show Hidden Content
+    icon: hidden
+    desc: >
+      Toggles visibility of hidden files and folders. Files beginning with <code>.</code> or <code>_</code> are
+      hidden by default.
+  - name: Collection Visibility
+    icon: collection
+    desc: >
+      Shows or hides content within Explore Content that is already part of one or more collections.
+  - name: History Glyph
+    icon: history
+    desc: >
+      Displays or hides the history glyph beside previously played content in Explore Content.
+  - name: Overlay Image
+    icon: overlayimage
+    desc: >
+      Switch between different overlay visual styles used by the frontend, such as Dot Lattice or Checkerboard.
+  - name: Overlay Transparency
+    icon: overlaytransparency
+    desc: >
+      Adjusts the transparency level of the above frontend overlay image.
