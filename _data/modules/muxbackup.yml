@@ -1,9 +1,102 @@
-description: TODO
+description: >
+  Selectively back up important data such as collections, saves, themes, configurations, and other user created 
+  content. Backups are stored as compressed archives and can be targeted to SD1, SD2, or USB devices. This helps 
+  protect your progress, customisations, and data integrity across updates or install across to other devices.
 
 goback: muxconfig
 
 visible:
-  - name: 
-    icon: 
-    link: 
-    desc: 
+  - name: Activity Tracker
+    icon: track
+    desc: >
+      Includes your game activity tracker, which stores playtime and session data for each title.
+  - name: Applications
+    icon: application
+    desc: >
+      Backs up all user installed standalone applications, ensuring custom tools and ports are preserved.
+  - name: Background Music
+    icon: music
+    desc: >
+      Backs up your current background music set for the frontend, including any user added tracks.
+  - name: Content Collection
+    icon: collection
+    desc: >
+      Saves all created content collections, preserving your organised library layout.
+  - name: Content Launch Overrides
+    icon: override
+    desc: >
+      Includes any custom launch override scripts you have created for specific content or systems.
+  - name: Custom Packages
+    icon: package
+    desc: >
+      Archives all saved custom packages such as Catalogue Sets or RetroArch Configuration packages
+  - name: Friendly Name Configs
+    icon: name
+    desc: >
+      Saves your friendly name mappings, ensuring renamed or cleaned up titles remain consistent after restoration.
+  - name: History
+    icon: history
+    desc: >
+      Backs up your play history and recently launched content entries.
+  - name: Metadata Catalogue
+    icon: catalogue
+    desc: >
+      Includes artwork, grid icons, and splash screens, and other metadata stored within the catalogue.
+  - name: Network Profiles
+    icon: network
+    desc: >
+      All currently saved Wi-Fi network profiles, including SSIDs and connection preferences.
+  - name: RetroArch Cheats
+    icon: cheats
+    desc: >
+      Preserves all RetroArch cheat files, ensuring your custom tweaks and gameplay modifiers remain available.
+  - name: RetroArch Configs
+    icon: config
+    desc: >
+      Backs up your RetroArch configuration files and settings, maintaining controller, display, and core options.
+  - name: RetroArch Overlays
+    icon: overlays
+    desc: >
+      Includes your visual overlay configurations and related assets for RetroArch.
+  - name: RetroArch Shaders
+    icon: shaders
+    desc: >
+      Preserves your installed shader filters and visual effect presets.
+  - name: Save Games + Save States
+    icon: save
+    desc: >
+      Stores all game saves and save states from RetroArch and other supported emulators.
+  - name: Screenshots
+    icon: screenshot
+    desc: >
+      Backs up all captured screenshots.
+  - name: Syncthing Configs
+    icon: syncthing
+    desc: >
+      Saves the configuration files used by Syncthing for synchronisation between devices.
+  - name: System BIOS
+    icon: bios
+    desc: >
+      Includes BIOS files required by some emulators to function correctly. <em>Please Note: these are user supplied
+      should <strong>not</strong> be distributed.</em>
+  - name: Themes
+    icon: theme
+    desc: >
+      Backs up all installed themes and associated assets used by the frontend.
+  - name: User Init Scripts
+    icon: init
+    desc: >
+      Saves any custom user initialisation scripts placed in the <code>MUOS/init</code> folder for execution at startup.
+  - name: Backup Target
+    icon: target
+    desc: >
+      Selects the destination device for storing your backup archive be it SD1, SD2, or attached USB storage.
+  - name: Merge Backups
+    icon: merge
+    desc: >
+      Combines multiple existing backups from different targets into a single unified archive for easier extraction.
+  - name: Start Backup
+    icon: start
+    desc: >
+      Initiates the backup process using the selected items and target. A progress indication will appear during
+      operation, and the archive will be saved to your chosen device target with the <code>BACKUP</code> folder.
