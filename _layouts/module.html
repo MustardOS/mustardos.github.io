@@ -85,12 +85,14 @@ layout: default
 {% endif %}
 
 <style>
-    h4 a[title] {
-        opacity: 0;
-        transition: opacity 0.2s;
-    }
+    @media (hover: hover) and (pointer: fine) {
+        h4 a[title] {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
 
-    h4:hover a[title] {
-        opacity: 1;
+        h4:hover a[title] {
+            opacity: 1;
+        }
     }
 </style>
