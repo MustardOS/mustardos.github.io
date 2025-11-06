@@ -61,7 +61,11 @@ layout: default
                 <strong>{{ mod.name }}</strong>
                 {% endif %}
                 <a href="#{{ anchor_id }}" title="Anchor to {{ mod.name }}"
-                   style="text-decoration:none; color:#888; margin-left:0.25em;">🔗</a>
+                   style="text-decoration:none; color:#C7AF26; margin-left:0.25em;">
+                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                        <use xlink:href="#svg-link"></use>
+                    </svg>
+                </a>
             </h4>
             <p style="font-size:1rem !important; margin-bottom:0;">{{ mod.desc }}</p>
         </td>
@@ -88,7 +92,11 @@ layout: default
     @media (hover: hover) and (pointer: fine) {
         h4 a[title] {
             opacity: 0;
-            transition: opacity 0.2s;
+        }
+
+        h4 a[title] svg {
+            width: 14px;
+            height: 14px;
         }
 
         h4:hover a[title] {
