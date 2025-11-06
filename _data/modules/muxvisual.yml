@@ -67,14 +67,16 @@ visible:
     desc: >
       Toggles visibility of hidden files and folders. Files beginning with <code>.</code> or <code>_</code> are
       hidden by default.
-  - name: Collection Visibility
+  - name: Collection In Content
     icon: collection
     desc: >
-      Shows or hides content within Explore Content that is already part of one or more collections.
-  - name: History Glyph
+      Toggle the visibility of collected content within Explore Content that is already part of one or more
+      collections. You can also hide just the glyph representation.
+  - name: History In Content
     icon: history
     desc: >
-      Displays or hides the history glyph beside previously played content in Explore Content.
+      Play some content and toggle the visibility within Explore Content. Removing the item from history will place it
+      back into the content list.
   - name: Overlay Image
     icon: overlayimage
     desc: >
