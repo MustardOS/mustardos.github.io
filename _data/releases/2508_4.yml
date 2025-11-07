@@ -34,3 +34,12 @@ changes:
   - Updated backup module with saving previous changes
   - Updated default theme with missing kiosk glyph
   - Updated <code>nomerges</code> to <code>0</code> for data request performance for lower class mSD cards
+  - Added additional collection and history content visibility options
+  - Fixed collection hiding by removing from generated item list once populated
+  - Fixed hidden content visible still using skip conditions
+  - Fixed parsing folder name for advance box art config
+  - Added maximum GPU option for H700 devices
+  - Fixed logged debug message output
+  - Fixed OpenBOR controller mappings for Brick
+  - Optimised PipeWire node grabber
+  - Reverted to <code>deadline</code> storage scheduler for lower class mSD compatibility
