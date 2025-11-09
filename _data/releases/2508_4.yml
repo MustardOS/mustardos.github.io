@@ -43,3 +43,7 @@ changes:
   - Fixed OpenBOR controller mappings for Brick
   - Optimised PipeWire node grabber
   - Reverted to <code>deadline</code> storage scheduler for lower class mSD compatibility
+  - Added missing default theme glyphs
+  - Added PipeWire audio ready option
+  - Fixed back navigation when applying theme alt
+  - Purged CPU wake path pointer
