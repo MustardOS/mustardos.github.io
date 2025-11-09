@@ -112,3 +112,12 @@ visible:
     icon: incvolume
     desc: >
       Adjusts how much the volume level changes per input step. Ideal for tuning audio to your specific preference.
+  - name: GPU Performance Mode
+    icon: maxgpu
+    desc: >
+      Push the onboard GPU to the maximum frequency at all times. Only on supported devices.
+  - name: Audio Subsystem Wait
+    icon: audioready
+    desc: >
+      Toggle if the device will wait for the audio subsystem to initialise during boot. May increase boot time by a
+      few extra seconds.
