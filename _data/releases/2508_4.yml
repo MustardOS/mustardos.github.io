@@ -66,3 +66,12 @@ changes:
   - Removed extension stripping for search result display names
   - Reworked find script to allow for both forward and reverse search results
   - Reworked lookup table functions for multiple result returns
+  - Added executable runner callback support
+  - Changed find script temporary name variables
+  - Fixed network connection debug output
+  - Fixed search toast message delay
+  - Modified network connection to not lock frontend
+  - Modified RetroArch core defaults to use 44.1kHz output
+  - Modified `ssid.sh` to disconnect from network once scanning complete
+  - Optimised `mufbset` tool
+  - Reworked network scanner
