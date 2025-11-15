@@ -80,29 +80,30 @@ offering plenty of depth and customisation for those who enjoy exploring further
 
 ## Handy Hotkeys
 
-| Type                    | Control<br>(_Before Goose_) | Control<br>(_After Goose_) |
-|:------------------------|:----------------------------|:---------------------------|
-| Brightness (Anbernic)   | MENU + VOLUME UP/DOWN       | MENU + VOLUME UP/DOWN      |
-| Brightness (TrimUI)     | N/A                         | SWITCH + VOLUME UP/DOWN    |
-| Screenshot              | MENU + POWER                | L2 + R2 + X                |
-| Sleep Suspend / Wake    | Hold POWER for 2 seconds    | Press POWER once           |
-| Charging Wake / Boot    | Use the POWER button        | Use the START button       |
-| Kiosk Mode Settings     | N/A                         | L1 + R2 + Y on config      |
-| Safe Restart            | L2 + R2 + START             | L2 + R2 + START            |
-| Safe Shutdown           | L2 + R2 + SELECT            | L2 + R2 + SELECT           |
-| Modify Core / Governor  | Press SELECT on content     | Press SELECT on content    |
-| Content Root            | Press START on content      | Press START on content     |
-| Shuffle Content         | Press R2 on content         | Press R2 on content        |
-| RetroArch Menu          | MENU + X                    | MENU + X                   |
-| RetroArch Close Content | MENU + START                | MENU + START               |
-| Fast Forward Toggle     | MENU + R1                   | MENU + R1                  |
-| Load State              | MENU + L2                   | MENU + L2                  |
-| Save State              | MENU + R2                   | MENU + R2                  |
-| Save State Decrement    | Menu + DPAD LEFT            | MENU + DPAD LEFT           |
-| Save State Increment    | Menu + DPAD RIGHT           | MENU + DPAD RIGHT          |
-| Slow Motion             | MENU + L1                   | MENU + L1                  |
-| Show FPS Toggle         | MENU + Y                    | MENU + Y                   |
-| Swap Dpad <> Analogue   | Short Press POWER           | L2 + R2 + A                |
+| Type                    | Control                 |
+|:------------------------|:------------------------|
+| Brightness (Anbernic)   | MENU + VOLUME UP/DOWN   |
+| Brightness (TrimUI)     | SWITCH + VOLUME UP/DOWN |
+| Screenshot              | L2 + R2 + X             |
+| Sleep Suspend / Wake    | Press POWER once        |
+| Charging Wake / Boot    | Use the START button    |
+| Kiosk Mode Settings     | L1 + R2 + Y on config   |
+| Safe Restart            | L2 + R2 + START         |
+| Safe Shutdown           | L2 + R2 + SELECT        |
+| Force Quit Process      | R2 + SELECT + B         |
+| Modify Core / Governor  | Press SELECT on content |
+| Content Root            | Press START on content  |
+| Shuffle Content         | Press R2 on content     |
+| RetroArch Menu          | MENU + X                |
+| RetroArch Close Content | MENU + START            |
+| Fast Forward Toggle     | MENU + R1               |
+| Load State              | MENU + L2               |
+| Save State              | MENU + R2               |
+| Save State Decrement    | MENU + DPAD LEFT        |
+| Save State Increment    | MENU + DPAD RIGHT       |
+| Slow Motion             | MENU + L1               |
+| Show FPS Toggle         | MENU + Y                |
+| Swap Dpad <> Analogue   | L2 + R2 + A             |
 
 {: .note }
 > Swap Dpad <> Analogue is only for devices without analogue sticks.
