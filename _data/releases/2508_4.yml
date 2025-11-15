@@ -14,6 +14,8 @@ note:
 contributors:
   - bitter_bizarro
   - corey
+  - duncanyoyo1
+  - gleepglop1000
   - imcokeman
   - xonglebongle
 
@@ -47,3 +49,20 @@ changes:
   - Added PipeWire audio ready option
   - Fixed back navigation when applying theme alt
   - Purged CPU wake path pointer
+  - Added background music volume adjustment option
+  - Added internal common directory list scanner
+  - Added resolution check to Dingux Commander
+  - General boring backend code optimisations
+  - Updated network information to only refresh specific values
+  - Added independent lookup table module
+  - Added lookup mapping generator
+  - Added prebuilt internal lookup table for reverse search mapping
+  - Added reverse search support to find script
+  - Fixed Idle Display Brightness values below threshold
+  - Fixed disabling box art in grid mode
+  - Merged storage mount scripts
+  - Modified search module with support for reverse name scheme
+  - Optimised content search
+  - Removed extension stripping for search result display names
+  - Reworked find script to allow for both forward and reverse search results
+  - Reworked lookup table functions for multiple result returns

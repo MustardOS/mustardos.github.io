@@ -36,6 +36,10 @@ visible:
     desc: >
       Toggles background music in the frontend interface. All music is <code>.ogg</code> and can be switched between
       <strong>Theme</strong> based or <strong>Global</strong> within the <code>MUOS/music</code> folder
+  - name: Background Music Volume
+    icon: musicvolume.png
+    desc: >
+      Adjust the independent volume of the background music being played. Press <strong>A</strong> to set.
   - name: Black Fade Animation
     icon: blackfade
     desc: >
