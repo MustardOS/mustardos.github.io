@@ -75,3 +75,6 @@ changes:
   - Modified `ssid.sh` to disconnect from network once scanning complete
   - Optimised `mufbset` tool
   - Reworked network scanner
+  - Added "<a href='https://www.azul.com'>Azul Zulu OpenJDK 17</a>" build with 3D and sound support
+  - Fixed setting volume when HDMI audio is set to internal
+  - Updated extra core reference
