@@ -75,6 +75,13 @@ changes:
   - Modified `ssid.sh` to disconnect from network once scanning complete
   - Optimised `mufbset` tool
   - Reworked network scanner
-  - Added "<a href='https://www.azul.com'>Azul Zulu OpenJDK 17</a>" build with 3D and sound support
+  - Added <a href='https://www.azul.com'>Azul Zulu OpenJDK 17</a> build with 3D and sound support
   - Fixed setting volume when HDMI audio is set to internal
   - Updated extra core reference
+  - Added core folder support to archive extractor
+  - Added <a href='https://github.com/joyrider3774/crisp-game-lib-portable-sdl-with-duktape'>Crisp Game Lib</a> external emulator
+  - Added disc file filtering from content search
+  - Added <a href='https://gametank.zone'>Game Tank</a> Libretro core
+  - Modified content explorer to hide "Collect" nav option on folders
+  - Reorganised extra core system to include core building
+  - Updated FreeJ2ME LibRetro core and bios
