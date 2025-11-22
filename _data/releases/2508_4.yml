@@ -12,11 +12,15 @@ note:
     <strong>START</strong> for the charging module along with the screenshot and DPAD swap hotkey changes.
 
 contributors:
+  - antikk
   - bitter_bizarro
   - corey
   - duncanyoyo1
   - gleepglop1000
   - imcokeman
+  - joyrider3774
+  - snowram
+  - sundownersport
   - xonglebongle
 
 changes:
@@ -85,3 +89,24 @@ changes:
   - Modified content explorer to hide "Collect" nav option on folders
   - Reorganised extra core system to include core building
   - Updated FreeJ2ME LibRetro core and bios
+  - Added archive deletion function
+  - Added back messaging for specific download features
+  - Added colour temp script runner
+  - Added PipeWire profile module
+  - Changed muX frontend audio to 32-bit floating
+  - Fixed critical mount message display
+  - Fixed various variable pathing
+  - Fixed zram and swap purging checks
+  - Merged tweak script runner to shared functions
+  - Modified bind path script with safer mount routine
+  - Modified frontend script with quoted variables
+  - Modified general settings to manual set colour, brightness, and volume
+  - Modified task toolkit to show open on nav bar for folders
+  - Modified tweak script runner
+  - Optimised PipeWire script to help with random silent boots
+  - Optimise startup script
+  - Removed active network check for web services
+  - Removed early active network check for language refresh
+  - Updated default theme boot logos
+  - Updated RetroArch cores to utilise specific ARM64 optimisations
+  - Updated RetroArch to 1.22.2
