@@ -88,7 +88,7 @@ changes:
   - Added <a href='https://gametank.zone'>Game Tank</a> Libretro core
   - Modified content explorer to hide "Collect" nav option on folders
   - Reorganised extra core system to include core building
-  - Updated FreeJ2ME LibRetro core and bios
+  - Updated FreeJ2ME Libretro core and bios
   - Added archive deletion function
   - Added back messaging for specific download features
   - Added colour temp script runner
@@ -104,7 +104,7 @@ changes:
   - Modified task toolkit to show open on nav bar for folders
   - Modified tweak script runner
   - Optimised PipeWire script to help with random silent boots
-  - Optimise startup script
+  - Optimised startup script
   - Removed active network check for web services
   - Removed early active network check for language refresh
   - Updated default theme boot logos
