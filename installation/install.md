@@ -20,7 +20,7 @@ MustardOS images are distributed as `.img.gz` files and most imaging software sh
 
 # SD Card Quality
 
-Please make sure that you flash any CFW on a **quality SD card**.
+Please make sure that you flash any CFW on a **quality SD card of 16GB or larger**.
 This will ensure your data stays safe and doesn't fail on you in the middle of catching that rare Pokémon!
 **Samsung and Sandisk cards are recommended.**
 
