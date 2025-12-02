@@ -1,6 +1,6 @@
 ver: "2403.0"
 code: "Origin"
-type: "archive"
+type: archive
 
 changes:
   - Added basic HDMI support (sound output currently on-device; fix planned for future update)

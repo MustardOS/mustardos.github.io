@@ -1,6 +1,6 @@
 ver: "2405.1"
 code: "Refried Beans"
-type: "archive"
+type: archive
 
 changes:
   - Added RG28XX and RG35XX-SP support

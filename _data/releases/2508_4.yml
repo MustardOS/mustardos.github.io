@@ -1,7 +1,27 @@
 ver: "2508.4"
 code: "Loose Goose"
-type: progress
+type: current
 pronunciation: "/luːs ɡuːs/"
+
+full_image:
+  gofile: https://gofile.io/d/XLCM0G
+  mega: https://mega.nz/folder/cvBlWD6A#-Rc1xqaGOdkGzRNvKZxb2Q
+  warning:
+    - Upon full image reflash on devices with SD2 inserted your <code>MUOS</code> folder will be moved to
+      <code>MUOS_old</code> to ensure update safety. However do not panic, your save games, configurations, and other
+      user data can be safely copied back. However please do so with caution as there may be conflicts.
+
+update_archive:
+  gofile: https://gofile.io/d/ZUrZdr
+  mega: https://mega.nz/folder/h3gXlQDD#-tJn6OScgEBWg5BlUdh7iQ
+  important: |
+    This is an <strong>Archive Manager</strong> installable archive for those who are running the following previous
+    MustardOS releases. <em>Install on any other version at your own risk.</em>
+    <ul>
+      <li><strong>2508.1</strong> Canada Goose</li>
+      <li><strong>2508.2</strong> Silly Goose</li>
+      <li><strong>2508.3</strong> Golden Goose</li>
+    </ul>
 
 note:
   - Due to the amount of issues in the past relating to people changing their RetroArch global configuration
@@ -110,3 +130,19 @@ changes:
   - Updated default theme boot logos
   - Updated RetroArch cores to utilise specific ARM64 optimisations
   - Updated RetroArch to 1.22.2
+  - Fixed local search for union content at root level
+  - Added local search mode for content
+  - Added multiple option value movement support
+  - Added multiple movement to bright, volume, and colour temp options (<code>L2</code> / <code>R2</code>)
+  - Reverted mGBA Libretro core to <code>affc86e</code> branch
+  - Added grid alignment options and auto size grid
+  - Added modprobe for wext network enabled boards
+  - Fixed audio mute routines on sleep shutdown
+  - Refactored network connection script to improve modularity
+  - Updated SSID scanning script to accept ESSID
+  - Added global unblock of all wireless devices
+  - Corrected logged output of grid mode adjustment
+  - Fixed network and system information modules
+  - Fixed off-by-one for config module highlight
+  - Modified MAC change script to only load if required
+  - Modified network device script to remove network device altogether

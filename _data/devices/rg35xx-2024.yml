@@ -3,7 +3,7 @@ name: RG35XX 2024
 internal: rg35xx-2024
 desc: A vertical 3.5" device. No Wi-Fi capability.
 downloads:
-  hash: 9ba36fd41d9be12ae1baa1549f7d9264e53e0567423b4cfb2fc97732566fe734
-  gofile: https://store9.gofile.io/download/direct/dcc04246-508e-4a0a-b0b3-4fa87a7a0299/MustardOS_RG35XX-2024_2508.3_GOLDEN_GOOSE-4f83d826.img.gz
-  mega: https://mega.nz/file/1mxEEDZB#d_h0hIagrQyNYxzOJwXnrJYEM8O0_tc9rl0GjAZQVIo
-  torrent: MustardOS_RG35XX-2024_2508.3_GOLDEN_GOOSE-4f83d826
+  hash: 8bb52a6505826c1034e29d4889fb46c57a73d85beef5612b9fe2a6cecfda7cc4
+  gofile: https://cold4.gofile.io/download/direct/5aa9bd6d-7193-486b-8145-491f2790b73f/MustardOS_RG35XX-2024_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
+  mega: https://mega.nz/file/knZi2C6J#PgXuOfFXYV7bgYfFwyrPcchk0O0w2-mLp9X0ZqmtfEQ
+  torrent: MustardOS_RG35XX-2024_2508.4_LOOSE_GOOSE-a55cdbe8

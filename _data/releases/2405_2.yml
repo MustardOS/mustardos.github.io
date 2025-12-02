@@ -1,6 +1,6 @@
 ver: "2405.2"
 code: "Baked Beans"
-type: "archive"
+type: archive
 
 changes:
   - Added additional script function to automatically sync with Syncthing after content close
