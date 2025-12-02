@@ -9,7 +9,7 @@ has_children: false
 
 # Download
 
-[Latest](/release/current/2508_3){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
+[Latest](/release/current){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
