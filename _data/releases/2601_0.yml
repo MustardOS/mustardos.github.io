@@ -1,0 +1,24 @@
+ver: "2601.0"
+code: "Jacaranda"
+type: progress
+pronunciation: "/ˌdʒækəˈrændə/"
+
+contributors:
+  - antikk
+  - bitter_bizarro
+  - xonglebongle
+
+changes:
+  - Added additional directory and file checks
+  - Added alternative PICO-8 <code>-Splore-</code> file name detection
+  - Added global live message display function
+  - Added <code>inotify</code> watch live messages and progress to reduce CPU usage
+  - Added max brightness variable to suspend resume
+  - Added verbose live message support to global functions
+  - Fixed confused save states for Doom content
+  - Fixed text scrolling for folders with single item
+  - Removed concurrent logged messages on content launch
+  - Removed <code>nice</code> process priority
+  - Removed unused variables in suspend script
+  - Updated Prboom launch script to load from central .WAD directory
+  - Updated TrimUI RetroArch binary
