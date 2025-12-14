@@ -22,3 +22,19 @@ changes:
   - Removed unused variables in suspend script
   - Updated Prboom launch script to load from central .WAD directory
   - Updated TrimUI RetroArch binary
+  - Added activity tracker information module
+  - Added common extracting theme and removing directory
+  - Added default active theme config setting
+  - Added detail view to activity tracker
+  - Added global statistics to activity tracker
+  - Added play styles to activity tracker
+  - Added theme manager module
+  - Fixed exiting theme downloader while extracting
+  - Moved "Cannot Delete Active Theme" message
+  - Moved themes away from compressed archives
+  - Refactored active theme loading
+  - Removed preinstalled theme archives
+  - Updated theme downloader to extract theme
+  - Updated activity tracker language
+  - Updated default theme version
+  - Updated extract script to extract theme
