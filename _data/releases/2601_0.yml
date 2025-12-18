@@ -6,6 +6,7 @@ pronunciation: "/ˌdʒækəˈrændə/"
 contributors:
   - antikk
   - bitter_bizarro
+  - nesreka
   - xonglebongle
 
 changes:
@@ -38,3 +39,27 @@ changes:
   - Updated activity tracker language
   - Updated default theme version
   - Updated extract script to extract theme
+  - Added active hour and favourite day to global stats for activity tracker
+  - Added advanced menu navigation option
+  - Added flag for updating bootlogo
+  - Added HTML export for activity tracker
+  - Added RetroArch startup cache option
+  - Added static assets for calculated time values
+  - Adjusted activity tracker HTML export data table colouring
+  - Enabled right-stick navigation for devices with right-stick
+  - Fixed activity tracker map overflow
+  - Fixed button logic detecting global view
+  - Fixed first navigation sound for network information
+  - Fixed intermittent theme download issues
+  - Fixed progress bar glitches during theme extraction
+  - Fixed top launch integer value
+  - Fixed top launch statistic for HTML export
+  - Fixed updating boot logo
+  - Initialised right-stick navigation similar to left-stick navigation
+  - Moved system init scripts to muOS internal path
+  - Optimised frontend loader script with predefined variables
+  - Optimised play style calculations
+  - Optimised startup script to use individual background tasks
+  - Refactored applying theme alternates
+  - Removed reliance on `toybox` sleep with updated system
+  - Updated HTML export with data table support
