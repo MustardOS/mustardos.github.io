@@ -6,6 +6,7 @@ pronunciation: "/ˌdʒækəˈrændə/"
 contributors:
   - antikk
   - bitter_bizarro
+  - imcokeman
   - nesreka
   - xonglebongle
 
@@ -61,5 +62,32 @@ changes:
   - Optimised play style calculations
   - Optimised startup script to use individual background tasks
   - Refactored applying theme alternates
-  - Removed reliance on `toybox` sleep with updated system
+  - Removed reliance on <code>toybox</code> sleep with updated system
   - Updated HTML export with data table support
+  - Added activity tracker toggle in advanced settings
+  - Added activity tracker toggle in launch script
+  - Added activity tracker toggle on device sleep and resume
+  - Added additional RetroArch core names
+  - Added back random theme option
+  - Added content width custom option
+  - Added deletion of automatic core and governor flag files on launch and startup
+  - Added font cache system for improved performance
+  - Added friendlier names for core assignment labels
+  - Added set navigation button on theme alternative
+  - Added Splore application when extracting PICO-8 archive
+  - Adjusted internal timer actions and tasks
+  - Fixed activity tracker on suspend
+  - Fixed content option assigned labels
+  - Fixed core assignment previous index selection
+  - Fixed core display name for current assign value
+  - Fixed general settings always saving regardless of no changes due to dpad toggle
+  - Fixed MPV support for TrimUI devices
+  - Fixed option previous index selection
+  - Fixed PICO-8 Splore file generation
+  - Modified MPV launcher to keep fullscreen aspect ratio video
+  - Modified network module initialisation script
+  - Modified timers to suspend and resume
+  - Moved common core functions and structure to own directory
+  - Moved common font functions to own structure
+  - Moved from full screen refresh to conditional refresh
+  - Optimised launch script with predefined variables
