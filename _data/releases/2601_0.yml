@@ -92,3 +92,10 @@ changes:
   - Moved common font functions to own structure
   - Moved from full screen refresh to conditional refresh
   - Optimised launch script with predefined variables
+  - Added UI network lock back to network module
+  - Adjusted timers for date time and battery capacity
+  - Disabled SDL debug logging reference
+  - Fixed left right navigation on network items when connecting
+  - Fixed network connect status timer
+  - Modified network scripts to ensure device is down on reconnect
+  - Replaced buffered line calculation to simple division of 4
