@@ -3,6 +3,15 @@ code: "Jacaranda"
 type: progress
 pronunciation: "/ˌdʒækəˈrændə/"
 
+note:
+  - Themes are now stored as open folders instead of compressed archives (previously extracted to the
+    <code>active</code> folder). This enables faster theme switching, alternate theme changes, and restores random
+    theme selection on device start.
+  - Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually or via the
+    <strong>Task Toolkit</strong> script on-device.
+  - Updating will reset your theme to the default MustardOS theme <strong>and boot image</strong>.
+    Be sure to back up your current theme and boot logo before updating.
+
 contributors:
   - antikk
   - bitter_bizarro
