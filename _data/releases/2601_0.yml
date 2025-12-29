@@ -107,3 +107,10 @@ changes:
   - Fixed network connect status timer
   - Modified network scripts to ensure device is down on reconnect
   - Replaced buffered line calculation to simple division of 4
+  - Added box art and counter to activity tracker
+  - Added previews default theme
+  - Added reverse audio option to advanced settings
+  - Added support for multiple theme preview images
+  - Added theme scaling option
+  - Added verification check for internal system script modifications
+  - Updated default charge boot logo change routine
