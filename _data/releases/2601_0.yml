@@ -114,3 +114,14 @@ changes:
   - Added theme scaling option
   - Added verification check for internal system script modifications
   - Updated default charge boot logo change routine
+  - Added common build Makefile include to muX builder
+  - Added define for path reset on screen cleanup
+  - Added separate navigation sound volume setting
+  - Added sound volume setting and theme glyph
+  - Added theme scaling glyph to default theme
+  - Fixed blank screen when setting scale to stretch
+  - Fixed delayed display of theme preview image
+  - Modified module initialisation to use inherent function name
+  - Optimised muX frontend functions for module refresh and dispatch
+  - Updated preinstalled default themes
+  - Updated UnionFS binaries
