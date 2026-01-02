@@ -52,7 +52,10 @@ Assume you have your game files for **Day of the Tentacle** in the following fol
 ```
 
 You would now need to create a file named `Day of the Tentacle.scummvm`  
-This text file needs to contain the **Full Game ID** for the game you are trying to add.  
+From MustardOS Pixie onwards this file should be an empty file.  
+Modern MustardOS versions utilise the ScummVM built-in autodetect functionaility to determine the game folder content.  
+
+For MustardOS versions prior to Pixie this text file needs to contain the **Full Game ID** for the game you are trying to add.  
 In our example the file would contain `scumm:tentacle`  
 For a list of all possible Game IDs please see [ScummVM Game IDs](https://www.scummvm.org/compatibility)
 
