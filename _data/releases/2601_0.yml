@@ -125,3 +125,22 @@ changes:
   - Optimised muX frontend functions for module refresh and dispatch
   - Updated preinstalled default themes
   - Updated UnionFS binaries
+  - Added muX idle timer display refresh
+  - Added UUID generation on first install
+  - Fixed logged message defines
+  - Fixed theme fallback
+  - Optimised muX frontend with cached render state
+  - Switched back to <code>disp0</code> to ensure internal controller changes LCD display
+  - Switched to archive copy on factory reset
+  - Added basic joystick calibration tool
+  - Added community news module to information
+  - Fixed progress bar updates
+  - Fixed supporter credit launch
+  - Optimised hotkey script functions
+  - Removed FNV-1a hash calculation of default theme
+  - Removed message output for audio mixer reset
+  - Split last and resume game routine to separate script
+  - Updated community news module to obtain dynamic threads and posts
+  - Updated corrected glyph name for default theme
+  - Updated default theme with community news glyphs
+  - Updated theme fallback routine
