@@ -144,3 +144,28 @@ changes:
   - Updated corrected glyph name for default theme
   - Updated default theme with community news glyphs
   - Updated theme fallback routine
+  - Added background image support for scaled displays
+  - Added basic themeable logo screensaver support for frontend
+  - Added battery overlay glyph
+  - Added default screensaver power config variable
+  - Added low battery glyph overlay activation
+  - Added missing default visual fonts and sound font
+  - Added overlay staging preload to launch content scripts
+  - Added SDL and GL overlay stage injection module
+  - Added SDL direct offset configurable support for themes
+  - Added standard logo to shared media and screensaver glyph to default theme
+  - Fixed current uptime and last resume integer calculation on suspend
+  - Fixed graphical overlap glitch due to opaque background with no image
+  - Modified frontend render blend modes
+  - Remove auto size from activity tracker
+  - Added core name to overlay loader
+  - Added overlay kiosk option
+  - Added overlay options to muX frontend
+  - Split overlay staging system to individual files
+  - Added additional overlay options
+  - Added brightness and volume indicators to default MustardOS theme
+  - Added brightness and volume step indicators
+  - Added hardware overlay disable for frontend modules
+  - Fixed brightness overlay loading on first content launch
+  - Fixed overlay brightness and volume percentage calculation
+  - Fixed overlay image path loading priority
