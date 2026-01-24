@@ -169,3 +169,92 @@ changes:
   - Fixed brightness overlay loading on first content launch
   - Fixed overlay brightness and volume percentage calculation
   - Fixed overlay image path loading priority
+  - Added chrony binaries
+  - Added first init forced copy of control content
+  - Fixed overlay indicator validation by reset on context change
+  - Fixed SDL overlay refreshing on render context change
+  - Fixed TrimUI network modprobe
+  - General overlay code cleanup
+  - Updated header glyphs for 1280x720 resolution
+  - Added battery offset value calculation to battery overlay
+  - Added Chrony time sync details to information module
+  - Added common Syncthing termination function
+  - Added default theme overlay indicators
+  - Added deletion of overlay disable file on content launch
+  - Added file change notifications for base overlay toggle
+  - Added hardware overlay disable hotkey
+  - Added idle state check for TrimUI switch status
+  - Added overlay disable file check
+  - Added percentage integer calculation for labels
+  - Added system time sync after network connection
+  - Added system time validation check for download based frontend modules
+  - Added used attributes to force compiler to link
+  - Adjusted default anchor for brightness and volume
+  - Ensure screensaver is only initialised after factory reset
+  - Fixed accessing community news with no network access kicking back to main menu
+  - Fixed base overlay refreshing when disabled
+  - Fixed battery offset value calculation
+  - Fixed blank space in activity tracker for TUI devices without HDMI mode
+  - Fixed deadlock with shuffle selection on small set of items
+  - Fixed screensaver interruption from active timers
+  - Fixed verbose text alpha overlapping text
+  - Modified low battery to 0-100 percentage values
+  - Modified RetroArch to hide base overlay on quick menu open
+  - Moved content to base for main overlay
+  - Removed <code>MUOS_old</code> movement as it is no longer required
+  - Removed NTP from Web Services
+  - Removed unused frontend functions
+  - Replaced NTP service runner with Chrony
+  - Split base overlay structure to own overlay files
+  - Updated battery overlay to use step images
+  - Updated bind mount script to global ignore SD2 if not mounted
+  - Updated Chrony configuration and burst update on network connect
+  - Updated Chrony initialisation script to correct H700 RTC data point
+  - Updated configuration loader to create default value files if missing
+  - Updated H700 boot packages
+  - Updated long integer values to percentage calculations
+  - Added bind map recording the real backing storage for each logical path
+  - Added complete halt register for revision devices
+  - Added complete theme fallback to internal MustardOS theme
+  - Added confirm deletion for screenshots
+  - Added creation of missing important directories on SD1 if mount fails
+  - Added default overlay step images
+  - Added deletion of language archive when successfully extracted
+  - Added enum value for shared modules
+  - Added extra code support to virtual terminal
+  - Added global mount points and purge markers for Archive Manager
+  - Added <code>inotify</code> tracking for status files to reduce IO
+  - Added long power press sleep hotkey
+  - Added shared UI group creation and reset functions
+  - Adjusted default variables due to frontend changes
+  - Adjusted status timer to reduce IO
+  - Ensure Pipewire audio is ready before frontend load
+  - Fixed false "out of space" errors caused by tmpfs free space checks on bind mounts
+  - Fixed missing theme download option with no present themes
+  - Fixed saving of brightness and volume integers on set
+  - Fixed various log messages to use LOG function
+  - Merged general panel update to shared function
+  - Merged general refresh task to shared function
+  - Merged general step movement to shared function
+  - Merged multiple lines to defines to reduce DRY code
+  - Merged option value changes to singular function
+  - Modified brightness and volume setters on boot
+  - Modified config and device values to suit enum values
+  - Modified default theme glyphs to suit changes to frontend
+  - Modified extraction and backup logic to query free space on actual path
+  - Modified help messages to use enum values
+  - Modified menu selection handlers to have action paths
+  - Modified network script to run Chrony time sync
+  - Modified toast messages to force refresh on FOREVER status
+  - Modified USB function variable to suit frontend changes
+  - Moved hidden network SSID to better name variable
+  - Moved <code>inotify</code> code to global common structure
+  - Moved previous brightness and volume settings to integer value
+  - Moved USB function to integer value
+  - Removed idle state file when not in idle mode
+  - Switched application and content options to use X button
+  - Updated additional sleep hotkeys
+  - Updated bind mount and extraction system
+  - Updated default year to 2026
+  - Updated device tree information
+  - Updated virtual terminal to cache font glyphs
