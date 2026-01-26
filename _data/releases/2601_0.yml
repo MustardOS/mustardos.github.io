@@ -4,17 +4,15 @@ type: progress
 pronunciation: "/ˌdʒækəˈrændə/"
 
 important:
-  - Themes are now stored as open folders instead of compressed archives (previously extracted to the
-    <code>active</code> folder). This enables faster theme switching, alternate theme changes, and restores random
-    theme selection on device start. Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be
-    extracted manually or via the <strong>Task Toolkit</strong> script on-device. Updating will reset your theme to
-    the default MustardOS theme <strong>and boot image</strong>. Be sure to back up your current theme and boot logo
-    before updating.
+  - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder). 
+    This enables faster theme switching, alternate theme changes, and restores random theme selection on device start.
+    Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
 
 contributors:
   - antikk
   - bitter_bizarro
   - escal8tor
+  - fashberg
   - imcokeman
   - nesreka
   - xonglebongle
@@ -258,3 +256,22 @@ changes:
   - Updated default year to 2026
   - Updated device tree information
   - Updated virtual terminal to cache font glyphs
+  - Added change support to <code>inotify</code> tracked changes
+  - Added extra network checks and failovers for blank/open networks
+  - Added network status updates for frontend UI
+  - Added overlay bypass for PortMaster application
+  - Added retry count to network advanced settings
+  - Added stage overlay bypass variable
+  - Added threaded video toggle to content options
+  - Adjusted default variables due to frontend changes
+  - Fixed colour temperature variable setting
+  - Fixed content item index when returning from options menu
+  - Fixed ethernet connections
+  - Fixed general settings issue with visible item index
+  - Fixed network module exit if currently connecting
+  - Fixed theme version compatibility testing
+  - Merged panel UI adjustment into header and footer setup function
+  - Modified testing watermark to function quantifier
+  - Renamed reset alert images
+  - Updated message delivery module with modified <code>inotify</code> changes
+  - Updated preinstalled themes to accept minimum theme compatibility version
