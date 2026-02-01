@@ -275,3 +275,50 @@ changes:
   - Renamed reset alert images
   - Updated message delivery module with modified <code>inotify</code> changes
   - Updated preinstalled themes to accept minimum theme compatibility version
+  - Added activity tracker data archive to Task Toolkit
+  - Added colour adjustment glyphs to default theme
+  - Added colour adjustment option to kiosk module
+  - Added colour adjustment runners to overlay
+  - Added colour filter archive support
+  - Added colour filter glyphs to default theme
+  - Added colour filter info message parsing
+  - Added colour filter launch parsing
+  - Added colour filter profiles to content options
+  - Added colour filter with external filter file support
+  - Added colour implementation to stage overlay
+  - Added confirm deletion for collection and history items
+  - Added default colour adjustment variables
+  - Added directory check for colour filter assign
+  - Added global content colour adjustment settings
+  - Added preinstalled colour filters
+  - Added runtime scale and rotation methods to GLES and SDL overlay renderers
+  - Fixed reboot and shutdown splash image refresh
+  - Modified colour temperature configuration path
+  - Updated preinstalled colour filter profiles
+  - Added additional colour filter profiles
+  - Added collection and history launch failure message
+  - Added control scheme switch to all content
+  - Added option sound to content option remove config field
+  - Added RetroArch configuration removal to content options
+  - Added Wolfenstein 3D capsule launcher
+  - Fixed assignment picker confusing content index on manual assign
+  - Fixed core configuration removal
+  - Fixed general setting offset when exiting advanced settings
+  - Fixed hidden content variable
+  - Fixed kiosk module language for colour options
+  - Fixed subsequent sorting jumble on activity tracker
+  - Modified launch script to remove overlay colour filter on quit
+  - Updated entropy initialisation
+  - Updated language fields to match content
+  - Added grid mode detection for fonts
+  - Added init script to reduce flashing of RGB LEDs on startup
+  - Added LOG fallback functions to prevent missing LOG warnings when debug is disabled
+  - Added mixed content option for content explore
+  - Fixed collection removal in kiosk restricted mode
+  - Fixed content explorer duplicated focused group and index selection
+  - Fixed grid mode content previous index focus
+  - Fixed mixed folder and item content focus due to bucket changes
+  - Fixed previous history item selection when history drop is enabled
+  - Modified global script init with background functions
+  - Moved grid mode specific fonts to grid font folder
+  - Optimised bind mount script
