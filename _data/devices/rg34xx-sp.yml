@@ -3,7 +3,13 @@ name: RG34XX SP
 internal: rg34xx-sp
 desc: A clamshell device with two analogue sticks.
 downloads:
-  hash: c5f3a512348ad97ca3133d0e0af2161bfad217a093f13930f3542e525f0c3df6
-  gofile: https://cold-na-phx-7.gofile.io/download/direct/b298f681-9b30-44d5-b90a-da424de1d6e2/MustardOS_RG34XX-SP_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/1uYHkIAC#CoWCLojKIDRKWreav7pe37rg64dIlElIh8vWoOVwPiY
-  torrent: MustardOS_RG34XX-SP_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant: 1GB Memory Variant
+    hash: e6f99d0cf29bbdc2d3a6e1dd71765fa0c50a319ca53bd3d300ad3deed6272aaf
+    gofile: https://store-eu-par-7.gofile.io/download/direct/7907837d-fac5-4c8b-8935-83a616b36286/MustardOS_RG34XX-SP_1GB_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/YrZX1ABI#HfdfG-a3iBNW61KpUE66NITZ_kTFJvDCVAOdt9otMB8
+    torrent: MustardOS_RG34XX-SP_1GB_2601.0_JACARANDA-ec9e9f32
+  - variant: 2GB Memory Variant
+    hash: 32d4f6009116583241935fc0cb3aaa243d98a3123865a5acecc6347cc559b8c7
+    gofile: https://store1.gofile.io/download/direct/bec733f9-ec24-486a-a8d6-42d2f9c0dfbe/MustardOS_RG34XX-SP_2GB_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/QqJFDTiT#4jrCzXwId_cX83T7V_y7avkylpbPUmnGHL5dvSzjF1k
+    torrent: MustardOS_RG34XX-SP_2GB_2601.0_JACARANDA-ec9e9f32

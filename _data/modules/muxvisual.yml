@@ -6,6 +6,10 @@ description: >
 goback: muxconfig
 
 visible:
+  - name: Sorting Priority
+    icon: sort
+    desc: >
+      Adjust the priority order for content sorting, including collection, history, and tagged content.
   - name: Battery
     icon: battery
     desc: >
@@ -77,11 +81,15 @@ visible:
     desc: >
       Play some content and toggle the visibility within Explore Content. Removing the item from history will place it
       back into the content list.
-  - name: Overlay Image
+  - name: Mixed Folder Content
+    icon: mixedcontent
+    desc: >
+      Mixes folders and content together alphabetically within Explore Content.
+  - name: Frontend Overlay Image
     icon: overlayimage
     desc: >
       Switch between different overlay visual styles used by the frontend, such as Dot Lattice or Checkerboard.
-  - name: Overlay Transparency
+  - name: Frontend Overlay Transparency
     icon: overlaytransparency
     desc: >
       Adjusts the transparency level of the above frontend overlay image.

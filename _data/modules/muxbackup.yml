@@ -19,6 +19,10 @@ visible:
     icon: music
     desc: >
       Backs up your current background music set for the frontend, including any user added tracks.
+  - name: Content Assignment
+    icon: content
+    desc: >
+      Includes all assigned content including tags, governor settings, system and core assignments.
   - name: Content Collection
     icon: collection
     desc: >
@@ -100,4 +104,4 @@ visible:
     icon: start
     desc: >
       Initiates the backup process using the selected items and target. A progress indication will appear during
-      operation, and the archive will be saved to your chosen device target with the <code>BACKUP</code> folder.
+      operation, and the archive will be saved to your chosen device target within the <code>BACKUP</code> folder.

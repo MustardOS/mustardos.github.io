@@ -1,6 +1,7 @@
 ---
 title: Theme Assets (Grid Images)
 layout: default
+permalink: /themes/assets
 parent: Themes
 nav_order: 6
 has_toc: false

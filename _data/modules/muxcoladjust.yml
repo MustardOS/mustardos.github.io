@@ -1,0 +1,32 @@
+description: >
+  Colour options allow you to fine tune how visuals are displayed on the device or within supported content.
+  These adjustments affect overall tone, balance, and clarity, and can be used for comfort, accessibility,
+  or personal preference.
+
+goback: muxconfig
+
+visible:
+  - name: Temperature
+    icon: temperature
+    desc: >
+      Adjust colour warmth, shifting the display between cooler and warmer tones.
+  - name: Brightness
+    icon: brightness
+    desc: >
+      Control overall light output, affecting how bright or dim the display appears.
+  - name: Contrast
+    icon: contrast
+    desc: >
+      Change the difference between dark and light areas to improve image definition.
+  - name: Saturation
+    icon: saturation
+    desc: >
+      Increase or decrease colour intensity, from muted tones to more vivid colours.
+  - name: Hue Shift
+    icon: hueshift
+    desc: >
+      Rotate the colour spectrum, subtly altering overall colour appearance.
+  - name: Gamma
+    icon: gamma
+    desc: >
+      Adjust midtone brightness to fine-tune image balance without overexposing highlights.

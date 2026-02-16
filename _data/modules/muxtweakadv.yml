@@ -26,6 +26,10 @@ visible:
     desc: >
       Globally switches button layouts across the system. Ideal for users preferring alternate control schemes or 
       region specific button arrangements.
+  - name: Menu Navigation
+    icon: sticknav
+    desc: >
+      Choose between different navigation modes to suit preferred menu control styles.
   - name: Volume On Boot
     icon: volume
     desc: >
@@ -42,7 +46,7 @@ visible:
       Toggles automatic thermal protection that safely powers down the device when overheating. Disabling this is not 
       recommended as it prevents the system from responding to high temperature warnings.
   - name: Passcode Lock
-    icon: lock
+    icon: passcode
     desc: >
       Enables a passcode requirement for device startup, launching content, or other features.
   - name: LED During Play
@@ -50,6 +54,10 @@ visible:
     desc: >
       Toggles the device’s power LED visibility while launching or running content. Useful for reducing distractions 
       during gameplay or conserving minor power.
+  - name: Random Theme on Boot
+    icon: randomtheme
+    desc: >
+      Automatically selects and applies a random theme each time the device boots.
   - name: RetroArch Network Wait
     icon: retrowait
     desc: >
@@ -60,6 +68,14 @@ visible:
     desc: >
       Removes system enforced configuration restrictions on RetroArch. Allows advanced users to manually customise 
       RetroArch behaviour, but may cause instability if misconfigured.
+  - name: RetroArch Startup Cache
+    icon: retrocache
+    desc: >
+      Caches RetroArch and its libraries at boot for faster launches, at the cost of slightly longer startup time.
+  - name: Activity Tracker
+    icon: activity
+    desc: >
+      Toggles content activity tracking and statistics collection.
   - name: Device Rumble
     icon: rumble
     desc: >
@@ -93,6 +109,10 @@ visible:
     desc: >
       Configures the system’s swapfile usage, allowing limited expansion of virtual memory. Useful for memory 
       intensive content or testing system performance under load.
+  - name: System ZRam
+    icon: zramfile
+    desc: >
+      Uses compressed RAM as swap space, providing faster memory expansion without disk access.
   - name: Secondary Partition
     icon: secondpart
     desc: >
@@ -121,3 +141,7 @@ visible:
     desc: >
       Toggle if the device will wait for the audio subsystem to initialise during boot. May increase boot time by a
       few extra seconds.
+  - name: Audio Reverse
+    icon: audioswap
+    desc: >
+      Swaps left and right audio channels for the internal speaker output.

@@ -30,6 +30,18 @@ visible:
     desc: >
       Customise the look and feel of the MustardOS frontend. Show or hide various options or change how 
       names are displayed through the content explorer.
+  - name: Colour Options
+    icon: colour
+    link: muxcoladjust
+    desc: >
+      Adjust display colour settings such as temperature, saturation, hue, gamma, and related values where supported
+      either on device or in content only.
+  - name: Overlay Options
+    icon: overlay
+    link: muxoverlay
+    desc: >
+      Configure content overlays including the base overlay and battery, volume, and brightness indicators,
+      with options for transparency, position, and scale.
   - name: Language
     icon: language
     link: muxlanguage

@@ -2,6 +2,7 @@
 layout: module
 title: Network Settings
 module: muxnetadv
+glyph: muxnetadv
 permalink: /tour/modules/muxnetadv
 parent: Connectivity
 nav_order: 2

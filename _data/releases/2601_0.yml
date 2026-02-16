@@ -1,9 +1,15 @@
 ver: "2601.0"
 code: "Jacaranda"
-type: progress
+type: current
 pronunciation: "/ˌdʒækəˈrændə/"
 
-important:
+full_image:
+  gofile: https://gofile.io/d/p6sSJd
+  mega: https://mega.nz/folder/57wBGAgR#pEpeMFK0HOCz5EbY_5A28w
+  warning:
+    - Please make sure that you have either migrated your data to SD2 or have used the Device Backup feature and copied your backup archive(s).
+
+note:
   - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder). 
     This enables faster theme switching, alternate theme changes, and restores random theme selection on device start.
     Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
@@ -11,6 +17,7 @@ important:
 contributors:
   - antikk
   - bitter_bizarro
+  - duncanyoyo1
   - escal8tor
   - fashberg
   - imcokeman
@@ -322,3 +329,44 @@ changes:
   - Modified global script init with background functions
   - Moved grid mode specific fonts to grid font folder
   - Optimised bind mount script
+  - Added friendly name support to activity tracker
+  - Added label value width adjustment to shared functions
+  - Fixed game controller selector
+  - Fixed last folder selection for Task Toolkit
+  - Fixed long title overlap in content options
+  - Modified friendly lookup to shared function
+  - Moved friendly name resolver to shared function
+  - Updated ScummVM to 2026.1.0
+  - Updated RetroArch cores
+  - Added ability to set sorting levels for content
+  - Added auto detect disc folders as content
+  - Added bulk indicator path returns with safe dimension
+  - Added confirm sound to sort module launch
+  - Ensure safe dimension returns
+  - Fixed first navigation sound play for content explorer
+  - Fixed help messages on grid and carousel mode
+  - Fixed loading content description
+  - Fixed theme preview downloads
+  - Modified sorting priority with maximum item count
+  - Refactor sorting priority to read custom tags
+  - Fixed sorting when changing content tag
+  - Fixed sorting with folders when mixed content disabled
+  - fixed content names getting cut off
+  - Fixed sorting by display name instead sort name
+  - Fixed content scheme naming
+  - Fixed page up and down navigation in content
+  - Fixed focus check in customisation module movement
+  - Fixed community news glyphs and post show after download
+  - Moved theme extraction to UI refresh function
+  - Simplified application initialisation function
+  - Fixed <code>LD_PRELOAD</code> handling when unset
+  - Moved stage overlay system to opt-in
+  - Removed audio and brightness file locking
+  - Added frontend and hotkey control combo function
+  - Fixed frontend restart function call
+  - Moved archive creation away from <code>tmpfs</code>
+  - Added content assignment information archive support
+  - Modified general settings to hide volume when using Console Mode
+  - Fixed header glyph fallback
+  - Fixed help lookup item mismatch
+  - Added content assignment information to backup module

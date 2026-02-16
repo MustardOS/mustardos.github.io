@@ -1,0 +1,68 @@
+description: >
+  Provides a summary of all launched play activity across MustardOS. This summarises all play data from every
+  tracked session to present long term trends, favourites, and unique habits, helping you understand how
+  you play your content as a whole rather than focusing on individual titles.
+
+goback: muxactivity
+
+visible:
+  - name: Top Content by Time
+    icon: global_toptime
+    desc: >
+      Displays the content with the highest total accumulated play time.
+  - name: Top Content by Launch
+    icon: global_toplaunch
+    desc: >
+      Ranked content by how often it has been launched.
+  - name: Most Frequent Core
+    icon: global_uniquecore
+    desc: >
+      Shows the system or core used most often across all play sessions.
+  - name: Most Used Device
+    icon: global_device
+    desc: >
+      Identifies the device on which activity is recorded most frequently, useful if you swap SD2 with different devices.
+  - name: Most Used Mode
+    icon: global_mode
+    desc: >
+      Highlights the most common play mode used when launching content, either Handheld or Console (HDMI) modes.
+  - name: Total Launch Count
+    icon: global_launch
+    desc: >
+      The cumulative number of times all tracked content has been launched since activity tracking began.
+  - name: Total Play Time
+    icon: global_total
+    desc: >
+      The combined play time across all sessions and all content, representing total engagement over time.
+  - name: Average Play Time
+    icon: global_average
+    desc: >
+      Calculates the average duration of a play session based on all recorded activity.
+  - name: Oldest Session
+    icon: global_first
+    desc: >
+      Shows the earliest recorded play session in the activity database, marking the beginning of tracked usage.
+  - name: Longest Session
+    icon: global_longest
+    desc: >
+      Identifies the single longest uninterrupted play session.
+  - name: Overall Play Style
+    icon: global_play
+    desc: >
+      A calculated classification that summarises your global play behaviour.
+  - name: Unique Content Played
+    icon: global_uniqueplay
+    desc: >
+      Counts how many distinct content has been launched at least once.
+  - name: Unique Cores Used
+    icon: global_core
+    desc: >
+      Tracks the number of different emulator cores or runtimes used across all activity.
+  - name: Most Active Time
+    icon: global_active
+    desc: >
+      Indicates the time of day when play activity most frequently occurs.
+  - name: Favourite Day
+    icon: global_day
+    desc: >
+      Shows the day of the week with the highest recorded play activity.

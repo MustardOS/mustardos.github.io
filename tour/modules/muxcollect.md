@@ -2,6 +2,7 @@
 layout: module
 title: Collection
 module: muxcollect
+glyph: muxcollect
 permalink: /tour/modules/muxcollect
 parent: Main Menu
 nav_order: 2

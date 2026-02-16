@@ -3,7 +3,8 @@ name: Brick
 internal: tui-brick
 desc: A small device with a big <strike>attitude</strike> resolution display.
 downloads:
-  hash: 15ea2515397044729009baac4656e1d9c5cc4adbac105c9d476b339206aa2298
-  gofile: https://cold7.gofile.io/download/direct/63d72477-07d9-4670-a44c-aa35d4571e11/MustardOS_TUI-BRICK_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/87J1UaAT#uH1hQGbfmKy0giKgNM_3ixBtiBM3-sFMiAbTe9S2zic
-  torrent: MustardOS_TUI-BRICK_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: 1bf3c479abe8b4c604f769159e5caca6e93acbd4cccccf5a1cd094a174d8cc8e
+    gofile: https://store4.gofile.io/download/direct/e42cca2e-5799-4ecb-9fff-e2ab35a93403/MustardOS_TUI-BRICK_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/wrYlxLgZ#ZwhoyZeYytuXhaHizLIUjh_SQYBXOEbQ1eap8RpVPS4
+    torrent: MustardOS_TUI-BRICK_2601.0_JACARANDA-ec9e9f32

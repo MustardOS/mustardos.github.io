@@ -3,7 +3,8 @@ name: RG40XX V
 internal: rg40xx-v
 desc: A perfectly sized vertical with a singular RGB analogue stick.
 downloads:
-  hash: 83e61b6f8f0c7a992ba5a459db7eb26240d7619e2e6c64033a70f0d77f7452e5
-  gofile: https://cold-na-phx-9.gofile.io/download/direct/ded4d6e5-9a59-4b1a-8730-a51dbeff4cf0/MustardOS_RG40XX-V_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/g6RnyCYT#w-XViwzVGSRJUrPXB7o8w3plkVyk_aUle_uKv1YY1Eo
-  torrent: MustardOS_RG40XX-V_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: 05c3933bf344428825b8358663cdbba2c3ebb052311183df5c5a31453c454b1c
+    gofile: https://store-eu-gra-2.gofile.io/download/direct/3193b9e0-3bd3-4a63-a313-ebe7f6799ea6/MustardOS_RG40XX-V_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/U6pi2Qrb#XT2D4vvDJA03ykxENug3Ye9hMIxdHVUVedAZS4Ir-xs
+    torrent: MustardOS_RG40XX-V_2601.0_JACARANDA-ec9e9f32

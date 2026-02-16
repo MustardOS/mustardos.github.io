@@ -1,0 +1,56 @@
+description: >
+  Overlay options control how on-screen indicators and base overlays are displayed whilst playing content.
+  These settings allow fine adjustment of visibility, placement, and size for the content base overlay
+  and other indicators such as low battery, volume, and brightness.
+
+goback: muxconfig
+
+visible:
+  - name: Content Base Transparency
+    icon: gen_alpha
+    desc: >
+      Adjusts the opacity of the base overlay shown whilst playing content.
+  - name: Content Base Position
+    icon: gen_anchor
+    desc: >
+      Sets the on-screen position of the content base overlay.
+  - name: Content Base Scale
+    icon: gen_scale
+    desc: >
+      Controls the size of the content base overlay.
+  - name: Low Battery Transparency
+    icon: bat_alpha
+    desc: >
+      Adjusts the opacity of the low battery warning overlay.
+  - name: Low Battery Position
+    icon: bat_anchor
+    desc: >
+      Sets the on-screen position of the low battery indicator.
+  - name: Low Battery Scale
+    icon: bat_scale
+    desc: >
+      Controls the size of the low battery indicator.
+  - name: Volume Transparency
+    icon: vol_alpha
+    desc: >
+      Adjusts the opacity of the volume level indicator.
+  - name: Volume Position
+    icon: vol_anchor
+    desc: >
+      Sets the on-screen position of the volume indicator.
+  - name: Volume Scale
+    icon: vol_scale
+    desc: >
+      Controls the size of the volume indicator.
+  - name: Brightness Transparency
+    icon: bri_alpha
+    desc: >
+      Adjusts the opacity of the brightness level indicator.
+  - name: Brightness Position
+    icon: bri_anchor
+    desc: >
+      Sets the on-screen position of the brightness indicator.
+  - name: Brightness Scale
+    icon: bri_scale
+    desc: >
+      Controls the size of the brightness indicator.

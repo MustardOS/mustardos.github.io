@@ -33,11 +33,6 @@ visible:
     icon: volume
     desc: >
       Set the master volume level for all sounds, including menus, games, and notifications.
-  - name: Colour Temperature
-    icon: colour
-    desc: >
-      Modify the warmth or coolness of the displays colour output, where supported. Warmer tones reduce eye strain 
-      in low light, while cooler tones enhance clarity.
   - name: Device RGB Lights
     icon: rgb
     desc: >

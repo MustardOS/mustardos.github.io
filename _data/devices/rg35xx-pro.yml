@@ -3,7 +3,8 @@ name: RG35XX PRO
 internal: rg35xx-pro
 desc: A 3.5" vertical handheld with two analogue sticks.
 downloads:
-  hash: 5937fec71d36852b940b802d9b8abc0c9efc80f5ad9e370a4c7feac1980a8dee
-  gofile: https://store-na-phx-3.gofile.io/download/direct/0914d952-0096-4c1c-8c12-1917bbdb3b9e/MustardOS_RG35XX-PRO_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/BiwlGSIQ#r4DzMp7DON1KE4UZM142MSU5YR-Nki7Kq0_kCWjbCKg
-  torrent: MustardOS_RG35XX-PRO_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: ff11d0b9974af12f203206e76887c48308b8263ecd3180183ddb1fa2ee74a2f0
+    gofile: https://store2.gofile.io/download/direct/87896968-ab3f-40ed-a36f-8cc58873947c/MustardOS_RG35XX-PRO_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/tmwS2brT#dG23ZJTq4ul5p5o6owTmxeF8B9EPlRgxRN9wtxVxKbw
+    torrent: MustardOS_RG35XX-PRO_2601.0_JACARANDA-ec9e9f32

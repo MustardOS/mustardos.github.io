@@ -10,6 +10,6 @@ has_toc: false
 
 # **Current Releases**
 
-These are the latest publicly available MustardOS releases.
+This is the latest publicly available MustardOS release.
 
 {% include release_list.html type="current" %}

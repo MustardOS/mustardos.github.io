@@ -3,7 +3,8 @@ name: RG35XX PLUS
 internal: rg35xx-plus
 desc: A nice typical vertical handheld with a 3.5" display.
 downloads:
-  hash: dc0113d53aff1ba7d4d4bda403ac5ec18b549ccf486cfecbc037cbab89934bd7
-  gofile: https://store-eu-par-6.gofile.io/download/direct/09eb3a21-ddf2-446b-98b9-8b39494986da/MustardOS_RG35XX-PLUS_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/AnBiEIoC#3TBSRI2soOKb_00mLWdj83y4-TSjojKv-wRdOcTYLT8
-  torrent: MustardOS_RG35XX-PLUS_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: 73d3e39a8477b9fd0a32a0ac554c6e07b73446af86b30296890787c9ff4a4761
+    gofile: https://store-eu-gra-2.gofile.io/download/direct/d5e9624d-8ae5-47b2-9bd7-8a086430d23b/MustardOS_RG35XX-PLUS_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/FyByUY4B#Or0cZHUNlzJXKQ-gDxS7vTsJ8WNRp8YyjcSvvDzfbSs
+    torrent: MustardOS_RG35XX-PLUS_2601.0_JACARANDA-ec9e9f32

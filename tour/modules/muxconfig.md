@@ -2,6 +2,7 @@
 layout: module
 title: Configuration
 module: muxconfig
+glyph: muxconfig
 permalink: /tour/modules/muxconfig
 parent: Main Menu
 nav_order: 6

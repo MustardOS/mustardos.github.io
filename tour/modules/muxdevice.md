@@ -2,6 +2,7 @@
 layout: module
 title: Device Settings
 module: muxdevice
+glyph: muxdevice
 permalink: /tour/modules/muxdevice
 parent: System Details
 nav_order: 1

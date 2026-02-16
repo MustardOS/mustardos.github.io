@@ -10,6 +10,6 @@ has_toc: false
 
 # **In Progress Releases**
 
-Currently in development release that are in constant change!
+The current in development release that is frequently updated.
 
 {% include release_list.html type="progress" %}

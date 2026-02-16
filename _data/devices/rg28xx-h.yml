@@ -3,7 +3,8 @@ name: RG28XX H
 internal: rg28xx-h
 desc: A small 2.8" screen device. No Wi-Fi capability.
 downloads:
-  hash: 89e443953f3289328858352a25f761cfc75ca182ca8a251c9dd271e171237630
-  gofile: https://cold7.gofile.io/download/direct/bec7f584-a9a8-4c89-a1d6-4a369dfd66ef/MustardOS_RG28XX-H_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/t6ACkJBB#XxHIJmFfI8UVKpWs1fX8AZzgnVD-cUA6qbY7ZgPYtXo
-  torrent: MustardOS_RG28XX-H_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: 6442222aaff01e46bfabd61e49d82fc2e7bc1a2485611913e537ea7faf57fd2b
+    gofile: https://store5.gofile.io/download/direct/84273ac0-b547-4559-8790-09c859e360a7/MustardOS_RG28XX-H_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/xnJESS7a#QgkUGgq77Nr9BO76SapgdMEQKJPDQDwBDLQ-c0GqMN8
+    torrent: MustardOS_RG28XX-H_2601.0_JACARANDA-ec9e9f32

@@ -2,6 +2,7 @@
 layout: module
 title: Kiosk Settings
 module: muxkiosk
+glyph: muxkiosk
 permalink: /tour/modules/muxkiosk
 parent: Main Menu
 nav_order: 7

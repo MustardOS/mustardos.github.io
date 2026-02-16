@@ -1,6 +1,7 @@
 ---
 title: Scheme Files
 layout: default
+permalink: /themes/scheme
 parent: Themes
 nav_order: 4
 has_toc: false

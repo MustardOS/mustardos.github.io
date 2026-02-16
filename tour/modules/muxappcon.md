@@ -2,6 +2,7 @@
 layout: module
 title: Application Options
 module: muxappcon
+glyph: muxappcon
 permalink: /tour/modules/muxappcon
 parent: Applications
 nav_order: 3

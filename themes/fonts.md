@@ -1,6 +1,7 @@
 ---
 title: Custom Fonts
 layout: default
+permalink: /themes/fonts
 parent: Themes
 nav_order: 3
 has_toc: false

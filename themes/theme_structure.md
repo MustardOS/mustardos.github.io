@@ -1,6 +1,7 @@
 ---
 title: Theme Structure
 layout: default
+permalink: /themes/structure
 parent: Themes
 nav_order: 1
 has_toc: false

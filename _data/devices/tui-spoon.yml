@@ -3,7 +3,8 @@ name: Smart Pro
 internal: tui-spoon
 desc: A 720p widescreen device with funky analogue sticks.
 downloads:
-  hash: 9672c993e2158c27de91220323aa9408dd9cd6b71650ad3b2c66a8b332145b3d
-  gofile: https://cold-na-phx-8.gofile.io/download/direct/be8ea1f0-08c2-4589-a24d-997007450e6c/MustardOS_TUI-SPOON_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/QroGjS5K#Joldq22s14na6HKmokH-grYZLe2u3_5i5z3g2x8eDrc
-  torrent: MustardOS_TUI-SPOON_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: b311990ee500045f67b31bc04d2c0a2e7a566abcb79eaac428bb83b467852fb8
+    gofile: https://store5.gofile.io/download/direct/33d8e57e-6b3b-4e06-bb46-40e5006d4c89/MustardOS_TUI-SPOON_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/Iu41TZwA#aRDs2y_jslN7IjYOZBXbW3O2uLwkvPEpv8mYHbZWRE0
+    torrent: MustardOS_TUI-SPOON_2601.0_JACARANDA-ec9e9f32

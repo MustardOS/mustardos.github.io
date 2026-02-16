@@ -47,6 +47,19 @@ visible:
     desc: >
       Customise the button layout and control scheme for this content. Perfect for titles requiring non standard 
       input configurations or comfort adjustments.
+  - name: Threaded Video
+    icon: retroarch
+    desc: >
+      Toggle RetroArch threaded video support to improve performance on supported systems.
+  - name: Remove Config
+    icon: remconfig
+    desc: >
+      Remove RetroArch configuration files per content, core, or directory.
+  - name: Colour Filter
+    icon: colfilter
+    link: muxcolfilter
+    desc: >
+      Apply accessibility and stylistic colour filters, including monochrome and colour blind modes. This works for most, if not all, RetroArch content.
   - name: Glyph Tag
     icon: tag
     link: muxtag

@@ -1,0 +1,72 @@
+description: >
+  Colour filters adjust how content is displayed by applying visual transformations. These include
+  accessibility focused options for colour blindness and contrast, comfort filters for
+  extended play, and stylistic filters for creative or fun visual effects.
+
+goback: muxoption
+
+visible:
+  - name: None
+    icon: filter
+    desc: >
+      No colour filtering applied. Original colours are preserved.
+  - name: Achromatopsia
+    icon: filter
+    desc: >
+      Removes colour and increases contrast for users with complete colour blindness.
+  - name: Monochrome
+    icon: filter
+    desc: >
+      Converts the image to grayscale while preserving detail and contrast.
+  - name: Protanopia
+    icon: filter
+    desc: >
+      Adjusts colours to improve visibility for red-cone colour blindness.
+  - name: Deuteranopia
+    icon: filter
+    desc: >
+      Adjusts colours to improve visibility for green-cone colour blindness.
+  - name: Tritanopia
+    icon: filter
+    desc: >
+      Adjusts colours to improve visibility for blue-cone colour blindness.
+  - name: High Contrast
+    icon: filter
+    desc: >
+      Increases overall contrast with deeper blacks and brighter highlights.
+  - name: Blue Light Reduction
+    icon: filter
+    desc: >
+      Reduces blue intensity to improve comfort in low-light conditions.
+  - name: Warm Tone
+    icon: filter
+    desc: >
+      Shifts colours toward warmer tones by increasing reds and reducing blues.
+  - name: Cool Tone
+    icon: filter
+    desc: >
+      Shifts colours toward cooler tones by reducing reds and boosting blues.
+  - name: Sepia Tone
+    icon: filter
+    desc: >
+      Applies a warm sepia effect for a classic, vintage appearance.
+  - name: Paper Like
+    icon: filter
+    desc: >
+      Softens colours and contrast to create a paper-like visual style.
+  - name: Mustard
+    icon: filter
+    desc: >
+      Applies a warm yellow-heavy tint with subdued blues for a mustard look.
+  - name: Neon Boost
+    icon: filter
+    desc: >
+      Intensifies colours for a bold, high-saturation neon effect.
+  - name: Toxic Waste
+    icon: filter
+    desc: >
+      Pushes vivid greens while suppressing reds and blues for a toxic glow.
+  - name: Vaporwave
+    icon: filter
+    desc: >
+      Magenta and cyan-heavy palette inspired by retro vaporwave aesthetics.

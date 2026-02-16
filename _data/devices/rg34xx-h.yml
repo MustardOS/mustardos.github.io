@@ -3,7 +3,8 @@ name: RG34XX H
 internal: rg34xx-h
 desc: An almost perfect replica of a corpo handheld.
 downloads:
-  hash: 6d180dfb7d24b3f3b230a87aae52eed0f862a75280bb8170091ad06f97a02b29
-  gofile: https://cold-na-phx-7.gofile.io/download/direct/a9106b4e-6b95-41fc-8fe0-d4b319c8d2ac/MustardOS_RG34XX-H_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/ImBGjSgI#DLuytc89mnL3qxxPgXwt4eZUbCT8FjYh-QvQkuQoHhE
-  torrent: MustardOS_RG34XX-H_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: f231796f489431cd1c639c93274c8b4498ebc639943300865a1134ef1b0b9909
+    gofile: https://store-eu-gra-2.gofile.io/download/direct/482db57f-6a3a-496f-a99c-75a410686700/MustardOS_RG34XX-H_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/Zm5FWSrY#Ypg_9ln0Bq130aEl01ELSakmeHIBmt8rhWhUgGmgNsg
+    torrent: MustardOS_RG34XX-H_2601.0_JACARANDA-ec9e9f32

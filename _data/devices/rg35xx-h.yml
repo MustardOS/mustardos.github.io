@@ -3,7 +3,8 @@ name: RG35XX H
 internal: rg35xx-h
 desc: A hardy horizontal retro mean machine.
 downloads:
-  hash: fa9def8b0eecc79f8dc7c7ffe291c4094446e4e5672cfa9ba135960a09fd3af7
-  gofile: https://cold4.gofile.io/download/direct/c34ce351-1ab1-4d1b-affd-433118839004/MustardOS_RG35XX-H_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/0nxglKrK#NKH5vLUwayWxsNiGeeubxZpQItvc0K8XixCuVzXdejs
-  torrent: MustardOS_RG35XX-H_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: b890d21af225d1006668874bc6b46ace5a1eadaa8b7dc34b0e0bf762ae09ccb6
+    gofile: https://store10.gofile.io/download/direct/09e8d2c5-bbb2-46f0-ac25-a7fdf25b2d00/MustardOS_RG35XX-H_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/EjRAhC7D#x71Sh-SZUHbGs7dFpaSJeW402QOGeBWeQuFdBEyDRu8
+    torrent: MustardOS_RG35XX-H_2601.0_JACARANDA-ec9e9f32

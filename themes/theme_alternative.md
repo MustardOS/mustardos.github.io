@@ -1,6 +1,7 @@
 ---
 title: Theme Alternatives
 layout: default
+permalink: /themes/alternative
 parent: Themes
 nav_order: 5
 has_toc: false

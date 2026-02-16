@@ -56,7 +56,7 @@ project into what it is today.
 
 MustardOS is built around a simple philosophy: keep things easy, intuitive, and enjoyable. At its core, it exists to let
 you jump straight into playing your favourite games with minimal setup, removing the complexity so you can focus on what
-matters most—having fun.
+matters most and that is having fun.
 
 Our hope is that this custom firmware not only enhances your handheld experience, but also brings you as much joy as
 we've had creating and refining it.
@@ -70,8 +70,7 @@ and familiar: just like with other custom firmwares, you use your preferred imag
 an SD Card.
 
 From there, the process is seamless. Insert the SD Card into your handheld, power it on, and the system takes care of
-the rest. No complicated setup. No confusing steps. Just a smooth and ready-to-play experience right from the first
-boot.
+the rest. No complicated setup. No confusing steps. Just a smooth and ready-to-play experience right from the first boot.
 
 Whether you're new to handhelds or a seasoned enthusiast, MustardOS is designed to get you playing quickly while still
 offering plenty of depth and customisation for those who enjoy exploring further.
@@ -91,8 +90,9 @@ offering plenty of depth and customisation for those who enjoy exploring further
 | Safe Restart            | L2 + R2 + START         |
 | Safe Shutdown           | L2 + R2 + SELECT        |
 | Force Quit Process      | R2 + SELECT + B         |
-| Modify Core / Governor  | Press SELECT on content |
+| Modify Content Options  | Press X on content      |
 | Content Root            | Press START on content  |
+| Content Refresh         | Press SELECT on content |
 | Shuffle Content         | Press R2 on content     |
 | RetroArch Menu          | MENU + X                |
 | RetroArch Close Content | MENU + START            |

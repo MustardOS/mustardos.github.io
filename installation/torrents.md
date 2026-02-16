@@ -9,11 +9,11 @@ has_children: false
 
 # <strong>Full Image Torrents</strong>
 
-Below is an automatically generated list of available torrent files for MustardOS images. Please download the correct
-image for your device. If in doubt, see the <a href="/device">Supported Devices</a> page.
+Below is an automatically generated list of available torrent files for MustardOS images. Please download
+the correct image for your device. If in doubt, see the <a href="/device">Supported Devices</a> page.
 
 <a style="margin-top:0.5rem;" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
-href="/assets/torrents/MustardOS_2508.4_LOOSE_GOOSE_Torrents.zip">
+href="/assets/torrents/MustardOS_2601.0_JACARANDA_Torrents.zip">
 Download All
 </a>
 
@@ -34,13 +34,12 @@ Download All
 {% assign clean = t.name
 | replace: 'MustardOS_', ''
 | replace: '.torrent', ''
-| replace: '-', ' '
 | replace: '_', ' '
 %}
 
-{% assign device = clean | split: " " | first | upcase %}
-{% assign prefix2 = device | slice: 0, 2 %}
-{% assign prefix3 = device | slice: 0, 3 %}
+{% assign first_word = clean | split: " " | first | upcase %}
+{% assign prefix2 = first_word | slice: 0, 2 %}
+{% assign prefix3 = first_word | slice: 0, 3 %}
 
 {% capture entry %}{{ clean }}|{{ t.path | relative_url }}{% endcapture %}
 
@@ -51,12 +50,12 @@ Download All
 {% endif %}
 {% endfor %}
 
-{% assign vendors = "Anbernic:anbernic, TrimUI:trimui" | strip | split: "," %}
+{% assign vendors = "Anbernic:anbernic, TrimUI:trimui" | split: "," %}
 
 {% for v in vendors %}
 {% assign pair = v | split: ":" %}
-{% assign title = pair[0] | strip %}
-{% assign key = pair[1] | strip %}
+{% assign title = pair[0] %}
+{% assign key = pair[1] %}
 
 {% case key %}
 {% when "anbernic" %}
@@ -88,18 +87,16 @@ Download All
 {% assign url = parts[1] %}
 {% assign words = clean | split: " " %}
 
-{% assign build = words | last %}
-{% assign release2 = words | slice: -2, 1 %}
-{% assign release1 = words | slice: -3, 1 %}
-{% assign version = words | slice: -4, 1 %}
+{% assign device = words | first %}
+{% assign version = words | slice: 1, 1 %}
 
-{% assign device_count = words.size | minus: 4 %}
-{% assign device_words = words | slice: 0, device_count %}
-{% assign device = device_words | join: " " %}
+{% assign tail = words | last | split: "-" %}
+{% assign release_name = tail | first %}
+{% assign build = tail | last %}
 
   <tr>
     <td>{{ device }}</td>
-    <td><a href='/release/current/2508_4'>{{ version }} {{ release1 }} {{ release2 }}</a></td>
+    <td><a href="/release/current/2601_0">{{ version }} {{ release_name }}</a></td>
     <td><code>{{ build }}</code></td>
     <td><a href="{{ url }}">Download</a></td>
   </tr>

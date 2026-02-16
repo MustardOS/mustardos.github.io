@@ -36,18 +36,19 @@ layout: default
 {%- for section in sections -%}
 {%- assign item = release[section] -%}
 {% if item %}
-<h2>
+<h2 class="release-download-title" data-download-type="{{ section }}">
+    <span class="device-name"></span>
     Download – {% if section == "full_image" %}Full Image{% else %}Update Archive{% endif %}
 </h2>
 
-<p>
+<p class="release-download-links" data-download-type="{{ section }}">
     {% if item.gofile %}
-    <a href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
+    <a id="release-gofile" href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
         Download from Gofile
     </a>
     {% endif %}
     {% if item.mega %}
-    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+    <a id="release-mega" href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
         Download from MEGA
     </a>
     {% endif %}
@@ -74,6 +75,29 @@ layout: default
 <h3><strong>No longer available!</strong></h3>
 <p><em>This release is lost to time...</em></p>
 {% endif %}
+{% endif %}
+
+{% if release.type == "current" %}
+<script>
+    window.MUOS_DEVICES = {
+    {% for d in site.data.devices %}
+    "{{ d[1].internal }}": {
+        name: "{{ d[1].name }}",
+            downloads: [
+            {% for dl in d[1].downloads %}
+        {
+            variant: "{{ dl.variant | escape }}"{% if dl.gofile %},
+            gofile: "{{ dl.gofile }}"{% endif %}{% if dl.mega %},
+            mega: "{{ dl.mega }}"{% endif %}{% if dl.torrent %},
+            torrent: "{{ dl.torrent }}"{% endif %}{% if dl.hash %},
+            hash: "{{ dl.hash }}"{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    };
+</script>
 {% endif %}
 
 <hr>
@@ -116,10 +140,10 @@ layout: default
 
 <p><strong>You can join the testing crew directly by:</strong></p>
 <ul>
-    <li>Supporting xonglebongle via a <a href="https://ko-fi.com/xonglebongle">Ko-fi Subscription</a></li>
+    <li>Supporting XongleBongle via a <a href="https://ko-fi.com/xonglebongle">Ko-fi Subscription</a></li>
     <li>Boosting the <a href="https://discord.gg/muos">Discord Server</a></li>
     <li>Contributing major code pull requests on our <a href="https://github.com/MustardOS">GitHub Repositories</a></li>
-    <li>Showing exceptional values and building rapport</li>
+    <li>Showing exceptional values and building community rapport</li>
 </ul>
 
 <hr>
@@ -165,3 +189,47 @@ layout: default
 {% endif %}
 
 {% endif %}
+
+<script>
+    (function () {
+        if (!location.hash || !window.MUOS_DEVICES) return;
+
+        let dev = MUOS_DEVICES[location.hash.slice(1)];
+        if (!dev || !Array.isArray(dev.downloads)) return;
+
+        let blocks = document.querySelectorAll(".release-download-links");
+        if (!blocks.length) return;
+
+        function buildButtons(d) {
+            let html = [];
+
+            if (d.gofile) html.push('<a class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300" href="' + d.gofile + '">Download from Gofile</a>');
+            if (d.mega) html.push('<a class="btn fs-5 mb-4 mb-md-0 mr-2" href="' + d.mega + '">Download from MEGA</a>');
+            if (d.torrent) html.push('<a class="btn fs-5 mb-4 mb-md-0" href="/assets/torrents/' + d.torrent + '.torrent">Download Torrent</a>');
+
+            return html.join("");
+        }
+
+        blocks.forEach(function (el) {
+            let html = "";
+
+            dev.downloads.forEach(function (d) {
+                html += '<div style="margin-bottom:1rem;">';
+                if (d.variant && d.variant.trim().length > 0) html += '<h3 style="padding-bottom:0.25rem;"><strong>' + d.variant + '</strong></h3>';
+
+                html += buildButtons(d);
+                if (d.hash) html += '<p style="margin:0;"><strong>SHA256</strong> <code>' + d.hash + '</code></p>';
+
+                html += '</div>';
+            });
+
+            el.innerHTML = html;
+        });
+
+        document.querySelectorAll(".release-download-title").forEach(function (title) {
+            let span = title.querySelector(".device-name");
+            if (span) span.textContent = dev.name + " –";
+        });
+
+    })();
+</script>

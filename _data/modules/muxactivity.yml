@@ -1,0 +1,30 @@
+description: >
+  Track and analyse how you play across all your content, turning your playing data into some hopefully
+  super interesting insights. The Activity Tracker records launches, play time, devices, cores, and then
+  presents as both per content detail and global summaries that help you understand your habits and your
+  very unique and special play preferences.<br><br>You can also export your statistics to HTML and share
+  them around for gloating purposes.
+
+goback: muxinfo
+
+visible:
+  - name: Individual Content
+    icon: rom
+    link: muxactivity-content
+    desc: >
+      Detailed statistics for individual content. This view shows information such as content name,
+      core used, launch count, last device and mode, last played date, average session time, total play time,
+      and details about the most recent session.
+  - name: Activity Overview
+    icon: global_toplaunch
+    link: muxactivity-overview
+    desc: >
+      A global snapshot of all recorded activity. Includes total launch counts, total and average play time,
+      oldest and longest sessions, and overall trends across your entire library. This section acts as the
+      central area for understanding your long term play patterns.
+  - name: Play Styles
+    icon: detail_play
+    link: muxactivity-style
+    desc: >
+      A look into the different styles and quirks you might come across when looking at your overall play style
+      or the individual content.

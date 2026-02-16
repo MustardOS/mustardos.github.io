@@ -59,10 +59,10 @@ visible:
     icon: charger
     desc: >
       Indicates if the device is currently being actively charged.
-  - name: Refresh Frontend
-    icon: refresh
+  - name: Reload Frontend
+    icon: reload
     desc: >
-      Manually refresh the frontend to apply any configuration or theme changes made outside of the interface.
+      Manually reload the frontend to apply any configuration or theme changes made outside of the interface.
 
 hidden:
   - name: Device Settings

@@ -1,0 +1,105 @@
+description: >
+  Explains the different play style classifications used by the Activity Tracker.
+  Play styles are calculated from usage patterns such as session length, frequency,
+  consistency, and diversity. Some styles apply to individual content, while others
+  summarise overall behaviour across the entire tracked sessions.
+
+goback: muxactivity
+
+visible:
+  - name: One and Done (Content)
+    icon: detail_play
+    desc: >
+      Played only once with a very short total play time, with no return sessions.
+  - name: Sampler (Content)
+    icon: detail_play
+    desc: >
+      Launched multiple times but never held attention long enough to build meaningful total play time.
+  - name: Short Bursts (Content)
+    icon: detail_play
+    desc: >
+      Defined by many very short sessions, often launched briefly and exited quickly.
+  - name: Long Sessions (Content)
+    icon: detail_play
+    desc: >
+      Played less frequently, but sessions tend to be long and uninterrupted.
+  - name: Completionist (Content)
+    icon: detail_play
+    desc: >
+      Long sessions with a high total time investment, indicating a possible completion.
+  - name: Abandoned (Content)
+    icon: detail_play
+    desc: >
+      Tried briefly and then dropped early, with little to no continued play.
+  - name: Marathoner (Content)
+    icon: detail_play
+    desc: >
+      Extremely high total play time accumulated through repeated or extended sessions.
+  - name: Returner (Content)
+    icon: detail_play
+    desc: >
+      Frequently revisited, but usually in shorter or lower commitment like sessions.
+  - name: On and Off (Content)
+    icon: detail_play
+    desc: >
+      An inconsistent play pattern, alternating between periods of activity and inactivity.
+  - name: Weekend Warrior (Content)
+    icon: detail_play
+    desc: >
+      Played infrequently, but typically in very long sessions when it is played.
+  - name: Regular Play (Content)
+    icon: detail_play
+    desc: >
+      Balanced and consistent play sessions without extreme short bursts or marathons.
+  - name: Comfort Game (Content)
+    icon: detail_play
+    desc: >
+      Regularly revisited content that provides steady enjoyment and familiar engagement.
+  - name: Casual (Overview)
+    icon: detail_play
+    desc: >
+      Low overall engagement, with short sessions and limited total play time.
+  - name: Core Gamer (Overview)
+    icon: detail_play
+    desc: >
+      Regular and consistent engagement forming a stable and ongoing play habit.
+  - name: Explorer (Overview)
+    icon: detail_play
+    desc: >
+      Samples many different titles with light commitment, favouring variety over depth.
+  - name: Binger (Overview)
+    icon: detail_play
+    desc: >
+      Characterised by long average session times and extended play periods.
+  - name: Completionist (Overview)
+    icon: detail_play
+    desc: >
+      Deep focus on a smaller number of titles with significant total time investment.
+  - name: Power Player (Overview)
+    icon: detail_play
+    desc: >
+      Heavy usage across many systems, cores, or titles, indicating intensive overall use.
+  - name: Content Collector (Overview)
+    icon: detail_play
+    desc: >
+      Engages with many different titles, typically through short or exploratory sessions.
+  - name: Specialist (Overview)
+    icon: detail_play
+    desc: >
+      Focused primarily on a small set of cores, emulators, or systems.
+  - name: Device Nomad (Overview)
+    icon: detail_play
+    desc: >
+      Plays across multiple devices, frequently switching between supported hardware.
+  - name: Routine Player (Overview)
+    icon: detail_play
+    desc: >
+      Maintains a consistent and predictable play pattern over time.
+  - name: Habitual Player (Overview)
+    icon: detail_play
+    desc: >
+      Frequently launches content with steady timing, forming a habitual usage rhythm.
+  - name: Window Shopper (Overview)
+    icon: detail_play
+    desc: >
+      Briefly dipping into many titles without strong or lasting commitment to any single one.

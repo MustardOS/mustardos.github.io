@@ -1,6 +1,7 @@
 ---
 title: Image Assistance
 layout: default
+permalink: /themes/images
 parent: Themes
 nav_order: 2
 has_toc: false

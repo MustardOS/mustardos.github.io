@@ -3,7 +3,8 @@ name: RGCUBEXX
 internal: rgcubexx-h
 desc: A 1:1 ratio screen with colourful analogue sticks.
 downloads:
-  hash: 439456512e84fb6cf43c85878f0e9f1574e2903e8f2796098ac22285810662d1
-  gofile: https://cold-na-phx-5.gofile.io/download/direct/f18d828d-b938-4a53-8474-0855096b33b6/MustardOS_RGCUBEXX-H_2508.4_LOOSE_GOOSE-a55cdbe8.img.gz
-  mega: https://mega.nz/file/4yJATK6L#d6qYmoCYmBeyYKpFui2Rp4CR7NeiaIS7ThY-7ygeBmo
-  torrent: MustardOS_RGCUBEXX-H_2508.4_LOOSE_GOOSE-a55cdbe8
+  - variant:
+    hash: 9a3caf64fbdcfabe14d8ffb2c3fc22b559a19a84d3b40e4ba249e13fa0926750
+    gofile: https://store10.gofile.io/download/direct/4cddad5d-5fa3-4886-9838-7910b7d00d31/MustardOS_RGCUBEXX-H_2601.0_JACARANDA-ec9e9f32.img.gz
+    mega: https://mega.nz/file/V2plmajY#dh73vJF0rL2jgnqU1hD17ffqZd2m4B6XAt9xSUPNwec
+    torrent: MustardOS_RGCUBEXX-H_2601.0_JACARANDA-ec9e9f32

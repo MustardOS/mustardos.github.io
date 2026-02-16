@@ -27,6 +27,10 @@ visible:
     desc: >
       Test themes designed for different resolutions or aspect ratios. Useful for validating theme compatibility 
       on various devices or displays.
+  - name: Theme Scaling
+    icon: scaling
+    desc: >
+      Scales theme layouts designed for different resolutions to better fit the device screen. Useful for testing themes during creation.
   - name: Alternative Theme
     icon: alternate
     desc: >
@@ -64,6 +68,10 @@ visible:
     desc: >
       Adjusts the position of content images on screen. Useful for theme designers or users wanting a specific 
       layout alignment.
+  - name: Content Full Width
+    icon: width
+    desc: >
+      Toggles whether content highlights use the full screen width or leave space for box art.
   - name: Content Launch Splash
     icon: splash
     desc: >
@@ -88,6 +96,10 @@ visible:
     icon: sound
     desc: >
       Toggles sound effects when navigating the frontend interface. Disabling this results in silent menu movement.
+  - name: Navigation Sound Volume
+    icon: soundvolume
+    desc: >
+      Adjusts the volume level of menu navigation sounds. Press <strong>A</strong> to set.
   - name: Startup Chime
     icon: chime
     desc: >

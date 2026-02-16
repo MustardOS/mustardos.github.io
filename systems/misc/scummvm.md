@@ -11,10 +11,10 @@ has_toc: false
 
 ![](../assets/images/scummvm__modern_remastered__logo.png)
 
-| Version       | Core                | Build |
-|:--------------|:--------------------|:------|
-| Libretro Core | scummvm_libretro.so | 2.9.0 |
-| Standalone    | ext-scummvm         | 2.9.0 |
+| Version       | Core                | Build    |
+|:--------------|:--------------------|:---------|
+| Libretro Core | scummvm_libretro.so | 2.9.0    |
+| Standalone    | ext-scummvm         | 2026.1.0 |
 
 {: .new}
 > Starting with MustardOS Banana ScummVM Standalone is the default.

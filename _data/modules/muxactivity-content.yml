@@ -1,0 +1,48 @@
+description: >
+  Displays detailed activity statistics for a single piece of content. This view focuses on how the
+  individual content is played, combining launch history, session times, and other contextual information
+  to provide a clear picture of when and how you play this particular content.
+
+goback: muxactivity
+
+visible:
+  - name: Content Name
+    icon: detail_name
+    desc: >
+      The display name of the selected content being looked at.
+  - name: Core Used
+    icon: detail_core
+    desc: >
+      The system or core most used to play this content.
+  - name: Launch Count
+    icon: detail_launch
+    desc: >
+      The total number of times this content has been launched.
+  - name: Last Device
+    icon: detail_device
+    desc: >
+      The device on which this content was last played.
+  - name: Last Mode
+    icon: detail_mode
+    desc: >
+      The play mode used during the most recent launch of this content.
+  - name: Last Played
+    icon: detail_start
+    desc: >
+      The date and time when this content was last launched.
+  - name: Average Time
+    icon: detail_average
+    desc: >
+      The average duration of each play session for this content, calculated from all recorded sessions.
+  - name: Total Time
+    icon: detail_total
+    desc: >
+      The combined play time accumulated across all sessions for this content.
+  - name: Last Session
+    icon: detail_last
+    desc: >
+      The duration of the most recent play session.
+  - name: Play Style
+    icon: detail_play
+    desc: >
+      A calculated classification that summarises this individual content play behaviour.

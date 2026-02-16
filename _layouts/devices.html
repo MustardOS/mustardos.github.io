@@ -23,6 +23,11 @@ layout: default
    href="/release/current/{{ latest.ver | replace: '.', '_' }}">
     View Release Details
 </a>
+<a style="margin-top:0.5rem;"
+   class="btn fs-5 mb-4 mb-md-0"
+   href="/installation/torrents" >
+    View Torrents
+</a>
 {% else %}
 <p><em>No current release available!</em></p>
 {% endif %}
@@ -46,34 +51,15 @@ layout: default
         <h3 style="margin-top:0.25rem"><strong>{{ device.name }}</strong></h3>
         <p>{{ device.desc | default: "No description provided." }}</p>
 
-        {% if device.downloads %}
-        <details>
-            <summary>Download Links</summary>
-            {% if device.downloads.gofile %}
-            <p style="margin:0.5rem;">
-                <a style="min-width:100%;"
-                   class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
-                   href="{{ device.downloads.gofile }}">Download from Gofile</a>
-            </p>
-            {% endif %}
-            {% if device.downloads.mega %}
-            <p style="margin:0.5rem;">
-                <a style="min-width:100%;" class="btn fs-5 mb-4 mb-md-0"
-                   href="{{ device.downloads.mega }}">Download from Mega</a>
-            </p>
-            {% endif %}
-            {% if device.downloads.torrent %}
-            <p style="margin:0.5rem;">
-                <a style="min-width:100%;" class="btn fs-5 mb-4 mb-md-0"
-                   href="/assets/torrents/{{ device.downloads.torrent }}.torrent">Download Torrent</a>
-            </p>
-            {% endif %}
-            {% if device.downloads.hash %}
-            <strong style="margin-bottom:-1rem;">SHA256</strong>
-            <pre>{{ device.downloads.hash }}</pre>
-            {% endif %}
-        </details>
+        {% if latest %}
+        <p style="margin-top:0.75rem;">
+            <a class="btn btn-primary fs-5 mb-4 mb-md-0 text-grey-dk-300"
+               href="/release/current/{{ latest.ver | replace: '.', '_' }}#{{ device.internal }}">
+                View Downloads
+            </a>
+        </p>
         {% endif %}
+
     </div>
     {% endfor %}
 </div>
@@ -102,30 +88,5 @@ layout: default
 
     .device-card:hover {
         transform: scale(1.03);
-    }
-
-    details {
-        margin-top: 0.5rem;
-    }
-
-    summary {
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    summary:hover {
-        color: #c7af26;
-    }
-
-    pre {
-        color: #eee;
-        page-break-inside: avoid;
-        font-family: monospace;
-        font-size: 12px;
-        max-width: 100%;
-        padding-bottom: 1em;
-        overflow: auto;
-        display: block;
-        word-wrap: break-word;
     }
 </style>

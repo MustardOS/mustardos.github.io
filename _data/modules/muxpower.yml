@@ -37,3 +37,7 @@ visible:
     icon: gov_fe
     desc: >
       Sets the CPU governor used during normal device operation.
+  - name: Frontend Screensaver
+    icon: screensaver
+    desc: >
+      Enables or disables the frontend screensaver when the idle display timeout is reached.

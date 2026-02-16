@@ -1,6 +1,7 @@
 ---
 title: Finishing your Theme
 layout: default
+permalink: /themes/finish
 parent: Themes
 nav_order: 7
 has_toc: false

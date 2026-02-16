@@ -1,11 +1,23 @@
 description: >
   The Information Menu brings together all system details, diagnostics, and reference tools in one place. 
   From checking storage capacity and input functionality to viewing hardware statistics, network data, and credits, 
-  this section provides insight into both the technical and _community_ sides of MustardOS.
+  this section provides insight into both the technical and community sides of MustardOS.
 
 goback: muxlaunch
 
 visible:
+  - name: Community News
+    icon: news
+    desc: >
+      Stay up to date with official announcements, feature highlights, and community driven updates.
+      News items are curated directly from the <a href="https://community.muos.dev">MustardOS Community Forum</a>,
+      keeping you informed about development progress, releases, and notable contributions.
+  - name: Activity Tracker
+    icon: activity
+    link: muxactivity
+    desc: >
+      View detailed statistics about how content is played. Track play time, launch counts, play styles,
+      and view long term trends to better understand your personal play/usage habits.
   - name: Screenshots
     icon: screenshot
     link: muxshot
