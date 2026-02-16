@@ -351,7 +351,7 @@ changes:
   - Refactor sorting priority to read custom tags
   - Fixed sorting when changing content tag
   - Fixed sorting with folders when mixed content disabled
-  - fixed content names getting cut off
+  - Fixed content names getting cut off
   - Fixed sorting by display name instead sort name
   - Fixed content scheme naming
   - Fixed page up and down navigation in content
