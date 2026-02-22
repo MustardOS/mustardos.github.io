@@ -25,7 +25,7 @@ changes:
   - Added Jacaranda to backward theme compatibility
   - Reworked network connection status
   - Fixed idle state and governor on suspend wake
-  - update extraction space check
+  - Updated extraction space check
   - Optimised lid suspend function
   - Added SSHD graceful quit on suspend
   - Updated idle suspend process functions
@@ -43,3 +43,4 @@ changes:
   - Optimised background music play
   - Ensure input is not sent during screensaver exit
   - Added input suppression for all screensaver exit handlers
+  - Optimised GLES rendering method for stage overlay system
