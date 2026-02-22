@@ -23,7 +23,6 @@ changes:
   - Moved from <code>grep</code> to <code>awk</code> detection for extraction count
   - Various script formatting and optimisations
   - Added Jacaranda to backward theme compatibility
-  - Updated destination space check for archive extraction
   - Reworked network connection status
   - Fixed idle state and governor on suspend wake
   - update extraction space check
@@ -42,3 +41,5 @@ changes:
   - Fixed required space check returning double required space
   - Updated space check to exclude space of current catalogue and configuration
   - Optimised background music play
+  - Ensure input is not sent during screensaver exit
+  - Added input suppression for all screensaver exit handlers
