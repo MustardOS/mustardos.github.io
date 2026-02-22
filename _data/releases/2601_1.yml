@@ -41,3 +41,4 @@ changes:
   - Moved additional variables to common run path
   - Fixed required space check returning double required space
   - Updated space check to exclude space of current catalogue and configuration
+  - Optimised background music play
