@@ -1,0 +1,43 @@
+ver: "2601.1"
+code: "Funky Jacaranda"
+type: progress
+pronunciation: "/ˈfʌŋki ˌdʒækəˈrændə/"
+
+contributors:
+  - bitter_bizarro
+  - xonglebongle
+
+changes:
+  - Added old process cleanup for hotkey processing
+  - Fixed function name spelling
+  - Fixed high CPU usage with hotkey script
+  - Optimised function path for /run/muos
+  - Optimised hotkey script to reduce zombie processes
+  - Reduced hotkey function checks
+  - Reduced USB gadget PID lock acquiring path
+  - Reload chrony service on successful network connect
+  - Added content assignment bind path
+  - Fixed "on Boot" setting for brightness and volume options
+  - Fixed archive extraction for large backup archives
+  - Fixed boxart displaying in activity tracker
+  - Moved from <code>grep</code> to <code>awk</code> detection for extraction count
+  - Various script formatting and optimisations
+  - Added Jacaranda to backward theme compatibility
+  - Updated destination space check for archive extraction
+  - Reworked network connection status
+  - Fixed idle state and governor on suspend wake
+  - update extraction space check
+  - Optimised lid suspend function
+  - Added SSHD graceful quit on suspend
+  - Updated idle suspend process functions
+  - Updated destination space check for archive extraction
+  - Updated 34SP package
+  - Added proper recent wake grace period functions
+  - Ensure device LED goes dark during suspend
+  - Ensure idle state is removed on wake for frontend
+  - Fixed USB function resume on wake
+  - Moved display active and idle functions to global script
+  - Moved idle script to PID process runner
+  - Moved additional variables to common run path
+  - Fixed required space check returning double required space
+  - Updated space check to exclude space of current catalogue and configuration
