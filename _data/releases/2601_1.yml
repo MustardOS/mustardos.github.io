@@ -44,3 +44,15 @@ changes:
   - Ensure input is not sent during screensaver exit
   - Added input suppression for all screensaver exit handlers
   - Optimised GLES rendering method for stage overlay system
+  - Added log cleaner (7 day default)
+  - Ensure GL4ES library path is setup correctly
+  - Fixed DPAD swap for Portmaster content
+  - Fixed input suppression for screensaver exit on press and hold inputs
+  - Fixed overlay transparency values
+  - Fixed RGB light resetting on reboot
+  - Fixed RGB not refreshing when selecting theme
+  - Fixed saving RGB settings when theme name has space
+  - Fixed size to content for Archive Manager, Community News, and System Assign modules
+  - Modified general settings to hide brightness option on HDMI output
+  - Modified screensaver loop with added input suppression cool down rate
+  - Modified stage overlay system to disable functionality over HDMI
