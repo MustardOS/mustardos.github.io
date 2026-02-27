@@ -28,7 +28,7 @@ This will ensure your data stays safe and doesn't fail on you in the middle of c
 
 There are several recommended programs you can use to flash your SD card
 
-* Raspberry Pi Imager - [https://github.com/raspberrypi/rpi-imager/releases](https://github.com/raspberrypi/rpi-imager/releases)
+* Raspberry Pi Imager - [https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6)
 * Alex's USB Image Tool - [https://www.alexpage.de/usb-image-tool/](https://www.alexpage.de/usb-image-tool/)
 * Rufus - [https://rufus.ie/en/](https://rufus.ie/en/)
 * Win32 Disk Imager - [https://sourceforge.net/projects/win32diskimager/](https://sourceforge.net/projects/win32diskimager/)
