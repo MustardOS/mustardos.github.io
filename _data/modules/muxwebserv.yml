@@ -29,11 +29,6 @@ visible:
       Enables continuous file synchronisation between devices and other computers. Changes to shared folders are 
       automatically replicated, keeping files up to date across all devices.
       <h5><strong>Service Details</strong></h5><p>WebUI Port: <code>7070</code></p>
-  - name: Network Time Sync
-    icon: ntp
-    desc: >
-      Automatically synchronises the system clock with online NTP servers. Ensures accurate timestamps for saves, 
-      logs, and network services without manual time adjustment.
   - name: Tailscale
     icon: tailscaled
     desc: >
