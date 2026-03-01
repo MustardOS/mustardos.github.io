@@ -5,6 +5,7 @@ pronunciation: "/ˈfʌŋki ˌdʒækəˈrændə/"
 
 contributors:
   - bitter_bizarro
+  - bmdhacks
   - xonglebongle
 
 changes:
@@ -56,3 +57,16 @@ changes:
   - Modified general settings to hide brightness option on HDMI output
   - Modified screensaver loop with added input suppression cool down rate
   - Modified stage overlay system to disable functionality over HDMI
+  - Added screensaver adjustable speed
+  - Modified default screensaver speed
+  - Modified tweak script run message display
+  - Moved network status clear function to disconnections only
+  - Added native kernel exFAT support with FUSE removal
+  - Added swap memory usage to system details
+  - Added zram support for TrimUI devices
+  - Ensure we get current values of idle processors before running idle activity
+  - Fixed memory usage count using <code>/proc/meminfo</code> instead
+  - Fixed screensaver speed language strings
+  - Fixed screensaver timeout reset until after install
+  - Moved swap values to max <code>1024</code> with <code>128</code> increment
+  - Optimised system detail functions
