@@ -4,7 +4,7 @@ internal: tui-brick
 desc: A small device with a big <strike>attitude</strike> resolution display.
 downloads:
   - variant:
-    hash: 1bf3c479abe8b4c604f769159e5caca6e93acbd4cccccf5a1cd094a174d8cc8e
-    gofile: https://store4.gofile.io/download/direct/e42cca2e-5799-4ecb-9fff-e2ab35a93403/MustardOS_TUI-BRICK_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/wrYlxLgZ#ZwhoyZeYytuXhaHizLIUjh_SQYBXOEbQ1eap8RpVPS4
-    torrent: MustardOS_TUI-BRICK_2601.0_JACARANDA-ec9e9f32
+    hash: 3c1d57de7f8d0dae4c07899b4d60215483a9b23d09d1a524d7394c290a5def0e
+    gofile: https://store-na-phx-5.gofile.io/download/direct/1db0cd2f-76f0-4d15-91f0-6cac7b4d5235/MustardOS_TUI-BRICK_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/huJmnZiB#FyzbNli86j8VhaHzvxti0YZDgGyt5bamZ9QMkT4TWuI
+    torrent: MustardOS_TUI-BRICK_2601.1_FUNKY_JACARANDA-bc38efa0

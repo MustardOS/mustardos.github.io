@@ -1,7 +1,28 @@
 ver: "2601.1"
 code: "Funky Jacaranda"
-type: progress
+type: current
 pronunciation: "/ˈfʌŋki ˌdʒækəˈrændə/"
+
+full_image:
+  gofile: https://gofile.io/d/ghxsUH
+  mega: https://mega.nz/folder/xrJVGJQS#ghWugbuUg2NBQFZlXKoJgA
+  warning:
+    - Please make sure that you have either migrated your data to SD2 or have used the Device Backup feature and copied your backup archive(s).
+
+update_archive:
+  gofile: https://gofile.io/d/fV4LDa
+  mega: https://mega.nz/folder/QyoACJjL#0zwOGnFfa2g8AO7twRw8eA
+  important: |
+    This is an <strong>Archive Manager</strong> installable archive for those who are running the following previous
+    MustardOS releases. <em>Install on any other version at your own risk.</em>
+    <ul>
+      <li><strong>2601.0</strong> Jacaranda</li>
+    </ul>
+
+note:
+  - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder).
+    This enables faster theme switching, alternate theme changes, and restores random theme selection on device start.
+    Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
 
 contributors:
   - bitter_bizarro

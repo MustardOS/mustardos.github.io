@@ -4,7 +4,7 @@ internal: rg35xx-plus
 desc: A nice typical vertical handheld with a 3.5" display.
 downloads:
   - variant:
-    hash: 73d3e39a8477b9fd0a32a0ac554c6e07b73446af86b30296890787c9ff4a4761
-    gofile: https://store-eu-gra-2.gofile.io/download/direct/d5e9624d-8ae5-47b2-9bd7-8a086430d23b/MustardOS_RG35XX-PLUS_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/FyByUY4B#Or0cZHUNlzJXKQ-gDxS7vTsJ8WNRp8YyjcSvvDzfbSs
-    torrent: MustardOS_RG35XX-PLUS_2601.0_JACARANDA-ec9e9f32
+    hash: ceb00c372a3b0f14823b2ffd22246db9b2779b1e29c7464575a4e59b53d20abc
+    gofile: https://store-na-phx-5.gofile.io/download/direct/32fb4ae2-9672-44f9-a6be-9370bea01912/MustardOS_RG35XX-PLUS_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/Ay4kVaJB#Z8S04xetoDHR4o6I-v8TmTpdzCXAsc1Q1VjVNtcDPz8
+    torrent: MustardOS_RG35XX-PLUS_2601.1_FUNKY_JACARANDA-bc38efa0

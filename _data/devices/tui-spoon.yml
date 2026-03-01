@@ -4,7 +4,7 @@ internal: tui-spoon
 desc: A 720p widescreen device with funky analogue sticks.
 downloads:
   - variant:
-    hash: b311990ee500045f67b31bc04d2c0a2e7a566abcb79eaac428bb83b467852fb8
-    gofile: https://store5.gofile.io/download/direct/33d8e57e-6b3b-4e06-bb46-40e5006d4c89/MustardOS_TUI-SPOON_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/Iu41TZwA#aRDs2y_jslN7IjYOZBXbW3O2uLwkvPEpv8mYHbZWRE0
-    torrent: MustardOS_TUI-SPOON_2601.0_JACARANDA-ec9e9f32
+    hash: 69bf96dc697d77bdab7bc65a40ae1058520f5eba0a9847b81c24fcd612a1a6df
+    gofile: https://store9.gofile.io/download/direct/71712cb1-6790-42c2-95fe-d881678ec829/MustardOS_TUI-SPOON_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/974wlJIJ#3_-vdK-I2hYIqVzFw5B3E8KhFU5y6lTDPE9EC7oPv30
+    torrent: MustardOS_TUI-SPOON_2601.1_FUNKY_JACARANDA-bc38efa0

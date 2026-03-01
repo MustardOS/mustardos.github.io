@@ -4,7 +4,7 @@ internal: rg35xx-2024
 desc: A vertical 3.5" device. No Wi-Fi capability.
 downloads:
   - variant:
-    hash: ed914bb5c92ba4916346c723719ea42c4de1eb6d72b8597a2f40429ce4247548
-    gofile: https://store4.gofile.io/download/direct/cdbad140-0408-4c40-86f8-b0b061d27b30/MustardOS_RG35XX-2024_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/pzAgHTTa#_iM1GwInG6SlaL2pgR93xl5Vh4lGtqfzbpBVV_4ug6Q
-    torrent: MustardOS_RG35XX-2024_2601.0_JACARANDA-ec9e9f32
+    hash: cb8d0bb67793b559b0f7aee1629c74aa88422e095f262fa64026f6b77d53fe7a
+    gofile: https://store1.gofile.io/download/direct/17cc35b9-2937-4971-8aa0-3b26d9c681a7/MustardOS_RG35XX-2024_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/krAGlK6Y#lDWmYIsLmad8E-lDikM2vwYMjtGEqQSnHOJP2n8lIjo
+    torrent: MustardOS_RG35XX-2024_2601.1_FUNKY_JACARANDA-bc38efa0

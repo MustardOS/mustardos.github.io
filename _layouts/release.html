@@ -30,25 +30,25 @@ layout: default
 
 {%- assign full_image = release.full_image -%}
 {%- assign update_archive = release.update_archive -%}
+{%- assign has_downloads = false -%}
 
-{% if full_image or update_archive %}
-{%- assign sections = "full_image,update_archive" | split: "," -%}
-{%- for section in sections -%}
-{%- assign item = release[section] -%}
-{% if item %}
-<h2 class="release-download-title" data-download-type="{{ section }}">
+{% if full_image %}
+{% assign has_downloads = true %}
+{% assign item = full_image %}
+
+<h2 class="release-download-title" data-download-type="full_image">
     <span class="device-name"></span>
-    Download – {% if section == "full_image" %}Full Image{% else %}Update Archive{% endif %}
+    Download – Full Image
 </h2>
 
-<p class="release-download-links" data-download-type="{{ section }}">
+<p class="release-download-links" data-download-type="full_image">
     {% if item.gofile %}
-    <a id="release-gofile" href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
+    <a href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
         Download from Gofile
     </a>
     {% endif %}
     {% if item.mega %}
-    <a id="release-mega" href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
         Download from MEGA
     </a>
     {% endif %}
@@ -56,9 +56,8 @@ layout: default
 
 {% assign kinds = "important,warning,note" | split: "," %}
 {% for kind in kinds %}
-{% assign value = item[kind] %}
-{% if value %}
-{% for msg in value %}
+{% if item[kind] %}
+{% for msg in item[kind] %}
 <blockquote class="{{ kind }}">
     {{ msg | markdownify }}
 </blockquote>
@@ -66,8 +65,45 @@ layout: default
 {% endif %}
 {% endfor %}
 {% endif %}
-{%- endfor -%}
-{% else %}
+
+
+{% if update_archive %}
+{% if full_image %}<hr>{% endif %}
+
+{% assign has_downloads = true %}
+{% assign item = update_archive %}
+
+<h2 class="release-download-title" data-download-type="update_archive">
+    <span class="device-name"></span>
+    Download – Update Archive
+</h2>
+
+<p class="release-download-links" data-download-type="update_archive">
+    {% if item.gofile %}
+    <a href="{{ item.gofile }}" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300">
+        Download from Gofile
+    </a>
+    {% endif %}
+    {% if item.mega %}
+    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+        Download from MEGA
+    </a>
+    {% endif %}
+</p>
+
+{% for kind in kinds %}
+{% if item[kind] %}
+{% for msg in item[kind] %}
+<blockquote class="{{ kind }}">
+    {{ msg | markdownify }}
+</blockquote>
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+
+{% unless has_downloads %}
 {% if release.type == "progress" %}
 <h3><strong>Not available yet!</strong></h3>
 <p><em>This release is still in development, check back soon for download links!</em></p>
@@ -75,7 +111,7 @@ layout: default
 <h3><strong>No longer available!</strong></h3>
 <p><em>This release is lost to time...</em></p>
 {% endif %}
-{% endif %}
+{% endunless %}
 
 {% if release.type == "current" %}
 <script>
@@ -197,7 +233,7 @@ layout: default
         let dev = MUOS_DEVICES[location.hash.slice(1)];
         if (!dev || !Array.isArray(dev.downloads)) return;
 
-        let blocks = document.querySelectorAll(".release-download-links");
+        let blocks = document.querySelectorAll('.release-download-links[data-download-type="full_image"]');
         if (!blocks.length) return;
 
         function buildButtons(d) {

@@ -4,7 +4,7 @@ internal: rg40xx-v
 desc: A perfectly sized vertical with a singular RGB analogue stick.
 downloads:
   - variant:
-    hash: 05c3933bf344428825b8358663cdbba2c3ebb052311183df5c5a31453c454b1c
-    gofile: https://store-eu-gra-2.gofile.io/download/direct/3193b9e0-3bd3-4a63-a313-ebe7f6799ea6/MustardOS_RG40XX-V_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/U6pi2Qrb#XT2D4vvDJA03ykxENug3Ye9hMIxdHVUVedAZS4Ir-xs
-    torrent: MustardOS_RG40XX-V_2601.0_JACARANDA-ec9e9f32
+    hash: 824562b5d5b8d54bd606df573d59c61fa76ac5879748b3261fc40e7c96be1d45
+    gofile: https://store1.gofile.io/download/direct/a93b1f4c-37ae-46f5-b8f4-eeef50d2df91/MustardOS_RG40XX-V_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/A7hgDBCQ#uFNKk5hylwq8j35DliJuLetb0x3gupARgUI96dl0BvQ
+    torrent: MustardOS_RG40XX-V_2601.1_FUNKY_JACARANDA-bc38efa0

@@ -4,7 +4,7 @@ internal: rg35xx-sp
 desc: A delicately hinged clamshell with a 3.5" display.
 downloads:
   - variant:
-    hash: b168bb08d80a000041a7c97ab57cd06b6722fb9068781c87eda5802a98575811
-    gofile: https://store2.gofile.io/download/direct/dfd807ae-5223-414c-ac27-1b7b23267602/MustardOS_RG35XX-SP_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/8iwhWBDJ#_VnVw6_tpLAJhlOXlbArs64DESa1sdat-6e6AvxT6sQ
-    torrent: MustardOS_RG35XX-SP_2601.0_JACARANDA-ec9e9f32
+    hash: 9a48fc00529ede454128f4e540cb4d79a976fdde8a2bada970927dcbc0a88da1
+    gofile: https://store-na-phx-3.gofile.io/download/direct/efaa78a1-6ca6-4083-98e7-1f716e53fc12/MustardOS_RG35XX-SP_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/FnhTlJJB#8oFcwPQlvOmpAN6BXLOEtsQ9sMOvtpTH6mZS3XmWIJ4
+    torrent: MustardOS_RG35XX-SP_2601.1_FUNKY_JACARANDA-bc38efa0

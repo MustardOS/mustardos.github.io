@@ -4,7 +4,7 @@ internal: rg40xx-h
 desc: A rounded edge horizontal with two RGB analogue sticks.
 downloads:
   - variant:
-    hash: e5627dd81d9c9ead4daa79981cccbd43cb97fa1d2ffeb16af84a3786c0db9ede
-    gofile: https://store2.gofile.io/download/direct/fcb899a1-a053-4773-b1fc-e39d01f4a03f/MustardOS_RG40XX-H_2601.0_JACARANDA-ec9e9f32.img.gz
-    mega: https://mega.nz/file/giYGWSqS#5GY-ABRv-IqlosnGAiVonKxEr6if-JYm6cWgDt1Nv7s
-    torrent: MustardOS_RG40XX-H_2601.0_JACARANDA-ec9e9f32
+    hash: b52c3b7c7d12549d606dcb06ef5e88dd1569112a5495f1e6914e9fdcbca6468a
+    gofile: https://store-eu-par-4.gofile.io/download/direct/6133d755-79e7-409a-b651-a5089049ad4d/MustardOS_RG40XX-H_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
+    mega: https://mega.nz/file/4i5VBIzZ#6qzOBfrcWHmDg6bJJTVCYN8H7s6RIbzs_UR6-ZPtuL4
+    torrent: MustardOS_RG40XX-H_2601.1_FUNKY_JACARANDA-bc38efa0
