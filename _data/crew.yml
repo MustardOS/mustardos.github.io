@@ -1,0 +1,83 @@
+commanders:
+  - emoji: ⭐
+  - name: XongleBongle
+    image: xonglebongle.png
+    blurb: |
+      The lead developer behind MustardOS.  The driving force responsible for shaping the project into what it is today. A <s><em>cranky</em></s> passionate
+      and enthusiastic retro game player and collector, they are rarely far from either a handheld device or a new idea to <s>increase boot times</s> improve
+      the system.<br><br>Known for owning far too many handhelds and maintaining a healthy appreciation for a good shitpost.  Spends an <em>unreasonable</em>
+      amount of time refining, tweaking, and optimising things that technically already worked fine because "working" is never quite good enough.
+      <hr style="margin:0.75rem;">Tries to make tiny Linux devices do <em>slightly</em> more than they probably should.
+  - name: antiKk
+    image: antikk.png
+    blurb: |
+      A passionate contributor to MustardOS! Known for diving deep into the details and pushing for things to work exactly as they should. A proud adventure
+      gamer, they spend a significant amount of time making sure classic point and click titles feel right at home on handheld devices.<br><br>A critic of the
+      so-called "8:7 CRT" mythology and never shy about sharing those opinions. Much of their work goes into refining RetroArch controls and relentlessly
+      optimising ScummVM to run as smoothly as possible.
+      <hr style="margin:0.75rem;">Also loves coffee and running, but not at the same time.
+  - name: Corey
+    image: corey.png
+    blurb: |
+      One of the earliest supporters of MustardOS. Expanding the capabilities by adding additional emulator support (<em>eww N64...</em>) and helping ensure a
+      wider range of systems run as best can be.<br><br>With a keen eye for handheld hardware, he frequently dives into the technical side of things figuring
+      out what it takes to bring MustardOS to new devices.
+      <hr style="margin:0.75rem;">Loves a good challenge, especially rotated screens!
+  - name: Bitter Bizarro <small>(GrumpyGopher)</small>
+    image: bitterbizarro.png
+    blurb: |
+      An absolute one of a kind champion who pours a tremendous amount of time and energy into the MustardOS theme engine and the frontend itself.
+      Always experimenting, refining, and improving, plays a huge role in shaping how MustardOS looks and feels for everyone who uses it.<br><br>Knows their
+      way around good ol' C code and has delivered many amazing features.  Passionate about seeing MustardOS grow into a truly formidable custom firmware.
+      <hr style="margin:0.75rem;"><em>Totally</em> enjoys fixing XongleBongle's mishaps!
+enforcers:
+  - emoji: 🧰
+  - name: acmeplus
+    image: acmeplus.png
+    blurb: |
+      The lead developer of <a href="https://knulli.org/">Knulli</a>.  A highly respected developer in the handheld scene and a consistently helpful presence.
+      <br><br>Always eager to experiment knowing quirks and complexities of some of the more esoteric of devices. Absolute invaluable knowledge tank of low
+      level challenges that come with developing custom firmware.
+      <hr style="margin:0.75rem;">An absolute true hardware wizard.
+  - name: bgelmini <small>(Bagel)</small>
+    image: bgelmini.png
+    blurb: |
+      Known for their mysterious cycles of activity (<em>may disappear for months at a time</em>), only to casually reappear in the community as if they
+      never left.  When they do return, they quickly remind everyone that they know their way around MustardOS inside and out.<br><br>Whether it's answering
+      tricky questions or providing thoughtful insights, their contributions are always welcome and surprisingly timely.
+      <hr style="margin:0.75rem;">Plays the saxophone like a boss!
+  - name: ilfordhp5 <small>(Casey)</small>
+    image: ilfordhp5.png
+    blurb: |
+      A long-standing presence in the MustardOS community whose exact origin no one can quite explain.  Has been around since the early days when
+      XongleBongle was <em>enthusiastically</em> spamming the CFW across every corner of the retro handheld scene, and somehow never left.<br><br>Their primary
+      role appears to be occupying space, reacting to conversations with GIFs, and maintaining a mysterious level of persistence that nobody really questions.
+      <hr style="margin:0.75rem;">Constantly disappoints antiKk...
+  - name: duncanyoyo1
+    image: duncanyoyo1.png
+    blurb: |
+      A passionate MustardOS evangelist and strong advocate for open source software.  As the primary curator of RetroArch core builds, they help ensure that
+      emulation remains reliable and in tip-top shape.<br><br>Has a deep appreciation for computers and video game history, they also carry a special love for
+      crisp sharp pixels.  Whether troubleshooting issues, sharing knowledge, or guiding others through technical hurdles, he's always willing to lend a hand.
+      <hr style="margin:0.75rem;">Tries hard to always be kind and has endless patience.
+  - name: delibirb77
+    image: delibirb77.png
+    blurb: |
+      Resident Pokémon enthusiast and firm believer that Gen 1–5 was absolute peak Pokémon. Longtime MustardOS helper and proud member of the Gengar
+      appreciation society.  Avid badminton player with quick reflexes both on the court and in the help channels.<br><br>Always keen to help people learn,
+      grow, and untangle whatever technical chaos they wandered into.  Friendly, reliable, and <em>usually</em> just one ping away!
+      <hr style="margin:0.75rem;">Seriously, ping them or they'll probably miss your message!
+wrangler:
+  - emoji: 🤠
+  - name: MrsBongle <small>(MrsB)</small>
+    image: mrsbongle.png
+    blurb: |
+      A lovely and kind hearted soul who has to keep XongleBongle grounded. Runs the social media channels and can be reached out to for anything MustardOS.
+      <br><br>Loves her two dogs, <em>and XongleBongle</em>, and enjoys spending time with the MustardOS community as much as she can! Don't forget to say hi.
+      <hr style="margin:0.75rem;"><em>Tends to hide behind boxes.</em>
+emeritus:
+  - emoji: 🏛
+  - name: illumini_85
+    image: illumini_85.png
+  - name: Raven
+    image: raven.png

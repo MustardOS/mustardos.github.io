@@ -1,0 +1,131 @@
+---
+layout: default
+---
+
+<h1><strong>{{ page.title }}</strong></h1>
+
+{% assign crew = site.data.crew %}
+
+{% for group in crew %}
+{% assign emoji = group[1][0].emoji %}
+
+<hr>
+<h2><strong>{{ emoji }} {{ group[0] | capitalize }}</strong></h2>
+
+{% if group[0] == "emeritus" %}
+
+<div class="emeritus-grid">
+    {% for member in group[1] offset:1 %}
+    <div class="emeritus-grid-card">
+        <img src="/assets/crew/{{ member.image }}" alt="{{ member.name }}">
+        <div class="emeritus-grid-name"><strong>{{ member.name }}</strong></div>
+    </div>
+    {% endfor %}
+</div>
+
+{% else %}
+
+<div class="crew-list">
+    {% for member in group[1] offset:1 %}
+    <div class="crew-card">
+        <img src="/assets/crew/{{ member.image }}" alt="{{ member.name }}">
+        <div class="crew-info">
+            <h3><strong>{{ member.name }}</strong></h3>
+            <p>{{ member.blurb }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endif %}
+{% endfor %}
+
+<style>
+    .crew-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .crew-card {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        border: 1.35px solid #c7af26;
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        transition: transform 0.15s ease;
+    }
+
+    .crew-card:hover {
+        transform: scale(1.02);
+    }
+
+    .crew-card img {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 15%;
+        flex-shrink: 0;
+    }
+
+    .crew-info h3 {
+        margin: 0 0 0.35rem 0;
+    }
+
+    .crew-info p {
+        margin: 0;
+    }
+
+    @media (max-width: 640px) {
+        .crew-card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .crew-card img {
+            width: 96px;
+            height: 96px;
+        }
+    }
+
+    /* Emeritus grid */
+
+    .emeritus-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1.25rem;
+        margin-top: 1rem;
+    }
+
+    .emeritus-grid-card {
+        border: 1.35px solid #c7af26;
+        border-radius: 10px;
+        aspect-ratio: 1 / 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.75rem;
+        text-align: center;
+        transition: transform 0.15s ease;
+    }
+
+    .emeritus-grid-card:hover {
+        transform: scale(1.03);
+    }
+
+    .emeritus-grid-card img {
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
+        border-radius: 15%;
+        margin-bottom: 0.4rem;
+    }
+
+    .emeritus-grid-name {
+        font-size: 0.9rem;
+    }
+</style>
