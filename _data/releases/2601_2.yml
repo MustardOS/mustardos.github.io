@@ -1,0 +1,27 @@
+ver: "2601.2"
+code: "Midnight Jacaranda"
+type: progress
+pronunciation: "/ˈmɪdnaɪt ˌdʒækəˈrændə/"
+
+note:
+  - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder).
+    This enables faster theme switching, alternate theme changes, and restores random theme selection on device start.
+    Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
+
+contributors:
+  - antikk
+  - bitter_bizarro
+  - xonglebongle
+
+changes:
+  - Added launch scummvm content by folder
+  - Added sending ClientID with DHCP Request
+  - Added support for weird analogue reversals for some devices
+  - Fixed analogue input codes
+  - Fixed <code>eth0</code> not attempting DHCP
+  - Fixed false detection of invalid theme resolution
+  - Fixed left stick inversion in SDL map
+  - Fixed rumble on content close
+  - Stripped line feeds from config variables
+  - Updated DHCP for more resilience
+  - Updated Retroarch mappings
