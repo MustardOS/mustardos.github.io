@@ -25,3 +25,9 @@ changes:
   - Stripped line feeds from config variables
   - Updated DHCP for more resilience
   - Updated Retroarch mappings
+  - Fixed PPSSPP application missing XDG path set
+  - Added brightness and volume information
+  - Fixed restore RetroArch Overrides task toolkit script
+  - Fixed CPU governor saving and restore on sleep suspend
+  - Fixed subtle flashing of RetroArch menu upon suspend resume
+  - Fixed recent wake checking for lid based devices
