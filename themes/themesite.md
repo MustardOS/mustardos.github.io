@@ -18,7 +18,7 @@ All these themes were made by members of the MustardOS community. Join the commu
 
 You can find all themes for MustardOS [here](https://theme.muos.dev/). You have two options to download and install the theme.
 
-1. Utilise the on device browser and installer 
+## Utilise the on device browser and installer 
 
 Note: Ensure your device is connected to the internet!
   
@@ -28,7 +28,7 @@ Note: Ensure your device is connected to the internet!
   - Select your theme and enjoy.
 
 
-2. Click on a theme title to download a `.muxthm` file.
+## Click on a theme title to download a `.muxthm` file.
    
   - Place that file on your device within `/mnt/mmc/ARCHIVE`.
   - Open Archive Manager found under Applications on your device and open the .muxthm file
