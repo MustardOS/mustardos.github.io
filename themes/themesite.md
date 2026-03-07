@@ -21,17 +21,17 @@ All these themes were made by members of the MustardOS community. Join the commu
 1. Utilise the on device browser and installer 
   Note: Ensure your device is connected to the internet!
   
-  Select Configuration > Customisation > Theme Picker > Theme Download
-  This will download the current themes available on the website, from here you can download the theme of choice.
-  Once you have downloaded your theme of choice press 'B' to return to the Theme Picker
-  Select your theme and enjoy.
+  - Select Configuration > Customisation > Theme Picker > Theme Download
+  - This will download the current themes available on the website, from here you can download the theme of choice.
+  - Once you have downloaded your theme of choice press 'B' to return to the Theme Picker
+  - Select your theme and enjoy.
 
 
 2. Click on a theme title to download a `.muxthm` file.
-  Place that file on your device within `/mnt/mmc/ARCHIVE`.
-  Open Archive Manager found under Applications on your device and open the .muxthm file
-  Return to the main menu, then select Configuration > Customisation > Theme Picker
-  Pick your theme and enjoy!
+  - Place that file on your device within `/mnt/mmc/ARCHIVE`.
+  - Open Archive Manager found under Applications on your device and open the .muxthm file
+  - Return to the main menu, then select Configuration > Customisation > Theme Picker
+  - Pick your theme and enjoy!
   
 - Additional themes can be found on the [MustardOS Forum](https://community.muos.dev/).
 
