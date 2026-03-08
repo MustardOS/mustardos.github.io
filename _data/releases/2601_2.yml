@@ -15,49 +15,33 @@ contributors:
   - xonglebongle
 
 changes:
-  - Added launch scummvm content by folder
-  - Added sending ClientID with DHCP Request
-  - Added support for weird analogue reversals for some devices
-  - Fixed analogue input codes
-  - Fixed <code>eth0</code> not attempting DHCP
-  - Fixed false detection of invalid theme resolution
-  - Fixed left stick inversion in SDL map
-  - Fixed rumble on content close
-  - Stripped line feeds from config variables
-  - Updated DHCP for more resilience
-  - Updated Retroarch mappings
-  - Fixed PPSSPP application missing XDG path set
   - Added brightness and volume information
-  - Fixed restore RetroArch Overrides task toolkit script
-  - Fixed CPU governor saving and restore on sleep suspend
-  - Fixed subtle flashing of RetroArch menu upon suspend resume
-  - Fixed recent wake checking for lid based devices
-  - Added brightness and volume information
-  - Added launch scummvm content by folder
-  - Added sending ClientID with DHCP Request
-  - Added support for weird analogue reversals for some devices
-  - Fixed eth0 not attempting DHCP
-  - Fixed analogue input codes
-  - Fixed CPU governor saving and restore on sleep suspend
-  - Fixed false detection of invalid theme resolution
-  - Fixed left stick inversion in SDL map
-  - Fixed PPSSPP application missing XDG path set
-  - Fixed recent wake checking for lid based devices
-  - Fixed restore RetroArch Overrides task toolkit script
-  - Fixed rumble on content close
-  - Fixed subtle flashing of RetroArch menu upon suspend resume
-  - Stripped line feeds from config variables
-  - Updated DHCP for more resilience
-  - Updated Retroarch mappings
-  - Renamed Console Mode file path checking
-  - Modified hotkeys for G350 quirks
-  - Added G350 brightness adjustment
-  - Modified TrimUI device input daemon
-  - Added scheme support to activity tracker
   - Added combo appending for modules
+  - Added G350 brightness adjustment
   - Added hotkey negation option
-  - Modified input init to detect device type
+  - Added launch scummvm content by folder
+  - Added scheme support to activity tracker
+  - Added sending ClientID with DHCP Request
+  - Added support for weird analogue reversals for some devices
   - Adjusted spacing formatting after input struct
-  - Optimised input tester to handle G350 quirks
-  - Moved Console Mode detection to common
+  - Fixed <code>eth0</code> not attempting DHCP
+  - Fixed analogue input codes
   - Fixed collection and history dot file and directory visibility
+  - Fixed CPU governor saving and restore on sleep suspend
+  - Fixed eth0 not attempting DHCP
+  - Fixed false detection of invalid theme resolution
+  - Fixed left stick inversion in SDL map
+  - Fixed PPSSPP application missing XDG path set
+  - Fixed recent wake checking for lid based devices
+  - Fixed restore RetroArch Overrides task toolkit script
+  - Fixed rumble on content close
+  - Fixed subtle flashing of RetroArch menu upon suspend resume
+  - Modified hotkeys for G350 quirks
+  - Modified input init to detect device type
+  - Modified TrimUI device input daemon
+  - Moved Console Mode detection to common
+  - Optimised input tester to handle G350 quirks
+  - Renamed Console Mode file path checking
+  - Stripped line feeds from config variables
+  - Updated DHCP for more resilience
+  - Updated Retroarch mappings
