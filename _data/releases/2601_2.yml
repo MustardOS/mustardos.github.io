@@ -28,7 +28,6 @@ changes:
   - Fixed analogue input codes
   - Fixed collection and history dot file and directory visibility
   - Fixed CPU governor saving and restore on sleep suspend
-  - Fixed eth0 not attempting DHCP
   - Fixed false detection of invalid theme resolution
   - Fixed left stick inversion in SDL map
   - Fixed PPSSPP application missing XDG path set
