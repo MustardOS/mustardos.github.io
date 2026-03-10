@@ -27,7 +27,7 @@ has_toc: false
 | F+L2               | Quick Load |
 | F+R1               | Fast Forward |
 | F+L1               | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
-| Just R2            | Change Main/Secondary Screens |
+| Just L2            | Change Main/Secondary Screens |
 
 **When in D-Pad to Stylus mode**
 
