@@ -44,3 +44,10 @@ changes:
   - Stripped line feeds from config variables
   - Updated DHCP for more resilience
   - Updated Retroarch mappings
+  - Removed reliance on <code>pv</code> for archive extraction
+  - Updated screenshot tool path
+  - Added attribute cache to GLES state
+  - Added overlay state cache to overlay system
+  - Added overlay texture building functions
+  - Added render path checking and reset functions to overlay stage
+  - Added screenshot grab mode for both <code>fbdev</code> and <code>drm</code> based devices
