@@ -30,7 +30,8 @@ Note: Ensure your device is connected to the internet!
 
 ## Click on a theme title to download a `.muxthm` file.
    
-  - Place that file on your device within `/mnt/mmc/ARCHIVE`.
+  - Place that file on your device on SD1 or SD2 within the  `ARCHIVE` folder. 
+  - If it does not exist, create a folder titled `ARCHIVE`.
   - Open Archive Manager found under Applications on your device and open the .muxthm file
   - Return to the main menu, then select Configuration > Customisation > Theme Picker
   - Pick your theme and enjoy!
