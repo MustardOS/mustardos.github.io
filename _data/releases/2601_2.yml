@@ -51,3 +51,69 @@ changes:
   - Added overlay texture building functions
   - Added render path checking and reset functions to overlay stage
   - Added screenshot grab mode for both <code>fbdev</code> and <code>drm</code> based devices
+  - Added battery function to global functions
+  - Added battery watchdog to startup process
+  - Added device battery size and voltage lines
+  - Adjusted battery voltage percentage curves
+  - Enabled external content stage overlay support
+  - Modified battery capacity to user controlled device voltage lines
+  - Removed battery offset from advanced settings
+  - Removed offset variable and glyph from default theme
+  - Updated charging and system information with capacity updates
+  - Added activity tracker resume function
+  - Added audio mixer reset on all muX modules as a safeguard
+  - Added audio sink wait and volume save/restore functions to global
+  - Added audio sink wait for volume reset on startup
+  - Added stored volume normalisation on boot to (hopefully) avoid loud surprises on boot
+  - Added X Y render offset for device specific screens
+  - Adjusted PipeWire to mute and restore on startup
+  - Disabled content load animation for RetroArch
+  - Ensure MTP processor obtains proper variables
+  - Fixed battery overlay removal on low power change
+  - Fixed MAC changer to actually set the new MAC when processed
+  - Fixed original set on option change
+  - Fixed overdrive toggle to normalise volume on disable
+  - Fixed swap creation by checking if swap exists first
+  - Fixed threaded video saving on symlink
+  - Fixed volume limit setting with overdrive enabled
+  - Fixed web services kill process by quoting PID
+  - Fixed writing to correct overlay information file
+  - Modified capitalisation function to use awk process
+  - Modified muX execution to run audio volume restore
+  - Modified network script to only kill network processes if required
+  - Modified passphrase script to use temporary file
+  - Modified quit process to use simplified while loop instead of sequence
+  - Modified saved volume functions within PipeWire script
+  - Modified screenshot script to utilise trap for file removal
+  - Modified suspend to load all modules and wait for network reconnect
+  - Modified volume logic with values going directly to PipeWire even with overdrive
+  - Moved ALSA mixer reset into the foreground so it actually behaves when asked
+  - Moved to 44100 default frequency for Mupen64Plus emulator
+  - Optimised content search JSON processing
+  - Optimised device module load to only run module dependency if required
+  - Optimised emulator extraction on device startup
+  - Optimised global function list
+  - Optimised mount startup by waiting for SD1 and SD2 mounting only
+  - Optimised SSID search to hopefully weed out hidden network listing
+  - Optimised storage mount by reusing block identification
+  - Refactored PipeWire handling into smaller bits with improved node ID discovery
+  - Removed audio sink wait for simple PipeWire inspection
+  - Added canvas buffer and persistent canvas object for gradient rendering
+  - Added helper function for grid row count calculation
+  - Added reusable grid descriptor buffers and cached grid cell shadow style
+  - Ensure we always use a correct game controller file
+  - Fixed activity tracker box art alignment default theme
+  - Fixed activity tracker info and overview glyph path
+  - Fixed grid row calculation when column count is zero
+  - Fixed minor ALSA audio buffering issue
+  - Fixed potential null or empty image paths when creating grid items
+  - Modified gradient blur routine to use cached row pointers
+  - Modified gradient generation to use integer interpolation
+  - Modified idle handler to reduce LVGL redraw calls
+  - Optimised dithering lookup using flattened matrix calculations
+  - Optimised glyph loading with shared image embed helper
+  - Optimised grid descriptor allocation by reusing memory
+  - Removed duplicated glyph path resolution logic
+  - Removed old TrimUI Smart Pro SDL controller ID
+  - Shortened muX dimension function name
+  - Updated SDL IDs for TrimUI Smart Pro
