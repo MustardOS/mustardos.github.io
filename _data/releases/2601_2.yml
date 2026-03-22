@@ -117,3 +117,33 @@ changes:
   - Removed old TrimUI Smart Pro SDL controller ID
   - Shortened muX dimension function name
   - Updated SDL IDs for TrimUI Smart Pro
+  - Added timezone city and region alias lookup functions
+  - Fixed text alignment when wrapping caused by trailing spaces at end of line
+  - Modified overlay battery indicator to use user calibrated capacity
+  - Modified startup script to start battery watchdog before charge module
+  - Modified timezone to separate region and city selection
+  - Optimised timezone code to reduce double element creation
+  - Removed battery offset for low battery indicator
+  - Added message arborist daemon
+  - Added play sound with wait for reboot and shutdown functions
+  - Added preliminary shader support for GLES based content
+  - Fixed boot logo theme updating for RG28XX devices
+  - Modified logging process to use new arborist module
+  - Modified <code>pgrep</code> runs to get full process name
+  - Moved lid kill switch to top of halt process
+  - Removed sound preparation and play functions
+  - Added additional shaders
+  - Added swap axis and hall switch to device variables
+  - Ensure we get the saved audio volume regardless of state
+  - Modified charging module to cache hall key and blank status
+  - Modified charging module to wake screen with any button
+  - Modified startup script to reduce logging for disabled functions
+  - Moved PipeWire init to top of startup script
+  - Updated scripts to use DPAD swap and hall key device values
+  - Added battery curve calculation tool
+  - Added default battery curves to devices
+  - Added device battery curve parameters
+  - Added device defined battery curve lookup against current voltage
+  - Added parallel and threaded loaders for main muX module loader
+  - Fixed fade in and fade out functions
+  - Fixed theme download progress and extraction freezing on spam inputs
