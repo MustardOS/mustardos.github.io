@@ -147,3 +147,26 @@ changes:
   - Added parallel and threaded loaders for main muX module loader
   - Fixed fade in and fade out functions
   - Fixed theme download progress and extraction freezing on spam inputs
+  - Added automatic UI element counting from lists
+  - Added board design structure for specialised functions
+  - Added idle state write to display idle
+  - Added polled event volume key support for special devices
+  - Added SDL controller mapping overrides
+  - Added storage authenticity check script on device startup
+  - Adjusted idle timer updates to PRESS and RELEASE
+  - Fixed device field macro slow memory leak
+  - Fixed double idle inhibit file read
+  - Fixed DPAD swap not applying to button events
+  - Fixed duplicated governor read on idle
+  - Fixed low battery check against new capacity values
+  - Fixed rare screensaver dismiss deadlock
+  - Fixed <code>read_all_char_from</code> open failure memory issue
+  - Fixed TrimUI Brick brightness mapping
+  - Modified input to use board special functions
+  - Modified low power to use global idle file
+  - Moved battery watchdog to top of startup
+  - Optimised system diagnostics toolkit script
+  - Removed device raw input variables
+  - Replaced raw event input management to SDL controller
+  - Updated combo runners to support <code>exec_argv</code> and <code>exec_cmd</code>
+  - Updated hotkey runners to use MENU input
