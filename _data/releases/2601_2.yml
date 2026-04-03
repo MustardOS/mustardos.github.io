@@ -12,6 +12,7 @@ contributors:
   - antikk
   - bitter_bizarro
   - corey
+  - imcokeman
   - xonglebongle
 
 changes:
@@ -170,3 +171,59 @@ changes:
   - Replaced raw event input management to SDL controller
   - Updated combo runners to support <code>exec_argv</code> and <code>exec_cmd</code>
   - Updated hotkey runners to use MENU input
+  - Added TrimUI Smart Pro specific SDL mapping
+  - Added common download refresh poll
+  - Added device specific SDL mapping
+  - Added power and volume event listeners to board index
+  - Fixed DPAD switch and hall key variable references
+  - Fixed TrimUI Brick RetroArch input
+  - Fixed TrimUI network module reloading
+  - Modified increment values for brightness and volume
+  - Optimised network script with added interface and module waits
+  - Removed no hang up network connection processing on suspend sleep and wake
+  - Revert back to previous action processing method
+  - Added background precaching for content directories
+  - Added built-in union storage file system support
+  - Added colour feature to screensaver
+  - Added frontend specific logging to file within testing modes
+  - Added improved directory item count handling
+  - Added lid switch support to hotkey
+  - Added retry and fallback modes for controller input
+  - Added storage glyph for content options modules
+  - Changed content scanning method across storage devices
+  - Ensure we only modify DPAD swap on stickless devices
+  - Fixed union memory issues causing crashes on large lists
+  - Fixed unnecessary repeated directory scans
+  - Lowered device max voltage battery calibration
+  - Modified content options with split detail and info views
+  - Modified memory handling for directory and file lists
+  - Modified path handling and merging logic
+  - Modified PipeWire script once again to resolve intermittent volume issues
+  - Modified threading approach for scanning mounts
+  - Modified union scanning to reduce repeated work
+  - Optimised SDL output for larger resolution devices
+  - Removed UnionFS userspace module and scripts
+  - Renamed HDMI force refresh function name
+  - Reworked HDMI output functions
+  - Added content loading mount fallback to help with union migration
+  - Fixed abnormal kernel panics with TrimUI network modules
+  - Increased hotkey combo limit to fix RG40 and RGCUBE volume buttons
+  - Removed union storage name condition in search results
+  - Updated network module path for TrimUI devices
+  - Added collection hash checking
+  - Fixed content folder item count
+  - Fixed hidden content setting for union
+  - Fixed PipeWire start for HDMI audio output
+  - Fixed union directory count and generation with empty folder setting
+  - Merged image refresh routines to common function
+  - Modified ALSA state to enable hardware transmit routing
+  - Modified chrony to restart in background after network init
+  - Modified system information to display multiple CPU models
+  - Moved content search to SELECT button
+  - Moved device and mount startup earlier in process
+  - Optimised content options module with better info view
+  - Reduced udev timeout on settle
+  - Removed double confirm sound trigger on history collect
+  - Removed sleep from chrony reload
+  - Renamed default theme options glyphs
+  - Updated battery curve and max voltage
