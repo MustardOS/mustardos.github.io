@@ -1,7 +1,7 @@
-ver: "2601.2"
-code: "Midnight Jacaranda"
+ver: "2606.0"
+code: "Andromeda"
 type: progress
-pronunciation: "/ˈmɪdnaɪt ˌdʒækəˈrændə/"
+pronunciation: "/ænˈdrɒmɪdə/"
 
 note:
   - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder).
@@ -227,3 +227,56 @@ changes:
   - Removed sleep from chrony reload
   - Renamed default theme options glyphs
   - Updated battery curve and max voltage
+  - Added 1920x1080 resolution theme support
+  - Added activity play time data content deletion function
+  - Added activity tracker migration function
+  - Added async startup script loader
+  - Added Vita Pro to supported board list
+  - Added WirePlumber compatibility configurations
+  - Adjusted CPU governor setting for newer kernels
+  - Adjusted init and shutdown scripts to be uniform
+  - Ensure we exit early for factory reset checks
+  - Fixed audio balance with overdrive calculation
+  - Fixed first time installation routine
+  - Fixed Vita Pro volume input mapping
+  - Modified device and mount startup scripts to init system
+  - Modified init script to load modules earlier
+  - Moved SSH directory ownership to web services
+  - Optimised storage mount with future filesystem support
+  - Removed last union references
+  - Removed the unused search menu entry from options module
+  - Split the startup script into smaller init chunks
+  - Updated activity tracker language defines
+  - Updated Vita Pro config and control variables
+  - Added frontend screensaver delay to stop esoteric frontend race condition
+  - Added <code>navigate_to_dir</code> for centralised navigation handling
+  - Added <code>resolve_info_path</code> for unified info file resolution for functions
+  - Added run directory init on first boot
+  - Added specific debug mode evaluator for logging purposes
+  - Fixed box art loading when visual setting is set to disabled
+  - Fixed content navigation inconsistencies between grid and list views
+  - Fixed content options navigation lockup when swapping between option and info
+  - Fixed default colours for PNG boot logos
+  - Fixed focus returning to previous content directory
+  - Fixed history item removal and leftover language values
+  - Fixed hotkey lid sleep trigger
+  - Fixed issue displaying content directory options
+  - Fixed logged messages for various function related errors
+  - Fixed navigation in content options module
+  - Fixed odd row spacing in content options and content info views
+  - Fixed playtime data loading for content options module
+  - Merged network startup scripts to be an early async sysinit script
+  - Modified image and general catalogue loading with safe fallback logic
+  - Modified skip patterns to support case insensitive and directory only matches
+  - Optimised content directory navigation
+  - Optimised memory usage by removing <code>strdup</code> allocations, as much as possible
+  - Optimised skip pattern loading with lazy first initialisation
+  - Optimised variable get and set functions
+  - Reduced content options repeated code
+  - Reduced extension strips in favour of inline replacement
+  - Reduced function parsing for PipeWire init
+  - Refactored content explorer to rebuild instead of reload
+  - Removed device pointer for pass code loading
+  - Renamed specific translate define for elements
+  - Updated network module script call path
+
