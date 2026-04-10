@@ -279,4 +279,6 @@ changes:
   - Removed device pointer for pass code loading
   - Renamed specific translate define for elements
   - Updated network module script call path
-
+  - Added missing integer line read for stage overlay system
+  - Added debug reference to stage overlay system
+  - Fixed system and core logged message output
