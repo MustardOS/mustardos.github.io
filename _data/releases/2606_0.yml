@@ -282,3 +282,30 @@ changes:
   - Added missing integer line read for stage overlay system
   - Added debug reference to stage overlay system
   - Fixed system and core logged message output
+  - Added cache buckets for skip list compilation
+  - Added cached workers for union entry building and resolving
+  - Added missing global function source to SFTPGo clear script
+  - Fixed folder path restore on content quit
+  - Fixed incorrect root path loading for content explorer module
+  - Moved handheld mode and brightness restore to own init script
+  - Optimised content explorer to load content path chunks for faster resolution
+  - Removed content mount caching
+  - Updated battery curve profiles
+  - Added content explorer forward history
+  - Added forward history glyphs to default theme
+  - Added Mustard Terminal application
+  - Fixed adding to collections from Content Explorer
+  - Fixed disc images (m3u, gdi, and cue) hidden in Content Explorer
+  - Fixed terminal direct script launch
+  - Fixed terminal launching with profile and faded block sequences
+  - Fixed theme filter menu
+  - Removed disk information from fast fetch as it sometimes reduced loading
+  - Updated fast fetch logo
+  - Updated <code>mugwomp93</code> RetroArch overlays directory
+  - Added Mustard Terminal detection function
+  - Added caffeine function for application use
+  - Fixed network profile hidden SSID variable saving
+  - Modified network script to accept full subnet addresses
+  - Optimised static route network connections
+  - Removed device specific lid process
+  - Split Mustard Terminal to own repository
