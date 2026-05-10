@@ -309,3 +309,94 @@ changes:
   - Optimised static route network connections
   - Removed device specific lid process
   - Split Mustard Terminal to own repository
+  - Added amplifier initialisation for Vita Pro device
+  - Added <code>chafa</code> to common bin
+  - Added common glyph function runners
+  - Added default Mustard Terminal configuration
+  - Added font hinting check from theme on terminal execution
+  - Added headphone adjustment script to device init
+  - Added modified JetBrains mono font for CJK support
+  - Added Sixel graphics for existing theme glyphs and logo
+  - Modified DVD screensaver to hopefully reduce frontend fighting
+  - Modified terminal application to use specific size font and font hint
+  - Updated init scripts with stop start functionality
+  - Added alternative colour files to default theme
+  - Added DRM capture priming for Vita Pro screenshot grab
+  - Added external emulator launch for Mustard Terminal
+  - Added Frotz and external script support via Mustard Terminal
+  - Added hex colour parsing in overlay system
+  - Added KMS/EGL render support for stage overlay
+  - Added missing directory ownership for OpenSSH daemon
+  - Added native resolution and shader smoothing to overlay rendering
+  - Added overlay notification builder
+  - Added parent core assignments for sub folder inheritance
+  - Added raw framebuffer image splash system
+  - Added Retroarch for Vita Pro
+  - Added RGBA texture upload in overlay system
+  - Added RGB options for switching
+  - Added screensavers with preview mode in power module
+  - Added shader fragment launch support
+  - Added special device input volume mapping switch
+  - Added specific device support for terminal configuration
+  - Added stage working function for easier hot reloading in overlay system
+  - Added system splash function
+  - Added text notification support to stage overlay system
+  - Added textual notification support in overlay system
+  - Added volume ramping function
+  - Adjusted default theme RGB settings
+  - Adjust Mustard Terminal defaults and launch script
+  - Disabled default HDMI function
+  - Disabled terminal cursor blinking on boot
+  - Disabled vtcon framebuffer and cursor blink
+  - Ensure hotkey process restarts during sudden collapse
+  - Ensure Vita Pro PCM is not adjusting during audio mixer reset
+  - Fixed content option navigation sound trigger on back
+  - Fixed incorrect TrimUI brick input mapping
+  - Fixed logging length variable reference
+  - Fixed rare shutdown hangup due to dual module takedowns
+  - Fixed rotation for Vita Pro screenshots
+  - Fixed unassigned content going back to previous assigned content path on content options
+  - Modified display functionality to obtain sysfs backlight first with fallback
+  - Modified GLES texture preparation in overlay system
+  - Modified halt script to pull down init scripts and removed mount removal processes
+  - Modified internal log copying to debug mode only
+  - Modified sound values for extra dB boost
+  - Modified terminal launch scripts to use custom config path of name
+  - Modified Vita Pro default display path
+  - Moved content directory reference to global define
+  - Optimised shader fragments
+  - Removed and replaced RGB Controller application
+  - Removed rotation cache in overlay system
+  - Reverted to modprobe for TUI network module
+  - Separated hue shift buffering to independent sin+cos calculations in overlay system
+  - Separated RGB apply to focus only with X to apply settings
+  - Updated boot logo to normalise accidental hex usage and stop integer overflow
+  - Updated PPSSPP support for Vita Pro
+  - Updated RGB controller with vita ADC Joypad support
+  - Updated ScummVM to 2026.2.0
+  - Updated shader fragments
+  - Added current language to splash show
+  - Added fade out to credits and application launch
+  - Added fallback domain check and internalised dhcpcd configuration
+  - Added optional wait timer for quit script
+  - Added quit fade and fixed frontend launching issue
+  - Added root level system configurations
+  - Added Songo#5 to preinstalled applications
+  - Added special update archive extraction check
+  - Added specific device support for terminal configuration
+  - Added subtle text shadows for credit text
+  - Fixed application module grid fallback for language files
+  - Fixed device light selection and added kiosk setting
+  - Fixed first install screensaver trigger
+  - Fixed RetroArch input mapping for joypad drivers
+  - Fixed user init script execution
+  - Reduced halt script kill wait timer
+  - Updated default RGB mode variables
+  - Updated disclaimer module, media, and scripts
+  - Updated how theme RGB settings are applied
+  - Updated LED controller scripts
+  - Updated maze runner screensaver with hunting cell
+  - Updated recursive core assignment for future folder
+  - Updated RGB controller with language strings
+  - Updated RGB settings for default theme
+  - Updated supporter credits media
