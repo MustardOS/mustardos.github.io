@@ -13,6 +13,8 @@ contributors:
   - bitter_bizarro
   - corey
   - imcokeman
+  - key777
+  - mugwomp93
   - xonglebongle
 
 changes:
@@ -400,3 +402,16 @@ changes:
   - Updated RGB controller with language strings
   - Updated RGB settings for default theme
   - Updated supporter credits media
+  - Added alpha, layer, and position animation theme option for better control
+  - Added debug logging toggle to advanced options
+  - Added deprecation warning when using a compiled <code>.bin</code> font
+  - Added preinstalled custom TTF fonts and language based Noto Sans fonts
+  - Added separate theme options for independent element font sizes
+  - Added TTF font support for themes
+  - Fixed OSK numpad navigation and text field entry being set into password mode
+  - Fixed RGB left and right analogue static zone colours
+  - Fixed stage overlay code cleanup during frontend compilation
+  - Fixed touch screen affecting screen idle and suspend on Vita Pro
+  - Optimised animation rendering to be a decoupled from LVGL and be a bit more performant
+  - Optimised TTF font loading by caching the entire font file in memory
+  - Removed static compiled images and most static compiled fonts
