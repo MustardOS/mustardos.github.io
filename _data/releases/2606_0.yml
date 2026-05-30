@@ -415,3 +415,99 @@ changes:
   - Optimised animation rendering to be a decoupled from LVGL and be a bit more performant
   - Optimised TTF font loading by caching the entire font file in memory
   - Removed static compiled images and most static compiled fonts
+  - Added additional network sanitisation for SSID and password strings
+  - Added atomic writes for persistent config to prevent corruption on power loss
+  - Added automatic moving of glyph and label padding for different size images
+  - Added Azahar reference
+  - Added basic theme options module
+  - Added battery text information to visual option
+  - Added BT address info for devices
+  - Added confirmation dialogue system
+  - Added date and time validation for all values
+  - Added default font defines
+  - Added dialogue option element
+  - Added font picker module
+  - Added gate for debug messages
+  - Added Glyph Size setting to Theme Options with Default, Auto, Native and fixed sizes
+  - Added header title visibility option
+  - Added input remap system for all controllers
+  - Added JPEG support for box art images
+  - Added live navigation bar updates for active layout change
+  - Added passcode configuration module
+  - Added pass code reset to factory init
+  - Added path safety validation to content browsing modules
+  - Added PlutoSVG and PlutoVG as bundled third party libraries for SVG rendering
+  - Added preliminary BT module support
+  - Added proper muhotkey clean up handling for signal based exits
+  - Added proper SSID string escapes
+  - Added REJECT_UNSAFE_ARCHIVE to extraction scripts
+  - Added safe allocation wrappers and fixed unchecked malloc/strdup sites
+  - Added SDL game controller remap script for custom controller files
+  - Added shared function for resolving grid glyph images to reduce duplicated code
+  - Added SVG image decoder to the display system initialisation
+  - Added swap memory row hiding when no swap is configured
+  - Added symbol building for better debugging
+  - Added text cache for grid mode panels
+  - Avoid manual null termination by using snprintf
+  - Eliminated heap allocations in language translation paths
+  - Ensure font sizes do not reset on language change
+  - Fixed corrupted tiled images when SVG glyphs were upscaled
+  - Fixed divide by zero brightness integer returns
+  - Fixed first navigation sound on new modules
+  - Fixed image source loading safety
+  - Fixed input tester string being too long
+  - Fixed language font selection on languages with specific internal fonts
+  - Fixed LVGL object lifecycle safety for overlay images
+  - Fixed MAC address lookup to read sysfs directly
+  - Fixed missing fclose on error path in muxnetscan
+  - Fixed modification trust dialogue for sub menus
+  - Fixed native and multi-core building
+  - Fixed overflow reading of credits text file from picker packages
+  - Fixed passcode font context crash
+  - Fixed passcode length comparison
+  - Fixed previous selection for BT item
+  - Fixed readdir/stat race in common directory traversal functions
+  - Fixed screen resolution fallback to 640x480
+  - Fixed screensaver exit returning on all enabled modes
+  - Fixed selected font for themes and proper font fallback to internal Noto Sans
+  - Fixed shell injection risk in network info
+  - Fixed silent failure in archive download callback
+  - Fixed strdup leaks and unbound free on repeated configuration loading
+  - Fixed unbounded integer case within animation restore
+  - Fixed unchecked fgets return value in BT device module
+  - Fixed wallpaper embedding cache
+  - Hardened archive extraction path traversal
+  - Modified build flags to enable stack protection and ASLR support
+  - Modified default global config variables
+  - Modified input controller retry intervals
+  - Modified input handler to accept all device input
+  - Modified input to refer back to primary instance for specific inputs
+  - Modified passcode glyph references
+  - Modified read_all_char_from function to soft handle failures and allocation errors safely
+  - Moved input remap variable
+  - Moved safe_atoi to common share with fallback and inline static
+  - Moved USB Connectivity to advanced options
+  - Optimised BT device status change function
+  - Optimised capture state and remap closure
+  - Optimised common function and zip scripts
+  - Optimised extraction script with verbose messages
+  - Optimised language based font cache
+  - Removed input swap in favour of active input mapping for controllers
+  - Renamed custom fonts to internal fonts
+  - Replaced all strncpy calls with snprintf to guarantee null termination
+  - Replaced per file config and device reads with directory batch scanning
+  - Replaced removal toast in place of confirmation dialogue and then some
+  - Replaced sprintf calls with snprintf to enforce buffer size limits
+  - Replaced strcat calls in muxchrony with direct in-place strcpy
+  - Replaced strcpy calls on fixed-size buffers with snprintf for consistency
+  - Replaced strncpy with memcpy where partial-length copies needed exact byte counts
+  - Replaced strtok with strtok_r to eliminate state corruption
+  - Reversed hex input keyboard mapping
+  - Simplified CPU information gathering with x86 support
+  - Updated default font sizing
+  - Updated default theme with new dialogue options
+  - Updated default theme with SVG glyphs
+  - Updated default values for STICKNAV and RGB settings to 0.
+  - Updated grid view to correctly size SVG glyphs to fit within cells
+  - Updated internal text reader to cap memory use of large files
+  - Updated network and system information modules
