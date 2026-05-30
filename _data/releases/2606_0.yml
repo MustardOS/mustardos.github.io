@@ -511,3 +511,10 @@ changes:
   - Updated grid view to correctly size SVG glyphs to fit within cells
   - Updated internal text reader to cap memory use of large files
   - Updated network and system information modules
+  - Added background support for BT connection and scan polling
+  - Added background support for network connection and scan polling
+  - Added BT pair file for frontend purposes
+  - Fixed font defaults looking at existing theme scheme for size
+  - Fixed passcode previous selection
+  - Fixed theme font defaults
+  - Removed grid glyphs from default theme
