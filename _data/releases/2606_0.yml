@@ -183,7 +183,7 @@ changes:
   - Modified increment values for brightness and volume
   - Optimised network script with added interface and module waits
   - Removed no hang up network connection processing on suspend sleep and wake
-  - Revert back to previous action processing method
+  - Reverted back to previous action processing method
   - Added background precaching for content directories
   - Added built-in union storage file system support
   - Added colour feature to screensaver
@@ -518,3 +518,74 @@ changes:
   - Fixed passcode previous selection
   - Fixed theme font defaults
   - Removed grid glyphs from default theme
+  - Added additional time notation options including custom
+  - Added battery details module and updated system details modules
+  - Added battery usage tracker scripts
+  - Added BT scanning and connection locks
+  - Added catalogue image caching
+  - Added custom time notation default value
+  - Added date and time screensaver
+  - Added fade bounce animation for dialogues
+  - Added inotify tracking for screensaver and idle state changes
+  - Added long name scroll visual option
+  - Added multi network connection support with priority layering
+  - Added network information export
+  - Added optional dialogue box description text
+  - Added specific content options module and box art scale mode
+  - Added SSID scanning to all network configurations
+  - Added SVG support to catalogue
+  - Ensure network module is loaded and initialised before BT
+  - Fixed column inset for supporter credits
+  - Fixed correct format when generating boot logo
+  - Fixed friendly name lookup for individual JSON files
+  - Fixed header glyph icon load priority
+  - Fixed input mapping layout switch
+  - Fixed language download polling refresh
+  - Fixed list glyph load priority
+  - Fixed main menu grid images
+  - Fixed stupid gamecontrollerdb mapping for devices
+  - Fixed TrimUI Smart Pro volume mapping
+  - Modified core assignment to select previous chosen core and system
+  - Modified naming and casing in PortMaster references
+  - Optimised display stage memory buffering
+  - Removed superfluous hidden network option
+  - Updated font sizes for default theme
+  - Updated install messages
+  - Updated inter-module font cache
+  - Updated modules with additional dialogue sequences
+  - Updated network configuration restore script
+  - Added ability to disable box art scaling
+  - Added additional compilation protections
+  - Added atomic temp file writes for all persistent config and state files
+  - Added cap for downloaded manifest reading
+  - Added crash recovery and information dialogue
+  - Added dialogue and OSK font shadow zones
+  - Added extraction polling for theme downloads
+  - Added font shadow support
+  - Added full RELRO to binary and shared library linker flags
+  - Added INI parsing via directory with sync
+  - Added missing box art theme image padding
+  - Added network interface name validation before shell command use
+  - Added singular tag and lookup cache reading for content
+  - Added support for full screen scaling
+  - Added transitions for box art and dialogue boxes
+  - Fixed alternative TTF glyph loading crash
+  - Fixed archive extraction returns
+  - Fixed box art image reset for empty directories
+  - Fixed header glyph size
+  - Fixed help display on Vita Pro device
+  - Fixed image refresh on zero content crash
+  - Fixed single stick input testing
+  - Fixed single stick RGB setting
+  - Fixed variable array boundary for run_exec and added empty argument guards
+  - Modified default font shadow values
+  - Modified memory free checks to always release
+  - Modified splash visibility time
+  - Optimised download processes
+  - Optimised frontend and content launch scripts
+  - Optimised network profile name normalisation and guard path names
+  - Replaced sprintf with bounded snprintf for number generator
+  - Replaced strcpy calls with explicit length memcpy
+  - Updated box art scaling to be base on screen width
+  - Updated terminal script location paths
+  - Updated testing watermark
