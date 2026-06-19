@@ -589,3 +589,45 @@ changes:
   - Updated box art scaling to be base on screen width
   - Updated terminal script location paths
   - Updated testing watermark
+  - Added additional glyphs to default theme
+  - Added basic video preview support for catalogue
+  - Added BT visual status glyph
+  - Added colour temperature schedule
+  - Added ellipsis check on labels for scroll mode
+  - Added faster battery charge status change
+  - Added footer navigation bar overflow horizontal scroll
+  - Added glyph shadow rendering support
+  - Added help message transition support in line with dialogues
+  - Added libavutil version compatibility check
+  - Added schedule check for sunrise script
+  - Added screensaver halt to analogue sticks
+  - Added screenshot hue RGB adjustment option
+  - Added special board case for G350 device
+  - Added status timer tick offsets
+  - Added sunrise daemon script
+  - Added system init startup guard
+  - Added theme based glyph resizing for individual fields
+  - Added video directory creation to catalogue script
+  - Common functions split into individual chunks
+  - Ensure we keep the same grid size theme option when updating items during scroll
+  - Fixed bottom grid message vertical scrolling
+  - Fixed default value of glyph size theme option
+  - Fixed drop shadow deletions
+  - Fixed font navigation sound switch
+  - Fixed grid item visibility and adjustment on scroll
+  - Fixed nav bar setting for input remap selection
+  - Fixed navigation movement sound being played without interaction
+  - Fixed network backup and restore archive script
+  - Fixed PNG fallback using rendering hints from SVG implementation
+  - Fixed resolution redraw
+  - Fixed storage space mSD detail information
+  - Fixed sunrise init script runner
+  - Fixed transition box art not visible on collection and history modules
+  - Moved colour options to singular display temperature with schedule
+  - Moved hold button modifier to input system
+  - Optimised dialogue transition animations
+  - Reduced thread and timer overhead by consolidating status timers into a singular task
+  - Reverted to MP4 only for video previews
+  - Updated display temperature variables
+  - Updated script verification hashes
+  - Updated supporter credits music
