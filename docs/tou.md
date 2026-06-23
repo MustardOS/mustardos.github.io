@@ -80,7 +80,7 @@ devices before installation. For a list of supported hardware, please consult th
 **MustardOS/muOS** is primarily a hobby project, developed by a group of passionate individuals. While we strive to
 deliver a high-quality product, the nature of the project means that resources for support and updates may be limited.
 We encourage users to seek help from our community, which can be found on our
-official [Discord server](https://discord.gg/muos). Community support can often resolve issues faster than the
+official [Discord server](https://discord.gg/mustardos-1152022492001603615). Community support can often resolve issues faster than the
 core team, and we welcome contributions from users to improve the project.
 
 ---
