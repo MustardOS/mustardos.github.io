@@ -9,6 +9,7 @@ note:
     Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
 
 contributors:
+  - 0xada.3
   - antikk
   - artur_ditu
   - bitter_bizarro
@@ -16,7 +17,9 @@ contributors:
   - imcokeman
   - key777
   - mugwomp93
+  - saitamasahil
   - thewalruzz
+  - xikteny
   - xonglebongle
 
 changes:
@@ -633,3 +636,59 @@ changes:
   - Updated display temperature variables
   - Updated script verification hashes
   - Updated supporter credits music
+  - Added additional selection animations
+  - Added box art scale default value to disabled
+  - Added delay time for long label before scroll
+  - Added glyph icon toggle for list menus
+  - Added label scroll speed support
+  - Added label width adjustment option
+  - Added selection bounce animation style
+  - Added sunrise schedule limitations
+  - Fixed combo call for kiosk settings access
+  - Fixed font memory recall issue
+  - Fixed frontend overlay image loading
+  - Fixed glyph removal on applications and content explorer
+  - Fixed last and resume game script
+  - Fixed sunrise schedule runner
+  - Modified danger combo to hold press
+  - Modified debug logging with standard and verbose options
+  - Optimised explore content loading by removing redundant cache and per file stat calls
+  - Removed dialogue close animation to reduce dialogue ghosting
+  - Updated extra download JSON reference
+  - Added 2048 Plus to preinstalled applications
+  - Added network proxy support
+  - Added small date time and battery poll to update during active screensaver
+  - Added specific A2DP support for PipeWire initialisation
+  - Added video wallpaper and additional image support
+  - Cleaned up module functions to use void return where no value was needed
+  - Fixed allocated memory not being freed when content fails to load
+  - Fixed BT audio device disconnection hang
+  - Fixed crash dialogue box not finish animating and staying off screen
+  - Fixed default audio sink display for BT audio changeover
+  - Fixed font revert when not saving changes
+  - Fixed overlay and screenshot image views
+  - Fixed screenshot shadow issue and added single use dialogue box
+  - Fixed several small memory leaks with function calls
+  - Improved collection, history, and tag detection speed for content
+  - Modified HDMI module to hide deprecated audio switch
+  - Reduced memory usage for JSON reading during directory scanning
+  - Renamed unused nothing parameter to auto_assign for consistency
+  - Updated network script with proxy support
+  - Added BT scan timeout options to Advanced Options module
+  - Added content "Stage Overlay" toggle to Advanced Options module
+  - Added curl download timeout for download functionality
+  - Added PipeWire "Audio Suspend" toggle to Advanced Options module
+  - Added power loss detection dialogue message to module start
+  - Added stall detection to curl downloads to abort hung transfers
+  - Ensure video wallpaper stops between modules if not using global video
+  - Fixed archive invalid name slip traversal
+  - Fixed BT device scan dropping late resolved device names
+  - Fixed BT scan poll fallback timeout raised to 60 seconds
+  - Fixed first item truncated label scrolling
+  - Fixed image cache invalidated from background extraction thread
+  - Fixed PipeWire audio amplifier "pop" when waking from audio suspend
+  - Fixed rare theme download catalogue extraction crash
+  - Fixed reversed XY buttons for Drastic Advanced on TrimUI Brick
+  - Fixed theme download catalogue name path traversal check
+  - Fixed unsafe sprintf calls in download and time utils
+  - Modified console logging to alleviate stuttering on TrimUI devices
