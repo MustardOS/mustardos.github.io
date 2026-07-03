@@ -789,3 +789,4 @@ changes:
   - Fixed input remap capture trap and added duplicate control safeguards
   - Modified main menu launch to select first item instead of reloading whole module
   - Added windowed list rendering to dynamic list modules to avoid unbounded object creation on large lists
+  - Fixed removal dialogue box for various modules
