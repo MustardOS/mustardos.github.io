@@ -12,6 +12,7 @@ contributors:
   - 0xada.3
   - antikk
   - artur_ditu
+  - bgelmini
   - bitter_bizarro
   - corey
   - imcokeman
@@ -692,3 +693,98 @@ changes:
   - Fixed theme download catalogue name path traversal check
   - Fixed unsafe sprintf calls in download and time utils
   - Modified console logging to alleviate stuttering on TrimUI devices
+  - Added additional checks for BT auto connect and block manually disconnected BT devices
+  - Added audio sink refresh to capture additional devices since startup
+  - Added dynamic buffered scan lines
+  - Added timeout for BT pair/trust/connect routine
+  - Fixed audio sink selection on boot and BT device change
+  - Fixed colour temperature setting on boot
+  - Fixed entering display temperature in console mode
+  - Fixed network clearing and module loading issue for BT
+  - Fixed picker module using old deletion method
+  - General GPU and code refactor
+  - Removed HDMI audio setting
+  - Removed old HDMI audio output confusing startup init
+  - Added BT monitor daemon
+  - Added default selection animation and speed
+  - Added default variable for video wallpaper
+  - Added double buffering option to advanced settings
+  - Added glyphs to default theme
+  - Fixed network connect prioritisation
+  - Fixed network priority confusion
+  - Fixed picker deletion
+  - Fixed small texture rendering for overlapping elements
+  - Fixed status bar alpha and colour mixing
+  - Fixed sunrise sunset temp calculation
+  - Fixed swapped menu/select in PPSSPP for TrimUI Brick
+  - Modified default selection animation and speed
+  - Optimised item navigation and temporarily remove fancy animations
+  - Optimised video previews and wallpapers on separate threads
+  - Added active network change blocking
+  - Added best network profile selection
+  - Added network configuration wait and connection confirmation
+  - Added network module scan settle
+  - Added profile selection status
+  - Added specific profile loading for network
+  - Ensure connection status is refreshed and not using stale information
+  - Ensure network returns actual status codes
+  - Fixed network association confirmation
+  - Fixed network status live updates
+  - Fixed video wallpaper jitters by adding stream clamping
+  - Moved selection animation to shake with last navigation
+  - Split network status and connection fields to independent files
+  - Updated default selection style
+  - Added clearing of SDL controller mapping on module start
+  - Added scaled box art padding
+  - Added video wallpaper screensaver
+  - Added video wallpaper support for install module
+  - Ensure input remap mapping is picked up correctly
+  - Fixed BT audio sink switchover
+  - Fixed controller state reset on active layout remap switch
+  - Fixed fullscreen box art alignment
+  - Fixed goofy SDL mapping by swapping GUID remap layouts
+  - Fixed preview video not disappearing
+  - Fixed remap layout changes
+  - Added continuous BT scanning when module is open
+  - Added flying box art screensaver
+  - Added image slideshow screensaver
+  - Added polling for new BT control connections
+  - Changed BT one-time scan to return constant scan results
+  - Ensure BT device removal does not affect other paired devices
+  - Fixed Audio Output sink sync
+  - Fixed TrimUI MAC address randomisation
+  - Increased audio sink attempts for BT timeout
+  - Reduced default BT first time scan timeout
+  - Updated BT script and config source
+  - Added BT status glyph support
+  - Added full range image source for glyphs
+  - Added network scanning bounce progress bar
+  - Added placeholder box art image support
+  - Added SVG image caching
+  - Adjusted header glyph default size
+  - Ensure that a blank image preview also resets previous path
+  - Fixed box art and video preview for search results
+  - Fixed BT auto connection routine
+  - Fixed comparison check memory leak
+  - Fixed console mode audio swap detection
+  - Fixed network bringing down module after scan results
+  - Merged grid mode navigation and glyph build functions
+  - Modified audio sink to refresh regardless of state
+  - Optimised box art flyover screensaver
+  - Optimised carousel grid count function
+  - Optimised config, language, and theme loading to use a descriptor table
+  - Optimised content explorer with grouped filtered list with bsearch implementation
+  - Optimised duplicated common grid functions
+  - Optimised font loading to reduce duplicated code
+  - Optimised internal name lookup dump for first time cache
+  - Optimised item generation function for collect and history modules
+  - Optimised list navigation item regeneration
+  - Optimised lookup table structure
+  - Reverted back to BT ondemand scanning
+  - Reverted BT scan back to on-demand scanning
+  - Reverted theme compatibility
+  - Updated button mappings in Mupen for 34H
+  - Added launching content whilst video preview is playing
+  - Added missing theme gradient check
+  - Fixed input remap capture trap and added duplicate control safeguards
+  - Modified main menu launch to select first item instead of reloading whole module
