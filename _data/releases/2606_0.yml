@@ -24,769 +24,822 @@ contributors:
   - xonglebongle
 
 changes:
-  - Added brightness and volume information
-  - Added combo appending for modules
-  - Added G350 brightness adjustment
-  - Added hotkey negation option
-  - Added launch scummvm content by folder
-  - Added scheme support to activity tracker
-  - Added sending ClientID with DHCP Request
-  - Added support for weird analogue reversals for some devices
-  - Adjusted spacing formatting after input struct
-  - Fixed <code>eth0</code> not attempting DHCP
-  - Fixed analogue input codes
-  - Fixed collection and history dot file and directory visibility
-  - Fixed CPU governor saving and restore on sleep suspend
-  - Fixed false detection of invalid theme resolution
-  - Fixed left stick inversion in SDL map
-  - Fixed PPSSPP application missing XDG path set
-  - Fixed recent wake checking for lid based devices
-  - Fixed restore RetroArch Overrides task toolkit script
-  - Fixed rumble on content close
-  - Fixed subtle flashing of RetroArch menu upon suspend resume
-  - Modified hotkeys for G350 quirks
-  - Modified input init to detect device type
-  - Modified TrimUI device input daemon
-  - Moved Console Mode detection to common
-  - Optimised input tester to handle G350 quirks
-  - Renamed Console Mode file path checking
-  - Stripped line feeds from config variables
-  - Updated DHCP for more resilience
-  - Updated Retroarch mappings
-  - Removed reliance on <code>pv</code> for archive extraction
-  - Updated screenshot tool path
-  - Added attribute cache to GLES state
-  - Added overlay state cache to overlay system
-  - Added overlay texture building functions
-  - Added render path checking and reset functions to overlay stage
-  - Added screenshot grab mode for both <code>fbdev</code> and <code>drm</code> based devices
-  - Added battery function to global functions
-  - Added battery watchdog to startup process
-  - Added device battery size and voltage lines
-  - Adjusted battery voltage percentage curves
-  - Enabled external content stage overlay support
-  - Modified battery capacity to user controlled device voltage lines
-  - Removed battery offset from advanced settings
-  - Removed offset variable and glyph from default theme
-  - Updated charging and system information with capacity updates
-  - Added activity tracker resume function
-  - Added audio mixer reset on all muX modules as a safeguard
-  - Added audio sink wait and volume save/restore functions to global
-  - Added audio sink wait for volume reset on startup
-  - Added stored volume normalisation on boot to (hopefully) avoid loud surprises on boot
-  - Added X Y render offset for device specific screens
-  - Adjusted PipeWire to mute and restore on startup
-  - Disabled content load animation for RetroArch
-  - Ensure MTP processor obtains proper variables
-  - Fixed battery overlay removal on low power change
-  - Fixed MAC changer to actually set the new MAC when processed
-  - Fixed original set on option change
-  - Fixed overdrive toggle to normalise volume on disable
-  - Fixed swap creation by checking if swap exists first
-  - Fixed threaded video saving on symlink
-  - Fixed volume limit setting with overdrive enabled
-  - Fixed web services kill process by quoting PID
-  - Fixed writing to correct overlay information file
-  - Modified capitalisation function to use awk process
-  - Modified muX execution to run audio volume restore
-  - Modified network script to only kill network processes if required
-  - Modified passphrase script to use temporary file
-  - Modified quit process to use simplified while loop instead of sequence
-  - Modified saved volume functions within PipeWire script
-  - Modified screenshot script to utilise trap for file removal
-  - Modified suspend to load all modules and wait for network reconnect
-  - Modified volume logic with values going directly to PipeWire even with overdrive
-  - Moved ALSA mixer reset into the foreground so it actually behaves when asked
-  - Moved to 44100 default frequency for Mupen64Plus emulator
-  - Optimised content search JSON processing
-  - Optimised device module load to only run module dependency if required
-  - Optimised emulator extraction on device startup
-  - Optimised global function list
-  - Optimised mount startup by waiting for SD1 and SD2 mounting only
-  - Optimised SSID search to hopefully weed out hidden network listing
-  - Optimised storage mount by reusing block identification
-  - Refactored PipeWire handling into smaller bits with improved node ID discovery
-  - Removed audio sink wait for simple PipeWire inspection
-  - Added canvas buffer and persistent canvas object for gradient rendering
-  - Added helper function for grid row count calculation
-  - Added reusable grid descriptor buffers and cached grid cell shadow style
-  - Ensure we always use a correct game controller file
-  - Fixed activity tracker box art alignment default theme
-  - Fixed activity tracker info and overview glyph path
-  - Fixed grid row calculation when column count is zero
-  - Fixed minor ALSA audio buffering issue
-  - Fixed potential null or empty image paths when creating grid items
-  - Modified gradient blur routine to use cached row pointers
-  - Modified gradient generation to use integer interpolation
-  - Modified idle handler to reduce LVGL redraw calls
-  - Optimised dithering lookup using flattened matrix calculations
-  - Optimised glyph loading with shared image embed helper
-  - Optimised grid descriptor allocation by reusing memory
-  - Removed duplicated glyph path resolution logic
-  - Removed old TrimUI Smart Pro SDL controller ID
-  - Shortened muX dimension function name
-  - Updated SDL IDs for TrimUI Smart Pro
-  - Added timezone city and region alias lookup functions
-  - Fixed text alignment when wrapping caused by trailing spaces at end of line
-  - Modified overlay battery indicator to use user calibrated capacity
-  - Modified startup script to start battery watchdog before charge module
-  - Modified timezone to separate region and city selection
-  - Optimised timezone code to reduce double element creation
-  - Removed battery offset for low battery indicator
-  - Added message arborist daemon
-  - Added play sound with wait for reboot and shutdown functions
-  - Added preliminary shader support for GLES based content
-  - Fixed boot logo theme updating for RG28XX devices
-  - Modified logging process to use new arborist module
-  - Modified <code>pgrep</code> runs to get full process name
-  - Moved lid kill switch to top of halt process
-  - Removed sound preparation and play functions
-  - Added additional shaders
-  - Added swap axis and hall switch to device variables
-  - Ensure we get the saved audio volume regardless of state
-  - Modified charging module to cache hall key and blank status
-  - Modified charging module to wake screen with any button
-  - Modified startup script to reduce logging for disabled functions
-  - Moved PipeWire init to top of startup script
-  - Updated scripts to use DPAD swap and hall key device values
-  - Added battery curve calculation tool
-  - Added default battery curves to devices
-  - Added device battery curve parameters
-  - Added device defined battery curve lookup against current voltage
-  - Added parallel and threaded loaders for main muX module loader
-  - Fixed fade in and fade out functions
-  - Fixed theme download progress and extraction freezing on spam inputs
-  - Added automatic UI element counting from lists
-  - Added board design structure for specialised functions
-  - Added idle state write to display idle
-  - Added polled event volume key support for special devices
-  - Added SDL controller mapping overrides
-  - Added storage authenticity check script on device startup
-  - Adjusted idle timer updates to PRESS and RELEASE
-  - Fixed device field macro slow memory leak
-  - Fixed double idle inhibit file read
-  - Fixed DPAD swap not applying to button events
-  - Fixed duplicated governor read on idle
-  - Fixed low battery check against new capacity values
-  - Fixed rare screensaver dismiss deadlock
-  - Fixed <code>read_all_char_from</code> open failure memory issue
-  - Fixed TrimUI Brick brightness mapping
-  - Modified input to use board special functions
-  - Modified low power to use global idle file
-  - Moved battery watchdog to top of startup
-  - Optimised system diagnostics toolkit script
-  - Removed device raw input variables
-  - Replaced raw event input management to SDL controller
-  - Updated combo runners to support <code>exec_argv</code> and <code>exec_cmd</code>
-  - Updated hotkey runners to use MENU input
-  - Added TrimUI Smart Pro specific SDL mapping
-  - Added common download refresh poll
-  - Added device specific SDL mapping
-  - Added power and volume event listeners to board index
-  - Fixed DPAD switch and hall key variable references
-  - Fixed TrimUI Brick RetroArch input
-  - Fixed TrimUI network module reloading
-  - Modified increment values for brightness and volume
-  - Optimised network script with added interface and module waits
-  - Removed no hang up network connection processing on suspend sleep and wake
-  - Reverted back to previous action processing method
-  - Added background precaching for content directories
-  - Added built-in union storage file system support
-  - Added colour feature to screensaver
-  - Added frontend specific logging to file within testing modes
-  - Added improved directory item count handling
-  - Added lid switch support to hotkey
-  - Added retry and fallback modes for controller input
-  - Added storage glyph for content options modules
-  - Changed content scanning method across storage devices
-  - Ensure we only modify DPAD swap on stickless devices
-  - Fixed union memory issues causing crashes on large lists
-  - Fixed unnecessary repeated directory scans
-  - Lowered device max voltage battery calibration
-  - Modified content options with split detail and info views
-  - Modified memory handling for directory and file lists
-  - Modified path handling and merging logic
-  - Modified PipeWire script once again to resolve intermittent volume issues
-  - Modified threading approach for scanning mounts
-  - Modified union scanning to reduce repeated work
-  - Optimised SDL output for larger resolution devices
-  - Removed UnionFS userspace module and scripts
-  - Renamed HDMI force refresh function name
-  - Reworked HDMI output functions
-  - Added content loading mount fallback to help with union migration
-  - Fixed abnormal kernel panics with TrimUI network modules
-  - Increased hotkey combo limit to fix RG40 and RGCUBE volume buttons
-  - Removed union storage name condition in search results
-  - Updated network module path for TrimUI devices
-  - Added collection hash checking
-  - Fixed content folder item count
-  - Fixed hidden content setting for union
-  - Fixed PipeWire start for HDMI audio output
-  - Fixed union directory count and generation with empty folder setting
-  - Merged image refresh routines to common function
-  - Modified ALSA state to enable hardware transmit routing
-  - Modified chrony to restart in background after network init
-  - Modified system information to display multiple CPU models
-  - Moved content search to SELECT button
-  - Moved device and mount startup earlier in process
-  - Optimised content options module with better info view
-  - Reduced udev timeout on settle
-  - Removed double confirm sound trigger on history collect
-  - Removed sleep from chrony reload
-  - Renamed default theme options glyphs
-  - Updated battery curve and max voltage
   - Added 1920x1080 resolution theme support
-  - Added activity play time data content deletion function
-  - Added activity tracker migration function
-  - Added async startup script loader
-  - Added Vita Pro to supported board list
-  - Added WirePlumber compatibility configurations
-  - Adjusted CPU governor setting for newer kernels
-  - Adjusted init and shutdown scripts to be uniform
-  - Ensure we exit early for factory reset checks
-  - Fixed audio balance with overdrive calculation
-  - Fixed first time installation routine
-  - Fixed Vita Pro volume input mapping
-  - Modified device and mount startup scripts to init system
-  - Modified init script to load modules earlier
-  - Moved SSH directory ownership to web services
-  - Optimised storage mount with future filesystem support
-  - Removed last union references
-  - Removed the unused search menu entry from options module
-  - Split the startup script into smaller init chunks
-  - Updated activity tracker language defines
-  - Updated Vita Pro config and control variables
-  - Added frontend screensaver delay to stop esoteric frontend race condition
+  - Added 2048 Plus to preinstalled applications
+  - Added <code>chafa</code> to common bin
   - Added <code>navigate_to_dir</code> for centralised navigation handling
   - Added <code>resolve_info_path</code> for unified info file resolution for functions
-  - Added run directory init on first boot
-  - Added specific debug mode evaluator for logging purposes
-  - Fixed box art loading when visual setting is set to disabled
-  - Fixed content navigation inconsistencies between grid and list views
-  - Fixed content options navigation lockup when swapping between option and info
-  - Fixed default colours for PNG boot logos
-  - Fixed focus returning to previous content directory
-  - Fixed history item removal and leftover language values
-  - Fixed hotkey lid sleep trigger
-  - Fixed issue displaying content directory options
-  - Fixed logged messages for various function related errors
-  - Fixed navigation in content options module
-  - Fixed odd row spacing in content options and content info views
-  - Fixed playtime data loading for content options module
-  - Merged network startup scripts to be an early async sysinit script
-  - Modified image and general catalogue loading with safe fallback logic
-  - Modified skip patterns to support case insensitive and directory only matches
-  - Optimised content directory navigation
-  - Optimised memory usage by removing <code>strdup</code> allocations, as much as possible
-  - Optimised skip pattern loading with lazy first initialisation
-  - Optimised variable get and set functions
-  - Reduced content options repeated code
-  - Reduced extension strips in favour of inline replacement
-  - Reduced function parsing for PipeWire init
-  - Refactored content explorer to rebuild instead of reload
-  - Removed device pointer for pass code loading
-  - Renamed specific translate define for elements
-  - Updated network module script call path
-  - Added missing integer line read for stage overlay system
-  - Added debug reference to stage overlay system
-  - Fixed system and core logged message output
+  - Added ability to disable box art scaling
+  - Added active network change blocking
+  - Added activity play time data content deletion function
+  - Added activity tracker migration function
+  - Added activity tracker resume function
+  - Added additional checks for BT auto connect and block manually disconnected BT devices
+  - Added additional compilation protections
+  - Added additional counters for diagnostic purposes
+  - Added additional glyphs to default theme
+  - Added additional network sanitisation for SSID and password strings
+  - Added additional selection animations
+  - Added additional shaders
+  - Added additional time notation options including custom
+  - Added alpha, layer, and position animation theme option for better control
+  - Added alternative colour files to default theme
+  - Added amplifier initialisation for Vita Pro device
+  - Added async startup script loader
+  - Added atomic temp file writes for all persistent config and state files
+  - Added atomic writes for persistent config to prevent corruption on power loss
+  - Added attribute cache to GLES state
+  - Added audio mixer reset on all muX modules as a safeguard
+  - Added audio sink refresh to capture additional devices since startup
+  - Added audio sink wait and volume save/restore functions to global
+  - Added audio sink wait for volume reset on startup
+  - Added automatic moving of glyph and label padding for different size images
+  - Added automatic UI element counting from lists
+  - Added Azahar reference
+  - Added background precaching for content directories
+  - Added background support for BT connection and scan polling
+  - Added background support for network connection and scan polling
+  - Added basic theme options module
+  - Added basic video preview support for catalogue
+  - Added battery curve calculation tool
+  - Added battery details module and updated system details modules
+  - Added battery function to global functions
+  - Added battery text information to visual option
+  - Added battery usage tracker scripts
+  - Added battery watchdog to startup process
+  - Added best network profile selection
+  - Added blue screen screensaver
+  - Added board design structure for specialised functions
+  - Added bounce progress to BT pair checking
+  - Added box art scale default value to disabled
+  - Added box art transition and video refresh to activity view
+  - Added brightness and volume information
+  - Added BT address info for devices
+  - Added BT monitor daemon
+  - Added BT pair file for frontend purposes
+  - Added BT scanning and connection locks
+  - Added BT scan timeout options to Advanced Options module
+  - Added BT status glyph support
+  - Added BT visual status glyph
+  - Added built-in union storage file system support
   - Added cache buckets for skip list compilation
   - Added cached workers for union entry building and resolving
-  - Added missing global function source to SFTPGo clear script
-  - Fixed folder path restore on content quit
-  - Fixed incorrect root path loading for content explorer module
-  - Moved handheld mode and brightness restore to own init script
-  - Optimised content explorer to load content path chunks for faster resolution
-  - Removed content mount caching
-  - Updated battery curve profiles
-  - Added content explorer forward history
-  - Added forward history glyphs to default theme
-  - Added Mustard Terminal application
-  - Fixed adding to collections from Content Explorer
-  - Fixed disc images (m3u, gdi, and cue) hidden in Content Explorer
-  - Fixed terminal direct script launch
-  - Fixed terminal launching with profile and faded block sequences
-  - Fixed theme filter menu
-  - Removed disk information from fast fetch as it sometimes reduced loading
-  - Updated fast fetch logo
-  - Updated <code>mugwomp93</code> RetroArch overlays directory
-  - Added Mustard Terminal detection function
   - Added caffeine function for application use
-  - Fixed network profile hidden SSID variable saving
-  - Modified network script to accept full subnet addresses
-  - Optimised static route network connections
-  - Removed device specific lid process
-  - Split Mustard Terminal to own repository
-  - Added amplifier initialisation for Vita Pro device
-  - Added <code>chafa</code> to common bin
+  - Added canvas buffer and persistent canvas object for gradient rendering
+  - Added cap for downloaded manifest reading
+  - Added catalogue image caching
+  - Added clearing of SDL controller mapping on module start
+  - Added collection hash checking
+  - Added colour feature to screensaver
+  - Added colour temperature schedule
+  - Added combo appending for modules
+  - Added common download refresh poll
   - Added common glyph function runners
-  - Added default Mustard Terminal configuration
-  - Added font hinting check from theme on terminal execution
-  - Added headphone adjustment script to device init
-  - Added modified JetBrains mono font for CJK support
-  - Added Sixel graphics for existing theme glyphs and logo
-  - Modified DVD screensaver to hopefully reduce frontend fighting
-  - Modified terminal application to use specific size font and font hint
-  - Updated init scripts with stop start functionality
-  - Added alternative colour files to default theme
-  - Added DRM capture priming for Vita Pro screenshot grab
-  - Added external emulator launch for Mustard Terminal
-  - Added Frotz and external script support via Mustard Terminal
-  - Added hex colour parsing in overlay system
-  - Added KMS/EGL render support for stage overlay
-  - Added missing directory ownership for OpenSSH daemon
-  - Added native resolution and shader smoothing to overlay rendering
-  - Added overlay notification builder
-  - Added parent core assignments for sub folder inheritance
-  - Added raw framebuffer image splash system
-  - Added Retroarch for Vita Pro
-  - Added RGBA texture upload in overlay system
-  - Added RGB options for switching
-  - Added screensavers with preview mode in power module
-  - Added shader fragment launch support
-  - Added special device input volume mapping switch
-  - Added specific device support for terminal configuration
-  - Added stage working function for easier hot reloading in overlay system
-  - Added system splash function
-  - Added text notification support to stage overlay system
-  - Added textual notification support in overlay system
-  - Added volume ramping function
-  - Adjusted default theme RGB settings
-  - Adjust Mustard Terminal defaults and launch script
-  - Disabled default HDMI function
-  - Disabled terminal cursor blinking on boot
-  - Disabled vtcon framebuffer and cursor blink
-  - Ensure hotkey process restarts during sudden collapse
-  - Ensure Vita Pro PCM is not adjusting during audio mixer reset
-  - Fixed content option navigation sound trigger on back
-  - Fixed incorrect TrimUI brick input mapping
-  - Fixed logging length variable reference
-  - Fixed rare shutdown hangup due to dual module takedowns
-  - Fixed rotation for Vita Pro screenshots
-  - Fixed unassigned content going back to previous assigned content path on content options
-  - Modified display functionality to obtain sysfs backlight first with fallback
-  - Modified GLES texture preparation in overlay system
-  - Modified halt script to pull down init scripts and removed mount removal processes
-  - Modified internal log copying to debug mode only
-  - Modified sound values for extra dB boost
-  - Modified terminal launch scripts to use custom config path of name
-  - Modified Vita Pro default display path
-  - Moved content directory reference to global define
-  - Optimised shader fragments
-  - Removed and replaced RGB Controller application
-  - Removed rotation cache in overlay system
-  - Reverted to modprobe for TUI network module
-  - Separated hue shift buffering to independent sin+cos calculations in overlay system
-  - Separated RGB apply to focus only with X to apply settings
-  - Updated boot logo to normalise accidental hex usage and stop integer overflow
-  - Updated PPSSPP support for Vita Pro
-  - Updated RGB controller with vita ADC Joypad support
-  - Updated ScummVM to 2026.2.0
-  - Updated shader fragments
+  - Added confirmation dialogue system
+  - Added const to colour filter, shader, and tag modules
+  - Added content "Stage Overlay" toggle to Advanced Options module
+  - Added content explorer forward history
+  - Added content loading mount fallback to help with union migration
+  - Added continuous BT scanning when module is open
+  - Added crash recovery and information dialogue
+  - Added curl download timeout for download functionality
   - Added current language to splash show
+  - Added custom time notation default value
+  - Added date and time screensaver
+  - Added date and time validation for all values
+  - Added debug logging toggle to advanced options
+  - Added debug reference to stage overlay system
+  - Added default battery curves to devices
+  - Added default font defines
+  - Added default Mustard Terminal configuration
+  - Added default selection animation and speed
+  - Added default variable for video wallpaper
+  - Added delay time for long label before scroll
+  - Added deprecation warning when using a compiled <code>.bin</code> font
+  - Added device battery curve parameters
+  - Added device battery size and voltage lines
+  - Added device defined battery curve lookup against current voltage
+  - Added device specific SDL mapping
+  - Added dialogue and OSK font shadow zones
+  - Added dialogue option element
+  - Added double buffering option to advanced settings
+  - Added DRM capture priming for Vita Pro screenshot grab
+  - Added dynamic buffered scan lines
+  - Added ellipsis check on labels for scroll mode
+  - Added ellipsis support to dropdown option fields
+  - Added external emulator launch for Mustard Terminal
+  - Added extraction polling for theme downloads
+  - Added fade bounce animation for dialogues
   - Added fade out to credits and application launch
   - Added fallback domain check and internalised dhcpcd configuration
-  - Added optional wait timer for quit script
-  - Added quit fade and fixed frontend launching issue
-  - Added root level system configurations
-  - Added Songo#5 to preinstalled applications
-  - Added special update archive extraction check
-  - Added specific device support for terminal configuration
-  - Added subtle text shadows for credit text
-  - Fixed application module grid fallback for language files
-  - Fixed device light selection and added kiosk setting
-  - Fixed first install screensaver trigger
-  - Fixed RetroArch input mapping for joypad drivers
-  - Fixed user init script execution
-  - Reduced halt script kill wait timer
-  - Updated default RGB mode variables
-  - Updated disclaimer module, media, and scripts
-  - Updated how theme RGB settings are applied
-  - Updated LED controller scripts
-  - Updated maze runner screensaver with hunting cell
-  - Updated recursive core assignment for future folder
-  - Updated RGB controller with language strings
-  - Updated RGB settings for default theme
-  - Updated supporter credits media
-  - Added alpha, layer, and position animation theme option for better control
-  - Added debug logging toggle to advanced options
-  - Added deprecation warning when using a compiled <code>.bin</code> font
-  - Added preinstalled custom TTF fonts and language based Noto Sans fonts
-  - Added separate theme options for independent element font sizes
-  - Added TTF font support for themes
-  - Fixed OSK numpad navigation and text field entry being set into password mode
-  - Fixed RGB left and right analogue static zone colours
-  - Fixed stage overlay code cleanup during frontend compilation
-  - Fixed touch screen affecting screen idle and suspend on Vita Pro
-  - Optimised animation rendering to be a decoupled from LVGL and be a bit more performant
-  - Optimised TTF font loading by caching the entire font file in memory
-  - Removed static compiled images and most static compiled fonts
-  - Added additional network sanitisation for SSID and password strings
-  - Added atomic writes for persistent config to prevent corruption on power loss
-  - Added automatic moving of glyph and label padding for different size images
-  - Added Azahar reference
-  - Added basic theme options module
-  - Added battery text information to visual option
-  - Added BT address info for devices
-  - Added confirmation dialogue system
-  - Added date and time validation for all values
-  - Added default font defines
-  - Added dialogue option element
+  - Added faster battery charge status change
+  - Added flying box art screensaver
+  - Added font hinting check from theme on terminal execution
   - Added font picker module
+  - Added font shadow support
+  - Added footer navigation bar overflow horizontal scroll
+  - Added forward history glyphs to default theme
+  - Added frontend screensaver delay to stop esoteric frontend race condition
+  - Added frontend specific logging to file within testing modes
+  - Added Frotz and external script support via Mustard Terminal
+  - Added full range image source for glyphs
+  - Added full RELRO to binary and shared library linker flags
+  - Added G350 brightness adjustment
   - Added gate for debug messages
+  - Added glyph and image memory cache
+  - Added glyph icon toggle for list menus
+  - Added glyph shadow rendering support
   - Added Glyph Size setting to Theme Options with Default, Auto, Native and fixed sizes
+  - Added glyphs to default theme
+  - Added gradient dithering cache
   - Added header title visibility option
+  - Added headphone adjustment script to device init
+  - Added helper function for grid row count calculation
+  - Added help message transition support in line with dialogues
+  - Added hex colour parsing in overlay system
+  - Added history and collection lookup cache for content explorer
+  - Added hotkey negation option
+  - Added idle state write to display idle
+  - Added image slideshow screensaver
+  - Added improved directory item count handling
+  - Added INI parsing via directory with sync
+  - Added inotify tracking for screensaver and idle state changes
   - Added input remap system for all controllers
   - Added JPEG support for box art images
+  - Added KMS/EGL render support for stage overlay
+  - Added label scroll speed support
+  - Added label width adjustment option
+  - Added launching content whilst video preview is playing
+  - Added launch scummvm content by folder
+  - Added libavutil version compatibility check
+  - Added lid switch support to hotkey
   - Added live navigation bar updates for active layout change
+  - Added long name scroll visual option
+  - Added message arborist daemon
+  - Added missing box art theme image padding
+  - Added missing directory ownership for OpenSSH daemon
+  - Added missing global function source to SFTPGo clear script
+  - Added missing image text for empty slideshow screensaver
+  - Added missing integer line read for stage overlay system
+  - Added missing theme gradient check
+  - Added modified JetBrains mono font for CJK support
+  - Added multi network connection support with priority layering
+  - Added Mustard Terminal application
+  - Added Mustard Terminal detection function
+  - Added native resolution and shader smoothing to overlay rendering
+  - Added network configuration wait and connection confirmation
+  - Added network information export
+  - Added network interface name validation before shell command use
+  - Added network module scan settle
+  - Added network proxy support
+  - Added network scanning bounce progress bar
+  - Added optional dialogue box description text
+  - Added optional wait timer for quit script
+  - Added overlay notification builder
+  - Added overlay state cache to overlay system
+  - Added overlay texture building functions
+  - Added parallel and threaded loaders for main muX module loader
+  - Added parent core assignments for sub folder inheritance
   - Added passcode configuration module
   - Added pass code reset to factory init
   - Added path safety validation to content browsing modules
+  - Added PipeWire "Audio Suspend" toggle to Advanced Options module
+  - Added placeholder box art image support
+  - Added play sound with wait for reboot and shutdown functions
   - Added PlutoSVG and PlutoVG as bundled third party libraries for SVG rendering
+  - Added polled event volume key support for special devices
+  - Added polling for new BT control connections
+  - Added power and volume event listeners to board index
+  - Added power loss detection dialogue message to module start
+  - Added preinstalled custom TTF fonts and language based Noto Sans fonts
   - Added preliminary BT module support
+  - Added preliminary shader support for GLES based content
+  - Added profile selection status
+  - Added progress bar bounce to content search module
   - Added proper muhotkey clean up handling for signal based exits
   - Added proper SSID string escapes
+  - Added quit fade and fixed frontend launching issue
+  - Added raw framebuffer image splash system
   - Added REJECT_UNSAFE_ARCHIVE to extraction scripts
+  - Added render path checking and reset functions to overlay stage
+  - Added Retroarch for Vita Pro
+  - Added retry and fallback modes for controller input
+  - Added reusable grid descriptor buffers and cached grid cell shadow style
+  - Added RGBA texture upload in overlay system
+  - Added RGB backend powered check
+  - Added RGB options for switching
+  - Added RGB state loading with safe backend checking
+  - Added root level system configurations
+  - Added run directory init on first boot
   - Added safe allocation wrappers and fixed unchecked malloc/strdup sites
+  - Added scaled box art padding
+  - Added schedule check for sunrise script
+  - Added scheme support to activity tracker
+  - Added screensaver halt to analogue sticks
+  - Added screensavers with preview mode in power module
+  - Added screenshot grab mode for both <code>fbdev</code> and <code>drm</code> based devices
+  - Added screenshot hue RGB adjustment option
+  - Added SDL controller mapping overrides
   - Added SDL game controller remap script for custom controller files
+  - Added selection bounce animation style
+  - Added sending ClientID with DHCP Request
+  - Added separate launch item registry
+  - Added separate theme options for independent element font sizes
+  - Added shader fragment launch support
   - Added shared function for resolving grid glyph images to reduce duplicated code
+  - Added singular tag and lookup cache reading for content
+  - Added Sixel graphics for existing theme glyphs and logo
+  - Added small date time and battery poll to update during active screensaver
+  - Added Songo#5 to preinstalled applications
+  - Added special board case for G350 device
+  - Added special device input volume mapping switch
+  - Added special update archive extraction check
+  - Added specific A2DP support for PipeWire initialisation
+  - Added specific content options module and box art scale mode
+  - Added specific debug mode evaluator for logging purposes
+  - Added specific device support for terminal configuration
+  - Added specific profile loading for network
+  - Added SSID scanning to all network configurations
+  - Added stage working function for easier hot reloading in overlay system
+  - Added stall detection to curl downloads to abort hung transfers
+  - Added status timer tick offsets
+  - Added storage authenticity check script on device startup
+  - Added storage glyph for content options modules
+  - Added stored volume normalisation on boot to (hopefully) avoid loud surprises on boot
+  - Added subtle text shadows for credit text
+  - Added sunrise daemon script
+  - Added sunrise schedule limitations
+  - Added support for full screen scaling
+  - Added support for weird analogue reversals for some devices
+  - Added SVG image caching
   - Added SVG image decoder to the display system initialisation
+  - Added SVG support to catalogue
+  - Added swap axis and hall switch to device variables
   - Added swap memory row hiding when no swap is configured
   - Added symbol building for better debugging
+  - Added system init startup guard
+  - Added system splash function
   - Added text cache for grid mode panels
+  - Added text notification support to stage overlay system
+  - Added textual notification support in overlay system
+  - Added theme based glyph resizing for individual fields
+  - Added theme scheme cache
+  - Added timeout for BT pair/trust/connect routine
+  - Added timezone city and region alias lookup functions
+  - Added transitions for box art and dialogue boxes
+  - Added TrimUI Smart Pro specific SDL mapping
+  - Added TTF font support for themes
+  - Added video directory creation to catalogue script
+  - Added video wallpaper and additional image support
+  - Added video wallpaper screensaver
+  - Added video wallpaper support for install module
+  - Added Vita Pro to supported board list
+  - Added volume ramping function
+  - Added windowed list rendering to dynamic list modules to avoid unbounded object creation on large lists
+  - Added WirePlumber compatibility configurations
+  - Added X Y render offset for device specific screens
+  - Adjusted battery voltage percentage curves
+  - Adjusted CPU governor setting for newer kernels
+  - Adjusted default theme RGB settings
+  - Adjusted header glyph default size
+  - Adjusted idle timer updates to PRESS and RELEASE
+  - Adjusted init and shutdown scripts to be uniform
+  - Adjusted PipeWire to mute and restore on startup
+  - Adjusted spacing formatting after input struct
+  - Adjust Mustard Terminal defaults and launch script
   - Avoid manual null termination by using snprintf
+  - Changed BT one-time scan to return constant scan results
+  - Changed content scanning method across storage devices
+  - Cleaned up module functions to use void return where no value was needed
+  - Common functions split into individual chunks
+  - Consolidated additional repeated code for list based modules
+  - Consolidated and split repeated code across smaller functions
+  - Consolidated archive download path resolving
+  - Consolidated artwork name resolving
+  - Consolidated BT MAC override path functions
+  - Consolidated configuration module submenu entries
+  - Consolidated content marker generation
+  - Consolidated grid navigation modes
+  - Consolidated repeated dialogue functions
+  - Consolidated repeated network functions
+  - Consolidated similar navigation glyph change functions
+  - Consolidated text rendering for credits and disclaimer modules
+  - Consolidated theme preview functions
+  - Disabled content load animation for RetroArch
+  - Disabled default HDMI function
+  - Disabled terminal cursor blinking on boot
+  - Disabled vtcon framebuffer and cursor blink
   - Eliminated heap allocations in language translation paths
+  - Enabled external content stage overlay support
+  - Ensure BT device removal does not affect other paired devices
+  - Ensure connection status is refreshed and not using stale information
   - Ensure font sizes do not reset on language change
+  - Ensure hotkey process restarts during sudden collapse
+  - Ensure input remap mapping is picked up correctly
+  - Ensure MTP processor obtains proper variables
+  - Ensure network module is loaded and initialised before BT
+  - Ensure network returns actual status codes
+  - Ensure progress bars last value is reset as to not block new progress markers
+  - Ensure that a blank image preview also resets previous path
+  - Ensure video wallpaper stops between modules if not using global video
+  - Ensure Vita Pro PCM is not adjusting during audio mixer reset
+  - Ensure we always use a correct game controller file
+  - Ensure we exit early for factory reset checks
+  - Ensure we get the saved audio volume regardless of state
+  - Ensure we keep the same grid size theme option when updating items during scroll
+  - Ensure we only modify DPAD swap on stickless devices
+  - Fixed <code>eth0</code> not attempting DHCP
+  - Fixed <code>read_all_char_from</code> open failure memory issue
+  - Fixed abnormal kernel panics with TrimUI network modules
+  - Fixed activity tracker box art alignment default theme
+  - Fixed activity tracker info and overview glyph path
+  - Fixed adding to collections from Content Explorer
+  - Fixed allocated memory not being freed when content fails to load
+  - Fixed alternative TTF glyph loading crash
+  - Fixed analogue input codes
+  - Fixed application module grid fallback for language files
+  - Fixed archive extraction returns
+  - Fixed archive invalid name slip traversal
+  - Fixed audio balance with overdrive calculation
+  - Fixed audio finalising for audio initialisation
+  - Fixed Audio Output sink sync
+  - Fixed audio sink selection on boot and BT device change
+  - Fixed battery overlay removal on low power change
+  - Fixed boot logo theme updating for RG28XX devices
+  - Fixed bottom grid message vertical scrolling
+  - Fixed box art and video preview for search results
+  - Fixed box art image reset for empty directories
+  - Fixed box art loading when visual setting is set to disabled
+  - Fixed BT audio device disconnection hang
+  - Fixed BT audio sink switchover
+  - Fixed BT auto connection routine
+  - Fixed BT device scan dropping late resolved device names
+  - Fixed BT pair checking on first load
+  - Fixed BT scan poll fallback timeout raised to 60 seconds
+  - Fixed collection and history dot file and directory visibility
+  - Fixed colour temperature setting on boot
+  - Fixed column inset for supporter credits
+  - Fixed combo call for kiosk settings access
+  - Fixed comparison check memory leak
+  - Fixed console mode audio swap detection
+  - Fixed content folder item count
+  - Fixed content navigation inconsistencies between grid and list views
+  - Fixed content option navigation sound trigger on back
+  - Fixed content options navigation lockup when swapping between option and info
+  - Fixed content options navigation sound
+  - Fixed controller state reset on active layout remap switch
+  - Fixed correct format when generating boot logo
   - Fixed corrupted tiled images when SVG glyphs were upscaled
+  - Fixed CPU governor saving and restore on sleep suspend
+  - Fixed crash dialogue box not finish animating and staying off screen
+  - Fixed default audio sink display for BT audio changeover
+  - Fixed default colours for PNG boot logos
+  - Fixed default value of glyph size theme option
+  - Fixed device field macro slow memory leak
+  - Fixed device light selection and added kiosk setting
+  - Fixed disc images (m3u, gdi, and cue) hidden in Content Explorer
   - Fixed divide by zero brightness integer returns
+  - Fixed double idle inhibit file read
+  - Fixed DPAD swap not applying to button events
+  - Fixed DPAD switch and hall key variable references
+  - Fixed drop shadow deletions
+  - Fixed duplicated governor read on idle
+  - Fixed duplicated line building for logging system
+  - Fixed entering display temperature in console mode
+  - Fixed fade in and fade out functions
+  - Fixed false detection of invalid theme resolution
+  - Fixed first install screensaver trigger
+  - Fixed first item truncated label scrolling
   - Fixed first navigation sound on new modules
+  - Fixed first time installation routine
+  - Fixed focus returning to previous content directory
+  - Fixed folder path restore on content quit
+  - Fixed font defaults looking at existing theme scheme for size
+  - Fixed font memory recall issue
+  - Fixed font navigation sound switch
+  - Fixed font revert when not saving changes
+  - Fixed friendly name lookup for individual JSON files
+  - Fixed frontend overlay image loading
+  - Fixed fullscreen box art alignment
+  - Fixed glyph removal on applications and content explorer
+  - Fixed goofy SDL mapping by swapping GUID remap layouts
+  - Fixed grid item visibility and adjustment on scroll
+  - Fixed grid row calculation when column count is zero
+  - Fixed header glyph icon load priority
+  - Fixed header glyph size
+  - Fixed help display on Vita Pro device
+  - Fixed hidden content setting for union
+  - Fixed history item removal and leftover language values
+  - Fixed hotkey lid sleep trigger
+  - Fixed image cache invalidated from background extraction thread
+  - Fixed image refresh on zero content crash
   - Fixed image source loading safety
+  - Fixed incorrect root path loading for content explorer module
+  - Fixed incorrect TrimUI brick input mapping
+  - Fixed input mapping layout switch
+  - Fixed input remap capture trap and added duplicate control safeguards
   - Fixed input tester string being too long
+  - Fixed issue displaying content directory options
+  - Fixed language download polling refresh
   - Fixed language font selection on languages with specific internal fonts
+  - Fixed last and resume game script
+  - Fixed left stick inversion in SDL map
+  - Fixed list glyph load priority
+  - Fixed logged messages for various function related errors
+  - Fixed logging length variable reference
+  - Fixed low battery check against new capacity values
   - Fixed LVGL object lifecycle safety for overlay images
   - Fixed MAC address lookup to read sysfs directly
+  - Fixed MAC changer to actually set the new MAC when processed
+  - Fixed main menu grid images
+  - Fixed minor ALSA audio buffering issue
   - Fixed missing fclose on error path in muxnetscan
   - Fixed modification trust dialogue for sub menus
+  - Fixed muted navigation sound on first open
   - Fixed native and multi-core building
+  - Fixed nav bar setting for input remap selection
+  - Fixed navigation in content options module
+  - Fixed navigation movement sound being played without interaction
+  - Fixed network association confirmation
+  - Fixed network backup and restore archive script
+  - Fixed network bringing down module after scan results
+  - Fixed network clearing and module loading issue for BT
+  - Fixed network connection status after incorrect auth check
+  - Fixed network connect prioritisation
+  - Fixed network priority confusion
+  - Fixed network profile hidden SSID variable saving
+  - Fixed network status live updates
+  - Fixed odd row spacing in content options and content info views
+  - Fixed original set on option change
+  - Fixed OSK numpad navigation and text field entry being set into password mode
+  - Fixed overdrive toggle to normalise volume on disable
   - Fixed overflow reading of credits text file from picker packages
+  - Fixed overlay and screenshot image views
+  - Fixed overlay index offset during HDMI usage
   - Fixed passcode font context crash
   - Fixed passcode length comparison
+  - Fixed passcode previous selection
+  - Fixed picker deletion
+  - Fixed picker module using old deletion method
+  - Fixed PipeWire audio amplifier "pop" when waking from audio suspend
+  - Fixed PipeWire start for HDMI audio output
+  - Fixed playtime data loading for content options module
+  - Fixed PNG fallback using rendering hints from SVG implementation
+  - Fixed potential null or empty image paths when creating grid items
+  - Fixed PPSSPP application missing XDG path set
+  - Fixed preview video not disappearing
   - Fixed previous selection for BT item
+  - Fixed rare screensaver dismiss deadlock
+  - Fixed rare shutdown hangup due to dual module takedowns
+  - Fixed rare theme download catalogue extraction crash
   - Fixed readdir/stat race in common directory traversal functions
+  - Fixed recent wake checking for lid based devices
+  - Fixed remap layout changes
+  - Fixed removal dialogue box for various modules
+  - Fixed reset dialogue box button
+  - Fixed resolution redraw
+  - Fixed restore RetroArch Overrides task toolkit script
+  - Fixed RetroArch input mapping for joypad drivers
+  - Fixed reversed XY buttons for Drastic Advanced on TrimUI Brick
+  - Fixed RGB left and right analogue static zone colours
+  - Fixed rotation for Vita Pro screenshots
+  - Fixed rumble on content close
+  - Fixed saving item to collections from content explorer
   - Fixed screen resolution fallback to 640x480
   - Fixed screensaver exit returning on all enabled modes
+  - Fixed screenshot shadow issue and added single use dialogue box
   - Fixed selected font for themes and proper font fallback to internal Noto Sans
+  - Fixed several small memory leaks with function calls
   - Fixed shell injection risk in network info
   - Fixed silent failure in archive download callback
+  - Fixed single stick input testing
+  - Fixed single stick RGB setting
+  - Fixed small texture rendering for overlapping elements
+  - Fixed stage overlay code cleanup during frontend compilation
+  - Fixed status bar alpha and colour mixing
+  - Fixed storage space mSD detail information
   - Fixed strdup leaks and unbound free on repeated configuration loading
+  - Fixed stupid gamecontrollerdb mapping for devices
+  - Fixed subtle flashing of RetroArch menu upon suspend resume
+  - Fixed sunrise init script runner
+  - Fixed sunrise schedule runner
+  - Fixed sunrise sunset temp calculation
+  - Fixed swap creation by checking if swap exists first
+  - Fixed swapped menu/select in PPSSPP for TrimUI Brick
+  - Fixed system and core logged message output
+  - Fixed terminal direct script launch
+  - Fixed terminal launching with profile and faded block sequences
+  - Fixed text alignment when wrapping caused by trailing spaces at end of line
+  - Fixed theme download catalogue name path traversal check
+  - Fixed theme download progress and extraction freezing on spam inputs
+  - Fixed theme filter menu
+  - Fixed theme font defaults
+  - Fixed threaded video saving on symlink
+  - Fixed touch screen affecting screen idle and suspend on Vita Pro
+  - Fixed transition box art not visible on collection and history modules
+  - Fixed TrimUI Brick brightness mapping
+  - Fixed TrimUI Brick RetroArch input
+  - Fixed TrimUI MAC address randomisation
+  - Fixed TrimUI network module reloading
+  - Fixed TrimUI Smart Pro volume mapping
+  - Fixed unassigned content going back to previous assigned content path on content options
   - Fixed unbounded integer case within animation restore
   - Fixed unchecked fgets return value in BT device module
+  - Fixed union directory count and generation with empty folder setting
+  - Fixed union memory issues causing crashes on large lists
+  - Fixed unnecessary repeated directory scans
+  - Fixed unsafe sprintf calls in download and time utils
+  - Fixed user init script execution
+  - Fixed variable array boundary for run_exec and added empty argument guards
+  - Fixed video wallpaper jitters by adding stream clamping
+  - Fixed Vita Pro volume input mapping
+  - Fixed volume limit setting with overdrive enabled
   - Fixed wallpaper embedding cache
+  - Fixed web services kill process by quoting PID
+  - Fixed writing to correct overlay information file
+  - General GPU and code refactor
   - Hardened archive extraction path traversal
+  - Improved collection, history, and tag detection speed for content
+  - Increased audio sink attempts for BT timeout
+  - Increased hotkey combo limit to fix RG40 and RGCUBE volume buttons
+  - Lowered device max voltage battery calibration
+  - Merged grid mode navigation and glyph build functions
+  - Merged image refresh routines to common function
+  - Merged menu entry visibility to single define usage
+  - Merged network startup scripts to be an early async sysinit script
+  - Modified <code>pgrep</code> runs to get full process name
+  - Modified ALSA state to enable hardware transmit routing
+  - Modified audio sink to refresh regardless of state
+  - Modified battery capacity to user controlled device voltage lines
   - Modified build flags to enable stack protection and ASLR support
+  - Modified capitalisation function to use awk process
+  - Modified charging module to cache hall key and blank status
+  - Modified charging module to wake screen with any button
+  - Modified chrony to restart in background after network init
+  - Modified console logging to alleviate stuttering on TrimUI devices
+  - Modified content options with split detail and info views
+  - Modified core assignment to select previous chosen core and system
+  - Modified danger combo to hold press
+  - Modified debug logging with standard and verbose options
+  - Modified default font shadow values
   - Modified default global config variables
+  - Modified default selection animation and speed
+  - Modified device and mount startup scripts to init system
+  - Modified display functionality to obtain sysfs backlight first with fallback
+  - Modified DVD screensaver to hopefully reduce frontend fighting
+  - Modified GLES texture preparation in overlay system
+  - Modified gradient blur routine to use cached row pointers
+  - Modified gradient generation to use integer interpolation
+  - Modified halt script to pull down init scripts and removed mount removal processes
+  - Modified HDMI module to hide deprecated audio switch
+  - Modified hotkeys for G350 quirks
+  - Modified idle handler to reduce LVGL redraw calls
+  - Modified image and general catalogue loading with safe fallback logic
+  - Modified image scaling to compute bounds outside pixel loop for box art and wallpaper
+  - Modified increment values for brightness and volume
+  - Modified init script to load modules earlier
   - Modified input controller retry intervals
   - Modified input handler to accept all device input
+  - Modified input init to detect device type
   - Modified input to refer back to primary instance for specific inputs
+  - Modified input to use board special functions
+  - Modified internal log copying to debug mode only
+  - Modified logging process to use new arborist module
+  - Modified low power to use global idle file
+  - Modified main menu launch to select first item instead of reloading whole module
+  - Modified memory free checks to always release
+  - Modified memory handling for directory and file lists
+  - Modified muX execution to run audio volume restore
+  - Modified naming and casing in PortMaster references
+  - Modified network script to accept full subnet addresses
+  - Modified network script to only kill network processes if required
+  - Modified overlay battery indicator to use user calibrated capacity
   - Modified passcode glyph references
+  - Modified passphrase script to use temporary file
+  - Modified path handling and merging logic
+  - Modified PipeWire script once again to resolve intermittent volume issues
+  - Modified power loss reset confirm message
+  - Modified quit process to use simplified while loop instead of sequence
   - Modified read_all_char_from function to soft handle failures and allocation errors safely
+  - Modified saved volume functions within PipeWire script
+  - Modified screenshot script to utilise trap for file removal
+  - Modified skip patterns to support case insensitive and directory only matches
+  - Modified sound values for extra dB boost
+  - Modified splash visibility time
+  - Modified startup script to reduce logging for disabled functions
+  - Modified startup script to start battery watchdog before charge module
+  - Modified suspend to load all modules and wait for network reconnect
+  - Modified system information to display multiple CPU models
+  - Modified terminal application to use specific size font and font hint
+  - Modified terminal launch scripts to use custom config path of name
+  - Modified threading approach for scanning mounts
+  - Modified timezone to separate region and city selection
+  - Modified TrimUI device input daemon
+  - Modified union scanning to reduce repeated work
+  - Modified Vita Pro default display path
+  - Modified volume logic with values going directly to PipeWire even with overdrive
+  - Moved ALSA mixer reset into the foreground so it actually behaves when asked
+  - Moved battery watchdog to top of startup
+  - Moved colour options to singular display temperature with schedule
+  - Moved Console Mode detection to common
+  - Moved content directory reference to global define
+  - Moved content search to SELECT button
+  - Moved device and mount startup earlier in process
+  - Moved handheld mode and brightness restore to own init script
+  - Moved hold button modifier to input system
   - Moved input remap variable
+  - Moved LED control change for charge mode detection
+  - Moved lid kill switch to top of halt process
+  - Moved PipeWire init to top of startup script
   - Moved safe_atoi to common share with fallback and inline static
+  - Moved selection animation to shake with last navigation
+  - Moved SSH directory ownership to web services
+  - Moved to 44100 default frequency for Mupen64Plus emulator
   - Moved USB Connectivity to advanced options
+  - Optimised advanced option define usage
+  - Optimised animation rendering to be a decoupled from LVGL and be a bit more performant
+  - Optimised box art flyover screensaver
   - Optimised BT device status change function
   - Optimised capture state and remap closure
+  - Optimised carousel grid count function
   - Optimised common function and zip scripts
+  - Optimised config, language, and theme loading to use a descriptor table
+  - Optimised content directory navigation
+  - Optimised content explorer to load content path chunks for faster resolution
+  - Optimised content explorer with grouped filtered list with bsearch implementation
+  - Optimised content options module with better info view
+  - Optimised content search JSON processing
+  - Optimised device module load to only run module dependency if required
+  - Optimised dialogue transition animations
+  - Optimised display stage memory buffering
+  - Optimised dithering lookup using flattened matrix calculations
+  - Optimised download processes
+  - Optimised duplicated common grid functions
+  - Optimised emulator extraction on device startup
+  - Optimised explore content loading by removing redundant cache and per file stat calls
   - Optimised extraction script with verbose messages
+  - Optimised font loading to reduce duplicated code
+  - Optimised frontend and content launch scripts
+  - Optimised global function list
+  - Optimised glyph loading with shared image embed helper
+  - Optimised grid descriptor allocation by reusing memory
+  - Optimised hotkey combo match reading
+  - Optimised input tester to handle G350 quirks
+  - Optimised internal name lookup dump for first time cache
+  - Optimised item generation function for collect and history modules
+  - Optimised item navigation and temporarily remove fancy animations
   - Optimised language based font cache
+  - Optimised list navigation item regeneration
+  - Optimised lookup table structure
+  - Optimised memory usage by removing <code>strdup</code> allocations, as much as possible
+  - Optimised mount startup by waiting for SD1 and SD2 mounting only
+  - Optimised network profile name normalisation and guard path names
+  - Optimised network script with added interface and module waits
+  - Optimised RGB module with option visibility define
+  - Optimised SDL output for larger resolution devices
+  - Optimised shader fragments
+  - Optimised skip pattern loading with lazy first initialisation
+  - Optimised SSID search to hopefully weed out hidden network listing
+  - Optimised static route network connections
+  - Optimised storage mount by reusing block identification
+  - Optimised storage mount with future filesystem support
+  - Optimised SVG rendering by avoiding per pixel division
+  - Optimised system diagnostics toolkit script
+  - Optimised timezone code to reduce double element creation
+  - Optimised TTF font loading by caching the entire font file in memory
+  - Optimised variable get and set functions
+  - Optimised video previews and wallpapers on separate threads
+  - Reduced content options repeated code
+  - Reduced default BT first time scan timeout
+  - Reduced extension strips in favour of inline replacement
+  - Reduced function parsing for PipeWire init
+  - Reduced halt script kill wait timer
+  - Reduced memory usage for JSON reading during directory scanning
+  - Reduced thread and timer overhead by consolidating status timers into a singular task
+  - Reduced udev timeout on settle
+  - Refactored content explorer to rebuild instead of reload
+  - Refactored PipeWire handling into smaller bits with improved node ID discovery
+  - Removed and replaced RGB Controller application
+  - Removed audio sink wait for simple PipeWire inspection
+  - Removed battery offset for low battery indicator
+  - Removed battery offset from advanced settings
+  - Removed content mount caching
+  - Removed device pointer for pass code loading
+  - Removed device raw input variables
+  - Removed device specific lid process
+  - Removed dialogue close animation to reduce dialogue ghosting
+  - Removed disk information from fast fetch as it sometimes reduced loading
+  - Removed double confirm sound trigger on history collect
+  - Removed duplicated glyph path resolution logic
+  - Removed grid glyphs from default theme
+  - Removed HDMI audio setting
   - Removed input swap in favour of active input mapping for controllers
+  - Removed last union references
+  - Removed no hang up network connection processing on suspend sleep and wake
+  - Removed offset variable and glyph from default theme
+  - Removed old HDMI audio output confusing startup init
+  - Removed old TrimUI Smart Pro SDL controller ID
+  - Removed reliance on <code>pv</code> for archive extraction
+  - Removed rotation cache in overlay system
+  - Removed sleep from chrony reload
+  - Removed sound preparation and play functions
+  - Removed static compiled images and most static compiled fonts
+  - Removed superfluous hidden network option
+  - Removed the unused search menu entry from options module
+  - Removed UnionFS userspace module and scripts
+  - Removed union storage name condition in search results
+  - Removed unused dialogue save functions
+  - Renamed Console Mode file path checking
   - Renamed custom fonts to internal fonts
+  - Renamed default theme options glyphs
+  - Renamed HDMI force refresh function name
+  - Renamed specific translate define for elements
+  - Renamed unused nothing parameter to auto_assign for consistency
   - Replaced all strncpy calls with snprintf to guarantee null termination
   - Replaced per file config and device reads with directory batch scanning
+  - Replaced raw event input management to SDL controller
   - Replaced removal toast in place of confirmation dialogue and then some
   - Replaced sprintf calls with snprintf to enforce buffer size limits
+  - Replaced sprintf with bounded snprintf for number generator
   - Replaced strcat calls in muxchrony with direct in-place strcpy
   - Replaced strcpy calls on fixed-size buffers with snprintf for consistency
+  - Replaced strcpy calls with explicit length memcpy
   - Replaced strncpy with memcpy where partial-length copies needed exact byte counts
   - Replaced strtok with strtok_r to eliminate state corruption
+  - Reused existing string trim function for battery info
+  - Reused existing string trim function for colour temp
   - Reversed hex input keyboard mapping
+  - Reverted back to BT ondemand scanning
+  - Reverted back to previous action processing method
+  - Reverted BT scan back to on-demand scanning
+  - Reverted theme compatibility
+  - Reverted to modprobe for TUI network module
+  - Reverted to MP4 only for video previews
+  - Reworked HDMI output functions
+  - Separated hue shift buffering to independent sin+cos calculations in overlay system
+  - Separated RGB apply to focus only with X to apply settings
+  - Shortened muX dimension function name
   - Simplified CPU information gathering with x86 support
+  - Split cached image refresh into smaller function chunks
+  - Split content item generation into smaller function chunks
+  - Split general settings sub menu and option handlers
+  - Split Mustard Terminal to own repository
+  - Split network status and connection fields to independent files
+  - Split the startup script into smaller init chunks
+  - Stripped line feeds from config variables
+  - Updated <code>mugwomp93</code> RetroArch overlays directory
+  - Updated activity tracker language defines
+  - Updated battery curve and max voltage
+  - Updated battery curve profiles
+  - Updated blue screen screensaver strings
+  - Updated boot logo to normalise accidental hex usage and stop integer overflow
+  - Updated box art scaling to be base on screen width
+  - Updated BT script and config source
+  - Updated button mappings in Mupen for 34H
+  - Updated charging and system information with capacity updates
+  - Updated combo runners to support <code>exec_argv</code> and <code>exec_cmd</code>
   - Updated default font sizing
+  - Updated default RGB mode variables
+  - Updated default selection style
   - Updated default theme with new dialogue options
   - Updated default theme with SVG glyphs
   - Updated default values for STICKNAV and RGB settings to 0.
-  - Updated grid view to correctly size SVG glyphs to fit within cells
-  - Updated internal text reader to cap memory use of large files
-  - Updated network and system information modules
-  - Added background support for BT connection and scan polling
-  - Added background support for network connection and scan polling
-  - Added BT pair file for frontend purposes
-  - Fixed font defaults looking at existing theme scheme for size
-  - Fixed passcode previous selection
-  - Fixed theme font defaults
-  - Removed grid glyphs from default theme
-  - Added additional time notation options including custom
-  - Added battery details module and updated system details modules
-  - Added battery usage tracker scripts
-  - Added BT scanning and connection locks
-  - Added catalogue image caching
-  - Added custom time notation default value
-  - Added date and time screensaver
-  - Added fade bounce animation for dialogues
-  - Added inotify tracking for screensaver and idle state changes
-  - Added long name scroll visual option
-  - Added multi network connection support with priority layering
-  - Added network information export
-  - Added optional dialogue box description text
-  - Added specific content options module and box art scale mode
-  - Added SSID scanning to all network configurations
-  - Added SVG support to catalogue
-  - Ensure network module is loaded and initialised before BT
-  - Fixed column inset for supporter credits
-  - Fixed correct format when generating boot logo
-  - Fixed friendly name lookup for individual JSON files
-  - Fixed header glyph icon load priority
-  - Fixed input mapping layout switch
-  - Fixed language download polling refresh
-  - Fixed list glyph load priority
-  - Fixed main menu grid images
-  - Fixed stupid gamecontrollerdb mapping for devices
-  - Fixed TrimUI Smart Pro volume mapping
-  - Modified core assignment to select previous chosen core and system
-  - Modified naming and casing in PortMaster references
-  - Optimised display stage memory buffering
-  - Removed superfluous hidden network option
+  - Updated DHCP for more resilience
+  - Updated disclaimer module, media, and scripts
+  - Updated display temperature variables
+  - Updated extra download JSON reference
+  - Updated fast fetch logo
   - Updated font sizes for default theme
+  - Updated grid view to correctly size SVG glyphs to fit within cells
+  - Updated hotkey runners to use MENU input
+  - Updated how theme RGB settings are applied
+  - Updated init scripts with stop start functionality
   - Updated install messages
   - Updated inter-module font cache
+  - Updated internal text reader to cap memory use of large files
+  - Updated LED controller scripts
+  - Updated maze runner screensaver with hunting cell
   - Updated modules with additional dialogue sequences
+  - Updated network and system information modules
   - Updated network configuration restore script
-  - Added ability to disable box art scaling
-  - Added additional compilation protections
-  - Added atomic temp file writes for all persistent config and state files
-  - Added cap for downloaded manifest reading
-  - Added crash recovery and information dialogue
-  - Added dialogue and OSK font shadow zones
-  - Added extraction polling for theme downloads
-  - Added font shadow support
-  - Added full RELRO to binary and shared library linker flags
-  - Added INI parsing via directory with sync
-  - Added missing box art theme image padding
-  - Added network interface name validation before shell command use
-  - Added singular tag and lookup cache reading for content
-  - Added support for full screen scaling
-  - Added transitions for box art and dialogue boxes
-  - Fixed alternative TTF glyph loading crash
-  - Fixed archive extraction returns
-  - Fixed box art image reset for empty directories
-  - Fixed header glyph size
-  - Fixed help display on Vita Pro device
-  - Fixed image refresh on zero content crash
-  - Fixed single stick input testing
-  - Fixed single stick RGB setting
-  - Fixed variable array boundary for run_exec and added empty argument guards
-  - Modified default font shadow values
-  - Modified memory free checks to always release
-  - Modified splash visibility time
-  - Optimised download processes
-  - Optimised frontend and content launch scripts
-  - Optimised network profile name normalisation and guard path names
-  - Replaced sprintf with bounded snprintf for number generator
-  - Replaced strcpy calls with explicit length memcpy
-  - Updated box art scaling to be base on screen width
+  - Updated network module path for TrimUI devices
+  - Updated network module script call path
+  - Updated network script with proxy support
+  - Updated PPSSPP support for Vita Pro
+  - Updated preinstalled themes
+  - Updated recursive core assignment for future folder
+  - Updated Retroarch mappings
+  - Updated RGB controller with language strings
+  - Updated RGB controller with vita ADC Joypad support
+  - Updated RGB settings for default theme
+  - Updated screenshot tool path
+  - Updated scripts to use DPAD swap and hall key device values
+  - Updated script verification hashes
+  - Updated ScummVM to 2026.2.0
+  - Updated SDL IDs for TrimUI Smart Pro
+  - Updated shader fragments
+  - Updated supporter credits media
+  - Updated supporter credits music
   - Updated terminal script location paths
   - Updated testing watermark
-  - Added additional glyphs to default theme
-  - Added basic video preview support for catalogue
-  - Added BT visual status glyph
-  - Added colour temperature schedule
-  - Added ellipsis check on labels for scroll mode
-  - Added faster battery charge status change
-  - Added footer navigation bar overflow horizontal scroll
-  - Added glyph shadow rendering support
-  - Added help message transition support in line with dialogues
-  - Added libavutil version compatibility check
-  - Added schedule check for sunrise script
-  - Added screensaver halt to analogue sticks
-  - Added screenshot hue RGB adjustment option
-  - Added special board case for G350 device
-  - Added status timer tick offsets
-  - Added sunrise daemon script
-  - Added system init startup guard
-  - Added theme based glyph resizing for individual fields
-  - Added video directory creation to catalogue script
-  - Common functions split into individual chunks
-  - Ensure we keep the same grid size theme option when updating items during scroll
-  - Fixed bottom grid message vertical scrolling
-  - Fixed default value of glyph size theme option
-  - Fixed drop shadow deletions
-  - Fixed font navigation sound switch
-  - Fixed grid item visibility and adjustment on scroll
-  - Fixed nav bar setting for input remap selection
-  - Fixed navigation movement sound being played without interaction
-  - Fixed network backup and restore archive script
-  - Fixed PNG fallback using rendering hints from SVG implementation
-  - Fixed resolution redraw
-  - Fixed storage space mSD detail information
-  - Fixed sunrise init script runner
-  - Fixed transition box art not visible on collection and history modules
-  - Moved colour options to singular display temperature with schedule
-  - Moved hold button modifier to input system
-  - Optimised dialogue transition animations
-  - Reduced thread and timer overhead by consolidating status timers into a singular task
-  - Reverted to MP4 only for video previews
-  - Updated display temperature variables
-  - Updated script verification hashes
-  - Updated supporter credits music
-  - Added additional selection animations
-  - Added box art scale default value to disabled
-  - Added delay time for long label before scroll
-  - Added glyph icon toggle for list menus
-  - Added label scroll speed support
-  - Added label width adjustment option
-  - Added selection bounce animation style
-  - Added sunrise schedule limitations
-  - Fixed combo call for kiosk settings access
-  - Fixed font memory recall issue
-  - Fixed frontend overlay image loading
-  - Fixed glyph removal on applications and content explorer
-  - Fixed last and resume game script
-  - Fixed sunrise schedule runner
-  - Modified danger combo to hold press
-  - Modified debug logging with standard and verbose options
-  - Optimised explore content loading by removing redundant cache and per file stat calls
-  - Removed dialogue close animation to reduce dialogue ghosting
-  - Updated extra download JSON reference
-  - Added 2048 Plus to preinstalled applications
-  - Added network proxy support
-  - Added small date time and battery poll to update during active screensaver
-  - Added specific A2DP support for PipeWire initialisation
-  - Added video wallpaper and additional image support
-  - Cleaned up module functions to use void return where no value was needed
-  - Fixed allocated memory not being freed when content fails to load
-  - Fixed BT audio device disconnection hang
-  - Fixed crash dialogue box not finish animating and staying off screen
-  - Fixed default audio sink display for BT audio changeover
-  - Fixed font revert when not saving changes
-  - Fixed overlay and screenshot image views
-  - Fixed screenshot shadow issue and added single use dialogue box
-  - Fixed several small memory leaks with function calls
-  - Improved collection, history, and tag detection speed for content
-  - Modified HDMI module to hide deprecated audio switch
-  - Reduced memory usage for JSON reading during directory scanning
-  - Renamed unused nothing parameter to auto_assign for consistency
-  - Updated network script with proxy support
-  - Added BT scan timeout options to Advanced Options module
-  - Added content "Stage Overlay" toggle to Advanced Options module
-  - Added curl download timeout for download functionality
-  - Added PipeWire "Audio Suspend" toggle to Advanced Options module
-  - Added power loss detection dialogue message to module start
-  - Added stall detection to curl downloads to abort hung transfers
-  - Ensure video wallpaper stops between modules if not using global video
-  - Fixed archive invalid name slip traversal
-  - Fixed BT device scan dropping late resolved device names
-  - Fixed BT scan poll fallback timeout raised to 60 seconds
-  - Fixed first item truncated label scrolling
-  - Fixed image cache invalidated from background extraction thread
-  - Fixed PipeWire audio amplifier "pop" when waking from audio suspend
-  - Fixed rare theme download catalogue extraction crash
-  - Fixed reversed XY buttons for Drastic Advanced on TrimUI Brick
-  - Fixed theme download catalogue name path traversal check
-  - Fixed unsafe sprintf calls in download and time utils
-  - Modified console logging to alleviate stuttering on TrimUI devices
-  - Added additional checks for BT auto connect and block manually disconnected BT devices
-  - Added audio sink refresh to capture additional devices since startup
-  - Added dynamic buffered scan lines
-  - Added timeout for BT pair/trust/connect routine
-  - Fixed audio sink selection on boot and BT device change
-  - Fixed colour temperature setting on boot
-  - Fixed entering display temperature in console mode
-  - Fixed network clearing and module loading issue for BT
-  - Fixed picker module using old deletion method
-  - General GPU and code refactor
-  - Removed HDMI audio setting
-  - Removed old HDMI audio output confusing startup init
-  - Added BT monitor daemon
-  - Added default selection animation and speed
-  - Added default variable for video wallpaper
-  - Added double buffering option to advanced settings
-  - Added glyphs to default theme
-  - Fixed network connect prioritisation
-  - Fixed network priority confusion
-  - Fixed picker deletion
-  - Fixed small texture rendering for overlapping elements
-  - Fixed status bar alpha and colour mixing
-  - Fixed sunrise sunset temp calculation
-  - Fixed swapped menu/select in PPSSPP for TrimUI Brick
-  - Modified default selection animation and speed
-  - Optimised item navigation and temporarily remove fancy animations
-  - Optimised video previews and wallpapers on separate threads
-  - Added active network change blocking
-  - Added best network profile selection
-  - Added network configuration wait and connection confirmation
-  - Added network module scan settle
-  - Added profile selection status
-  - Added specific profile loading for network
-  - Ensure connection status is refreshed and not using stale information
-  - Ensure network returns actual status codes
-  - Fixed network association confirmation
-  - Fixed network status live updates
-  - Fixed video wallpaper jitters by adding stream clamping
-  - Moved selection animation to shake with last navigation
-  - Split network status and connection fields to independent files
-  - Updated default selection style
-  - Added clearing of SDL controller mapping on module start
-  - Added scaled box art padding
-  - Added video wallpaper screensaver
-  - Added video wallpaper support for install module
-  - Ensure input remap mapping is picked up correctly
-  - Fixed BT audio sink switchover
-  - Fixed controller state reset on active layout remap switch
-  - Fixed fullscreen box art alignment
-  - Fixed goofy SDL mapping by swapping GUID remap layouts
-  - Fixed preview video not disappearing
-  - Fixed remap layout changes
-  - Added continuous BT scanning when module is open
-  - Added flying box art screensaver
-  - Added image slideshow screensaver
-  - Added polling for new BT control connections
-  - Changed BT one-time scan to return constant scan results
-  - Ensure BT device removal does not affect other paired devices
-  - Fixed Audio Output sink sync
-  - Fixed TrimUI MAC address randomisation
-  - Increased audio sink attempts for BT timeout
-  - Reduced default BT first time scan timeout
-  - Updated BT script and config source
-  - Added BT status glyph support
-  - Added full range image source for glyphs
-  - Added network scanning bounce progress bar
-  - Added placeholder box art image support
-  - Added SVG image caching
-  - Adjusted header glyph default size
-  - Ensure that a blank image preview also resets previous path
-  - Fixed box art and video preview for search results
-  - Fixed BT auto connection routine
-  - Fixed comparison check memory leak
-  - Fixed console mode audio swap detection
-  - Fixed network bringing down module after scan results
-  - Merged grid mode navigation and glyph build functions
-  - Modified audio sink to refresh regardless of state
-  - Optimised box art flyover screensaver
-  - Optimised carousel grid count function
-  - Optimised config, language, and theme loading to use a descriptor table
-  - Optimised content explorer with grouped filtered list with bsearch implementation
-  - Optimised duplicated common grid functions
-  - Optimised font loading to reduce duplicated code
-  - Optimised internal name lookup dump for first time cache
-  - Optimised item generation function for collect and history modules
-  - Optimised list navigation item regeneration
-  - Optimised lookup table structure
-  - Reverted back to BT ondemand scanning
-  - Reverted BT scan back to on-demand scanning
-  - Reverted theme compatibility
-  - Updated button mappings in Mupen for 34H
-  - Added launching content whilst video preview is playing
-  - Added missing theme gradient check
-  - Fixed input remap capture trap and added duplicate control safeguards
-  - Modified main menu launch to select first item instead of reloading whole module
-  - Added windowed list rendering to dynamic list modules to avoid unbounded object creation on large lists
-  - Fixed removal dialogue box for various modules
+  - Updated Vita Pro config and control variables
