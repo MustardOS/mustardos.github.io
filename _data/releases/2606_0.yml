@@ -295,7 +295,7 @@ changes:
   - Added video wallpaper support for install module
   - Added Vita Pro to supported board list
   - Added volume ramping function
-  - Added windowed list rendering to dynamic list modules to avoid unbounded object creation on large lists
+  - Added windowed list rendering to prevent unbounded object creation on large lists
   - Added WirePlumber compatibility configurations
   - Added X Y render offset for device specific screens
   - Adjusted battery voltage percentage curves
