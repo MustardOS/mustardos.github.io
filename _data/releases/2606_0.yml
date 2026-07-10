@@ -36,8 +36,10 @@ changes:
   - Added activity tracker resume function
   - Added additional checks for BT auto connect and block manually disconnected BT devices
   - Added additional compilation protections
+  - Added additional core string formatting
   - Added additional counters for diagnostic purposes
   - Added additional glyphs to default theme
+  - Added additional muRetro hotkeys
   - Added additional network sanitisation for SSID and password strings
   - Added additional selection animations
   - Added additional shaders
@@ -55,7 +57,7 @@ changes:
   - Added audio sink wait for volume reset on startup
   - Added automatic moving of glyph and label padding for different size images
   - Added automatic UI element counting from lists
-  - Added Azahar reference
+  - Added auto save configuration to muRetro
   - Added background precaching for content directories
   - Added background support for BT connection and scan polling
   - Added background support for network connection and scan polling
@@ -68,6 +70,7 @@ changes:
   - Added battery usage tracker scripts
   - Added battery watchdog to startup process
   - Added best network profile selection
+  - Added bios support to muRetro
   - Added blue screen screensaver
   - Added board design structure for specialised functions
   - Added bounce progress to BT pair checking
@@ -75,12 +78,14 @@ changes:
   - Added box art transition and video refresh to activity view
   - Added brightness and volume information
   - Added BT address info for devices
+  - Added BT device scan detection on wake
   - Added BT monitor daemon
   - Added BT pair file for frontend purposes
   - Added BT scanning and connection locks
   - Added BT scan timeout options to Advanced Options module
   - Added BT status glyph support
   - Added BT visual status glyph
+  - Added built-in theme volume and brightness indicators
   - Added built-in union storage file system support
   - Added cache buckets for skip list compilation
   - Added cached workers for union entry building and resolving
@@ -88,9 +93,11 @@ changes:
   - Added canvas buffer and persistent canvas object for gradient rendering
   - Added cap for downloaded manifest reading
   - Added catalogue image caching
+  - Added cheat support to muRetro
   - Added clearing of SDL controller mapping on module start
   - Added collection hash checking
   - Added colour feature to screensaver
+  - Added colour filter and adjustment support to muRetro
   - Added colour temperature schedule
   - Added combo appending for modules
   - Added common download refresh poll
@@ -101,6 +108,7 @@ changes:
   - Added content explorer forward history
   - Added content loading mount fallback to help with union migration
   - Added continuous BT scanning when module is open
+  - Added core viewport configuration to muRetro
   - Added crash recovery and information dialogue
   - Added curl download timeout for download functionality
   - Added current language to splash show
@@ -148,11 +156,14 @@ changes:
   - Added gate for debug messages
   - Added glyph and image memory cache
   - Added glyph icon toggle for list menus
+  - Added glyph lazy path loading
   - Added glyph shadow rendering support
   - Added Glyph Size setting to Theme Options with Default, Auto, Native and fixed sizes
   - Added glyphs to default theme
+  - Added glyph support to muRetro FPS, fast forward, and slow motion indicators
   - Added gradient dithering cache
   - Added header title visibility option
+  - Added header visibility configuration to muRetro
   - Added headphone adjustment script to device init
   - Added helper function for grid row count calculation
   - Added help message transition support in line with dialogues
@@ -165,7 +176,7 @@ changes:
   - Added INI parsing via directory with sync
   - Added inotify tracking for screensaver and idle state changes
   - Added input remap system for all controllers
-  - Added JPEG support for box art images
+  - Added additional image support for box art images
   - Added KMS/EGL render support for stage overlay
   - Added label scroll speed support
   - Added label width adjustment option
@@ -184,6 +195,8 @@ changes:
   - Added missing theme gradient check
   - Added modified JetBrains mono font for CJK support
   - Added multi network connection support with priority layering
+  - Added muRetro overlay support
+  - Added muRetro suspend and resume support
   - Added Mustard Terminal application
   - Added Mustard Terminal detection function
   - Added native resolution and shader smoothing to overlay rendering
@@ -218,6 +231,7 @@ changes:
   - Added progress bar bounce to content search module
   - Added proper muhotkey clean up handling for signal based exits
   - Added proper SSID string escapes
+  - Added quick save and load state support to muRetro
   - Added quit fade and fixed frontend launching issue
   - Added raw framebuffer image splash system
   - Added REJECT_UNSAFE_ARCHIVE to extraction scripts
@@ -230,6 +244,8 @@ changes:
   - Added RGB options for switching
   - Added RGB state loading with safe backend checking
   - Added root level system configurations
+  - Added rotation and mirror configuration to muRetro
+  - Added rumble to board specific device configuration
   - Added run directory init on first boot
   - Added safe allocation wrappers and fixed unchecked malloc/strdup sites
   - Added scaled box art padding
@@ -360,6 +376,7 @@ changes:
   - Fixed application module grid fallback for language files
   - Fixed archive extraction returns
   - Fixed archive invalid name slip traversal
+  - Fixed aspect ratio handling in muRetro
   - Fixed audio balance with overdrive calculation
   - Fixed audio finalising for audio initialisation
   - Fixed Audio Output sink sync
@@ -392,6 +409,7 @@ changes:
   - Fixed corrupted tiled images when SVG glyphs were upscaled
   - Fixed CPU governor saving and restore on sleep suspend
   - Fixed crash dialogue box not finish animating and staying off screen
+  - Fixed crash stub for x86 processing
   - Fixed default audio sink display for BT audio changeover
   - Fixed default colours for PNG boot logos
   - Fixed default value of glyph size theme option
@@ -428,6 +446,7 @@ changes:
   - Fixed header glyph icon load priority
   - Fixed header glyph size
   - Fixed help display on Vita Pro device
+  - Fixed help message crash in search module
   - Fixed hidden content setting for union
   - Fixed history item removal and leftover language values
   - Fixed hotkey lid sleep trigger
@@ -454,12 +473,17 @@ changes:
   - Fixed main menu grid images
   - Fixed minor ALSA audio buffering issue
   - Fixed missing fclose on error path in muxnetscan
+  - Fixed missing muRetro glyphs
   - Fixed modification trust dialogue for sub menus
+  - Fixed muRetro archive support for direct VFS streaming
+  - Fixed muRetro fast forward and rewind support
+  - Fixed muRetro save state loading and saving
   - Fixed muted navigation sound on first open
   - Fixed native and multi-core building
   - Fixed nav bar setting for input remap selection
   - Fixed navigation in content options module
   - Fixed navigation movement sound being played without interaction
+  - Fixed navigation shake overflow
   - Fixed network association confirmation
   - Fixed network backup and restore archive script
   - Fixed network bringing down module after scan results
@@ -489,6 +513,7 @@ changes:
   - Fixed PPSSPP application missing XDG path set
   - Fixed preview video not disappearing
   - Fixed previous selection for BT item
+  - Fixed random silent navigation in specific modules
   - Fixed rare screensaver dismiss deadlock
   - Fixed rare shutdown hangup due to dual module takedowns
   - Fixed rare theme download catalogue extraction crash
@@ -507,6 +532,7 @@ changes:
   - Fixed saving item to collections from content explorer
   - Fixed screen resolution fallback to 640x480
   - Fixed screensaver exit returning on all enabled modes
+  - Fixed screensaver preview and speed issue
   - Fixed screenshot shadow issue and added single use dialogue box
   - Fixed selected font for themes and proper font fallback to internal Noto Sans
   - Fixed several small memory leaks with function calls
@@ -514,6 +540,7 @@ changes:
   - Fixed silent failure in archive download callback
   - Fixed single stick input testing
   - Fixed single stick RGB setting
+  - Fixed singular INI section deletion
   - Fixed small texture rendering for overlapping elements
   - Fixed stage overlay code cleanup during frontend compilation
   - Fixed status bar alpha and colour mixing
@@ -556,10 +583,13 @@ changes:
   - Fixed volume limit setting with overdrive enabled
   - Fixed wallpaper embedding cache
   - Fixed web services kill process by quoting PID
+  - Fixed weird app list glyph glitch
   - Fixed writing to correct overlay information file
   - General GPU and code refactor
   - Hardened archive extraction path traversal
   - Improved collection, history, and tag detection speed for content
+  - Improved muRetro core hot path loading
+  - Improved muRetro hash validation and cache management
   - Increased audio sink attempts for BT timeout
   - Increased hotkey combo limit to fix RG40 and RGCUBE volume buttons
   - Lowered device max voltage battery calibration
@@ -640,6 +670,7 @@ changes:
   - Modified volume logic with values going directly to PipeWire even with overdrive
   - Moved ALSA mixer reset into the foreground so it actually behaves when asked
   - Moved battery watchdog to top of startup
+  - Moved BT suspend routine out of module down
   - Moved colour options to singular display temperature with schedule
   - Moved Console Mode detection to common
   - Moved content directory reference to global define
@@ -719,6 +750,7 @@ changes:
   - Reduced udev timeout on settle
   - Refactored content explorer to rebuild instead of reload
   - Refactored PipeWire handling into smaller bits with improved node ID discovery
+  - Removed additional display blend mode
   - Removed and replaced RGB Controller application
   - Removed audio sink wait for simple PipeWire inspection
   - Removed battery offset for low battery indicator
@@ -783,7 +815,9 @@ changes:
   - Split cached image refresh into smaller function chunks
   - Split content item generation into smaller function chunks
   - Split general settings sub menu and option handlers
+  - Split input dispatch events with retry internals
   - Split Mustard Terminal to own repository
+  - Split navigation shake to individual direction markers
   - Split network status and connection fields to independent files
   - Split the startup script into smaller init chunks
   - Stripped line feeds from config variables
