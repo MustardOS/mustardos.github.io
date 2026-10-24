@@ -1,7 +1,7 @@
 description: >
   Provides a summary of all launched play activity across MustardOS. This summarises all play data from every
   tracked session to present long term trends, favourites, and unique habits, helping you understand how
-  you play your content as a whole rather than focusing on individual titles.
+  you play your content as a whole.
 
 goback: muxactivity
 
@@ -41,11 +41,11 @@ visible:
   - name: Oldest Session
     icon: global_first
     desc: >
-      Shows the earliest recorded play session in the activity database, marking the beginning of tracked usage.
+      Shows the content that was played first, marking the beginning of tracked usage.
   - name: Longest Session
     icon: global_longest
     desc: >
-      Identifies the single longest uninterrupted play session.
+      Identifies the content with the single longest play session.
   - name: Overall Play Style
     icon: global_play
     desc: >
@@ -61,8 +61,8 @@ visible:
   - name: Most Active Time
     icon: global_active
     desc: >
-      Indicates the time of day when play activity most frequently occurs.
+      Indicates the hour of the day with the most play time, worked out from when each recorded session started.
   - name: Favourite Day
     icon: global_day
     desc: >
-      Shows the day of the week with the highest recorded play activity.
+      Shows the day of the week with the most play time across recorded sessions.

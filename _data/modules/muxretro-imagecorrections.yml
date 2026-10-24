@@ -1,0 +1,21 @@
+description: >
+  Image Corrections contains two targeted fixes for effects that can become unstable when a low-resolution game is
+  shown on a modern display. Leave them disabled unless the content needs them.
+
+goback: muxretro-settings
+
+visible:
+  - name: Shimmer Fix
+    icon: shimmerfix
+    desc: >
+      Uses a stable whole-pixel scale for the game picture. It is useful when fine scenery appears to shimmer while
+      scrolling. The enabled value shows the scale currently in use when one is available.
+  - name: Anti-Flicker
+    icon: framedelay
+    desc: >
+      Blends alternating software-rendered frames used by some games for transparency and other effects. The enabled
+      value shows the extra frame memory in use. It is hidden for hardware-rendered content.
+
+tip:
+  - info: Shimmer Fix can make the picture larger. Check the viewport when content reaches beyond the display edge.
+  - info: Anti-Flicker uses an extra frame buffer. Its memory use increases with the output resolution.

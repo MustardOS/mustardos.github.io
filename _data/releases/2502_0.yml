@@ -1,15 +1,7 @@
 ver: "2502.0"
 code: "Pixie"
 type: archive
-pronunciation: "/ˌpɪk ˈsiː/"
-
-full_image:
-  gofile: https://gofile.io/d/qsjQVI
-  mega: https://mega.nz/folder/suBlXAiZ#xIVmGP7M8aly-aHmRDecRw
-  important:
-    - If you are updating from Banana please ensure that you do <strong>NOT</strong> have any themes or RetroArch
-      configurations as major changes have occurred. You can find all compatible themes from the
-      <a href="https://theme.muos.dev">https://theme.muos.dev</a> page or from the on-device theme download module.
+pronunciation: "/ˈpɪksi/"
 
 warning:
   - As this is a major release you will be required to reflash to update your device to this version. Updates are only

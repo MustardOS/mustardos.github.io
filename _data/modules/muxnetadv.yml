@@ -6,6 +6,13 @@ description: >
 goback: muxconnect
 
 visible:
+  - name: System DNS
+    icon: systemdns
+    desc: >
+      Overrides the DNS server used for every connection, whether it comes from DHCP or a Static profile:
+      <strong>Default</strong> (whatever the profile or DHCP provides), <strong>Cloudflare</strong>
+      (<code>1.1.1.1</code>), <strong>Google</strong> (<code>8.8.8.8</code>), or <strong>Quad9</strong>
+      (<code>9.9.9.9</code>).
   - name: Connection Monitor
     icon: monitor
     desc: >
@@ -14,8 +21,7 @@ visible:
   - name: Start Network on Boot
     icon: boot
     desc: >
-      Automatically starts the network connection during system boot. This ensures connectivity is available as soon 
-      as the device powers on without requiring manual activation.
+      Automatically starts the network connection during system boot.
   - name: Start Network on Wake
     icon: wake
     desc: >
@@ -31,14 +37,20 @@ visible:
     desc: >
       Loads compatible network modules asynchronously in the background. This option significantly reduces boot 
       times when Module Compatibility is enabled and should only be disabled if troubleshooting connection failures.
-  - name: Module Wait Time
+  - name: Connection Retry
+    icon: conretry
+    desc: >
+      Sets how many times the system will attempt to reconnect if the network connection drops or fails to
+      establish. Increasing this value can help on unreliable networks, but may delay giving up on a failed
+      connection.
+  - name: Module Wait Timer
     icon: wait
     desc: >
-      Sets the maximum time the system will wait for the network interface to appear during boot. Increasing this value 
-      may improve stability on slower devices but will extend startup time. Avoid adjusting if Module Compatibility is 
+      Sets the maximum time the system will wait for the network interface to appear during boot. Increasing this value
+      may improve stability on slower devices but will extend startup time. Avoid adjusting if Module Compatibility is
       already enabled, as both delays will compound.
   - name: Module Retry
-    icon: retry
+    icon: modretry
     desc: >
-      Determines how many times the system will attempt to load the network module when using Module Compatibility mode. 
+      Determines how many times the system will attempt to load the network module when using Module Compatibility mode.
       Increasing this value can help with unstable or delayed network drivers, but may extend overall boot duration.

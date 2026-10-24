@@ -1,12 +1,67 @@
 ver: "2606.0"
 code: "Andromeda"
-type: progress
+type: current
 pronunciation: "/ænˈdrɒmɪdə/"
+
+full_image:
+  gofile: https://gofile.io/d/Kz2BL8
+  mega: https://mega.nz/folder/lnIg3C7I#-bIV7VZOUJxGMQVJaQVxQg
+
+important:
+  - Backups are now <code>.muxbak</code> files saved in the <code>ARCHIVE</code> folder, and the <code>BACKUP</code>
+    folder is no longer used. Each backup carries a checksum manifest that is checked before anything is restored, and
+    pressing <strong>MENU</strong> on one in the Archive Manager shows what it holds. If a backup or install fails, a
+    log is saved to <code>MUOS/log</code> on SD1.
+  - Older <code>.muxzip</code> backups are not checked, but most still install once copied from <code>BACKUP</code>
+    into <code>ARCHIVE</code>. Backups made on test builds between 7 and 16 October that included MustardOS Settings
+    saved every section after it empty, so those sections cannot be restored. Make a fresh backup once you are set up.
 
 note:
   - Themes are now stored as open folders instead of compressed archives (previously extracted to the <code>active</code> folder).
     This enables faster theme switching, alternate theme changes, and restores random theme selection on device start.
     Existing <code>.muxthm</code> theme files in <code>MUOS/theme</code> must be extracted manually.
+  - The external FreeJ2ME launchers have been removed. J2ME content assigned to them should be assigned to the FreeJ2ME
+    core, which now runs in Pickles.
+  - Cores that cannot run without a BIOS now stop at launch and list the files they need. Sega Saturn now defaults to
+    Yabadabadoo, which needs <code>saturn_bios.bin</code>, <code>sega_101.bin</code> or <code>mpr-17933.bin</code> in
+    the BIOS folder.
+
+summary: >
+  Andromeda is one of the biggest MustardOS releases to date, with well over a thousand recorded changes across the
+  frontend, Pickles, themes and system scripts. The highlights below cover the most notable additions, and the
+  recorded changes are available at the end of this page.
+
+highlights:
+  - title: Pickles
+    icon: muxretro/settings
+    desc: >
+      Our own Libretro player gains Network Play, RetroAchievements, cheats, overlays, colour filters, controller and
+      port remapping, turbo, suspend and resume, and a detailed performance monitor.
+  - title: Wasabi
+    icon: muxmedia/wasabi
+    desc: >
+      Our integrated media player for video, music, playlists, live television and live radio, with bookmarks, an
+      equaliser, visualisers and shaders inside the familiar MustardOS theme.
+  - title: Themes and Fonts
+    icon: muxconfig/theme
+    desc: >
+      Themes are stored as open folders for faster switching, with 1920x1080 support, alternative colour files, a font
+      picker, font shadows and boot logo management.
+  - title: Screensavers
+    icon: muxpower/saver_type
+    desc: >
+      New screensavers including date and time, flying box art, an image slideshow and a blue screen, each with a
+      preview mode in the power settings.
+  - title: Content and Collections
+    icon: muxlaunch/explore
+    desc: >
+      Content explorer forward history, collection and history actions, per content options, video previews and
+      catalogue support for SVG artwork and text manuals.
+  - title: Device and System
+    icon: muxconfig/general
+    desc: >
+      Bluetooth support, first time orientation with a tour of every screen, an activity tracker, passcode settings,
+      bulk storage tools and configurable ports for each Web Service.
 
 contributors:
   - 0xada.3
@@ -27,19 +82,21 @@ changes:
   - Added "Fit Screen" to scaling modes
   - Added 1920x1080 resolution theme support
   - Added 2048 Plus to preinstalled applications
+  - Added a 32-bit graphics forwarder so 32-bit ports run with hardware graphics on TrimUI devices
+  - Added a button picker for Pickles and Wasabi hotkeys, where choosing a button already in use unbinds the other
+    hotkey
   - Added <code>chafa</code> to common bin
   - Added <code>navigate_to_dir</code> for centralised navigation handling
   - Added <code>REJECT_UNSAFE_ARCHIVE</code> to extraction scripts
   - Added <code>resolve_info_path</code> for unified info file resolution for functions
   - Added ability to disable box art scaling
-  - Added accessibility options
   - Added active network change blocking
   - Added activity play time data content deletion function
   - Added activity tracker migration function
   - Added activity tracker resume function
-  - Added additional checks for BT auto connect and block manually disconnected BT devices
   - Added additional compilation protections
   - Added additional content information to Pickles menu
+  - Added Additional Cores in Advanced Settings to show the extra systems and cores
   - Added additional core string formatting
   - Added additional counters for diagnostic purposes
   - Added additional element transition animations
@@ -61,6 +118,9 @@ changes:
   - Added alpha, layer, and position animation theme option for better control
   - Added alternative colour files to default theme
   - Added amplifier initialisation
+  - Added animated box art and preview media using MP4, GIF and APNG files
+  - Added a Power Off effect for Pickles and Wasabi with a CRT style shutdown
+  - Added a safe mode boot guard that recovers the device after repeated failed starts
   - Added async startup script loader
   - Added atomic writes for persistent configuration and state files to help prevent corruption on power loss
   - Added attribute cache to GLES state
@@ -70,6 +130,7 @@ changes:
   - Added audio sink wait and volume save/restore functions to global
   - Added audio sink wait for volume reset on startup
   - Added automatic audio sink value swapping
+  - Added automatic core assignment when a namespace holds a single system and core
   - Added automatic moving of glyph and label padding for different size images
   - Added automatic panel frame detection for video frame limiting
   - Added automatic switch for USB-C audio devices
@@ -118,6 +179,7 @@ changes:
   - Added canvas buffer and persistent canvas object for gradient rendering
   - Added cap for downloaded manifest reading
   - Added catalogue image caching
+  - Added charging while powered off on H700 devices, so plugging in a charger no longer starts the system
   - Added cheat support to Pickles
   - Added clearing of SDL controller mapping on module start
   - Added collection and history actions with additional tag sorting
@@ -144,11 +206,14 @@ changes:
   - Added content sort mode module
   - Added continuous BT scanning when module is open
   - Added controller and port remap and turbo system for Pickles
+  - Added Core Management for installing and updating Libretro cores, replacing the Core Downloader
   - Added core viewport configuration to Pickles
+  - Added CPU and GPU speed limits to Danger Settings, with Default using the tested device limit
   - Added crash recovery and information dialogue
   - Added cross repository release check for shared paths, scripts and built files
   - Added curl download timeout for download functionality
   - Added current language to splash show
+  - Added custom folders and subfolders for Pickles shaders, colour filters and overlays
   - Added custom time notation default value
   - Added custom toast notification priorities
   - Added date and time screensaver
@@ -168,13 +233,17 @@ changes:
   - Added device battery curve parameters
   - Added device battery size and voltage lines
   - Added device defined battery curve lookup against current voltage
+  - Added device discovery and conflict-free Local DNS names for multiple MustardOS devices
   - Added device specific SDL mapping
   - Added dialogue and OSK font shadow zones
   - Added dialogue changes for content options
   - Added dialogue option element
-  - Added digital analog switch hotkey
+  - Added digital analogue switch hotkey
+  - Added Direct Link for two-player Pickles over Ethernet and USB-C cables
+  - Added disc aware Pickles save states that restore the inserted disc
   - Added disc ejecting system to multi-disc content
   - Added double buffering option to advanced settings
+  - Added downloadable shaders, colour filters and overlays for Pickles, grouped by creator
   - Added DRM capture priming for screenshot grab
   - Added dynamic buffered scan lines
   - Added ellipsis check on labels for scroll mode
@@ -193,11 +262,13 @@ changes:
   - Added first time orientation and tour module
   - Added flying box art screensaver
   - Added folder based content patch support for Pickles
+  - Added Folder Launch Files so games made of many files open as a single item
   - Added font hinting check from theme on terminal execution
   - Added font picker module
   - Added font shadow support
   - Added footer navigation bar overflow horizontal scroll
   - Added forward history glyphs to default theme
+  - Added FreeJ2ME support to Pickles with a usable control map
   - Added frontend screensaver delay to stop esoteric frontend race condition
   - Added frontend specific logging to file within testing modes
   - Added Frotz and external script support via Mustard Terminal
@@ -205,6 +276,7 @@ changes:
   - Added full RELRO to binary and shared library linker flags
   - Added G350 brightness adjustment
   - Added game link descriptive debug text for connections
+  - Added game state history to Pickles, with a trash for recovering removed save states
   - Added gate for debug messages
   - Added global system DNS to advanced network settings
   - Added glyph and image memory cache
@@ -218,6 +290,7 @@ changes:
   - Added GPU hard sync to bypass GL swap frame queue
   - Added GPU sync to CPU governor switch
   - Added gradient dithering cache
+  - Added HDMI screenshots and display mirror support
   - Added header title visibility option
   - Added header visibility configuration to Pickles
   - Added headphone adjustment script to device init
@@ -227,9 +300,11 @@ changes:
   - Added hex colour parsing in overlay system
   - Added high pass audio filter check to Pickles
   - Added history and collection lookup cache for content explorer
+  - Added holding MENU on content to open its Information
   - Added hotkey negation option
   - Added idle state write to display idle
   - Added image slideshow screensaver
+  - Added Import RetroArch Saves to Pickles in Migration Tasks
   - Added improved directory item count handling
   - Added individualised RGB zone help messages
   - Added INI parsing via directory with sync
@@ -237,14 +312,18 @@ changes:
   - Added inotify tracking for screensaver and idle state changes
   - Added input macro combo creation to Pickles
   - Added input remap system for all controllers
-  - Added input tester and accessibility items to install module
+  - Added input tester and profile items to install module
+  - Added interframe blending and frame blending to Pickles for smoother motion on mismatched refresh rates
   - Added kernel logging option to danger module
+  - Added Ketchup Deck support for using an off hand controller as a second input
   - Added KMS/EGL render support for stage overlay
   - Added L2 hold key alternative
   - Added label scroll speed support
   - Added label width adjustment option
   - Added launching content whilst video preview is playing
   - Added launch scummvm content by folder
+  - Added Launch Splash to show content artwork while Pickles prepares a game
+  - Added Lava Lamp, Gravity Glitch, Endless Hallway and Pixel Moss screensavers
   - Added libavutil version compatibility check
   - Added lid switch support to hotkey
   - Added live navigation bar updates for active layout change
@@ -252,7 +331,6 @@ changes:
   - Added message arborist daemon
   - Added missing box art theme image padding
   - Added missing directory ownership for OpenSSH daemon
-  - Added missing global function source to SFTPGo clear script
   - Added missing image text for empty slideshow screensaver
   - Added missing integer line read for stage overlay system
   - Added missing theme gradient check
@@ -283,6 +361,7 @@ changes:
   - Added optional wait timer for quit script
   - Added option for forced stick to DPAD for Pickles port input
   - Added overlay notification builder
+  - Added overlay centre crop
   - Added overlay state cache to overlay system
   - Added overlay texture building functions
   - Added page and letter content skipping
@@ -294,11 +373,14 @@ changes:
   - Added path safety validation to content browsing modules
   - Added performance boosting during demanding operations
   - Added performance profile preset
+  - Added Picante8 as the default PICO-8 core, replacing Retro8
   - Added Pickles audio core frame matching with latency enforcement
   - Added Pickles data archival script
   - Added Pickles game link subsystem and single screen separation
   - Added Pickles overlay support
   - Added Pickles performance and user experience reporting
+  - Added Pickles play profiles for Safe, Balanced and Quality, along with your own named profiles
+  - Added Pickles settings recovery when a launch is interrupted before the game starts
   - Added Pickles suspend and resume support
   - Added PICO-8 double extension removal
   - Added PipeWire "Audio Suspend" toggle to Advanced Options module
@@ -321,6 +403,7 @@ changes:
   - Added RA cheat parsing for Pickles
   - Added random name generation to save state and macro creation
   - Added random name generator
+  - Added Raw Device Visibility to show unnamed Bluetooth devices during a scan
   - Added raw framebuffer image splash system
   - Added refresh of theme when applying theme alternate
   - Added regression checks for Pickles power events and frontend helper arguments
@@ -336,9 +419,11 @@ changes:
   - Added RGB backend powered check
   - Added RGB options for switching
   - Added RGB state loading with safe backend checking
+  - Added rich text formatting codes for descriptions and manuals
   - Added root level system configurations
   - Added rotation and mirror configuration to Pickles
   - Added rumble to board specific device configuration
+  - Added shader, colour filter, and overlay Collections using original file references
   - Added run directory init on first boot
   - Added safe allocation wrappers and fixed unchecked malloc/strdup sites
   - Added save state support removal for optional cores
@@ -360,13 +445,18 @@ changes:
   - Added sending ClientID with DHCP Request
   - Added separate launch item registry
   - Added separate theme options for independent element font sizes
+  - Added Settings Profiles with Merge and Replace, preinstalled profiles and <code>profile.conf</code> import,
+    replacing accessibility options
   - Added shader fragment launch support
+  - Added shader parameters to Pickles and Wasabi, adjusted with Y on the Shaders row
   - Added shared function for resolving grid glyph images to reduce duplicated code
+  - Added signed core manifests and archive checks so damaged or altered cores are not installed
   - Added single frame pacing run ahead support
   - Added singular tag and lookup cache reading for content
   - Added Sixel graphics for existing theme glyphs and logo
   - Added small date time and battery poll to update during active screensaver
   - Added Songo#5 to preinstalled applications
+  - Added Soundfont selection for MIDI playback
   - Added source function checks for boot init scripts
   - Added special board case for G350 device
   - Added special device input volume mapping switch
@@ -377,6 +467,7 @@ changes:
   - Added specific device support for terminal configuration
   - Added specific GLES rendering support for cores that require it
   - Added specific profile loading for network
+  - Added Speed Persistence to Pickles to keep fast forward or slow motion active after the menu closes
   - Added SRAM backup and validation restore
   - Added SSID scanning to all network configurations
   - Added stage working function for easier hot reloading in overlay system
@@ -410,13 +501,16 @@ changes:
   - Added theme based glyph resizing for individual fields
   - Added themed messages while content starts, resumes and restarts
   - Added theme scheme cache
+  - Added threaded core support to Pickles
   - Added timeline based saves to Pickles
   - Added timeline save protection to Pickles
+  - Added Timeline Saves to Pickles with an adjustable duration
   - Added timeout for BT pair/trust/connect routine
   - Added timezone city and region alias lookup functions
   - Added transitions for box art and dialogue boxes
   - Added TrimUI Smart Pro specific SDL mapping
   - Added TTF font support for themes
+  - Added variable strength rumble to Pickles for cores that support it
   - Added video directory creation to catalogue script
   - Added video wallpaper and additional image support
   - Added video wallpaper screensaver
@@ -424,10 +518,27 @@ changes:
   - Added viewport crop centring
   - Added viewport crop tools
   - Added viewport stretch to Pickles
+  - Added vignette effects to Pickles and Wasabi
   - Added volume ramping function
+  - Added Wasabi as the integrated player for video, music, playlists, live television and live radio
+  - Added Wasabi Channel Scope visualiser, Tape Counter, ambient borders and a CRT Television effect for live television
+  - Added Wasabi equaliser with a preamp, ten bands, presets and saved profiles
+  - Added Wasabi folder playlists, Auto Play and shuffle
+  - Added Wasabi SID and vgmstream audio support
+  - Added Web Dashboard Device Input Priority so local controls take over from remote ones
+  - Added Web Dashboard File Management with uploads, downloads, folder ZIP downloads and previews
+  - Added Web Dashboard History, Collections and Pickles save management
+  - Added Web Dashboard image, text and video editors for catalogue artwork, descriptions and manuals
+  - Added Web Dashboard lockouts that grow longer after repeated wrong codes
+  - Added Web Dashboard Now Playing page with Pickles and Wasabi controls
+  - Added Web Dashboard Remote View with Live streaming, Live Sound and Remote Controls
+  - Added Web Dashboard tools from the MustardOS website
+  - Added Web Dashboard with a sign in code, replacing darkhttpd
   - Added windowed list rendering to prevent unbounded object creation on large lists
+  - Added wired Ethernet configuration
   - Added WirePlumber compatibility configurations
   - Added X Y render offset for device specific screens
+  - Added Yabadabadoo as the default Sega Saturn core
   - Adjusted battery voltage percentage curves
   - Adjusted CPU governor setting for newer kernels
   - Adjusted default theme RGB settings
@@ -532,11 +643,11 @@ changes:
   - Fixed box art loading when visual setting is set to disabled
   - Fixed BT audio device disconnection hang
   - Fixed BT audio sink switchover
-  - Fixed BT auto connection routine
   - Fixed BT device scan dropping late resolved device names
   - Fixed BT pair checking on first load
   - Fixed BT scan poll fallback timeout raised to 60 seconds
   - Fixed clearing content based on folder name with extension
+  - Fixed closing the lid not putting lid devices to sleep
   - Fixed collection and history dot file and directory visibility
   - Fixed colour filter and shaders colour rendering and rotation
   - Fixed colour temperature setting on boot
@@ -544,6 +655,7 @@ changes:
   - Fixed combo call for kiosk settings access
   - Fixed comparison check memory leak
   - Fixed console mode audio swap detection
+  - Fixed core manifest generation and automatic assignment on first boot
   - Fixed content explorer folder as content detection
   - Fixed content folder item count
   - Fixed content index building for play time ordering
@@ -594,6 +706,7 @@ changes:
   - Fixed friendly name lookup for individual JSON files
   - Fixed frontend overlay image loading
   - Fixed fullscreen box art alignment
+  - Fixed games that request a rotation turning the wrong way
   - Fixed glyph removal on applications and content explorer
   - Fixed goofy SDL mapping by swapping GUID remap layouts
   - Fixed grid based overflow withe recent hoist changes
@@ -696,6 +809,7 @@ changes:
   - Fixed Pickles fast forward and rewind support
   - Fixed Pickles menu peeking from submenus
   - Fixed Pickles netplay memory leaks due to peer disconnection from host
+  - Fixed Pickles Network Play disconnection handling for both host and client
   - Fixed Pickles port assignment for various core sessions
   - Fixed Pickles rotation setting
   - Fixed Pickles save state loading and saving
@@ -727,6 +841,7 @@ changes:
   - Fixed RGB Lights UI
   - Fixed rotation for screenshots
   - Fixed rumble on content close
+  - Fixed PortMaster archive execute permissions on fresh installations
   - Fixed save state and macro OSK confusion
   - Fixed save state serial buffering
   - Fixed screen resolution fallback to 640x480
@@ -769,6 +884,7 @@ changes:
   - Fixed terminal direct script launch
   - Fixed terminal launching with profile and faded block sequences
   - Fixed text alignment when wrapping caused by trailing spaces at end of line
+  - Fixed the CPU governor staying on its idle setting after waking from sleep
   - Fixed theme based fonts leaking memory entries after early matches
   - Fixed theme download catalogue name path traversal check
   - Fixed theme download progress and extraction freezing on spam inputs
@@ -820,6 +936,7 @@ changes:
   - Improved Pickles hash validation and cache management
   - Improved Pickles path validation and save state handling
   - Improved rumble support and added a little treat
+  - Improved Pickles rumble by preserving the variable strength requested by each core
   - Improved screenshot locking and failure reporting
   - Improved update archive validation and invalid manifest warnings
   - Improved Web Services navigation, missing glyph handling and keyboard focus
@@ -887,6 +1004,7 @@ changes:
   - Modified main menu launch to select first item instead of reloading whole module
   - Modified memory free checks to always release
   - Modified memory handling for directory and file lists
+  - Modified Mupen64Plus Next in Pickles to be the default Nintendo 64 core
   - Modified muX execution to run audio volume restore
   - Modified naming and casing in PortMaster references
   - Modified navigation sound for dialogue, modal, and task prompts
@@ -896,8 +1014,11 @@ changes:
   - Modified passcode glyph references
   - Modified passphrase script to use temporary file
   - Modified path handling and merging logic
+  - Modified Pickles and Wasabi data to live in <code>MUOS/pickles</code> and <code>MUOS/wasabi</code>
   - Modified Pickles audio pacing tolerance to lock with screen refresh rate
+  - Modified Pickles core option saving to keep only the changes from the level below
   - Modified Pickles information to hide A select on non-submenu items
+  - Modified Pickles settings into sections, with technical options under Advanced
   - Modified Pickles to not use content extension for save reference
   - Modified PipeWire script once again to resolve intermittent volume issues
   - Modified power loss reset confirm message
@@ -906,6 +1027,7 @@ changes:
   - Modified saved volume functions within PipeWire script
   - Modified save states to take clean screenshot
   - Modified screenshot script to utilise trap for file removal
+  - Modified Secure File Transfer to use Dropbear with a protected view of storage, replacing SFTPGo
   - Modified serial number script with better fallbacks
   - Modified skip patterns to support case insensitive and directory only matches
   - Modified sound values for extra dB boost
@@ -1040,6 +1162,7 @@ changes:
   - Removed audio sink wait for simple PipeWire inspection
   - Removed battery offset for low battery indicator
   - Removed battery offset from advanced settings
+  - Removed Bluetooth auto connect, so paired devices only connect when chosen
   - Removed case sensitivity for catalogue media
   - Removed content mount caching
   - Removed device pointer for pass code loading
@@ -1066,6 +1189,7 @@ changes:
   - Removed stage overlay and shader system options for RetroArch cores
   - Removed static compiled images and most static compiled fonts
   - Removed superfluous hidden network option
+  - Removed the external FreeJ2ME launchers
   - Removed the recursive theme process scan and kept theme activation atomic
   - Removed the unused search menu entry from options module
   - Removed the unused Stage overlay notification integration
@@ -1106,7 +1230,6 @@ changes:
   - Reverted Bluetooth scanning to on-demand mode
   - Reverted theme compatibility
   - Reverted to modprobe for TUI network module
-  - Reverted to MP4 only for video previews
   - Reworked HDMI output functions
   - Secured Web Service credentials in frontend settings
   - Separated hue shift buffering to independent sin+cos calculations in overlay system
@@ -1147,6 +1270,7 @@ changes:
   - Updated default theme with SVG glyphs
   - Updated default values for STICKNAV and RGB settings to 0.
   - Updated DHCP for more resilience
+  - Updated downloadable Pickles visuals to override matching bundled items without duplication
   - Updated disclaimer module, media, and scripts
   - Updated display temperature variables
   - Updated extra download JSON reference

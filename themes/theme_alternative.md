@@ -7,126 +7,41 @@ nav_order: 5
 has_toc: false
 ---
 
-# Theme Alternatives Introduction
+# **Theme Alternatives**
 
-Theme Alternatives allows you to include multiple version of your theme in one theme file. After installing your theme
-the user will be able to navigate to the  `Congiguration -> Customisation` menu and set which `Alternative Theme` to
-use. The user would then press `A` to activate or press `B` to activate and exit the `Customisation` menu.
+Alternatives let one theme offer several looks, such as a light and a dark version, without making separate theme
+packages. Users choose one in **Configuration > Customisation > Alternative Theme**.
 
-<img src="assets/images/alternate_selection.gif" width="320"/>
+<div class="guide" markdown="0">
+    <h2 class="guide-heading">Two kinds of alternative</h2>
 
-Examples of using 'Theme Alternatives' can be found on the [theme](https://theme.muos.dev/) website.
+    <div class="guide-grid">
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxconfig/colour.svg" alt="" width="48" height="48">
+            <span class="guide-title">Scheme alternative</span>
+            <span class="guide-text">An INI file in <code>alternate</code>, such as <code>alternate/Dark.ini</code>. The
+                file name is the name users see. It can change any scheme setting and is applied after the theme's own
+                schemes, which suits colours, transparency and spacing.</span>
+        </div>
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxarchive/archive.svg" alt="" width="48" height="48">
+            <span class="guide-title">Packaged alternative</span>
+            <span class="guide-text">A <code>.muxalt</code> archive in <code>alternate</code>, for variations that need
+                different images, fonts, glyphs or several scheme files. It is unpacked into the theme when selected,
+                so its paths start from the theme folder it replaces.</span>
+        </div>
+    </div>
+</div>
 
-`MustardOS - Pixie - Grid` Created By: Bitter Bizarro
+## Extras
 
-`Aurora` Created By: Rosabel
+<div class="guide-paths" markdown="0">
+    <div><code>active.txt</code><span>Holds the name of the alternative to use when the theme is first selected. It must
+        match an <code>.ini</code> or <code>.muxalt</code> name in <code>alternate</code>.</span></div>
+    <div><code>alternate/rgb/{name}/rgbconf.sh</code><span>A matching lighting setup, applied with that alternative on
+        devices with lighting controls.</span></div>
+</div>
 
-# Alternative Scheme `.ini` Files
-
-The first way of creating a `Alternative Theme` options is by creating scheme files that adjust the styling of the
-theme. The files should be located in `alternate` folder at root level of your theme archive. The name used for
-each `.ini` is the name that will display in the `Congiguration -> Customisation` menu under the `Alternative Theme`
-setting. The `MustardOS - Pixie - Grid` theme for example has a structure like this:
-
-```
-.
-├── active.txt
-├── alternate
-│   └── Black.ini
-│   └── Blue.ini
-│   └── Green.ini
-│   └── muOS.ini
-│   └── Orange.ini
-│   └── Purple.ini
-│   └── Red.ini
-│   ├── rgb
-│   │   ├── Black
-|   |   │   └── rgbconf.sh
-│   │   ├── Blue
-|   |   │   └── rgbconf.sh
-│   │   ├── Green
-|   |   │   └── rgbconf.sh
-│   │   ├── muOS
-|   |   │   └── rgbconf.sh
-│   │   ├── Orange
-|   |   │   └── rgbconf.sh
-│   │   ├── Purple
-|   |   │   └── rgbconf.sh
-│   │   ├── Red
-|   |   │   └── rgbconf.sh
-```
-
-Each `Alternative Theme` scheme file can include any setting but keep in mind these settings will apply to all MustardOS
-screens and resolutions. Typically you would use the files to change various colour parameters.
-
-<img src="assets/images/alternative_theme_example_scheme.png" /><br>
-*Example scheme file*
-
-# RGB
-
-You can set different RGB settings for each `Alternative Theme` defined. To do this you would need to create
-a `rgbconf.sh` file with the settings you want to apply and place it into `/alternate/rgb/{name}/rgbconf.sh`. See file
-structure above.
-
-# Active text
-
-The `active.txt` in the root of your theme is used to set the default `Alternative Theme` when the theme is first
-installed.
-
-<img src="assets/images/alternative_theme_example_active.png" /><br>
-*Example `active.txt` file*
-
-# Alternative Scheme .muxalt
-
-The second way of creating a `Alternative Theme` options is by creating `.muxalt` archive files that are extracted when
-the options is selected. The files should be located in `alternate` folder at root level of your theme archive. The name
-used for each `.muxalt` is the name that will display in the `Congiguration -> Customisation` menu under
-the `Alternative Theme` setting. The `Aurora` theme for example has a structure like this:
-
-```
-.
-├── active.txt
-├── alternate
-│   └── Cloud.muxalt
-│   └── Midnight.muxalt
-│   └── Moon.muxalt
-│   └── Retro.muxalt
-│   └── Twilight.muxalt
-```
-
-Each `Alternative Theme` `.muxalt` file will be extracted when a user selects it under `Congiguration -> Customisation`.
-The file needs to be structured in a certain way in order for the files to be extracted to the active theme folder.
-Below is an example of how `Cloud.muxalt` from the `Aurora` theme is structured.
-
-```
-.
-├── theme
-│   ├── active
-│   │   ├── 640x480
-│   │   │   ├── image
-│   │   │   |   ├── bootlogo.bmp
-│   │   │   |   ├── overlay.png
-│   │   │   |   ├── reboot.png
-│   │   │   |   ├── shutdown.png
-│   │   │   |   ├── wall
-│   │   │   |   |   ├── muxlaunch
-│   │   │   |   |   |   ├── explore.png
-│   │   │   |   |   |   ├── collection.png
-│   │   │   |   |   |   ├── history.png
-│   │   │   |   |   |   ├── apps.png
-│   │   │   |   |   |   ├── info.png
-│   │   │   |   |   |   ├── config.png
-│   │   │   |   |   |   ├── reboot.png
-│   │   │   |   |   |   └── shutdown.png
-│   │   |   |   |   ├── default.png
-│   │   |   |   |   ├── muxcharge.png
-│   │   |   |   |   ├── muxstart.png
-│   │   │   |   |   └── muxsysinfo.png
-│   │   |   └── preview.png
-│   │   ├── font
-│   │   |   └── default.bin
-│   │   ├── scheme
-|   |   |   ├── global.ini
-|   |   |   ├── muxlaunch.ini
-│   │   |   └── muxplore.ini
-```
+Give every alternative a unique name, test each one at every resolution your theme supports, and keep a
+`.muxalt` to only the files it actually replaces.
+{: .note }

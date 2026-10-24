@@ -1,0 +1,38 @@
+description: >
+  A small screen with a big effect. The handful of settings that make the interface easier to read and gentler to
+  look at can all be set from here in one go.<br><br>Each choice
+  sets the matching options elsewhere for you. You are always free to go
+  back into Customisation afterwards and fine tune anything you would like done differently.
+
+goback: muxconfig
+
+visible:
+  - name: Motion
+    icon: reducemotion
+    desc: >
+      Settles everything down by switching off transitions, scrolling text, and fades across the whole interface.
+      Well worth trying if movement on screen is distracting or makes reading harder.
+  - name: High Contrast
+    icon: highcontrast
+    desc: >
+      Puts plain, strongly contrasting colours in place regardless of which theme you are using, so text stands
+      clearly apart from what is behind it.
+  - name: Bold Focus
+    icon: boldfocus
+    desc: >
+      Draws a thicker marker around whatever is currently highlighted, so you can tell at a glance where you are in
+      a list.
+  - name: Text Size
+    icon: textsize
+    desc: >
+      Makes text larger everywhere, with a choice of <strong>Large</strong>, <strong>Larger</strong>, or
+      <strong>Largest</strong>. Leave it on <strong>Theme Default</strong> to let the active theme decide.
+  - name: Legible Font
+    icon: legiblefont
+    desc: >
+      Switches to Atkinson Hyperlegible, a typeface drawn specifically to be easier to read with low vision. Letters
+      that often get confused with one another are given clearly different shapes.
+
+tip:
+  - info: Anything you change here also shows up in Customisation.
+  - info: Press **MENU** on any option to read a short explanation without leaving the screen.

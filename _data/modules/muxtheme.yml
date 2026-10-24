@@ -1,0 +1,28 @@
+description: >
+  Browse the themes installed on your device and apply a different look to the frontend. Themes are grouped into
+  folders and each one can change elements such as backgrounds, icons, colours, and fonts.<br><br>Selecting a theme
+  checks that it is compatible with your device's resolution and firmware version before applying it, and if you
+  are connected to the internet you can also browse and download additional themes without leaving this screen.
+
+goback: muxcustom
+
+visible:
+  - name: Theme Download
+    icon: download
+    link: muxthemedown
+    desc: >
+      Jump into the on-device theme browser to preview, download, and install additional themes from the online
+      catalogue. Only shown at the top level of your installed themes, and when connected to the internet.
+  - name: Folder
+    icon: folder
+    desc: >
+      Themes can be grouped into folders, such as by creator or supported resolution, to keep a large collection
+      easier to browse.
+  - name: Theme
+    icon: theme
+    desc: >
+      Select an installed theme to apply it immediately. Once applied, it updates the appearance of menus,
+      backgrounds, and general interface elements throughout the frontend.
+
+tip:
+  - info: Press **Menu** to view credits for the highlighted theme, and **X** to remove one you no longer want. The default MustardOS theme and whichever theme is currently active cannot be removed.

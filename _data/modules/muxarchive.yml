@@ -1,6 +1,8 @@
 description: >
-  The Archive Manager provides a convenient way to view and manage installed or available archives within MustardOS. 
-  It automatically detects supported archive types, allowing you to browse, identify, and verify package installations.
+  Installs archives you have copied onto your device, covering system updates, applications, themes, save data, and
+  configuration packages. Anything with a supported extension turns up here on its own.<br><br>Press
+  <strong>A</strong> on an archive to install it. Your device works through it and tells you what changed once it
+  has finished.
 
 goback: muxapp
 
@@ -8,11 +10,43 @@ visible:
   - name: Name of Archive
     icon: archive
     desc: >
-      Archives with specific extensions will show up here. 
-      See <a href="/installation/archive">Archive Manager</a> for more information.
+      An archive waiting on your storage, ready to be installed. If the list is empty, copy something across and it
+      will appear next time you look.
   - name: Installed Archive
     icon: installed
     desc: >
-      There is a difference to the glyph when an archive is installed. We <strong>do not</strong> remove 
-      archives and we <strong>do not</strong> allow to delete on-device. Use Dingux Commander or 
-      alternative ways to remove archives from the list.
+      The glyph changes once an archive has been installed.
+
+hidden:
+  - name: More Actions
+    desc: >
+      Press <strong>MENU</strong> to open the actions list, offering <strong>Remove</strong> and
+      <strong>Help</strong>.
+  - name: Remove Archive
+    desc: >
+      Press <strong>X</strong> on an archive to delete it from your storage once you no longer need it. You are
+      asked to confirm first, unless <strong>Trust Removals</strong> is turned on in Advanced Settings. Removing an
+      archive does not uninstall anything it previously put in place.
+  - name: Update Manifest Warning
+    desc: >
+      If a system update arrives without a valid manifest, its files cannot be checked for damage and you are
+      warned before anything happens. You can choose <strong>Install Anyway</strong>, but a damaged update can leave
+      your device unusable, so <strong>Cancel</strong> and fetch a fresh copy is almost always the wiser move.
+  - name: Backup Check
+    desc: >
+      A <code>.muxbak</code> backup is checked against its checksum manifest before anything is restored. If a
+      section is missing, changed, or the manifest itself is gone, nothing is restored and you are told the backup
+      is damaged, so your current files stay exactly as they were.
+  - name: Backup Details
+    desc: >
+      Press <strong>MENU</strong> on a <code>.muxbak</code> backup to see when it was made, which MustardOS release
+      and device made it, its size, and each section it holds with a count of its files.
+  - name: Failure Logs
+    desc: >
+      If a backup or an install fails, a log of what happened is saved to <code>MUOS/log/backup</code> or
+      <code>MUOS/log/archive</code> on SD1, named with the date and time. Once it finishes, the result shows how
+      many sections were backed up or restored out of the total.
+
+tip:
+  - info: Archives are picked up from whichever storage you are currently using, so if something is not showing up, check which card you copied it to.
+  - info: A failed or damaged download is the usual reason for the manifest warning. Downloading the update again normally sorts it out.

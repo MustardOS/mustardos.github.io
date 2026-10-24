@@ -1,0 +1,36 @@
+description: >
+  Move, stretch, and zoom the game picture until it sits exactly where you want it. Each change happens live
+  behind the menu, so you can watch the picture shift as you press left and right.
+
+goback: muxretro-settings
+
+visible:
+  - name: X Offset
+    icon: viewportx
+    desc: >
+      Slide the picture left or right, one pixel at a time, up to half the width of your screen in either
+      direction.
+  - name: Y Offset
+    icon: viewporty
+    desc: >
+      Slide the picture up or down, one pixel at a time, up to half the height of your screen in either
+      direction.
+  - name: X Stretch
+    icon: viewportx
+    desc: >
+      Make the picture wider or narrower without moving it, growing evenly from the middle outwards. Useful
+      for filling the last stubborn sliver of screen, or for pulling a slightly too-wide picture back in.
+  - name: Y Stretch
+    icon: viewporty
+    desc: >
+      Make the picture taller or shorter without moving it, growing evenly from the middle outwards.
+  - name: Zoom
+    icon: viewportzoom
+    desc: >
+      Scale the whole picture up or down at once, keeping its shape. Larger than 100% pushes some of the
+      picture past the edges of your screen, so use it sparingly.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Left and right move a setting one pixel at a time, which is perfect for the final tweak. Hold **L2** or **R2** instead to jump in steps of 16 when you have a long way to go.
+  - info: Zoom keeps the shape of the picture. If a game already looks the right shape and is simply too small, reach for **Zoom** first.

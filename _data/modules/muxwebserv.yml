@@ -1,36 +1,139 @@
 description: >
-  The Web Services module manages background and remote access services available. These tools enable secure 
-  communication, file transfers, and network utilities that extend your device functionality beyond local use.
+  The background services that let other machines talk to your device, covering remote shells, file transfer, and
+  syncing. Each one runs only while it is switched on.<br><br>The first screen lists every service with its current
+  state beside it. Press <strong>A</strong> on one to open its own settings, where you can turn it on or off and
+  change the port it listens on. The ports below are the defaults, so if one clashes with something else on your
+  network you are free to move it.
 
 goback: muxconnect
 
 visible:
+  - name: Local DNS Resolver
+    icon: mdns
+    desc: >
+      Makes the device available through a memorable <code>.local</code> address. If another device already uses the
+      selected name, MustardOS adds a number and tries again, such as <code>muos1.local</code>.
+      <h5><strong>Settings</strong></h5><p>Local Name: <code>muos</code> by default</p>
+  - name: Web Dashboard
+    icon: landing
+    desc: >
+      Opens a browser dashboard for device activity, system information, file management, catalogue artwork,
+      Pickles saves, Remote View and the Editors and Tools. Other MustardOS dashboards discovered on the local network
+      appear in the device switcher. Authentication can keep changes behind the six-digit Web Dashboard Code shown on
+      the device.
+      <h5><strong>Settings</strong></h5><p>Web Port, Authentication and the Remote View settings</p>
   - name: Secure Shell
     icon: sshd
     desc: >
-      Enables remote command line access through the SSH protocol. Useful for developers and advanced users who wish 
-      to execute commands or manage files over the network securely.
-      <h5><strong>Service Details</strong></h5><p>Port: <code>22</code><br>Username: <code>root</code><br>Password: <code>root</code></p>
-  - name: SFTP + Filebrowser
-    icon: sftpgo
+      Remote command line access over SSH from a terminal on your computer. Log in as <code>root</code> with the
+      password <code>root</code>.
+      <h5><strong>Settings</strong></h5><p>Port: <code>22</code></p>
+  - name: Secure File Transfer
+    icon: sftp
     desc: >
-      Provides secure file transfer (SFTP) and a web based file manager interface. This allows browsing, uploading, 
-      and managing files on the device from any computer connected to the same network.
-      <h5><strong>Service Details</strong></h5><p>SFTP Port: <code>2022</code><br>WebUI Port: <code>9090</code><br>Username: <code>muos</code><br>Password: <code>muos</code></p>
+      Moves files on and off your device with any SFTP app. Log in as <code>muos</code> with the password
+      <code>muos</code> to reach your storage cards, USB storage, the boot partition and MustardOS itself, along with
+      shortcuts to your history, collections and catalogue. Storage that is not inserted or mounted is left out.
+      <h5><strong>Settings</strong></h5><p>Port: <code>2022</code></p>
   - name: Virtual Terminal
     icon: ttyd
     desc: >
-      Opens a browser accessible shell terminal through the local network. Ideal for quick maintenance or executing 
-      commands without connecting a physical keyboard or SSH client.
-      <h5><strong>Service Details</strong></h5><p>WebUI Port: <code>8080</code></p>
+      A shell you can open straight in a browser, handy for a quick bit of maintenance without reaching for an SSH
+      client. A username and password can be set if you would like one, or left blank for direct access.
+      <h5><strong>Settings</strong></h5><p>Port: <code>8080</code><br>Username and Password: optional</p>
   - name: Syncthing
     icon: syncthing
     desc: >
-      Enables continuous file synchronisation between devices and other computers. Changes to shared folders are 
-      automatically replicated, keeping files up to date across all devices.
-      <h5><strong>Service Details</strong></h5><p>WebUI Port: <code>7070</code></p>
-  - name: Tailscale
-    icon: tailscaled
+      Keeps folders in step between your device and your other machines, quietly copying changes across as you make
+      them.
+      <h5><strong>Settings</strong></h5><p>Web Port: <code>7070</code></p>
+
+settings_desc: >
+  Every service opens onto its own screen of settings. Only the rows that suit that service are shown, so most will
+  have just two or three of these.
+
+settings:
+  - name: Service
+    icon: enabled
     desc: >
-      Connects your device to a private, encrypted Tailscale network, allowing secure remote access from anywhere. 
-      This will require some manual configuration at the moment through SSH or a virtual terminal.
+      The first row on every service screen, deciding whether that service runs at all. Press <strong>A</strong> to
+      switch it between <strong>Enabled</strong> and <strong>Disabled</strong>. Each one costs a little battery and
+      memory while it is on, so leave off what you do not use.
+  - name: Local Name
+    icon: local_name
+    desc: >
+      Only shown for Local DNS Resolver. It becomes the requested name before <code>.local</code>, so
+      <code>muos</code> becomes <code>muos.local</code>, and does not change the device hostname. Use 1 to 63
+      letters, numbers, or hyphens. The active address may gain a numeric suffix to avoid a conflict.
+  - name: Port
+    icon: port
+    desc: >
+      The port the service listens on, anywhere from 1 to 65535. Web Dashboard and Syncthing call theirs
+      <strong>Web Port</strong>, since that is the one you point a browser at.
+  - name: Username
+    icon: username
+    desc: >
+      Only on Virtual Terminal, and entirely optional on a single user device. Set it along with a password if you
+      would like a login prompt.
+  - name: Password
+    icon: password
+    desc: >
+      Only on Virtual Terminal. It is shown as stars once set. Set both login fields, or leave both blank to go
+      straight in. Setting just one of the two is not allowed and you will be told so.
+  - name: Authentication
+    icon: authentication
+    desc: >
+      Only shown for Web Dashboard and enabled by default. When enabled, every change made through the dashboard,
+      such as uploading, moving or removing files, saving from the Editors and Tools, or changing History and
+      Collections, needs the changing code from Web Dashboard Code. Browsing and downloads remain available without
+      approval. When disabled, anyone on your network can make those changes, and no code is needed or shown.
+  - name: Remote View Privacy
+    icon: authentication
+    desc: >
+      Only shown for Web Dashboard and enabled by default. Enabled, Remote View needs the device code and skips private
+      screens. Disabled, anyone on your network can open Remote View without unlocking and every screen is captured,
+      including Web Dashboard Code, which would let them unlock the dashboard as well.
+  - name: Remote View
+    icon: landing
+    desc: >
+      Only shown for Web Dashboard. How often the dashboard may capture the screen for Remote View: Disabled, 30s, 1m,
+      3m, 5m or 10m, with 1m by default. Live streams the screen as it changes instead, and Manual only takes a picture
+      when you press Refresh now in the dashboard. It needs Authentication and the device code, captures only while someone has
+      Remote View open, and skips Web Dashboard Code, passcode and password screens. Disabled hides it from the dashboard.
+  - name: Live View FPS
+    icon: landing
+    desc: >
+      Only shown when Remote View is set to Live. How many pictures a second Live sends, from 5 to 60 in steps of 5,
+      with 15 by default. Higher is smoother but uses more processing on the device and more of your network.
+  - name: Live View Quality
+    icon: landing
+    desc: >
+      Only shown when Remote View is set to Live. How sharp each Live picture is, from 20 to 100 in steps of 5, with
+      70 by default. Higher is clearer but sends more data for every picture.
+  - name: Live Sound
+    icon: landing
+    desc: >
+      Only shown when Remote View is set to Live. Plays the sound from the device in the browser at Low, Medium or
+      High, and is disabled by default. Low uses the least network and waits longest before playing, so it suits a
+      weak connection. High sounds best and plays soonest but needs a strong connection. Anyone who can watch Live
+      Remote View can also hear it.
+  - name: Remote Controls
+    icon: landing
+    desc: >
+      Only shown for Web Dashboard and disabled by default. Enabled, Remote View shows a D-pad, face buttons, shoulder
+      buttons, Select, Menu and Start, plus volume and brightness controls, that work the device from the browser or
+      the keyboard. <strong>Enabled with Sticks</strong> also adds the analogue sticks on devices that have them, and
+      lets a game controller connected to the browser move them. They need Authentication and the device code,
+      because anyone using them can do anything you can with the device in your hands. With Authentication and Remote View Privacy both disabled, they are open to
+      anyone on your network, but only while Remote View is set to Live.
+  - name: Device Input Priority
+    icon: landing
+    desc: >
+      Only shown for Web Dashboard and enabled by default. While someone presses a button or moves a stick on the
+      device, the browser controls pause for a moment and Remote View says so, which stops the device and the browser
+      fighting over the same controls. The browser controls work again on their own once the device is left alone.
+
+tip:
+  - info: Changes are saved when you leave a service screen. If you have altered something you are asked whether to keep it, unless **Trust Modifications** is turned on in Advanced Settings.
+  - info: If a port is already used by something else on your network, move the service to a free port.
+  - info: While Wasabi or Pickles is playing, the Web Dashboard shows what is on in Now Playing, with controls for each. The controls need the device code when Authentication is on.

@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Device Backup
+title: Backup
 module: muxbackup
 glyph: muxbackup
 permalink: /tour/modules/muxbackup
 parent: Configuration
-nav_order: 10
+nav_order: 8
 has_toc: false
 ---

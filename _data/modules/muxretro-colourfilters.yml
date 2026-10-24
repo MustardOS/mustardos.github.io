@@ -1,0 +1,29 @@
+description: >
+  Choose a colour filter for the game picture. The browser keeps catalogue actions at the top and sorts folders and
+  files alphabetically without regard to letter case.
+
+goback: muxretro-settings
+
+visible:
+  - name: Downloads
+    icon: filter
+    desc: >
+      Fetch the current filter catalogue when a network connection is available. Entries are grouped by creator and
+      report Not Installed, Installed, or Update.
+  - name: Collection
+    icon: filter
+    desc: >
+      A short list of filters you have collected. Each entry references its original path, so updates to the original
+      are reflected here. Remove only removes the Collection reference.
+  - name: None
+    icon: filter
+    desc: Disable the colour filter.
+  - name: Creator Folders
+    icon: folder
+    desc: >
+      Built-in, downloaded, and manually added filters sit in a folder named after their creator. Files inside a
+      deeper folder are not included.
+
+tip:
+  - info: Use Collect on an original item to place it in Collection.
+  - info: Downloaded items can be removed from their original creator folder. Delete is hidden inside Collection.

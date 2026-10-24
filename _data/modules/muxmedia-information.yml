@@ -1,0 +1,82 @@
+description: >
+  A read-only reference for the media currently open. Wasabi shows the sections that apply to video, audio, or a
+  live stream and leaves unrelated details out.
+
+goback: muxmedia
+
+sections:
+  - name: Content
+    items:
+      - name: Content
+        icon: content
+        desc: The title of the current file, playlist entry, or stream.
+      - name: Location
+        icon: folder
+        desc: The folder containing local media, or the source location used for a stream.
+      - name: Size
+        icon: storage
+        desc: The size of a local file. Live content is identified as Live TV instead.
+      - name: Duration
+        icon: playtime
+        desc: The total running time of local media. Live content remains identified as Live TV.
+
+  - name: Video
+    items:
+      - name: Video Codec
+        icon: video
+        desc: The video format decoded by Wasabi.
+      - name: Resolution
+        icon: resolution
+        desc: The source width and height before scaling and viewport changes.
+      - name: Pixel Format
+        icon: videosettings
+        desc: The pixel layout supplied by the decoder.
+      - name: Target FPS
+        icon: fps
+        desc: The frame rate reported by the current video stream.
+      - name: Deinterlace
+        icon: deinterlace
+        desc: Whether Wasabi is correcting an interlaced video source.
+      - name: Queued Frames
+        icon: video
+        desc: The number of decoded pictures currently waiting to be presented.
+
+  - name: Audio Details
+    desc: Metadata appears when it exists in the current audio file.
+    items:
+      - name: Title and Artist
+        icon: content
+        desc: The song title and credited performer.
+      - name: Album and Album Artist
+        icon: collection
+        desc: The album name and its credited artist.
+      - name: Composer, Genre, and Year
+        icon: info
+        desc: Additional descriptive tags supplied by the file.
+      - name: Track and Disc
+        icon: audio
+        desc: The track and disc numbers stored in the metadata.
+      - name: Format and Encoder
+        icon: info
+        desc: The media format and encoder tag when one was recorded.
+      - name: Comment and Copyright
+        icon: info
+        desc: Optional notes and copyright information embedded in the file.
+      - name: Bitrate
+        icon: audio
+        desc: The encoded audio data rate when it can be determined.
+
+  - name: Audio Output
+    items:
+      - name: Audio Codec
+        icon: audio
+        desc: The audio format decoded by Wasabi.
+      - name: Sample Rate
+        icon: samplerate
+        desc: The number of audio samples processed each second.
+      - name: Channels
+        icon: audio
+        desc: The number of separate audio channels in the stream.
+      - name: Queued Samples
+        icon: audio
+        desc: The amount of decoded audio waiting for playback.

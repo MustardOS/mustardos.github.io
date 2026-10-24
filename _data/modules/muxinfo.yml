@@ -1,52 +1,58 @@
 description: >
-  The Information Menu brings together all system details, diagnostics, and reference tools in one place. 
-  From checking storage capacity and input functionality to viewing hardware statistics, network data, and credits, 
-  this section provides insight into both the technical and community sides of MustardOS.
+  Everything your device has to tell you, gathered in one place. Check the system and battery, storage space,
+  network details, activity, screenshots, community news, and the software included in the release.
 
 goback: muxlaunch
 
 visible:
   - name: Community News
     icon: news
+    link: muxnews
     desc: >
-      Stay up to date with official announcements, feature highlights, and community driven updates.
-      News items are curated directly from the <a href="https://community.muos.dev">MustardOS Community Forum</a>,
-      keeping you informed about development progress, releases, and notable contributions.
+      Announcements, feature highlights, and news from the community, gathered from the
+      <a href="https://community.muos.dev">MustardOS Community Forum</a> so you can keep up with what is happening
+      without leaving your device.
   - name: Activity Tracker
     icon: activity
     link: muxactivity
     desc: >
-      View detailed statistics about how content is played. Track play time, launch counts, play styles,
-      and view long term trends to better understand your personal play/usage habits.
+      A look at how you have actually been playing. Play time, how often you come back to things, your play styles,
+      and how it all adds up over the months.
   - name: Screenshots
     icon: screenshot
     link: muxshot
     desc: >
-      View all the screenshots that have been taken on the device. These are specific to MustardOS and not 
-      screenshots from RetroArch or images. <strong>This is not a general image viewer.</strong>
+      Screenshots taken with the MustardOS screenshot hotkey. RetroArch screenshots and other pictures are not
+      shown here.
   - name: Storage Space
     icon: space
     link: muxspace
     desc: >
-      View the current used space of the mounted storage devices as well as the internal storage.
+      How much room is used and how much is left on every card and drive attached, including the space MustardOS
+      itself lives in.
   - name: Input Tester
     icon: tester
+    link: muxtester
     desc: >
-      Test the various controls on the device to ensure they are working and mapped properly.
-  - name: System Details
-    icon: sysinfo
-    link: muxsysinfo
+      A quick way to check every button, stick, and trigger is doing what it should. Worth a visit if something
+      feels off.
+  - name: Device Details
+    icon: detail
+    link: muxdetail
     desc: >
-      Access version information and details about the CPU, memory, temperature, and battery info. The frontend can 
-      also be refreshed directly from here if any changes were made manually.
-  - name: Network Details
-    icon: netinfo
-    link: muxnetinfo
-    desc: >
-      Access network information like IP and MAC addresses, Wi-Fi signal range, traffic throughput and more. You are 
-      also able to change the hostname and randomise the MAC address when not connected to a network.
+      Everything about your device in one screen, split into sections covering the system itself, how it is
+      running, the processor, the battery, and the network.
   - name: Supporters and Credits
     icon: credit
     desc: >
-      View all of the current MustardOS developers, supporters, and contributors. 
-      Along with some awesome music to watch it with.
+      The developers, supporters, and contributors who make MustardOS what it is, with some rather good music to
+      watch it go by.
+  - name: Reload Frontend
+    icon: reload
+    desc: >
+      Restarts the frontend so it picks up any settings or theme changes made outside of the interface.
+  - name: Third Party
+    icon: third
+    link: muxthird
+    desc: >
+      An alphabetical list of the third-party libraries included in this release, together with their exact versions.

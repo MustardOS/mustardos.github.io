@@ -1,71 +1,152 @@
 description: >
-  Relocate key user data from SD1 to SD2, if your device supports a secondary card. This ensures that personal data 
-  such as saves, themes, configurations, and collections remain intact even if SD1 needs to be reformatted or
-  reflashed.<br><br>Using this feature helps protect against data loss and simplifies both maintenance and updates.
+  Moves your personal data across to the second card in your device, if it has one, so it survives should the first
+  card ever need reflashing. Each entry tells you where it currently lives, either <strong>Primary</strong> or
+  <strong>Secondary</strong>.<br><br>The screen is split into sections, with bulk actions at the end for moving everything
+  at once. Nothing is removed until a move has finished successfully.<br><br>The sections match
+  <a href="/tour/modules/muxbackup">Backup</a>. Content assignments, MustardOS settings and RetroArch data always
+  stay on the device itself, so they only appear there.
 
 goback: muxconfig
 
-visible:
-  - name: Applications
-    icon: apps
+sections:
+  - name: Saves and Activity
     desc: >
-      Moves user installed applications and their data to SD2, ensuring they remain accessible after reflashing SD1.
-  - name: System BIOS
-    icon: bios
+      Your progress and the record of what you have played.
+    items:
+      - name: Save Data
+        icon: save
+        desc: >
+          Save files and save states from RetroArch and the other emulators.
+      - name: Pickles Data
+        icon: pickles
+        desc: >
+          Everything Pickles keeps for your content, including in-game saves, save states and their thumbnails.
+          Save states add up quickly, which makes the second card a sensible home for them.
+      - name: Wasabi Data
+        icon: wasabi
+        desc: >
+          Everything Wasabi keeps for you, including resume points, history, bookmarks and equaliser profiles.
+      - name: Screenshots
+        icon: screenshot
+        desc: >
+          Every screenshot you have taken on the device.
+      - name: Activity Tracker
+        icon: track
+        desc: >
+          Your play time and session records.
+      - name: History
+        icon: history
+        desc: >
+          What you have played and when you last played it.
+      - name: Content Collection
+        icon: collection
+        desc: >
+          Your curated lists and favourites.
+
+  - name: Content
     desc: >
-      Migrates user supplied system BIOS files used by emulators to SD2 for safer storage.
-  - name: Metadata Catalogue
-    icon: catalogue
+      How your content is named, launched and presented.
+    items:
+      - name: Launch Overrides
+        icon: override
+        desc: >
+          Per content overrides, where you have told something to launch differently to the rest.
+      - name: Folder Launch Files
+        icon: launch
+        desc: >
+          The file chosen to launch for each folder you have set up with
+          <a href="/installation/launch-files">Set Launch File</a> in Explore Content.
+      - name: Friendly Name Configs
+        icon: name
+        desc: >
+          The tidied up names you have given your content.
+      - name: Metadata Catalogue
+        icon: catalogue
+        desc: >
+          Box art including videos and animated images, grid icons, and the text that goes with your content.
+      - name: System BIOS
+        icon: bios
+        desc: >
+          The BIOS files some emulators need in order to run.
+
+  - name: System
     desc: >
-      Transfers box art, grid icons, splash screens, and text metadata to SD2, keeping your content visuals intact.
-  - name: Content Collection
-    icon: collection
+      The pieces that keep your device working the way you have set it up.
+    items:
+      - name: Settings Profiles
+        icon: profile
+        desc: >
+          The settings profiles you have saved. Keep them on the second card to carry them between devices.
+      - name: Network Profiles
+        icon: network
+        desc: >
+          Your saved Wi-Fi networks and their details.
+      - name: Syncthing Configs
+        icon: syncthing
+        desc: >
+          Syncthing's settings and the devices you have paired it with.
+      - name: User Init Scripts
+        icon: init
+        desc: >
+          Anything you have placed in the <code>MUOS/init</code> folder to run at startup.
+      - name: Core Manifests
+        icon: manifest
+        desc: >
+          Your own core manifest changes, which add or adjust the cores and systems MustardOS knows about.
+
+  - name: Customisation
     desc: >
-      Moves all content collection data, preserving your curated lists and favourites.
-  - name: History
-    icon: history
+      The things that make your device look and feel like yours.
+    items:
+      - name: Applications
+        icon: apps
+        desc: >
+          Applications you have installed, along with their own data.
+      - name: Custom Packages
+        icon: package
+        desc: >
+          User created packages such as catalogue sets and RetroArch configuration packages.
+      - name: Themes
+        icon: theme
+        desc: >
+          Installed themes and everything that comes with them. Do bear in mind that future updates may not get on
+          with older themes.
+      - name: Background Music
+        icon: music
+        desc: >
+          The music tracks that play while you browse.
+
+  - name: Bulk Actions
     desc: >
-      Relocates your play history and recently launched items so these remain consistent after SD1 reflash.
-  - name: User Init Scripts
-    icon: init
+      For when you would rather deal with the lot in one go. Each one tells you how many items it is about to touch
+      before anything happens.
+    items:
+      - name: Migrate Everything
+        icon: migrate_all
+        desc: >
+          Moves everything still sitting on the first card across to the second, and uses it from there.
+      - name: Sync Everything
+        icon: sync_all
+        desc: >
+          Copies everything on the second card back to the first as a safety net. It carries on being used from the
+          second card afterwards.
+      - name: Purge Everything
+        icon: purge_all
+        desc: >
+          Wipes everything from the second card and goes back to using the first. You are offered a
+          <strong>Sync + Purge</strong> option so nothing is lost on the way out.
+
+hidden:
+  - name: Migrate or Sync
     desc: >
-      Transfers user initialisation scripts from <code>MUOS/init</code> folder, ensuring custom startup routines
-      persist.
-  - name: Background Music
-    icon: music
+      Press <strong>A</strong> on any item. If it is on <strong>Primary</strong> it is moved across, and if it is
+      on <strong>Secondary</strong> it is copied back. You are always asked first.
+  - name: Purge
     desc: >
-      Moves your chosen background music tracks for the frontend to SD2, preserving your personalised theme audio.
-  - name: Friendly Name System
-    icon: name
-    desc: >
-      Migrates your friendly name configuration files to SD2, maintaining cleaned up or renamed content titles.
-  - name: Network Profiles
-    icon: network
-    desc: >
-      Moves saved Wi-Fi profiles and credentials, reducing the need to reconnect manually after reinstallation.
-  - name: Custom Packages
-    icon: package
-    desc: >
-      Transfers user created packages such as catalogue sets and RetroArch configuration packages to secondary storage.
-  - name: Save Games + Save States
-    icon: save
-    desc: >
-      Moves RetroArch and emulator save files and states to SD2, keeping gameplay progress safe and sound.
-  - name: Screenshots
-    icon: screenshot
-    desc: >
-      Migrates all screenshots taken on the device to SD2, ensuring those precious "retro" achievements remain even 
-      after updates.
-  - name: Syncthing Configs
-    icon: syncthing
-    desc: >
-      Moves Syncthing configuration data, preserving sync configuration and paired device settings.
-  - name: Themes
-    icon: theme
-    desc: >
-      Relocates installed frontend themes and associated assets, preventing awful loss during SD1 reflash. However do
-      keep in mind that future updates may break theme compatibility.
-  - name: Activity Tracker
-    icon: track
-    desc: >
-      Moves your playtime tracking and session data files to SD2, maintaining usage records after any reflash.
+      Press <strong>X</strong> on an item that is on <strong>Secondary</strong> to wipe it from there and go back to
+      using the first card. Choose <strong>Sync + Purge</strong> if you have not copied it back yet.
+
+tip:
+  - info: Press **Left** or **Right** to move between sections, or use the shoulder buttons to do the same.
+  - info: Sync is the cautious option. It copies your data back to the first card while leaving everything running from the second, so you always have two copies.
+  - info: When a bulk action has nothing to do, it shows a message saying so.

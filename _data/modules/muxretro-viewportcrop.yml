@@ -1,0 +1,35 @@
+description: >
+  Trim edges off the game picture before it is enlarged to fill your screen. Handy for games that draw a
+  ragged strip of rubbish down one side, or a black band along the top, that the original television would
+  have hidden behind its bezel.
+
+goback: muxretro-settings
+
+visible:
+  - name: Crop Top
+    icon: croptop
+    desc: >
+      Trim a strip off the top of the picture.
+  - name: Crop Bottom
+    icon: cropbottom
+    desc: >
+      Trim a strip off the bottom of the picture.
+  - name: Crop Left
+    icon: cropleft
+    desc: >
+      Trim a strip off the left side of the picture.
+  - name: Crop Right
+    icon: cropright
+    desc: >
+      Trim a strip off the right side of the picture.
+  - name: Centre Crop
+    icon: centrecrop
+    desc: >
+      Recentre what is left of the picture on your screen after trimming.
+      While this is on, the offset settings on the Adjustment screen are ignored.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Left and right trim one pixel at a time. Hold **L2** or **R2** to move in steps of 8 when you are removing a wide band.
+  - info: Trimming happens before the picture is enlarged, so a small trim can look surprisingly large once the rest is stretched back out to fill your screen. Go gently and check as you adjust.
+  - info: MustardOS always keeps a little of the picture, so you cannot accidentally trim a game away to nothing.

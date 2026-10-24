@@ -1,0 +1,41 @@
+# Sidebar headings for the top level pages, rendered by _includes/components/site_nav.html.
+# Pages keep their own nav_order within a group.
+
+- name: Introduction
+  pages:
+    - Welcome
+    - Handy Hotkeys
+    - Supporting MustardOS
+    - How MustardOS Works
+
+- name: Getting Started
+  pages:
+    - Supported Devices
+    - Device Notes
+    - Installation
+    - Releases
+    - Roadmap
+    - Contributing
+
+- name: Documentation
+  pages:
+    - Grand Tour
+    - Systems
+    - Themes
+    - Web Services
+    - Task Toolkit
+    - Editors and Tools
+
+- name: Community
+  pages:
+    - The MustardOS Crew
+    - Release Songs
+  links:
+    - title: Discord
+      url: https://discord.gg/mustardos-1152022492001603615
+    - title: Forum
+      url: https://community.muos.dev/
+    - title: IRC
+      url: https://web.libera.chat/#MustardOS
+    - title: Merch
+      url: https://shop.muos.dev/

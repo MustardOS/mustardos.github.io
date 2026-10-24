@@ -1,10 +1,17 @@
 manufacturer: Anbernic
 name: RG35XX PRO
 internal: rg35xx-pro
-desc: A 3.5" vertical handheld with two analogue sticks.
+desc: A 3.5" vertical handheld with two sticks.
+features:
+  form: vertical
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "640x480"
 downloads:
   - variant:
-    hash: 22c7ba044e73d5a030f4a1f68300aa9da7e821abc2ea142f0b5489ef1d5504d8
-    gofile: https://store-na-phx-4.gofile.io/download/direct/1afdc0ad-f88c-441b-9562-ead521a7889d/MustardOS_RG35XX-PRO_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/wyRUUIib#In3XFbRt_YxSb9doXVxJnobaZpTxCQiKoB_X49ROibY
-    torrent: MustardOS_RG35XX-PRO_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: e0268b5b8bc66cf8950c925384ec888df5186ac2ffbcd6a34b5b6900e86a8540
+    gofile: https://gofile.io/d/gJb4l34S
+    mega: https://mega.nz/file/02R1kKJC#w5KzZOZSj0JxPBQbC_5x4yoKbCU2ZdBlH7L2hFzoglA
+    torrent: MustardOS_RG35XX-PRO_2606.0_ANDROMEDA-db2a3bd0

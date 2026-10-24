@@ -1,0 +1,15 @@
+description: >
+  Shows you exactly what your device is hearing as you press things. Try any button, nudge the D-Pad, or push a
+  stick and it lights up on screen, so you can be sure everything is working and mapped as it should be.
+  <br><br>It is also offered during first time setup, so a new device can be checked before you commit to
+  anything.
+
+goback: muxinfo
+
+visible:
+  - name: Input Feedback
+    icon: tester
+    desc: >
+      Lights up each button, D-Pad direction, and stick as you press or move it, along with the volume keys where
+      your device has them. Well worth a visit after remapping anything, or when a control has started feeling
+      unreliable.

@@ -1,0 +1,33 @@
+description: >
+  The small on-screen readouts shown while you play.
+
+goback: muxretro-settings
+
+visible:
+  - name: Show FPS
+    icon: fpscounter
+    desc: >
+      A small readout in the corner of the screen while you play. <strong>Simple</strong> shows just the frame
+      rate, and <strong>Detailed</strong> adds the timings behind it, including how the slowest frames compare
+      to the average. Can also be switched on and off mid-game with the <strong>MENU+Y</strong> hotkey.
+  - name: Current Playtime
+    icon: playtime
+    desc: >
+      A running timer in the corner showing how long you have been playing. It tucks itself away while the
+      Pickles Menu is open.
+  - name: Header Visibility
+    icon: header
+    desc: >
+      Choose whether the header overlay shows <strong>None</strong>, just the <strong>Clock</strong>, just
+      the <strong>Battery</strong>, or <strong>Clock + Battery</strong> while playing. Can also be cycled
+      mid-game with the <strong>MENU+X</strong> hotkey.
+  - name: Idle in Game
+    icon: pause
+    desc: >
+      Whether leaving the game alone brings up the screensaver, opens the Pickles Menu and makes an idle auto save.
+      Disable it for games with long cutscenes. The screensaver still works in the MustardOS menus, and sleep still
+      follows your power settings.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: These readouts sit above the game image and never affect the content itself.

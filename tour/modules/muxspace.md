@@ -5,6 +5,7 @@ module: muxspace
 glyph: muxspace
 permalink: /tour/modules/muxspace
 parent: Information
-nav_order: 3
+grand_parent: MustardOS Frontend
+nav_order: 4
 has_toc: false
 ---

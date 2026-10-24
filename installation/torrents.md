@@ -13,7 +13,7 @@ Below is an automatically generated list of available torrent files for MustardO
 the correct image for your device. If in doubt, see the <a href="/devices">Supported Devices</a> page.
 
 <a style="margin-top:0.5rem;" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300"
-href="/assets/torrents/MustardOS_2601.1_FUNKY_JACARANDA_Torrents.zip">
+href="/assets/torrents/MustardOS_2606.0_ANDROMEDA_Torrents.zip">
 Download All
 </a>
 
@@ -28,6 +28,8 @@ Download All
 {% endif %}
 
 {% assign anbernic = "" | split: "" %}
+{% assign batlexp = "" | split: "" %}
+{% assign gkd = "" | split: "" %}
 {% assign trimui = "" | split: "" %}
 
 {% for t in torrents %}
@@ -45,12 +47,16 @@ Download All
 
 {% if prefix2 == "RG" %}
 {% assign anbernic = anbernic | push: entry %}
+{% elsif first_word contains "G350" %}
+{% assign batlexp = batlexp | push: entry %}
+{% elsif first_word contains "PIXEL" %}
+{% assign gkd = gkd | push: entry %}
 {% elsif prefix3 == "TUI" %}
 {% assign trimui = trimui | push: entry %}
 {% endif %}
 {% endfor %}
 
-{% assign vendors = "Anbernic:anbernic, TrimUI:trimui" | split: "," %}
+{% assign vendors = "Anbernic:anbernic,BatleXP:batlexp,GKD:gkd,TrimUI:trimui" | split: "," %}
 
 {% for v in vendors %}
 {% assign pair = v | split: ":" %}
@@ -60,6 +66,10 @@ Download All
 {% case key %}
 {% when "anbernic" %}
 {% assign group = anbernic %}
+{% when "batlexp" %}
+{% assign group = batlexp %}
+{% when "gkd" %}
+{% assign group = gkd %}
 {% when "trimui" %}
 {% assign group = trimui %}
 {% endcase %}
@@ -103,10 +113,13 @@ Download All
 {% endcapture %}
 
 {% assign release_name = release_name | strip %}
+{% assign release_key = version | replace: ".", "_" %}
+{% assign release_data = site.data.releases[release_key] %}
+{% assign release_type = release_data.type | default: "archive" %}
 
   <tr>
     <td>{{ device }}</td>
-    <td><a href="/release/current/2601_1">{{ version }} {{ release_name }}</a></td>
+    <td><a href="/release/{{ release_type }}/{{ release_key }}">{{ version }} {{ release_name }}</a></td>
     <td><code>{{ build }}</code></td>
     <td><a href="{{ url }}">Download</a></td>
   </tr>

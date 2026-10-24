@@ -7,21 +7,17 @@ permalink: /systems/computer/amiga
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Commodore Amiga"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                     | Type             | Version           |
-|:-------------------------|:-----------------|:------------------|
-| Amiberry (External)      | Libretro Core    | 5.7.4             |
-| PUAE                     | Libretro Core    | 5.3.0             |
-| **PUAE 2021**            | Libretro Core    | 2.6.1             |
-| PUAE Xtreme              | Libretro Core    | 8a3f25311b        |
-| UAE4ARM                  | Libretro Core    | 0.5               |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

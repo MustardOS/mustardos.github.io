@@ -14,3 +14,11 @@ visible:
     icon: collection
     desc: >
       A star is indicative of content that has been added to one or more collections.
+
+hidden:
+  - name: Information
+    desc: >
+      Hold <strong>MENU</strong> on an item to open its Information straight away, or choose
+      <strong>Information</strong> from the actions list. It opens on the preview artwork when the item has some,
+      which can be a picture or a short video, and on the description otherwise. Press <strong>A</strong> to switch
+      between the two.

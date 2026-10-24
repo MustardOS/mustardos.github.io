@@ -1,6 +1,7 @@
 ver: "2405.0"
 code: "Beans"
 type: archive
+pronunciation: "/biːnz/"
 
 changes:
   - Added Archive Manager with support for specially crafted <code>.zip</code> files in the ARCHIVE folder

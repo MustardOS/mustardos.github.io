@@ -1,0 +1,36 @@
+description: >
+  Add a shaped edge around video content and preview every change over the current picture.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Shape
+    icon: border
+    desc: Choose Disabled, Round, Square, or Squircle.
+  - name: Scaling
+    icon: aspectratio
+    desc: Scale the vignette against the full frame or the media aspect ratio.
+  - name: Width
+    icon: viewportx
+    desc: Set how wide the vignette is.
+  - name: Height
+    icon: viewporty
+    desc: Set how tall the vignette is.
+  - name: Offset X
+    icon: viewportx
+    desc: Move the vignette left or right.
+  - name: Offset Y
+    icon: viewporty
+    desc: Move the vignette up or down.
+  - name: Softness
+    icon: texturefilter
+    desc: Blend the vignette edge gradually into the picture.
+  - name: Strength
+    icon: contrast
+    desc: Set how strongly the vignette covers the edge.
+  - name: Colour
+    icon: saturation
+    desc: Choose a black or white vignette.
+
+tip:
+  - info: Hold **X** or **Y** while changing Shape to find the two secret shapes shared with Pickles.

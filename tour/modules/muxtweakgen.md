@@ -1,6 +1,6 @@
 ---
 layout: module
-title: General Settings
+title: General
 module: muxtweakgen
 glyph: muxtweakgen
 permalink: /tour/modules/muxtweakgen

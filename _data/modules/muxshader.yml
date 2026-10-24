@@ -1,0 +1,17 @@
+description: >
+  Assign a RetroArch shader to the selected content, using every compatible <code>.frag</code> shader file found in
+  the shader directory on your device.<br><br>Press <strong>A</strong> to apply the highlighted shader to this piece
+  of content only, <strong>X</strong> to apply it to every item in the current directory, or <strong>Y</strong> to
+  apply it recursively to the current directory and everything below it.
+
+goback: muxoption
+
+visible:
+  - name: Shader
+    icon: shader
+    desc: >
+      Each row represents an installed shader. Highlight one and press <strong>Menu</strong> to view its name, creator, and
+      version when the shader includes them.
+
+tip:
+  - info: If no compatible shaders are found on your device, this screen will let you know that none are available.

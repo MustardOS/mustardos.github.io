@@ -1,0 +1,34 @@
+description: >
+  Play the same game together with someone else, either across your own home network or over the internet.
+  One person hosts and the other joins. Both devices need matching content, core, and emulation options.
+  <br><br>Choose <strong>Host Network</strong> if you are the one setting the game up, or
+  <strong>Join Network</strong> if a friend has already started one and is waiting for you.
+
+goback: muxretro
+
+visible:
+  - name: Host Network
+    icon: network
+    link: muxretro-netplayhost
+    desc: >
+      Set up a session for someone else to join. Everything your friend needs to reach you is shown once it
+      is running.
+  - name: Join Network
+    icon: search
+    link: muxretro-netplayjoin
+    desc: >
+      Connect to a session someone else has already started, either by picking it from a list of nearby
+      games or by typing in the address they gave you.
+  - name: Status
+    icon: network
+    desc: >
+      Shows discovery, secure pairing, compatibility checks, connection progress, and the current session state.
+  - name: Disconnect
+    icon: exit
+    desc: >
+      Leave the session and return both the core and Pickles controls to normal play.
+
+tip:
+  - info: Both players need the same game file. If one copy is even slightly different, the two games will drift out of step with each other.
+  - info: Playing across the same home network is always smoother than playing over the internet, so use **Find LAN Sessions** when you are both in the same house.
+  - info: Achievements in Hardcore mode are paused while you are playing together, because progress is being shared between two people.

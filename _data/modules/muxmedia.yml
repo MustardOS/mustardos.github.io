@@ -1,0 +1,54 @@
+description: >
+  Wasabi is MustardOS' integrated media player for video, audio, playlists, live television, and live radio. Its
+  menus use the active MustardOS theme, with bookmarks, playback controls, visual options, and media information
+  kept in the same familiar interface.<br><br>Assign Wasabi to supported media through Core Assignment, then press
+  <strong>MENU</strong> while something is playing to open the Wasabi Menu.
+
+visible:
+  - name: Resume
+    icon: resume
+    desc: Close the menu and return to playback.
+  - name: Bookmarks
+    icon: bookmark
+    link: muxmedia-bookmarks
+    desc: Save named positions in video or audio, then return to them later. This is hidden for live streams.
+  - name: Tracks, Episodes, or Channels
+    icon: video
+    link: muxmedia-playlists
+    desc: >
+      Move between entries in the current playlist, or between the songs inside a chiptune, SID, or game music file.
+      The name changes to match the loaded content and only appears when more than one entry is available.
+  - name: Content Switch
+    icon: switch
+    desc: Switch directly to recent Pickles or Wasabi content without returning to Content Explorer first.
+  - name: Settings
+    icon: settings
+    link: muxmedia-settings
+    desc: Adjust the picture, sound, display, visualisers, shortcuts, live-stream buffer, and playback behaviour.
+  - name: Equaliser
+    icon: audiofilter
+    desc: >
+      Shape the sound with sliders for the preamp and ten bands from 31 Hz to 16 kHz, each from -12 dB to +12 dB in 0.25 dB steps.
+      <strong>Left</strong> and <strong>Right</strong> pick a slider, <strong>Up</strong> and <strong>Down</strong>
+      move it, and <strong>L1</strong> and <strong>R1</strong> step through the built-in profiles: Flat, Bass Boost,
+      Treble Boost, Vocal, Rock, Pop, Jazz, Classical, Electronic, Spoken Word, Small Speakers, Headphones, Loudness,
+      and Late Night. <strong>Y</strong> saves your own profile under a generated name you can change,
+      <strong>X</strong> removes a saved profile, and <strong>A</strong> plays or pauses so you can hear each change.
+      Leaving asks whether to keep the equaliser for This Content, This Directory, or This Session Only.
+  - name: Information
+    icon: info
+    link: muxmedia-information
+    desc: View details about the current file, stream, video, audio, and queued playback data.
+  - name: Restart
+    icon: restart
+    desc: Start the current media again. Live content reconnects to the current stream.
+  - name: Quit
+    icon: exit
+    desc: Leave Wasabi and return to MustardOS.
+
+tip:
+  - info: Hold **MENU** while a Wasabi screen is open to peek at the media underneath it.
+  - info: Live television channels can be changed with **D-Pad Up** and **D-Pad Down** without opening the menu.
+  - info: Live television and radio keep playing while the Wasabi Menu is open.
+  - info: Repeat and Shuffle can be changed from their assigned hotkeys. Their glyphs appear beneath the audio progress bar or at the edge of video playback.
+  - info: When playback reaches the end, Wasabi stays open on the final picture or audio screen until you choose what happens next.

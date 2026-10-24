@@ -7,24 +7,17 @@ permalink: /systems/handheld/gameboy
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Nintendo Game Boy"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| DoubleCherryGB     | Libretro Core    | 0.17.0            |
-| FixGB              | Libretro Core    | 0.8.2             |
-| **Gambatte**       | Libretro Core    | 0.5.0             |
-| Gearboy            | Libretro Core    | 3.6.1.2           |
-| mGBA               | Libretro Core    | 0.11              |
-| SameBoy            | Libretro Core    | 1.0               |
-| TGB Dual           | Libretro Core    | 0.8.3             |
-| VBA-M              | Libretro Core    | 2.1.3             |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

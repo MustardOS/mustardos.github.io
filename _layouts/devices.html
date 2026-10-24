@@ -32,61 +32,8 @@ layout: default
 <p><em>No current release available!</em></p>
 {% endif %}
 
-{% assign device_pairs = site.data.devices %}
-{% assign all_devices = "" | split: "" %}
-{% for pair in device_pairs %}
-{% assign dev = pair[1] %}
-{% assign all_devices = all_devices | push: dev %}
-{% endfor %}
-{% assign grouped_devices = all_devices | group_by: "manufacturer" %}
+<h2 id="find-your-download"><strong>Find your download</strong></h2>
+<p>Narrow the list by manufacturer or by details such as a lid, analogue sticks or the shape of the device, then
+    choose your device to see the matching MustardOS image, its checksum and what to do with it next.</p>
 
-{% for group in grouped_devices %}
-<hr>
-<h2><strong>{{ group.name }}</strong></h2>
-
-<div class="device-grid">
-    {% for device in group.items %}
-    <div class="device-card">
-        <img src="/assets/devices/{{ device.internal }}.png" alt="{{ device.name }}">
-        <h3 style="margin-top:0.25rem"><strong>{{ device.name }}</strong></h3>
-        <p>{{ device.desc | default: "No description provided." }}</p>
-
-        {% if latest %}
-        <p style="margin-top:0.75rem;">
-            <a class="btn btn-primary fs-5 mb-4 mb-md-0 text-grey-dk-300"
-               href="/release/current/{{ latest.ver | replace: '.', '_' }}#{{ device.internal }}">
-                View Downloads
-            </a>
-        </p>
-        {% endif %}
-
-    </div>
-    {% endfor %}
-</div>
-{% endfor %}
-
-<style>
-    .device-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 1.65rem;
-        margin-top: 1rem;
-    }
-
-    .device-card {
-        border: 1.35px solid #c7af26;
-        border-radius: 6px;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-        transition: transform 0.15s ease;
-    }
-
-    .device-card img {
-        max-width: 128px;
-        border-radius: 6px;
-    }
-
-    .device-card:hover {
-        transform: scale(1.03);
-    }
-</style>
+{% include download_picker.html %}

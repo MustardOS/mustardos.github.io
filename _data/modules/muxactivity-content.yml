@@ -26,6 +26,10 @@ visible:
     icon: detail_mode
     desc: >
       The play mode used during the most recent launch of this content.
+  - name: First Played
+    icon: detail_start
+    desc: >
+      The date and time when this content was first launched, which is kept even after later sessions.
   - name: Last Played
     icon: detail_start
     desc: >
@@ -42,6 +46,10 @@ visible:
     icon: detail_last
     desc: >
       The duration of the most recent play session.
+  - name: Longest Session
+    icon: detail_last
+    desc: >
+      The duration of the longest play session recorded for this content.
   - name: Play Style
     icon: detail_play
     desc: >

@@ -1,0 +1,88 @@
+description: >
+  Pickles is MustardOS' integrated Libretro player. Its menus follow the active MustardOS theme and keep game
+  settings, saves, controls, achievements and visual options in one familiar interface. Assign Pickles to a
+  system, folder or title through Core Assignment when you want to use it.<br><br>Hold <strong>MENU</strong> and
+  release it without pressing anything else to open the Pickles Menu while you play.<br><br>For an introduction
+  to both valid core players, read the
+  <a href="https://community.muos.dev/t/pickles-vs-retroarch/1592">Pickles and RetroArch FAQ</a> on the MustardOS
+  Community Forum.
+
+visible:
+  - name: Resume
+    icon: resume
+    desc: >
+      Close this menu and go straight back to your game.
+  - name: Game State
+    icon: state
+    link: muxretro-gamestate
+    desc: >
+      Save exactly where you are and pick it back up later, even in games that never had a save feature of
+      their own. There is a quick slot, an automatic one, and plenty of numbered slots, each with a small
+      screenshot so you can tell them apart.
+      History can return you to a moment before a state was loaded, and Trash can restore a deleted state.
+  - name: Network Play
+    icon: network
+    link: muxretro-netplay
+    desc: >
+      Play together with someone else over your home network or the internet. One person hosts the game and
+      the other joins it.
+  - name: RetroAchievements
+    icon: trophy
+    link: muxretro-cheevo
+    desc: >
+      Optional challenges from RetroAchievements, such as finishing a level without dying. Sign in with your
+      account to earn them and see how far along you are. This appears once an account has been set up.
+  - name: Game Link
+    icon: network
+    link: muxretro-gamelink
+    desc: >
+      Play a compatible linked game over the network, through a wired Direct Link, or with two machines running
+      side by side on this device.
+  - name: Disc Control
+    icon: disc
+    link: muxretro-diskcontrol
+    desc: >
+      Swap discs in games that came on more than one. Only appears when the game you loaded actually has
+      extra discs available.
+  - name: Cheats
+    icon: cheat
+    link: muxretro-cheats
+    desc: >
+      Switch cheat codes on and off for the game you are playing.
+  - name: Patches
+    icon: patch
+    link: muxretro-patches
+    desc: >
+      Turn on fan-made improvements that sit alongside your game, such as translations or bug fixes, without
+      permanently changing the original file. Only appears when a matching patch is found.
+  - name: Content Switch
+    icon: switch
+    desc: >
+      Jump straight to another game or video from your history or collections without returning to Content
+      Explorer. Each entry shows whether it opens in Pickles or Wasabi. Hidden during Network Play or Game Link.
+  - name: Settings
+    icon: settings
+    link: muxretro-settings
+    desc: >
+      Everything about how the game looks, sounds, and controls, plus how often your progress is saved.
+  - name: Information
+    icon: info
+    link: muxretro-information
+    desc: >
+      Details about the game currently running, handy when you are checking that the right version or the
+      right extra files were picked up.
+  - name: Restart
+    icon: restart
+    desc: >
+      Start the game again from the beginning, as though you had just launched it.
+  - name: Quit
+    icon: exit
+    desc: >
+      Leave the game and return to MustardOS. If automatic saving is set to cover quitting, your progress is
+      saved first.
+
+tip:
+  - info: You can use the default **MENU** combinations for common actions without opening this menu. Every second button can be changed from Hotkey Buttons, and **X Reset** restores the defaults.
+  - info: While two Game Boys are running on the one device, hold **MENU** and press **A** to swap which one your buttons control.
+  - info: Not sure what a row does? Highlight it and tap **MENU** for a plain-English explanation of that exact item. The same works right through the Settings screens.
+  - info: When you back out of Settings after changing something, choose This Content, This Core, This Directory, This Session Only, or Discard.

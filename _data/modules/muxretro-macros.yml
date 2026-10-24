@@ -1,0 +1,81 @@
+description: >
+  Multi-step button macros for this port, each one a named, ordered sequence of RetroPad buttons (plus optional
+  Goto/Loop control steps) that can be bound to a single physical button. Pressing that button fires the whole
+  sequence, which plays through to completion on its own - it does not matter whether the button is still held or
+  released partway through.
+
+goback: muxretro-inputport
+
+visible:
+  - name: Create Macro
+    icon: macro
+    desc: >
+      Press <strong>Y</strong> to create a new macro (up to 32), naming it with the on-screen keyboard
+      before jumping straight into its step editor.
+  - name: Edit / Bind
+    icon: macro
+    desc: >
+      Highlight a macro and press <strong>A</strong> to choose <strong>Edit</strong>, which opens its step
+      editor, or <strong>Bind</strong>, which captures the next physical button you press on this port and
+      assigns the macro to it.
+  - name: Delete Macro
+    icon: macro
+    desc: >
+      Highlight a macro and press <strong>X</strong> to delete it, with a confirmation prompt first. Any
+      button it was bound to reverts to unbound.
+  - name: Add / Remove Step
+    icon: macro
+    desc: >
+      Inside a macro's editor, press <strong>Y</strong> to add a step (up to 32), then choose <strong>Button</strong>,
+      <strong>Goto</strong>, or <strong>Loop</strong>. Button captures the next RetroPad button you press.
+      Press <strong>X</strong> to remove the highlighted step.
+  - name: Goto
+    icon: exit
+    desc: >
+      Jumps back to an earlier row every single time it is reached, looping that stretch of the macro forever -
+      regardless of the trigger button's state, so a Goto-containing macro only ends when the trigger button is
+      pressed again (restarting it) or the port disconnects. Any steps listed after a Goto become unreachable,
+      which is expected. Press
+      <strong>L</strong> or <strong>R</strong> on the step to change which row it targets (only rows above it,
+      never itself), or press <strong>A</strong> to type an exact row number. Needs at least one earlier step to
+      exist first.
+  - name: Loop
+    icon: restart
+    desc: >
+      Like Goto, but counted - jumps back to its target row up to <strong>Count</strong> times, then falls
+      through to the next step instead of jumping again. <strong>L</strong>/<strong>R</strong> on the step
+      changes the target row the same way as Goto; press <strong>A</strong> to open a small editor for
+      <strong>Target</strong> and <strong>Count</strong> (presets 1, 2, 3, 4, 5, 10, 20, 50, or an exact value up
+      to 65535 via the on-screen keyboard).
+  - name: Step Timing
+    icon: macro
+    desc: >
+      Highlight a step and press <strong>A</strong> to open its Timing submenu, showing three rows: Wait, Hold,
+      and Repeat. The step list itself shows a compact summary like <strong>W0ms-H96ms-R1</strong>.
+  - name: Hold
+    icon: controller
+    desc: >
+      How long the button stays down on each press. Press <strong>L</strong> or <strong>R</strong> to cycle
+      through a fixed set of presets (48, 96, 192, 384, 768, 1536, 3072, 6144ms), or press <strong>A</strong> to
+      type an exact value from <strong>0</strong> to <strong>65535</strong> milliseconds instead. New steps
+      default to 96ms.
+  - name: Repeat
+    icon: restart
+    desc: >
+      How many times to press the button. Press <strong>L</strong> or <strong>R</strong> to cycle through a
+      fixed set of presets (1, 2, 3, 4, 5, 10, 20, 50), or press <strong>A</strong> to type an exact count from
+      <strong>1</strong> to <strong>65535</strong> instead. New steps default to a Repeat of 1, a single
+      ordinary press.
+  - name: Wait
+    icon: pause
+    desc: >
+      The gap <strong>between</strong> repeats only - never before the first press or after the last, so it
+      only matters when Repeat is 2 or higher. Cycled or typed exactly the same way as Hold. Even with Wait set
+      to 0ms, repeats always get at least one frame of release between them so they register as separate
+      presses.
+
+tip:
+  - info: A macro fires once per press and plays through on its own - releasing the trigger button early does not stop it. Without a Goto or Loop step it simply finishes and sits idle; add a Goto back to an earlier row (row 1, for example) to make part or all of it repeat indefinitely instead.
+  - info: Deleting a step automatically re-points any Goto/Loop steps that referenced it, or rows after it, so existing jumps keep landing on the same logical row.
+  - info: Binding a macro to a button is mutually exclusive with that button's normal RetroPad target and turbo setting on the Button Mapping screen. Assigning one clears the other.
+  - info: Backing out of a macro's editor with unsaved changes offers the usual Save or Discard prompt before it lets you leave.

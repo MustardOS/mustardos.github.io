@@ -1,26 +1,93 @@
 description: >
-  The Storage Information module provides an overview of all detected storage devices connected to your system. 
-  It lists primary, secondary, external, and internal storage areas, showing how each is used within MustardOS. 
-  <br><br>Monitoring available space here helps maintain system stability and ensures your data and 
-  applications have room to operate smoothly.
+  Shows how much room is used and how much is left on every storage device attached to your system.<br><br>The first section lists all of your storage together. Move right and
+  each device gets a section of its own, going into rather more detail about what it is and how it is holding up.
 
 goback: muxinfo
 
-visible:
-  - name: Primary Storage
-    icon: primary
+sections:
+  - name: All Storage
     desc: >
-      Typically the first, <em>and sometimes only</em>, user data storage mount on the device.
-  - name: Secondary Storage
-    icon: secondary
+      A quick summary of everything attached. Press <strong>A</strong> on any of these to jump straight to that
+      device's own section.
+    items:
+      - name: Primary Storage
+        icon: primary
+        desc: >
+          The card your device starts from. It holds the <code>MUOS</code> folder along with your content, saves,
+          and settings.
+      - name: Secondary Storage
+        icon: secondary
+        desc: >
+          Extra room for your content. On most devices this is the second card slot. On some it is built in
+          storage, so read any preparation warnings carefully.
+      - name: External Storage
+        icon: external
+        desc: >
+          USB storage plugged into your device. It comes and goes, so treat anything on it as temporary.
+      - name: System Storage
+        icon: system
+        desc: >
+          The area holding MustardOS itself. It does not grow as you use your device and cannot be prepared.
+
+  - name: Each Device
     desc: >
-      Some devices come with a secondary storage option allowing you to use it for both content and MustardOS settings.
-  - name: External Storage
-    icon: external
+      Every detected device gets its own section with the following details. If something is attached but nothing
+      on it can be read, you will be told so, which usually means it has never been formatted or its filesystem has
+      come to grief.
+    items:
+      - name: Total Capacity
+        icon: capacity
+        desc: >
+          How much room there is altogether. This is usually a little under what the packaging claims, since the
+          card keeps some aside for its own housekeeping.
+      - name: Used Space
+        icon: capacity
+        desc: >
+          How much is currently taken up by files.
+      - name: Free Space
+        icon: capacity
+        desc: >
+          How much is left. Leaving a little spare helps the card spread its writes about and last longer.
+      - name: Filesystem
+        icon: filesystem
+        desc: >
+          How the storage is formatted. <strong>exFAT</strong> and <strong>FAT32</strong> can be read on just about
+          any computer, while <strong>EXT4</strong> keeps file permissions but needs Linux to read it.
+      - name: Device Node
+        icon: device
+        desc: >
+          The name your device uses internally for this storage.
+      - name: Manufacturer
+        icon: manufacturer
+        desc: >
+          The maker the card claims to be. Counterfeit cards often borrow a well known name that does not match how
+          they actually behave.
+      - name: Model
+        icon: model
+        desc: >
+          The product name the card reports for itself.
+      - name: Date
+        icon: date
+        desc: >
+          When the card says it was made. A date in the future, or one long before you bought it, is worth raising
+          an eyebrow at.
+      - name: Quality Check
+        icon: quality
+        desc: >
+          The result of the check run at startup: <strong>Genuine</strong>, <strong>Likely Genuine</strong>,
+          <strong>Suspicious</strong>, <strong>Suspected Fake</strong>, <strong>Fake</strong>, or
+          <strong>Trash</strong>. Anything short of genuine means the card may not
+          hold as much as it claims, and content written to it can come back damaged.
+
+hidden:
+  - name: Prepare Storage
     desc: >
-      If a device has a USB connection you may be able to mount it via the storage mount Task Toolkit scripts.
-  - name: System Storage
-    icon: system
-    desc: >
-      Internal storage, <em>or the RootFS as we call it</em>, is where most important data is held. It is always 
-      a good idea to keep a watch on this as a typically full system storage may cause issues.
+      Press <strong>X</strong> on a card that can be prepared to format it fresh, choosing between
+      <strong>exFAT</strong>, <strong>FAT32</strong>, or <strong>EXT4</strong>. Everything on it goes, so you are
+      asked a small sum first to be sure you meant it, and warned twice more before anything happens. There is no
+      way back once it starts.
+
+tip:
+  - info: Press **Left** or **Right** to move between sections, or use the shoulder buttons to do the same.
+  - info: System Storage cannot be prepared, which is rather the point of it.
+  - info: If a Quality Check comes back as anything other than Genuine, do yourself a favour and stop trusting that card with anything you would miss.

@@ -1,0 +1,34 @@
+description: >
+  Rumble, and how the sticks respond. These settings apply to every player at once.
+
+goback: muxretro-settings
+
+visible:
+  - name: Rumble
+    icon: rumble
+    desc: >
+      Whether the device or assigned controller vibrates when the core requests it. Pickles preserves the requested
+      strength, including subtle effects, on hardware that supports variable rumble.
+  - name: Stick Deadzone
+    icon: stickdeadzone
+    desc: >
+      How far the stick has to move away from the middle before the game notices, from 0% to 50%. Raise this
+      if your character wanders off on their own while you are not touching the stick.
+  - name: Stick Anti-Deadzone
+    icon: stickantideadzone
+    desc: >
+      Makes a small push count for more, so the stick still reaches its full range even after a deadzone has
+      been set. Worth a nudge if the stick feels sluggish just off the middle.
+  - name: Stick Sensitivity
+    icon: sticksensitivity
+    desc: >
+      How far a given stick movement travels in the game, from a gentle 50% to a twitchy 200%.
+  - name: Invert Stick Y
+    icon: stickinverty
+    desc: >
+      Swap up and down on the stick, for games that look the wrong way round to you, or simply because you
+      prefer it that way.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Deadzone and Anti-Deadzone fix opposite problems. Deadzone ignores unwanted movement near the middle, Anti-Deadzone restores full reach just past it. Most sticks only need one of the two adjusted.

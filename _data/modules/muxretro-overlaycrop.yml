@@ -1,0 +1,22 @@
+description: >
+  Trim the active overlay without changing the game viewport. Each edge can be adjusted separately or moved
+  together with Centre Crop.
+
+goback: muxretro-settings
+
+visible:
+  - name: Crop Top
+    icon: croptop
+    desc: Trim the top edge of the overlay.
+  - name: Crop Bottom
+    icon: cropbottom
+    desc: Trim the bottom edge of the overlay.
+  - name: Crop Left
+    icon: cropleft
+    desc: Trim the left edge of the overlay.
+  - name: Crop Right
+    icon: cropright
+    desc: Trim the right edge of the overlay.
+  - name: Centre Crop
+    icon: centrecrop
+    desc: Move all four overlay crop edges together to keep the crop centred.

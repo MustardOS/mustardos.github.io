@@ -1,0 +1,17 @@
+manufacturer: Anbernic
+name: RG SP
+internal: rgsp
+desc: The RG34XX SP clamshell design without the analogue sticks.
+features:
+  form: clamshell
+  sticks: 0
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "720x480"
+downloads:
+  - variant:
+    hash: 35e5886a307a7a61263b437dbb5cee3ded6a5e623fe8aaea0e1e11b131a77c7d
+    gofile: https://gofile.io/d/e6MOIDHz
+    mega: https://mega.nz/file/wm4ViK5K#Ir88SLts7YR-h5q07JONqp190RPaNYFBGiWNnGgQ0fk
+    torrent: MustardOS_RGSP_2606.0_ANDROMEDA-db2a3bd0

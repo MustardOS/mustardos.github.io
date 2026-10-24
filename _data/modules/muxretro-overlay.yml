@@ -1,0 +1,35 @@
+description: >
+  A detailed reference for the Overlay section of Pickles Settings. Use a repeating built-in pattern or downloaded
+  artwork, then position it independently from the game viewport.
+
+goback: muxretro-settings
+
+visible:
+  - name: Overlay
+    icon: overlay
+    desc: >
+      Choose Disabled, Built-In Pattern, or Downloaded. Press <strong>X</strong> on this row to turn the overlay off.
+  - name: Built-In Pattern
+    icon: overlaypattern
+    desc: Choose a checkerboard, diagonal, lattice, horizontal, or vertical pattern and its available thickness.
+  - name: Overlay Image
+    icon: overlay
+    desc: >
+      Choose Downloads, Collection, None, or an item inside a creator folder one level deep. Items are sorted
+      alphabetically without regard to letter case. Press <strong>X</strong> on this row to turn the overlay off.
+  - name: Overlay Opacity
+    icon: overlayopacity
+    desc: Set how strongly the overlay appears over the game picture.
+  - name: Adjustment
+    icon: viewport
+    desc: Move, stretch, and zoom the overlay without changing the game viewport.
+  - name: Cropping
+    icon: centrecrop
+    desc: Trim the top, bottom, left, or right edge, or apply a centred crop.
+  - name: Reset Overlay
+    icon: viewportreset
+    desc: Restore the overlay position, size, crop, and opacity defaults.
+
+tip:
+  - info: Download entries report Not Installed, Installed, or Update and are grouped by creator.
+  - info: Collection stores the path of the original item. Updating the original also updates the collected entry.

@@ -1,8 +1,8 @@
 description: >
   Quickly find your content across all storage. Whether you are looking within a single folder or across every 
-  connected storage device, this tool helps you locate specific content without having to browse manually.
+  connected storage device, this tool helps you locate specific content.
 
-goback: muxoption
+goback: muxplore
 
 visible:
   - name: Lookup
@@ -18,4 +18,7 @@ visible:
     icon: global
     desc: >
       Searches across all currently mounted and active storage devices, including SD1, SD2, and USB. Ideal for 
-      locating content when you're unsure which device or directory it resides in.
+      locating content when you are unsure which device or directory it resides in.
+
+tip:
+  - info: A folder with a launch file set shows as a single result, just as it does in Explore Content, and choosing a result takes you straight to it.

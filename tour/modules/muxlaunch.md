@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Main Menu
+title: MustardOS Frontend
 module: muxlaunch
 glyph: muxlaunch
 permalink: /tour/modules/muxlaunch

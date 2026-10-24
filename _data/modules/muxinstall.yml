@@ -1,0 +1,44 @@
+description: >
+  The very first screen on a brand new or freshly formatted device. It walks you through the handful of things
+  worth sorting out before you go any further, then finishes the install.<br><br>Profiles and the Input Tester
+  are here too, so you can make the interface comfortable to read and check every button works
+  before committing to anything. You will only see all this once, right at first boot.
+
+visible:
+  - name: Date and Time
+    icon: clock
+    link: muxrtc
+    desc: >
+      Set the date, time, and timezone before carrying on. Getting this right up front saves puzzling over odd
+      timestamps on your saves and screenshots later.
+  - name: Language
+    icon: language
+    link: muxlanguage
+    desc: >
+      Choose the language you would like to use. You can always change your mind later from Configuration.
+  - name: Profiles
+    icon: access
+    link: muxprofile
+    desc: >
+      Apply an accessibility profile for contrast, motion or text size before going any further, so everything is
+      comfortable to read from the very start. A profile supplied with your device is already applied here.
+  - name: Input Tester
+    icon: tester
+    link: muxtester
+    desc: >
+      Check that every button and stick on your device reports properly. A very good idea on a device fresh out of
+      the box, while there is still time to do something about it.
+  - name: Shutdown
+    icon: shutdown
+    desc: >
+      Power down safely if you need to stop and come back to this later.
+  - name: Install
+    icon: install
+    desc: >
+      Finish preparing MustardOS and restart into the frontend proper. You are first asked how the games card
+      should be prepared, then to confirm. It takes a little while and should not be interrupted, and once it is
+      done this screen will not appear again.
+
+tip:
+  - info: When you choose **Install** you are asked how to prepare the games card. **exFAT** is the sensible answer for almost everyone and reads on any computer. **FAT32** works everywhere but cannot hold a file larger than 4GB. **EXT4** copes better with the console being switched off suddenly, but Windows cannot read it without extra software installed.
+  - info: Only the formats this particular device is able to create are offered, so if one is missing from the list it is because the tooling for it is not present.

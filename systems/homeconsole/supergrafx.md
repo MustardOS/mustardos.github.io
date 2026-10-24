@@ -7,19 +7,17 @@ permalink: /systems/homeconsole/supergrafx
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "NEC PC Engine SuperGrafx"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                   | Type             | Version           |
-|:-----------------------|:-----------------|:------------------|
-| **Beetle SuperGrafx**  | Libretro Core    | 1.29.0            |
-| Geargrafx              | Libretro Core    | 0.0.5-10          |
-| Beetle PCE             | Libretro Core    | 1.29.0            |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

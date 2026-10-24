@@ -1,68 +1,105 @@
 description: >
-  The Content Options menu allows you to view and modify detailed information for any selected item within the 
-  Content Explorer. From checking play statistics to assigning emulator cores and adjusting performance governors, 
-  this section provides everything needed to fine tune how individual content behaves when launched.
+  Content Options lets you view and change how any item from Explore Content behaves. From assigning emulator cores
+  and adjusting performance governors to checking play statistics, this screen has everything needed to fine tune
+  how individual content behaves when launched.<br><br>The rows are split into sections, with the details about
+  the content gathered in <strong>Information</strong> at the end. Rows that do not apply to the content or its
+  core are hidden, and a section with nothing to show is skipped.
 
 goback: muxplore
 
-visible:
-  - name: Directory
-    icon: folder
+sections:
+  - name: Options
     desc: >
-      Displays the full folder path of the selected content, showing where the file is located within your storage.
-  - name: Name
-    icon: rom
+      Everything that changes how this content launches.
+    items:
+      - name: Content Core
+        icon: core
+        link: muxassign
+        desc: >
+          Assigns the specific emulator system and core that will be used to launch this content.
+      - name: System Governor
+        icon: governor
+        link: muxgov
+        desc: >
+          Sets the CPU governor profile for this content. Allows you to optimise between performance and
+          battery efficiency on a per title basis.
+      - name: Control Scheme
+        icon: control
+        link: muxcontrol
+        desc: >
+          Customise the button layout and control scheme for this content. Perfect for titles requiring non
+          standard input configurations or comfort adjustments.
+      - name: Threaded Video
+        icon: retroarch
+        link: muxraopt
+        desc: >
+          Toggle RetroArch threaded video support to improve performance on supported systems. Only appears
+          when the content is assigned to a RetroArch core.
+      - name: Remove Config
+        icon: remconfig
+        desc: >
+          Remove RetroArch or Pickles configuration files. Use <strong>Left</strong> or <strong>Right</strong>
+          to choose whether the removal targets the Content, Core, or Folder, then press <strong>X</strong> to
+          perform it.
+      - name: Content Tag
+        icon: tag
+        link: muxtag
+        desc: >
+          Assign a custom glyph or tag icon to the content. These icons appear next to content within Explore
+          Content, helping visually distinguish special items or categories.
+
+  - name: Display
     desc: >
-      The display name of the content item. This can differ from the file name depending on how the content was scanned 
-      or renamed.
-  - name: Time Played
-    icon: time
+      How the content looks once it is running. This section only appears when at least one of its rows
+      applies to the core in use.
+    items:
+      - name: Colour Filter
+        icon: colfilter
+        link: muxcolfilter
+        desc: >
+          Apply accessibility and stylistic colour filters, including monochrome and colour blind modes.
+          RetroArch and Pickles content use their own built-in filter and shader systems, so this applies to
+          content launched through a supported external emulator instead, such as DraStic, PPSSPP, ScummVM,
+          Flycast, Azahar, or Amiberry.
+      - name: Shader
+        icon: shader
+        link: muxshader
+        desc: >
+          Shows the shader currently applied to this content, core, or directory, and lets you assign a
+          different one. Applies to the same supported external emulators as Colour Filter above.
+      - name: Overlay Options
+        icon: overlay
+        link: muxoverlay
+        desc: >
+          Override the base overlay's transparency, position, and scale for this specific content or
+          directory. Appears for content assigned to RetroArch or a supported external emulator. Pickles
+          manages its own overlay from its Settings > Display screen.
+
+  - name: Information
     desc: >
-      Shows the total cumulative time the content has been played. This helps track usage and identify your most 
-      frequently played items.
-  - name: Times Launched
-    icon: count
-    desc: >
-      Displays how many times this content has been launched. Ideal for tracking play frequency.
-  - name: Search
-    icon: search
-    link: muxsearch
-    desc: >
-      Opens the search interface to locate similar or related content. Helpful for finding alternate versions or 
-      other entries in a series.
-  - name: Core
-    icon: core
-    link: muxassign
-    desc: >
-      Assigns the specific emulator system and core that will be used to launch this content.
-  - name: Governor
-    icon: governor
-    link: muxgov
-    desc: >
-      Sets the CPU governor profile for this content. Allows you to optimise between performance and battery 
-      efficiency on a per title basis.
-  - name: Control Scheme
-    icon: control
-    link: muxcontrol
-    desc: >
-      Customise the button layout and control scheme for this content. Perfect for titles requiring non standard 
-      input configurations or comfort adjustments.
-  - name: Threaded Video
-    icon: retroarch
-    desc: >
-      Toggle RetroArch threaded video support to improve performance on supported systems.
-  - name: Remove Config
-    icon: remconfig
-    desc: >
-      Remove RetroArch configuration files per content, core, or directory.
-  - name: Colour Filter
-    icon: colfilter
-    link: muxcolfilter
-    desc: >
-      Apply accessibility and stylistic colour filters, including monochrome and colour blind modes. This works for most, if not all, RetroArch content.
-  - name: Glyph Tag
-    icon: tag
-    link: muxtag
-    desc: >
-      Assign a custom glyph or tag icon to the content. These icons appear next to content within the Content Explorer, 
-      helping visually distinguish special items or categories.
+      Details about the content, for reference only.
+    items:
+      - name: Storage
+        icon: storage
+        desc: >
+          Shows which storage device, Primary, Secondary, or External, the selected content is stored on.
+      - name: Folder Path
+        icon: folder
+        desc: >
+          Displays the full folder path of the selected content, showing where the file is located within your
+          storage.
+      - name: Content Name
+        icon: name
+        desc: >
+          The file name of the content.
+      - name: Time Played
+        icon: time
+        desc: >
+          Shows the total time the content has been played.
+      - name: Times Launched
+        icon: launch
+        desc: >
+          Displays how many times this content has been launched.
+
+tip:
+  - info: Press **L1** or **R1** to move between sections, or highlight the section bar and use **Left** or **Right**.

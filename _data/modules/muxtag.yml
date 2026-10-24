@@ -43,7 +43,7 @@ visible:
   - name: In Progress
     icon: inprogress
     desc: >
-      Marks content that you're currently playing or testing. A helpful visual cue for ongoing sessions.
+      Marks content that you are currently playing or testing. A helpful visual cue for ongoing sessions.
   - name: None
     icon: none
     desc: >

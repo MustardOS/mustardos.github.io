@@ -7,46 +7,54 @@ grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "PICO-8"
 ---
 
 ![](../assets/images/pico8.png)
 
-# Available Emulators
+# **Available Emulators**
 
-| Name                                             | Type          | Version  |
-|:-------------------------------------------------|:--------------|:---------|
-| [PICO-8](https://www.lexaloffle.com/pico-8.php)  | Standalone    |          |
-| [fake-08](https://github.com/jtothebell/fake-08) | Libretro Core | 0.0.2.19 |
-| [Retro8](https://github.com/Jakz/retro8)         | Libretro Core |          |
+{% include emulator_table.html system=page.manifest %}
 
 ## Default Emulator
 
-By default MustardOS uses the fake-08 libretro core. This is only the default because it doesn't require you to purchase
-the native PICO-8 application. We strongly suggest you purchase the native application to support this wonderful system!
+By default MustardOS uses **Picante8**, the MustardOS PICO-8 core, which runs carts through
+[Pickles]({{ site.baseurl }}/tour/modules/muxretro). It plays `.p8` and `.p8.png` carts without needing the native
+PICO-8 application, and supports:
+
+- Save states, including in multicart games and in carts that run their own game loop.
+- Multicart games, where one cart loads another with `load()` or reads its data with `reload()`.
+- Cart saves through `cartdata()`, kept in the Pickles save folder.
+
+A game made of several carts, such as Poom, can open as a single item with **Set Launch File**, described in
+[Folder Launch Files]({{ site.baseurl }}/installation/launch-files).
+
+FAKE-08 is also available as a libretro core from **Core** in Content Options. Picante8 is only the default because it
+does not require you to purchase the native PICO-8 application. We strongly suggest you purchase the native application
+to support this wonderful system!
 
 ## PICO-8 Emulator Files
 
-Native PICO-8 is now supported!  
-Starting with MustardOS Banana, the pico8 files can go in your `MUOS/bios/pico8` on either SD1 or SD2 depending on where
-you've chosen to put those. Older version of MustardOS require the files here: `/MUOS/emulator/pico8`.
-The files required to run PICO-8 natively are stored on SD1 in the /MUOS/emulator/pico8 folder.  
-In order to use native PICO-8 you'll need to place your own purchased binaries in there.  
-You will need a copy of the following files from the **Raspberry Pi** version:
+Native PICO-8 is supported once you add your own purchased binaries. You will need these files from the
+**Raspberry Pi** version:
 
 - pico8_64
 - pico8.dat
 
 ![](../assets/images/pico-8.png)
 
-You can now drop your official PICO-8 zip into `/ARCHIVE` on either SD Card and install using the MustardOS Archive
-Manager. The file is named along the lines of `pico-8_ver_raspi.zip` with `ver` being replaced with the current PICO-8
-release. The extension will need to be changed to `.muxzip` firstly to be recognised.
+Place them in `MUOS/bios/pico8` on SD1 or SD2, following where your BIOS files are stored. A `MUOS/bios/pico-8` folder
+copied straight from the purchased download is also recognised.
 
-Once you add your purchased files from Lexaloffle you'll need to set MustardOS to use the PICO-8 External emulator.
+You can also install the official download through Archive Manager. Rename the `pico-8_ver_raspi.zip` file, where
+`ver` is the current PICO-8 release, to end in `.muxzip`, copy it to the `ARCHIVE` folder on either card and install it
+from **Archive Manager**.
 
-- Browse to where your PICO-8 games are in MustardOS content explorer.
-- Press select on any of the items and change core.
-- Select ``PICO-8 (External)`` and press ``X`` to set this core for the whole directory!
+Once the files are in place, switch your PICO-8 content to the standalone emulator:
+
+1. Highlight your PICO-8 folder in Explore Content and press **X** to open Content Options.
+2. Choose **Core**, then **PICO-8 - Standalone** or **PICO-8 - Pixel-Perfect - Standalone**.
+3. Choose the **Directory** or **Recursive** scope to apply it to every game in the folder.
 
 ## PICO-8 Standalone Keys
 
@@ -77,4 +85,4 @@ You sure can!
 You will need to create a blank file named `Splore.p8` [case sensitive] in your PICO-8 ROMs folder.  
 You can also download a suitable
 file [here](https://raw.githubusercontent.com/MustardOS/mustardos.github.io/refs/heads/main/systems/assets/files/Splore.p8)  
-**Simply launch that Splore file from MustardOS and you're in!**
+**Simply launch that Splore file from MustardOS and you are in!**

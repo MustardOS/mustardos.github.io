@@ -1,0 +1,77 @@
+# Wasabi file extensions, copied from the frontend source:
+#   video: is_video() in video/content/library.c
+#   audio: the extension arrays used by content_path_audio_backend() in common/content/content.c
+# Regenerate "all" and every family list from those arrays when either changes. "common" is a hand picked subset.
+
+# Playback abilities shown when hovering an extension, taken from video/core/player.c and video/core/audio_source.c.
+abilities:
+  - key: seek
+    label: Seeking
+  - key: length
+    label: Length shown
+  - key: resume
+    label: Resume from History
+  - key: speed
+    label: Fast Forward and Slow Motion
+  - key: gapless
+    label: Gapless Playback and Cross Fade
+  - key: tracks
+    label: Several songs in one file
+  - key: art
+    label: Embedded cover art
+
+video:
+  caps: {seek: true, length: true, resume: true, speed: true}
+  common: [mp4, mkv, webm, avi, mov, wmv, flv, mpg, mpeg, ts, m2ts, 3gp, ogv, vob, gif]
+  all: [3g2, 3gp, apng, asf, avi, bik, divx, flc, fli, flv, gif, h263, m2ts, m2v, m4v, mjpeg, mjpg, mkv, mov, mp4,
+    mpe, mpeg, mpg, mts, mve, nut, ogm, ogv, qt, rm, rmvb, roq, smk, ts, vob, webm, wmv]
+audio:
+  common: [mp3, flac, ogg, opus, aac, m4a, wav, wma, aiff, alac, ape, wv, mka, mid]
+  all: [3ga, '667', '669', aa3, aac, ac3, acb, acm, adp, ads, adts, adx, aea, afc, aif, aifc, aiff, aix, alac, amf, amr,
+    ams, apc, ape, ast, at3, at9, au, aud, awb, ay, bcstm, bcwav, bfstm, bfwav, bg00, binka, bns, bnsf, brstm, brwav,
+    bwav, c67, caf, cba, dbm, digi, dmf, dsf, dsm, dsp, dsym, dtk, dtm, dts, dtshd, eac3, ec3, etx, far, fc, fc13, fc14,
+    flac, fmt, fsb, fst, ftm, g723_1, g729, gbs, gdm, genh, gmc, gt2, gtk, gym, hca, hes, hps, ice, idsp, imf, ims,
+    ircam, it, j2b, kar, kss, latm, loas, m15, m2a, m4a, m4b, m4r, mca, mdl, med, mic, mid, midi, mka, mlp, mmcmp, mms,
+    mod, mp+, mp1, mp2, mp3, mpa, mpc, mpp, mptm, msf, mt2, mtm, mus, musc, nist, npsf, nsf, nsfe, nsp, nst, oga, ogg,
+    okt, oma, omg, opus, plm, ppm, psm, pt36, ptm, puma, pvf, qcp, qoa, ra, rmi, rsd, rtm, rwav, s3m, sap, sds, sdx, sf,
+    sfx, sfx2, shn, sid, sln, smod, snd, sox, spc, sph, spsd, spx, ss2, st26, stk, stm, stp, stx, svag, svs, swav, sxd,
+    symmod, tak, tcb, thd, tta, ult, umx, unic, vag, vas, vgm, vgs, vgz, vig, voc, vpk, w64, wav, wave, wavm, weba, wma,
+    wow, wsd, wsi, wv, xa, xm, xmd, xmf, xmu, xpk, xvag, xwb, xwma]
+  families:
+    - name: General audio
+      caps: {seek: true, length: true, resume: true, speed: true, gapless: true, tracks: false, art: true}
+      desc: Standard, lossless, surround, DSD, and speech formats decoded by FFmpeg.
+      extensions: [3ga, aa3, aac, ac3, adts, aif, aifc, aiff, alac, amr, ape, au, awb, caf, dsf, dts, dtshd, eac3, ec3,
+        flac, g723_1, g729, ircam, latm, loas, m2a, m4a, m4b, m4r, mka, mlp, mp+, mp1, mp2, mp3, mpa, mpc, mpp, nist,
+        oga, ogg, oma, omg, opus, pvf, qcp, qoa, ra, sdx, sf, shn, sln, snd, sox, sph, spx, tak, thd, tta, voc, w64,
+        wav, wave, weba, wma, wsd, wv]
+    - name: MIDI
+      caps: {seek: true, length: true, resume: true, speed: false, gapless: false, tracks: false, art: false}
+      desc: Played with the soundfont chosen in Soundfont. Karaoke and RIFF MIDI files are included.
+      extensions: [kar, mid, midi, rmi]
+    - name: Tracker modules
+      caps: {seek: true, length: true, resume: true, speed: true, gapless: true, tracks: false, art: false}
+      desc: Amiga, DOS, and modern tracker music played by libopenmpt.
+      extensions: ['667', '669', amf, ams, c67, cba, dbm, digi, dmf, dsm, dsym, dtm, etx, far, fc, fc13, fc14, fmt, fst,
+        ftm, gdm, gmc, gt2, gtk, ice, imf, ims, it, j2b, m15, mdl, med, mmcmp, mms, mod, mptm, mt2, mtm, mus, nst, okt,
+        plm, ppm, psm, pt36, ptm, puma, rtm, s3m, sfx, sfx2, smod, st26, stk, stm, stp, stx, symmod, tcb, ult, umx,
+        unic, wow, xm, xmf, xpk]
+    - name: Chiptune
+      caps: {seek: true, length: true, resume: true, speed: true, gapless: true, tracks: true, art: false}
+      notes:
+        length: Estimated when the file does not store one
+      desc: Music from 8-bit and 16-bit consoles and computers played by Game Music Emu.
+      extensions: [ay, gbs, gym, hes, kss, nsf, nsfe, sap, spc, vgm, vgz]
+    - name: Commodore 64 SID
+      caps: {seek: true, length: true, resume: false, speed: true, gapless: true, tracks: true, art: false}
+      notes:
+        seek: Replays the tune up to the new position, so long jumps take a moment
+        length: From Songlengths.md5, otherwise three minutes
+      desc: SID tunes played by libsidplayfp.
+      extensions: [sid]
+    - name: Console and game audio
+      caps: {seek: true, length: true, resume: true, speed: true, gapless: true, tracks: true, art: false}
+      desc: Streams ripped from console and PC games, decoded by FFmpeg or vgmstream.
+      extensions: [acb, acm, adp, ads, adx, aea, afc, aix, apc, ast, at3, at9, aud, bcstm, bcwav, bfstm, bfwav, bg00,
+        binka, bns, bnsf, brstm, brwav, bwav, dsp, dtk, fsb, genh, hca, hps, idsp, mca, mic, msf, musc, npsf, nsp, rsd,
+        rwav, sds, spsd, ss2, svag, svs, swav, sxd, vag, vas, vgs, vig, vpk, wavm, wsi, xa, xmd, xmu, xvag, xwb, xwma]

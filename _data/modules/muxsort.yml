@@ -1,0 +1,77 @@
+description: >
+  Fine tune the order that content appears in when browsing. Each row represents a category of content, Default,
+  Collection, History, or a specific content tag, and lets you set a priority level from 1 to 100 that decides where
+  items in that category sit relative to everything else within the Content Explorer.<br><br>A higher priority moves
+  matching content further up the list, while a lower value pushes it further down.
+
+goback: muxcustom
+
+visible:
+  - name: Default
+    icon: default
+    desc: >
+      Sets the baseline sorting priority applied to content that is not part of a collection, history, or tagged
+      category.
+  - name: Collection
+    icon: collection
+    desc: >
+      Sets the sorting priority for content when viewed from within a collection.
+  - name: History
+    icon: history
+    desc: >
+      Sets the sorting priority for content shown within the History list.
+  - name: Abandoned
+    icon: abandoned
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Abandoned</strong>.
+  - name: Alternate
+    icon: alternate
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Alternate</strong>.
+  - name: Backlog
+    icon: backlog
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Backlog</strong>.
+  - name: Complected
+    icon: complected
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Complected</strong>.
+  - name: Completed
+    icon: completed
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Completed</strong>.
+  - name: Cursed
+    icon: cursed
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Cursed</strong>.
+  - name: Experimental
+    icon: experimental
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Experimental</strong>.
+  - name: Homebrew
+    icon: homebrew
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Homebrew</strong>.
+  - name: Inprogress
+    icon: inprogress
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Inprogress</strong>.
+  - name: Patched
+    icon: patched
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Patched</strong>.
+  - name: Replay
+    icon: replay
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Replay</strong>.
+  - name: Romhack
+    icon: romhack
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Romhack</strong>.
+  - name: Translated
+    icon: translated
+    desc: >
+      Sets the sorting priority for content tagged as <strong>Translated</strong>.
+
+tip:
+  - info: The list of tags shown here is generated from the content tag glyphs available on your device, so it may differ from what is listed here.

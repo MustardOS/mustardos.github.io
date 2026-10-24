@@ -1,0 +1,31 @@
+description: >
+  Wasabi opens local and network playlists as a browser before playback begins. The same entries remain available
+  from the Wasabi Menu while media is running.
+
+goback: muxmedia
+
+visible:
+  - name: Tracks
+    icon: audio
+    desc: >
+      Audio playlists are presented as Tracks. Playing a single audio file also lists every other audio file in the
+      same folder as Tracks. Chiptune, SID, and game music files that hold several songs list their own songs, then
+      carry on with the next file in the folder. Select an entry to begin playing it.
+  - name: Episodes
+    icon: video
+    desc: >
+      Video playlists are presented as Episodes and keep the current entry highlighted. Playing a single video also
+      lists every other video in the same folder as Episodes.
+  - name: Channels
+    icon: network
+    desc: Live television and radio playlists are presented as Channels, including channel logos where available.
+  - name: Resume Last Channel
+    icon: history
+    desc: Opening a live playlist from History returns to the last channel watched when it is still available.
+
+tip:
+  - info: Folder playlists never mix audio and video. Starting a video only lists videos, and starting a track only lists audio.
+  - info: Folder entries are sorted naturally, so Episode 2 comes before Episode 10.
+  - info: Playlist files are inspected by their contents, so a playlist does not have to rely on its filename extension alone.
+  - info: Channel changes reconnect at the live edge of the stream.
+  - info: Channel logos are cached in Wasabi's save area after they are downloaded.

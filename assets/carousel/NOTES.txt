@@ -1,0 +1,8 @@
+Drop screenshot images (.png, .jpg, .jpeg, .webp, or .gif) directly into this folder to have them appear
+automatically in the "A Closer Look" gallery on the homepage - no need to edit index.md.
+
+Images are shown in filename alphabetical order, so prefix with numbers (01_menu.png, 02_explore.png, ...) if you
+want to control the order. The alt text shown to screen readers is generated from the filename (underscores and
+dashes become spaces), so name files descriptively.
+
+This file itself is ignored by the gallery, it's not an image.

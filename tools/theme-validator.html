@@ -1,0 +1,60 @@
+---
+layout: default
+title: Theme Validator
+permalink: /tools/theme-validator
+parent: Editors and Tools
+nav_order: 7
+has_toc: false
+---
+
+<h1><strong>Theme Validator</strong></h1>
+
+<p>Open an extracted theme folder to check its structure, scheme files, glyphs, fonts, sounds and images before you
+    share it, with every check run in your browser and nothing uploaded.</p>
+
+<p class="note">Checks follow the <a href="{{ site.baseurl }}/themes/structure">Theme Structure</a> and
+    <a href="{{ site.baseurl }}/themes/scheme">Scheme Files</a> pages and the scheme keys the current frontend reads.
+    Warnings are worth fixing; notes are for information only.</p>
+
+{%- assign glyph_files = site.static_files | where_exp: "file", "file.path contains '/tour/assets/glyphs/'" -%}
+<script id="theme-data" type="application/json">
+{
+    "scheme": {{ site.data.theme_scheme.scheme | jsonify }},
+    "modules": {{ site.data.theme_scheme.modules | jsonify }},
+    "glyphs": [{%- for file in glyph_files -%}{%- if file.extname == ".svg" -%}{{ file.path | remove_first: "/tour/assets/glyphs/" | remove: ".svg" | jsonify }},{%- endif -%}{%- endfor -%}null],
+    "sounds": ["back", "confirm", "error", "info_close", "info_open", "keypress", "muos", "navigate", "option", "reboot", "shutdown", "startup"],
+    "resolutions": ["640x480", "720x480", "720x576", "720x720", "1024x768", "1280x720", "1920x1080"]
+}
+</script>
+
+<div class="tool" id="theme-tool">
+    <div class="toolbar">
+        <label class="file-button">
+            Open Theme Folder
+            <input id="theme-folder" class="sr-only" type="file" webkitdirectory multiple>
+        </label>
+        <span id="theme-status" class="status" role="status" aria-live="polite">Open an extracted theme folder or drop it here.</span>
+    </div>
+
+    <div id="theme-empty" class="empty">No theme checked yet.</div>
+
+    <div id="theme-report" hidden>
+        <section class="panel">
+            <div class="section-head">
+                <h2 id="theme-name">Theme</h2>
+                <span id="theme-verdict" class="status"></span>
+            </div>
+            <dl id="theme-summary" class="summary"></dl>
+        </section>
+        <div class="tabs" role="group" aria-label="Show">
+            <button type="button" class="active" data-level="all">All</button>
+            <button type="button" data-level="error">Errors</button>
+            <button type="button" data-level="warning">Warnings</button>
+            <button type="button" data-level="note">Notes</button>
+        </div>
+        <ul id="theme-findings" class="validation theme-findings"></ul>
+    </div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/tool-storage.js"></script>
+<script src="{{ site.baseurl }}/assets/js/theme-validator.js"></script>

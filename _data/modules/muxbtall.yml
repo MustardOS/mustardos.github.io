@@ -1,0 +1,28 @@
+description: >
+  The Bluetooth module lists every device you have previously paired, showing its name and whether it is currently
+  Connected or Disconnected. Selecting a paired device opens its detail screen, where you can rename it, check its
+  battery and address, or connect, disconnect, and forget it.<br><br>Bluetooth is switched on at startup, but
+  MustardOS never connects to paired devices by itself, so connect to them from here when you want to use them. The
+  module opens once Bluetooth has finished starting. Press <strong>X</strong> to scan for new devices that have not
+  been paired yet.
+
+goback: muxconnect
+
+visible:
+  - name: Paired Device
+    icon: bluetooth
+    link: muxbtdev
+    desc: >
+      Each device you have paired with previously is listed here, along with whether it is Connected or
+      Disconnected. Press <strong>A</strong> on a device to open its detail screen.
+
+hidden:
+  - name: Scan for Devices
+    link: muxbtcon
+    desc: >
+      Press <strong>X</strong> to search for nearby Bluetooth devices that have not yet been paired, and connect to
+      one directly from the results.
+
+tip:
+  - info: Press **X** to scan for new devices to pair with.
+  - info: If Bluetooth is still starting after boot or resume, wait a moment and select it again.

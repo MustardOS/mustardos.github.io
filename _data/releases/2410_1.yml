@@ -1,7 +1,7 @@
 ver: "2410.1"
 code: "Banana"
 type: archive
-pronunciation: "/bəˈnæn.ə/"
+pronunciation: "/bəˈnɑːnə/"
 
 contributors:
   - antikk
@@ -178,7 +178,7 @@ changes:
   - Fixed image refresh routine on content explorer start
   - Fixed issue not being able to use left/right on <code>muxnetwork</code>
   - Fixed issue using left and right to enable network
-  - Fixed issue with catalogue text files not showing for games that haven't been launched at least once
+  - Fixed issue with catalogue text files not showing for games that have not been launched at least once
   - Fixed issue with content explorer items scrolling vertically
   - Fixed issue with favourites not running after setting core for directory or recursively
   - Fixed issue with messages not displaying in <code>muxplore</code>
@@ -228,7 +228,7 @@ changes:
   - Fixed toolkit tasks with storage preference
   - Fixed view-port object item index
   - Fixed viewport object item index
-  - Fixed volume an brightness bar not updating when doing hold
+  - Fixed volume and brightness bar not updating when doing hold
   - General code cleanup
   - Guard verbose shutdown output by advanced setting
   - Improved input/idle handling & fix a memory leak
@@ -246,7 +246,7 @@ changes:
   - Modified item skip to item count
   - Modified modules to only save settings if changed
   - Modified mp3play instances to mpg123
-  - Modified MTP to hide SD2 folder when SD2 isn't mounted
+  - Modified MTP to hide SD2 folder when SD2 is not mounted
   - Modified RA control swap to use menu_swap_ok_cancel_buttons instead of remapping
   - Modified ROM partition to new layout
   - Modified task scripts to use virtual terminal
@@ -278,7 +278,7 @@ changes:
   - Removed H specific mupen64plus files
   - Removed L3 click next option to stop interference with RGB controller
   - Removed more hardcoded path variables
-  - Removed mupen64plus-next RMP file as it's no longer needed
+  - Removed mupen64plus-next RMP file as it is no longer needed
   - Removed NO_COLOR environment variable
   - Removed PATH environment variable
   - Removed ping script for frontend network status

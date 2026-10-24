@@ -7,13 +7,12 @@ grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Book Reader"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                   | Type             | Version           |
-|:-----------------------|:-----------------|:------------------|
-| **mReader Landscape**  | External         | 0.6               |
-| mReader Portrait       | External         | 0.6               |
+{% include emulator_table.html system=page.manifest %}

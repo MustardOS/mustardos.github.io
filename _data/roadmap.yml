@@ -1,0 +1,22 @@
+# Upcoming ideas shown on /roadmap. Status is one of: progress, planned, exploring.
+# These are ideas, not promises, and may change or be dropped.
+
+- title: Dashboard translations
+  area: Web Dashboard
+  status: progress
+  desc: >
+    The Web Dashboard follows the language chosen on the device. Its own text is being added to the translation
+    project so every language can cover it fully.
+
+- title: Bluetooth PIN and passkey pairing
+  area: Bluetooth
+  status: planned
+  desc: >
+    Pair keyboards, headsets and other accessories that ask for a PIN or passkey, entered or confirmed right on the
+    device.
+
+- title: Game Link single screen
+  area: Pickles
+  status: planned
+  desc: >
+    Play linked Game Boy titles on one handheld, with both players sharing the same screen.

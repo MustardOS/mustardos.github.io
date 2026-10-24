@@ -1,0 +1,17 @@
+manufacturer: BatleXP
+name: G350
+internal: rk-g350-v
+desc: A vertical handheld with two sticks below a 4:3 screen.
+features:
+  form: vertical
+  sticks: 2
+  wifi: 2
+  bluetooth: 0
+  hdmi: 0
+  screen: "640x480"
+downloads:
+  - variant:
+    hash: 2867348a96625171947aee87d499878982a8107eb62edc145a10676b3ca05d59
+    gofile: https://gofile.io/d/QU5X4WDb
+    mega: https://mega.nz/file/Qzp0VCjQ#A1PqTJp1HMPQ9rWMMjzgQ049U9LgQyNCgceLWIHAa2U
+    torrent: MustardOS_RK-G350-V_2606.0_ANDROMEDA-db2a3bd0

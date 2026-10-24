@@ -1,0 +1,49 @@
+description: >
+  Save and restore progress with screenshot previews. Press <strong>Left</strong> or <strong>Right</strong> to move
+  between States, History, and Trash when those sections contain items.
+
+goback: muxretro
+
+sections:
+  - name: States
+    desc: The states stored for the current content.
+    items:
+      - name: Quicksave
+        icon: state
+        desc: A dedicated slot used by the Quick Save and Quick Load shortcuts.
+      - name: Autosave
+        icon: state
+        desc: The automatic state maintained according to the Auto Save setting.
+      - name: Timeline
+        icon: timeline
+        desc: Rolling background states created at the interval selected in Storage.
+      - name: Named States
+        icon: state
+        desc: >
+          Press <strong>Y</strong> to create and name a state. Highlight a state and press <strong>A</strong> to load
+          it, or press <strong>X</strong> to move it to Trash.
+  - name: History
+    desc: >
+      Moments captured in memory before a state is loaded. Choose one to step back to the session position you had
+      before the load. History is cleared when the content closes.
+    items:
+      - name: Restore a Moment
+        icon: state
+        desc: Press <strong>A</strong> on a History entry to return to that moment.
+  - name: Trash
+    desc: Deleted states kept according to the Save State Trash setting.
+    items:
+      - name: Restore
+        icon: state
+        desc: Press <strong>A</strong> to return a deleted state to the States section.
+      - name: Delete
+        icon: state
+        desc: Press <strong>X</strong> to remove one item permanently.
+      - name: Empty
+        icon: state
+        desc: Press <strong>Y</strong> to empty the Trash after confirmation.
+
+tip:
+  - info: Press <strong>L</strong> or <strong>R</strong> to switch between the list and the full screenshot preview.
+  - info: State thumbnails are captured without the Pickles header or frame rate counter.
+  - info: The Advanced section of Settings controls thumbnail size. Storage controls the History and Trash limits.

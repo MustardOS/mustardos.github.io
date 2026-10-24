@@ -1,0 +1,19 @@
+<div class="tour-items{% unless include.icons %} no-icons{% endunless %}">
+    {% for mod in include.items %}
+    {% assign item_anchor = mod.name | slugify %}
+    {% if include.anchor_prefix %}
+    {% assign anchor_prefix = include.anchor_prefix | slugify %}
+    {% assign anchor_id = anchor_prefix | append: "-" | append: item_anchor %}
+    {% else %}
+    {% assign anchor_id = item_anchor %}
+    {% endif %}
+    <div class="tour-item">
+        {% if include.icons %}
+        <img src="/tour/assets/glyphs/{{ include.glyph }}/{{ mod.icon }}.svg" alt="" width="28" height="28"
+             loading="lazy" decoding="async">
+        {% endif %}
+        <h4 id="{{ anchor_id }}">{{ mod.name }}</h4>
+        <p>{{ mod.desc }}</p>
+    </div>
+    {% endfor %}
+</div>

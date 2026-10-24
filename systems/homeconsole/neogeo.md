@@ -7,19 +7,17 @@ permalink: /systems/homeconsole/neogeo
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "SNK Neo Geo"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                  | Type             | Version           |
-|:----------------------|:-----------------|:------------------|
-| FB Alpha 2012 Neo Geo | Libretro Core    | 0.2.97.29         |
-| **FinalBurn Neo**     | Libretro Core    | 1.0.0.03          |
-| Geolith               | Libretro Core    | 0.2.1             |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

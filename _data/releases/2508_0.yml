@@ -3,14 +3,6 @@ code: "Goose"
 type: archive
 pronunciation: "/ɡuːs/"
 
-full_image:
-  gofile: https://gofile.io/d/VAfGUZ
-  mega: https://mega.nz/folder/kzRGRbpK#CHR1G3KlaHdcdm590Wg6ag
-  important:
-    - If you are updating from Banana please ensure that you do <strong>NOT</strong> have any themes or RetroArch 
-      configurations as major changes have occurred. You can find all compatible themes from the
-      <a href="https://theme.muos.dev">https://theme.muos.dev</a> page or from the on-device theme download module.
-
 warning:
   - As this is a major release you will be required to reflash to update your device to this version. Updates are only
     for subsequent releases within the same version.
@@ -306,7 +298,7 @@ changes:
   - Fixed factory reset LED lights
   - Fixed factory reset theme font location
   - Fixed fallback to catalogue name for <code>Folder</code> box art
-  - Fixed footer element centering
+  - Fixed footer element centring
   - Fixed freeing of playtime JSON data
   - Fixed freeze when device startup set to history
   - Fixed freeze with scrolling text
@@ -347,7 +339,7 @@ changes:
   - Fixed options navigation generation issue
   - Fixed option value sound playing if there are zero options
   - Fixed OSK element reuse issue and added safe delete define
-  - Fixed pivot point if pivot specific doesn't exist
+  - Fixed pivot point if pivot specific does not exist
   - Fixed playing sound on no content
   - Fixed PPSSPP home directory path on content launch
   - Fixed PPSSPP launch script to correct Vulkan backend on H700
@@ -477,7 +469,7 @@ changes:
   - Moved card mode to danger and created display suspend in advanced settings
   - Moved cardmode to danger options
   - Moved charging module boot from POWER to START to avoid potential hotkey conflicts
-  - Moved Clear Favorites to Clear Collections in Task Toolkit
+  - Moved Clear Favourites to Clear Collections in Task Toolkit
   - Moved configuration fields to global options
   - Moved default governor setter to global functions
   - Moved direct toybox binary reference to global variable

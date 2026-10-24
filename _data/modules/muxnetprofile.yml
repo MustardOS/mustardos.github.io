@@ -1,0 +1,77 @@
+description: >
+  The Network Profile screen lets you add a new Wi-Fi network or edit one you have saved previously. Give it a
+  Profile Name, enter the network's identifier and password (or press <strong>X</strong> to scan for nearby networks
+  instead), then choose whether it should connect automatically or only when selected manually.<br><br>Setting the
+  Network Type to <strong>DHCP</strong> configures addressing automatically, while <strong>Static</strong> reveals
+  the Address, Subnet, Gateway, and DNS fields for manual configuration. Press <strong>Connect</strong> to save your
+  changes and join the network, or press <strong>Y</strong> to forget a previously saved profile.
+
+goback: muxnetwork
+
+visible:
+  - name: Profile Name
+    icon: profile_name
+    desc: >
+      A friendly name used to identify this saved profile in the Wi-Fi Network list. Defaults to the network's
+      identifier if left unchanged.
+  - name: Network Name
+    icon: identifier
+    desc: >
+      The SSID, or name, of the wireless network you want to connect to. Press <strong>X</strong> to scan for nearby
+      networks and fill this in automatically.
+  - name: Password
+    icon: password
+    desc: >
+      The password, or security key, required to join the selected network. Leave blank for open networks that do
+      not require authentication.
+  - name: Network Type
+    icon: type
+    desc: >
+      Toggles between <strong>DHCP</strong>, which configures addressing automatically, and <strong>Static</strong>,
+      which reveals the Address, Subnet, Gateway, and DNS fields below for manual configuration.
+  - name: Priority
+    icon: priority
+    desc: >
+      Sets this profile's position, from 1 to 9, in the automatic connection order whenever more than one Auto
+      Connect profile is in range. Lower numbers are attempted first, and this has no effect on Manual profiles.
+  - name: Device IP
+    icon: address
+    desc: >
+      The static IP address to assign to the device on this network. Only shown when Network Type is set to Static.
+  - name: Subnet CIDR
+    icon: subnet
+    desc: >
+      The subnet mask, in CIDR notation, that defines the range of valid addresses on this network. Only shown when
+      Network Type is set to Static.
+  - name: Gateway IP
+    icon: gateway
+    desc: >
+      The address of the router used to reach external networks and the internet. Only shown when Network Type is
+      set to Static.
+  - name: DNS Server
+    icon: dns
+    desc: >
+      The Domain Name System server used to resolve website and service names on this network, such as
+      <code>1.1.1.1</code> (Cloudflare) or <code>8.8.8.8</code> (Google). Only shown when Network Type is set to
+      Static.
+  - name: Join Wi-Fi
+    icon: connect
+    desc: >
+      Saves this profile and attempts to connect, showing live progress such as Associating, Authenticating, or
+      Waiting for IP. If this profile is already connected, pressing it again disconnects instead.
+  - name: Internet Status
+    icon: status
+    desc: >
+      Appears beneath Join Wi-Fi or Leave Wi-Fi and reports <strong>Checking</strong>, <strong>Online</strong>,
+      <strong>Sign-in Required</strong>, <strong>Timed Out</strong>, or <strong>Unavailable</strong>. Joining Wi-Fi
+      confirms the local connection only.
+
+hidden:
+  - name: Scan for Networks
+    link: muxnetscan
+    desc: >
+      Press <strong>X</strong> to search for nearby Wi-Fi networks and fill in the Identifier field directly from
+      the scan results.
+
+tip:
+  - info: Press **Y** on a previously saved profile to forget it. This is unavailable while it is the currently connected profile, and for a profile that has not been saved yet.

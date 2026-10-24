@@ -1,7 +1,7 @@
 ---
 layout: devices
 title: Supported Devices
-description: Browse all supported devices by manufacturer.
+description: Find the MustardOS download for your device.
 permalink: /devices
 nav_order: 1
 ---

@@ -1,0 +1,34 @@
+description: >
+  Shaders apply a visual effect to video content. Each choice is previewed immediately, and supported parameters can
+  be adjusted before the setting is saved.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Downloads
+    icon: download
+    desc: Download, reinstall, or update Wasabi shaders grouped by creator.
+  - name: Collection
+    icon: star
+    desc: Keep references to chosen shaders in one short list.
+  - name: None
+    icon: shader
+    desc: Preview and select video without a shader.
+  - name: Creator Folders
+    icon: folder
+    desc: Browse one level of folders, each named after a creator, sorted alphabetically.
+  - name: Adjust
+    icon: shader
+    desc: >
+      Press <strong>X</strong> on a supported shader to change its parameters. Leaving with changes asks where to save
+      them, the same as any other Wasabi setting.
+  - name: Reset Parameters
+    icon: viewportreset
+    desc: Restore every adjustable parameter for the current shader.
+  - name: Collect, Remove, or Delete
+    icon: collection
+    desc: Use <strong>Y</strong> for Collection actions and user-installed shader deletion.
+
+tip:
+  - info: Wasabi shaders are kept separately from Pickles shaders.
+  - info: Moving away from None without selecting it restores the shader that was active when the browser opened.

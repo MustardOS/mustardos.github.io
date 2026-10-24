@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<h1><strong>{{ page.title }}</strong></h1>
+
+{% if page.description %}
+<p>{{ page.description }}</p>
+{% endif %}
+
+{{ content }}
+
+{% assign children = site.html_pages | where: "parent", page.title | sort: "title" %}
+
+<div class="systems-grid">
+    {% for child in children %}
+    <a class="systems-grid-card" href="{{ child.url | relative_url }}">
+        <span class="systems-grid-name">{{ child.title }}</span>
+    </a>
+    {% endfor %}
+</div>

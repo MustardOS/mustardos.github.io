@@ -107,6 +107,9 @@ layout: default
 {% if release.type == "progress" %}
 <h3><strong>Not available yet!</strong></h3>
 <p><em>This release is still in development, check back soon for download links!</em></p>
+{% elsif release.type == "current" %}
+<h3><strong>Downloads coming soon!</strong></h3>
+<p><em>The download links for this release are on their way, check back shortly!</em></p>
 {% else %}
 <h3><strong>No longer available!</strong></h3>
 <p><em>This release is lost to time...</em></p>
@@ -138,6 +141,23 @@ layout: default
 
 <hr>
 
+{% if release.summary %}
+<h2><strong>Release Highlights</strong></h2>
+<p>{{ release.summary }}</p>
+{% if release.highlights %}
+<div class="feature-grid release-highlights">
+    {% for item in release.highlights %}
+    <div class="feature-card">
+        <img src="/tour/assets/glyphs/{{ item.icon }}.svg" alt="" width="40" height="40">
+        <div class="feature-card-title">{{ item.title }}</div>
+        <p>{{ item.desc }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+<hr>
+{% endif %}
+
 {% assign kinds = "important,warning,note" | split: "," %}
 {% assign has_info = false %}
 
@@ -164,14 +184,12 @@ layout: default
 {% endif %}
 
 <h2><strong>Support MustardOS</strong></h2>
-<p>Want to join us on this <strong>crazy</strong> and rewarding journey?</p>
-
-<p><strong>This can be done a few ways:</strong></p>
+<p>There are a few ways to help MustardOS grow:</p>
 <ul>
     <li>Take part in the <a href="https://community.muos.dev">Community Forum</a></li>
     <li>Be helpful around the <a href="https://discord.gg/mustardos-1152022492001603615">Discord Server</a></li>
     <li>Contribute code directly to our <a href="https://github.com/MustardOS">GitHub Repositories</a></li>
-    <li>Spread the good word about MustardOS and all the amazing features</li>
+    <li>Tell others about MustardOS</li>
 </ul>
 
 <p><strong>You can join the testing crew directly by:</strong></p>
@@ -179,15 +197,15 @@ layout: default
     <li>Supporting XongleBongle via a <a href="https://ko-fi.com/xonglebongle">Ko-fi Subscription</a></li>
     <li>Boosting the <a href="https://discord.gg/muos">Discord Server</a></li>
     <li>Contributing major code pull requests on our <a href="https://github.com/MustardOS">GitHub Repositories</a></li>
-    <li>Showing exceptional values and building community rapport</li>
+    <li>Being a positive and helpful member of the community</li>
 </ul>
 
 <hr>
 
 <h2><strong>Support Development Crew</strong></h2>
 <p>
-    We are a small team, and with your generous support we can continue growing and spreading that sweet MustardOS
-    across other devices. If you can, support the development crew below:
+    We are a small crew, and your support helps us bring MustardOS to more devices. If you can, support the
+    development crew below:
 </p>
 
 {% if release.support and release.support.development %}
@@ -212,14 +230,27 @@ layout: default
 <hr>
 {% endif %}
 
+
 {% if release.changes %}
 {% assign changes_sorted = release.changes | sort_natural %}
 <h2><strong>Changes</strong></h2>
+{% if release.summary %}
+<details class="release-changes">
+    <summary>Browse the {{ changes_sorted.size }} recorded changes</summary>
+    <p class="note">This list covers part of the release, as many more changes were made than were recorded here.</p>
+    <ul>
+        {% for change in changes_sorted %}
+        <li>{{ change }}</li>
+        {% endfor %}
+    </ul>
+</details>
+{% else %}
 <ul>
     {% for change in changes_sorted %}
     <li>{{ change }}</li>
     {% endfor %}
 </ul>
+{% endif %}
 {% else %}
 <p><em>No changes recorded for this release!</em></p>
 {% endif %}

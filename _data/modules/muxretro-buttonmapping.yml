@@ -1,0 +1,43 @@
+description: >
+  Decide what each button on your controller actually does in the game. The list shows every button and stick
+  direction the game can understand, one row each, and you tell MustardOS which of your own buttons should
+  send it.<br><br>Useful when a game's default layout does not suit you, when you are using a controller
+  whose buttons sit in a different order, or when you want jump on a different button.
+
+goback: muxretro-inputport
+
+visible:
+  - name: Face Buttons
+    icon: controller
+    desc: >
+      Rows for <strong>A</strong>, <strong>B</strong>, <strong>X</strong>, and <strong>Y</strong>. Highlight
+      one, press <strong>A</strong>, then press the button on your controller you would like to use for it.
+  - name: Shoulder Buttons
+    icon: controller
+    desc: >
+      Rows for <strong>L1</strong>, <strong>R1</strong>, <strong>L2</strong>, <strong>R2</strong>,
+      <strong>L3</strong>, and <strong>R3</strong>, set the same way.
+  - name: Select and Start
+    icon: controller
+    desc: >
+      Rows for the two small centre buttons, which many games use for pausing or bringing up a map.
+  - name: D-Pad Directions
+    icon: controller
+    desc: >
+      Rows for up, down, left, and right on the directional pad.
+  - name: Stick Directions
+    icon: controller
+    desc: >
+      Rows for each direction of the left and right sticks. Because these are ordinary rows, you can
+      point a stick direction at a button or a button at a stick direction, which is how you give stick
+      control to a game that only understands the d-pad, or vice versa.
+  - name: Turbo
+    icon: controller
+    desc: >
+      Press left or right on any row to make that input repeat automatically while you hold it, from a rapid
+      tap all the way down to a slow pulse. Ideal for shooters that want you hammering the fire button.
+
+tip:
+  - info: Press **A** on a row to set it, **X** to clear it so nothing sends that input at all, and **Y** to put it back to normal.
+  - info: A row showing **Macro:** followed by a name is being driven by a macro. Turbo cannot be added on top of one, so change it from the Macros screen.
+  - info: Cleared or remapped yourself into a corner? **Reset Port** on the previous screen puts every button on this player back to normal.

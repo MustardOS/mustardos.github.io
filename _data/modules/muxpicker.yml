@@ -1,23 +1,26 @@
 description: >
-  Browse, install, and organise visual themes that change the overall look and feel of the MustardOS frontend. Themes 
-  control everything from background images and icons to colour palettes and font styles, allowing you to personalise 
-  the interface to match your taste or device aesthetic.
+  A shared archive browser used to install Catalogue Sets and RetroArch Configurations that have already been placed
+  on your device. What you see depends on where you arrived from: Catalogue Sets browses <code>.muxcat</code>
+  archives, while RetroArch Configurations browses <code>.muxcfg</code> archives, each within their own storage
+  folder.<br><br>Selecting an archive installs it in place, and archives can be organised into folders for easier
+  browsing.
 
 goback: muxcustom
 
 visible:
-  - name: Theme Download
-    icon: download
-    desc: >
-      Download additional themes directly when an active connection is available. This expands your available 
-      selection without needing to install themes manually.
   - name: Folder
     icon: folder
     desc: >
-      Organise themes into folders for easier navigation. Each folder can hold multiple themes, helping you sort them
-      by creator, style, or even resolution.
-  - name: Theme
-    icon: theme
+      Group archives into folders to keep a large collection of catalogue sets or configurations organised.
+  - name: Catalogue Set
+    icon: catalogue
     desc: >
-      Select and install a compatible theme. Once applied, it will update the appearance of menus, backgrounds, and 
-      the general interface elements throughout the MustardOS frontend.
+      Install a catalogue set archive to change how content images and metadata are displayed. Only shown when
+      reached from Catalogue Sets.
+  - name: RetroArch Configuration
+    icon: config
+    desc: >
+      Install a saved RetroArch configuration archive. Only shown when reached from RetroArch Configurations.
+
+tip:
+  - info: Press **Y** at any time to save your current setup as a new archive in this list, and **X** to remove one you no longer need. Press **Menu** for any available credits packaged with the archive.

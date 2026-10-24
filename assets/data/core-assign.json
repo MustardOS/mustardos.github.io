@@ -1,0 +1,3 @@
+---
+---
+{{ site.data.core_manifest.core | jsonify }}

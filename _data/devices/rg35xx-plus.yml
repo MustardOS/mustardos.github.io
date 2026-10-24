@@ -1,10 +1,17 @@
 manufacturer: Anbernic
 name: RG35XX PLUS
 internal: rg35xx-plus
-desc: A nice typical vertical handheld with a 3.5" display.
+desc: A good sized vertical handheld with a 3.5" display.
+features:
+  form: vertical
+  sticks: 0
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "640x480"
 downloads:
   - variant:
-    hash: ceb00c372a3b0f14823b2ffd22246db9b2779b1e29c7464575a4e59b53d20abc
-    gofile: https://store-na-phx-5.gofile.io/download/direct/32fb4ae2-9672-44f9-a6be-9370bea01912/MustardOS_RG35XX-PLUS_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/Ay4kVaJB#Z8S04xetoDHR4o6I-v8TmTpdzCXAsc1Q1VjVNtcDPz8
-    torrent: MustardOS_RG35XX-PLUS_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: 1417ed2b379a246282237d373fd97c2d0be851ebc3d3887821f4a2f2b72c7a2d
+    gofile: https://gofile.io/d/aqbcuW8O
+    mega: https://mega.nz/file/hyw2DTjb#UZzJ2cyByiXWITSBSihr7HHJWetq2nlHwCWrIb7DTok
+    torrent: MustardOS_RG35XX-PLUS_2606.0_ANDROMEDA-db2a3bd0

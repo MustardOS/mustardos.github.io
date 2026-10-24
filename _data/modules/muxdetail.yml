@@ -1,0 +1,287 @@
+description: >
+  Everything your device knows about itself, gathered into one screen and split into sections.<br><br>Most of what you see here simply reports back to you, though a handful of entries
+  will do something useful if you press <strong>A</strong> on them. Everything refreshes as you watch, so it is a
+  good place to keep an eye on things.
+
+goback: muxinfo
+
+sections:
+  - name: System
+    desc: >
+      What your device is and what it is running.
+    items:
+      - name: Version
+        icon: version
+        desc: >
+          The MustardOS release installed on this device. Head to the Modifications section to see whether anything
+          has been altered since it was installed.
+      - name: Build
+        icon: build
+        desc: >
+          The build this release was made from. Worth quoting if you ever need to report a problem.
+      - name: Device
+        icon: device
+        link: muxdevice
+        desc: >
+          The board that has been detected. Press <strong>START</strong> here to open the device settings, though
+          only do so if you have been asked to.
+      - name: Serial Number
+        icon: serial
+        desc: >
+          The unique serial your device reports for itself.
+      - name: Kernel
+        icon: kernel
+        desc: >
+          The Linux version underneath it all. Press <strong>A</strong> to see the name your device answers to on
+          the network.
+      - name: Architecture
+        icon: arch
+        desc: >
+          The kind of processor MustardOS was built for.
+      - name: Display
+        icon: display
+        desc: >
+          The resolution the interface is being drawn at.
+
+  - name: Runtime
+    desc: >
+      How your device has been getting on since you switched it on.
+    items:
+      - name: Uptime
+        icon: uptime
+        desc: >
+          How long it has been running since it last started.
+      - name: Boot Time
+        icon: boottime
+        desc: >
+          When it last started up.
+      - name: Load Average
+        icon: loadavg
+        desc: >
+          How much work has been queued up over the last one, five, and fifteen minutes.
+      - name: Tasks
+        icon: tasks
+        desc: >
+          How many things are running right now behind the scenes.
+      - name: Memory
+        icon: memory
+        desc: >
+          How much memory is in use. Press <strong>A</strong> to hand cached memory back to the system.
+      - name: Swap
+        icon: swap
+        desc: >
+          How much swap space is being used, if any has been set up.
+      - name: Temperature
+        icon: temp
+        desc: >
+          How warm the processor is at the moment.
+
+  - name: Processor
+    desc: >
+      The chip doing all the hard work.
+    items:
+      - name: Processor
+        icon: cpu
+        desc: >
+          The model of processor and how many cores it reports.
+      - name: Speed
+        icon: speed
+        desc: >
+          How fast the processor is running right this second.
+      - name: Speed Range
+        icon: speedrange
+        desc: >
+          The slowest and fastest it is allowed to run.
+      - name: Governor
+        icon: governor
+        desc: >
+          The rule deciding how the speed rises and falls with the work being asked of it.
+      - name: Graphics
+        icon: gpu
+        desc: >
+          The graphics chip built into your device.
+      - name: Graphics Speed
+        icon: gpuspeed
+        desc: >
+          How fast the graphics chip is running right now.
+      - name: Graphics Speed Range
+        icon: gpuspeedrange
+        desc: >
+          The slowest and fastest the graphics chip is allowed to run.
+      - name: Graphics Governor
+        icon: gpugovernor
+        desc: >
+          The rule deciding how the graphics speed changes with the work being asked of it.
+
+  - name: Battery
+    desc: >
+      How the battery is doing at the moment.
+    items:
+      - name: Capacity
+        icon: capacity
+        desc: >
+          How much charge is left.
+      - name: Voltage
+        icon: voltage
+        desc: >
+          The voltage the battery is currently supplying.
+      - name: Status
+        icon: status
+        desc: >
+          Whether it is charging, discharging, or full.
+      - name: Health
+        icon: health
+        desc: >
+          The condition the battery reports for itself.
+      - name: Design Capacity
+        icon: designcap
+        desc: >
+          The capacity it was built with, before any wear crept in.
+      - name: Charger
+        icon: charger
+        desc: >
+          Whether a charger is plugged in right now.
+
+  - name: Power History
+    desc: >
+      What has happened since you last unplugged, and what the battery got up to while your device was switched off.
+    items:
+      - name: Last Charged
+        icon: lastcharged
+        desc: >
+          When the battery was last topped up.
+      - name: Time on Battery
+        icon: timeonbattery
+        desc: >
+          How long you have been running on battery since the charger came out.
+      - name: Battery Used
+        icon: batteryused
+        desc: >
+          How much charge has gone in that time, which is a good guide to how long you have left.
+      - name: Battery at Shutdown
+        icon: shutdowncapacity
+        desc: >
+          The battery level recorded the last time your device was shut down properly.
+      - name: Battery at Boot
+        icon: bootcapacity
+        desc: >
+          The battery level when your device next started up.
+      - name: Time Powered Off
+        icon: timepoweredoff
+        desc: >
+          How long your device sat switched off between that shutdown and the following start.
+      - name: Battery Change While Off
+        icon: offbatterychange
+        desc: >
+          How much the battery level moved while your device was off. A negative value means charge was lost, while
+          a positive one means it was charged in the meantime. A steady loss while switched off is worth keeping an
+          eye on.
+
+  - name: Network
+    desc: >
+      Only appears on devices with networking. Shows where your device sits on the network.
+    items:
+      - name: Hostname
+        icon: hostname
+        desc: >
+          The name your device answers to on the network. Press <strong>A</strong> to change it, which needs the
+          network disconnected first.
+      - name: MAC Address
+        icon: mac
+        desc: >
+          The hardware address of the network adapter.
+      - name: IP Address
+        icon: ip
+        desc: >
+          The address your device has been given on the network.
+      - name: Network Name
+        icon: ssid
+        desc: >
+          The wireless network you are currently joined to.
+      - name: Gateway
+        icon: gateway
+        desc: >
+          The router everything is being sent through.
+      - name: DNS
+        icon: dns
+        desc: >
+          The servers used to look up names on the network.
+      - name: Signal
+        icon: signal
+        desc: >
+          How strong the wireless signal is where you are sitting.
+
+  - name: Traffic
+    desc: >
+      Only appears on devices with networking. Shows how much has been going back and forth.
+    items:
+      - name: Channel
+        icon: channel
+        desc: >
+          The wireless channel and band in use, handy when neighbouring networks are getting in the way.
+      - name: Active Traffic
+        icon: actraffic
+        desc: >
+          How much has been sent and received since the connection came up.
+      - name: Total Traffic
+        icon: tptraffic
+        desc: >
+          How much has been sent and received all told.
+
+  - name: Modifications
+    desc: >
+      Checks the parts of MustardOS that should never change against the signed release they came from. Each entry
+      shows <strong>Clean</strong> when it matches, or <strong>Modified</strong> when it does not. The checks run in
+      the background when you open this screen, so you may briefly see them still checking.
+    items:
+      - name: Release Signature
+        icon: integritysignature
+        desc: >
+          Whether the list of files being checked carries a valid MustardOS release signature. If this one is not
+          clean, the rest cannot be trusted either.
+      - name: Release Metadata
+        icon: provenance
+        desc: >
+          Whether the signed details about this release are unchanged.
+      - name: System Scripts
+        icon: systemscripts
+        desc: >
+          Whether the scripts that run MustardOS behind the scenes are exactly as they were shipped.
+      - name: Kernel
+        icon: kernelintegrity
+        desc: >
+          Whether the kernel matches the one in the signed release.
+      - name: Device Tree
+        icon: devicetree
+        desc: >
+          Whether the hardware description your device starts with matches the signed release.
+      - name: Initial Ramdisk
+        icon: initialramdisk
+        desc: >
+          Whether the small starter system loaded before MustardOS itself matches the signed release.
+      - name: Bootloader
+        icon: bootloader
+        desc: >
+          Whether the very first thing your device runs when switched on matches the signed release.
+      - name: Boot Resources
+        icon: bootresources
+        desc: >
+          Whether the remaining protected files needed to start your device match the signed release.
+
+hidden:
+  - name: Export Device Details
+    desc: >
+      Press <strong>X</strong> anywhere on this screen to write everything you see here out to a file. Very useful
+      when someone is helping you sort out a problem.
+  - name: Device Settings
+    link: muxdevice
+    desc: >
+      Press <strong>START</strong> while Device is highlighted to open the device settings. These control very
+      specific hardware behaviour and should <strong>not</strong> be changed unless a MustardOS developer has
+      asked you to.
+
+tip:
+  - info: Press **Left** or **Right** to move between sections, or use the shoulder buttons for the same thing.
+  - info: The Network and Traffic sections only turn up on devices that have networking.
+  - info: A Modified result is not always bad news. If you have deliberately customised your system it is expected, but if you have not, it is worth asking for help.
+  - info: There may be something hiding behind one of these entries for the truly persistent. We are saying no more than that.

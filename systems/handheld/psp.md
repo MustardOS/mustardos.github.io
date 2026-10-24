@@ -7,14 +7,13 @@ permalink: /systems/handheld/psp
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Sony PlayStation Portable"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| PPSSPP             | Libretro Core    | 1.18.1            |
-| **PPSSPP-Ext**     | Standalone       | 1.17.1            |
+{% include emulator_table.html system=page.manifest %}
 

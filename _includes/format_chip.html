@@ -1,0 +1,14 @@
+<span class="format-chip" tabindex="0">.{{ include.ext }}<span class="format-tip" role="tooltip"><strong>.{{ include.ext }} · {{ include.group }}</strong>
+{%- for ability in site.data.wasabi_formats.abilities -%}
+{%- assign value = include.caps[ability.key] -%}
+{%- if value == nil -%}{%- continue -%}{%- endif -%}
+{%- assign limited = false -%}
+{%- if site.data.wasabi_formats.video.caps[ability.key] == false -%}{%- assign limited = true -%}{%- endif -%}
+{%- for other in site.data.wasabi_formats.audio.families -%}
+{%- if other.caps[ability.key] == false -%}{%- assign limited = true -%}{%- endif -%}
+{%- endfor -%}
+{%- unless limited -%}{%- continue -%}{%- endunless -%}
+{%- assign note = include.notes[ability.key] -%}
+<span class="format-tip-row">{% if value %}✅{% else %}❌{% endif %} {{ ability.label }}{% if note %}<em>{{ note }}</em>{% endif %}</span>
+{%- endfor -%}
+</span></span>

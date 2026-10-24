@@ -1,28 +1,33 @@
 description: >
-  Manage which emulator cores and systems are linked to specific content. Use these associations to determine how 
-  the selected content should launch. You can download new cores, select a suitable system, and choose between default
-  or alternative cores to customise compatibility and performance for individual titles.
+  Choose how selected content launches. Core Assignment first narrows the list by namespace and system, then shows
+  the compatible Pickles, RetroArch, and external choices installed on your device. It opens automatically when
+  content has no assignment, and can also be opened from Content Options.
 
 goback: muxoption
 
 visible:
-  - name: Core Downloader
-    icon: download
+  - name: Namespace
+    icon: system
     desc: >
-      Opens the core downloader, where you can install additional systems and emulator cores to expand your available
-      range of systems and cores that you assign to content.
+      Choose the broad group for the content, such as a home console, handheld, arcade system, or computer. This
+      keeps the system list short and easy to browse.
   - name: System
     icon: system
     desc: >
-      Displays a list of recognised systems that are suitable for the selected content. Choosing the correct system 
-      filters available cores to only those compatible with that platform.
-  - name: Core Default
-    icon: default
-    desc: >
-      Indicates the default emulator core automatically used for the selected system. This core will launch the 
-      content unless an alternative is explicitly chosen.
-  - name: Core Alternative
+      Choose the system the content belongs to. Only compatible installed choices are shown on the next screen.
+  - name: Core
     icon: core
     desc: >
-      Lists other compatible emulator cores available for the same system. Selecting an alternative allows you to 
-      fine tune performance, compatibility, or visual features based on your personal preference.
+      Choose an installed core or external launcher. Pickles and RetroArch variants are kept together so each
+      implementation is easy to find. Press <strong>Left</strong> or <strong>Right</strong> to change the runtime
+      where more than one is available.
+  - name: Assignment Scope
+    icon: default
+    desc: >
+      Apply the choice to the selected content, the current directory, or the current directory and its
+      subdirectories. You can also leave existing assignments unchanged.
+
+tip:
+  - info: Use a content assignment for a game that needs a different core. Use a directory assignment when a whole system should launch the same way.
+  - info: Core Management in Configuration installs and updates the Libretro cores available here.
+  - info: Many more systems and cores are hidden to keep these lists short. Enable Additional Cores in Advanced to show them.

@@ -2,60 +2,89 @@
 layout: default
 title: Supporting MustardOS
 permalink: /docs/support
-nav_order: 2
-parent: Welcome
+nav_order: 4
 has_children: false
 ---
 
-# Supporting MustardOS
+# **Supporting MustardOS**
 
-Thank you for your interest in potentially donating or subscribing to MustardOS. Everything goes towards software,
-hardware, and other accessories to benefit the development of MustardOS. If you would like to support us you can either
-send a single one-off donation or you can subscribe which will give you additional benefits if you are part of our
-Discord community.
+Donations and subscriptions pay for the devices, software and accessories used to build and test MustardOS. You can
+send a one-off donation or subscribe to a monthly tier through Ko-fi, and subscribers who join our Discord server
+receive the benefits of their tier.
 
-[Support MustardOS through Ko-fi](https://ko-fi.com/xonglebongle/)
+<div class="support-tiers">
+    <article class="support-tier">
+        <img src="/docs/assets/images/artificers-small.webp" alt="" width="1600" height="800" loading="lazy" decoding="async">
+        <div class="support-tier-body">
+            <h2>Artificer</h2>
+            <p class="support-price"><strong>$6</strong> per month</p>
+            <p>Join the testing crew to try new features and fixes before each release.</p>
+            <ul>
+                <li>Weekly testing updates</li>
+                <li>Special Discord access</li>
+            </ul>
+            <a class="btn btn-primary" href="https://ko-fi.com/summary/06452d9a-0046-42c2-8b2b-78290ef6c1ce">Subscribe as an Artificer</a>
+        </div>
+    </article>
 
-# Artificer
+    <article class="support-tier">
+        <img src="/docs/assets/images/knights-small.webp" alt="" width="1600" height="800" loading="lazy" decoding="async">
+        <div class="support-tier-body">
+            <h2>Knight</h2>
+            <p class="support-price"><strong>$9</strong> per month</p>
+            <p>Test new content in the exclusive testing group, where your ideas are considered for future updates.</p>
+            <ul>
+                <li>Weekly testing updates</li>
+                <li>Your name on the credits screen</li>
+                <li>Special Discord access</li>
+            </ul>
+            <a class="btn btn-primary" href="https://ko-fi.com/summary/1f8db546-b1c4-460a-8071-b5c51caba440">Subscribe as a Knight</a>
+        </div>
+    </article>
 
-![](assets/images/artificers-small.png)
+    <article class="support-tier">
+        <img src="/docs/assets/images/heroes-small.webp" alt="" width="1600" height="800" loading="lazy" decoding="async">
+        <div class="support-tier-body">
+            <h2>Hero</h2>
+            <p class="support-price"><strong>$12</strong> per month</p>
+            <p>Follow nightly development behind the scenes and help shape new features before anyone else sees them.</p>
+            <ul>
+                <li>Nightly development exclusives</li>
+                <li>Behind the scenes access</li>
+                <li>Your name on the credits screen</li>
+                <li>Special Discord access</li>
+            </ul>
+            <a class="btn btn-primary" href="https://ko-fi.com/summary/8d9e9924-fb00-468f-a178-18d33be9bb54">Subscribe as a Hero</a>
+        </div>
+    </article>
+</div>
 
-### $6 per month
+## Compare tiers
 
-Gain access to the testing crew to preview new features and fixes before everybody else!
+<div class="table-wrapper">
+<table class="support-compare">
+    <thead>
+        <tr><th scope="col">Benefit</th><th scope="col">Artificer</th><th scope="col">Knight</th><th scope="col">Hero</th></tr>
+    </thead>
+    <tbody>
+        <tr><th scope="row">Special Discord access</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row">Testing updates</th><td>Weekly</td><td>Weekly</td><td>Nightly</td></tr>
+        <tr><th scope="row">Your name on the credits screen</th><td>-</td><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row">Behind the scenes access</th><td>-</td><td>-</td><td>Yes</td></tr>
+    </tbody>
+</table>
+</div>
 
-* Weekly testing updates
-* Special Discord access
+## One-off donation
 
-[Subscribe to the Artificer tier!](https://ko-fi.com/summary/06452d9a-0046-42c2-8b2b-78290ef6c1ce)
+<div class="support-oneoff">
+    <p>A single donation through Ko-fi helps in the same way without a monthly commitment.</p>
+    <a class="btn" href="https://ko-fi.com/xonglebongle/">Donate through Ko-fi</a>
+</div>
 
-# Knight
+## Other ways to help
 
-![](assets/images/knights-small.png)
-
-### $9 per month
-
-Gain access to the exclusive testing group and test brand new content and features before anybody else! All ideas
-will be highly considered and may be implemented in a future update.
-
-* Weekly testing updates
-* Your name on the credits screen
-* Special Discord access
-
-[Subscribe to the Knight tier!](https://ko-fi.com/summary/1f8db546-b1c4-460a-8071-b5c51caba440)
-
-# Hero
-
-![](assets/images/heroes-small.png)
-
-### $12 per month
-
-Complete behind the scene access to all nightly development ramblings. Have your input fully considered into brand
-new not seen before programs. Help guide MustardOS in a unique way to improve it for everyone!
-
-* Nightly development exclusives
-* Your name on the credits screen
-* Special Discord access
-* Behind The Scenes
-
-[Subscribe to the Hero tier!](https://ko-fi.com/summary/8d9e9924-fb00-468f-a178-18d33be9bb54)
+- Take part in the [Community Forum](https://community.muos.dev) and help other players on the
+  [Discord Server](https://discord.gg/mustardos-1152022492001603615).
+- Contribute code or report problems through our [GitHub repositories](https://github.com/MustardOS).
+- Tell others about MustardOS and share your themes and screenshots with the community.

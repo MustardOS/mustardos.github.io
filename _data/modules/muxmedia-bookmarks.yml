@@ -1,0 +1,27 @@
+description: >
+  Bookmarks remember an exact position in the current video or audio item. Each named bookmark is shown with its
+  playback time. Video bookmarks can include a clean thumbnail captured before visual effects and overlays are
+  applied.
+
+goback: muxmedia
+
+visible:
+  - name: Load
+    icon: quickload
+    desc: Select a bookmark with <strong>A</strong> to continue playing from its saved position.
+  - name: Save
+    icon: quicksave
+    desc: >
+      Press <strong>Y</strong> to save the current position. The on-screen keyboard lets you give the bookmark a
+      useful name.
+  - name: Quick Bookmark
+    icon: bookmark
+    desc: Use the assigned quick bookmark hotkeys to save or load one position without opening this screen.
+  - name: Remove
+    icon: state
+    desc: Press <strong>X</strong> on a bookmark and confirm that you want to remove it.
+
+tip:
+  - info: Bookmarks belong to the current media item, so a playlist keeps a separate set for each track or episode.
+  - info: Audio bookmarks do not create a thumbnail.
+  - info: Bookmarks are not shown for live television or radio because a live position cannot be restored reliably.

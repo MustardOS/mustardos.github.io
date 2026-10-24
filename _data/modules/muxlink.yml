@@ -1,0 +1,46 @@
+description: >
+  Connect two MustardOS devices with supported wired network adapters and a cable, or with a USB-C data cable. Direct
+  Link chooses private addresses automatically, finds the device at the other end, and leaves Wi-Fi available for
+  other services.
+
+goback: muxconnect
+
+visible:
+  - name: USB Cable
+    icon: usbcable
+    desc: >
+      Links the two devices over a USB-C data cable. Enable it on both devices, then
+      connect the charging port of one device to the other USB-C port of the second device. The second device powers
+      the link and charges the first. Shown only on devices that support it, and USB Function is paused while it is
+      enabled.
+  - name: Status
+    icon: status
+    desc: >
+      Shows whether a supported adapter is present, the cable is connected, another device is being sought, or the
+      pair is connected.
+  - name: Connection
+    icon: interface
+    desc: >
+      The wired network interface selected for Direct Link.
+  - name: This Device
+    icon: address
+    desc: >
+      The private address chosen automatically for this device on the cable.
+  - name: This Device ID
+    icon: mac
+    desc: >
+      The hardware address of this device's network adapter.
+  - name: Other Device
+    icon: peeraddress
+    desc: >
+      The private address of the MustardOS device at the other end of the cable.
+  - name: Other Device ID
+    icon: peermac
+    desc: >
+      The hardware address of the adapter connected to the other device.
+
+tip:
+  - info: Connect a supported wired network adapter to each device, join the adapters with a cable, and leave this screen open while they find one another.
+  - info: For a USB-C cable, connect a charger to the charging port of the device that powers the link for longer sessions, as it supplies power to both devices.
+  - info: Pickles Game Link can select Direct Link automatically when a paired device is available.
+

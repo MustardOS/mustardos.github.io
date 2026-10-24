@@ -1,10 +1,17 @@
 manufacturer: Anbernic
 name: RGCUBEXX
 internal: rgcubexx-h
-desc: A 1:1 ratio screen with colourful analogue sticks.
+desc: A 1:1 ratio screen with colourful sticks.
+features:
+  form: horizontal
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "720x720"
 downloads:
   - variant:
-    hash: 07ec6044c84911b1e77bb48e140035f4c67baec219f553570de12955b130d219
-    gofile: https://store9.gofile.io/download/direct/f98cb25d-abb1-4739-8a32-37121525172b/MustardOS_RGCUBEXX-H_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/dnpG3TZb#sig8-kepn_rZzCzqGCn-jgwYF6MqllDrQeRNxBMKMyo
-    torrent: MustardOS_RGCUBEXX-H_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: 9515e0a5562c83f846050ab1e11253eb8454268aa7d3bae82b3d5a054130ea63
+    gofile: https://gofile.io/d/k2S8KsbW
+    mega: https://mega.nz/file/Rv5RWRpS#ECeOFDgNwSQzTyNtEYHWLANw3SUfByJSufcRgZ1G5KQ
+    torrent: MustardOS_RGCUBEXX-H_2606.0_ANDROMEDA-db2a3bd0

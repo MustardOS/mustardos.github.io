@@ -1,147 +1,253 @@
 description: >
-  Access to deeper configuration options that affect system behaviour, user experience, and hardware control. These 
-  options are designed for experienced users beyond typical settings. Adjusting some of these values may impact 
-  stability or device behaviour, so proceed carefully.
+  The deeper settings that shape how your device behaves underneath the interface. These are gathered into
+  sections.<br><br>Most people never need to come in here, and that is perfectly fine. If you do, take it gently, as a
+  few of these can change how stable things feel.
 
 goback: muxtweakgen
 
-visible:
-  - name: Menu Acceleration
-    icon: accelerate
+sections:
+  - name: Input
     desc: >
-      Adjusts how quickly menu navigation accelerates when holding down directional buttons. Higher values make 
-      scrolling faster, while lower values provide more precise control.
-  - name: Menu Repeat Delay
-    icon: repeat
+      How your device responds to buttons and sticks.
+    items:
+      - name: Menu Acceleration
+        icon: accelerate
+        desc: >
+          Adjusts how quickly menu navigation picks up speed when holding down a direction. Higher values scroll
+          faster, lower values give you finer control.
+      - name: Menu Repeat Delay
+        icon: repeat
+        desc: >
+          How long a button must be held before it starts repeating. A longer delay helps avoid overshooting when
+          navigating menus.
+      - name: Menu Navigation
+        icon: sticknav
+        desc: >
+          Choose whether you get around using the DPAD, a stick, or both together. Only shown on devices with
+          sticks.
+      - name: DPAD Swap Function
+        icon: dpadswap
+        desc: >
+          Toggles the DPAD swap feature, letting you switch directional input around using a hotkey.
+      - name: Rumble Strength
+        icon: rumble
+        desc: >
+          Sets the maximum handheld rumble strength from 0% to 100%. Core-requested levels remain proportional
+          beneath this limit.
+
+  - name: Display
     desc: >
-      Determines how long a button must be held before it begins repeating its action. Increasing this delay can help 
-      prevent accidental repeated inputs when navigating menus.
-  - name: Battery Offset
-    icon: offset
+      Brightness, the screen itself, and how content artwork is spaced.
+    items:
+      - name: Brightness On Boot
+        icon: brightness
+        desc: >
+          The brightness applied automatically each time your device starts, so you always begin somewhere
+          comfortable.
+      - name: Brightness Increment
+        icon: incbright
+        desc: >
+          How much the brightness moves with each press. Smaller steps give finer control, larger ones get you
+          there quicker.
+      - name: Display Suspend
+        icon: dispsuspend
+        desc: >
+          Whether the display is put to sleep along with the device. Some panels do not wake up gracefully, so
+          treat this one with a little care.
+      - name: Device Lid Switch
+        icon: lidswitch
+        desc: >
+          Puts your device to sleep when you close the lid. This is only shown on clamshell devices with Lid
+          Switch Integration enabled in the device settings.
+      - name: Stage Overlay
+        icon: stageoverlay
+        desc: >
+          The on-screen indicators for brightness, volume, and battery. Turning this off also hides Overlay Options,
+          since there would be nothing left for it to adjust. Not available while outputting over HDMI.
+      - name: Pickles Hardware Effects
+        icon: shader
+        desc: >
+          Allows Pickles colour filters, shaders, and colour adjustments with hardware-rendered cores. It adds
+          rendering work and takes effect on the next content launch.
+      - name: Box Art Padding Divisor
+        icon: boxartpaddiv
+        desc: >
+          Box Art Padding in Customisation is a percentage, and this decides how much space each percent is worth.
+          A smaller number makes every percent count for more, so the same padding pushes artwork further from the
+          edge. A larger number makes the padding finer to adjust. Best left alone unless the steps feel too coarse.
+
+  - name: Audio
     desc: >
-      Applies a correction value to the displayed battery percentage. Useful for calibrating the battery indicator 
-      if readings are consistently higher or lower than expected.
-  - name: Button Swap
-    icon: swap
+      Volume behaviour and how the sound system starts up.
+    items:
+      - name: Volume On Boot
+        icon: volume
+        desc: >
+          The volume your device starts at each time, so you are never caught out by a sudden blast.
+      - name: Volume Increment
+        icon: incvolume
+        desc: >
+          How much the volume moves with each press.
+      - name: Audio Subsystem Wait
+        icon: audioready
+        desc: >
+          Whether your device waits for audio to be ready during boot. It can add a few seconds to startup and
+          avoids a silent first launch.
+      - name: Audio Reverse
+        icon: audioswap
+        desc: >
+          Swaps the left and right channels, handy if your speakers turned out to be wired the other way round.
+      - name: Audio Suspend
+        icon: audiosuspend
+        desc: >
+          Lets the audio device nod off while nothing is playing, which saves a little power.
+      - name: Audio Overdrive
+        icon: overdrive
+        desc: >
+          Pushes maximum volume from 100% up to 200%. Useful in noisy places, though your speakers may not thank
+          you for living up there.
+
+  - name: Performance
     desc: >
-      Globally switches button layouts across the system. Ideal for users preferring alternate control schemes or 
-      region specific button arrangements.
-  - name: Menu Navigation
-    icon: sticknav
+      How hard your device is allowed to work, and how it looks after its memory.
+    items:
+      - name: Thermal Zone Control
+        icon: thermal
+        desc: >
+          The safety net that shuts things down if your device gets too hot. Leaving this on is strongly
+          recommended.
+      - name: GPU Performance Mode
+        icon: maxgpu
+        desc: >
+          Keeps the graphics chip running flat out at all times. Only on devices that support it.
+      - name: Double Buffering
+        icon: doublebuffer
+        desc: >
+          Sets aside a second full screen drawing buffer. It uses more memory and is really only there for
+          comparing how things render, so it is best left off. Takes effect on the next launch.
+      - name: System Swapfile
+        icon: swapfile
+        desc: >
+          Gives your device a little extra breathing room in memory, which some content appreciates.
+      - name: System ZRam
+        icon: zramfile
+        desc: >
+          Does much the same thing using compressed memory instead, which is quicker as nothing has to touch
+          storage.
+      - name: Debug Measurement
+        icon: perfcounters
+        desc: >
+          Captures menu and screensaver timing, missed deadlines, and draw submissions. Results are written to
+          <code>MUOS/performance</code> for diagnosis. Leave this disabled during ordinary use.
+
+  - name: Storage
     desc: >
-      Choose between different navigation modes to suit preferred menu control styles.
-  - name: Volume On Boot
-    icon: volume
+      How cards and USB devices are picked up.
+    items:
+      - name: Secondary Partition
+        icon: secondpart
+        desc: >
+          Which partition is used when mounting the second card. Only worth changing if your card has been split
+          into several.
+      - name: External Partition
+        icon: usbpart
+        desc: >
+          Which partition is used when mounting USB storage. Adjust this if a drive is not being picked up
+          properly.
+      - name: USB Function
+        icon: usbfunction
+        desc: >
+          Switches what happens when you plug into a computer, between debugging access and plain file transfer.
+
+  - name: RetroArch
     desc: >
-      Sets the default system volume level each time the device starts. Useful for ensuring consistent audio 
-      behaviour after reboots.
-  - name: Brightness On Boot
-    icon: brightness
+      How RetroArch is handled when it starts.
+    items:
+      - name: RetroArch Network Wait
+        icon: retrowait
+        desc: >
+          Holds RetroArch back until a network connection is up, which matters for things like RetroAchievements.
+          Only shown on devices with network hardware.
+      - name: RetroArch Startup Cache
+        icon: retrocache
+        desc: >
+          Prepares RetroArch ahead of time at boot. Startup takes a few seconds longer and the first game of the day
+          arrives sooner.
+
+  - name: Bluetooth
     desc: >
-      Defines the display brightness applied automatically when the system starts. Adjust this to maintain a 
-      comfortable default viewing level on every boot.
-  - name: Thermal Zone Control
-    icon: thermal
+      How Bluetooth scanning behaves. Only shown on devices with Bluetooth.
+    items:
+      - name: Scan Timeout
+        icon: btscan
+        desc: >
+          How long your device keeps looking for nearby Bluetooth devices before giving up.
+      - name: Raw Device Visibility
+        icon: bluetooth
+        desc: >
+          Whether a Bluetooth scan also lists nearby devices that only show a hardware address instead of a name.
+          Leave it off unless you are pairing unusual hardware.
+
+  - name: System
     desc: >
-      Toggles automatic thermal protection that safely powers down the device when overheating. Disabling this is not 
-      recommended as it prevents the system from responding to high temperature warnings.
-  - name: Passcode Lock
-    icon: passcode
+      Odds and ends that affect the device as a whole.
+    items:
+      - name: LED During Play
+        icon: led
+        desc: >
+          Whether the power LED stays lit while content is running. Nice to turn off in a dark room.
+      - name: Device Rumble
+        icon: rumble
+        desc: >
+          Enables vibration for events such as startup, sleep, and shutdown, where the hardware supports it.
+      - name: Activity Tracker
+        icon: activity
+        desc: >
+          Whether your play time and sessions are recorded at all.
+      - name: Verbose Messages
+        icon: verbose
+        desc: >
+          Shows what is happening on screen during startup and shutdown, which helps when something is not going to
+          plan.
+      - name: Debug Logging
+        icon: debuglog
+        desc: >
+          How much detail is written away for later inspection: <strong>Disabled</strong>,
+          <strong>Standard</strong>, or <strong>Verbose</strong>. Only really needed when chasing a problem.
+      - name: User Init Scripts
+        icon: userinit
+        desc: >
+          Whether your own <code>.sh</code> scripts in the <code>MUOS/init</code> folder are run at startup.
+      - name: Remember Section
+        icon: remembersection
+        desc: >
+          Whether a screen with sections reopens on the one you were last using. When disabled, it always
+          opens on the first section.
+      - name: Additional Cores
+        icon: extracores
+        desc: >
+          Shows the extra systems and cores in Core Assignment and Core Management as well as the main ones. Leave
+          it off for a shorter list of the choices that suit most people. Content already assigned to an extra core
+          keeps working either way.
+
+  - name: Confirmations
     desc: >
-      Enables a passcode requirement for device startup, launching content, or other features.
-  - name: LED During Play
-    icon: led
-    desc: >
-      Toggles the device’s power LED visibility while launching or running content. Useful for reducing distractions 
-      during gameplay or conserving minor power.
-  - name: Random Theme on Boot
-    icon: randomtheme
-    desc: >
-      Automatically selects and applies a random theme each time the device boots.
-  - name: RetroArch Network Wait
-    icon: retrowait
-    desc: >
-      Delays RetroArch startup until a network connection is detected. Primarily used for features like 
-      RetroAchievements that require online access before launch.
-  - name: RetroArch Config Freedom
-    icon: retrofree
-    desc: >
-      Removes system enforced configuration restrictions on RetroArch. Allows advanced users to manually customise 
-      RetroArch behaviour, but may cause instability if misconfigured.
-  - name: RetroArch Startup Cache
-    icon: retrocache
-    desc: >
-      Caches RetroArch and its libraries at boot for faster launches, at the cost of slightly longer startup time.
-  - name: Activity Tracker
-    icon: activity
-    desc: >
-      Toggles content activity tracking and statistics collection.
-  - name: Device Rumble
-    icon: rumble
-    desc: >
-      Enables or disables vibration feedback for events such as startup, sleep, and shutdown. Enhances tactile 
-      feedback where supported by hardware.
-  - name: User Init Scripts
-    icon: userinit
-    desc: >
-      Controls the execution of user defined startup scripts. When enabled, the system will run shell (<code>.sh</code>) 
-      scripts stored in the <code>MUOS/init</code> directory during boot.
-  - name: DPAD Swap Function
-    icon: dpadswap
-    desc: >
-      Toggles the DPAD swap feature, allowing directional input remapping through a designated hotkey combination.
-  - name: Audio Overdrive
-    icon: overdrive
-    desc: >
-      Extends maximum system audio output from 100% to 200%, providing additional loudness when required. Use 
-      carefully, as excessive volume may cause speaker distortion or hardware strain.
-  - name: Device Lid Switch
-    icon: lidswitch
-    desc: >
-      Enables automatic sleep functionality when closing or opening a physical lid switch, if supported by the device.
-  - name: Display Suspend
-    icon: dispsuspend
-    desc: >
-      Toggles the display suspend behaviour when the device enters sleep mode. Some display panels may not resume 
-      correctly if this setting is enabled, so use with caution.
-  - name: System Swapfile
-    icon: swapfile
-    desc: >
-      Configures the system’s swapfile usage, allowing limited expansion of virtual memory. Useful for memory 
-      intensive content or testing system performance under load.
-  - name: System ZRam
-    icon: zramfile
-    desc: >
-      Uses compressed RAM as swap space, providing faster memory expansion without disk access.
-  - name: Secondary Partition
-    icon: secondpart
-    desc: >
-      Specifies which partition number the system should mount when accessing secondary storage. Typically used for 
-      advanced configurations or multi partitioned mSD cards.
-  - name: External Partition
-    icon: usbpart
-    desc: >
-      Sets the partition number used when mounting external USB storage devices. Adjust this if the system fails to 
-      detect or mount certain external drives correctly.
-  - name: Brightness Increment
-    icon: incbright
-    desc: >
-      Defines how much the screen brightness changes per adjustment step. Smaller increments provide finer control, 
-      while larger ones allow quicker adjustments.
-  - name: Volume Increment
-    icon: incvolume
-    desc: >
-      Adjusts how much the volume level changes per input step. Ideal for tuning audio to your specific preference.
-  - name: GPU Performance Mode
-    icon: maxgpu
-    desc: >
-      Push the onboard GPU to the maximum frequency at all times. Only on supported devices.
-  - name: Audio Subsystem Wait
-    icon: audioready
-    desc: >
-      Toggle if the device will wait for the audio subsystem to initialise during boot. May increase boot time by a
-      few extra seconds.
-  - name: Audio Reverse
-    icon: audioswap
-    desc: >
-      Swaps left and right audio channels for the internal speaker output.
+      How often your device stops to check you meant it. Turn these on once you are confident and things move along
+      much more briskly.
+    items:
+      - name: Trust Modifications
+        icon: trustmodify
+        desc: >
+          Saves your changes straight away when leaving a settings screen, without asking first.
+      - name: Trust Power Choice
+        icon: trustpower
+        desc: >
+          Reboots or shuts down without pausing to confirm.
+      - name: Trust Removals
+        icon: trustremove
+        desc: >
+          Removes content, history, collections, and the like without asking whether you are sure.
+
+tip:
+  - info: Press **Left** or **Right** to move between sections, or use the shoulder buttons to do the same.
+  - info: A warning greets you on the way in. It is not there for decoration, so do read it before you start changing things.

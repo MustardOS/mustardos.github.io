@@ -6,55 +6,102 @@ description: >
 
 goback: muxconfig
 
-visible:
-  - name: Date and Time
-    icon: clock
-    link: muxrtc
+sections:
+  - name: Options
     desc: >
-      Adjust the systems current date, time, and timezone. Accurate timekeeping helps ensure proper logging, updates, 
-      and synchronisation with network services. Not to forget that some content also requires proper time being set.
-  - name: HDMI Settings
-    icon: hdmi
-    link: muxhdmi
+      The everyday settings you can change right here without opening anything else.
+    items:
+    - name: Device Brightness
+      icon: brightness
+      desc: >
+        Adjust the display brightness to a comfortable level. Lower brightness can help conserve power, while
+        higher levels improve outdoor visibility.
+    - name: Device Volume
+      icon: volume
+      desc: >
+        Set the master volume level for all sounds, including menus, games, and notifications.
+    - name: Audio Output
+      icon: audiosink
+      desc: >
+        Choose which audio output device the system sends sound to, useful on devices with more than one available
+        audio path.
+    - name: DPAD Swap Hotkey
+      icon: hkdpad
+      desc: >
+        Configure which button combination toggles the DPAD swap function, useful for adjusting control layouts in 
+        certain games or emulators. This option only appears for specific devices without sticks.
+    - name: Screenshot Hotkey
+      icon: hkshot
+      desc: >
+        Set the preferred button combination for capturing screenshots quickly during gameplay or navigation.
+    - name: Device Startup
+      icon: startup
+      desc: >
+        Choose what MustardOS will boot into after powering on, such as the main menu, content explorer, or whatever 
+        content you were last playing.
+
+  - name: Additionals
     desc: >
-      Configure video output options for HDMI capable devices, including resolution, scaling, and other preferences.
-  - name: Advanced Settings
-    icon: advanced
-    link: muxtweakadv
-    desc: >
-      Contains specialised system controls intended for advanced users or developers. Changes here can affect 
-      hardware behaviour, so proceed with caution.
-  - name: Brightness
-    icon: brightness
-    desc: >
-      Adjust the display brightness to a comfortable level. Lower brightness can help conserve power, while 
-      higher levels improve outdoor visibility.
-  - name: Volume
-    icon: volume
-    desc: >
-      Set the master volume level for all sounds, including menus, games, and notifications.
-  - name: Device RGB Lights
-    icon: rgb
-    desc: >
-      Enable or disable the devices RGB lighting system, adjusting visual effects and theme integration.
-  - name: DPAD Swap Hotkey
-    icon: hkdpad
-    desc: >
-      Configure which button combination toggles the DPAD swap function, useful for adjusting control layouts in 
-      certain games or emulators. This option only appears for specific devices without analogue sticks.
-  - name: Screenshot Hotkey
-    icon: hkshot
-    desc: >
-      Set the preferred button combination for capturing screenshots quickly during gameplay or navigation.
-  - name: Device Startup
-    icon: startup
-    desc: >
-      Choose what MustardOS will boot into after powering on, such as the main menu, content explorer, or whatever 
-      content you were last playing.
+      Each of these opens a screen of its own.
+    items:
+    - name: Date and Time
+      icon: clock
+      link: muxrtc
+      desc: >
+        Adjust the systems current date, time, and timezone. Accurate timekeeping helps ensure proper logging, updates, 
+        and synchronisation with network services. Some content also needs the correct time to work properly.
+    - name: Language
+      icon: language
+      link: muxlanguage
+      desc: >
+        Pick a different language for your device. All languages are supported through a 
+        <a href="https://hosted.weblate.org/projects/muos/mux/">Hosted Weblate</a> instance. Please make all
+        changes in Weblate, which fills our language repository on GitHub.
+    - name: Soundfont
+      icon: soundfont
+      link: muxsoundfont
+      desc: >
+        The soundfont used for General MIDI music, which decides how MIDI instruments sound. Each soundfont can be
+        previewed before you commit to it.
+    - name: HDMI Output
+      icon: hdmi
+      link: muxhdmi
+      desc: >
+        Configure video output options for HDMI capable devices, including resolution, scaling, and other preferences.
+    - name: Device Lights
+      icon: rgb
+      link: muxrgb
+      desc: >
+        Configure the device's RGB lighting, including animation mode, brightness, and per zone colours where the
+        hardware supports it.
+    - name: Input Remap
+      icon: inputremap
+      link: muxremap
+      desc: >
+        Remap the device's physical buttons and sticks to different controller inputs, and switch between
+        the Retro and Modern layouts.
+    - name: Passcode Settings
+      icon: lock
+      link: muxpasscfg
+      desc: >
+        Set up PIN style passcodes, and their accompanying messages, for booting the device, launching content, or
+        entering system settings, along with a safety code that can bypass all of them if you get locked out.
+    - name: Colour Temperature
+      icon: displaytemp
+      link: muxdistemp
+      desc: >
+        Automatically shift the screen's colour temperature between sunrise and sunset, or set a fixed manual
+        temperature. Only available on devices that support on-device colour temperature adjustment.
 
 hidden:
+  - name: Advanced
+    link: muxtweakadv
+    desc: >
+      Press <strong>X</strong> on <strong>General</strong> in Configuration and confirm the
+      warning to reach it.
   - name: Danger Settings
     link: muxdanger
     desc: >
-      Only for the bravest of tinkerers, this section allows you to change very low level settings pertaining to 
+      Hold <strong>Y</strong> on <strong>General</strong> in Configuration, then confirm the warning, to reach this
+      section. Only for the bravest of tinkerers, it allows you to change very low level settings pertaining to
       storage, suspend, and process configuration. Only change values within here if you understand the risks.

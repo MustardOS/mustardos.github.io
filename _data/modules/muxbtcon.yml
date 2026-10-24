@@ -1,0 +1,17 @@
+description: >
+  Scans for nearby Bluetooth devices that have not yet been paired, listing each one found before the scan window
+  closes. Selecting a device connects and pairs with it straight away, after which you are returned to the paired
+  device list.<br><br>Press <strong>X</strong> to restart the scan, or <strong>Y</strong> to view further
+  information about the highlighted device before deciding to connect.
+
+goback: muxbtall
+
+visible:
+  - name: Discovered Device
+    icon: bluetooth
+    desc: >
+      Each nearby device found during the scan is listed here. Press <strong>A</strong> to pair and connect to it,
+      or <strong>Y</strong> to see more detail about it first.
+
+tip:
+  - info: Press **Y** on a discovered device to check its details before connecting.

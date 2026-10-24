@@ -1,0 +1,55 @@
+description: >
+  Assign a different physical button to each Wasabi shortcut. Press <strong>A</strong> on a shortcut to pick its
+  button from a list, or choose Unbound to switch it off. If another shortcut of the same kind already uses that
+  button, that shortcut is left unbound until you give it a new one.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Pause Playback
+    icon: pause
+    desc: Pause or resume without opening the Wasabi Menu.
+  - name: Save Bookmark
+    icon: quicksave
+    desc: Save the quick bookmark with a <strong>MENU</strong> combination.
+  - name: Load Bookmark
+    icon: quickload
+    desc: Load the quick bookmark with a <strong>MENU</strong> combination.
+  - name: Seek Back 10 Seconds
+    icon: seek
+    desc: Move backwards by the short seek step.
+  - name: Seek Forward 10 Seconds
+    icon: seek
+    desc: Move forwards by the short seek step.
+  - name: Seek Back 60 Seconds
+    icon: seek
+    desc: Move backwards by the long seek step.
+  - name: Seek Forward 60 Seconds
+    icon: seek
+    desc: Move forwards by the long seek step.
+  - name: Toggle Header
+    icon: toggleheader
+    desc: Change header visibility with a <strong>MENU</strong> combination.
+  - name: Change Repeat
+    icon: repeat
+    desc: Cycle between Disabled, One, and All.
+  - name: Toggle Shuffle
+    icon: shuffle
+    desc: Turn shuffled playlist playback on or off.
+  - name: Quit
+    icon: quit
+    desc: Stop playback and leave Wasabi with a <strong>MENU</strong> combination.
+  - name: Fast Forward
+    icon: fastforward
+    desc: Speed up audio playback with a <strong>MENU</strong> combination. This only appears during audio playback.
+  - name: Slow Motion
+    icon: slowmotion
+    desc: Slow down audio playback with a <strong>MENU</strong> combination. This only appears during audio playback.
+
+tip:
+  - info: Press **X Reset** while this section is active to restore every default Wasabi hotkey.
+  - info: Pause, seeking, repeat, and shuffle use direct button presses. Bookmark, header, quit, fast forward, and slow motion shortcuts use **MENU** combinations.
+  - info: While audio is playing, **L2** and **R2** move to the previous or next track in the list, unless another shortcut has been assigned to them.
+  - info: The seek shortcuts are hidden when the file playing does not report its length, as Wasabi cannot seek within it.
+  - info: Hold a seek shortcut to keep seeking. It repeats at the Menu Repeat Delay and Menu Acceleration rates set in Advanced Settings.
+  - info: Assigning a button that another shortcut already uses leaves that shortcut unbound. Direct buttons and **MENU** combinations are kept apart, so **X** can toggle shuffle while **MENU + X** toggles the header.

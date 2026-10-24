@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # full history needed for accurate per-page "last modified" dates
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:

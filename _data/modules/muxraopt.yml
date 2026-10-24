@@ -1,0 +1,22 @@
+description: >
+  Toggle RetroArch's threaded video option for the selected content, working around cases where a core behaves
+  better, or worse, with it enabled.<br><br>Choose <strong>Enabled</strong> or <strong>Disabled</strong> and press <strong>A</strong> to apply
+  it to this piece of content only, <strong>X</strong> to apply it to every item in the current directory, or
+  <strong>Y</strong> to apply it recursively to the current directory and everything below it.
+
+goback: muxoption
+
+visible:
+  - name: Enabled
+    icon: true
+    desc: >
+      Switches on RetroArch's threaded video rendering for the selected content, which can improve performance on
+      some cores at the cost of a small amount of added input latency.
+  - name: Disabled
+    icon: false
+    desc: >
+      Switches off RetroArch's threaded video rendering for the selected content, favouring lower input latency
+      over the potential performance benefit.
+
+tip:
+  - info: This is a workaround for cores that do not expose the threaded video option in a reliable way through RetroArch's own menu, and may grow into a larger set of per content RetroArch options in the future.

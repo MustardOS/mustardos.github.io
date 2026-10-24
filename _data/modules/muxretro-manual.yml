@@ -1,0 +1,29 @@
+description: >
+  A built-in plain text manual reader for the current content, handy for game instructions, controls
+  reference sheets, or any other <code>.txt</code> documentation placed alongside it.<br><br>Hold
+  <strong>MENU</strong> and press <strong>SELECT</strong> to open it directly, without going through the
+  Pickles Menu. Only available when a matching text file is found for the loaded content.
+
+goback: muxretro
+
+visible:
+  - name: Scroll
+    icon: manual
+    desc: >
+      Move through the page with the <strong>Left Stick</strong>, up and down to scroll, left and right to
+      pan when word wrap is off.
+  - name: Jump to Top
+    icon: manual
+    desc: >
+      Press <strong>X</strong> to instantly jump back to the very start of the manual.
+  - name: Word Wrap
+    icon: manual
+    desc: >
+      Press <strong>Y</strong> to toggle wrapping long lines to fit the screen width, on or off.
+  - name: Font Size
+    icon: manual
+    desc: >
+      Press <strong>L2</strong> or <strong>R2</strong> to shrink or grow the text, from 10pt up to 32pt.
+
+tip:
+  - info: Your chosen font size is remembered for next time.

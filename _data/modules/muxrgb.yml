@@ -1,0 +1,34 @@
+description: >
+  Configure the RGB lighting fitted to supported devices. Choose a Mode to decide how the lights behave: leave them
+  Off, take independent control over each lighting Zone, let your currently active theme choose the colours for
+  you, or leave them to another application with External.<br><br>Which zones are available, and whether a device has RGB lighting at all, depends on the hardware
+  fitted, so this screen will look different depending on your device.
+
+goback: muxtweakgen
+
+visible:
+  - name: Mode
+    icon: mode
+    desc: >
+      Chooses how the lights are controlled. <strong>Off</strong> (the default) turns every zone off and hides the
+      rest of this screen. <strong>Zone</strong> lists each lighting zone your device has, letting you set its
+      colour and brightness independently. <strong>Theme</strong> hides the zone list and instead colours every zone
+      to match whichever palette your currently active theme is using, leaving you with just an overall Brightness
+      to set. <strong>External</strong> hands the lights over to another application, such as a community lighting
+      tool. MustardOS then sends nothing to the lights at all, not even to turn them off, until you choose another
+      mode.
+  - name: Zone
+    icon: zone
+    link: muxrgbzone
+    desc: >
+      Only shown in <strong>Zone</strong> mode. Every lighting zone your device has is listed here, for example Left
+      Stick, Middle, or Shoulder L1 - press <strong>A</strong> on one to open its own colour and brightness screen.
+  - name: Brightness
+    icon: bright
+    desc: >
+      Only shown in <strong>Theme</strong> mode. Sets the overall brightness of the theme-supplied colours, from 0%
+      to 100%.
+
+tip:
+  - info: In **Zone** mode, press **X** to reset every zone back to Off and 100% brightness in one go.
+  - info: Hold **Y** while in **Zone** mode for a surprise - it shuffles every zone to a random colour, just for fun.

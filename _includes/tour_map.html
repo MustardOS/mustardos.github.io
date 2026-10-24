@@ -1,0 +1,15 @@
+{%- comment -%}
+  One level of the Grand Tour map, recursing into child pages.
+  Include as: {% include tour_map.html node=page menu=menu_title %}
+{%- endcomment -%}
+{%- include tour_children.html node=include.node menu=include.menu -%}
+{%- if tour_kids.size > 0 -%}
+<ul class="tour-map-list">
+    {%- for map_kid in tour_kids -%}
+    <li>
+        <a href="{{ map_kid.url }}">{{ map_kid.title }}</a>
+        {%- include tour_map.html node=map_kid menu=include.menu -%}
+    </li>
+    {%- endfor -%}
+</ul>
+{%- endif -%}

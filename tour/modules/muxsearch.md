@@ -4,7 +4,7 @@ title: Search
 module: muxsearch
 glyph: muxsearch
 permalink: /tour/modules/muxsearch
-parent: Content Option
-nav_order: 1
+parent: Explore Content
+nav_order: 2
 has_toc: false
 ---

@@ -1,0 +1,42 @@
+description: >
+  A detailed reference for the Video section of Pickles Settings. These controls set the size, shape, orientation,
+  filtering, and renderer used for the game picture.
+
+goback: muxretro-settings
+
+visible:
+  - name: Image Corrections
+    icon: shimmerfix
+    link: muxretro-imagecorrections
+    desc: Open Shimmer Fix and Anti-Flicker.
+  - name: Scaling Mode
+    icon: scaling
+    desc: Fit the game picture to the display, fill it, or use another supported scaling method.
+  - name: Rotation
+    icon: rotate
+    desc: Rotate the game picture in quarter turns.
+  - name: Mirrored
+    icon: mirrored
+    desc: Flip the game picture from left to right.
+  - name: Aspect Ratio
+    icon: aspectratio
+    desc: Use the ratio requested by the core or select a specific shape.
+  - name: Scale Multiplier
+    icon: integerscale
+    desc: Enlarge the source picture in whole-pixel steps for evenly sized pixels.
+  - name: Texture Filter
+    icon: texturefilter
+    desc: Choose how the picture is sampled as it is resized.
+  - name: Border Colour
+    icon: border
+    desc: >
+      Choose the colour shown around content that does not fill the display. Atmosphere fills the space with a soft
+      gradient of colours drawn from the edges of the picture, so it follows the scene. Black, Dark Grey and White
+      stay fixed. Black is the default.
+  - name: Game Renderer
+    icon: gamerenderer
+    desc: Choose hardware or software rendering when the core supports both. Restart the content to apply it.
+
+tip:
+  - info: Game Renderer only appears when the current core offers both methods.
+  - info: Shimmer Fix can change the size of the picture. Viewport Adjustment and Cropping can refine the result.

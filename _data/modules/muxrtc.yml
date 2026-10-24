@@ -5,7 +5,7 @@ description: >
 goback: muxtweakgen
 
 visible:
-  - name: Set Timezone
+  - name: Timezone
     icon: timezone
     link: muxtimezone
     desc: >
@@ -35,3 +35,12 @@ visible:
     icon: notation
     desc: >
       Switch between 12 hour and 24 hour time formats. This setting changes how time is displayed in the frontend.
+  - name: Custom Format
+    icon: custom
+    desc: >
+      Write your own layout for the clock, so it reads exactly how you like, whether that is a plain
+      <strong>14:05</strong>, a fuller <strong>Sun 2 Aug, 2:05 pm</strong>, or something in between. Only
+      used when Time Notation is set to use it.
+
+tip:
+  - info: Press **MENU** on any row for a short explanation of that setting, including the format codes for Custom Format.

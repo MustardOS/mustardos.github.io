@@ -1,0 +1,34 @@
+description: >
+  Filter the on-device theme catalogue in Theme Download so it only shows what you are looking for.<br><br>Choose
+  between showing only themes compatible with your device's current resolution or every theme regardless of
+  resolution, narrow results down to only those with grid view, HDMI, or language support, or search by name.
+
+goback: muxthemedown
+
+visible:
+  - name: Theme Compatibility
+    icon: theme
+    desc: >
+      Switch between <strong>Device Compatible</strong>, which only lists themes matching your current screen
+      resolution, and <strong>All</strong>, which lists every theme in the catalogue regardless of resolution
+      support.
+  - name: Grid
+    icon: grid
+    desc: >
+      Only show themes that support the grid view layout for the Content Explorer.
+  - name: HDMI
+    icon: hdmi
+    desc: >
+      Only show themes that include specific support for HDMI output.
+  - name: Language
+    icon: language
+    desc: >
+      Only show themes that include additional language support beyond the default.
+  - name: Lookup
+    icon: lookup
+    desc: >
+      Search the catalogue by name. Press <strong>A</strong> to open the on-screen keyboard and enter text to
+      filter by.
+
+tip:
+  - info: Filters are saved automatically when you press **B** to go back to Theme Download.

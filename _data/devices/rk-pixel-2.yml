@@ -1,0 +1,17 @@
+manufacturer: GKD
+name: Pixel 2
+internal: rk-pixel-2
+desc: A smaller handheld made for quick plays!
+features:
+  form: vertical
+  sticks: 0
+  wifi: 2
+  bluetooth: 0
+  hdmi: 0
+  screen: "640x480"
+downloads:
+  - variant:
+    hash: 2d2b3d79dacb6e9d049d6af8b6b10cc1231617533672dc515daaf188cfcf5a90
+    gofile: https://gofile.io/d/UJEelRBd
+    mega: https://mega.nz/file/E65l2bgJ#4I4p98-bwlvulOf_Ilx5aEPVEduK1C17nK4c6QoFErc
+    torrent: MustardOS_RK-PIXEL-2_2606.0_ANDROMEDA-db2a3bd0

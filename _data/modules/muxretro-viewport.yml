@@ -1,0 +1,28 @@
+description: >
+  Fine positioning of the game picture on your screen. Use this when the picture is nearly right but not
+  quite, sitting slightly off-centre, a touch too small, or showing a scrappy border along one edge that the
+  original console would have hidden behind a television bezel.
+
+goback: muxretro-video
+
+visible:
+  - name: Adjustment
+    icon: viewport
+    link: muxretro-viewportadjust
+    desc: >
+      Move the picture around the screen, stretch it wider or taller, and zoom in or out.
+  - name: Cropping
+    icon: centrecrop
+    link: muxretro-viewportcrop
+    desc: >
+      Trim unwanted edges off the picture before it is enlarged to fill your screen.
+  - name: Reset Viewport
+    icon: viewportreset
+    desc: >
+      Put every position, stretch, zoom, and trim value back to normal with one press of <strong>A</strong>.
+      A good escape hatch if you have adjusted your way into a corner.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Everything here sits on top of the **Scaling Mode** you chose on the Video screen, so get that roughly right first and come here for the final touches.
+  - info: If you get lost, **Reset Viewport** always brings you straight back to where you started.

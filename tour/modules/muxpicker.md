@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Theme Picker
+title: Package Picker
 module: muxpicker
 glyph: muxpicker
 permalink: /tour/modules/muxpicker

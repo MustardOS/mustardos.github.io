@@ -1,0 +1,246 @@
+description: >
+  Wasabi settings are arranged into sections. Press <strong>Left</strong>, <strong>Right</strong>, or the shoulder
+  buttons to move between them. Video and audio each show the settings that apply to the current media. When you
+  leave after making a change, choose This Content, This Directory, This Session Only, or Discard.
+
+goback: muxmedia
+
+sections:
+  - name: Video
+    desc: Control the video picture's shape, size, orientation, and filtering.
+    items:
+      - name: Scaling Mode
+        icon: scaling
+        desc: Fit the picture by aspect ratio, integer scaling, stretch, full height, full width, or fit screen.
+      - name: Rotation
+        icon: rotate
+        desc: Rotate the picture in quarter turns.
+      - name: Mirrored
+        icon: mirrored
+        desc: Flip the picture from left to right.
+      - name: Aspect Ratio
+        icon: aspectratio
+        desc: Use the detected ratio or choose 4:3, 8:7, 16:9, 16:10, or pixel perfect.
+      - name: Scale Multiplier
+        icon: integerscale
+        desc: Enlarge the source in whole-pixel steps, or let Wasabi choose automatically.
+      - name: Texture Filter
+        icon: texturefilter
+        desc: Choose how the picture is sampled and enhanced while it is resized.
+      - name: Border Colour
+        icon: border
+        desc: >
+          Choose the colour shown around a picture that does not fill the display. Atmosphere fills the space with a
+          soft gradient of colours drawn from the edges of the picture, so it follows the scene. Black, Dark Grey and
+          White stay fixed. Black is the default.
+
+  - name: Visuals
+    desc: Apply visual treatments and tune the colour of video content.
+    items:
+      - name: Vignette
+        icon: border
+        link: muxmedia-vignette
+        desc: Shape and soften the outside edge of the picture. Press <strong>X</strong> on this row to turn it off.
+      - name: Colour Filters
+        icon: filter
+        link: muxmedia-colourfilters
+        desc: >
+          Choose a Wasabi colour filter from Downloads, Collection, None, or a creator folder. Press
+          <strong>X</strong> on this row to remove the filter.
+      - name: Shaders
+        icon: shader
+        link: muxmedia-shaders
+        desc: >
+          Choose and adjust a Wasabi shader. Press <strong>Y</strong> on this row to adjust the current shader, or
+          <strong>X</strong> to remove it.
+      - name: Brightness
+        icon: brightness
+        desc: Make the picture lighter or darker with a live preview.
+      - name: Contrast
+        icon: contrast
+        desc: Change the difference between dark and light areas with a live preview.
+      - name: Saturation
+        icon: saturation
+        desc: Change the strength of the colours with a live preview.
+      - name: Hue Shift
+        icon: hue
+        desc: Move colours around the colour wheel with a live preview.
+      - name: Gamma
+        icon: gamma
+        desc: Adjust the middle tones with a live preview.
+
+  - name: Overlay
+    desc: Place a built-in pattern or chosen image over video content.
+    items:
+      - name: Overlay
+        icon: overlay
+        desc: >
+          Choose Disabled, Built-In Pattern, Catalogue, or Downloaded. Press <strong>X</strong> on this row to turn
+          the overlay off.
+      - name: Built-In Pattern
+        icon: overlaypattern
+        desc: Choose a checkerboard, diagonal, lattice, horizontal, or vertical repeating pattern.
+      - name: Overlay Image
+        icon: overlay
+        link: muxmedia-overlayimage
+        desc: >
+          Choose artwork from Downloads, Collection, None, or a creator folder. Press <strong>X</strong> on this row
+          to turn the overlay off.
+      - name: Overlay Opacity
+        icon: overlayopacity
+        desc: Set how strongly the overlay appears over the picture.
+      - name: Adjustment
+        icon: viewport
+        link: muxmedia-overlayadjust
+        desc: Move, stretch, or zoom the overlay independently from the media viewport.
+      - name: Cropping
+        icon: centrecrop
+        link: muxmedia-overlaycrop
+        desc: Trim individual overlay edges or apply a centred crop.
+      - name: Reset Overlay
+        icon: viewportreset
+        desc: Restore the overlay placement, stretch, zoom, and crop values.
+
+  - name: Display
+    desc: Adjust the media viewport and choose what Wasabi draws around the content.
+    items:
+      - name: Adjustment
+        icon: viewport
+        link: muxmedia-viewportadjust
+        desc: Move, stretch, or zoom the media viewport.
+      - name: Cropping
+        icon: centrecrop
+        link: muxmedia-viewportcrop
+        desc: Trim individual picture edges or apply a centred crop.
+      - name: Reset Viewport
+        icon: viewportreset
+        desc: Restore the media viewport to its default placement and size.
+      - name: Current Playtime
+        icon: playtime
+        desc: Show or hide the current and total playback time over the content.
+      - name: Header Visibility
+        icon: header
+        desc: >
+          Show no header, the clock, the battery, both, the playback duration, or the clock, battery and playback
+          duration together.
+      - name: Time Display
+        icon: playtime
+        desc: >
+          Show playback time as minutes and seconds, or as a four digit Tape Counter. This only appears for video
+          files.
+      - name: Progress Bar
+        icon: playtime
+        desc: >
+          Choose how playback progress is drawn: Classic, Centre Out, Waveform, Segmented, Reverse, Dot Trail,
+          Curve, Position Marker, Comet, or Pulse.
+      - name: Visualisers
+        icon: display
+        desc: >
+          Choose Spectrum, Waveform, Pulse, Orbit, Stereo Meter, Phase Scope, Radial Wave, Starfield, or Channel Scope for audio
+          playback. Channel Scope draws one oscilloscope per sound chip voice for console music, and Up and Down solo a
+          voice. This only appears while audio is open.
+      - name: Cover Art
+        icon: artwork
+        desc: >
+          Place audio cover art on the right or left, or disable it and centre the track details. This only appears
+          while audio is open.
+      - name: Repeat
+        icon: repeat
+        desc: Choose Disabled, One, or All for video and audio playback.
+      - name: Shuffle
+        icon: shuffle
+        desc: Play playlist entries in a shuffled order without repeating one until the set is exhausted.
+
+  - name: Sound
+    desc: Set volume and tune Wasabi's audio buffering and processing.
+    items:
+      - name: Volume
+        icon: volume
+        desc: >
+          Set the volume used by the current media, from silent up to 200% in steps of 5%. Anything above 100% boosts
+          quiet media, though the loudest parts may distort.
+      - name: Sample Rate
+        icon: samplerate
+        desc: Choose 32 kHz, 44.1 kHz, or 48 kHz output.
+      - name: Audio Latency
+        icon: audiolatency
+        desc: Choose a low, balanced, or compatibility latency profile.
+      - name: Audio Period
+        icon: audioperiod
+        desc: Set how many audio frames are processed in each period.
+      - name: Audio Filter
+        icon: audiofilter
+        desc: Apply no filter, a low-pass filter, or a high-pass filter.
+      - name: Rate Control
+        icon: audioratecontrol
+        desc: Allow small timing corrections that keep audio and video together.
+      - name: Gapless Playback
+        icon: audio
+        desc: Start the next playlist track without a pause between them. This only appears during audio playback.
+      - name: Cross Fade
+        icon: playtime
+        desc: Blend the end of one track into the next over 1 to 10 seconds, or leave it Disabled.
+      - name: Tracker Loop
+        icon: repeat
+        desc: Restart a tracker module from the beginning when it ends. This only appears for tracker modules.
+      - name: Fast Forward
+        icon: fastforward
+        desc: Choose whether the Fast Forward hotkey is Disabled, active while held, or toggled with a press.
+      - name: Fast Forward Speed
+        icon: fastforward
+        desc: Play at 2x, 3x, 4x, or 8x speed while fast forwarding.
+      - name: Slow Motion
+        icon: slowmotion
+        desc: Choose whether the Slow Motion hotkey is Disabled, active while held, or toggled with a press.
+      - name: Slow Motion Speed
+        icon: slowmotion
+        desc: Play at 1/2x, 1/4x, or 1/8x speed while in slow motion.
+
+  - name: Input
+    desc: Assign Wasabi playback shortcuts.
+    items:
+      - name: Hotkeys
+        icon: hotkeys
+        link: muxmedia-hotkeys
+        desc: >
+          Change the buttons used for pause, bookmarks, seeking, the header, repeat, shuffle, quitting, fast forward,
+          and slow motion.
+
+  - name: Advanced
+    desc: Configure bookmarks, live playback, idle behaviour, automatic playback, and reset tools.
+    items:
+      - name: Bookmark Thumbnail Size
+        icon: state
+        desc: Choose the thumbnail size used for video bookmarks. This is hidden during audio playback.
+      - name: Live TV Quality
+        icon: quality
+        desc: Choose the available live-stream rendition. This appears when the current stream offers a choice.
+      - name: Live TV Buffer
+        icon: memory
+        desc: Choose a 4 MB, 8 MB, 16 MB, or 32 MB buffer. This only appears for live content.
+      - name: CRT Television
+        icon: video
+        desc: >
+          Make live TV behave like an old television, with the picture warming up when live TV first comes on. This
+          only appears for live content, and Reduce Motion turns it off. The effect when leaving Wasabi is the
+          <strong>Power Off Effect</strong> setting in <a href="/tour/modules/muxcustom">Customisation</a>.
+      - name: Sleep
+        icon: idle_sleep
+        desc: Allow or prevent automatic sleep while Wasabi is open. It is disabled by default.
+      - name: Idle + Screensaver
+        icon: idle_display
+        desc: Allow or prevent the idle timer and screensaver while Wasabi is open. It is disabled by default.
+      - name: Auto Play
+        icon: repeat
+        desc: >
+          Move on to the next episode or track when the current one finishes, using Gapless Playback and Cross Fade
+          for audio. Turn it off to stop at the end of each entry instead. It is enabled by default, and Repeat All
+          keeps playing even when it is off.
+      - name: Reset
+        icon: reset
+        desc: Restore the Wasabi settings for the current session to their starting values.
+
+tip:
+  - info: Settings preview over the current media, so colour, viewport, overlay, and visual changes can be judged before saving.
+  - info: Settings saved for This Content take priority over settings saved for This Directory.
+  - info: Wasabi colour filters, shaders, and overlays are kept separately from Pickles assets.

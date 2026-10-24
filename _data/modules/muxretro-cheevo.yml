@@ -1,0 +1,50 @@
+description: >
+  RetroAchievements adds optional challenges, progress information, and leaderboards to supported content. Sign in
+  with a RetroAchievements account from Settings. The Pickles Menu entry opens the current game's achievement list.
+
+goback: muxretro
+
+visible:
+  - name: Username
+    icon: user
+    desc: >
+      The username on your RetroAchievements account, exactly as the site has it. This is the name you signed up
+      with, and an email address will not work here.
+  - name: Password
+    icon: lock
+    desc: >
+      The password for your RetroAchievements account. It is used once to obtain a sign-in token and is never written
+      to your storage.
+  - name: Login
+    icon: network
+    desc: >
+      Send your username and password to RetroAchievements and start tracking achievements for the game you are
+      playing. You stay signed in between sessions, so this is usually a one-off.
+  - name: Logout
+    icon: exit
+    desc: >
+      Forget the signed-in account on this device and stop tracking achievements. Nothing you have already earned is
+      lost, as it all lives on your RetroAchievements profile.
+  - name: Account
+    icon: user
+    desc: Sign in, view your account name and score, or sign out.
+  - name: Notifications
+    icon: message
+    desc: Choose Disabled, Basic, or Detailed notifications for achievement activity.
+  - name: Refresh Data
+    icon: refresh
+    desc: >
+      Fetch the latest data for the current content. Unlocks held during a temporary connection problem are submitted
+      when the service becomes available during the session.
+  - name: Achievements
+    icon: trophy
+    desc: >
+      View achievement names, descriptions, points, progress, and unlock state. Press <strong>X</strong> to change the
+      view and <strong>Y</strong> to change the sort order.
+  - name: Leaderboards
+    icon: leaderboard
+    desc: View leaderboard challenges and the available rankings for the current content.
+
+tip:
+  - info: RetroAchievements requires an internet connection. Content can still launch while the network is becoming ready.
+  - info: Achievement data depends on the exact content recognised by RetroAchievements.

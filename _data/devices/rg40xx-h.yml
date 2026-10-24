@@ -1,10 +1,17 @@
 manufacturer: Anbernic
 name: RG40XX H
 internal: rg40xx-h
-desc: A rounded edge horizontal with two RGB analogue sticks.
+desc: A rounded edge horizontal with two RGB sticks.
+features:
+  form: horizontal
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "640x480"
 downloads:
   - variant:
-    hash: b52c3b7c7d12549d606dcb06ef5e88dd1569112a5495f1e6914e9fdcbca6468a
-    gofile: https://store-eu-par-4.gofile.io/download/direct/6133d755-79e7-409a-b651-a5089049ad4d/MustardOS_RG40XX-H_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/4i5VBIzZ#6qzOBfrcWHmDg6bJJTVCYN8H7s6RIbzs_UR6-ZPtuL4
-    torrent: MustardOS_RG40XX-H_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: b4154328ab0ee7b0f83fe77f8aa6a86343caaf52651059b74060470c56f08649
+    gofile: https://gofile.io/d/4RXQapOK
+    mega: https://mega.nz/file/0z40TRoK#wY0__voyfUjeP7poYt5kl-b69Q9MM4-xY-8hnaCaiok
+    torrent: MustardOS_RG40XX-H_2606.0_ANDROMEDA-db2a3bd0

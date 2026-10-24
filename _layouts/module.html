@@ -6,77 +6,137 @@ layout: default
 
 {% assign modset = site.data.modules[page.module] %}
 
+{% if page.section %}
+{% assign sec = modset.sections | where: "name", page.section | first %}
+{% assign goback = page.module %}
+{% if sec.desc %}
+<p>
+    {{ sec.desc }}
+</p>
+{% endif %}
+{% else %}
+{% assign goback = modset.goback %}
 {% if modset.description %}
 <p>
     {{ modset.description }}
 </p>
 {% endif %}
+{% endif %}
 
-{% if modset.goback %}
+{% if goback %}
+{% assign goback_url = "/tour/modules/" | append: goback %}
+{% assign goback_page = site.pages | where: "url", goback_url | first %}
 <hr>
 
 <h2><strong>
-    <a href="/tour/modules/{{ modset.goback }}">Back to {{ page.parent }}</a>
+    <a href="{{ goback_url }}">Back to {{ goback_page.title | default: page.parent }}</a>
 </strong></h2>
 {% endif %}
 
-{% assign sections = "visible,Visible Options|hidden,Hidden Options" | split: "|" %}
+{% include tour_cards.html modset=modset %}
 
-{% for sec in sections %}
-{% assign parts = sec | split: "," %}
+{% assign item_total = 0 %}
+{% if page.section %}
+{% assign item_total = sec.items.size %}
+{% else %}
+{% for s in modset.sections %}{% assign item_total = item_total | plus: s.items.size %}{% endfor %}
+{% assign item_total = item_total | plus: modset.visible.size | plus: modset.settings.size | plus: modset.hidden.size %}
+{% endif %}
+
+{% if item_total >= 12 %}
+<div class="tour-filter">
+    <input class="tour-map-filter" id="tour-item-filter" type="search" placeholder="Filter {{ item_total }} options"
+           aria-label="Filter options">
+</div>
+<p class="tour-map-empty" id="tour-item-empty" hidden>No options match that filter.</p>
+{% endif %}
+
+<div id="tour-groups">
+{% if page.section %}
+{% if sec %}
+<div class="tour-group">
+<hr>
+
+{% include module_table.html items=sec.items glyph=page.glyph icons=true %}
+</div>
+{% endif %}
+{% elsif modset.sections and modset.sections.size > 0 %}
+<div class="tour-sections-intro">
+<hr>
+
+<h2><strong>Sections</strong></h2>
+
+<p>
+    This screen is split into sections. Press <strong>Left</strong> or <strong>Right</strong> to move between
+    them, or use the shoulder buttons to do the same.
+</p>
+
+<nav class="tour-chips" aria-label="Sections">
+    {% for sec in modset.sections %}
+    <a href="#{{ sec.name | slugify }}">{{ sec.name }}<span>{{ sec.items.size }}</span></a>
+    {% endfor %}
+</nav>
+</div>
+
+{% for sec in modset.sections %}
+<div class="tour-group">
+<hr>
+
+<h2 id="{{ sec.name | slugify }}"><strong>{{ sec.name }}</strong></h2>
+
+{% if sec.desc %}
+<p>
+    {{ sec.desc }}
+</p>
+{% endif %}
+
+{% if sec.icons == false %}
+{% include module_table.html items=sec.items glyph=page.glyph icons=false anchor_prefix=sec.name %}
+{% else %}
+{% include module_table.html items=sec.items glyph=page.glyph icons=true anchor_prefix=sec.name %}
+{% endif %}
+</div>
+{% endfor %}
+{% endif %}
+
+{% unless page.section %}
+{% assign groups = "visible,Visible Options|settings,Settings|hidden,Hidden Options" | split: "|" %}
+
+{% for grp in groups %}
+{% assign parts = grp | split: "," %}
 {% assign key = parts[0] %}
 {% assign title = parts[1] %}
 {% assign items = modset[key] %}
 
 {% if items and items.size > 0 %}
+<div class="tour-group">
 <hr>
 
 <h2><strong>{{ title }}</strong></h2>
 
-<table style="width:100%; table-layout:fixed;">
-    <colgroup>
-        {% if key == "visible" %}
-        <col style="width:80px;">
-        {% endif %}
-        <col style="width:auto;">
-    </colgroup>
+{% if modset.settings_desc and key == "settings" %}
+<p>
+    {{ modset.settings_desc }}
+</p>
+{% endif %}
 
-    <tbody>
-    {% for mod in items %}
-    {% assign anchor_id = mod.name | slugify %}
-    <tr>
-        {% if key == "visible" %}
-        <td style="text-align:center; vertical-align:middle;">
-            <img src="/tour/assets/glyphs/{{ page.glyph }}/{{ mod.icon }}.png"
-                 style="filter:invert(100%); max-width:48px; vertical-align:middle;">
-        </td>
-        {% endif %}
-        <td>
-            <h4 style="font-size:1rem !important; margin-top:0.35rem; margin-bottom:0.65rem;">
-                {% if mod.link %}
-                <a href="/tour/modules/{{ mod.link }}" style="color:#C7AF26; text-decoration:none;">
-                    <strong>{{ mod.name }}</strong>
-                </a>
-                {% else %}
-                <strong>{{ mod.name }}</strong>
-                {% endif %}
-                <a href="#{{ anchor_id }}" title="Anchor to {{ mod.name }}"
-                   style="text-decoration:none; color:#C7AF26; margin-left:0.25em;">
-                    <svg viewBox="0 0 16 16" aria-hidden="true">
-                        <use xlink:href="#svg-link"></use>
-                    </svg>
-                </a>
-            </h4>
-            <p style="font-size:1rem !important; margin-bottom:0;">{{ mod.desc }}</p>
-        </td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+{% if key == "visible" or key == "settings" %}
+{% include module_table.html items=items glyph=page.glyph icons=true %}
+{% else %}
+{% include module_table.html items=items glyph=page.glyph icons=false %}
+{% endif %}
+</div>
 {% endif %}
 {% endfor %}
 
-{% if modset.tip and modset.tip.size > 0 %}
+{% endunless %}
+</div>
+
+{% if item_total >= 12 %}
+<script src="/assets/js/tour-items.js"></script>
+{% endif %}
+
+{% if modset.tip and modset.tip.size > 0 and page.section == nil %}
 <hr>
 
 <h2><strong>Quick Tips</strong></h2>
@@ -87,20 +147,3 @@ layout: default
     {% endfor %}
 </ul>
 {% endif %}
-
-<style>
-    @media (hover: hover) and (pointer: fine) {
-        h4 a[title] {
-            opacity: 0;
-        }
-
-        h4:hover a[title] {
-            opacity: 1;
-        }
-    }
-
-    h4 a[title] svg {
-        width: 14px;
-        height: 14px;
-    }
-</style>

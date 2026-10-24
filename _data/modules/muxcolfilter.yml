@@ -1,7 +1,8 @@
 description: >
   Colour filters adjust how content is displayed by applying visual transformations. These include
-  accessibility focused options for colour blindness and contrast, comfort filters for
-  extended play, and stylistic filters for creative or fun visual effects.
+  accessibility focused options for colour blindness and contrast, and comfort filters for extended play.
+  <br><br>Stylistic filters such as Sepia Tone, Paper Like, Mustard, Neon Boost, Toxic Waste, and Vaporwave are
+  available from <strong>Downloads</strong> in the Pickles and Wasabi Colour Filters menus.
 
 goback: muxoption
 
@@ -17,7 +18,7 @@ visible:
   - name: Monochrome
     icon: filter
     desc: >
-      Converts the image to grayscale while preserving detail and contrast.
+      Converts the image to greyscale while preserving detail and contrast.
   - name: Protanopia
     icon: filter
     desc: >
@@ -41,32 +42,8 @@ visible:
   - name: Warm Tone
     icon: filter
     desc: >
-      Shifts colours toward warmer tones by increasing reds and reducing blues.
+      Shifts colours towards warmer tones by increasing reds and reducing blues.
   - name: Cool Tone
     icon: filter
     desc: >
-      Shifts colours toward cooler tones by reducing reds and boosting blues.
-  - name: Sepia Tone
-    icon: filter
-    desc: >
-      Applies a warm sepia effect for a classic, vintage appearance.
-  - name: Paper Like
-    icon: filter
-    desc: >
-      Softens colours and contrast to create a paper-like visual style.
-  - name: Mustard
-    icon: filter
-    desc: >
-      Applies a warm yellow-heavy tint with subdued blues for a mustard look.
-  - name: Neon Boost
-    icon: filter
-    desc: >
-      Intensifies colours for a bold, high-saturation neon effect.
-  - name: Toxic Waste
-    icon: filter
-    desc: >
-      Pushes vivid greens while suppressing reds and blues for a toxic glow.
-  - name: Vaporwave
-    icon: filter
-    desc: >
-      Magenta and cyan-heavy palette inspired by retro vaporwave aesthetics.
+      Shifts colours towards cooler tones by reducing reds and boosting blues.

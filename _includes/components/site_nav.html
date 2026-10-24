@@ -1,0 +1,40 @@
+{%- comment -%}
+  Overrides the just-the-docs site_nav so the sidebar is split into the headed groups in _data/nav_groups.yml.
+  The all=true copy feeds the theme's breadcrumbs, which only read the part after the last nav-category,
+  so that copy stays ungrouped exactly as the theme renders it.
+{%- endcomment -%}
+
+<nav aria-label="Main" id="site-nav" class="site-nav">
+  {%- if include.all -%}
+    {% include components/nav/pages.html pages=site.html_pages all=include.all %}
+  {%- else -%}
+    {%- for group in site.data.nav_groups -%}
+      {%- assign group_pages = "" | split: "" -%}
+      {%- for item in site.html_pages -%}
+        {%- if item.title == nil -%}{%- continue -%}{%- endif -%}
+        {%- if item.parent == nil -%}
+          {%- unless group.pages contains item.title -%}{%- continue -%}{%- endunless -%}
+        {%- endif -%}
+        {%- assign group_pages = group_pages | push: item -%}
+      {%- endfor -%}
+
+      {%- if group.name -%}
+      <div class="nav-category">{{ group.name }}</div>
+      {%- endif -%}
+      {%- if group.pages.size > 0 -%}
+        {% include components/nav/pages.html pages=group_pages all=include.all %}
+      {%- endif -%}
+      {%- if group.links -%}
+      <ul class="nav-list">
+        {%- for link in group.links -%}
+        <li class="nav-list-item"><a href="{{ link.url }}" class="nav-list-link">{{ link.title }}</a></li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+</nav>
+
+{% if site.nav_error_report %}
+{{ nav_error_report }}
+{%- endif %}

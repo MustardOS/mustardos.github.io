@@ -7,21 +7,17 @@ permalink: /systems/homeconsole/n64
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Nintendo N64"
 ---
 
 ![](../assets/images/mupen64plus.png)
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                       | Type             | Version           |
-|:---------------------------|:-----------------|:------------------|
-| Mupen64Plus-ext (GlideN64) | External         | 2.0.0             |
-| Mupen64Plus-ext (Rice)     | External         | 2.0.0             |
-| Mupen64Plus                | Libretro Core    | 2.0               |
-| **Mupen64Plus-Next**       | Libretro Core    | 2.6               |
-| Parallel N64               | Libretro Core    | 2.0               |
+{% include emulator_table.html system=page.manifest %}
 
 ## Mupen Standalone Keys
 

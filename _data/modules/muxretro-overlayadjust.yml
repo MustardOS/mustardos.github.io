@@ -1,0 +1,22 @@
+description: >
+  Move and resize the active overlay independently from the game viewport. Changes appear immediately over the game
+  picture.
+
+goback: muxretro-settings
+
+visible:
+  - name: X Offset
+    icon: viewportx
+    desc: Move the overlay left or right.
+  - name: Y Offset
+    icon: viewporty
+    desc: Move the overlay up or down.
+  - name: X Stretch
+    icon: viewportx
+    desc: Change the overlay width.
+  - name: Y Stretch
+    icon: viewporty
+    desc: Change the overlay height.
+  - name: Zoom
+    icon: viewportzoom
+    desc: Enlarge or reduce the overlay evenly in both directions.

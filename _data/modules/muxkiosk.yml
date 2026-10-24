@@ -66,7 +66,7 @@ visible:
     icon: option
     desc: >
       Toggles ability to access additional content settings such as cores, governors, control schemes, and tags.
-  - name: RetroArch Kiosk
+  - name: RetroArch Settings
     icon: retroarch
     desc: >
       Locks RetroArch into a kiosk safe configuration with limited access to settings and menus.
@@ -78,6 +78,22 @@ visible:
     icon: tag
     desc: >
       Determines whether users can attach content tags to their content.
+  - name: Colour Filter
+    icon: colfilter
+    desc: >
+      Allows or restricts adjusting the colour filter applied to content.
+  - name: Content Shader
+    icon: shader
+    desc: >
+      Allows or restricts assigning shaders to content.
+  - name: Overlay Options
+    icon: overlay
+    desc: >
+      Allows or restricts changing the overlays used by content.
+  - name: Remove Config
+    icon: remconfig
+    desc: >
+      Allows or restricts removing per content, core, or directory RetroArch configuration overrides.
   - name: Custom Catalogue
     icon: catalogue
     desc: >
@@ -147,6 +163,10 @@ visible:
     icon: info
     desc: >
       Toggles access to system information menus such as storage, network, and device status.
+  - name: Device Light Settings
+    icon: rgb
+    desc: >
+      Allows or restricts access to the RGB lighting configuration module.
   - name: Advanced Settings
     icon: advanced
     desc: >
@@ -166,4 +186,44 @@ visible:
   - name: Interface Options
     icon: visual
     desc: >
-      Allows or blocks access to interface visibility, theme layout, and menu style options.
+      Allows or blocks changes to the interface and font options in Customisation, such as what appears in the header.
+  - name: Connectivity
+    icon: connect
+    desc: >
+      Allows or blocks the whole Connectivity menu, covering Wi-Fi, Bluetooth and web services together.
+  - name: Proxy Settings
+    icon: proxy
+    desc: >
+      Allows or restricts changes to the network proxy settings.
+  - name: Bluetooth
+    icon: bluetooth
+    desc: >
+      Allows or blocks Bluetooth, so devices cannot be paired, connected or forgotten.
+  - name: Accessibility
+    icon: access
+    desc: >
+      Allows or restricts changes to the accessibility options.
+  - name: Cores
+    icon: cores
+    desc: >
+      Allows or blocks the core manager, so cores cannot be added or removed.
+  - name: Soundfont
+    icon: soundfont
+    desc: >
+      Allows or restricts changing the soundfont used for MIDI music.
+  - name: Input Remap
+    icon: remap
+    desc: >
+      Allows or blocks remapping the device buttons.
+  - name: Passcode Settings
+    icon: passcode
+    desc: >
+      Allows or blocks the passcode settings, so the passcode cannot be changed or turned off.
+  - name: Colour Temperature
+    icon: temperature
+    desc: >
+      Allows or restricts changes to the display colour temperature.
+  - name: Mustard Terminal
+    icon: terminal
+    desc: >
+      Allows or blocks Mustard Terminal, which gives full command line access to the device.

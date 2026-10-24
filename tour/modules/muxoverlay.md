@@ -4,7 +4,7 @@ title: Overlay Options
 module: muxoverlay
 glyph: muxoverlay
 permalink: /tour/modules/muxoverlay
-parent: Configuration
-nav_order: 6
+parent: Content Option
+nav_order: 7
 has_toc: false
 ---

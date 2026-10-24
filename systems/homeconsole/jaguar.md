@@ -7,17 +7,17 @@ permalink: /systems/homeconsole/jaguar
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Atari Jaguar"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| **Virtual Jaguar** | Libretro Core    | 2.1.0             |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

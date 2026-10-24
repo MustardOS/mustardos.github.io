@@ -1,0 +1,281 @@
+description: >
+  Pickles settings are kept on one screen and arranged into sections. Press <strong>Left</strong> or
+  <strong>Right</strong> to move between them. Changes can be saved for this content, its core, or its directory.
+  Options that cannot be used with the current content or settings are hidden until they apply.
+
+goback: muxretro
+
+sections:
+  - name: Profiles
+    desc: Apply a complete set of matching settings or save your current setup as a named profile.
+    items:
+      - name: Profiles
+        icon: settings
+        link: muxretro-profiles
+        desc: >
+          Choose <strong>Safe</strong>, <strong>Balanced</strong>, or <strong>Quality</strong>. User profiles can be
+          available for this content, this core, or all content. A recently applied profile can be restored for a
+          short time.
+
+  - name: Video
+    desc: Control the picture's shape, size, orientation, filtering, and renderer.
+    items:
+      - name: Image Corrections
+        icon: shimmerfix
+        link: muxretro-imagecorrections
+        desc: Open Shimmer Fix and Anti-Flicker.
+      - name: Scaling Mode
+        icon: scaling
+        desc: Fit the picture to the display, fill it, or use another supported scaling method.
+      - name: Rotation
+        icon: rotate
+        desc: Rotate the game picture in quarter turns.
+      - name: Mirrored
+        icon: mirrored
+        desc: Flip the picture from left to right.
+      - name: Aspect Ratio
+        icon: aspectratio
+        desc: Use the ratio requested by the core or select a specific shape.
+      - name: Scale Multiplier
+        icon: integerscale
+        desc: Enlarge the source picture in whole-pixel steps for evenly sized pixels.
+      - name: Texture Filter
+        icon: texturefilter
+        desc: Choose how the picture is sampled as it is resized.
+      - name: Border Colour
+        icon: border
+        desc: >
+          Choose the colour shown around content that does not fill the display. Atmosphere fills the space with a soft
+          gradient of colours drawn from the edges of the picture, so it follows the scene. Black, Dark Grey and White
+          stay fixed. Black is the default.
+      - name: Game Renderer
+        icon: gamerenderer
+        desc: Choose hardware or software rendering when the current core supports both. Restart the content to apply it.
+
+  - name: Visuals
+    desc: Apply visual presets and tune the colour of the game picture.
+    items:
+      - name: Vignette
+        icon: border
+        link: muxretro-vignette
+        desc: Shape and soften the edge of the game picture with a configurable vignette.
+      - name: Colour Filters
+        icon: filter
+        link: muxretro-colourfilters
+        desc: >
+          Choose a built-in or downloaded colour filter. Downloads and your Collection stay at the top, followed by
+          None and the available creator folders.
+      - name: Shaders
+        icon: shader
+        link: muxretro-shaders
+        desc: >
+          Choose and adjust a Pickles shader. Downloaded items are grouped by creator, and collected items keep a
+          reference to the original file.
+      - name: Brightness
+        icon: brightness
+        desc: Make the game picture lighter or darker.
+      - name: Contrast
+        icon: contrast
+        desc: Change the difference between dark and light areas.
+      - name: Saturation
+        icon: saturation
+        desc: Change the strength of the colours.
+      - name: Hue Shift
+        icon: hue
+        desc: Move every colour around the colour wheel.
+      - name: Gamma
+        icon: gamma
+        desc: Adjust the middle tones without moving the darkest and lightest points as strongly.
+
+  - name: Overlay
+    desc: Add a built-in pattern or downloaded artwork over the game picture.
+    items:
+      - name: Overlay
+        icon: overlay
+        desc: Choose Disabled, Built-In Pattern, or Downloaded.
+      - name: Built-In Pattern
+        icon: overlaypattern
+        desc: Choose the repeating pattern used by the Built-In Pattern source.
+      - name: Overlay Image
+        icon: overlay
+        link: muxretro-overlayimage
+        desc: >
+          Choose downloaded artwork. Downloads and your Collection stay at the top, followed by None and the
+          available creator folders.
+      - name: Overlay Opacity
+        icon: overlayopacity
+        desc: Set how strongly the overlay appears over the game picture.
+      - name: Adjustment
+        icon: viewport
+        link: muxretro-overlayadjust
+        desc: Move, stretch, or zoom the overlay without changing the game viewport.
+      - name: Cropping
+        icon: centrecrop
+        link: muxretro-overlaycrop
+        desc: Trim each overlay edge or apply a centred crop.
+      - name: Reset Overlay
+        icon: viewportreset
+        desc: Restore the overlay position, size, crop, and opacity defaults.
+
+  - name: Display
+    desc: Adjust the game viewport and choose the information shown over the picture.
+    items:
+      - name: Adjustment
+        icon: viewport
+        link: muxretro-viewportadjust
+        desc: Move, stretch, or zoom the game viewport.
+      - name: Cropping
+        icon: centrecrop
+        link: muxretro-viewportcrop
+        desc: Trim each edge of the game viewport or apply a centred crop.
+      - name: Reset Viewport
+        icon: viewportreset
+        desc: Restore the game viewport to its default position and size.
+      - name: Show FPS
+        icon: fpscounter
+        desc: Choose when the frame rate counter is visible.
+      - name: Current Playtime
+        icon: playtime
+        desc: Show or hide the current session time.
+      - name: Header Visibility
+        icon: header
+        desc: Choose which clock and battery details appear in the header.
+      - name: Idle in Game
+        icon: pause
+        desc: >
+          Whether leaving the game alone brings up the screensaver, opens the Pickles Menu and makes an idle auto
+          save. Disable it for games with long cutscenes.
+
+  - name: Sound
+    desc: Set game volume and tune Pickles' audio buffering and processing.
+    items:
+      - name: Volume
+        icon: volume
+        desc: Set the volume of the current content.
+      - name: Sample Rate
+        icon: samplerate
+        desc: Choose the sample rate used for game audio.
+      - name: Audio Latency
+        icon: audiolatency
+        desc: Choose a latency profile for quicker response or a larger safety margin.
+      - name: Audio Period
+        icon: audioperiod
+        desc: Set the number of audio frames processed in each period.
+      - name: Audio Filter
+        icon: audiofilter
+        desc: Apply no filter, a low-pass filter, or a high-pass filter.
+      - name: Rate Control
+        icon: audioratecontrol
+        desc: Allow small timing corrections that keep audio and video together.
+
+  - name: Input
+    desc: Assign controllers, remap each port, and configure shortcuts.
+    items:
+      - name: Hotkeys
+        icon: hotkeys
+        link: muxretro-hotkeys
+        desc: Configure shortcut behaviour, buttons, speed controls, audio, and on-screen glyphs.
+      - name: Port 1
+        icon: port1
+        link: muxretro-inputport
+        desc: Assign and configure the first input port.
+      - name: Port 2
+        icon: port2
+        link: muxretro-inputport
+        desc: Assign and configure the second input port.
+      - name: Port 3
+        icon: port3
+        link: muxretro-inputport
+        desc: Assign and configure the third input port.
+      - name: Port 4
+        icon: port4
+        link: muxretro-inputport
+        desc: Assign and configure the fourth input port.
+      - name: Auto Assign
+        icon: autoassign
+        desc: Give connected controllers sensible player numbers automatically.
+      - name: Controller Options
+        icon: controlleroptions
+        link: muxretro-controlleroptions
+        desc: Configure rumble and analogue stick response for all players.
+      - name: Reset Input Settings
+        icon: inputreset
+        desc: Restore every Pickles input setting to its default.
+
+  - name: Storage
+    desc: Choose how progress, state history, and content loading are handled.
+    items:
+      - name: Timeline Saves
+        icon: timeline
+        link: muxretro-timeline
+        desc: Choose how often timeline saves are captured, how many are kept, and how their timer behaves.
+      - name: Auto Save
+        icon: autosave
+        desc: Choose when Pickles creates and loads its automatic state.
+      - name: Save State History
+        icon: state
+        desc: Choose how many earlier moments are kept when you load a state.
+      - name: Save State Trash
+        icon: state
+        desc: Choose how many deleted states remain available for restoration.
+      - name: SRAM Flush
+        icon: sram
+        desc: Choose how often the content's own save memory is written to storage.
+      - name: Content Pre-cache
+        icon: content
+        desc: Load content into memory before play where the selected mode and available memory allow it.
+
+  - name: RetroAchievements
+    desc: Sign in and configure achievement information for supported content on network-capable devices.
+    items:
+      - name: Account
+        icon: user
+        link: muxretro-cheevo
+        desc: Sign in, view your score, or sign out.
+      - name: Notifications
+        icon: message
+        desc: Choose Disabled, Basic, or Detailed achievement notifications.
+      - name: Refresh Data
+        icon: refresh
+        desc: Fetch the current achievement information and submit any unlocks held during a temporary connection problem.
+
+  - name: Advanced
+    desc: Open core-specific controls, diagnostics, performance tuning, reset tools, and saving.
+    items:
+      - name: Core Options
+        icon: core
+        link: muxretro-options
+        desc: Change options provided by the current Libretro core. This is unavailable during Network Play.
+      - name: Video Diagnostics
+        icon: info
+        link: muxretro-videodiagnostics
+        desc: Inspect refresh, cadence, resolutions, filtering, shader work, audio queue, corrections, and overlay status.
+      - name: FPS Limit
+        icon: fpslimit
+        desc: Match the core's requested frame rate, choose a fixed rate, or remove the limit.
+      - name: Frame Delay
+        icon: framedelay
+        desc: Delay input polling towards the end of each frame to reduce latency.
+      - name: Run Ahead
+        icon: runahead
+        desc: Reduce core latency where the feature is supported and compatible.
+      - name: GPU Hard Sync
+        icon: hardsync
+        desc: Synchronise GPU work more closely with frame presentation.
+      - name: State Thumbnail Size
+        icon: state
+        desc: Choose the image size used for save state previews.
+      - name: Performance Capture
+        icon: info
+        desc: Capture detailed timing information and export it to performance.csv for diagnosis.
+      - name: Reset
+        icon: reset
+        desc: Remove saved core options, Pickles settings, or both for the current content after confirmation.
+      - name: Save All Settings
+        icon: settings
+        desc: Save the current settings without changing another value first.
+
+tip:
+  - info: Tap <strong>MENU</strong> on a row for its help text. Hold <strong>MENU</strong> to move the settings aside and inspect the game picture.
+  - info: Back out with <strong>B</strong> after a change to choose This Content, This Core, This Directory, This Session Only, or Discard.
+  - info: Invalid or incomplete saved settings fall back to the last working settings or packaged defaults.

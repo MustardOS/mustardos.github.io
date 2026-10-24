@@ -1,0 +1,38 @@
+# Option lists for the Core Assign Editor at /tools/core-assign-editor
+#
+# governor  - CPU governors muOS exposes through muxgov. The list a device
+#             actually offers comes from its kernel, so a manifest may name a
+#             governor that a particular board does not provide.
+# control   - Controller profiles resolved by script/mux/sdl_map.sh. "system"
+#             keeps whatever the device is already using.
+# arch      - Build architectures reported by COREDB_ARCH in
+#             common/content/core/coredb.c.
+# device    - Board names taken from config/board/name. Only released boards
+#             are offered, and they come from _data/devices.
+
+governor:
+  - conservative
+  - interactive
+  - ondemand
+  - performance
+  - powersave
+  - schedutil
+  - userspace
+
+control:
+  - id: system
+    name: System
+  - id: modern
+    name: Modern
+  - id: retro
+    name: Retro
+
+arch:
+  - id: aarch64
+    name: ARM 64-bit
+  - id: arm32
+    name: ARM 32-bit
+  - id: x64
+    name: x86 64-bit
+  - id: x86
+    name: x86 32-bit

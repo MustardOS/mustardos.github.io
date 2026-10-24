@@ -1,0 +1,21 @@
+description: >
+  Core Options are the settings exposed by the libretro core itself, covering
+  anything from graphics quirks to gameplay tweaks that are specific to that particular core.
+
+goback: muxretro-settings
+
+visible:
+  - name: Categories
+    icon: folder
+    desc: >
+      If the core organises its options into categories, you will land here first. An extra
+      <strong>General Core Settings</strong> folder appears automatically if the core also has any
+      uncategorised options.
+  - name: Options List
+    icon: option
+    desc: >
+      Every option the core exposes, shown with its current value. Use <strong>Left</strong> and
+      <strong>Right</strong> to cycle through the available choices for the highlighted option.
+
+tip:
+  - info: If you change any core option and back out without saving, you will be asked whether to save it against the content, the core, or the content directory, or to discard the change entirely.

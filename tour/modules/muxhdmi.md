@@ -4,7 +4,7 @@ title: HDMI Settings
 module: muxhdmi
 glyph: muxhdmi
 permalink: /tour/modules/muxhdmi
-parent: General Settings
+parent: General
 nav_order: 2
 has_toc: false
 ---

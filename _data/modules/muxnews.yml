@@ -1,0 +1,19 @@
+description: >
+  Community News keeps you up to date with official announcements, feature highlights, and community driven
+  updates, pulled directly from the <a href="https://community.muos.dev">MustardOS Community Forum</a>.
+
+goback: muxinfo
+
+visible:
+  - name: News Post
+    icon: general
+    desc: >
+      An individual news post from the community forum. Press <strong>A</strong> to open and read the full post.
+  - name: Game of the Month
+    icon: gotm
+    desc: >
+      Highlights the current and previous community Game of the Month, including the winning title, system,
+      region, and score.
+
+tip:
+  - info: Press **X** to refresh and download the latest news.

@@ -1,0 +1,21 @@
+description: >
+  Trim the overlay without changing the video underneath it.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Crop Top
+    icon: croptop
+    desc: Trim the top edge of the overlay.
+  - name: Crop Bottom
+    icon: cropbottom
+    desc: Trim the bottom edge of the overlay.
+  - name: Crop Left
+    icon: cropleft
+    desc: Trim the left edge of the overlay.
+  - name: Crop Right
+    icon: cropright
+    desc: Trim the right edge of the overlay.
+  - name: Centre Crop
+    icon: centrecrop
+    desc: Apply matching crop behaviour around the centre of the overlay.

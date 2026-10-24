@@ -1,0 +1,15 @@
+{%- comment -%}
+  Tour pages directly below include.node, in nav order, using the same parent, grand_parent and ancestor
+  rules as the sidebar so shared titles such as Settings, Video, or Advanced never leak between menus.
+  Include as: {% include tour_children.html node=page menu=menu_title %}
+  Assigns to: tour_kids
+{%- endcomment -%}
+{%- assign tour_kids = "" | split: "" -%}
+{%- assign tour_cands = site.pages | where: "parent", include.node.title | sort: "nav_order", "last" -%}
+{%- for tour_cand in tour_cands -%}
+  {%- unless tour_cand.url contains "/tour/modules/" -%}{%- continue -%}{%- endunless -%}
+  {%- if tour_cand.nav_exclude -%}{%- continue -%}{%- endif -%}
+  {%- if tour_cand.grand_parent and tour_cand.grand_parent != include.node.parent -%}{%- continue -%}{%- endif -%}
+  {%- if tour_cand.ancestor and tour_cand.ancestor != include.menu -%}{%- continue -%}{%- endif -%}
+  {%- assign tour_kids = tour_kids | push: tour_cand -%}
+{%- endfor -%}

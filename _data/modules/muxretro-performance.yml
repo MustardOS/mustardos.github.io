@@ -1,0 +1,45 @@
+description: >
+  Fine controls for frame pacing, latency, state thumbnails, and performance capture. These appear in the Advanced
+  section of Settings.
+
+goback: muxretro-settings
+
+visible:
+  - name: FPS Limit
+    icon: fpslimit
+    desc: >
+      <strong>Automatic</strong> matches whatever speed the game itself runs at, which is right for almost
+      everything. <strong>50 Hz (PAL)</strong> suits games made for European televisions, and
+      <strong>No Limit</strong> lets it run as fast as it can.
+  - name: Frame Delay
+    icon: framedelay
+    desc: >
+      Waits a fraction longer before reading your buttons each frame, so a press is picked up as late and as
+      accurately as possible. <strong>Auto</strong> works this out for you.
+  - name: Run Ahead
+    icon: runahead
+    desc: >
+      Quietly plays a moment ahead of what you can see, so your button presses take effect sooner than the
+      game would normally allow. Only offered for games that support it, and it steps aside on its own during
+      fast forward or slow motion.
+  - name: GPU Hard Sync
+    icon: hardsync
+    desc: >
+      Makes each frame wait until the previous one is completely finished, which evens out the pacing at the
+      cost of a little speed.
+  - name: State Thumbnail Size
+    icon: state
+    desc: >
+      Choose the image size used for save state previews. Smaller thumbnails use less storage and require less work
+      when a state is captured.
+  - name: Performance Capture
+    icon: info
+    desc: >
+      Records how the game is actually running while you play, so the figures can be looked at afterwards.
+      It keeps track of the slow frames as well as the average, counts any frame the screen had to
+      repeat, and times the individual pieces of work behind a frame. Turn it on, play for a moment, and the
+      results are yours to export. Leave it off for normal play.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** to inspect the game picture.
+  - info: Performance Capture is intended for diagnosis. Leave it disabled during ordinary play.

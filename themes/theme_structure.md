@@ -7,213 +7,142 @@ nav_order: 1
 has_toc: false
 ---
 
-# Theme Folder Structure
+# **Theme Structure**
 
-For a theme to function as intended, you will need to use the proper folder structure containing all your files in the
-correct place. Below is an example of the correct structure that you can replicate if you are creating/editing a theme.
+A theme is a folder of files. Shared files live in its root, and you only add a resolution folder when a particular
+screen size needs something different. A small theme can be as little as one scheme, a wallpaper and a few glyphs.
+
+## How MustardOS finds a file
+
+<div class="guide-steps" markdown="0">
+    <div class="guide-step"><strong>Resolution folder</strong>It looks in the folder for the device's resolution first,
+        such as <code>1920x1080</code>.</div>
+    <div class="guide-step"><strong>Theme root</strong>If the file is not there, it uses the copy in the theme root.</div>
+    <div class="guide-step"><strong>Bundled theme</strong>Anything your theme leaves out comes from the bundled MustardOS
+        theme.</div>
+</div>
+
+Resolution folders can be named:
+
+<div class="guide-tags" markdown="0">
+    <span>640x480</span><span>720x480</span><span>720x576</span><span>720x720</span><span>1024x768</span>
+    <span>1280x720</span><span>1920x1080</span>
+</div>
+
+## What goes in a theme
+
+<div class="guide-paths" markdown="0">
+    <div><code>scheme</code><span>Colours, sizes and layout, globally, by default and for each screen.
+        <a href="/themes/scheme">Scheme Files</a></span></div>
+    <div><code>font</code><span>TrueType fonts for the whole theme, a screen, a language or an area of the screen.
+        <a href="/themes/fonts">Custom Fonts</a></span></div>
+    <div><code>glyph</code><span>Icons for lists, the header, the footer, status and navigation.
+        <a href="/themes/glyphs">Glyph Gallery</a></span></div>
+    <div><code>image/wall</code><span>Wallpapers, shared or for a single screen.
+        <a href="/themes/images">Images and Video</a></span></div>
+    <div><code>image/static</code><span>Artwork drawn over a screen, or shown for one list item.</span></div>
+    <div><code>alternate</code><span>Selectable variations of the theme.
+        <a href="/themes/alternative">Theme Alternatives</a></span></div>
+    <div><code>sound</code><span>Interface sounds supplied by the theme.</span></div>
+</div>
+
+A theme root can also hold these files:
+
+<div class="guide-paths" markdown="0">
+    <div><code>name.txt</code><span>The theme's name.</span></div>
+    <div><code>version.txt</code><span>The theme's version.</span></div>
+    <div><code>credits.txt</code><span>Who made it.</span></div>
+    <div><code>active.txt</code><span>Which alternative is selected when the theme is first used.</span></div>
+    <div><code>assets.muxzip</code><span>Extra files, such as matching catalogue artwork, installed when the theme is
+        selected. <a href="/themes/assets">Theme Assets</a></span></div>
+</div>
+
+Here is a fuller example. Only include the folders and files your theme needs.
 
 ```
 .
+├── name.txt
+├── version.txt
+├── credits.txt
 ├── active.txt
 ├── assets.muxzip
-├── credits.txt
 ├── alternate
-│   └── {alternate 1}.ini
-│   └── {alternate 1}.muzip
-│   └── {altrenate 2}.ini
-│   └── {altrenate 2}.muxzip
-│   ├── rgb
-│   │   ├── {alternate 1}
-|   |   │   └── rgbconf.sh
-│   │   ├── {alternate 2}
-|   |   │   └── rgbconf.sh
+│   ├── Dark.ini
+│   ├── Light.muxalt
+│   └── rgb
+│       └── Dark
+│           └── rgbconf.sh
 ├── font
-│   └── default.bin
+│   ├── default.ttf
 │   ├── header
-|   │   └── default.bin
+│   │   └── default.ttf
 │   ├── footer
-|   │   └── default.bin
-│   ├── panel
-|   │   └── default.bin
+│   │   └── default.ttf
+│   └── panel
+│       └── default.ttf
 ├── glyph
-│   ├── muxlaunch
-│   |   ├── explore.png
-│   |   ├── favourite.png
-│   |   ├── history.png
-│   |   ├── apps.png
-│   |   ├── info.png
-│   |   ├── config.png
-│   |   ├── reboot.png
-│   |   ├── shutdown.png
+│   └── muxlaunch
+│       ├── explore.svg
+│       └── config.svg
+├── image
+│   ├── background.mp4
+│   ├── static
+│   │   └── muxlaunch
+│   │       └── explore.png
+│   └── wall
+│       ├── default.png
+│       └── muxlaunch.png
 ├── scheme
-│   └── global.ini
-├── 640x480
-│   ├── font
-│   │   └── default.bin
-│   ├── glyph
-│   │   ├── muxlaunch
-│   │   |   ├── explore.png
-│   │   |   ├── favourite.png
-│   │   |   ├── history.png
-│   │   |   ├── apps.png
-│   │   |   ├── info.png
-│   │   |   ├── config.png
-│   │   |   ├── reboot.png
-│   │   |   ├── shutdown.png
-│   ├── image
-│   |   ├── bootlogo.bmp
-│   |   ├── overlay.png
-│   |   ├── static
-│   |   |   ├── muxlaunch
-│   |   |   |   ├── explore.png
-│   |   |   |   ├── favourite.png
-│   |   |   |   ├── history.png
-│   |   |   |   ├── apps.png
-│   |   |   |   ├── info.png
-│   |   |   |   ├── config.png
-│   |   |   |   ├── reboot.png
-│   |   |   |   └── shutdown.png
-│   |   |   └── muxinfo.png
-│   |   └── wall
-│   |       ├── default.png
-│   |       ├── muxtester.png
-│   |       └── muxcharge.png
-│   ├── scheme
-│   |   ├── default.ini
-│   |   └── muxtester.ini
-├── 720x480
-├── 720x576
-├── 720x720
-├── 1280x720
-└── sound  
+│   ├── global.ini
+│   ├── default.ini
+│   └── muxlaunch.ini
+├── sound
+└── 1920x1080
+    ├── font
+    ├── glyph
+    ├── image
+    └── scheme
 ```
 
-In the above example, there are some files here that are not necessary to have a *working* theme - however the elements
-included
-above show off the amount of possible customisation available.
+## Files for one screen
 
-- **font** - Here is where you can place custom fonts compiled into a `.bin` format. Fonts placed in the panel subfolder
-  will override the font used for list items. Fonts placed in the header subfolder will override the font used for the
-  header. Fonts placed in the footer subfolder will override the font used for the footer.
-- **glyph** - Place png images for list item glyphs. See [Theme Folder Structure Glyphs](#theme-folder-structure-glyphs)
-  section for full list of names.
-- **image** - Place all image assets of your theme here.
-    - **static** - Images can be set to sit on top of other elements. They are named following their associated program.
-    - **wall** - All backgrounds used sit here. Anything named `default.xxx` is applied on all programs without
-      dedicated assets.
-- **scheme** - The brain of the theme. This file will tell your device how windows and text should appear per program,
-  and will also
-  tell your device how to use the files you have dropped into your image folder.
-- **sound** - These folders will contain files heard during your time in the MustardOS menus.
+Each screen has a module name, shown in its [Grand Tour]({{site.baseurl}}/tour) page address. Name a file after the
+module to use it only on that screen, and use `default` for everything without its own file.
 
-Themes can support multiple device resolutions by including resolution-specific folders (e.g., `640x480`, `720x480`).
-Each resolution folder can contain subfolders such as `font`, `image`, `scheme`, and `glyph`.
+<div class="guide-paths" markdown="0">
+    <div><code>muxlaunch</code><span>Main Menu</span></div>
+    <div><code>muxplore</code><span>Explore Content</span></div>
+    <div><code>muxconfig</code><span>Configuration</span></div>
+    <div><code>muxcustom</code><span>Customisation</span></div>
+    <div><code>muxretro</code><span>Pickles</span></div>
+</div>
 
-When a device resolution matches a folder, MustardOS will use the content from that specific resolution folder.
-
-To ensure MustardOS can detect the resolutions a theme can support, it is essential to create a subfolder for each
-resolution your theme is designed to support.
-
-For shared resources across all resolutions, you can place them in the root (outside of the resolution subfolder) of the
-theme. For example, if all resolutions will use the same fonts and glyphs, you can create a `font` and `glyph` folder(s)
-in the root directory.
-
-The default MustardOS theme is a good example of what can be done on a basic theme level.
-
-# Theme Folder Structure Glyphs
-
-Images for populating menu glyphs frequently change as we add new featues to muOS. For a list of all glyphs that are
-supported be sure to check out the `MustardOS.muxthm` theme included with muOS located here `/MUOS/theme`. You can also
-view the list of glyph images on our [github](https://github.com/MustardOS/internal/tree/main/share/theme/active/glyph)
-page.  
-<br><br>**Note:** If your theme does not supply images for glyphs then it will fall back to built in default
-images found in `MustardOS.muxthm`. If you want to hide glyphs you will need to adjust the appropriate settings in your
-scheme file. For example
-disable list item glyphs you would set these settings in your scheme file:
+Use the same name everywhere:
 
 ```
-[list]
-LIST_DEFAULT_GLYPH_ALPHA=0
-LIST_FOCUS_GLYPH_ALPHA=0
+scheme/muxlaunch.ini
+font/muxlaunch.ttf
+glyph/muxlaunch/explore.svg
+image/wall/muxlaunch.png
+image/static/muxlaunch/explore.png
 ```
 
-# Program Names
+Files for a single list item use that item's internal glyph or content name.
 
-MustardOS has numerous programs, so they are individually named so that you Themers can set different properties for
-every single page if you so wish to do so! Anything named ```default.xxx``` in the above folder structure can be renamed
-to  ```mux...``` to apply ideas to single pages.
+## How schemes are layered
 
-You can also set images to appear for individual list items on the main launch page (see the files above under
-`./image/static/muxlaunch/`.
+Each layer is applied in order, and later layers win:
 
-Check out the updated naming conventions of all modules below;
+<div class="guide-steps five" markdown="0">
+    <div class="guide-step"><strong>Global</strong>The root <code>scheme/global.ini</code>.</div>
+    <div class="guide-step"><strong>Default</strong><code>scheme/default.ini</code>, from the resolution folder or root.</div>
+    <div class="guide-step"><strong>Screen</strong><code>scheme/{module}.ini</code>, from the resolution folder or root.</div>
+    <div class="guide-step"><strong>Alternative</strong>The alternative the user selected.</div>
+    <div class="guide-step"><strong>User override</strong>The user's own <code>MUOS/theme/override/{module}.ini</code>.</div>
+</div>
 
-|  Program Name  | Function                                                 | List Item Names                                                           |
-|:--------------:|:---------------------------------------------------------|:--------------------------------------------------------------------------|
-|     muxapp     | Dynamic applications page                                | N/A                                                                       |
-|   muxarchive   | Archive Manager page                                     | N/A                                                                       |
-|   muxassign    | Shows when assigning a core to a folder                  | N/A                                                                       |
-|   muxbackup    | Device Backup                                            | N/A                                                                       |
-|   muxcharge    | Charging Screen                                          | N/A                                                                       |
-|   muxcollect   | Collections page                                         | N/A                                                                       |
-|   muxconfig    | Configuration page                                       | N/A                                                                       |
-|   muxconnect   | Connectivity                                             | N/A                                                                       |
-|   muxcontrol   | Setting Content Control                                  | N/A                                                                       |
-|   muxcredits   | -                                                        | N/A                                                                       |
-|   muxcustom    | Customisation                                            | N/A                                                                       |
-|  muxdownload   | Core/Language Downloader                                 | N/A                                                                       |
-|     muxgov     | -                                                        | N/A                                                                       |
-|    muxhdmi     | HDMI Output Settings                                     | N/A                                                                       |
-|   muxhistory   | History page                                             | N/A                                                                       |
-|    muxinfo     | Information page                                         | N/A                                                                       |
-|    muxkiosk    | Kiosk Settings                                           | N/A                                                                       |
-|  muxlanguage   | -                                                        | N/A                                                                       |
-|   muxlaunch    | Main Menu                                                | explore / collection / history / apps / info / config / reboot / shutdown |
-|   muxmessage   | -                                                        | N/A                                                                       |
-|   muxnetinfo   | Network Details                                          | N/A                                                                       |
-| muxnetprofile  | Network Profiles (within Wi-FI).                         | N/A                                                                       |
-|   muxnetscan   | Shows when scanning for networks.                        | N/A                                                                       |
-|   muxnetwork   | Wi-Fi Network Page                                       | N/A                                                                       |
-|   muxoption    | -                                                        | N/A                                                                       |
-|    muxpass     | Passcode Lock Screen                                     | N/A                                                                       |
-|   muxpicker    | Catalogue Sets / RetroArch Configurations / Theme Picker | N/A                                                                       |
-|    muxplore    | Content Explore Page                                     | N/A                                                                       |
-|    muxpower    | -                                                        | N/A                                                                       |
-|     muxrtc     | Date and Time page                                       | N/A                                                                       |
-|   muxsearch    | Search Content                                           | N/A                                                                       |
-|    muxshot     | Screenshots                                              | N/A                                                                       |
-|   muxstorage   | Storage Space                                            | N/A                                                                       |
-|   muxsplash    | -                                                        | N/A                                                                       |
-|    muxstart    | -                                                        | N/A                                                                       |
-|   muxstorage   | Storage Migrate/Sync                                     | N/A                                                                       |
-|   muxsysinfo   | System details                                           | N/A                                                                       |
-|     muxtag     | Tag Content                                              | N/A                                                                       |
-|    muxtask     | Task toolkit page                                        | N/A                                                                       |
-|   muxtester    | Input Tester                                             | N/A                                                                       |
-|  muxthemedown  | Theme Downloader                                         | N/A                                                                       |
-| muxthemefilter | Theme Filters                                            | N/A                                                                       |
-|  muxtimezone   | Timezone Selection                                       | N/A                                                                       |
-|  muxtweakadv   | Advanced (within General Settings)                       | N/A                                                                       |
-|  muxtweakgen   | General Settings                                         | N/A                                                                       |
-|   muxvisual    | Interface Options (within General Settings)              | N/A                                                                       |
-|    muxwarn     | Reset warning page                                       | N/A                                                                       |
-|   muxwebserv   | Web Services page                                        | N/A                                                                       |
+[Scheme Files]({{site.baseurl}}/themes/scheme) lists every supported setting.
 
-# Sound Files - Navigation
-
-You are able to use sounds within your theme. Place `WAVE` files in to the `sound` directory.
-
-|   Sound File   | Function                               |
-|:--------------:|:---------------------------------------|
-|    back.wav    | Pressing the back button               |
-|  confirm.wav   | Selecting an active item               |
-|   error.wav    | Error sound                            |
-| info_close.wav | Closing Info Window                    |
-| info_open.wav  | Opening Info window                    |
-|  keypress.wav  | On Screen Keyboard (OSK) key press     |
-|    muos.wav    | Something secret - _What could it be?_ |
-|  navigate.wav  | Pressing UDLR buttons                  |
-|   option.wav   | Change Option Value                    |
-|   reboot.wav   | Rebooting the device                   |
-|  shutdown.wav  | Shutting down the device               |
-|  startup.wav   | Starting up the device                 |
+Use the bundled MustardOS theme as the reference for glyph names. Missing glyphs fall back to the bundled theme, so set
+a glyph's alpha to zero in the scheme when it should stay hidden.
+{: .note }

@@ -1,0 +1,22 @@
+description: >
+  Move and resize the overlay while leaving the media viewport unchanged. Every adjustment is shown over the
+  current video.
+
+goback: muxmedia-settings
+
+visible:
+  - name: X Offset
+    icon: viewportx
+    desc: Move the overlay left or right.
+  - name: Y Offset
+    icon: viewporty
+    desc: Move the overlay up or down.
+  - name: X Stretch
+    icon: viewportx
+    desc: Widen or narrow the overlay.
+  - name: Y Stretch
+    icon: viewporty
+    desc: Make the overlay taller or shorter.
+  - name: Zoom
+    icon: viewportzoom
+    desc: Scale the whole overlay around its centre.

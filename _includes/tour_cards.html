@@ -1,0 +1,74 @@
+{%- comment -%}
+  "Menu Options" card grid for a tour page with child pages.
+  Include as: {% include tour_cards.html modset=modset %}
+{%- endcomment -%}
+{%- if page.ancestor -%}
+  {%- assign card_menu = page.ancestor -%}
+{%- elsif page.parent == "Grand Tour" -%}
+  {%- assign card_menu = page.title -%}
+{%- else -%}
+  {%- assign card_menu = page.parent -%}
+{%- endif -%}
+{%- include tour_children.html node=page menu=card_menu -%}
+{%- assign card_kids = tour_kids -%}
+{%- if card_kids.size > 0 -%}
+<hr>
+
+<h2><strong>Menu Options</strong></h2>
+
+<div class="tour-cards">
+    {%- for kid in card_kids -%}
+    {%- assign kid_slug = kid.url | split: "/" | last -%}
+    {%- assign kid_icon = nil -%}
+    {%- assign kid_dir = page.glyph -%}
+    {%- if kid.card_icon -%}
+      {%- assign kid_icon = kid.card_icon | split: "/" | last -%}
+      {%- assign kid_dir = kid.card_icon | split: "/" | first -%}
+    {%- endif -%}
+
+    {%- for item in include.modset.visible -%}{%- if item.link == kid_slug -%}{%- assign kid_icon = item.icon -%}{%- break -%}{%- endif -%}{%- endfor -%}
+    {%- unless kid_icon -%}{%- for item in include.modset.settings -%}{%- if item.link == kid_slug -%}{%- assign kid_icon = item.icon -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endunless -%}
+    {%- unless kid_icon -%}{%- for item in include.modset.hidden -%}{%- if item.link == kid_slug -%}{%- assign kid_icon = item.icon -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endunless -%}
+    {%- unless kid_icon -%}
+      {%- for sec in include.modset.sections -%}
+        {%- for item in sec.items -%}{%- if item.link == kid_slug -%}{%- assign kid_icon = item.icon -%}{%- break -%}{%- endif -%}{%- endfor -%}
+        {%- if kid_icon -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+    {%- endunless -%}
+
+    {%- assign kid_set = site.data.modules[kid.module] -%}
+    {%- assign kid_sec_name = kid.section | default: kid.title -%}
+    {%- assign kid_sec = kid_set.sections | where: "name", kid_sec_name | first -%}
+    {%- unless kid_sec -%}{%- assign kid_sec = include.modset.sections | where: "name", kid_sec_name | first -%}{%- endunless -%}
+    {%- unless kid_icon -%}
+      {%- assign kid_named = include.modset.visible | where: "name", kid.title | first -%}
+      {%- unless kid_named -%}
+        {%- for sec in include.modset.sections -%}
+          {%- assign kid_named = sec.items | where: "name", kid.title | first -%}
+          {%- if kid_named -%}{%- break -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endunless -%}
+      {%- if kid_named.icon -%}{%- assign kid_icon = kid_named.icon -%}{%- endif -%}
+    {%- endunless -%}
+    {%- unless kid_icon -%}{%- if kid_sec -%}{%- assign kid_icon = kid_sec.items.first.icon -%}{%- assign kid_dir = kid.glyph -%}{%- endif -%}{%- endunless -%}
+    {%- unless kid_icon -%}
+      {%- assign kid_first = kid_set.visible.first | default: kid_set.sections.first.items.first -%}
+      {%- if kid_first.icon -%}{%- assign kid_icon = kid_first.icon -%}{%- assign kid_dir = kid.glyph -%}{%- endif -%}
+    {%- endunless -%}
+
+    {%- if kid.card_desc -%}
+      {%- assign kid_desc = kid.card_desc -%}
+    {%- elsif kid.section -%}
+      {%- assign kid_desc = kid_sec.desc -%}
+    {%- else -%}
+      {%- assign kid_desc = kid_set.description -%}
+    {%- endif -%}
+    <a class="tour-card" href="{{ kid.url }}"{% if kid_desc %} title="{{ kid_desc | replace: "<br>", " " | strip_html | truncatewords: 30 | escape }}"{% endif %}>
+        {%- if kid_icon -%}
+        <img src="/tour/assets/glyphs/{{ kid_dir }}/{{ kid_icon }}.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+        {%- endif -%}
+        <span>{{ kid.title }}</span>
+    </a>
+    {%- endfor -%}
+</div>
+{%- endif -%}

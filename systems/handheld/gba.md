@@ -7,22 +7,17 @@ permalink: /systems/handheld/gba
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Nintendo Game Boy Advance"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| Beetle GBA         | Libretro Core    | 0.9.36            |
-| **gpSP**           | Libretro Core    | 1.0.0             |
-| mGBA               | Libretro Core    | 0.11              |
-| mGBA Rumble        | Libretro Core    | 0.11              |
-| VBA-Next           | Libretro Core    | 1.0.2             |
-| VBA-M              | Libretro Core    | 2.1.3             |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

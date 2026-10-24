@@ -1,0 +1,29 @@
+description: >
+  Chooses the picture your device shows while it is starting up, that first thing you see before the frontend
+  arrives. Drop your own images into the <code>MUOS/logo</code> folder on your storage and they will be waiting for
+  you here.<br><br>Whatever you pick is converted to suit your particular screen. Do keep in mind that installing a theme will put its own boot logo in
+  place of yours.
+
+goback: muxcustom
+
+visible:
+  - name: Your Images
+    icon: logo
+    desc: >
+      Everything found in your <code>MUOS/logo</code> folder is listed here. Press <strong>A</strong> on one to use
+      it, then choose how it should fill the screen: <strong>Fullscreen</strong>, <strong>Stretch</strong>,
+      <strong>Centre Crop</strong>, or <strong>Original</strong> to leave it at the size it came in.
+
+hidden:
+  - name: Reset Boot Logo
+    desc: >
+      Press <strong>Y</strong> to throw away the logo you chose and put the one from your current theme back. Your
+      images are left alone.
+  - name: Remove Image
+    desc: >
+      Press <strong>X</strong> to delete the highlighted image from your storage. The logo currently in use is not
+      affected, so this only tidies up the list.
+
+tip:
+  - info: If the list is empty, add some images to the **MUOS/logo** folder on your current storage and come back.
+  - info: Installing a theme replaces your boot logo with the one the theme provides, so you may want to set yours again afterwards.

@@ -1,12 +1,19 @@
 description: >
   Reserved for the bravest of tinkerers, this section provides direct access to low level system controls that affect 
-  storage behaviour, power suspension, and process scheduling.<br><br><em>These settings are powerful but risky!</em> 
+  storage behaviour, power suspension, and process scheduling.<br><br><em>These settings are powerful and risky!</em>
   <br><br>Altering them without a clear understanding can impact stability, performance, or data integrity. 
   Adjust only if you know what you are doing or if you like a bit of excitement in your life.
 
 goback: muxtweakgen
 
 visible:
+  - name: Kernel Log Level
+    icon: kernellog
+    desc: >
+      How much the device itself writes to its own internal log. This is separate from the debug logging used by
+      MustardOS, and covers messages coming from the hardware and drivers. <strong>Silent</strong> keeps it quiet,
+      which is the sensible default, while the higher settings are only worth reaching for when you are chasing a
+      fault and want to see what the system is complaining about.
   - name: Swap Tendency
     icon: vmswap
     desc: >
@@ -16,12 +23,12 @@ visible:
     icon: dirty-ratio
     desc: >
       Defines the percentage of system memory that can contain unwritten (dirty) data before the kernel forces 
-      it to be written to disk. Higher values delay writes but risk larger bursts of I/O.
+      it to be written to disk. Higher values delay writes and risk larger bursts of I/O.
   - name: Background Write Back
     icon: dirty-back
     desc: >
       Sets the memory percentage that triggers background write-back activity. Lower values reduce latency by 
-      keeping storage more up-to-date but may increase write frequency.
+      keeping storage more up-to-date and may increase write frequency.
   - name: Cache Reclamation
     icon: cache
     desc: >
@@ -36,7 +43,7 @@ visible:
     icon: requests
     desc: >
       Sets the maximum number of pending I/O operations allowed per device. Higher values increase throughput for 
-      heavy workloads but also raise memory usage.
+      heavy workloads and also raise memory usage.
   - name: Read Ahead Size
     icon: readahead
     desc: >
@@ -82,3 +89,20 @@ visible:
     desc: >
       Changes how the system enters and resumes from sleep mode. Different suspend states balance between 
       faster wake-up and lower idle power consumption.
+  - name: Online Processor Cores
+    icon: cores
+    desc: >
+      Limits how many processor cores stay online while the device is awake. Fewer cores can reduce performance, so
+      <strong>All</strong> is the normal setting.
+  - name: Processor Maximum
+    icon: overclock
+    desc: >
+      The highest speed the processor is allowed to reach, chosen from the speeds your device offers.
+      <strong>Highest</strong> is the default and uses every speed available. Choose a lower speed to run cooler and
+      make the battery last longer.
+  - name: Graphics Maximum
+    icon: gpuoverclock
+    desc: >
+      The highest speed the graphics processor is allowed to reach, chosen from the speeds your device offers.
+      <strong>Highest</strong> is the default and uses every speed available. Choose a lower speed to run cooler and
+      make the battery last longer.

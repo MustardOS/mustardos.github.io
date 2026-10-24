@@ -1,0 +1,18 @@
+description: >
+  The Network Scan screen searches for nearby Wi-Fi access points and lists every SSID it finds. Selecting an entry
+  fills in that network's identifier back on the Network Profile screen, ready for you to enter a password and
+  connect.<br><br>Press <strong>X</strong> at any time to rescan if the network you are after has not appeared yet,
+  or if you have moved closer to it.
+
+goback: muxnetwork
+
+visible:
+  - name: Network
+    icon: netscan
+    link: muxnetprofile
+    desc: >
+      Each nearby wireless network found during the scan is listed here by its SSID. Press <strong>A</strong> to
+      select one and continue setting it up on the Network Profile screen.
+
+tip:
+  - info: Press **X** at any time to rescan for networks.

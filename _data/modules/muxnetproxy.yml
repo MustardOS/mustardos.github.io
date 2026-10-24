@@ -1,0 +1,37 @@
+description: >
+  The Proxy Settings module configures a network proxy for outbound connections that support one, such as system
+  updates and web based services. Choose a scheme, provide the server address, and list any hosts that should
+  bypass the proxy entirely.<br><br>Press <strong>A</strong> on Test after saving to confirm the proxy is reachable
+  before relying on it.
+
+goback: muxconnect
+
+visible:
+  - name: Proxy Enabled
+    icon: enabled
+    desc: >
+      Turns the configured proxy on or off. When enabled, applicable network traffic is routed through the server
+      below; when disabled, connections are made directly as normal.
+  - name: Proxy Type
+    icon: type
+    desc: >
+      Selects the proxy scheme to use: <code>http://</code>, <code>https://</code>, or <code>socks5://</code>. Must
+      match the type expected by your proxy server.
+  - name: Proxy Server
+    icon: server
+    desc: >
+      The address and port of the proxy server, for example <code>192.168.0.5:8080</code>. Combined with the Proxy
+      Type to form the complete proxy URL.
+  - name: No Proxy
+    icon: noproxy
+    desc: >
+      A comma separated list of hosts and addresses that should bypass the proxy and connect directly, such as
+      <code>localhost,127.0.0.1,::1</code>.
+  - name: Test Proxy
+    icon: test
+    desc: >
+      Sends a test request through the configured proxy and reports the resulting HTTP status code, letting you
+      confirm it is reachable before saving.
+
+tip:
+  - info: Saving with the proxy set to **Enabled** will prompt you to reboot the device so the new settings take effect system-wide.

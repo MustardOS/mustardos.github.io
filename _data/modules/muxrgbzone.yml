@@ -1,0 +1,19 @@
+description: >
+  Set the colour and brightness for a single lighting zone, reached by selecting it from the Zone list on the main
+  RGB Lights screen. Every zone is independent, so changes made here only ever affect this one zone.
+
+goback: muxrgb
+
+visible:
+  - name: Colour
+    icon: colour
+    desc: >
+      The colour for this zone. Choose <strong>Off</strong> to turn just this zone off without affecting any others.
+  - name: Brightness
+    icon: bright
+    desc: >
+      This zone's own brightness, from 0% to 100%, independent of every other zone.
+
+tip:
+  - info: Press **X** to apply your changes immediately without leaving the screen, handy for previewing a colour.
+  - info: Press **Y** to instantly set this zone's colour to Off.

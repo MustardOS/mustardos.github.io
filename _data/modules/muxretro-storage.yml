@@ -1,0 +1,44 @@
+description: >
+  How often MustardOS saves your progress for you in the background, without you ever pressing Quick Save,
+  and how carefully the game's own save file is looked after.
+
+goback: muxretro-settings
+
+visible:
+  - name: Timeline Saves
+    icon: timeline
+    link: muxretro-timeline
+    desc: >
+      Choose how often timeline saves are captured, how many are kept, when their timer resets, and whether
+      progress is shown while you play.
+  - name: Auto Save
+    icon: autosave
+    desc: >
+      When MustardOS quietly saves where you are for you. It can do so when you put the device down for a
+      moment, when you quit, both, or never.
+  - name: Save State History
+    icon: state
+    desc: >
+      How many past moments to hold in memory before loading a state. These entries let you step back if the wrong
+      state was chosen and are cleared when the content closes.
+  - name: Save State Trash
+    icon: state
+    desc: >
+      How many deleted states to keep on storage. Items can be restored from the Trash section of Game State until
+      they are permanently removed.
+  - name: SRAM Flush
+    icon: sram
+    desc: >
+      How often the game's own save file, the one it writes when you save inside the game itself, is written
+      out to storage while you play. Anywhere from every 15 seconds to every 5 minutes.
+  - name: Content Pre-cache
+    icon: content
+    desc: >
+      Loads part of the game into memory up front so it does not have to keep reaching for the storage card
+      while you play. Helps most with larger disc-based games on a slow card, at the cost of a little longer
+      to start up.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Saves are always written safely in the background, and these settings only decide how often.
+  - info: The most recent background save can never be deleted from the Game State screen, so there is always at least one to fall back on.

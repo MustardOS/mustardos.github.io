@@ -61,7 +61,7 @@ For a list of all possible Game IDs please see [ScummVM Game IDs](https://www.sc
 
 ## How can I hide the game files directory?
 
-OK, so now that you've set that up, you no longer want to see the Day of the Tentacle folder in the games list. That's
+OK, so now that you have set that up, you no longer want to see the Day of the Tentacle folder in the games list. That is
 easy. MustardOS will hide any directory that has a prepended `.` or `_` character. So simply rename that folder
 to `.Day of the Tentacle` or `_Day of the Tentacle`.
 
@@ -78,7 +78,7 @@ to `.Day of the Tentacle` or `_Day of the Tentacle`.
 
 ## Known Issues with ScummVM Standalone
 
-- Native mouse movement for the DPAD isn't working. For now we're leveraging MustardOS analogue<>dpad swap functionality
+- Native mouse movement for the DPAD is not working. For now we are leveraging MustardOS stick<>dpad swap functionality
   for stickless devices.
 - Menu cursor in games that require OpenGL (Grim Fandango, Thimbleweed Park) is invisible. This can be fixed by forcing
   the Software renderer, but performance is much worse.

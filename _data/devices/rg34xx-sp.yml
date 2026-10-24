@@ -1,10 +1,17 @@
 manufacturer: Anbernic
 name: RG34XX SP
 internal: rg34xx-sp
-desc: A clamshell device with two analogue sticks.
+desc: A clamshell device with two sticks.
+features:
+  form: clamshell
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "720x480"
 downloads:
   - variant:
-    hash: 18c6e1e20421be2bf604cbaf920c3fc69b0ab49c758a0a42e04626499f1444ee
-    gofile: https://store2.gofile.io/download/direct/6599bf0b-17d9-4066-93f5-51a137f805b7/MustardOS_RG34XX-SP_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/x7RRSIDY#ujOHCvFv0oEO4gR1Ip_Adq3GyYMcHJl81wmlCEd0-Ng
-    torrent: MustardOS_RG34XX-SP_1GB_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: e0af0d2909ac72f5457fb4e593f94a3780f89f270aecc7db35d4881d4d500d59
+    gofile: https://gofile.io/d/6Mj6mdXQ
+    mega: https://mega.nz/file/B2BwSTpT#2Be5GJZ2AXKtJkJ6q0F7BE7_cnx4ponfgD5bOznNxYM
+    torrent: MustardOS_RG34XX-SP_2606.0_ANDROMEDA-db2a3bd0

@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Advanced Settings
+title: Advanced
 module: muxtweakadv
 glyph: muxtweakadv
 permalink: /tour/modules/muxtweakadv
-parent: General Settings
-nav_order: 3
+parent: General
+nav_order: 5
 has_toc: false
 ---

@@ -7,17 +7,17 @@ permalink: /systems/homeconsole/3do
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "The 3DO Company - 3DO"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name               | Type             | Version           |
-|:-------------------|:-----------------|:------------------|
-| **Opera**          | Libretro Core    | 1.0.0             |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

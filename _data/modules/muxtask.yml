@@ -18,9 +18,59 @@ visible:
   - name: Storage Tasks
     icon: storage
     desc: >
-      This section will allow you to safely eject and mount secondary and USB external storage.
+      Safely eject or mount secondary storage and USB external storage.
+  - name: Diagnostics
+    icon: diagnostic
+    desc: >
+      Reports on the battery, audio, display, input, network, storage, temperatures, boot and Bluetooth, each saved
+      to SD1 with a list of findings, plus an input test and a battery gauge repair.
+  - name: Grid Mode Toggles
+    icon: folder
+    desc: >
+      Switch grid mode on or off for the Main Menu, Applications, Collections, History, and Explore Content, one task
+      for each screen.
+  - name: Network Tasks
+    icon: network
+    desc: >
+      Turn Ethernet on or off, and enable Wi-Fi through a USB adapter that uses the 8188eu chipset.
+  - name: Syncthing Tasks
+    icon: folder
+    desc: >
+      Start a Syncthing scan straight away, or turn automatic scanning on or off.
+  - name: Migration Tasks
+    icon: folder
+    desc: >
+      Bring data across from other software. Import RetroArch Saves to Pickles copies your RetroArch save games, and
+      optionally your save states, into Pickles without replacing anything Pickles already has, as described in
+      <a href="/installation/retroarch-to-pickles">Moving from RetroArch</a>.
+  - name: Dot and Junk File Cleanup
+    icon: junk
+    desc: >
+      Removes junk left behind by other computers, such as macOS dot files and Windows System Volume Information
+      folders, from SD1, SD2, and USB storage.
+  - name: Export Collection to HTML
+    icon: star
+    desc: >
+      Writes your collection, with box art where it is found, to a <code>collection.html</code> page at the root of
+      SD1. The active theme can supply its own page layout.
+  - name: Refresh Automatic Core Assign
+    icon: junk
+    desc: >
+      Rebuilds the automatic core assignments for recognised folder names, which is useful after adding new folders
+      or updating the core manifests.
+  - name: Refresh Bootlogo
+    icon: theme
+    desc: >
+      Rebuilds the boot logo and charging image from your chosen boot logo or the active theme.
+  - name: Replay Tour Introduction
+    icon: star
+    desc: >
+      Shows the introduction on every screen again, as it appeared the first time you used the device.
   - name: System Diagnostics
     icon: diagnostic
     desc: >
-      Running this script will created a compressed archive that you can send to MustardOS developers to help 
-      diagnose issues with both hardware and software.
+      Creates a compressed archive that you can send to the MustardOS developers to help diagnose hardware and
+      software issues.
+
+tip:
+  - info: Every task lists what it does when you press **Menu**. The [Task Toolkit](/tasks) page describes each one, and [Writing Your Own Tasks](/tasks/writing) shows how to add your own.

@@ -1,0 +1,13 @@
+description: >
+  An alphabetical reference of the third-party libraries built into this release. Each entry shows the library name
+  and its installed version.
+
+goback: muxinfo
+
+visible:
+  - name: Library List
+    icon: third
+    desc: >
+      The libraries used by the MustardOS frontend, listed alphabetically with their exact versions. This is useful
+      when checking licences, compatibility, or a support report.
+

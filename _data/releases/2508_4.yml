@@ -3,26 +3,6 @@ code: "Loose Goose"
 type: archive
 pronunciation: "/luːs ɡuːs/"
 
-full_image:
-  gofile: https://gofile.io/d/XLCM0G
-  mega: https://mega.nz/folder/cvBlWD6A#-Rc1xqaGOdkGzRNvKZxb2Q
-  warning:
-    - Upon full image reflash on devices with SD2 inserted your <code>MUOS</code> folder will be moved to
-      <code>MUOS_old</code> to ensure update safety. However do not panic, your save games, configurations, and other
-      user data can be safely copied back. However please do so with caution as there may be conflicts.
-
-update_archive:
-  gofile: https://gofile.io/d/ZUrZdr
-  mega: https://mega.nz/folder/h3gXlQDD#-tJn6OScgEBWg5BlUdh7iQ
-  important: |
-    This is an <strong>Archive Manager</strong> installable archive for those who are running the following previous
-    MustardOS releases. <em>Install on any other version at your own risk.</em>
-    <ul>
-      <li><strong>2508.1</strong> Canada Goose</li>
-      <li><strong>2508.2</strong> Silly Goose</li>
-      <li><strong>2508.3</strong> Golden Goose</li>
-    </ul>
-
 note:
   - Due to the amount of issues in the past relating to people changing their RetroArch global configuration
     we have opted to freeze it. If you would like to know how to unfreeze it please see the following

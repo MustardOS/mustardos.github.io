@@ -7,19 +7,17 @@ permalink: /systems/homeconsole/segamdcd
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Sega Mega CD - Sega CD"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                 | Type             | Version           |
-|:---------------------|:-----------------|:------------------|
-| **Genesis Plus GX**  | Libretro Core    | 1.7.4 a6002bb     |
-| Genesis Plus GX Wide | Libretro Core    | 1.7.4             |
-| PicoDrive            | Libretro Core    | 2.00-a1fc78f3     |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

@@ -1,8 +1,7 @@
 description: >
-  This module lets you configure per application settings that control performance and other future behaviour. These 
-  options determine how each app runs, such as which CPU governor is applied.<br><br>It provides fine grained control 
-  for optimising your experience without affecting global settings. Future developments will provide additional 
-  functionality to these options.
+  Settings for a single application. At the moment that covers how hard the
+  processor is allowed to work while the application is running, and which control scheme it uses.<br><br>Anything
+  set here affects only the application named at the top.
 
 goback: muxapp
 
@@ -10,8 +9,14 @@ visible:
   - name: Name
     icon: app
     desc: >
-      The name of the application you are changing the options of.
+      The application you are currently setting up.
   - name: Governor
     icon: governor
     desc: >
-      The governor that will be used upon launch of the application.
+      How the processor behaves while this application is running, whether keeping things calm and cool or letting
+      it stretch its legs.
+  - name: Control Scheme
+    icon: control
+    desc: >
+      Which control scheme is applied when this application launches, handy when one of them expects the buttons
+      arranged differently.

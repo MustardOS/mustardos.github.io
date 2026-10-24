@@ -1,69 +1,1518 @@
+// Card rows never end with an empty gap. Lists of any length share each row and a short last row stretches to fill
+// it. Fixed sets use a column count that divides them evenly at every width.
+
+@mixin fill-rows($min, $gap) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    > * {
+        flex: 1 1 $min;
+        min-width: 0;
+    }
+}
+
+@mixin even-columns($wide, $mid: 2) {
+    display: grid;
+    grid-template-columns: repeat($wide, minmax(0, 1fr));
+
+    @media (max-width: 66.5rem) {
+        grid-template-columns: repeat($mid, minmax(0, 1fr));
+    }
+
+    @media (max-width: 40rem) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+// The sidebar is fixed, so full page screenshots paint it for one screen only. The page background repeats its colour
+// and border underneath so the column reaches the bottom of every capture.
+
+@include mq(md) {
+    body {
+        background-image: linear-gradient(
+            to right,
+            $sidebar-color calc(#{$nav-width-md} - 1px),
+            $border-color calc(#{$nav-width-md} - 1px),
+            $border-color $nav-width-md,
+            transparent $nav-width-md
+        );
+    }
+}
+
+@include mq(lg) {
+    body {
+        $side: max(#{$nav-width}, calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}));
+        background-image: linear-gradient(
+            to right,
+            $sidebar-color calc(#{$side} - 1px),
+            $border-color calc(#{$side} - 1px),
+            $border-color $side,
+            transparent $side
+        );
+    }
+}
+
+// No widows: a paragraph never ends with a word on a line by itself, and headings balance their lines. Browsers
+// without text-wrap-style get the same result from assets/js/no-widows.js.
+
+body {
+    text-wrap-style: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap-style: balance;
+}
+
+pre, code, textarea, input {
+    text-wrap-style: auto;
+}
+
+// Code blocks take their line height from the code itself, so box drawing characters in folder trees join up
+
+div.highlighter-rouge pre.highlight, figure.highlight pre {
+    line-height: 1.2;
+
+    > code {
+        display: block;
+        line-height: 1.2;
+    }
+}
+
 // Callouts
 
-// note
-p.note, blockquote.note {
-    background: rgba($purple-100, 0.1);
+$callout-note: #a08ff5;
+$callout-warning: #6ea6fb;
+$callout-important: #f96e65;
+$callout-new: #41d693;
+
+@mixin callout-colours($name, $tint, $text) {
+    p.#{$name}, blockquote.#{$name} {
+        background: rgba($tint, 0.1);
+
+        &::before, > .#{$name}-title {
+            color: $text;
+        }
+    }
+
+    p.#{$name}-title, blockquote.#{$name}-title {
+        background: rgba($tint, 0.1);
+
+        > p:first-child, p:first-child {
+            color: $text;
+        }
+    }
+}
+
+@include callout-colours("note", $purple-100, $callout-note);
+@include callout-colours("warning", $blue-100, $callout-warning);
+@include callout-colours("important", $red-100, $callout-important);
+@include callout-colours("new", $green-100, $callout-new);
+
+// Page titles: the theme sets h1 to a light weight, so a strong title needs an explicit bold weight
+
+h1 strong {
+    font-weight: 700;
+}
+
+// Primary buttons: dark text on the gold background, the theme default is white
+
+.btn-primary {
+    @include btn-color($grey-dk-300, $btn-primary-color);
+}
+
+// Homepage feature grid (index.md, driven by assets/js/feature-grid.js)
+
+.feature-grid {
+    @include even-columns(3, 2);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.feature-card {
+    display: block;
+    border: 1.35px solid $link-color;
+    border-radius: 10px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.feature-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+    margin-bottom: 0.5rem;
+}
+
+.feature-card-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin: 0 0 0.35rem 0;
+}
+
+.feature-card p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.feature-refresh {
+    @extend .btn;
+    margin-top: 0.75rem;
+}
+
+// Homepage hero (index.md)
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 0.5rem 0 1rem;
+}
+
+.hero-text {
+    flex: 1 1 320px;
+    min-width: 0;
+}
+
+.hero-title {
+    font-size: 3.25rem;
+    line-height: 1.05;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+}
+
+.hero-tagline .nowrap {
+    white-space: nowrap;
+}
+
+.hero-desc {
+    max-width: 42rem;
+    margin: 0 0 1.5rem 0;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.hero-media {
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .menu-mock, .menu-mock-help {
+        max-width: 260px;
+    }
+}
+
+// Homepage screenshot gallery (index.md, populated from assets/carousel/)
+
+.gallery-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 0.25rem 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-item {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    height: 260px;
+    width: auto;
+    border-radius: 12px;
+    border: 1.35px solid $link-color;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        height: 190px;
+    }
+}
+
+// Configuration editors (tools/*.html)
+
+@import "tools";
+
+// Page layouts (_layouts/*.html)
+
+@import "layouts";
+
+
+// Playable main menu on the home page (index.md, driven by assets/js/menu-mock.js)
+// Sizes come from the bundled theme's 720x480 muxlaunch scheme with the muOS alternative, in screen pixels (--px)
+
+.menu-mock {
+    width: 100%;
+    max-width: 360px;
+    container-type: inline-size;
+    border: 1.35px solid $link-color;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: 3px solid $link-color;
+        outline-offset: 3px;
+    }
+}
+
+.menu-mock-screen {
+    --px: calc(100cqw / 720);
+    --text: #e8e8e8;
+    --gold: #cbaa0f;
+    position: relative;
+    aspect-ratio: 720 / 480;
+    overflow: hidden;
+    color: var(--text);
+    background: linear-gradient(#444, #000);
+    font-size: calc(24 * var(--px));
+    line-height: 1.2;
+}
+
+.menu-mock-wall {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-mock-header, .menu-mock-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: calc(44 * var(--px));
+    padding: 0 calc(10 * var(--px));
+}
+
+.menu-mock-header {
+    top: 0;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.menu-mock-footer {
+    bottom: 0;
+    gap: calc(5 * var(--px));
+    padding-left: calc(12 * var(--px));
+}
+
+.menu-mock-status {
+    display: inline-flex;
+    align-items: center;
+    gap: calc(8 * var(--px));
+}
+
+.menu-mock-icon, .menu-mock-glyph {
+    display: inline-block;
+    background-color: var(--text);
+    -webkit-mask: var(--glyph) center / contain no-repeat;
+    mask: var(--glyph) center / contain no-repeat;
+}
+
+.menu-mock-icon {
+    width: calc(24 * var(--px));
+    height: calc(24 * var(--px));
+
+    &.network, &.nav-a {
+        background-color: var(--gold);
+    }
+
+    &.battery {
+        width: calc(30 * var(--px));
+    }
+}
+
+.menu-mock-grid {
+    position: absolute;
+    left: calc(35 * var(--px));
+    top: calc(50 * var(--px));
+    display: grid;
+    grid-template-columns: repeat(4, calc(170 * var(--px)));
+    grid-template-rows: repeat(2, calc(160 * var(--px)));
+    align-items: center;
+    justify-items: start;
+}
+
+.menu-mock-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(140 * var(--px));
+    height: calc(140 * var(--px));
+    border-radius: calc(16 * var(--px));
+    background: linear-gradient(rgba(104, 104, 104, 0.753), rgba(63, 63, 63, 0.753));
+    box-shadow: calc(10 * var(--px)) calc(10 * var(--px)) calc(10 * var(--px)) #000;
+
+    &.active {
+        background: linear-gradient(rgba(203, 170, 15, 0.753), rgba(156, 116, 0, 0.753));
+    }
+}
+
+.menu-mock-glyph {
+    width: calc(96 * var(--px));
+    height: calc(96 * var(--px));
+    opacity: 0.882;
+}
+
+.menu-mock-label {
+    position: absolute;
+    left: 50%;
+    bottom: calc(50 * var(--px));
+    width: calc(650 * var(--px));
+    height: calc(50 * var(--px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: calc(1 * var(--px));
+    transform: translateX(-50%);
+    border-radius: calc(16 * var(--px));
+    background: linear-gradient(rgba(104, 104, 104, 0.753), rgba(63, 63, 63, 0.753));
+    box-shadow: calc(10 * var(--px)) calc(10 * var(--px)) calc(10 * var(--px)) #000;
+}
+
+.menu-mock-boot {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: linear-gradient(#444, #000);
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu-mock-screen.booting .menu-mock-boot {
+    animation: menu-mock-boot 2.2s ease-in forwards;
+}
+
+@keyframes menu-mock-boot {
+    0%, 70% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+.menu-mock-power {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--gold);
+    font-size: calc(30 * var(--px));
+    text-align: center;
+    background: #000;
+
+    &.shutdown {
+        animation: menu-mock-off 0.6s ease-in forwards;
+    }
+}
+
+.menu-mock-power[hidden] {
+    display: none;
+}
+
+@keyframes menu-mock-off {
+    from { transform: scaleY(0.02); background: #fff; }
+    to { transform: scaleY(1); background: #000; }
+}
+
+.menu-mock-help {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 0.5rem;
+    color: $grey-dk-000;
+    font-size: 0.8rem;
+}
+
+.menu-mock-sound {
+    @extend .btn;
+    padding: 0.15rem 0.6rem;
+    font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .menu-mock-power.shutdown {
+        animation: none;
+    }
+
+    .menu-mock-screen.booting .menu-mock-boot {
+        animation-duration: 1.2s;
+        animation-timing-function: step-end;
+    }
+}
+
+// Release highlights and the collapsed changelog (_layouts/release.html)
+
+.release-highlights .feature-card:hover {
+    transform: none;
+}
+
+.release-changes {
+    margin-top: 0.75rem;
+
+    > summary {
+        padding: 0.5rem 0;
+        color: $link-color;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+// Supporting MustardOS (docs/support.md)
+
+.support-tiers {
+    @include even-columns(3, 1);
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.support-tier {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1.35px solid $link-color;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 1;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    ul {
+        flex: 1;
+        margin: 0.25rem 0 1rem;
+    }
+
+    .btn {
+        align-self: flex-start;
+    }
+}
+
+.support-tier-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1rem 1.25rem 1.25rem;
+
+    p {
+        margin: 0;
+    }
+}
+
+.support-price {
+    color: $grey-dk-000;
+
+    strong {
+        color: $link-color;
+        font-size: 1.6rem;
+    }
+}
+
+.support-compare {
+    th, td {
+        text-align: center;
+    }
+
+    th[scope="row"], thead th:first-child {
+        text-align: left;
+    }
+}
+
+.support-oneoff {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: $border $border-color;
+    border-radius: $border-radius;
+    background-color: $sidebar-color;
+
+    p {
+        margin: 0;
+    }
+}
+
+// Grand Tour map (tour/map.md, driven by assets/js/tour-map.js)
+
+.tour-map-tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0 1.5rem;
+
+    .feature-refresh {
+        margin-top: 0;
+    }
+}
+
+.tour-map-filter {
+    flex: 1 1 16rem;
+    padding: 0.4rem 0.55rem;
+    border: $border $border-color;
+    border-radius: $border-radius;
+    background: $table-background-color;
+    color: $body-text-color;
+    font: inherit;
+
+    &:focus {
+        border-color: $link-color;
+        outline: 0;
+    }
+}
+
+.tour-map-empty {
+    color: $grey-dk-000;
+}
+
+.tour-map-group {
+    margin-bottom: 1rem;
+    border: 1.35px solid $link-color;
+    border-radius: 10px;
+    padding: 0.75rem 1.25rem;
+
+    > summary {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        cursor: pointer;
+        color: $body-heading-color;
+        font-size: 1.125rem;
+        font-weight: 600;
+
+        img {
+            width: 32px;
+            height: 32px;
+            filter: invert(100%);
+        }
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::after {
+            width: 0.55rem;
+            height: 0.55rem;
+            margin-left: auto;
+            border-right: 2px solid $link-color;
+            border-bottom: 2px solid $link-color;
+            content: "";
+            transform: rotate(45deg);
+            transition: transform 0.15s ease;
+        }
+    }
+
+    &[open] > summary::after {
+        transform: rotate(-135deg);
+    }
+}
+
+.tour-map-root {
+    margin: 0.5rem 0 0;
+}
+
+.tour-map-list {
+    margin: 0.25rem 0 0;
+    padding-left: 1.25rem;
+    border-left: 1px solid $border-color;
+    list-style: none;
+
+    li {
+        margin: 0.2rem 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .tour-map-group > & {
+        margin-top: 0.5rem;
+    }
+}
+
+.tour-map-hit {
+    background: rgba($link-color, 0.18);
+    border-radius: 3px;
+}
+
+// Card layouts for guide pages (tour/start.md, docs/infrastructure*)
+
+.guide-heading {
+    margin-top: 2rem !important;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+
+    @media (max-width: 40rem) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    &:not(.compact) > :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+}
+
+.guide-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    border: 1.35px solid $link-color;
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+
+    img {
+        width: 48px;
+        height: 48px;
+        filter: invert(100%);
+    }
+
+    &:hover, &:focus-visible {
+        transform: scale(1.02);
+        background: rgba($link-color, 0.06);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.guide-title {
+    color: $body-heading-color;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.guide-text {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.guide-go {
+    color: $link-color;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    &::after {
+        content: " \2192";
+    }
+}
+
+.guide-extra {
+    @include even-columns(2, 2);
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.guide-tips {
+    @include even-columns(3, 1);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.guide-grid.compact {
+    @include even-columns(4, 2);
+
+    &.five {
+        @include even-columns(5, 2);
+    }
+
+    .guide-card {
+        padding: 1rem;
+
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .guide-title {
+        font-size: 1rem;
+    }
+}
+
+.guide-steps {
+    @include even-columns(3, 3);
+    gap: 0.75rem;
+
+    &.two {
+        @include even-columns(2, 2);
+    }
+
+    &.four {
+        @include even-columns(4, 2);
+    }
+
+    &.five {
+        @include even-columns(5, 1);
+    }
+
+    margin: 1rem 0 1.5rem;
+    counter-reset: guide-step;
+}
+
+.guide-step {
+    position: relative;
+    padding: 2.6rem 1rem 1rem;
+    border: 1.35px solid $border-color;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    counter-increment: guide-step;
 
     &::before {
-        color: $purple-000;
+        content: counter(guide-step);
+        position: absolute;
+        top: 0.8rem;
+        left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background: $link-color;
+        color: $body-background-color;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    strong {
+        display: block;
+        margin-bottom: 0.25rem;
+        color: $body-heading-color;
     }
 }
 
-p.note-title, blockquote.note-title {
-    background: rgba($purple-100, 0.1);
+.guide-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.75rem 0 0;
 
-    p:first-child {
-        color: $purple-100;
+    span {
+        padding: 0.15rem 0.6rem;
+        border: 1px solid rgba($link-color, 0.45);
+        border-radius: 999px;
+        background: rgba($link-color, 0.08);
+        font-size: 0.8rem;
     }
 }
 
-// warning
-p.warning, blockquote.warning {
-    background: rgba($blue-100, 0.1);
+.guide-numbered {
+    margin: 0.25rem 0 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    counter-reset: guide-numbered;
 
-    &::before {
-        color: $blue-000;
+    > li {
+        position: relative;
+        margin: 0.45rem 0 0 !important;
+        padding-left: 2rem !important;
+        font-size: 0.9rem;
+        counter-increment: guide-numbered;
+
+        &::before {
+            content: counter(guide-numbered) !important;
+            position: absolute !important;
+            top: 0.05rem !important;
+            left: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.35rem;
+            height: 1.35rem;
+            border-radius: 50%;
+            background: $link-color;
+            color: $body-background-color !important;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
     }
 }
 
-p.warning-title, blockquote.warning-title {
-    background: rgba($blue-100, 0.1);
+.guide-list {
+    margin: 1rem 0 1.5rem;
+    border: 1.35px solid $border-color;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-    p:first-child {
-        color: $blue-100;
+.guide-list-row {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-top: 1px solid $border-color;
+    color: inherit;
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    &:first-child {
+        border-top: 0;
+    }
+
+    &:hover, &:focus-visible {
+        background: rgba($link-color, 0.06);
+    }
+
+    img {
+        width: 28px;
+        height: 28px;
+        filter: invert(100%);
+    }
+
+    @media (max-width: 40rem) {
+        grid-template-columns: 28px minmax(0, 1fr);
+        align-items: start;
+
+        .guide-list-meta {
+            grid-column: 2;
+            flex-direction: row;
+            align-items: center;
+        }
     }
 }
 
-// important
-p.important, blockquote.important {
-    background: rgba($red-100, 0.1);
+.guide-list-text {
+    font-size: 0.9rem;
 
-    &::before {
-        color: $red-000;
+    strong {
+        display: block;
+        color: $link-color;
+        font-size: 1rem;
     }
 }
 
-p.important-title, blockquote.important-title {
-    background: rgba($red-100, 0.1);
+.guide-list-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
 
-    p:first-child {
-        color: $red-100;
+.guide-badge {
+    padding: 0.05rem 0.55rem;
+    border: 1px solid $border-color;
+    border-radius: 999px;
+    color: $grey-lt-300;
+
+    &.on {
+        border-color: rgba($link-color, 0.6);
+        background: rgba($link-color, 0.1);
+        color: $link-color;
     }
 }
 
-// new
-p.new, blockquote.new {
-    background: rgba($green-100, 0.1);
+.guide-tags.guide-links {
+    a {
+        padding: 0.15rem 0.6rem;
+        border: 1px solid rgba($link-color, 0.45);
+        border-radius: 999px;
+        background: rgba($link-color, 0.08);
+        font-family: $mono-font-family;
+        font-size: 0.8rem;
+        text-decoration: none;
 
-    &::before {
-        color: $green-000;
+        &:hover, &:focus-visible {
+            background: rgba($link-color, 0.2);
+        }
     }
 }
 
-p.new-title, blockquote.new-title {
-    background: rgba($green-100, 0.1);
-    
-    p:first-child {
-        color: $green-100;
+.guide-paths {
+    display: grid;
+    gap: 0;
+    margin: 1rem 0 1.5rem;
+    border: 1.35px solid $border-color;
+    border-radius: 10px;
+    overflow: hidden;
+
+    div {
+        display: grid;
+        grid-template-columns: minmax(11rem, 16rem) minmax(0, 1fr);
+        gap: 1rem;
+        padding: 0.6rem 1rem;
+        border-top: 1px solid $border-color;
+        font-size: 0.9rem;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        @media (max-width: 40rem) {
+            grid-template-columns: minmax(0, 1fr);
+            gap: 0.2rem;
+        }
+    }
+
+    code {
+        align-self: start;
+        justify-self: start;
+    }
+}
+
+// API routes show the method as a coloured badge beside the path
+
+.api-route {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-self: start;
+    justify-self: start;
+    gap: 0.4rem;
+    min-width: 0;
+
+    code {
+        overflow-wrap: anywhere;
+    }
+
+    td & {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+
+        code {
+            overflow-wrap: normal;
+        }
+    }
+}
+
+.api-method {
+    display: inline-block;
+    min-width: 3.4rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    color: #1a1a1a;
+    font-family: $mono-font-family;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.api-get {
+    background: #55a971;
+}
+
+.api-post {
+    background: #6aa6e0;
+}
+
+.api-put {
+    background: #d9a441;
+}
+
+.api-delete {
+    background: #e07a6a;
+}
+
+.guide-tip {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem;
+    border: 1.35px solid $border-color;
+    border-radius: 10px;
+
+    img {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        filter: invert(100%);
+    }
+
+    p {
+        margin: 0.35rem 0 0;
+        font-size: 0.9rem;
+    }
+}
+
+// Submenu cards on tour pages (_includes/tour_cards.html)
+
+.tour-cards {
+    @include fill-rows(190px, 0.6rem);
+    margin: 1rem 0 1.5rem;
+}
+
+.tour-card {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 0;
+    padding: 0.5rem 0.75rem;
+    border: 1.35px solid $border-color;
+    border-radius: 8px;
+    color: $body-heading-color;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
+
+    img {
+        flex: 0 0 auto;
+        width: 24px;
+        height: 24px;
+        filter: invert(100%);
+    }
+
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &:hover, &:focus-visible {
+        border-color: $link-color;
+        background: rgba($link-color, 0.08);
+        color: $link-color;
+    }
+}
+
+// Option lists on tour pages (_includes/module_table.html)
+
+.tour-items {
+    margin: 0.75rem 0 0;
+    border-top: 1px solid $border-color;
+}
+
+.tour-item {
+    display: grid;
+    grid-template-columns: 28px minmax(9rem, 13rem) minmax(0, 1fr);
+    align-items: baseline;
+    gap: 0.25rem 1rem;
+    padding: 0.55rem 0.5rem;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.025);
+    }
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    img {
+        align-self: start;
+        width: 28px;
+        height: 28px;
+        filter: invert(100%);
+    }
+
+    h4 {
+        margin: 0 !important;
+        color: $body-heading-color;
+        font-size: 0.95rem !important;
+        font-weight: 600;
+        letter-spacing: normal;
+        line-height: 1.4;
+        text-transform: none;
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .no-icons & {
+        grid-template-columns: minmax(9rem, 13rem) minmax(0, 1fr);
+    }
+
+    @media (max-width: 40rem) {
+        grid-template-columns: 28px minmax(0, 1fr);
+
+        p {
+            grid-column: 2;
+        }
+
+        .no-icons & {
+            grid-template-columns: minmax(0, 1fr);
+
+            p {
+                grid-column: 1;
+            }
+        }
+    }
+}
+
+.tour-filter {
+    display: flex;
+    margin: 1.25rem 0 0.5rem;
+}
+
+.tour-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0 0.5rem;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.3rem 0.8rem;
+        border: 1.35px solid $border-color;
+        border-radius: 999px;
+        color: $body-heading-color;
+        font-size: 0.9rem;
+        text-decoration: none;
+
+        span {
+            color: $grey-dk-000;
+            font-size: 0.8rem;
+        }
+
+        &:hover, &:focus-visible {
+            border-color: $link-color;
+            color: $link-color;
+        }
+    }
+}
+
+// Wasabi Supported Formats (tour/modules/muxmedia-formats.md)
+
+.format-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    img {
+        width: 28px;
+        height: 28px;
+        filter: invert(100%);
+    }
+}
+
+.format-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0.75rem 0 1rem;
+
+    .format-chip {
+        position: relative;
+        padding: 0.15rem 0.6rem;
+        border: 1.35px solid $border-color;
+        border-radius: 4px;
+        color: $body-text-color;
+        font-family: $mono-font-family;
+        font-size: 0.85rem;
+        cursor: default;
+
+        &:hover,
+        &:focus {
+            border-color: $link-color;
+            outline: none;
+        }
+
+        &:hover .format-tip,
+        &:focus .format-tip {
+            display: flex;
+        }
+
+        &.flip .format-tip {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    &.common .format-chip {
+        border-color: $link-color;
+        color: $body-heading-color;
+    }
+}
+
+.format-tip {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    bottom: calc(100% + 6px);
+    left: 0;
+    width: max-content;
+    max-width: min(280px, 80vw);
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid $link-color;
+    border-radius: 4px;
+    background: $sidebar-color;
+    color: $body-text-color;
+    font-family: $body-font-family;
+    font-size: 0.8rem;
+    line-height: 1.35;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+
+    strong {
+        color: $body-heading-color;
+        font-family: $mono-font-family;
+        margin-bottom: 0.15rem;
+    }
+
+    em {
+        display: block;
+        margin-left: 1.6em;
+        color: $grey-dk-000;
+        font-style: normal;
+        font-size: 0.75rem;
+    }
+}
+
+.format-all {
+    margin-bottom: 1rem;
+
+    > summary {
+        color: $link-color;
+        cursor: pointer;
+    }
+}
+
+.site-nav {
+    @include mq(md) {
+        padding-top: 16px;
+    }
+}
+
+// Keyboard focus uses the accent colour instead of the theme's blue ring
+
+.btn:focus {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.btn:focus-visible, .btn:focus-visible:hover, .btn.selected:focus-visible {
+    box-shadow: 0 0 0 3px rgba($link-color, 0.55);
+}
+
+a:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid $link-color;
+    outline-offset: 2px;
+}
+
+// Dark scrollbars so the sidebar and page do not show a white track
+
+html, .side-bar, .site-nav {
+    scrollbar-color: $border-color transparent;
+}
+
+// Device Notes
+
+.device-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 1.5rem;
+
+    span {
+        padding: 0.3rem 0.8rem;
+        border: 1.35px solid $border-color;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.roadmap-table {
+    td:nth-child(3) {
+        white-space: nowrap;
+    }
+
+    .label {
+        margin: 0;
+    }
+}
+
+.release-song-artist {
+    color: $grey-dk-000;
+}
+
+.site-logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+// Press Kit
+
+$press-colours: (
+    "logo-yellow": #E2BF0E,
+    "mustard": #C7AF26,
+    "badge-light": #EDD415,
+    "badge-dark": #CC9E00,
+    "badge-black": #100708,
+    "charcoal": #1F1F1F,
+    "slate": #27262B,
+    "raised": #302D36,
+    "text": #B8B8B8,
+    "white": #FFFFFF
+);
+
+.press-grid {
+    @include even-columns(3, 2);
+    gap: $sp-4;
+
+    &.three {
+        @include even-columns(3, 1);
+    }
+
+    margin: $sp-4 0;
+}
+
+.press-card {
+    display: grid;
+    gap: $sp-3;
+    padding: $sp-4;
+    margin: 0;
+    background-color: $grey-dk-300;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    img {
+        width: 100%;
+        height: 9rem;
+        object-fit: contain;
+    }
+
+    figcaption {
+        display: grid;
+        gap: $sp-1;
+        font-size: $font-size-3;
+    }
+
+    &.press-feature {
+        max-width: 28rem;
+        margin: $sp-4 0;
+
+        img {
+            height: 18rem;
+        }
+    }
+
+    &.press-dark img {
+        padding: $sp-3;
+        background-color: #1F1F1F;
+    }
+
+    &.press-light img {
+        padding: $sp-3;
+        background-color: #FFFFFF;
+    }
+}
+
+.press-swatches {
+    @include even-columns(5, 2);
+    gap: $sp-3;
+    margin: $sp-4 0;
+}
+
+.press-swatch {
+    display: grid;
+    gap: $sp-1;
+    padding: $sp-3;
+    background-color: $grey-dk-300;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    span:last-child {
+        color: $grey-dk-000;
+        font-size: $font-size-3;
+    }
+}
+
+.press-chip {
+    display: block;
+    height: 3rem;
+    margin-bottom: $sp-2;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+
+@each $name, $colour in $press-colours {
+    .press-#{$name} {
+        background-color: $colour;
+    }
+}
+
+.format-swatch {
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: middle;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+}
+
+$format-colours: (
+    "0": #000000, "1": #0000AA, "2": #00AA00, "3": #00AAAA, "4": #AA0000, "5": #AA00AA, "6": #FFAA00, "7": #AAAAAA,
+    "8": #555555, "9": #5555FF, "a": #55FF55, "b": #55FFFF, "c": #FF5555, "d": #FF55FF, "e": #FFFF55, "f": #FFFFFF
+);
+
+@each $code, $colour in $format-colours {
+    .format-swatch-#{$code} {
+        background-color: $colour;
     }
 }

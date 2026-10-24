@@ -1,0 +1,26 @@
+# Plain descriptions for the Task Toolkit page, keyed by the script path under share/task.
+# Anything not listed here uses the script's own HELP line. Run _scripts/sync-tasks.py after editing.
+
+"Clear Tasks/Clear Activity Data.sh": Archives your Activity Tracker records and starts a fresh set, keeping the old ones in a backup.
+"Clear Tasks/Clear Catalogue - Everything.sh": Removes the whole catalogue of artwork and text and builds a clean, empty one.
+"Clear Tasks/Clear Catalogue - Folder Only.sh": Removes only the folder artwork in the catalogue, leaving content artwork alone.
+"Clear Tasks/Clear Collections.sh": Removes every collection and the shortcuts inside them. Your content is not touched.
+"Clear Tasks/Clear Content Assignments.sh": Removes the core and governor assignments you have made, so content goes back to its defaults.
+"Clear Tasks/Clear History.sh": Removes every entry from History. Your content is not touched.
+"Clear Tasks/Clear Network Profiles.sh": Removes all saved Wi-Fi network profiles.
+"Dot and Junk File Cleanup.sh": Removes junk left behind by other computers, such as macOS dot files and Windows System Volume Information folders, from SD1, SD2 and USB storage.
+"Grid Mode Toggles/Toggle Grid Mode Applications.sh": Switches the Applications screen between a list and a grid.
+"Grid Mode Toggles/Toggle Grid Mode Collections.sh": Switches Collections between a list and a grid.
+"Grid Mode Toggles/Toggle Grid Mode Content Explorer.sh": Switches Explore Content between a list and a grid.
+"Grid Mode Toggles/Toggle Grid Mode History.sh": Switches History between a list and a grid.
+"Grid Mode Toggles/Toggle Grid Mode Main Menu.sh": Switches the Main Menu between a list and a grid.
+"Migration Tasks/Import RetroArch Saves to Pickles.sh": Copies your RetroArch save games into Pickles, along with save states when you choose them and the content and core match. Existing Pickles saves are never replaced and the RetroArch files are left where they are.
+"Network Tasks/Toggle Ethernet.sh": Turns a USB Ethernet adapter on or off.
+"Refresh Automatic Core Assign.sh": Rebuilds the automatic core assignments for recognised folder names, which helps after adding folders or updating the core manifests.
+"Refresh Bootlogo.sh": Rebuilds the boot logo and charging image from your chosen boot logo or the active theme.
+"Restore Tasks/Restore Network Configuration.sh": Puts the default network configuration back, which helps when Wi-Fi will not connect after manual changes.
+"Restore Tasks/Restore PortMaster.sh": Reinstalls the bundled PortMaster application.
+"Syncthing Tasks/Manual Syncthing Scan.sh": Asks Syncthing to look for changed files straight away.
+"Syncthing Tasks/Toggle Syncthing Auto-Scan.sh": Turns automatic Syncthing scanning on or off.
+"System Diagnostics.sh": Creates a ZIP file on SD1 with logs and system details to send to the MustardOS crew when asking for help.
+"Export Collection to HTML.sh": Writes your collections, with box art where it is found, to a collection.html page at the root of SD1. The active theme can supply its own page layout.

@@ -10,7 +10,7 @@ has_children: false
 ## Disclaimer
 
 PortMaster does not endorse or support any form of piracy. All ready-to-run ports included in our software are provided
-with full respect to the wishes and licenses of the respective copyright holders. We take intellectual property rights
+with full respect to the wishes and licences of the respective copyright holders. We take intellectual property rights
 very seriously and ensure that our offerings comply with all relevant legal requirements and permissions.
 
 It is important to note that game files for ports that are not ready-to-run must be obtained legally. Users are required
@@ -28,7 +28,7 @@ Unfortunately the TrimUI devices do **NOT** support any of the `armhf` ports.
 ## Where does PortMaster install the ports?
 
 PortMaster will detect whether or not you have an SD card in slot 2 and use that if it is available.  
-If SD2 isn't available SD1 is used. The following example shows the relative path that the port **Stardew Valley** would
+If SD2 is not available SD1 is used. The following example shows the relative path that the port **Stardew Valley** would
 go on either SD1 or SD2.
 
 #### Example
@@ -43,14 +43,14 @@ go on either SD1 or SD2.
         └── Stardew Valley.sh
 ```
 
-## What if a port doesn't run?
+## What if a port does not run?
 
 Look for a `log.txt` in `/ports/<portname>` for any possible issues.  
 Head over to [PortMaster Discord](https://discord.gg/SR4vbp5c3p) and let them know!
 
 ## Offline Install Instructions
 
-If you have a device that doesn't support Wifi (such as the RG35XX 2024 / RG28XX) or otherwise cannot access
+If you have a device that does not support Wifi (such as the RG35XX 2024 / RG28XX) or otherwise cannot access
 WiFi, it is possible to install games. **This is not recommended** as it is significantly more difficult.
 
 ### Update PortMaster
@@ -66,7 +66,7 @@ In order to ensure compatibility of games, first download and install the latest
 
 ### Game Runtimes
 
-Many games share the same required files to run. Since this is an offline install, it's easiest to grab all of the
+Many games share the same required files to run. Since this is an offline install, it is easiest to grab all of the
 required files at once. It is possible to check on a game-by-game basis which files are needed if you do not wish to do
 this.
 

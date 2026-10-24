@@ -1,0 +1,30 @@
+description: >
+  Colour Filters alter the colour of video content. Opening a folder or moving between filters previews the selected
+  item immediately. Leaving without selecting restores the active filter.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Downloads
+    icon: download
+    desc: >
+      Fetch the current Wasabi filter list when a network connection is available. Entries are grouped by creator
+      and marked Not Installed, Installed, or Update.
+  - name: Collection
+    icon: star
+    desc: Keep references to favourite filters in one short list. Updating the original also updates the collected item.
+  - name: None
+    icon: filter
+    desc: Preview and select the unfiltered picture.
+  - name: Creator Folders
+    icon: folder
+    desc: Browse one level of folders, each named after a creator. Entries are sorted alphabetically without regard to letter case.
+  - name: Collect or Remove
+    icon: collection
+    desc: Press <strong>Y</strong> to collect an item, or remove it while browsing Collection.
+  - name: Delete
+    icon: filter
+    desc: Press <strong>X</strong> to remove a user-installed filter after confirmation.
+
+tip:
+  - info: Wasabi filters live in their own directories and do not alter the filters available to Pickles.

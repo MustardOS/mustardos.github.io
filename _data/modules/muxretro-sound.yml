@@ -1,0 +1,42 @@
+description: >
+  Volume, and the handful of settings to reach for if the sound ever crackles, pops, or drifts out of time
+  with what is happening on screen.
+
+goback: muxretro-settings
+
+visible:
+  - name: Volume
+    icon: volume
+    desc: >
+      How loud the game is, from silent up to full, in steps of 10%.
+  - name: Sample Rate
+    icon: samplerate
+    desc: >
+      The quality setting for the sound. <strong>Auto</strong> matches whatever the game asks for and is
+      almost always the right answer.
+  - name: Audio Latency
+    icon: audiolatency
+    desc: >
+      How closely the sound follows the action. <strong>Low Latency</strong> is the tightest,
+      <strong>Balanced</strong> is a happy middle, and <strong>Compatibility</strong> gives demanding games
+      more breathing room so the sound does not break up.
+  - name: Audio Period
+    icon: audioperiod
+    desc: >
+      How much sound is prepared in advance. Smaller keeps things responsive, larger is steadier on games
+      that are working the device hard.
+  - name: Audio Filter
+    icon: audiofilter
+    desc: >
+      An optional tone adjustment. <strong>Low-Pass</strong> softens harsh, hissy highs and
+      <strong>High-Pass</strong> thins out heavy rumble.
+  - name: Rate Control
+    icon: audioratecontrol
+    desc: >
+      Lets the sound be nudged very slightly faster or slower so it stays in step with the picture. A small amount is plenty, and <strong>Off</strong> disables it entirely.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Hearing crackles or dropouts? Raise **Audio Period** or set **Audio Latency** to **Compatibility** before changing anything else. Those two fix nearly every sound problem.
+  - info: If the sound slowly falls out of time with the picture over several minutes, a small amount of **Rate Control** is the setting that keeps the two together.
+  - info: A small **Audio Period** is worth trying, and safe to try. If your device cannot keep up with the one you picked, MustardOS moves to a larger one for the rest of the session so the sound does not break up. Your choice is not overwritten, and picking a period again lets it have another go.

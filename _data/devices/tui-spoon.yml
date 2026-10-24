@@ -1,10 +1,17 @@
 manufacturer: TrimUI
 name: Smart Pro
 internal: tui-spoon
-desc: A 720p widescreen device with funky analogue sticks.
+desc: A 720p widescreen device with funky sticks.
+features:
+  form: horizontal
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 0
+  screen: "1280x720"
 downloads:
   - variant:
-    hash: 69bf96dc697d77bdab7bc65a40ae1058520f5eba0a9847b81c24fcd612a1a6df
-    gofile: https://store9.gofile.io/download/direct/71712cb1-6790-42c2-95fe-d881678ec829/MustardOS_TUI-SPOON_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/974wlJIJ#3_-vdK-I2hYIqVzFw5B3E8KhFU5y6lTDPE9EC7oPv30
-    torrent: MustardOS_TUI-SPOON_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: 71d97e8488ee457dd1d8336c935421428e5b8efb92b269551af7b37a1649311d
+    gofile: https://gofile.io/d/jd7ANrQu
+    mega: https://mega.nz/file/R7YC2YiQ#yxKV-2ZYd1hYhex7sa92X9tqcgh-aCKyKeWPyE1XGl8
+    torrent: MustardOS_TUI-SPOON_2606.0_ANDROMEDA-db2a3bd0

@@ -1,8 +1,7 @@
 description: >
-  Showcases all available applications, emulators, and utilities within MustardOS. From system tools to third party 
-  software, this section serves as the central hub for discovering and accessing installed or bundled programs.
-  <br><br> Each entry provides quick insight into its purpose and function, helping you navigate the broader MustardOS 
-  environment with ease. <a href="https://community.muos.dev/c/application/20">Additional applications 
+  Everything that is not a game. Emulators, utilities, and the odd bit of fun, all in one list.<br><br>The three
+  most useful tools are now pinned to the top of the list so they are always in the same place, with everything
+  else following alphabetically underneath. <a href="https://community.muos.dev/c/application/20">More applications
   can be found here.</a>
 
 goback: muxlaunch
@@ -12,46 +11,56 @@ visible:
     icon: archive
     link: muxarchive
     desc: >
-      From applications to system updates, all user installable packages can be found here. 
-      See <a href="https://community.muos.dev/t/manually-creating-installable-archives/824">manually creating 
-      installable archives</a> for more information.
-  - name: Dingux Commander
-    icon: dingux
-    desc: >
-      A simple two-column file manager that gives you full access to the entire MustardOS file system. 
-      <em>This can be quite dangerous, so be careful when using!</em>
-  - name: Moonlight
-    icon: moonlight
-    desc: >
-      An open source game streaming client that lets you stream and control your PC games 
-      directly to your supported device.
-  - name: PortMaster
-    icon: portmaster
-    desc: >
-      Explore a variety of content and applications compatible with Linux handheld devices. 
-      Installation of ports and updates go through PortMaster.
-  - name: PPSSPP
-    icon: ppsspp
-    desc: >
-      A free and open source PSP emulator enabling high definition gameplay of PlayStation portable content.
-  - name: RetroArch
-    icon: retroarch
-    desc: >
-      A frontend for emulators, game engines and media players that run classic games.
-  - name: RGB Controller
-    icon: rgbcontroller
-    desc: >
-      Take control of the supported RGB light system of supported devices. 
-      This utility is also available on non-RGB systems as a way to configure for themes.
-  - name: ScummVM
-    icon: scummvm
-    desc: >
-      <a href="https://www.scummvm.org">Script Creation Utility for Maniac Mansion Virtual Machine</a> is a set of 
-      game engine recreations. Run classic graphical adventures and role playing games, 
-      <em>provided you already have their data files</em>.
+      Pinned to the top. Applications, system updates, and anything else installable arrives through here. See
+      <a href="https://community.muos.dev/t/manually-creating-installable-archives/824">manually creating
+      installable archives</a> if you would like to build your own.
   - name: Task Toolkit
     icon: task
     link: muxtask
     desc: >
-      Explore and run various system scripts from system diagnostics, clearing various caches, restoring system data, 
-      and safely mounting and unmounting secondary and USB storage.
+      Pinned to the top. A collection of handy scripts covering diagnostics, clearing caches, restoring data, and
+      safely mounting or unmounting your cards and USB storage.
+  - name: vTree Gold
+    icon: vtree
+    desc: >
+      Pinned to the top. A proper file manager driven entirely by your gamepad, with one or two panes, copy and
+      paste, renaming, text and image viewers, and themes of its own. <em>It can reach every corner of the system,
+      so do tread carefully.</em>
+  - name: 2048 Plus
+    icon: logo_2048
+    desc: >
+      The sliding number puzzle, for when you have five minutes and no particular plan.
+  - name: Mustard Terminal
+    icon: terminal
+    link: muxterm
+    desc: >
+      A terminal for those occasions when nothing else will do. <em>Best left alone unless you know what you are
+      typing.</em>
+  - name: PortMaster
+    icon: portmaster
+    desc: >
+      A whole world of games and applications built for Linux handhelds. Ports and their updates are installed
+      through here.
+  - name: PPSSPP
+    icon: ppsspp
+    desc: >
+      A PSP emulator, capable of running things rather more crisply than the original hardware ever managed.
+  - name: RetroArch
+    icon: retroarch
+    desc: >
+      The frontend for emulators, game engines, and media players that runs a great deal of your library.
+  - name: ScummVM
+    icon: scummvm
+    desc: >
+      <a href="https://www.scummvm.org">Script Creation Utility for Maniac Mansion Virtual Machine</a>, which runs
+      the classic point and click adventures and role playing games, <em>provided you already have their data
+      files</em>.
+
+hidden:
+  - name: Application Information
+    desc: >
+      Press <strong>MENU</strong> on an application to read what it does. Applications supply their own description,
+      so what you see comes from its creator.
+
+tip:
+  - info: Archive Manager, Task Toolkit, and vTree Gold always sit at the top of the list, no matter how much else you install.

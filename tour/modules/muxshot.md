@@ -5,6 +5,7 @@ module: muxshot
 glyph: muxshot
 permalink: /tour/modules/muxshot
 parent: Information
-nav_order: 2
+grand_parent: MustardOS Frontend
+nav_order: 3
 has_toc: false
 ---

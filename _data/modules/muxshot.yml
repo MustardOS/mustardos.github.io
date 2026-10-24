@@ -1,7 +1,7 @@
 description: >
   The Screenshot Viewer displays all captured images taken through MustardOS. It allows you to browse, preview, 
   and manage your screenshots directly from the device. Use the available controls to navigate, hide the menu 
-  for an unobstructed view, or delete unwanted captures with ease.
+  for an unobstructed view, or delete unwanted captures.
 
 goback: muxinfo
 

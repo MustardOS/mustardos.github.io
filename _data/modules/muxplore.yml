@@ -1,7 +1,8 @@
 description: >
-  The Content Explorer is where all playable and viewable content is displayed. It automatically merges all mounted 
-  storage devices and presents folders and content in an organised way. Each item includes visual indicators showing 
-  whether it has been played before, is part of a collection, or is ready for launch through an assigned core.
+  Where all of your playable content lives. Every card and drive you have attached is brought together into one
+  tidy view, with folders and files arranged however you have chosen to organise them.<br><br>Each item carries
+  small markers telling you whether you have played it before, whether it belongs to a collection, and whether it
+  is ready to launch. Press <strong>MENU</strong> at any time for the list of things you can do from here.
 
 goback: muxlaunch
 
@@ -10,23 +11,80 @@ visible:
     icon: folder
     link: muxoption
     desc: >
-      Displays folders containing compatible content. MustardOS does not enforce strict naming conventions, 
-      allowing you to name and structure your folders however you prefer, including nested folders for organisation.
+      A folder holding compatible content. There are no naming rules to follow, so arrange and nest your folders
+      however suits you best.
   - name: Content File
     icon: rom
     link: muxoption
     desc: >
-      Represents an individual content file, such as a game or media item. Files are automatically launched with their
-      assigned system or emulator core, or you will be prompted to select one if no association exists.
+      A single piece of content. It launches with whatever system or core has been assigned to it, and if none has
+      been set you will be asked to pick one.
   - name: Previously Played (History)
     icon: history
     link: muxoption
     desc: >
-      Indicates content that has been launched before. This helps you quickly identify items with existing play 
-      history for easy access or relaunching.
+      Something you have launched before, marked so you can spot it quickly and pick up where you left off.
   - name: In Collection
     icon: collection
     link: muxoption
     desc: >
-      Marked content that has been added to one or more collections. These items remain accessible in both their 
-      original folder and any collection they belong to. This can be toggled in Interface Settings.
+      Something already added to one or more collections. It stays in its original folder as well, and you can hide
+      these from Customisation if you would rather not see them twice.
+
+hidden:
+  - name: More Actions
+    desc: >
+      Press <strong>MENU</strong> to open the actions list. Depending on where you are you will find
+      <strong>Information</strong>, the launch file actions below, <strong>Search</strong>, <strong>Sort
+      Order</strong>, <strong>Top Level</strong> to jump back to the root, and <strong>Help</strong>.
+  - name: Information
+    desc: >
+      Hold <strong>MENU</strong> on an item to open its Information straight away, or choose
+      <strong>Information</strong> from the actions list. It opens on the preview artwork when the item has some,
+      which can be a picture or a short video, and on the description otherwise. When an item has both, press
+      <strong>A</strong> to switch between <strong>Preview</strong> and <strong>Description</strong>.
+  - name: Set Launch File
+    desc: >
+      Highlight the file that starts a game inside its folder and choose <strong>Set Launch File</strong>. The
+      folder then shows as a single item named after the folder, which launches that file directly. Handy for games
+      made of many files, such as PICO-8 multicarts. Not offered for files sitting directly in <code>ROMS</code>.
+      <a href="/installation/launch-files">Folder Launch Files</a> explains it in full.
+  - name: Open Folder
+    desc: >
+      Highlight a folder that launches as a single item and choose <strong>Open Folder</strong> to browse inside it,
+      for example to add or update files. Press <strong>B</strong> to return to the item.
+  - name: Clear Launch File
+    desc: >
+      Choose <strong>Clear Launch File</strong> on the item, or on the chosen file inside its folder, and the folder
+      opens as an ordinary folder again. Hidden when kiosk mode locks Content Options.
+  - name: Search
+    link: muxsearch
+    desc: >
+      Choose <strong>Search</strong> from the actions list to hunt for something across every attached storage
+      device.
+  - name: Sort Order
+    link: muxorder
+    desc: >
+      Choose <strong>Sort Order</strong> from the actions list to change how this folder is arranged, from
+      alphabetical through to how recently or how often you have played something.
+  - name: Content Options
+    link: muxoption
+    desc: >
+      Press <strong>X</strong> on an item to open its options, covering core assignment, governor, control scheme,
+      and rather more besides.
+  - name: Add to Collection
+    link: muxcollect
+    desc: >
+      Press <strong>Y</strong> on an item to add it to a collection, or take it back out again.
+  - name: Shuffle Content
+    desc: >
+      Press <strong>R2</strong> to leap to something chosen at random within the current view.
+  - name: Skip Ahead
+    desc: >
+      The shoulder buttons move you through a long list in a hurry. From Customisation you can choose whether they
+      jump a page at a time or leap to the next starting letter.
+
+tip:
+  - info: Playlists keep multi-disc and multi-track games tidy. When a <code>.m3u</code>, <code>.cue</code>, or <code>.gdi</code> file sits in a folder, the files it lists in that same folder are hidden automatically, so only the playlist shows. A <code>.m3u</code> hides each disc it names, a <code>.cue</code> hides the track files on its <code>FILE</code> lines, and a <code>.gdi</code> hides the track files named in quotes. The names must match the files exactly. Turn on **Show Hidden Content** in Customisation to see everything again.
+  - info: If a folder has grown unmanageable, turn on **Group Content Items** in Customisation and everything is gathered into folders by starting letter for you.
+  - info: The first time you open this screen you will be offered a short guided tour. Press **X** on any of those messages to stop it if you would rather find your own way.

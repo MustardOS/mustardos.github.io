@@ -17,42 +17,42 @@ has_toc: false
 
 ## Advanced DraStic (trngaje) Keys
 
-| Button             | Action             |
+| Button | Action |
 |:-------------------|:-------------------|
-| F+Start            | Quit Drastic |
-| F+X                | Main Drastic Menu |
-| F+B                | Change Pixel/Blur Filter |
+| F+Start | Quit Drastic |
+| F+X | Main Drastic Menu |
+| F+B | Change Pixel/Blur Filter |
 | F+D-pad Left/Right | Change Screens Layout |
-| F+R2               | Quick Save |
-| F+L2               | Quick Load |
-| F+R1               | Fast Forward |
-| F+L1               | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
-| Just L2            | Change Main/Secondary Screens |
+| F+R2 | Quick Save |
+| F+L2 | Quick Load |
+| F+R1 | Fast Forward |
+| F+L1 | Enable/Disable D-Pad Stylus Mode(Use A to Click) |
+| Just L2 | Change Main/Secondary Screens |
 
 **When in D-Pad to Stylus mode**
 
-| Button             | Action             |
+| Button | Action |
 |:-------------------|:-------------------|
-| F+Y                | Change Stylus Icon/Style |
+| F+Y | Change Stylus Icon/Style |
 
-**Devices with analogue sticks**
+**Devices with sticks**
 
-| Button             | Action             |
+| Button | Action |
 |:-------------------|:-------------------|
-| Left Analog        | Stylus Controls |
-| R3                 | Stylus Click |
+| Left Stick | Stylus Controls |
+| R3 | Stylus Click |
 
 ## DraStic Keys
 
-| Button             | Action             |
+| Button | Action |
 |:-------------------|:-------------------|
-| R2                 | Enable/Disable D-Pad Stylus Mode |
-| R1                 | Stylus Click |
-| L2                 | Swap Screen |
-| Select + L2        | Save State |
-| Select + R2        | Load State |
-| Select + B         | Screen Orientation A |
-| Select + X         | Screen Orientation B |
+| R2 | Enable/Disable D-Pad Stylus Mode |
+| R1 | Stylus Click |
+| L2 | Swap Screen |
+| Select + L2 | Save State |
+| Select + R2 | Load State |
+| Select + B | Screen Orientation A |
+| Select + X | Screen Orientation B |
 
 ## Toggle Bilinear / Nearest Filter
 
@@ -84,21 +84,21 @@ xxd drastic >drastic.txt
 
 # Check for Bilinear Scaling
 if grep -q "6c69 6e65 6172" drastic.txt; then
-	echo "Bilinear Scaling detected" >/tmp/muxlog_info
-	# Swap Scaling Method
-	sed -i 's/6c69 6e65 6172/3000 0000 0000/g' drastic.txt
-	xxd -r drastic.txt >drastic
-	echo "Setting to Nearest Neighbour" >/tmp/muxlog_info
-	rm drastic.txt
+ echo "Bilinear Scaling detected" >/tmp/muxlog_info
+ # Swap Scaling Method
+ sed -i 's/6c69 6e65 6172/3000 0000 0000/g' drastic.txt
+ xxd -r drastic.txt >drastic
+ echo "Setting to Nearest Neighbour" >/tmp/muxlog_info
+ rm drastic.txt
 
 # Check for Nearest Neighbour Scaling
 elif grep -q "3000 0000 0000" drastic.txt; then
-	echo "Nearest Neighbour Scaling detected" >/tmp/muxlog_info
-	# Swap Scaling Method
-	sed -i 's/3000 0000 0000/6c69 6e65 6172/g' drastic.txt
-	xxd -r drastic.txt >drastic
-	echo "Setting to Bilinear" >/tmp/muxlog_info
-	rm drastic.txt
+ echo "Nearest Neighbour Scaling detected" >/tmp/muxlog_info
+ # Swap Scaling Method
+ sed -i 's/3000 0000 0000/6c69 6e65 6172/g' drastic.txt
+ xxd -r drastic.txt >drastic
+ echo "Setting to Bilinear" >/tmp/muxlog_info
+ rm drastic.txt
 fi
 
 echo "All Done!" >/tmp/muxlog_info

@@ -1,0 +1,22 @@
+description: >
+  Swap between the discs of multi-disc content, such as titles that span more than one CD. This screen only
+  appears in the Pickles Menu when the loaded content actually reports more than one disc image.
+
+goback: muxretro
+
+visible:
+  - name: Eject / Insert Disc
+    icon: eject
+    desc: >
+      The top row, mirroring a real console's lid switch. Press <strong>A</strong> to open the lid before
+      picking a different disc, then press it again to close the lid on whatever disc is currently selected.
+  - name: Disc List
+    icon: cd
+    desc: >
+      Every available disc for the current content, labelled by the core where possible or simply numbered
+      otherwise. The currently inserted disc is marked in the list.
+  - name: Swap Disc
+    icon: cd
+    desc: >
+      With the lid open, highlight a disc and press <strong>A</strong> to select it and close the lid in one
+      step. Selecting a disc while the lid is still closed prompts you to eject first.

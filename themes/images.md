@@ -1,5 +1,5 @@
 ---
-title: Image Assistance
+title: Images and Video
 layout: default
 permalink: /themes/images
 parent: Themes
@@ -7,51 +7,56 @@ nav_order: 2
 has_toc: false
 ---
 
-# Image Format
+# **Images and Video**
 
-There are currently three compatible image formats for themes with specific use cases;
+Wallpapers, artwork and video bring a theme to life. Use vector artwork where you can, and export other artwork at the
+size of the screen it is for.
 
-- **`.bmp`** - the bootlogo only (24-bit, True Colour bitmap)
-- **`.png`** - any static images within `./images/static/`, backgrounds in `./images/wall/`, and overlay.png
+## Supported files
 
-**If you decide to use images for your themes please ensure that you use the correct resolution for the device!**
+<div class="guide-paths" markdown="0">
+    <div><code>Boot logo</code><span>24-bit true colour <code>.bmp</code></span></div>
+    <div><code>Wallpapers and overlays</code><span><code>.png</code> or <code>.svg</code></span></div>
+    <div><code>Video wallpaper</code><span><code>.mp4</code></span></div>
+    <div><code>Glyphs</code><span><code>.svg</code>, <code>.png</code>, <code>.jpg</code>, <code>.jpeg</code>,
+        <code>.webp</code>, <code>.qoi</code>, <code>.tga</code>, <code>.gif</code>, <code>.bmp</code> or <code>.pcx</code></span></div>
+    <div><code>Static and catalogue artwork</code><span>The same formats as glyphs, where the image loader supports
+        them.</span></div>
+</div>
 
+If several glyph files share a name, MustardOS uses the first format in the order above. SVG keeps glyphs sharp at every
+resolution.
 {: .note }
-> If you are struggling to find a method to easily convert an image to a 24-bit `.bmp` file, there are
-> many [online converters](https://online-converting.com/image/convert2bmp/) that can do this for you.
 
-# Menu Graphic Design
+<div class="guide" markdown="0">
+    <h2 class="guide-heading">Wallpapers</h2>
 
-If you are new to graphic design in this context, there are many places you can start with to get the most out of the
-MustardOS theme engine. Most people designing visual assets will use software such as Photoshop, Photopea (this one
-is [online and free to use](https://www.photopea.com/)), Illustrator, GIMP, Procreate, Aesprite (pixel art app), or
-Affinity.
+    <div class="guide-grid">
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxcustom/backgroundscale.svg" alt="" width="48" height="48">
+            <span class="guide-title">Static wallpaper</span>
+            <span class="guide-text">Put <code>default.png</code> or <code>default.svg</code> in <code>image/wall</code>
+                for every screen, and <code>{module}.png</code> or <code>{module}.svg</code> for a single screen.
+                Artwork for one resolution goes in <code>{resolution}/image/wall</code>.</span>
+        </div>
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxcustom/videowallpaper.svg" alt="" width="48" height="48">
+            <span class="guide-title">Video wallpaper</span>
+            <span class="guide-text">Use <code>image/wall/{module}.mp4</code> for a screen, and
+                <code>image/background.mp4</code> for every other screen. Users turn it on with Video Wallpaper in
+                Configuration &gt; Customisation.</span>
+        </div>
+    </div>
+</div>
 
-With the introduction of individual list item images , theme creators can simulate complex navigation you would see in
-other CFWs or software menus. The most common use case example for MustardOS is altering the main menu (`muxlaunch`)
-from vertical lists to icon-based navigation.
+Keep a static wallpaper even when you supply video. It is shown when video is turned off, cannot play, or a screen has
+no video of its own.
 
-|            <img height="320" src="https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GamePal.gif"/>            |
-|:-----------------------------------------------------------------------------------------------------------------------------------------:|
-|                                **Single row horizontal navigation across two pages**<br>_GamePal (by vacarotti)_                                |
+## Static artwork
 
-|         <img height="320" src="https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/GbOS.gif"/>         |
-|:--------------------------------------------------------------------------------------------------------------------------:|
-|                                   **Multiple row horizontal navigation**<br>_GbOS (by ciskao)_                                   |
+Static artwork is drawn over a screen from `image/static/{module}`. A screen can also show artwork for one item, such as
+`image/static/muxlaunch/explore.png`. The scheme decides where it sits and how transparent it is, alongside the lists,
+header and panels.
 
-|             <img height="320" src="https://raw.githubusercontent.com/VagueParade/dumping-ground/main/theme_gifs/Plexus.gif"/>              |
-|:----------------------------------------------------------------------------------------------------------------------------------------------:|
-|                                           **Vertical scrolling navigation**<br>_Plexus (by LMarcoMiranda)_                                           |
-
-To achieve this, refer to both the Theme Structure and Scheme File pages - but to put it simply in these three specific
-cases...
-
-- Create an image folder within `./image/wall/` named `muxlaunch`, with files
-  named; `explore.png`, `collection.png`, `history.png`, `apps.png`, `info.png`, `config.png`, `reboot.png`,
-  and `shutdown.png`
-- Duplicate `./scheme/default.ini` and rename it to `muxlaunch.ini`. All values here under `[LIST]` must have their
-  alphas set to `=0` to make the list items invisible, and `[MISC] NAVIGATION_TYPE=0` or `=1` (`0` is vertical
-  navigation, `1` is horizontal navigation).
-
-Feel free to take inspiration from other themes if you are struggling to find a way to implement the perfect type of
-menu navigation for your theme.
+[Theme Structure]({{site.baseurl}}/themes/structure) explains how resolution folders fall back to the theme root, and
+[Scheme Files]({{site.baseurl}}/themes/scheme) covers placement, alignment, transparency and layout.

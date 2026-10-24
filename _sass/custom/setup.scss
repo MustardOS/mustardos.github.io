@@ -1,0 +1,16 @@
+// Wider content column than the just-the-docs default of 50rem, so the reference
+// tables, device lists and system pages have room. The md breakpoint deliberately
+// stays at the original 50rem: it is the point the sidebar becomes fixed, and
+// tying it to the content width would hold the two column layout back to 1024px.
+
+$content-width: 62rem;
+
+$media-queries: (
+  xs: 20rem,
+  sm: 31.25rem,
+  md: 50rem,
+  lg: $content-width + $nav-width,
+  xl: 87.5rem,
+);
+
+$search-results-width: $content-width - $nav-width;

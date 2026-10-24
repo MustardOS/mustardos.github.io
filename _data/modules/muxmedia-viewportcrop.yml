@@ -1,0 +1,21 @@
+description: >
+  Trim the visible edges of video content.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Crop Top
+    icon: croptop
+    desc: Trim the top edge of the picture.
+  - name: Crop Bottom
+    icon: cropbottom
+    desc: Trim the bottom edge of the picture.
+  - name: Crop Left
+    icon: cropleft
+    desc: Trim the left edge of the picture.
+  - name: Crop Right
+    icon: cropright
+    desc: Trim the right edge of the picture.
+  - name: Centre Crop
+    icon: centrecrop
+    desc: Apply matching crop behaviour around the centre of the picture.

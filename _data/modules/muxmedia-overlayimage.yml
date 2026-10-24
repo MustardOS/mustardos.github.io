@@ -1,0 +1,28 @@
+description: >
+  Choose artwork to place over video content. Wasabi keeps its overlay catalogue, downloads, and Collection separate
+  from Pickles.
+
+goback: muxmedia-settings
+
+visible:
+  - name: Downloads
+    icon: download
+    desc: Download overlay packages and choose the resolution prepared for the current display.
+  - name: Collection
+    icon: star
+    desc: Keep references to chosen overlays in one short list.
+  - name: None
+    icon: overlay
+    desc: Disable the selected overlay image.
+  - name: Creator Folders
+    icon: folder
+    desc: Browse one level of folders, each named after a creator, sorted alphabetically.
+  - name: Collect or Remove
+    icon: collection
+    desc: Press <strong>Y</strong> to collect an overlay, or remove it from Collection.
+  - name: Delete
+    icon: overlay
+    desc: Press <strong>X</strong> to remove a user-installed overlay after confirmation.
+
+tip:
+  - info: Overlay Image appears when Overlay is set to Downloaded. Catalogue mode chooses matching artwork automatically.

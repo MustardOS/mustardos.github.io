@@ -1,0 +1,34 @@
+description: >
+  Add a shaped edge around the game picture. Vignette changes appear immediately, which makes it easy to tune the
+  result while the settings remain open.
+
+goback: muxretro-settings
+
+visible:
+  - name: Vignette
+    icon: border
+    desc: Choose Round, Square, Squircle, Flower, Triangle, or Disabled.
+  - name: Scaling
+    icon: aspectratio
+    desc: Fit the vignette to the full frame or to the game picture's aspect ratio.
+  - name: Width
+    icon: viewportx
+    desc: How far across the clear middle reaches. At 100% it meets the left and right edges, so only the corners are touched.
+  - name: Height
+    icon: viewporty
+    desc: How far up and down the clear middle reaches. At 100% it meets the top and bottom edges, so only the corners are touched.
+  - name: Offset X
+    icon: viewportx
+    desc: Slides the clear middle left or right, handy when the picture itself is not centred.
+  - name: Offset Y
+    icon: viewporty
+    desc: Slides the clear middle up or down, handy when the picture itself is not centred.
+  - name: Softness
+    icon: texturefilter
+    desc: Set how gradually the vignette blends into the picture.
+  - name: Strength
+    icon: contrast
+    desc: Set how strongly the edge colour is applied.
+  - name: Colour
+    icon: saturation
+    desc: Choose a black or white vignette.

@@ -1,0 +1,29 @@
+description: >
+  Choose downloaded artwork for the Overlay section. The browser keeps catalogue actions at the top and sorts
+  folders and files alphabetically without regard to letter case.
+
+goback: muxretro-settings
+
+visible:
+  - name: Downloads
+    icon: overlay
+    desc: >
+      Fetch the current overlay catalogue when a network connection is available. Entries are grouped by creator and
+      report Not Installed, Installed, or Update.
+  - name: Collection
+    icon: overlay
+    desc: >
+      A short list of overlays you have collected. Each entry references its original path, so updates to the original
+      are reflected here. Remove only removes the Collection reference.
+  - name: None
+    icon: overlay
+    desc: Select no downloaded overlay image.
+  - name: Creator Folders
+    icon: folder
+    desc: >
+      Downloaded and manually added overlays sit in a folder named after their creator. Files inside a deeper
+      folder are not included.
+
+tip:
+  - info: Use Collect on an original item to place it in Collection.
+  - info: Adjustment, Cropping, and Opacity are handled from the Overlay section after an image is selected.

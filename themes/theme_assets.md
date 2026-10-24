@@ -1,5 +1,5 @@
 ---
-title: Theme Assets (Grid Images)
+title: Theme Assets
 layout: default
 permalink: /themes/assets
 parent: Themes
@@ -7,96 +7,53 @@ nav_order: 6
 has_toc: false
 ---
 
-# Asset File Introduction
+# **Theme Assets**
 
-Sometimes when creating a theme there will be a need to include files that are not part of theme but still required by
-the theme. This guide will specifically be focused on including grid icon images for a theme that supports grid mode in
-content explorer but it can be used to include any files with your theme. This can be accomplished by
-including `assets.muxzip` file in root of your theme. When theme is selected from theme picker the `assets.muxzip` file
-in the root of theme will also be extracted.
+A theme can bring matching artwork with it, such as folder and application tiles. Put those files in an optional
+`assets.muxzip` in the theme root, and they are installed when the theme is selected.
 
-> *`MustardOS - Pixie - Grid` on the [theme](https://theme.muos.dev/) website is good example of this.*
-
-# Asset File Structure For Grid Images
-
-When creating an `assets.muxzip` you should follow the structure of `/catalogue/Application/grid/` for application
-images and `/catalogue/Folder/grid/` for content explorer images.
+## Example
 
 ```
-├── catalogue
-│   ├── Application
-|   │   └── grid
-|   |   │   └── app.png
-|   |   │   └── archive.png
-|   |   │   └── dingux.png
-|   |   │   └── flip.png
-|   |   │   └── moonlight.png
-|   |   │   └── ...
-|   |   │   └── {Resolution}
-|   |   |   │   └── app.png
-|   |   |   │   └── archive.png
-|   |   |   │   └── dingux.png
-|   |   |   │   └── flip.png
-|   |   |   │   └── moonlight.png
-|   |   |   │   └── ...
-│   ├── Folder
-|   │   └── grid
-|   |   │   └── Atari 2600.png
-|   |   │   └── Atari 5200.png
-|   |   │   └── Atari 7800.png
-|   |   │   └── default.png
-|   |   │   └── default_focused.png
-|   |   │   └── ...
-|   |   |   │   └── {Resolution}
-|   |   |   │   └── Atari 2600.png
-|   |   |   │   └── Atari 5200.png
-|   |   |   │   └── Atari 7800.png
-|   |   |   │   └── default.png
-|   |   |   │   └── default_focused.png
-|   |   |   │   └── ...
+catalogue
+├── Application
+│   └── grid
+│       ├── app.png
+│       └── 1280x720
+│           └── app.png
+└── Folder
+    └── grid
+        ├── default.png
+        ├── default_focused.png
+        └── Nintendo Game Boy Advance.png
 ```
 
-# Displaying Grid Images
+## How artwork is matched
 
-When displaying grid images MustardOS will look in the following locations:
+<div class="guide-paths" markdown="0">
+    <div><code>Applications</code><span>Use the application's icon name.</span></div>
+    <div><code>Collections</code><span>Use the collection's name.</span></div>
+    <div><code>Explore Content</code><span>Uses the folder name first, then the catalogue name of the system assigned to
+        it.</span></div>
+    <div><code>default.png</code><span>The tile used when nothing more specific exists.</span></div>
+    <div><code>{name}_focused.png</code><span>A highlight layer for one item. <code>default_focused.png</code> is the
+        shared highlight layer.</span></div>
+</div>
 
-| Screen           | Grid Path                      | File Name                                                                                                                                                   |
-|------------------|--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applications     | `/catalogue/Application/grid/` | File name is pulled from `ICON` variable at the top of the application script file. <br> If `ICON` variable does not exist in the script `app` will be used |
-| Collections      | `/catalogue/Collection/grid/`  | Matches the name of the Collection                                                                                                                          |
-| Content Explorer | `/catalogue/Folder/grid/`      | Matches on rom folder name.<br> If it does not find a match it will then look for an image that matches the catalogue name of the folder's assigned core.   |
+Artwork in a resolution folder is checked before the main `grid` folder.
 
-When display a grid image MustardOS will search for images in this order:
+## Packaging
 
-`/{Grid Path}/{Resolution}/{Filename}.png`<br>
-`/{Grid Path}/{Resolution}/default.png`
+<div class="guide-steps" markdown="0">
+    <div class="guide-step"><strong>Zip the folders</strong>Make a normal ZIP of the data folders, such as
+        <code>catalogue</code>.</div>
+    <div class="guide-step"><strong>No outer folder</strong>Zip the contents themselves, with no folder around
+        them.</div>
+    <div class="guide-step"><strong>Rename it</strong>Name the file <code>assets.muxzip</code> and put it in the theme
+        root.</div>
+</div>
 
-If the image is not found it will then search the root of the image folder:
+Only include files that belong to your theme, so selecting it never replaces anything else the user has.
+{: .warning }
 
-`/{Grid Path}/{Filename}.png`<br>
-`/{Grid Path}/default.png`
-
-**Note:** `default.png` is a fall back in case MustardOS cannot find an image associated with the grid item. Typically
-theme creators would use an image to indicate that this grid item does not have it's own image file like a question
-mark.
-
-After all grid items are populated MustardOS will overlay a focused image on top of the grid item image. The focused
-image is not required but allows the user to provide a custom indicator for denoting the currently selected item. You
-have two options for focused image files:
-
-* `{Filename}_focused.png` allows for having a custom focused image per grid item.
-* `default_focused.png` this applies to all items that do not have their own specific focused image.  
-  It will search for these images in the same locations as the regular grid icons.
-
-> *Rom folders will vary from user to use so it is a good idea to use the catalogue names for the image file names
-like `/catalogue/Folder/grid/Sega Mega Drive - Genesis.png`. This ensures that MustardOS is able to display the correct
-image regardless of what user has named their folders.*
-
-# Zipping Your Assets
-
-- Select files and folders you want to include in your assets file. In the case of grid images this would be
-  the `catalogue` folder.
-- Use a program such as WinRar (Windows), Keka (macOS), and 7zip (Linux/Windows) to compress your theme assets as one
-  zip.
-- Rename the file to `assets.muxzip`
-- Add `assets.muxzip` to the root of your theme.
+[Catalogue]({{site.baseurl}}/installation/catalogue) covers every kind of artwork and how it is looked up.

@@ -6,6 +6,30 @@ url: https://muos.dev
 
 color_scheme: muos
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      has_toc: false
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-last-modified-at
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/MustardOS/mustardos.github.io"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+last_edit_timestamp: true
+last_edit_time_format: "%B %-d, %Y"
+
+sass:
+  sourcemap: never
+  quiet_deps: true # silence deprecation warnings from just-the-docs' own vendored Sass, which we do not control
+  silence_deprecations: [import] # just-the-docs' own entry stylesheets still use @import; not ours to migrate
+
 aux_links:
   Download: /devices
   Community: https://community.muos.dev/

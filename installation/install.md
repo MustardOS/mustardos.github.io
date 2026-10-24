@@ -7,24 +7,24 @@ parent: Installation
 has_children: false
 ---
 
-# Download
+# **Download**
 
 [View Supported Devices](/devices){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 .text-grey-dk-300 }
 
 {: .note }
 > Always ensure you download from our official download page or supported mirrors!
 
-# Extracting
+# **Extracting**
 
-MustardOS images are distributed as `.img.gz` files and most imaging software shouldn't require them to be extracted.
+MustardOS images are distributed as `.img.gz` files and most imaging software should not require them to be extracted.
 
-# SD Card Quality
+# **SD Card Quality**
 
 Please make sure that you flash any CFW on a **quality SD card of 16GB or larger**.
-This will ensure your data stays safe and doesn't fail on you in the middle of catching that rare Pokémon!
+This will ensure your data stays safe and does not fail on you in the middle of catching that rare Pokémon!
 **Samsung and Sandisk cards are recommended.**
 
-# Flashing
+# **Flashing**
 
 There are several recommended programs you can use to flash your SD card
 
@@ -41,7 +41,7 @@ There are several recommended programs you can use to flash your SD card
 ## Raspberry Pi Imager
 
 After countless flashes we have determined that the most user friendly tool with the highest chance of success is
-Raspberry Pi Imager so we'll focus on that for now.
+Raspberry Pi Imager so we will focus on that for now.
 
 | ![](assets/images/rpi-001.png) | ![](assets/images/rpi-002.png) |
 |:------------------------------:|:------------------------------:|
@@ -57,9 +57,9 @@ Raspberry Pi Imager so we'll focus on that for now.
 | ![](assets/images/rpi-011.png) | ![](assets/images/rpi-012.png) |
 |         Verify Begins          | Eject and insert into console  |
 
-# Advanced Flashing
+# **Advanced Flashing**
 
-If you're not afraid of using command line tools you can use dd to get the job done.
+If you are not afraid of using command line tools you can use dd to get the job done.
 You will need to find out what device path your SD card is located.
 Make sure to replace `sd_device` with your SD card device location and `muos_image` with the image name.
 
@@ -75,11 +75,15 @@ sudo diskutil unmountDisk force /dev/diskX
 sudo dd if=/path/to/image_name_here.img of=/dev/rdiskX bs=4M status=progress && sync
 ```
 
-# Finishing Up
+# **Finishing Up**
 
-Once flashing to an SD card is successful you can put it in your device and switch it on
-It will run through a few menus to help get setup first and it will then do the rest of the setup for you.
-This will create all the needed files and folders for you to put your favourite content on.
+{: .note }
+> Read [First Steps](/installation/first-steps) for a walk through the first boot, your card folders, adding content
+> and keeping your saves safe.
+
+
+Once the card has flashed successfully, put it in your device and switch it on. A few menus help you get set up,
+then MustardOS does the rest, creating all the files and folders for your favourite content.
 
 {: .important-title }
 > **Be Patient**
@@ -87,7 +91,7 @@ This will create all the needed files and folders for you to put your favourite 
 >If you find that your device is stuck during "Factory Reset" please give it at least 5-10 minutes before hitting the
 > reset button. This should not happen, but if it does please make a post in the Community Forum issues channel.
 
-# Updating An Existing Install
+# **Updating An Existing Install**
 
 When updating to a new version of MustardOS we always recommend that you backup your data and flash a fresh image.   
 If you have used our Storage options to keep saves, config etc... on SD2 this method is quick and painless.

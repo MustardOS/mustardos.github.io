@@ -10,9 +10,10 @@ visible:
   - name: Sleep Function
     icon: shutdown
     desc: >
-      Toggle between several options that changes how the power button acts when the device is powered on. Shutdown 
-      after a period of time during sleep, instant shutdown, or keep the device powered on until the power button is 
-      pressed again.
+      What a short press of the power button does. <strong>Sleep Until Wake</strong> sleeps until the power button
+      is pressed again, <strong>Instant Shutdown</strong> turns the device off, and the timed choices sleep first and
+      then shut down if the device has not been woken in that time. <strong>Disabled</strong> does nothing. Holding
+      the button down always shuts the device off.
   - name: Low Battery Indicator
     icon: battery
     desc: >
@@ -34,10 +35,17 @@ visible:
     desc: >
       Determines which CPU governor is applied during the idle display timeout.
   - name: Default Governor
-    icon: gov_fe
+    icon: gov_default
     desc: >
       Sets the CPU governor used during normal device operation.
-  - name: Frontend Screensaver
-    icon: screensaver
+  - name: Screensaver Type
+    icon: saver_type
     desc: >
-      Enables or disables the frontend screensaver when the idle display timeout is reached.
+      Choose which frontend screensaver is shown once the idle display timeout is reached, or disable it entirely.
+  - name: Screensaver Speed
+    icon: saver_speed
+    desc: >
+      Adjust how quickly the frontend screensaver animates once it is active.
+
+tip:
+  - info: On the Anbernic H700 devices (the RG28XX, RG34XX, RG35XX and RG40XX families, the RG CubeXX and the RGSP), **Sleep Until Wake** uses the deepest standby the hardware has. Only the memory stays powered, and the power button is the only thing that wakes it, so it uses far less battery than the timed choices. Plugging in a charger does not wake it. The timed choices keep an alarm armed so the device can shut itself down later, which needs the lighter standby.

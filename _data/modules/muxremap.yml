@@ -1,0 +1,117 @@
+description: >
+  Remap the physical buttons and sticks on a connected controller to different in-game inputs, independently
+  of the device's built-in default mapping.<br><br>Highlight a button and press <strong>A</strong> to capture the
+  next physical input you press, <strong>X</strong> to clear an individual mapping, or <strong>Y</strong> to reset
+  everything back to the currently saved layout. Use <strong>L1</strong>/<strong>R1</strong> to page through the
+  button list, and switch between the <strong>Retro</strong> and <strong>Modern</strong> layouts, each stored and
+  applied independently, from the Active Layout row below.
+
+goback: muxtweakgen
+
+visible:
+  - name: Controller
+    icon: input
+    desc: >
+      Shows the currently detected controller. If more than one controller is connected, press <strong>A</strong> or use
+      <strong>L1</strong>/<strong>R1</strong> while this row is focused to cycle between them.
+  - name: Active Layout
+    icon: layout
+    desc: >
+      Press <strong>Left</strong>, <strong>Right</strong>, or <strong>A</strong> to switch between the <strong>Retro</strong> and <strong>Modern</strong> input layouts. Each
+      layout keeps its own independent set of button mappings, so you can maintain two different schemes on
+      the same controller.
+  - name: A
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>A</strong> button.
+  - name: B
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>B</strong> button.
+  - name: C
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>C</strong> button, on controllers that have one.
+  - name: X
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>X</strong> button.
+  - name: Y
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>Y</strong> button.
+  - name: Z
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>Z</strong> button, on controllers that have one.
+  - name: L1
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>L1</strong> shoulder button.
+  - name: R1
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>R1</strong> shoulder button.
+  - name: L2
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>L2</strong> trigger.
+  - name: R2
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>R2</strong> trigger.
+  - name: L3
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>L3</strong> stick click.
+  - name: R3
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>R3</strong> stick click.
+  - name: Start
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>Start</strong> button.
+  - name: Select
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>Select</strong> button.
+  - name: Menu
+    icon: input
+    desc: >
+      Remaps the physical input captured for the <strong>Menu</strong> (guide) button.
+  - name: DPAD Up
+    icon: input
+    desc: >
+      Remaps the physical input captured for <strong>DPAD Up</strong>.
+  - name: DPAD Down
+    icon: input
+    desc: >
+      Remaps the physical input captured for <strong>DPAD Down</strong>.
+  - name: DPAD Left
+    icon: input
+    desc: >
+      Remaps the physical input captured for <strong>DPAD Left</strong>.
+  - name: DPAD Right
+    icon: input
+    desc: >
+      Remaps the physical input captured for <strong>DPAD Right</strong>.
+  - name: Left X
+    icon: input
+    desc: >
+      Remaps the physical axis captured for the left stick's horizontal movement.
+  - name: Left Y
+    icon: input
+    desc: >
+      Remaps the physical axis captured for the left stick's vertical movement.
+  - name: Right X
+    icon: input
+    desc: >
+      Remaps the physical axis captured for the right stick's horizontal movement.
+  - name: Right Y
+    icon: input
+    desc: >
+      Remaps the physical axis captured for the right stick's vertical movement.
+
+tip:
+  - info: The DPAD and both **A** and **B** are always kept mapped to something. If a capture would leave one of them completely unassigned, the device's own default physical input for it is restored automatically on save so you cannot lock yourself out of the frontend.

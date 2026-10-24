@@ -5,6 +5,6 @@ module: muxtag
 glyph: muxtag
 permalink: /tour/modules/muxtag
 parent: Content Option
-nav_order: 6
+nav_order: 8
 has_toc: false
 ---

@@ -1,0 +1,63 @@
+description: >
+  A read-only reference screen for whatever is currently running, useful for troubleshooting or just
+  satisfying your curiosity about exactly what core and content you are playing.
+
+goback: muxretro
+
+visible:
+  - name: Core Name
+    icon: core
+    desc: >
+      The display name of the libretro core currently hosting the content.
+  - name: Core Version
+    icon: version
+    desc: >
+      The version string reported by the loaded core.
+  - name: Content
+    icon: content
+    desc: >
+      The file name of the content currently loaded.
+  - name: Content Hash
+    icon: hash
+    desc: >
+      A CRC32 checksum of the content file, calculated in the background and cached so it is not recalculated
+      on every launch.
+  - name: Loaded Via
+    icon: loaded
+    desc: >
+      How the content reached the core, for example directly from disk or as a member extracted from an
+      archive.
+  - name: Active Patches
+    icon: patch
+    desc: >
+      The number of softpatches (IPS, BPS, or UPS) currently applied on top of the content, if any.
+  - name: Resolution
+    icon: resolution
+    desc: >
+      The raw frame size being rendered by the core, before any scaling is applied.
+  - name: Display Output
+    icon: display
+    desc: >
+      The final on-screen output size, along with the scaling mode currently in use.
+  - name: Target FPS
+    icon: fps
+    desc: >
+      The frame rate the core itself is designed to run at.
+  - name: Audio Output
+    icon: audio
+    desc: >
+      The active audio sample rate and whether output is mono or stereo.
+  - name: Rumble Support
+    icon: rumble
+    desc: >
+      Whether the current device supports rumble feedback.
+  - name: Disc Count
+    icon: disc
+    desc: >
+      How many discs the current content reports, only shown for multi-disc content.
+  - name: System BIOS
+    icon: folder
+    desc: >
+      A summary of any required firmware files for the core, showing how many, if any, are missing from
+      your system BIOS folder. Select this row to see every required and optional file individually, each
+      marked as <strong>Valid</strong> or <strong>Missing</strong>. Only shown for cores that need firmware.

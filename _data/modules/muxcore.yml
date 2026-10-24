@@ -1,0 +1,28 @@
+description: >
+  Every published Libretro core in one list, showing what is installed and whether a newer build is ready. Press
+  <strong>X</strong> to check the current catalogue, then select a core to install, update, or reinstall it.
+
+goback: muxconfig
+
+visible:
+  - name: Update
+    icon: download
+    desc: >
+      A newer published build is available. Updated cores are sorted alphabetically at the top of the list so they
+      are easy to find. Press <strong>A</strong> to download and install the update.
+  - name: Not Installed
+    icon: download
+    desc: >
+      The core is available for this release and is not currently on the device. Press <strong>A</strong> to download
+      and install it.
+  - name: Installed
+    icon: downloaded
+    desc: >
+      The installed core matches the published build. Press <strong>A</strong> to reinstall a fresh copy.
+
+tip:
+  - info: Press **X** whenever you want to refresh the catalogue and check for updates.
+  - info: The list is alphabetical within each state, with updates ahead of installed cores.
+  - info: A network connection is required to check, install, update, or reinstall a core.
+  - info: Cores that belong to Additional Cores are only listed once that setting is enabled in Advanced.
+

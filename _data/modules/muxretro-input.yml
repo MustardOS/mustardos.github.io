@@ -1,0 +1,52 @@
+description: >
+  Which controller plays as which player, and what each button does. Up to four players are supported, and
+  each one gets its own screen for button mapping and other per-player settings.
+
+goback: muxretro-settings
+
+visible:
+  - name: Hotkeys
+    icon: hotkeys
+    link: muxretro-hotkeys
+    desc: >
+      The button combinations you can use while playing, such as fast forward and quick save. Switch any of
+      them off, or change how fast fast forward actually goes.
+  - name: Port 1
+    icon: port1
+    link: muxretro-inputport
+    desc: >
+      Player one. Opens that player's own settings screen, the same one every other port opens.
+  - name: Port 2
+    icon: port2
+    link: muxretro-inputport
+    desc: >
+      Player two's settings screen.
+  - name: Port 3
+    icon: port3
+    link: muxretro-inputport
+    desc: >
+      Player three's settings screen.
+  - name: Port 4
+    icon: port4
+    link: muxretro-inputport
+    desc: >
+      Player four's settings screen.
+  - name: Auto Assign
+    icon: autoassign
+    desc: >
+      Hand every player back to MustardOS to sort out, so each connected controller is given a sensible
+      player number automatically.
+  - name: Controller Options
+    icon: controlleroptions
+    link: muxretro-controlleroptions
+    desc: >
+      Rumble strength and stick response settings, which apply to every player.
+  - name: Reset Input Settings
+    icon: inputreset
+    desc: >
+      Put everything on this screen, and the stick and rumble settings, back to normal in one go.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Each player's **Controller** choice runs through **Auto**, every controller currently connected that another player has not already taken, and **None**. A controller that is already in use elsewhere is skipped, so you cannot accidentally give it to two players at once.
+  - info: Player one always ends up with your device's own buttons unless you have deliberately given them to somebody else. So if you set up a Bluetooth controller as player one and later start the game without it, you can still move.

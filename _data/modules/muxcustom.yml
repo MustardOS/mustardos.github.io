@@ -1,106 +1,450 @@
 description: >
-  Tailor the look, sound, and behaviour of the frontend. From changing themes and fonts to sound effects, these options
-  let you personalise the user experience to your liking. Adjusting these settings affects only the interface and does
-  not alter how content runs or performs.
+  Everything that decides how your device looks, sounds, and presents your content, split into sections.<br><br>These
+  settings change what you see and hear while you browse, and leave your files and how content runs as they are.
 
 goback: muxconfig
 
-visible:
-  - name: Catalogue Sets
-    icon: catalogue
+sections:
+  - name: Header
     desc: >
-      Load and apply user created artwork catalogues that customise how content images and metadata are displayed. 
-      These sets can change the overall visual presentation of your library.
-  - name: RetroArch Configurations
-    icon: config
+      Chooses what appears in the strip along the top of the screen. Turn off anything you do not need for a
+      cleaner, quieter header.
+    items:
+      - name: Battery
+        icon: battery
+        desc: >
+          Choose how the battery indicator appears: <strong>Glyph Only</strong>, <strong>Percent Only</strong>,
+          <strong>Percent + Glyph</strong>, or <strong>Hidden</strong> to leave it out of the header.
+      - name: Clock
+        icon: clock
+        desc: >
+          Show or hide the clock. Handy to turn off if you would rather not be reminded how long you have been
+          playing.
+      - name: Network
+        icon: network
+        desc: >
+          Show or hide the network glyph. Ideal for offline users who have no need for a Wi-Fi indicator.
+      - name: Bluetooth
+        icon: bluetooth
+        desc: >
+          Show or hide the Bluetooth glyph. Useful on devices without Bluetooth, or if you simply prefer a
+          tidier header.
+      - name: Sort Order
+        icon: sortorder
+        desc: >
+          Show or hide the small glyph that tells you how the current list is being sorted.
+      - name: Tag Order
+        icon: tagorder
+        desc: >
+          Show or hide the glyph that appears when tagged content is being sorted ahead of everything else.
+      - name: Screen Title
+        icon: headertitle
+        desc: >
+          Show or hide the title in the header, such as the name of the folder or screen you are currently in.
+
+  - name: Appearance
     desc: >
-      Load custom RetroArch configuration files for finer control over emulator behaviour and performance. Ideal for 
-      users who maintain multiple setups or experimental settings.
-  - name: Theme Picker
-    icon: theme
-    link: muxpicker
+      How the interface moves and reacts as you go from one thing to the next.
+    items:
+      - name: Element Transition
+        icon: elementtransition
+        desc: >
+          How dialogues, messages, and help boxes arrive on screen, whether fading in, sliding, bouncing, or
+          shooting in from a chosen direction. Set it to disabled if you would rather they simply appeared.
+      - name: Selection Intensity
+        icon: selectionanimation
+        desc: >
+          How lively the highlight is when you move between items, from disabled all the way through to maximum.
+      - name: Selection Direction
+        icon: selectionstyle
+        desc: >
+          Which way the highlight shakes when it lands on an item, or shake in every direction at once.
+      - name: List Glyph
+        icon: listglyph
+        desc: >
+          Show or hide the little glyphs beside items in lists. This does not affect the header, footer, or grid.
+      - name: Shadow Rendering
+        icon: rendershadows
+        desc: >
+          Toggles the soft shadow drawn behind list text and glyphs. Turning it off can feel a touch quicker on
+          gentler hardware.
+      - name: Message Duration
+        icon: notifytime
+        desc: >
+          How long passing messages linger on screen before making way for the next one.
+      - name: Overlay Pattern
+        icon: overlayimage
+        desc: >
+          Lays a subtle pattern over the interface, such as a dot lattice, checkerboard, or fine lines. Themes can
+          supply their own.
+      - name: Overlay Opacity
+        icon: overlaytransparency
+        desc: >
+          How strongly the overlay pattern above shows through.
+
+  - name: Names and Labels
     desc: >
-      Change the appearance of the frontend by selecting from installed themes. You are also able to download themes
-      directly on-device through this option.
-  - name: Theme Resolution
-    icon: resolution
+      Tidies up how content names are written on screen. Files on your storage keep their names.
+    items:
+      - name: Label Scroll Style
+        icon: namescroll
+        desc: >
+          What happens to names too long to fit, whether left alone, scrolled around continuously, or bounced back
+          and forth.
+      - name: Label Scroll Speed
+        icon: labelscrollspeed
+        desc: >
+          How briskly those long names travel across the label.
+      - name: Remove Bracketed Text
+        icon: name
+        desc: >
+          Trims extra detail from names, removing anything inside <code>[ ]</code> or <code>( )</code>, or leaves
+          the full name as it is.
+      - name: Dash to Colon
+        icon: dash
+        desc: >
+          Swaps dashes (<code>-</code>) for colons (<code>:</code>) in names, which often reads a little cleaner.
+      - name: Move Leading The
+        icon: thetitleformat
+        desc: >
+          Moves a trailing "The" back to the front of a title, so "Batman and Robin, The" reads as
+          "The Batman and Robin".
+      - name: Friendly Folder Names
+        icon: friendlyfolder
+        desc: >
+          Turns short folder labels into proper names. For example, <code>SMS</code> becomes
+          <code>SEGA Master System</code>.
+      - name: Title Include Root Drive
+        icon: titleincluderootdrive
+        desc: >
+          Adds the current storage device beside the folder name at the top of Explore Content.
+
+  - name: Font
     desc: >
-      Test themes designed for different resolutions or aspect ratios. Useful for validating theme compatibility 
-      on various devices or displays.
-  - name: Theme Scaling
-    icon: scaling
+      Chooses the typeface used across the interface and how large the text appears in each part of the screen.
+    items:
+      - name: Font Source
+        icon: type
+        desc: >
+          Where the font comes from. <strong>Language</strong> uses the font that suits your chosen language,
+          <strong>Theme</strong> uses whatever the active theme provides, <strong>Internal</strong> uses the
+          built-in one, and <strong>Custom</strong> lets you pick your own.
+      - name: Font Directory
+        icon: font
+        desc: >
+          Which folder of fonts to browse. Available for language and custom fonts that are organised into folders.
+      - name: Font Name
+        icon: fontname
+        desc: >
+          Which of your own <code>.ttf</code> fonts to use. Only comes into play when Font Source is set to Custom.
+      - name: Font Width
+        icon: width
+        desc: >
+          Makes the text narrower or wider. Only available when the chosen font is a variable font that supports it.
+      - name: Italic Style
+        icon: fontname
+        desc: >
+          Slants the text using the font's own italic style. Only available when the chosen font is a variable font
+          that supports it.
+      - name: List Font Size
+        icon: listsize
+        desc: >
+          Text size for list items throughout the frontend. Leave it on <strong>Default</strong> to let the device
+          decide.
+      - name: Header Font Size
+        icon: headersize
+        desc: >
+          Text size used in the header bar.
+      - name: Footer Font Size
+        icon: footersize
+        desc: >
+          Text size used in the footer bar.
+      - name: Panel Font Size
+        icon: panelsize
+        desc: >
+          Text size used for grid panel labels, which only shows up when a theme is using grid mode.
+      - name: Text Scale
+        icon: textscale
+        desc: >
+          Makes all text larger or smaller by a percentage, on top of the sizes above. This is what the Large Text
+          accessibility profiles change.
+
+  - name: Folders
     desc: >
-      Scales theme layouts designed for different resolutions to better fit the device screen. Useful for testing themes during creation.
-  - name: Alternative Theme
-    icon: alternate
+      How folders behave and what they tell you as you browse.
+    items:
+      - name: Folder Item Count
+        icon: folderitemcount
+        desc: >
+          Shows how many items are waiting inside each folder before you open it.
+      - name: Menu Counter Folder
+        icon: menucounterfolder
+        desc: >
+          Shows where you are among the folders, such as "<code>3 / 15</code>", as you move about.
+      - name: Menu Counter File
+        icon: menucounterfile
+        desc: >
+          Shows where you are among the files in the current folder, such as "<code>12 / 78</code>".
+      - name: Empty Folders
+        icon: displayemptyfolder
+        desc: >
+          Show or hide folders with nothing in them, which is a quick way to tidy up a cluttered list.
+      - name: Show Hidden Content
+        icon: hidden
+        desc: >
+          Show or hide items you have tucked away. Anything starting with <code>.</code> or <code>_</code> is
+          hidden by default.
+      - name: Group Content Items
+        icon: groupcontent
+        desc: >
+          Gathers a long list into folders by starting letter, either one letter each or a few letters together,
+          with numbers kept to themselves. Very handy for large libraries.
+
+  - name: Content
     desc: >
-      Switch between alternate versions of a theme, such as different colour palettes or layout variants.
-  - name: Background Music
-    icon: music
+      What turns up in your content lists and how you move through them.
+    items:
+      - name: Tag Sort Priority
+        icon: sort
+        link: muxsort
+        desc: >
+          Opens the list where you decide which tagged content floats to the top, and in what order.
+      - name: Collection In Content
+        icon: contentcollect
+        desc: >
+          Show or hide items already added to a collection while browsing, or keep them but hide just the glyph.
+      - name: History In Content
+        icon: contenthistory
+        desc: >
+          Show or hide items that already appear in your history. Removing something from history puts it back in
+          the list.
+      - name: Mixed Folder Content
+        icon: mixedcontent
+        desc: >
+          Blends folders in alphabetically with everything else. When disabled, folders stay together at the top.
+      - name: Forward History
+        icon: forwardhistory
+        desc: >
+          Remembers what you had selected when you step back into a folder, so you carry on where you left off.
+      - name: Full Width Selection
+        icon: width
+        desc: >
+          Lets the highlight stretch the whole width of the screen, or leaves room to one side for box art.
+      - name: Shoulder Button Skip
+        icon: pageskip
+        desc: >
+          What the shoulder buttons do in a long list, either jumping a page at a time or leaping to the next
+          starting letter.
+      - name: Shuffle Function
+        icon: shuffle
+        desc: >
+          Lets <strong>R2</strong> pluck something at random out of your library.
+
+  - name: Box Art
     desc: >
-      Toggles background music in the frontend interface. All music is <code>.ogg</code> and can be switched between
-      <strong>Theme</strong> based or <strong>Global</strong> within the <code>MUOS/music</code> folder
-  - name: Background Music Volume
-    icon: musicvolume
+      How artwork for your content is shown, and where it sits on screen. Box art can be a still image, an MP4 video,
+      a GIF or an animated PNG, and moving artwork follows the same position, scale and padding as a still image. The
+      <a href="/installation/catalogue#animated-artwork">Catalogue guide</a> explains how to add it.
+    items:
+      - name: Box Art
+        icon: boxart
+        desc: >
+          Where artwork sits in relation to everything else, in front or behind, either of those fullscreen, or
+          turned off entirely. Moving artwork follows this setting too.
+      - name: Box Art Alignment
+        icon: align
+        desc: >
+          Which of nine positions on screen the artwork settles into.
+      - name: Box Art Transition
+        icon: boxarttransition
+        desc: >
+          How artwork arrives as you move between items, whether fading, sliding, bouncing, or shooting in from a
+          direction, or with no animation at all.
+      - name: Box Art Scale
+        icon: boxartscale
+        desc: >
+          How large the artwork is drawn, as a percentage of the room available.
+      - name: Box Art Padding
+        icon: boxartpadding
+        desc: >
+          How much breathing room is left around the artwork on every side.
+      - name: Box Art Placeholder
+        icon: boxartplaceholder
+        desc: >
+          Shows a stand-in image when no artwork can be found for the selected item.
+      - name: Save Screenshot
+        icon: savescreenshot
+        desc: >
+          Shows your most recent save picture in place of the box art for anything played through Pickles. Choose
+          whether this applies to <strong>Collection</strong>, <strong>History</strong>, or both. Items you have not
+          saved yet keep their usual artwork.
+      - name: Grid Mode Content
+        icon: gridmodecontent
+        desc: >
+          Allows your content to be laid out as a grid of pictures when the theme supports it.
+      - name: Grid Mode Box Art
+        icon: boxarthide
+        desc: >
+          Show or hide system artwork in Explore Content while grid mode is in use.
+
+  - name: Launching
     desc: >
-      Adjust the independent volume of the background music being played. Press <strong>A</strong> to set.
-  - name: Black Fade Animation
-    icon: blackfade
+      What happens in the moment between choosing something and playing it.
+    items:
+      - name: Save State Launch
+        icon: launch_swap
+        desc: >
+          Whether pressing or holding <strong>A</strong> picks up from your most recent save state, or always
+          starts fresh.
+      - name: Launch Splash
+        icon: splash
+        desc: >
+          Shows the artwork for your content while Pickles prepares the game. Splash images in the catalogue can be
+          still images, animated GIF or APNG images, or MP4 video.
+      - name: Pickles Startup Messages
+        icon: picklesstartupmessages
+        desc: >
+          Whether Pickles announces itself as content starts up, including how it is getting on connecting to
+          RetroAchievements. Turn it off if you would rather go straight into the game without the commentary.
+      - name: Power Off Effect
+        icon: blackfade
+        desc: >
+          When you leave Pickles or Wasabi, the picture collapses to a line and then a dot, like switching off an old
+          television. It is on by default, and Reduce Motion turns it off.
+      - name: Black Fade Animation
+        icon: blackfade
+        desc: >
+          Fades gently to black as content launches. Turning it off gets you into the game a touch sooner.
+
+  - name: Packages
     desc: >
-      Toggles the fade to black transition animation used when launching content. Disabling this can slightly speed 
-      up launch times.
-  - name: Content Save State Launch
-    icon: launch_swap
+      User created extras you have copied onto your device, ready to be installed.
+    items:
+      - name: Catalogue Sets
+        icon: catalogue
+        link: muxpicker
+        desc: >
+          Install artwork catalogues that change how your content is pictured and described.
+      - name: RetroArch Configurations
+        icon: config
+        link: muxpicker
+        desc: >
+          Install RetroArch configuration packages, handy if you keep several setups on the go.
+      - name: Boot Logo Selection
+        icon: logo
+        link: muxlogo
+        desc: >
+          Pick the image shown while your device starts up, chosen from your own pictures.
+
+  - name: Theme
     desc: >
-      Choose between pressing <strong>A</strong> or holding <strong>A</strong> to automatically launch the most 
-      recent save state for the selected content.
-  - name: Content Shuffle
-    icon: shuffle
+      The overall look of the frontend and how it is fitted to your screen.
+    items:
+      - name: Theme Picker
+        icon: theme
+        link: muxtheme
+        desc: >
+          Choose from the themes installed on your device. You can also download new ones right here on the device.
+      - name: Theme Resolution
+        icon: resolution
+        desc: >
+          Try out themes built for a different screen size. Mostly of interest to theme makers.
+      - name: Theme Scaling
+        icon: scaling
+        desc: >
+          How a theme built for another resolution is fitted to your screen when the setting above is in use.
+      - name: Alternative Theme
+        icon: alternate
+        desc: >
+          Switch between the variants a theme offers, such as different colour palettes or layouts.
+
+  - name: Layout
     desc: >
-      Enables the ability to shuffle through content in the explorer using the <strong>R2</strong> button. A fun way 
-      to discover random content in your library.
-  - name: Content Box Art
-    icon: boxart
+      Fine adjustments to the shape of the screen, useful if a theme does not quite suit your device.
+    items:
+      - name: Random Theme on Boot
+        icon: randomtheme
+        desc: >
+          Picks a different theme each time the device starts, chosen from the ones you have installed.
+      - name: Header Height
+        icon: headerheight
+        desc: >
+          How tall the header bar is, from 0 to 64, or leave it on <strong>Default</strong>.
+      - name: Footer Height
+        icon: footerheight
+        desc: >
+          How tall the footer bar is, from 0 to 64, or leave it on <strong>Default</strong>.
+      - name: Item Count
+        icon: count
+        desc: >
+          How many items fit on a page in lists, from 1 to 64, or leave it on <strong>Default</strong>.
+      - name: Label Width
+        icon: labelwidth
+        desc: >
+          How much room the label on the left is given before it is trimmed or set scrolling, from 10% to 100%.
+
+  - name: Glyph Sizes
     desc: >
-      Changes the display priority of content images, or determining whether box art is shown at all.
-  - name: Content Box Art Alignment
-    icon: align
+      How large the small glyphs are drawn in each part of the screen. Each can be left on
+      <strong>Default</strong>, set to <strong>Auto</strong> or <strong>Native</strong>, or given an exact size.
+    items:
+      - name: List Glyph Size
+        icon: glyphlist
+        desc: >
+          The glyphs beside items in lists.
+      - name: Header Glyph Size
+        icon: glyphheader
+        desc: >
+          The status glyphs along the top of the screen.
+      - name: Footer Glyph Size
+        icon: glyphfooter
+        desc: >
+          The button glyphs along the bottom of the screen.
+      - name: Grid Glyph Size
+        icon: glyphgrid
+        desc: >
+          The glyphs shown beside items when content is laid out as a grid.
+
+  - name: Background
     desc: >
-      Adjusts the position of content images on screen. Useful for theme designers or users wanting a specific 
-      layout alignment.
-  - name: Content Full Width
-    icon: width
+      What sits behind everything else.
+    items:
+      - name: Video Wallpaper
+        icon: videowallpaper
+        desc: >
+          Plays a looping video behind the interface when the active theme has one.
+      - name: Background Scale
+        icon: backgroundscale
+        desc: >
+          How the background picture or video is fitted to your screen.
+
+  - name: Audio
     desc: >
-      Toggles whether content highlights use the full screen width or leave space for box art.
-  - name: Content Launch Splash
-    icon: splash
-    desc: >
-      Toggles the display of a splash image when launching content. Adds a stylish transition or can be disabled 
-      for slightly faster load times.
-  - name: Content Grid Mode
-    icon: gridmodecontent
-    desc: >
-      Enables grid view mode in the Content Explorer. Display content in a visual grid instead of a list for a more
-      graphical browsing experience.
-  - name: Hide Grid Mode Box Art
-    icon: boxarthide
-    desc: >
-      Hides system box art images when grid mode is active. Useful for simplifying the interface or highlighting 
-      custom artwork.
-  - name: Interface Font Type
-    icon: font
-    desc: >
-      Chooses how fonts are loaded in the frontend. <strong>Theme</strong> uses fonts included in the theme (with 
-      language fallback), while <strong>Language</strong> forces use of the language-specific font.
-  - name: Navigation Sound
-    icon: sound
-    desc: >
-      Toggles sound effects when navigating the frontend interface. Disabling this results in silent menu movement.
-  - name: Navigation Sound Volume
-    icon: soundvolume
-    desc: >
-      Adjusts the volume level of menu navigation sounds. Press <strong>A</strong> to set.
-  - name: Startup Chime
-    icon: chime
-    desc: >
-      Toggles the chime sound played during frontend startup. A small signal the frontend has finished loading.
+      The music and sounds that keep you company while you browse.
+    items:
+      - name: Background Music
+        icon: music
+        desc: >
+          Plays music while you look around. Tracks are <code>.ogg</code> files and can come from the active theme
+          or from your own <code>MUOS/music</code> folder.
+      - name: Background Music Volume
+        icon: musicvolume
+        desc: >
+          How loud that music is, kept separate from everything else. Press <strong>A</strong> to set it.
+      - name: Navigation Sound
+        icon: sound
+        desc: >
+          The little sounds as you move around the menus. Turn it off for silent browsing.
+      - name: Navigation Sound Volume
+        icon: soundvolume
+        desc: >
+          How loud those navigation sounds are. Press <strong>A</strong> to set it.
+      - name: Startup Chime
+        icon: chime
+        desc: >
+          The chime played once the frontend has finished loading, letting you know it is ready.
+
+tip:
+  - info: Press **Left** or **Right** to hop between sections, or use the shoulder buttons to do the same.
+  - info: Press **MENU** on any option for a short explanation of what it does.
+  - info: Font sizes, header and footer heights, and glyph sizes all accept **Default**, which hands the decision back to your device or the active theme.

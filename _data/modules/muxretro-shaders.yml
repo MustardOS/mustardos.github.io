@@ -1,0 +1,34 @@
+description: >
+  Choose a Pickles shader for the game picture. The browser keeps catalogue actions at the top and sorts folders and
+  files alphabetically without regard to letter case.
+
+goback: muxretro-settings
+
+visible:
+  - name: Downloads
+    icon: shader
+    desc: >
+      Fetch the current shader catalogue when a network connection is available. Entries are grouped by creator and
+      report Not Installed, Installed, or Update.
+  - name: Collection
+    icon: shader
+    desc: >
+      A short list of shaders you have collected. Each entry references its original path, so updates to the original
+      are reflected here. Remove only removes the Collection reference.
+  - name: None
+    icon: shader
+    desc: Disable the shader. Adjust is hidden while None is selected.
+  - name: Creator Folders
+    icon: folder
+    desc: >
+      Built-in, downloaded, and manually added shaders sit in a folder named after their creator. Files inside a
+      deeper folder are not included.
+  - name: Adjust
+    icon: settings
+    desc: >
+      Change the parameters supplied by the selected shader and reset them when required. Leaving with changes asks
+      where to save them, the same as any other Pickles setting.
+
+tip:
+  - info: Use Collect on an original item to place it in Collection.
+  - info: Pickles shaders use a different format from RetroArch shaders.

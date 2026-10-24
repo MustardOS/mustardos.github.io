@@ -1,0 +1,40 @@
+description: >
+  Some handhelds could be joined together with a cable so two people could play against each other, trade,
+  or unlock things neither could reach alone. Game Link brings that back, either between two devices over
+  your network or between two machines running side by side on the one device.<br><br>This only appears for
+  games and cores that support it.
+
+goback: muxretro
+
+visible:
+  - name: Link Mode
+    icon: network
+    desc: >
+      How this device takes part. <strong>Disabled</strong> plays normally. <strong>Host</strong> waits for another
+      device over the network. <strong>Client</strong> joins a network host. <strong>Direct Link</strong> joins two
+      devices through supported wired network adapters. <strong>Two Players</strong> runs both machines on one
+      device.
+  - name: Host Address
+    icon: network
+    desc: >
+      Only shown when you are hosting or joining. As the host it shows your own address, which is what the
+      other person needs to type in. As the client it is where you enter theirs. A number pad appears for
+      typing it in.
+  - name: Direct Link
+    icon: network
+    desc: >
+      Uses the wired Direct Link configured from Connectivity. Both devices need a supported network adapter and a
+      working cable connection before the session starts.
+  - name: Single Screen
+    icon: controller
+    desc: >
+      Only shown in Two Players. This shows one machine at a time filling the display, and you swap
+      between them. A small marker in the corner tells you which machine
+      you are looking at.
+
+tip:
+  - info: The person who **joined** starts the two player mode inside the game. On something like Tetris, both of you reach the title screen, then the client chooses **2 PLAYERS**. Doing it the other way round will simply bounce you back.
+  - info: Both devices need **the same game** for a link to work, exactly as two consoles needed two copies of the same cartridge.
+  - info: In Two Players, hold **MENU** and press **A** to switch which machine your buttons control. The sound follows you across, so you always hear whichever one you are playing.
+  - info: Choosing **Two Players** does not switch over straight away. It takes effect the next time the game starts, so use **Restart** from the Pickles Menu when you are ready.
+  - info: Opening this menu during a network link does not pause the game, because the other person is still playing and their device would be left waiting. Your buttons stop reaching the game while the menu is up.

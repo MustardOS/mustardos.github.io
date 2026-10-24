@@ -9,9 +9,7 @@ visible:
     icon: explore
     link: muxplore
     desc: >
-      Access and browse your content stored across SD1, SD2, or USB devices. This is the primary area for launching 
-      content and exploring the next amazing title. Don't forget that you can organise your content in any named 
-      folder that you like.
+      Browse and launch the content stored on SD1, SD2, or USB devices, organised into any folders you like.
   - name: Collection
     icon: collection
     link: muxcollect
@@ -22,8 +20,8 @@ visible:
     icon: history
     link: muxhistory
     desc: >
-      Quickly revisit content that was recently launched or accessed. The history log makes it easy to jump back into 
-      your last session without needing to go back and finding it manually.
+      Quickly revisit content that was recently launched or accessed. The history log makes it easy to jump back into
+      your last session.
   - name: Applications
     icon: apps
     link: muxapp

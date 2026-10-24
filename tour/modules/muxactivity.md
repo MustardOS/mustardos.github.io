@@ -5,6 +5,7 @@ module: muxactivity
 glyph: muxactivity
 permalink: /tour/modules/muxactivity
 parent: Information
-nav_order: 1
+grand_parent: MustardOS Frontend
+nav_order: 2
 has_toc: false
 ---

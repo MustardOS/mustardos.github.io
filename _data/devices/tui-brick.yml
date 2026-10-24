@@ -1,10 +1,17 @@
 manufacturer: TrimUI
 name: Brick
 internal: tui-brick
-desc: A small device with a big <strike>attitude</strike> resolution display.
+desc: A small but mighty device with a crisp display.
+features:
+  form: vertical
+  sticks: 0
+  wifi: 1
+  bluetooth: 1
+  hdmi: 0
+  screen: "1024x768"
 downloads:
   - variant:
-    hash: 3c1d57de7f8d0dae4c07899b4d60215483a9b23d09d1a524d7394c290a5def0e
-    gofile: https://store-na-phx-5.gofile.io/download/direct/1db0cd2f-76f0-4d15-91f0-6cac7b4d5235/MustardOS_TUI-BRICK_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/huJmnZiB#FyzbNli86j8VhaHzvxti0YZDgGyt5bamZ9QMkT4TWuI
-    torrent: MustardOS_TUI-BRICK_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: a2967670f336286793984786f1a85e22cf8dbdfba8bc6f1f957ffdf859619c1f
+    gofile: https://gofile.io/d/mNwgH5MC
+    mega: https://mega.nz/file/EiZnkISJ#I_jk56O05MTxhYPmagFuNndmh4SxTwbTS4cdqkuMeI0
+    torrent: MustardOS_TUI-BRICK_2606.0_ANDROMEDA-db2a3bd0

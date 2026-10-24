@@ -3,18 +3,6 @@ code: "Canada Goose"
 type: archive
 pronunciation: "/ˈkænədə ɡuːs/"
 
-full_image:
-  gofile: https://gofile.io/d/Ze3VpF
-  mega: https://mega.nz/folder/xnoXzJZI#S5s2cjfyqS9R1t-BDJNBJA
-  important:
-    - As this is a major release you will be required to reflash to update your device to this version. Due to the
-      changes within the internal structure we have been forced to release this as a full image rather than an update.
-      Apologies for any inconvenience.
-  warning:
-    - Upon full image reflash on devices with SD2 inserted your <code>MUOS</code> folder will be moved to
-      <code>MUOS_old</code> to ensure update safety. However do not panic, your save games, configurations, and other
-      user data can be safely copied back. However please do so with caution as there may be conflicts.
-
 note:
   - Due to the amount of issues in the past relating to people changing their RetroArch global configuration
     we have opted to freeze it. If you would like to know how to unfreeze it please see the following

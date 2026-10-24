@@ -1,0 +1,40 @@
+description: >
+  Set up PIN style passcodes that lock down booting the device, launching content, or entering system settings, each
+  with its own optional message shown on the lock screen.<br><br>Every code is up to 6 digits (0-9 and A-F) and is
+  padded with leading zeros if shorter. Setting a code to <code>000000</code> disables that particular lock.
+
+goback: muxtweakgen
+
+visible:
+  - name: Boot Code
+    icon: boot_lock
+    desc: >
+      The code required when the device first boots. Set to <code>000000</code> to disable it.
+  - name: Boot Message
+    icon: boot_info
+    desc: >
+      An optional message shown alongside the code entry screen when the device boots.
+  - name: Launch Code
+    icon: launch_lock
+    desc: >
+      The code required before launching content. Set to <code>000000</code> to disable it.
+  - name: Launch Message
+    icon: launch_info
+    desc: >
+      An optional message shown alongside the code entry screen when launching content.
+  - name: Settings Code
+    icon: setting_lock
+    desc: >
+      The code required to access system settings. Set to <code>000000</code> to disable it.
+  - name: Settings Message
+    icon: setting_info
+    desc: >
+      An optional message shown alongside the code entry screen when accessing settings.
+  - name: Safety Code
+    icon: safety
+    desc: >
+      An emergency recovery code that bypasses all of the locks above. Keep this one safe, and set it to
+      <code>000000</code> to disable it entirely.
+
+tip:
+  - info: Press **A** on any row to open the on-screen keyboard and enter a new code or message, and **X** to cancel out of the keyboard without saving.

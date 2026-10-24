@@ -1,0 +1,17 @@
+manufacturer: TrimUI
+name: Brick Pro
+internal: tui-brick-pro
+desc: The crisp of the Brick, but with two sticks!
+features:
+  form: vertical
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 0
+  screen: "1024x768"
+downloads:
+  - variant:
+    hash: f5afad0c50788fe948297af3509f4f469c688b007fde0b8bde30c60467852eb9
+    gofile: https://gofile.io/d/unIKu4qW
+    mega: https://mega.nz/file/NmoVhDyB#sqxpEAKDo49CldcBdq1gJ02TBo-zFUPdBHWh6NzuZQo
+    torrent: MustardOS_TUI-BRICK-PRO_2606.0_ANDROMEDA-db2a3bd0

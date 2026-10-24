@@ -1,0 +1,26 @@
+description: >
+  Browse an online catalogue of additional themes and download them directly to your device, no computer or file
+  manager required.<br><br>The catalogue and its preview images are fetched automatically the first time you open
+  this screen, and each entry shows whether it has already been downloaded.
+
+goback: muxtheme
+
+visible:
+  - name: Theme
+    icon: theme
+    desc: >
+      A theme available in the online catalogue that has not yet been downloaded to your device.
+  - name: Theme Downloaded
+    icon: theme_down
+    desc: >
+      A theme that has already been downloaded and extracted to your device, ready to use from the Themes screen.
+
+hidden:
+  - name: Theme Filter
+    link: muxthemefilter
+    desc: >
+      Narrow down the catalogue list by resolution compatibility, grid view, HDMI, or language support, or search
+      by name. Reached with the <strong>Y</strong> button.
+
+tip:
+  - info: Press **A** to download a theme, or to remove one you already have installed. Press **X** to refresh the catalogue and preview images, and **Menu** for any available credits.

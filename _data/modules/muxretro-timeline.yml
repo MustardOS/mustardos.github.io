@@ -1,0 +1,31 @@
+description: >
+  Timeline saves are rolling save states captured in the background while you play. Each one appears as its own
+  slot on the Game State screen, labelled with the time it was taken, so you can step back to an earlier moment.
+
+goback: muxretro-storage
+
+visible:
+  - name: Timeline Save Duration
+    icon: timeline
+    desc: >
+      How often a timeline save is captured, from every <strong>1 minute</strong> up to every
+      <strong>60 minutes</strong>, or <strong>Disabled</strong>.
+  - name: Timeline Save Count
+    icon: timeline
+    desc: >
+      How many timeline slots to keep, from <strong>2</strong> to <strong>10</strong>. Once that many exist,
+      capturing a new one overwrites the oldest.
+  - name: Timeline Reset
+    icon: reset
+    desc: >
+      Restart the timeline timer whenever play is interrupted by the Pickles Menu, content pause, idle or the
+      screensaver. When disabled, the timer keeps counting, and a save that falls due during an interruption is
+      skipped before a fresh timer begins.
+  - name: Timeline Save Bar
+    icon: timeline
+    desc: >
+      Show a thin bar along the top, bottom, left, or right edge of the screen as the next timeline save
+      approaches, or turn it off. Along the top or bottom it fills from left to right, and along the left or
+      right it fills from top to bottom. Each edge also has a reversed choice that starts full and empties back towards where it began. The bar
+      uses the colours of your current theme, and starts again after a save, or after an interrupted save is
+      skipped.

@@ -1,0 +1,45 @@
+description: >
+  A detailed reference for the Visuals section of Pickles Settings. Changes appear on the game picture as they are
+  made.
+
+goback: muxretro-settings
+
+visible:
+  - name: Vignette
+    icon: border
+    link: muxretro-vignette
+    desc: >
+      Add and configure a shaped edge around the game picture. Press <strong>X</strong> on this row to turn it off.
+  - name: Colour Filters
+    icon: filter
+    desc: >
+      Choose Downloads, Collection, None, or an item inside a creator folder one level deep. Download entries report Not
+      Installed, Installed, or Update and are sorted alphabetically without regard to letter case. Press
+      <strong>X</strong> on this row to remove the filter.
+  - name: Shaders
+    icon: shader
+    desc: >
+      Choose a Pickles shader from the same Downloads, Collection, None, and creator folder structure. Supported
+      shader parameters can be adjusted and reset on the device. Press <strong>Y</strong> on this row to go straight
+      to the parameters of the current shader, or <strong>X</strong> to remove the shader.
+  - name: Brightness
+    icon: brightness
+    desc: Make the game picture lighter or darker.
+  - name: Contrast
+    icon: contrast
+    desc: Change the difference between dark and light areas.
+  - name: Saturation
+    icon: saturation
+    desc: Change the strength of the colours.
+  - name: Hue Shift
+    icon: hue
+    desc: Move every colour around the colour wheel.
+  - name: Gamma
+    icon: gamma
+    desc: Adjust the middle tones without moving the darkest and lightest points as strongly.
+
+tip:
+  - info: Collection stores the path of the original item. Updating the original also updates the collected entry.
+  - info: Files can be organised in creator folders one level deep. Folders inside a creator folder are not included.
+  - info: Pickles shaders use a different format from RetroArch shaders.
+  - info: Shader parameters are saved with your other settings, so they can be kept per content, core, or directory.

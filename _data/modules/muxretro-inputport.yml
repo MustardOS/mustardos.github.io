@@ -1,0 +1,54 @@
+description: >
+  Everything for one player, which controller they use, what kind of controller the game thinks it is, and
+  what each button does. The same screen opens whichever player you picked on the previous screen.
+
+goback: muxretro-settings
+
+visible:
+  - name: Controller
+    icon: controller
+    desc: >
+      Which controller this player uses. <strong>Auto</strong> lets MustardOS choose, or pick a particular
+      connected controller by name, or <strong>None</strong> to leave this player out.
+  - name: Core Device
+    icon: coredevice
+    desc: >
+      What kind of controller the game believes it is talking to. Some games behave differently with a
+      stick-based controller. The choices come from the system you are playing, and
+      <strong>Default</strong> is right unless a game specifically wants otherwise.
+  - name: Stick to D-Pad
+    icon: sticksensitivity
+    desc: >
+      Send this player's stick to the d-pad as well, for games that never understood a stick. The forced
+      choices send it to the d-pad only, so the stick stops being reported separately.
+  - name: Button Mapping
+    icon: buttonmapping
+    link: muxretro-buttonmapping
+    desc: >
+      Change what each button does for this player, and set up automatic rapid-fire on any of them.
+  - name: Macros
+    icon: macro
+    link: muxretro-macros
+    desc: >
+      Record a sequence of button presses and put it on a single button, so one press performs the whole
+      run of them.
+  - name: Ketchup Layout
+    icon: deck
+    desc: >
+      Turn this controller into a Ketchup Deck that helps another player. Choose its layout, route its controls to
+      the player it assists, and set which input takes priority when both are used.
+  - name: Ketchup Controls
+    icon: deckroute
+    desc: Choose which player's controls receive input from this Ketchup Deck.
+  - name: Ketchup Priority
+    icon: deckpriority
+    desc: Choose how simultaneous input from the player and Ketchup Deck is resolved.
+  - name: Reset Port
+    icon: portreset
+    desc: >
+      Put this player's controller choice, controller type, and button layout back to normal in one step.
+
+tip:
+  - info: Tap **MENU** on any row for a short explanation of what it does, and hold **MENU** instead to slide the menu out of the way and watch the game behind it.
+  - info: Using **Reset Port** on player one hands them back your device's own buttons. For players two to four it goes back to **Auto**.
+  - info: If a controller you assigned to a player is not switched on next time, player one still falls back to your device's own buttons, so you are never left unable to move.

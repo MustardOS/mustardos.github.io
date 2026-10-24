@@ -15,3 +15,11 @@ visible:
     desc: >
       An item that has been collected and stored. Items with the same name can be stored together, 
       along with items from different systems and cores.
+
+hidden:
+  - name: Information
+    desc: >
+      Hold <strong>MENU</strong> on an item to open its Information straight away, or choose
+      <strong>Information</strong> from the actions list. It opens on the preview artwork when the item has some,
+      which can be a picture or a short video, and on the description otherwise. Press <strong>A</strong> to switch
+      between the two.

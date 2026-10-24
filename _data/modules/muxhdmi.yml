@@ -10,8 +10,9 @@ visible:
     icon: resolution
     desc: >
       Selects the output resolution for HDMI display, ranging from 480p to 720p depending on device support. Higher 
-      resolutions provide sharper visuals but may increase power usage. <em>Due to technical limitations 1080p is 
-      currently unavailable as a resolution.</em>
+      resolutions provide sharper visuals but may increase power usage. If the connected display does not accept the 
+      chosen resolution, the closest one at the same refresh rate is used instead. <em>Due to technical limitations 
+      1080p is currently unavailable as a resolution.</em>
   - name: Colour Space
     icon: space
     desc: >
@@ -20,19 +21,21 @@ visible:
   - name: Colour Depth
     icon: depth
     desc: >
-      Sets the number of bits used to represent colour per channel, such as 8-bit or 10-bit. Higher bit depths allow 
-      for smoother gradients and more accurate colour reproduction.
+      Sets the number of bits used to represent colour per channel: 8, 10, 12 or 16-bit. Higher bit depths allow 
+      for smoother gradients and more accurate colour reproduction, though the display may fall back to a lower depth 
+      if it cannot accept the one chosen.
   - name: Colour Range
     icon: range
     desc: >
       Determines the output range of the RGB colour space. <strong>Full</strong> range outputs all colour levels 
       (0–255), while <strong>Limited</strong> range (16–235) may be required for certain televisions or monitors.
-  - name: Scan Scale
+  - name: Scan Scaling
     icon: scan
     desc: >
       Adjusts the screen scaling between overscan and underscan to ensure the entire image fits properly on the 
       display. Use this if parts of the picture appear cropped or there are black borders.
-  - name: Audio Output
-    icon: audio
+  - name: Mirror Output
+    icon: mirror
     desc: >
-      Selects whether audio is played through the devices internal speakers or routed to the connected display.
+      Mirrors the HDMI output onto the device display, handy for live streaming. Expect bars on the device display 
+      depending on the HDMI resolution selected. Takes effect after a restart.

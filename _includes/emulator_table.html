@@ -1,0 +1,31 @@
+{%- assign sys = site.data.core_manifest.core[include.system] -%}
+{%- if sys.runtime == "external" -%}{%- assign default_group = "external" -%}{%- else -%}{%- assign default_group = "libretro" -%}{%- endif -%}
+{%- if sys.extra == 1 %}
+<p>This system is listed in Core Assignment once <a href="{{ site.baseurl }}/systems/cores#additional-cores">Additional Cores</a> is enabled.</p>
+{%- endif %}
+<div class="table-wrapper">
+<table>
+    <thead>
+        <tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Version</th></tr>
+    </thead>
+    <tbody>
+        {%- for pair in sys.libretro -%}
+        {%- assign core = pair[1] -%}
+        {%- assign lib = core.core | remove: ".so" -%}
+        <tr>
+            <td>{% if pair[0] == sys.default and default_group == "libretro" %}<strong>{{ core.name }}</strong>{% else %}{{ core.name }}{% endif %}</td>
+            <td>Libretro Core{% if core.extra == 1 and sys.extra != 1 %}, Additional{% endif %}</td>
+            <td>{{ site.data.core_versions[lib] | default: "-" }}</td>
+        </tr>
+        {%- endfor -%}
+        {%- for pair in sys.external -%}
+        {%- assign core = pair[1] -%}
+        <tr>
+            <td>{% if pair[0] == sys.default and default_group == "external" %}<strong>{{ core.name }}</strong>{% else %}{{ core.name }}{% endif %}</td>
+            <td>Standalone{% if core.extra == 1 and sys.extra != 1 %}, Additional{% endif %}</td>
+            <td>-</td>
+        </tr>
+        {%- endfor -%}
+    </tbody>
+</table>
+</div>

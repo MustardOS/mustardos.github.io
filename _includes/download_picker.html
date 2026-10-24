@@ -1,0 +1,72 @@
+{%- assign current = "" -%}
+{%- for item in site.data.releases -%}
+{%- if item[1].type == "current" -%}{%- assign current = item[1] -%}{%- endif -%}
+{%- endfor -%}
+
+<script id="picker-data" type="application/json">
+{
+    "release": {% if current != "" %}{"ver": {{ current.ver | jsonify }}, "code": {{ current.code | jsonify }}, "url": {{ current.ver | replace: '.', '_' | prepend: "/release/current/" | jsonify }}}{% else %}null{% endif %},
+    "devices": [
+        {%- for pair in site.data.devices -%}
+        {%- assign device = pair[1] -%}
+        {%- assign image = "/assets/devices/cutout/" | append: device.internal | append: ".webp" -%}
+        {%- assign found = site.static_files | where: "path", image | size -%}
+        {%- if found == 0 -%}
+        {%- assign image = "/assets/devices/" | append: device.internal | append: ".webp" -%}
+        {%- assign found = site.static_files | where: "path", image | size -%}
+        {%- endif -%}
+        {
+            "id": {{ device.internal | jsonify }},
+            "name": {{ device.name | jsonify }},
+            "maker": {{ device.manufacturer | jsonify }},
+            "desc": {{ device.desc | jsonify }},
+            "image": {% if found > 0 %}{{ image | jsonify }}{% else %}null{% endif %},
+            "features": {{ device.features | default: "" | jsonify }},
+            "downloads": {{ device.downloads | default: "" | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+    ]
+}
+</script>
+
+<div class="tool picker" id="picker">
+    <section class="panel">
+        <div class="section-head">
+            <h2>1. Narrow it down</h2>
+            <button type="button" id="picker-clear" hidden>Clear Filters</button>
+        </div>
+        <p class="help">Pick any details you know about your device, or go straight to the list below.</p>
+        <div class="picker-filters" id="picker-filters"></div>
+    </section>
+
+    <section class="panel" id="picker-device-panel">
+        <h2>2. Device <span class="count" id="picker-count"></span></h2>
+        <div class="picker-devices" id="picker-devices" role="group" aria-label="Device"></div>
+        <p class="empty" id="picker-none" hidden>No supported device matches all of those filters.</p>
+    </section>
+
+    <section class="panel" id="picker-result" hidden aria-live="polite">
+        <div class="picker-result-head">
+            <span class="picker-thumb" id="picker-thumb" hidden><img id="picker-image" alt="" width="96" height="96"></span>
+            <div>
+                <h2 id="picker-title"></h2>
+                <p class="help" id="picker-release"></p>
+            </div>
+        </div>
+        <div id="picker-downloads"></div>
+        <h3>Next steps</h3>
+        <ol class="picker-steps">
+            <li>Write the downloaded <code>.img.gz</code> to a good quality SD card of 16GB or larger.
+                <ul>
+                    <li>Most imaging tools read the compressed file directly.</li>
+                </ul>
+            </li>
+            <li>Insert the card into your device and power it on, allowing a minute for the first boot to set up storage.</li>
+            <li>Follow the setup on the device, then take the <a href="{{ site.baseurl }}/tour">Grand Tour</a> to see what everything does.</li>
+        </ol>
+        <p class="help">See the <a href="{{ site.baseurl }}/installation/install">Install Guide</a> for recommended
+            flashing tools and SD card advice.</p>
+    </section>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/download-picker.js"></script>

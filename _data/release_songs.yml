@@ -1,0 +1,83 @@
+# Supporter voted songs for each release, shown on /community/songs and keyed by the release data file name.
+# Fill in song and artist, and youtube with the full video link. Empty entries show as Coming soon.
+
+"2606_0":  # Andromeda
+  song: "Around The World"
+  artist: "Daft Punk"
+  youtube: "https://youtu.be/K0HSD_i2DvA"
+
+"2601_1":  # Funky Jacaranda
+  song: "Dean Town"
+  artist: "Vulfpeck"
+  youtube: "https://youtu.be/le0BLAEO93g"
+
+"2601_0":  # Jacaranda
+  song: "Season Cycle"
+  artist: "XTC"
+  youtube: "https://youtu.be/QO1rxdt3I4o"
+
+"2508_4":  # Loose Goose
+  song: "Start Me Up"
+  artist: "The Rolling Stones"
+  youtube: "https://youtu.be/SGyOaCXr8Lw"
+
+"2508_3":  # Golden Goose
+  song: "The Longing"
+  artist: "Patty Gurdy"
+  youtube: "https://youtu.be/pyIXR3s8OtY"
+
+"2508_2":  # Silly Goose
+  song: "The Crystal Cat"
+  artist: "Dan Deacon"
+  youtube: "https://youtu.be/-6gKT3NnE3k"
+
+"2508_1":  # Canada Goose
+  song: "Ahead By A Century"
+  artist: "The Tragically Hip"
+  youtube: "https://youtu.be/QE2joQsWXJg"
+
+"2508_0":  # Goose
+  song: "Danger Zone"
+  artist: "Kenny Loggins"
+  youtube: "https://youtu.be/siwpn14IE7E"
+
+"2502_0":  # Pixie
+  song: "How Do You Do"
+  artist: "Roxette"
+  youtube: "https://youtu.be/nx2iLOvP0rM"
+
+"2410_3":  # AW Banana
+  song: "Steven's Last Night In Town"
+  artist: "Ben Folds Five"
+  youtube: "https://youtu.be/sQ4d0iMi2XE"
+
+"2410_2":  # Big Banana
+  song: "Big Time"
+  artist: "Peter Gabriel"
+  youtube: "https://youtu.be/PBAl9cchQac"
+
+"2410_1":  # Banana
+  song: "Hollaback Girl"
+  artist: "Gwen Stefani"
+  youtube: "https://youtu.be/Kgjkth6BRRY"
+
+"2405_2":  # Baked Beans
+  song: "Getting Better"
+  artist: "The Beatles"
+  youtube: "https://youtu.be/EGlo9LzmOME"
+
+"2405_1":  # Refried Beans
+  song: "Low Rider"
+  artist: "War"
+  youtube: "https://youtu.be/SxZOXUn6J5c"
+
+"2405_0":  # Beans
+  song: "We Got The Moves"
+  artist: "Electric Callboy"
+  youtube: "https://youtu.be/D1NdGBldg3w"
+
+"2403_0":  # Origin
+  song: "What's Up"
+  artist: "4 Non Blondes"
+  youtube: "https://youtu.be/6NXnxTNIWkc"
+

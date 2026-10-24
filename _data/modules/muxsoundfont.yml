@@ -1,0 +1,24 @@
+description: >
+  Choose the soundfont used for General MIDI music, listing every compatible <code>.sf2</code> and <code>.sf3</code>
+  file found on your device.<br><br>A soundfont holds the recorded instruments that a MIDI tune is played back with,
+  so the very same piece of music can sound warm and orchestral through one soundfont and thin and synthetic through
+  another.<br><br>Press <strong>A</strong> to make the highlighted soundfont the one your device uses, or
+  <strong>Y</strong> to hear a short demonstration tune played through it first.
+
+goback: muxtweakgen
+
+visible:
+  - name: Soundfont
+    icon: soundfont
+    desc: >
+      Each row is a soundfont installed on your device. The one currently in use is marked with a different glyph,
+      and the list opens with it already highlighted.
+
+tip:
+  - info: >
+      Alongside the soundfonts that ship with MustardOS, you can add your own by placing them in a
+      <code>MUOS/soundfont</code> folder on any storage. Files kept there are yours and survive updating your device.
+  - info: >
+      Previewing loads the whole soundfont before it plays, so the first preview of a large one can take a moment.
+      Press <strong>Y</strong> again to stop it, and previews always stop when you leave this screen.
+  - info: If no compatible soundfonts are found on your device, this screen will let you know that none are available.

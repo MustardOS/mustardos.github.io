@@ -1,0 +1,28 @@
+description: >
+  Pickles applies softpatches (<code>.ips</code>, <code>.bps</code> and <code>.ups</code> files) as the game loads, so
+  the original file is never changed. They work with every core, including zipped games, and there are two ways to
+  set them up.<br><br>
+  <strong>Same name:</strong> place a patch beside the game with the same name, without the game's extension, such as
+  <code>Super Metroid.ips</code> next to <code>Super Metroid.sfc</code>. To stack more, number them
+  <code>Super Metroid1.bps</code>, <code>Super Metroid2.ips</code> and so on. They are applied in order after the
+  unnumbered patch, which must be present. Same name patches always apply and are not listed on this screen.<br><br>
+  <strong>Own folder:</strong> place the game in a folder with exactly the same name as the file, extension included,
+  such as <code>SNES/Super Metroid.sfc/Super Metroid.sfc</code>. Every other patch in that folder, whatever its name,
+  is listed here so you can choose which ones to use. They are applied in alphabetical order after any same name
+  patches, and your choices are remembered for that game.<br><br>
+  This screen appears in the Pickles Menu when the game's own folder holds at least one patch, and is hidden while
+  Netplay is active.
+
+goback: muxretro
+
+visible:
+  - name: Patch
+    icon: patch
+    desc: >
+      Each row is one patch from the game's own folder, all enabled to begin with. Press <strong>Left</strong> or
+      <strong>Right</strong> to switch it between <strong>Enabled</strong> and <strong>Disabled</strong>.
+
+tip:
+  - info: Patch changes only take effect after a restart, so a toast will remind you to use **Restart** from the Pickles Menu once you back out.
+  - info: When a game loads with patches, a toast shows how many were applied, and the **Information** screen shows the same count under **Active Patches**.
+  - info: The folder method keeps patches with the game they belong to. Patches loose in a shared folder are only used through the same name method, so they never apply to the wrong game.

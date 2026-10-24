@@ -2,9 +2,16 @@ manufacturer: Anbernic
 name: RG34XX H
 internal: rg34xx-h
 desc: An almost perfect replica of a corpo handheld.
+features:
+  form: horizontal
+  sticks: 0
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "720x480"
 downloads:
   - variant:
-    hash: 4b18895bbda6542a9b3befd05c058b0902b4e8d91db0fc995c0f1ee26bdc825f
-    gofile: https://store2.gofile.io/download/direct/353d4bbc-ff0b-4cee-a4ec-1b0c52ba91c4/MustardOS_RG34XX-H_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/pzJS3BoR#5rZBLX0eAbXuooxYi2JmAUQL2sUaqYSMKrK5fcX6ctw
-    torrent: MustardOS_RG34XX-H_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: bb3e697fdb7c46173a7ac4c07484b3562223750e6904ffd11332c8b4a6799076
+    gofile: https://gofile.io/d/96V08E6D
+    mega: https://mega.nz/file/wuol1axS#m8pVqsz-HFwKQrLxx9XLvBjzBRQwW3UTxujBFzjdRyI
+    torrent: MustardOS_RG34XX-H_2606.0_ANDROMEDA-db2a3bd0

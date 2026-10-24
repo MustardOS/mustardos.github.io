@@ -1,0 +1,43 @@
+description: >
+  Read-only details about the current video and audio path. Video Diagnostics helps identify scaling, cadence,
+  shader, correction, and presentation problems without changing any setting.
+
+goback: muxretro-settings
+
+visible:
+  - name: Refresh Rate
+    icon: fpslimit
+    desc: The display refresh rate currently in use.
+  - name: Frame Cadence
+    icon: fps
+    desc: How the core frame rate maps onto the display refresh rate.
+  - name: Source Resolution
+    icon: resolution
+    desc: The frame size supplied by the core.
+  - name: Output Resolution
+    icon: resolution
+    desc: The frame size presented to the display.
+  - name: Integer Mapping
+    icon: integerscale
+    desc: Whether the current source-to-output mapping uses a whole-pixel scale.
+  - name: Texture Filter
+    icon: texturefilter
+    desc: The active texture sampling method.
+  - name: Shader
+    icon: shader
+    desc: The active shader or None.
+  - name: Shader Work
+    icon: performance
+    desc: Whether shader processing is active, bypassed, or unavailable.
+  - name: Audio Queue
+    icon: audio
+    desc: The current audio queue status.
+  - name: Image Corrections
+    icon: shimmerfix
+    desc: The current Shimmer Fix and Anti-Flicker status.
+  - name: Run Ahead Cost
+    icon: runahead
+    desc: The measured work associated with Run Ahead when active.
+  - name: External Overlay
+    icon: overlay
+    desc: Whether an external stage overlay is active.

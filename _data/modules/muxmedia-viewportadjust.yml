@@ -1,0 +1,21 @@
+description: >
+  Move and resize the video viewport. Changes affect the media picture and leave the overlay placement independent.
+
+goback: muxmedia-settings
+
+visible:
+  - name: X Offset
+    icon: viewportx
+    desc: Move the picture left or right.
+  - name: Y Offset
+    icon: viewporty
+    desc: Move the picture up or down.
+  - name: X Stretch
+    icon: viewportx
+    desc: Widen or narrow the picture.
+  - name: Y Stretch
+    icon: viewporty
+    desc: Make the picture taller or shorter.
+  - name: Zoom
+    icon: viewportzoom
+    desc: Scale the whole picture around its centre.

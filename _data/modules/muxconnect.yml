@@ -10,22 +10,40 @@ visible:
     icon: network
     link: muxnetwork
     desc: >
-      Connect to wireless networks either manually or through previously saved profiles. Supports secure, hidden, and 
-      static IP configurations for advanced network setups.
+      Connect to wireless networks either manually or through previously saved profiles. Supports secured networks
+      and static IP configurations for advanced network setups.
   - name: Network Settings
     icon: netadv
     link: muxnetadv
     desc: >
-      Fine tune how the system handles network detection, module compatibility, and connection recovery. Useful for 
+      Fine tune how the system handles network detection, module compatibility, and connection recovery. Useful for
       troubleshooting connection issues or optimising startup behaviour. Typically should be left as default.
+  - name: Proxy Settings
+    icon: net_proxy
+    link: muxnetproxy
+    desc: >
+      Configure a network proxy for supported connections, including the proxy type, server address, and any hosts
+      that should bypass it. A test option is provided to confirm the proxy is reachable before saving.
+  - name: Direct Link
+    icon: link
+    link: muxlink
+    desc: >
+      Join two MustardOS devices with supported wired network adapters and a cable. Addresses and peer discovery are
+      handled automatically.
   - name: Web Services
     icon: service
     link: muxwebserv
     desc: >
-      Manage built in network enabled services such as SSH, SFTP, and Syncthing. These tools allow remote access, 
+      Manage built in network enabled services such as SSH, SFTP, and Syncthing. These tools allow remote access,
       synchronisation, and system management over an active network connection.
-  - name: USB Function
-    icon: usbfunction
+  - name: Web Dashboard Code
+    icon: webcode
+    link: muxwebcode
     desc: >
-      Switch between ADB (Android Debug Bridge) and MTP (Media Transfer Protocol) modes. ADB provides developer access 
-      for debugging and command-line tools, while MTP allows file transfers between the device and a computer.
+      Shows the changing code used to approve changes made through the Web Dashboard. This row is visible
+      only while the Web Dashboard service and its Authentication are enabled.
+  - name: Bluetooth
+    icon: bluetooth
+    link: muxbtall
+    desc: >
+      Scan for, pair with, connect and manage Bluetooth devices such as controllers, headphones, and speakers.

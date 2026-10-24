@@ -1,0 +1,27 @@
+description: >
+  Apply a complete group of Pickles settings in one step or save the current setup as a named profile. Profiles do
+  not change core options.
+
+goback: muxretro-settings
+
+visible:
+  - name: Safe
+    icon: settings
+    desc: Apply conservative settings intended to favour compatibility.
+  - name: Balanced
+    icon: performance
+    desc: Apply the general-purpose Pickles settings.
+  - name: Quality
+    icon: videosettings
+    desc: Apply settings that favour presentation on devices with enough performance available.
+  - name: User Profiles
+    icon: settings
+    desc: Apply or delete profiles you have saved previously. The current profile is identified in the value column.
+  - name: Save Current
+    icon: settings
+    desc: >
+      Give the current setup a name and choose whether it is available for this content, this core, or all content.
+
+tip:
+  - info: A recently applied profile can be restored for a short time with the Restore action.
+  - info: Save Current appears when the active settings do not already match a profile and space remains for another user profile.

@@ -1,0 +1,65 @@
+description: >
+  Mustard Terminal is the command line built into MustardOS. Open it from <strong>Applications</strong> and the
+  frontend steps aside while it runs, then comes straight back to Applications when you leave.<br><br>It draws in the
+  colours and fonts of your current theme, supports colour, full screen programs such as <code>top</code>, and even
+  pictures, and comes with an on-screen keyboard so you can type with just the buttons. A keyboard plugged into
+  your device works too.<br><br>Press <strong>MENU</strong> at any time to open its settings, shown below.
+
+visible:
+  - name: Terminal Font Size
+    icon: fontsize
+    desc: >
+      How large the text is drawn, from 6 to 72 points. Smaller fits more on screen, larger is kinder on the eyes.
+      Press <strong>Left</strong> or <strong>Right</strong> to change it.
+  - name: Font Hinting
+    icon: fonthinting
+    desc: >
+      How the text is smoothed to fit the pixels of your screen. Choose from <strong>Normal</strong>,
+      <strong>Light</strong>, <strong>Monochrome</strong>, or <strong>None</strong>. Monochrome gives crisp, hard
+      edged letters, which can read better on small screens.
+  - name: Foreground Colour
+    icon: foreground
+    desc: >
+      The colour of the text itself, from twelve choices including White, Amber, Green, and Cyan for that proper old
+      terminal look.
+  - name: Background Colour
+    icon: background
+    desc: >
+      The colour behind the text, from twelve dark shades such as Black, Charcoal, Navy, and Forest, all chosen to
+      keep the text easy to read.
+  - name: Reset Terminal
+    icon: reset
+    desc: >
+      Starts a fresh session on a clean screen. Anything still running in the terminal is stopped, so use it when
+      something has got itself stuck.
+  - name: Quit Terminal
+    icon: quit
+    desc: >
+      Closes Mustard Terminal and returns you to Applications.
+
+hidden:
+  - name: On-Screen Keyboard
+    desc: >
+      Press <strong>SELECT</strong> to bring up the keyboard and cycle where it sits: along the bottom, along the
+      top, each in a solid or see-through style, then hidden again. Move between keys with the
+      <strong>D-Pad</strong> and press <strong>A</strong> to type one. <strong>L1</strong> and
+      <strong>R1</strong> flip between the lower case, upper case, and control key layers.
+  - name: Terminal Controls
+    desc: >
+      With the keyboard hidden, the <strong>D-Pad</strong> sends arrow keys, <strong>B</strong> is Backspace,
+      <strong>Y</strong> is Space, and <strong>START</strong> is Enter. <strong>L2</strong> and
+      <strong>R2</strong> scroll back through earlier output.
+  - name: Reset Settings
+    desc: >
+      Press <strong>X</strong> while the settings are open to put the font and colours back to what your theme
+      provides.
+  - name: Custom Keyboard Layers
+    desc: >
+      Extra keyboard layers, such as a page of symbols, can be added with a layout file whose location is stored in
+      <code>/opt/muos/config/terminal/osk_layout</code>. Up to 13 extra layers are allowed, each with four rows of
+      up to 12 keys.
+
+tip:
+  - info: Settings are saved as soon as you close the menu with **B** or **MENU**, and apply straight away.
+  - info: Earlier output is remembered between visits, but it lives with other temporary files, so a restart clears it.
+  - info: As with any command line, it is very easy to change things you did not mean to. If you are following a guide, type carefully.

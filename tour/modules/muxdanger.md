@@ -4,7 +4,7 @@ title: Danger Settings
 module: muxdanger
 glyph: muxdanger
 permalink: /tour/modules/muxdanger
-parent: General Settings
-nav_order: 4
+parent: General
+nav_order: 6
 has_toc: false
 ---

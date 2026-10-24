@@ -7,16 +7,13 @@ grand_parent: Systems
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "OpenBOR"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                   | Type             | Version           |
-|:-----------------------|:-----------------|:------------------|
-| OpenBOR4432            | External         | 4432              |
-| OpenBOR6412            | External         | 6412              |
-| OpenBOR7142            | External         | 7142              |
-| **OpenBOR7530**        | External         | 7530              |
+{% include emulator_table.html system=page.manifest %}
 

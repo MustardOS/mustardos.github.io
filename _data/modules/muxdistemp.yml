@@ -1,0 +1,39 @@
+description: >
+  Display Temperature lets you automatically shift the colour warmth of your screen between sunrise and sunset,
+  similar to a night light or blue light filter, or set a single fixed colour temperature manually. This is only
+  available on devices that support on-device colour temperature adjustment.<br><br>A warmer
+  screen can reduce eye strain during evening play.
+
+goback: muxtweakgen
+
+visible:
+  - name: Schedule
+    icon: schedule
+    desc: >
+      Turn the automatic sunrise and sunset colour temperature schedule on or off. When enabled, the screen shifts
+      between two temperatures at the times you set below. When disabled, a single manual <strong>Temperature</strong>
+      value is used instead.
+  - name: Sunrise Temperature
+    icon: sunrisetemp
+    desc: >
+      The colour temperature applied from the sunrise time you set. Only shown while the schedule is enabled.
+  - name: Sunset Temperature
+    icon: sunsettemp
+    desc: >
+      The colour temperature applied from the sunset time you set. Only shown while the schedule is enabled.
+  - name: Sunrise Time
+    icon: sunrisetime
+    desc: >
+      The time of day the sunrise colour temperature takes effect. Only shown while the schedule is enabled.
+  - name: Sunset Time
+    icon: sunsettime
+    desc: >
+      The time of day the sunset colour temperature takes effect. This must be later than the Sunrise Time. Only
+      shown while the schedule is enabled.
+  - name: Temperature
+    icon: temp
+    desc: >
+      A fixed colour temperature applied immediately to the screen. Only shown while the schedule is disabled.
+
+tip:
+  - info: The Sunset Time must always be later than the Sunrise Time, or the schedule cannot be saved.

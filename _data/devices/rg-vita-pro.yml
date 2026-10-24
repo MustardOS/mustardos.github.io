@@ -1,0 +1,17 @@
+manufacturer: Anbernic
+name: RG Vita Pro
+internal: rg-vita-pro
+desc: A wide handheld with a large 1080p screen and two lit sticks.
+features:
+  form: horizontal
+  sticks: 2
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "1920x1080"
+downloads:
+  - variant:
+    hash: fcc3f7ccebe5f51d0142f76256c3eaa76899a90665291a9f2dd5960a27b5e144
+    gofile: https://gofile.io/d/IygzdLKO
+    mega: https://mega.nz/file/Uu4EiSZS#xa-6sSW9vuWdYW80Ny0-Wd9mqkhzOiWEK0xIHtXhTiA
+    torrent: MustardOS_RG-VITA-PRO_2606.0_ANDROMEDA-db2a3bd0

@@ -1,0 +1,39 @@
+description: >
+  Connect to a game someone else is hosting. If you are both on the same home network, MustardOS can find
+  their session for you. If they are somewhere else, they will need to pass you an address to type in.
+
+goback: muxretro-netplay
+
+visible:
+  - name: Status
+    icon: network
+    desc: >
+      Whether you are connected, still trying, or waiting for the host to let you in.
+  - name: Play Mode
+    icon: controller
+    desc: >
+      Whether you get your own controller in the game or share one with the host. This normally follows
+      whatever the host chose.
+  - name: Find LAN Sessions
+    icon: search
+    desc: >
+      Look for games being hosted on the same home network as you, with no address to type in.
+  - name: Join Found Session
+    icon: network
+    desc: >
+      Connect to whichever session you picked from the list of games found nearby.
+  - name: Join by Address
+    icon: network
+    desc: >
+      Type in the address your friend gave you, for playing with somebody who is not on your network.
+  - name: Confirm Pairing
+    icon: valid
+    desc: >
+      Enter the short code the host gave you, if they set one up.
+  - name: Connection
+    icon: performance
+    desc: >
+      How quick the link between the two of you is, in milliseconds. Smaller numbers feel more responsive.
+
+tip:
+  - info: Nothing showing under **Find LAN Sessions**? Check that the host has actually started their session, and that you are both on the same wireless network. A guest network keeps devices apart.

@@ -2,8 +2,9 @@ description: >
   Track and analyse how you play across all your content, turning your playing data into some hopefully
   super interesting insights. The Activity Tracker records launches, play time, devices, cores, and then
   presents as both per content detail and global summaries that help you understand your habits and your
-  very unique and special play preferences.<br><br>You can also export your statistics to HTML and share
-  them around for gloating purposes.
+  very unique and special play preferences.<br><br>The same statistics are available from Activity in the
+  Web Dashboard, or by opening the <code>MUOS/info/track</code> folder in the
+  <a href="/tools/activity-tracker">Activity Tracker Importer</a>, ready to share around for gloating purposes.
 
 goback: muxinfo
 
@@ -13,8 +14,8 @@ visible:
     link: muxactivity-content
     desc: >
       Detailed statistics for individual content. This view shows information such as content name,
-      core used, launch count, last device and mode, last played date, average session time, total play time,
-      and details about the most recent session.
+      core used, launch count, last device and mode, first and last played dates, average session time, total
+      play time, and the most recent and longest sessions.
   - name: Activity Overview
     icon: global_toplaunch
     link: muxactivity-overview

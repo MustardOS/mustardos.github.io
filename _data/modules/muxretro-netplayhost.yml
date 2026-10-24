@@ -1,0 +1,45 @@
+description: >
+  Set up a game for someone else to join. Give your session a name, decide how you want to play together,
+  then start it and wait for your friend to arrive.
+
+goback: muxretro-netplay
+
+visible:
+  - name: Status
+    icon: network
+    desc: >
+      What your session is doing right now, still being set up, waiting for a player, or up and running.
+  - name: Host Name
+    icon: user
+    desc: >
+      The name other players see when they go looking for your game. Anything up to 48 characters.
+  - name: Play Mode
+    icon: controller
+    desc: >
+      <strong>Separate Players</strong> gives each of you your own controller in the game, which is what you
+      want for two-player games. <strong>Play Together</strong> shares a single controller between you both,
+      handy for taking turns at a difficult part.
+  - name: Client Slots
+    icon: controller
+    desc: >
+      How many other people are allowed to join you.
+  - name: Host Port
+    icon: network
+    desc: >
+      The numbered doorway others use to reach you. Leave it alone unless you have been told to change it.
+  - name: Host Session
+    icon: network
+    desc: >
+      Starts your session and begins listening for players. Once this is running, your friend can find you.
+  - name: Pairing Code
+    icon: valid
+    desc: >
+      An optional short code that a joining player must type in before they are let in.
+  - name: Connection
+    icon: performance
+    desc: >
+      How quick the link between the two of you is, in milliseconds. Smaller numbers mean the game feels
+      more responsive for both players.
+
+tip:
+  - info: Set a **Pairing Code** when hosting over the internet, so only the people you invited can join.

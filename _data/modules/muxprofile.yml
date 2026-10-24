@@ -1,0 +1,51 @@
+description: >
+  A profile gathers many settings into one choice. Apply a ready-made accessibility profile, a profile that was
+  supplied with your device, or one you have saved yourself, and every setting it holds changes in one step.<br><br>
+  When you apply a profile you choose whether to <strong>Merge</strong> it, which keeps every setting the profile
+  does not mention, or <strong>Replace</strong>, which first returns those settings to their defaults. Your settings
+  from before are kept, so <strong>Restore Previous Profile</strong> can always take you back.<br><br>Profiles never
+  hold wireless network details, kiosk restrictions, Danger Settings or your passcode, so they are safe to share. Build your own with
+  the <a href="/tools/profile-builder">Profile Builder</a>.
+
+goback: muxconfig
+
+visible:
+  - name: Restore Previous Profile
+    icon: restore
+    desc: >
+      Puts back the settings you had before the last profile was applied. Choosing it again swaps back. It only appears once a profile has been applied.
+  - name: Reset to Default Profile
+    icon: reset
+    desc: >
+      Returns every setting a profile can change to the way MustardOS ships it, after asking you to confirm. Network,
+      kiosk, Danger Settings and device details are left as they are. A reset cannot be undone, so Restore Previous
+      Profile is no longer offered afterwards.
+  - name: Accessibility
+    icon: accessibility
+    desc: >
+      A folder of built-in profiles grouped around common needs: <strong>Clear View</strong>, <strong>Low Vision</strong> and
+      <strong>Large Print</strong> for reading, <strong>Calm Motion</strong> and <strong>Still Screen</strong> for
+      movement, <strong>Steady Hands</strong> for control and confirmation, and <strong>Fewer Distractions</strong>
+      for a quieter interface. Each changes only the settings for its need, so merging two of them together works
+      well. These are part of MustardOS and cannot be removed.
+  - name: Supplied Profiles
+    icon: oem
+    desc: >
+      A profile that came with your device. It is read from a <code>profile.conf</code> file when the device starts for
+      the first time, and applied before the installer appears. The file can sit at the top of the card or in its
+      <code>MUOS/profile</code> folder, on either the main card or a second card. A <code>wifi.conf</code> file beside
+      it can connect the device to a wifi network at the same time, as described in the
+      <a href="/tools/profile-builder#network-settings-profile">Profile Builder</a>.
+  - name: Your Profiles
+    icon: user
+    desc: >
+      Profiles you have saved or copied into <code>MUOS/profile</code>. Folders you create there appear as folders, one
+      level deep, and saving while inside one of them keeps the new profile in that folder. A folder named
+      Accessibility is ignored, because that name belongs to the built-in profiles. Press <strong>X</strong> to remove a
+      profile you no longer need.
+
+tip:
+  - info: Press **Y** to save the settings you have changed from their defaults as a profile. Inside one of your own folders, the profile is saved in that folder.
+  - info: Press **MENU** on any profile to read what it changes.
+  - info: Keep your profiles on a second card with Storage, or include them in a Backup, to carry them to another device.
+  - info: If a profile has a mistake in it, nothing is changed and a file ending in `_error.txt` is written to `MUOS/log/profile`, listing each line that needs fixing and why.

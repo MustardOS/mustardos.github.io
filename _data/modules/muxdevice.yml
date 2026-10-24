@@ -3,7 +3,7 @@ description: >
   and hardware communication. These should <strong>NOT</strong> be changed unless instructed to do so by a 
   MustardOS developer, as improper modification may affect system stability or functionality.
 
-goback: muxsysinfo
+goback: muxdetail
 
 visible:
   - name: Bluetooth Integration
@@ -22,16 +22,20 @@ visible:
   - name: HDMI Integration
     icon: hdmi
     desc: >
-      Indicates whether HDMI output is available and functioning, used for connecting to external displays.
+      Indicates whether HDMI output is available and functioning, used for connecting to external displays. Some
+      devices have this off by default, as explained in <a href="/devices/notes">Device Notes</a>.
   - name: Lid Switch Integration
     icon: lid
     desc: >
-      Displays whether the device supports a lid or sleep switch to automatically suspend upon closure of device lid.
+      Whether MustardOS uses the lid sensor on a clamshell device. Leave this enabled so that the Device Lid
+      Switch setting can put your device to sleep when you close the lid.
   - name: Network Integration
     icon: network
     desc: >
       Shows whether network interfaces such as Wi-Fi or Ethernet are detected and integrated within the system.
-  - name: PortMaster Support
+      Devices that only connect through a USB Wi-Fi dongle have this off by default, as explained in
+      <a href="/devices/notes">Device Notes</a>.
+  - name: Portmaster Support
     icon: portmaster
     desc: >
       Indicates whether PortMaster is installed and functional, allowing direct access to downloadable 

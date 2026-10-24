@@ -1,0 +1,67 @@
+description: >
+  Decides the order things appear in while you are browsing, from plain alphabetical through to how recently or how
+  often you have played something. Open it from Explore Content by pressing <strong>MENU</strong> and choosing
+  <strong>Sort Order</strong>.<br><br>Each method has a few variants of its own. Press <strong>Left</strong> or
+  <strong>Right</strong> on a method to flip between them, such as A to Z or Z to A. Press <strong>A</strong> to
+  apply, and you will be asked whether the order should stick to this folder alone or be used everywhere.
+
+goback: muxplore
+
+visible:
+  - name: Natural Sort
+    icon: natural
+    desc: >
+      Plain alphabetical order, with numbers handled sensibly so that <code>Part 2</code> comes before
+      <code>Part 10</code>. A Roman numeral at the end of a name counts as a number too, so
+      <code>Final Fantasy IX</code> comes before <code>Final Fantasy X</code>, and region or version tags in brackets
+      only decide the order when the names are otherwise the same. Choose <strong>A-Z</strong> or
+      <strong>Z-A</strong>.
+  - name: Play Time
+    icon: play_time
+    desc: >
+      Orders by how many hours you have poured into something. Choose <strong>Most First</strong> or
+      <strong>Least First</strong>.
+  - name: Times Played
+    icon: times_played
+    desc: >
+      Orders by how often you have come back to something, which is not always the same as how long you played it
+      for. Choose <strong>Most First</strong> or <strong>Least First</strong>.
+  - name: Last Played
+    icon: last_played
+    desc: >
+      Orders by when you last picked something up. Choose <strong>Recent First</strong> or
+      <strong>Oldest First</strong>.
+  - name: Recently Added
+    icon: recently_added
+    desc: >
+      Orders by when things arrived on your device, which is the quickest way to find whatever you copied over most
+      recently. Choose <strong>Recent First</strong> or <strong>Oldest First</strong>.
+  - name: Title Length
+    icon: title_length
+    desc: >
+      Orders by how long the name is. Choose <strong>Longest First</strong> or <strong>Shortest First</strong>.
+  - name: File Size
+    icon: file_size
+    desc: >
+      Orders by how much room something takes up. Choose <strong>Largest First</strong> or
+      <strong>Smallest First</strong>.
+  - name: Feeling Lucky
+    icon: feeling_lucky
+    desc: >
+      The playful one. Shuffle everything at <strong>Random</strong>, run the list <strong>Backwards</strong>, or
+      try <strong>Vowel Heavy</strong>, <strong>Most Words</strong>, <strong>Sequels First</strong>, and
+      <strong>Shouty Titles</strong>. Not remotely useful, and all the better for it.
+
+hidden:
+  - name: Apply Sort Order To
+    desc: >
+      After pressing <strong>A</strong> you are asked where the order should apply. <strong>Current
+      Directory</strong> keeps it to the folder you are in, while <strong>Current + Global</strong> uses it
+      everywhere else as well.
+  - name: Reset
+    desc: >
+      Press <strong>Y</strong> to put every method back to how it started, should you have wandered too far.
+
+tip:
+  - info: A folder can keep its own order, and that choice wins over whatever you have set globally.
+  - info: The small glyph in the header tells you which order is currently in use. You can hide it from Customisation if you would rather not see it.

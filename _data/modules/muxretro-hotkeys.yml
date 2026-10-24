@@ -1,0 +1,79 @@
+description: >
+  Configure shortcuts used while content is running. A shortcut combines <strong>MENU</strong> with one other
+  button. Letting go of <strong>MENU</strong> without a shortcut opens the Pickles Menu.
+
+goback: muxretro-settings
+
+visible:
+  - name: Hotkey Buttons
+    icon: hotkeys
+    desc: >
+      Assign the second button used by every shortcut. Press <strong>A</strong> on a shortcut to pick its button from
+      a list, or choose Unbound to switch it off. Choosing a button another shortcut already uses leaves that
+      shortcut unbound until you give it a new button. Press <strong>X</strong> to reset all shortcut buttons to their
+      defaults.
+  - name: Fast Forward
+    icon: fastforward
+    desc: >
+      Choose <strong>Disabled</strong>, <strong>Press</strong>, or <strong>Hold</strong>. Press toggles the faster speed
+      each time the shortcut is used. Hold keeps it active until the shortcut is released.
+  - name: Fast Forward Speed
+    icon: ffspeed
+    desc: Choose how quickly content runs while Fast Forward is active.
+  - name: Fast Forward Audio
+    icon: sound
+    desc: >
+      Keep audio muted or let it follow the changing speed and pitch. Audio moves gradually towards the selected
+      speed for a tape-like result.
+  - name: Fast Forward Glyph
+    icon: ffglyph
+    desc: Show or hide the on-screen Fast Forward indicator.
+  - name: Slow Motion
+    icon: slowmotion
+    desc: >
+      Choose <strong>Disabled</strong>, <strong>Press</strong>, or <strong>Hold</strong>. Press toggles the slower speed
+      each time the shortcut is used. Hold keeps it active until the shortcut is released.
+  - name: Slow Motion Speed
+    icon: slowmospeed
+    desc: Choose how slowly content runs while Slow Motion is active.
+  - name: Slow Motion Audio
+    icon: sound
+    desc: >
+      Keep audio muted or let it follow the changing speed and pitch. Audio moves gradually towards the selected
+      speed for a tape-like result.
+  - name: Slow Motion Glyph
+    icon: slowmoglyph
+    desc: Show or hide the on-screen Slow Motion indicator.
+  - name: Speed Persistence
+    icon: fastforward
+    desc: >
+      Keep Fast Forward or Slow Motion active when you open and close the Pickles Menu. When disabled, content
+      returns to normal speed whenever the menu opens.
+  - name: Pause Content
+    icon: pause
+    desc: Enable or disable the shortcut that pauses the running core without opening the menu.
+  - name: Pause Content Glyph
+    icon: pause
+    desc: Show or hide the on-screen Paused indicator.
+  - name: Quick Save
+    icon: quicksave
+    desc: Enable or disable the shortcut that writes straight to the dedicated quicksave slot.
+  - name: Quick Load
+    icon: quickload
+    desc: Enable or disable the shortcut that loads straight from the dedicated quicksave slot.
+  - name: Toggle FPS
+    icon: togglefps
+    desc: Enable or disable the shortcut that changes the frame rate counter visibility.
+  - name: Toggle Header
+    icon: toggleheader
+    desc: Enable or disable the shortcut that changes the header visibility.
+  - name: Quit
+    icon: quit
+    desc: Enable or disable the shortcut that saves as configured and exits the content.
+  - name: Manual
+    icon: manual
+    desc: Enable or disable the shortcut that opens a matching plain text manual.
+
+tip:
+  - info: Fast Forward and Slow Motion cannot remain active at the same time. Starting one stops the other.
+  - info: The glyph rows only control the small on-screen indicators. They do not change the shortcut itself.

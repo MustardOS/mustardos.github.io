@@ -1,55 +1,44 @@
 description: >
-  Where you configure and fine tune every aspect of your device. From connectivity and language to interface 
-  design, power management, and backups, each module provides focused control over a specific part of the 
-  MustardOS environment.<br><br>It is the central place to adapt the system to your personal preferences and 
-  hardware capabilities.
+  Set up the device, its interface, connectivity, cores, power, storage, and backups. Each area has its own focused
+  screen, and larger screens are divided into sections.
 
 goback: muxlaunch
 
 visible:
-  - name: General Settings
+  - name: General
     icon: general
     link: muxtweakgen
     desc: >
-      Change device specific settings, date and time, brightness and volume, hotkeys, and device startup.
+      Change device specific settings, date and time, brightness and volume, hotkeys and device startup.
+      <br><br>Press <strong>X</strong> here to jump straight to <strong>Advanced</strong>, or hold
+      <strong>Y</strong> for the <strong>Danger</strong> settings beneath it. Both ask you to confirm first.
+  - name: Customisation
+    icon: custom
+    link: muxcustom
+    desc: >
+      Everything that decides how your device looks, sounds, and presents your content, arranged into sections. The
+      header bar, fonts, folders, box art, themes, and audio all live here, along with catalogue
+      sets, RetroArch configurations, and your boot logo.
   - name: Connectivity
     icon: connect
     link: muxconnect
     desc: >
       A central module to connect to Wi-Fi networks and change device specific network settings. 
       A number of web services can also be enabled from here and device specific USB functionality.
-  - name: Customisation
-    icon: custom
-    link: muxcustom
+  - name: Profiles
+    icon: access
+    link: muxprofile
     desc: >
-      Customise the options of various functions within the MustardOS frontend. Catalogue sets, RetroArch 
-      configurations, and themes can be downloaded and installed from this module.
-  - name: Interface Options
-    icon: interface
-    link: muxvisual
+      Apply a group of settings in one step, including ready-made accessibility profiles for larger text, stronger
+      contrast, a clearer highlight and calmer movement. You can also save your own settings as a profile to keep or
+      share.
+  - name: Cores
+    icon: core
+    link: muxcore
     desc: >
-      Customise the look and feel of the MustardOS frontend. Show or hide various options or change how 
-      names are displayed through the content explorer.
-  - name: Colour Options
-    icon: colour
-    link: muxcoladjust
-    desc: >
-      Adjust display colour settings such as temperature, saturation, hue, gamma, and related values where supported
-      either on device or in content only.
-  - name: Overlay Options
-    icon: overlay
-    link: muxoverlay
-    desc: >
-      Configure content overlays including the base overlay and battery, volume, and brightness indicators,
-      with options for transparency, position, and scale.
-  - name: Language
-    icon: language
-    link: muxlanguage
-    desc: >
-      Pick a different language for your device. All languages are supported through a 
-      <a href="https://hosted.weblate.org/projects/muos/mux/">Hosted Weblate</a> instance. For all changes, 
-      please do so within Weblate and not through our language repository on GitHub.
-  - name: Power Settings
+      See every published Libretro core, check which builds are installed, and install or update them directly on
+      the device.
+  - name: Power
     icon: power
     link: muxpower
     desc: >
@@ -60,7 +49,7 @@ visible:
     link: muxstorage
     desc: >
       Supported devices with an additional mSD slot will allow you to store specific items on a secondary card.
-  - name: Device Backup
+  - name: Backup
     icon: backup
     link: muxbackup
     desc: >

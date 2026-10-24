@@ -1,0 +1,11 @@
+description: >
+  Shows the six-digit code required before the Web Dashboard can change anything. The code changes every
+  thirty seconds and is only shown on the device.<br><br>The dashboard address uses the active <code>.local</code>
+  name when Local DNS Resolver is enabled. The device IP address is shown when it is disabled.
+
+goback: muxconnect
+
+tip:
+  - info: This screen appears in Connectivity only while the Web Dashboard service is enabled.
+  - info: Authentication must be enabled in the Web Dashboard settings before a code is required.
+  - info: When dashboard authentication is disabled, no code is needed and anyone on your network can make changes through the dashboard.

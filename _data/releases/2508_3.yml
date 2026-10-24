@@ -1,23 +1,7 @@
 ver: "2508.3"
 code: "Golden Goose"
 type: archive
-pronunciation: "/ˈɡoʊldən ɡuːs/"
-
-full_image:
-  gofile: https://gofile.io/d/BjWtbj
-  mega: https://mega.nz/folder/FjIVxDyR#DRIA6Q7pez9863LSkbRMfQ
-  warning:
-    - Upon full image reflash on devices with SD2 inserted your <code>MUOS</code> folder will be moved to 
-      <code>MUOS_old</code> to ensure update safety. However do not panic, your save games, configurations, and other 
-      user data can be safely copied back. However please do so with caution as there may be conflicts.
-
-update_archive:
-  gofile: https://gofile.io/d/XcvWB8
-  mega: https://mega.nz/folder/Q7JDWIQa#LCTZofUz0gBq5_KEhrkXIg
-  important:
-    - This is a simple <strong>Archive Manager</strong> installable patch for those of you who are running either the
-      MustardOS <strong>2508.1 Canada Goose</strong> or <strong>2508.2 Silly Goose</strong> versions. However you can
-      download the full image for a reflash.
+pronunciation: "/ˈɡəʊldən ɡuːs/"
 
 note:
   - Due to the amount of issues in the past relating to people changing their RetroArch global configuration

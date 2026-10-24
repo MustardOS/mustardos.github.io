@@ -2,9 +2,16 @@ manufacturer: Anbernic
 name: RG35XX SP
 internal: rg35xx-sp
 desc: A delicately hinged clamshell with a 3.5" display.
+features:
+  form: clamshell
+  sticks: 0
+  wifi: 1
+  bluetooth: 1
+  hdmi: 1
+  screen: "640x480"
 downloads:
   - variant:
-    hash: 9a48fc00529ede454128f4e540cb4d79a976fdde8a2bada970927dcbc0a88da1
-    gofile: https://store-na-phx-3.gofile.io/download/direct/efaa78a1-6ca6-4083-98e7-1f716e53fc12/MustardOS_RG35XX-SP_2601.1_FUNKY_JACARANDA-bc38efa0.img.gz
-    mega: https://mega.nz/file/FnhTlJJB#8oFcwPQlvOmpAN6BXLOEtsQ9sMOvtpTH6mZS3XmWIJ4
-    torrent: MustardOS_RG35XX-SP_2601.1_FUNKY_JACARANDA-bc38efa0
+    hash: af386567548372e55a0a3bbf7db21df059441c3fe678a057243bdcb66f8d4771
+    gofile: https://gofile.io/d/SxV6O24D
+    mega: https://mega.nz/file/IixyAJzZ#qkkEFSqZMPK1QoFQNLctm3x9xCzeGanHjKweJYYgUDM
+    torrent: MustardOS_RG35XX-SP_2606.0_ANDROMEDA-db2a3bd0

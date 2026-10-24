@@ -7,38 +7,94 @@ nav_order: 5
 has_children: true
 ---
 
-# Themes
+# **Themes**
 
-On MustardOS, you can fully customise the look of your menus on your device! This is achieved with **Themes**. You can
-make your own themes by following the help pages here, or install some pre-existing ones below. Happy theme-ing!
+Themes can change the colours, typefaces, spacing, backgrounds, glyphs, sounds and layout of the MustardOS frontend.
+They can target individual screens and supported display resolutions while sharing common assets from the theme root.
 
-# Theme Library
+<div class="guide" markdown="0">
+    <h2 class="guide-heading">Installing a theme</h2>
 
-All these themes were made by members of the MustardOS community. Join the community today!
+    <div class="guide-grid">
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxtheme/download.svg" alt="" width="48" height="48">
+            <span class="guide-title">From the Theme Picker</span>
+            <ol class="guide-numbered">
+                <li>Connect the device to the internet.</li>
+                <li>Open <strong>Configuration &gt; Customisation &gt; Theme Picker &gt; Theme Download</strong>.</li>
+                <li>Download a theme, return to <strong>Theme Picker</strong> and select it.</li>
+            </ol>
+        </div>
+        <div class="guide-card">
+            <img src="/tour/assets/glyphs/muxarchive/installed.svg" alt="" width="48" height="48">
+            <span class="guide-title">From a theme archive</span>
+            <ol class="guide-numbered">
+                <li>Copy the <code>.muxthm</code> file to <code>ARCHIVE</code> on SD1 or SD2.</li>
+                <li>Open <strong>Applications &gt; Archive Manager</strong> and select the file.</li>
+                <li>Open <strong>Configuration &gt; Customisation &gt; Theme Picker</strong> and select the installed theme.</li>
+            </ol>
+        </div>
+    </div>
 
-You can find all themes for MustardOS [here](https://theme.muos.dev/). You have two options to download and install the theme.
+    <div class="guide-extra">
+        <a class="tour-card" href="https://theme.muos.dev/">
+            <img src="/tour/assets/glyphs/muxtheme/theme.svg" alt="" width="24" height="24">
+            <span>Browse the community theme library</span>
+        </a>
+        <a class="tour-card" href="https://community.muos.dev/">
+            <img src="/tour/assets/glyphs/muxinfo/news.svg" alt="" width="24" height="24">
+            <span>Theme creators on the MustardOS Community</span>
+        </a>
+    </div>
+</div>
 
-## Utilise the on device browser and installer 
+Some themes provide matching folder or application artwork in a separate catalogue package. Install that package
+when the theme creator supplies one.
+{: .note }
 
-Note: Ensure your device is connected to the internet!
-  
-  - Select Configuration > Customisation > Theme Picker > Theme Download
-  - This will download the current themes available on the website, from here you can download the theme of choice.
-  - Once you have downloaded your theme of choice press 'B' to return to the Theme Picker
-  - Select your theme and enjoy.
+<div class="guide" markdown="0">
+    <h2 class="guide-heading">Creating a theme</h2>
 
-
-## Click on a theme title to download a `.muxthm` file.
-   
-  - Place that file on your device on SD1 or SD2 within the  `ARCHIVE` folder. 
-  - If it does not exist, create a folder titled `ARCHIVE`.
-  - Open Archive Manager found under Applications on your device and open the .muxthm file
-  - Return to the main menu, then select Configuration > Customisation > Theme Picker
-  - Pick your theme and enjoy!
-  
-
- Additional themes can be found on the [MustardOS Forum](https://community.muos.dev/).
-
-> *Some themes have matching folder artwork whilst navigating Explore Content, this is installed separately from themes.
-To see if a theme has these available, navigate to the specific theme's release page on
-the [MustardOS Forum](https://community.muos.dev/).*
+    <div class="guide-grid compact">
+        <a class="guide-card" href="/themes/structure">
+            <img src="/tour/assets/glyphs/muxtheme/folder.svg" alt="" width="36" height="36">
+            <span class="guide-title">Theme Structure</span>
+            <span class="guide-text">Shared files in the theme root, with overrides for each display resolution. Start here.</span>
+        </a>
+        <a class="guide-card" href="/themes/images">
+            <img src="/tour/assets/glyphs/muxcustom/videowallpaper.svg" alt="" width="36" height="36">
+            <span class="guide-title">Images and Video</span>
+            <span class="guide-text">Wallpapers, static images, boot logos and video, sized for each resolution.</span>
+        </a>
+        <a class="guide-card" href="/themes/fonts">
+            <img src="/tour/assets/glyphs/muxcustom/font.svg" alt="" width="36" height="36">
+            <span class="guide-title">Custom Fonts</span>
+            <span class="guide-text">TrueType fonts for the whole theme, a single resolution or a single screen.</span>
+        </a>
+        <a class="guide-card" href="/themes/scheme">
+            <img src="/tour/assets/glyphs/muxconfig/colour.svg" alt="" width="36" height="36">
+            <span class="guide-title">Scheme Files</span>
+            <span class="guide-text">The colours, sizes and layout values for every screen.</span>
+        </a>
+        <a class="guide-card" href="/themes/alternative">
+            <img src="/tour/assets/glyphs/muxcustom/alternate.svg" alt="" width="36" height="36">
+            <span class="guide-title">Theme Alternatives</span>
+            <span class="guide-text">Several selectable styles in one theme, without duplicating the package.</span>
+        </a>
+        <a class="guide-card" href="/themes/assets">
+            <img src="/tour/assets/glyphs/muxcustom/catalogue.svg" alt="" width="36" height="36">
+            <span class="guide-title">Theme Assets</span>
+            <span class="guide-text">Catalogue artwork and other user data installed alongside the theme.</span>
+        </a>
+        <a class="guide-card" href="/themes/finish">
+            <img src="/tour/assets/glyphs/muxarchive/archive.svg" alt="" width="36" height="36">
+            <span class="guide-title">Finishing Your Theme</span>
+            <span class="guide-text">Preview images, credits and packaging the finished <code>.muxthm</code>.</span>
+        </a>
+        <a class="guide-card" href="/themes/glyphs">
+            <img src="/tour/assets/glyphs/muxcustom/glyphlist.svg" alt="" width="36" height="36">
+            <span class="guide-title">Glyph Gallery</span>
+            <span class="guide-text">Every glyph the bundled theme provides, and where each one appears.</span>
+        </a>
+    </div>
+</div>

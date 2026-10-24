@@ -1,0 +1,32 @@
+description: >
+  Add, edit and switch cheat codes on or off for the game you are playing. Game Genie, GameShark and Action Replay
+  codes work only when the current core supports that format, so use a code made for the exact region and revision
+  of your game.
+
+goback: muxretro
+
+visible:
+  - name: Cheat List
+    icon: cheat
+    desc: >
+      Every cheat saved for the current game, up to 64, with whether each one is enabled. When the list is empty,
+      press <strong>Y</strong> to add your first cheat code.
+  - name: Toggle Cheat
+    icon: cheat
+    desc: >
+      Press <strong>A</strong>, or <strong>Left</strong> or <strong>Right</strong>, on a highlighted cheat to switch
+      it on or off.
+  - name: Add Cheat
+    icon: cheat
+    desc: >
+      Press <strong>Y</strong> to type a name for the cheat and then its code with the on-screen keyboard.
+  - name: Manage Cheat
+    icon: cheat
+    desc: >
+      Press <strong>X</strong> on a highlighted cheat to edit its name and code, or delete it from this game.
+
+tip:
+  - info: >
+      Moving from RetroArch? Place its <code>.cht</code> file for the game in <code>MUOS/pickles/cheats</code>, inside
+      a folder named after the core file, such as <code>mgba</code> for <code>mgba_libretro.so</code>, and the same folders the game sits in under <code>ROMS</code>. Pickles converts it
+      into its own cheat list when the game starts and removes the original file.

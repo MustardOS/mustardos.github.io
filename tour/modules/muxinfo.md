@@ -4,7 +4,7 @@ title: Information
 module: muxinfo
 glyph: muxinfo
 permalink: /tour/modules/muxinfo
-parent: Main Menu
+parent: MustardOS Frontend
 nav_order: 5
 has_toc: false
 ---

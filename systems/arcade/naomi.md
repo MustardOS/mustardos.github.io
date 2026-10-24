@@ -7,21 +7,17 @@ permalink: /systems/arcade/naomi
 nav_enabled: true
 has_children: false
 has_toc: false
+manifest: "Sega Atomiswave Naomi"
 ---
 
-# Available Emulators
+# **Available Emulators**
 
-The default option has been ***marked***.
+{: .note }
+> The **bolded** entry below is the default core for this system, unless you assign a different one from Content Options.
 
-| Name                 | Type             | Version           |
-|:---------------------|:-----------------|:------------------|
-| Flycast-ext          | External         |                   |
-| Flycast              | Libretro Core    | 2.4-126           |
-| **Flycast VL**       | Libretro Core    | 0.1               |
-| Flycast Extreme      | Libretro Core    | Git               |
-| Morpheuscast         | Libretro Core    | Git               |
+{% include emulator_table.html system=page.manifest %}
 
 
-# Keybinds 
+# **Keybinds**
 
-Please refer to the [Handy Hotkeys](/#handy-hotkeys) on the homepage for keybindings.
+Please refer to the [Handy Hotkeys](/hotkeys) page for keybindings.

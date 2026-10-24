@@ -1,107 +1,166 @@
 description: >
-  Selectively back up important data such as collections, saves, themes, configurations, and other user created 
-  content. Backups are stored as compressed archives on your chosen target device.<br><br>This helps protect your
-  progress, customisations, and other user data across updates. You are also able to install these backups across to
-  other compatible devices.
+  Bundles your data up into a tidy archive so it can be put back later, or carried across to another device. Pick
+  what you would like included, choose where it should be written, and set it going.<br><br>The list is split into
+  sections, with the controls that create the backup gathered at the end. Each item is either <strong>Included</strong> or <strong>Excluded</strong>.<br><br>The sections match <a href="/tour/modules/muxstorage">Storage</a>, so anything
+  you move to a second card is easy to find here too.
 
 goback: muxconfig
 
-visible:
-  - name: Activity Tracker
-    icon: track
+sections:
+  - name: Saves and Activity
     desc: >
-      Includes your game activity tracker, which stores playtime and session data for each title.
-  - name: Applications
-    icon: application
+      Your progress and the record of what you have played.
+    items:
+      - name: Save Data
+        icon: save
+        desc: >
+          Save files and save states from RetroArch and the other emulators.
+      - name: Pickles Data
+        icon: pickles
+        desc: >
+          Everything Pickles keeps for your content: in-game saves, save states, core options, settings, profiles,
+          cheats, macros and Ketchup Deck layouts. Its temporary extraction folders are left out.
+      - name: Wasabi Data
+        icon: wasabi
+        desc: >
+          Everything Wasabi keeps for you: resume points, history, bookmarks, equaliser profiles and the filters,
+          shaders and overlays you have chosen.
+      - name: Screenshots
+        icon: screenshot
+        desc: >
+          Every screenshot you have captured.
+      - name: Activity Tracker
+        icon: track
+        desc: >
+          Play time and session data for each title.
+      - name: History
+        icon: history
+        desc: >
+          What you have played and when.
+      - name: Content Collection
+        icon: collection
+        desc: >
+          Your collections.
+
+  - name: Content
     desc: >
-      Backs up all user installed standalone applications, ensuring custom tools and ports are preserved.
-  - name: Background Music
-    icon: music
+      How your content is set up, named and launched.
+    items:
+      - name: Content Assignment
+        icon: content
+        desc: >
+          Tags, governor choices, and the systems and cores you have assigned to your content.
+      - name: Launch Overrides
+        icon: override
+        desc: >
+          Per content overrides, where you have told something to launch differently to the rest.
+      - name: Folder Launch Files
+        icon: launch
+        desc: >
+          The file chosen to launch for each folder you have set up with
+          <a href="/installation/launch-files">Set Launch File</a> in Explore Content.
+      - name: Friendly Name Configs
+        icon: name
+        desc: >
+          The tidied up names you have given things.
+      - name: Metadata Catalogue
+        icon: catalogue
+        desc: >
+          Artwork including videos and animated images, grid icons, and the text stored alongside your content.
+      - name: System BIOS
+        icon: bios
+        desc: >
+          The BIOS files some emulators need. <em>Please note these are yours to supply and should
+          <strong>not</strong> be passed around.</em>
+
+  - name: System
     desc: >
-      Backs up your current background music set for the frontend, including any user added tracks.
-  - name: Content Assignment
-    icon: content
+      The pieces that keep your device set up the way you like it.
+    items:
+      - name: MustardOS Settings
+        icon: settings
+        desc: >
+          Every setting you have chosen across the menus, so a fresh install can be put back the way you had it.
+          Device details such as the system version and paired Bluetooth devices are left out.
+      - name: Settings Profiles
+        icon: profile
+        desc: >
+          The settings profiles you have saved, ready to restore after a fresh install or carry to another device.
+      - name: Network Profiles
+        icon: network
+        desc: >
+          Saved Wi-Fi networks and how you prefer to connect to them.
+      - name: Syncthing Configs
+        icon: syncthing
+        desc: >
+          The settings Syncthing uses to keep devices in step.
+      - name: User Init Scripts
+        icon: init
+        desc: >
+          Anything in the <code>MUOS/init</code> folder that runs when your device starts.
+      - name: Core Manifests
+        icon: manifest
+        desc: >
+          Your own core manifest changes, which add or adjust the cores and systems MustardOS knows about.
+
+  - name: Customisation
     desc: >
-      Includes all assigned content including tags, governor settings, system and core assignments.
-  - name: Content Collection
-    icon: collection
+      The look, the sound, and the extra touches.
+    items:
+      - name: Applications
+        icon: application
+        desc: >
+          Applications you have installed yourself, so your tools and ports come back with you.
+      - name: Custom Packages
+        icon: package
+        desc: >
+          Saved packages such as catalogue sets or RetroArch configuration packages.
+      - name: Themes
+        icon: theme
+        desc: >
+          Installed themes and everything that comes with them.
+      - name: Background Music
+        icon: music
+        desc: >
+          The music that plays while you browse, including anything you have added yourself.
+      - name: RetroArch Data
+        icon: retroarch
+        desc: >
+          Everything RetroArch keeps for you in one archive: the configurations saved for your content, along with
+          its overlays, shaders and cheats. The shaders alone are sizeable, so leave this out if you want a smaller
+          archive. Backups made before these were combined still restore as normal.
+
+  - name: Create Backup
     desc: >
-      Saves all created content collections, preserving your organised library layout.
-  - name: Content Launch Overrides
-    icon: override
+      Where you decide what happens and set it going.
+    items:
+      - name: Backup Destination
+        icon: target
+        desc: >
+          Where the archive is written, whether SD1, SD2, or attached USB storage.
+      - name: Single Backup Archive
+        icon: merge
+        desc: >
+          Choose <strong>Yes</strong> to gather everything included into one archive. Choose <strong>No</strong>
+          to write a separate archive for each destination.
+      - name: Start Backup
+        icon: start
+        desc: >
+          Sets it all running. You will see how it is getting on as it goes, and the finished backup is saved as a
+          <code>.muxbak</code> file in the <code>ARCHIVE</code> folder on whichever target you chose. Each backup
+          carries a checksum manifest, and the <strong>Archive Manager</strong> checks it before anything is
+          restored.
+
+hidden:
+  - name: Toggle All
     desc: >
-      Includes any custom launch override scripts you have created for specific content or systems.
-  - name: Custom Packages
-    icon: package
+      Press <strong>X</strong> while in any of the item sections to include or exclude the whole lot in one go, for
+      when you know exactly what you want.
+  - name: Backing Up Everything
     desc: >
-      Archives all saved custom packages such as Catalogue Sets or RetroArch Configuration packages
-  - name: Friendly Name Configs
-    icon: name
-    desc: >
-      Saves your friendly name mappings, ensuring renamed or cleaned up titles remain consistent after restoration.
-  - name: History
-    icon: history
-    desc: >
-      Backs up your play history and recently launched content entries.
-  - name: Metadata Catalogue
-    icon: catalogue
-    desc: >
-      Includes artwork, grid icons, and splash screens, and other metadata stored within the catalogue.
-  - name: Network Profiles
-    icon: network
-    desc: >
-      All currently saved Wi-Fi network profiles, including SSIDs and connection preferences.
-  - name: RetroArch Cheats
-    icon: cheats
-    desc: >
-      Preserves all RetroArch cheat files, ensuring your custom tweaks and gameplay modifiers remain available.
-  - name: RetroArch Configs
-    icon: config
-    desc: >
-      Backs up your RetroArch configuration files and settings, maintaining controller, display, and core options.
-  - name: RetroArch Overlays
-    icon: overlays
-    desc: >
-      Includes your visual overlay configurations and related assets for RetroArch.
-  - name: RetroArch Shaders
-    icon: shaders
-    desc: >
-      Preserves your installed shader filters and visual effect presets.
-  - name: Save Games + Save States
-    icon: save
-    desc: >
-      Stores all game saves and save states from RetroArch and other supported emulators.
-  - name: Screenshots
-    icon: screenshot
-    desc: >
-      Backs up all captured screenshots.
-  - name: Syncthing Configs
-    icon: syncthing
-    desc: >
-      Saves the configuration files used by Syncthing for synchronisation between devices.
-  - name: System BIOS
-    icon: bios
-    desc: >
-      Includes BIOS files required by some emulators to function correctly. <em>Please Note: these are user supplied
-      should <strong>not</strong> be distributed.</em>
-  - name: Themes
-    icon: theme
-    desc: >
-      Backs up all installed themes and associated assets used by the frontend.
-  - name: User Init Scripts
-    icon: init
-    desc: >
-      Saves any custom user initialisation scripts placed in the <code>MUOS/init</code> folder for execution at startup.
-  - name: Backup Target
-    icon: target
-    desc: >
-      Selects the destination device for storing your backup archive be it SD1, SD2, or attached USB storage.
-  - name: Merge Backups
-    icon: merge
-    desc: >
-      Combines multiple existing backups from different targets into a single unified archive for easier extraction.
-  - name: Start Backup
-    icon: start
-    desc: >
-      Initiates the backup process using the selected items and target. A progress indication will appear during
-      operation, and the archive will be saved to your chosen device target within the <code>BACKUP</code> folder.
+      If every single category is included, you are warned before it starts. A backup of that size can take quite a
+      while and eat up rather a lot of room.
+
+tip:
+  - info: Press **Left** or **Right** to move between sections, or use the shoulder buttons to do the same.
+  - info: Backups made on one device can be installed on another compatible device, which is a handy way to set up a second one quickly.

@@ -1,0 +1,37 @@
+description: >
+  Shows the detail and management options for a single paired Bluetooth device. Friendly Name, Battery, and Address
+  describe the device itself, while Device Type, Status, and Forget let you adjust and manage it.<br><br>Use
+  <strong>A</strong> to rename the device or to connect and disconnect it, and <strong>X</strong> to forget it
+  entirely and remove it from the paired list.
+
+goback: muxbtall
+
+visible:
+  - name: Friendly Name
+    icon: friendlyname
+    desc: >
+      The display name for this Bluetooth device. Press <strong>A</strong> to rename it using the on-screen
+      keyboard; the new name is saved against the device immediately.
+  - name: Battery
+    icon: battery
+    desc: >
+      The battery level last reported by the device, where supported. Not every accessory shares this information.
+  - name: Address
+    icon: address
+    desc: >
+      The unique Bluetooth address of this device.
+  - name: Device Type
+    icon: type
+    desc: >
+      The category MustardOS has assigned to this device, such as Gamepad, Headset, or Keyboard. Use
+      <strong>Left</strong> and <strong>Right</strong> to change it if the device was ever detected incorrectly.
+  - name: Status
+    icon: status
+    desc: >
+      Shows whether the device is Connected or Disconnected. Press <strong>A</strong> to connect or disconnect it
+      on the spot.
+  - name: Forget Device
+    icon: forget
+    desc: >
+      Removes this device from the paired list entirely. Press <strong>X</strong> to forget it, confirming first
+      unless Trust Removals is enabled in Advanced Settings.
