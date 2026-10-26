@@ -48,8 +48,13 @@ layout: default
     </a>
     {% endif %}
     {% if item.mega %}
-    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0 mr-2">
         Download from MEGA
+    </a>
+    {% endif %}
+    {% if item.filen %}
+    <a href="{{ item.filen }}" class="btn fs-5 mb-4 mb-md-0">
+        Download from Filen
     </a>
     {% endif %}
 </p>
@@ -85,8 +90,13 @@ layout: default
     </a>
     {% endif %}
     {% if item.mega %}
-    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0">
+    <a href="{{ item.mega }}" class="btn fs-5 mb-4 mb-md-0 mr-2">
         Download from MEGA
+    </a>
+    {% endif %}
+    {% if item.filen %}
+    <a href="{{ item.filen }}" class="btn fs-5 mb-4 mb-md-0">
+        Download from Filen
     </a>
     {% endif %}
 </p>
@@ -127,7 +137,8 @@ layout: default
         {
             variant: "{{ dl.variant | escape }}"{% if dl.gofile %},
             gofile: "{{ dl.gofile }}"{% endif %}{% if dl.mega %},
-            mega: "{{ dl.mega }}"{% endif %}{% if dl.torrent %},
+            mega: "{{ dl.mega }}"{% endif %}{% if dl.filen %},
+            filen: "{{ dl.filen }}"{% endif %}{% if dl.torrent %},
             torrent: "{{ dl.torrent }}"{% endif %}{% if dl.hash %},
             hash: "{{ dl.hash }}"{% endif %}
         }{% unless forloop.last %},{% endunless %}
@@ -272,6 +283,7 @@ layout: default
 
             if (d.gofile) html.push('<a class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2 text-grey-dk-300" href="' + d.gofile + '">Download from Gofile</a>');
             if (d.mega) html.push('<a class="btn fs-5 mb-4 mb-md-0 mr-2" href="' + d.mega + '">Download from MEGA</a>');
+            if (d.filen) html.push('<a class="btn fs-5 mb-4 mb-md-0 mr-2" href="' + d.filen + '">Download from Filen</a>');
             if (d.torrent) html.push('<a class="btn fs-5 mb-4 mb-md-0" href="/assets/torrents/' + d.torrent + '.torrent">Download Torrent</a>');
 
             return html.join("");

@@ -1,0 +1,49 @@
+ver: "2612"
+code: "Supernova"
+type: progress
+pronunciation: "/ˌsuːpəˈnəʊvə/"
+
+contributors:
+  - xonglebongle
+
+changes:
+  - Added additional lookup so the eMMC can stand in for the SD2 card if enabled
+  - Added default splash and overlay files to Web Dashboard catalogue folders
+  - Added direct hotkeys in Pickles and Wasabi that work without holding MENU because of peer pressure
+  - Added eMMC danger setting to use the builtin eMMC on TrimUI devices as secondary storage
+  - Added fallback to the last known info for Bluetooth devices
+  - Added global splash and overlay files to the Web Dashboard catalogue with override
+  - Added paired devices to managed list when they are not seen during scans
+  - Added state tool to unpack and convert RetroArch save games and save states for Pickles
+  - Added stick directions as hotkey buttons in Pickles and Wasabi on devices with sticks
+  - Added TrimUI eMMC module and loader for those who like to take risks
+  - Added TrimUI network scan removal for stable connections
+  - Added warning prompt before eMMC is enabled with large unforgiving wall of text
+  - Added Web Dashboard upload progress for files and folders
+  - Fixed automatic grid glyph sizes not scaling to the grid cell
+  - Fixed Bluetooth device info losing the device name after a refresh
+  - Fixed compressed RetroArch save games and save states being skipped during import
+  - Fixed external controllers triggering Pickles and Wasabi hotkeys
+  - Fixed footer glyphs sized from the list item height instead of the footer height
+  - Fixed hotkeys in the video player reacting to controllers other than device controls
+  - Fixed imported save state thumbnails not found when named without proper extension
+  - Fixed last collection and history item trying to be selected
+  - Fixed muted preview videos stopping background music
+  - Fixed newly connected Bluetooth device missing from paired list
+  - Fixed paired Bluetooth devices showing as empty
+  - Fixed paired list being skipped when another list was already running
+  - Fixed preview videos stopping background music instead of resuming it afterwards
+  - Fixed primary input staying on an external controller
+  - Fixed rounded preview videos drawing to the wrong render target
+  - Fixed save states missing random core name and version info
+  - Fixed stick directions missing from controller pressed states
+  - Fixed theme textures being freed after the renderer on exit
+  - Fixed Web Dashboard edits, copies and uploads resetting file permissions
+  - Fixed Web Dashboard refusing files and folders that start with a dot
+  - Modified Bluetooth info to show the device name when no details are available
+  - Modified network scanner timeout from 30s to 45s
+  - Modified paired Bluetooth list loading
+  - Modified RetroArch save state import to convert states to the Pickles format
+  - Modified storage mounting, card mode and transfers to use the eMMC when enabled
+  - Modified theme version checks into single shared function
+  - Modified Web Dashboard uploads to wait a bit longer before timeout

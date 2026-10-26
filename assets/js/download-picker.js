@@ -180,6 +180,7 @@
       row.className = "toolbar";
       if (download.gofile) row.append(link("Download from Gofile", download.gofile, true));
       if (download.mega) row.append(link("Download from MEGA", download.mega, false));
+      if (download.filen) row.append(link("Download from Filen", download.filen, false));
       if (download.torrent) row.append(link("Download Torrent", `/assets/torrents/${download.torrent}.torrent`, false));
       block.append(row);
       if (download.hash) {

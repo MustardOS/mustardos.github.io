@@ -1,6 +1,11 @@
 # Supporter voted songs for each release, shown on /community/songs and keyed by the release data file name.
 # Fill in song and artist, and youtube with the full video link. Empty entries show as Coming soon.
 
+"2612":  # Supernova
+  song: ""
+  artist: ""
+  youtube: ""
+
 "2606_0":  # Andromeda
   song: "Around The World"
   artist: "Daft Punk"
