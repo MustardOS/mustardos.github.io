@@ -11,7 +11,7 @@ changes:
   - Added default splash and overlay files to Web Dashboard catalogue folders
   - Added direct hotkeys in Pickles and Wasabi that work without holding MENU because of peer pressure
   - Added eMMC danger setting to use the builtin eMMC on TrimUI devices as secondary storage
-  - Added fallback to the last known info for Bluetooth devices
+  - Added fallback to the last known info for BT devices
   - Added global splash and overlay files to the Web Dashboard catalogue with override
   - Added paired devices to managed list when they are not seen during scans
   - Added state tool to unpack and convert RetroArch save games and save states for Pickles
@@ -21,7 +21,7 @@ changes:
   - Added warning prompt before eMMC is enabled with large unforgiving wall of text
   - Added Web Dashboard upload progress for files and folders
   - Fixed automatic grid glyph sizes not scaling to the grid cell
-  - Fixed Bluetooth device info losing the device name after a refresh
+  - Fixed BT device info losing the device name after a refresh
   - Fixed compressed RetroArch save games and save states being skipped during import
   - Fixed external controllers triggering Pickles and Wasabi hotkeys
   - Fixed footer glyphs sized from the list item height instead of the footer height
@@ -29,8 +29,8 @@ changes:
   - Fixed imported save state thumbnails not found when named without proper extension
   - Fixed last collection and history item trying to be selected
   - Fixed muted preview videos stopping background music
-  - Fixed newly connected Bluetooth device missing from paired list
-  - Fixed paired Bluetooth devices showing as empty
+  - Fixed newly connected BT device missing from paired list
+  - Fixed paired BT devices showing as empty
   - Fixed paired list being skipped when another list was already running
   - Fixed preview videos stopping background music instead of resuming it afterwards
   - Fixed primary input staying on an external controller
@@ -40,10 +40,51 @@ changes:
   - Fixed theme textures being freed after the renderer on exit
   - Fixed Web Dashboard edits, copies and uploads resetting file permissions
   - Fixed Web Dashboard refusing files and folders that start with a dot
-  - Modified Bluetooth info to show the device name when no details are available
+  - Modified BT info to show the device name when no details are available
   - Modified network scanner timeout from 30s to 45s
-  - Modified paired Bluetooth list loading
+  - Modified paired BT list loading
   - Modified RetroArch save state import to convert states to the Pickles format
   - Modified storage mounting, card mode and transfers to use the eMMC when enabled
   - Modified theme version checks into single shared function
   - Modified Web Dashboard uploads to wait a bit longer before timeout
+  - Added Andromeda and Midnight Jacaranda themes to the compatible theme versions
+  - Fixed the main menu showing a black background when video wallpaper is disabled
+  - Added a message to the 'Box Art' screensaver when no box art is found
+  - Added a message to the 'Video' screensaver when no videos are found
+  - Added Blank screensaver that turns the backlight off instead of drawing something cool
+  - Added Blank screensaver to the profile rules and profile schema
+  - Added BT choke start when opening the scan screen if it states unavailability
+  - Added BT power on retries
+  - Added caching of cheevo game lookups for optimised offline play
+  - Added CHD disc image support for cheevo game idents
+  - Added HCI attach retries when starting BT
+  - Added idle states and lower device freqs while sleeping on charge
+  - Added launch splash debug logs when splashes are disabled or not found
+  - Added libchdr to external libraries
+  - Added user video support from MUOS/wallpaper folder to the video screensaver
+  - Added wireless power management tuning for Realtek and other adapters
+  - Fixed BT starting against BT daemon that was not ready
+  - Fixed Pixel 2 USB staying in host mode when USB function is off
+  - Fixed theme gradient not returning when static wallpaper when video wallpaper is disabled
+  - Modified BT start timeout to 7 seconds
+  - Modified cheevo cache to keep entries for 180 day max
+  - Modified launch splash to be enabled by default because why not
+  - Modified screensaver empty messages into one shared helper
+  - Modified screensaver types into one shared list
+  - Modified sleep on charge to also quiesce media, hotkeys and audio services, fun
+  - Removed Community News... huh what? We had that?
+  - Removed h700 only power management workaround from the web keep alive script
+  - Added launch splash for all content, shown before Pickles, Wasabi, RetroArch or any external emulator starts
+  - Added animated GIF, WebP and APNG images and MP4 video as launch splashes, with any button press to skip
+  - Added Launch Splash choices for 1 to 10 seconds, Until Finished and Until Button Press
+  - Added fade in and fade out to launch splashes when Black Fade is enabled
+  - Added power on effect to Pickles and Wasabi when content starts after a launch splash
+  - Added WebP, QOI and TGA overlay support for Pickles, Wasabi, the frontend and external emulators
+  - Added overlay file type checks to Web Dashboard catalogue uploads
+  - Fixed black fade being skipped when launching Pickles and Wasabi content
+  - Fixed frontend fade out not reaching full black before content launches
+  - Fixed frontend black fades stepping unevenly and running longer than set
+  - Modified frontend black fades and power effects to be slightly faster
+  - Modified Power Off Effect to Power Effects
+  - Modified Pickles Startup Messages to Startup Messages
+  - Modified Pickles overlay library to find overlays of any supported image type
