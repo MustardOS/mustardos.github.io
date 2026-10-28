@@ -4,6 +4,7 @@ type: progress
 pronunciation: "/ˌsuːpəˈnəʊvə/"
 
 contributors:
+  - bitter_bizarro
   - xonglebongle
 
 changes:
@@ -88,3 +89,35 @@ changes:
   - Modified Power Off Effect to Power Effects
   - Modified Pickles Startup Messages to Startup Messages
   - Modified Pickles overlay library to find overlays of any supported image type
+  - Added fuller help descriptions to every Task Toolkit task
+  - Fixed content preview video not playing again after switching back from the description
+  - Fixed Task Toolkit help showing empty for tasks inside folders
+  - Fixed Element Transition still fading the help box backdrop when disabled
+  - Fixed Pickles and Wasabi fading to black on exit when Black Fade is disabled
+  - Fixed grid current item label cutting to one line after moving between items
+  - Fixed grid current item label shrinking to a small square when its width is set to size to content
+  - Fixed grid current item label ignoring the theme long text mode
+  - Modified Direct Link to Device Link, with help that explains it is for joining two devices and not for computer file transfer
+  - Modified Pickles Game Link mode for Device Link to Cable
+  - Added muadb, a MustardOS build of the Android Debug Bridge daemon, for the ADB USB Function
+  - Added mumtp, a MustardOS build of uMTP Responder, for the MTP USB Function
+  - Added Android Debug Bridge and uMTP Responder to the third party list
+  - Added ADB shell environment that loads the MustardOS profile, shared functions and root profile
+  - Fixed battery charging status taking a few seconds to change after connecting or removing a charger
+  - Fixed theme PNG images not layering over the generated background when converted
+  - Modified ADB to reopen its USB connection when the computer disconnects instead of giving up
+  - Modified header glyphs to size automatically up to three quarters of the item height
+  - Modified MTP to show the same folders as Secure File Transfer, with storage that is not mounted left out
+  - Modified the device name shown on computers to MustardOS followed by the device model
+  - Removed the system uMTP Responder configuration in favour of one managed by MustardOS
+  - Added Performance levels in place of CPU governors, with Automatic, Powersave, Efficient, Balanced, Responsive, Turbo and Extreme
+  - Added per device speed ranges for each Performance level, worked out from the speeds the device supports
+  - Added MENU help on each Performance level showing the speeds it uses on the device
+  - Added mucpu tool to apply, list and check Performance levels
+  - Modified content, folder and application governor assignment to Performance
+  - Modified Default Governor and Idle Governor to Default Performance and Idle Performance
+  - Modified Kiosk Content Governor to Content Performance
+  - Modified Performance screen to open on the level currently in use
+  - Modified idle, sleep and wake to return to the level in use instead of a saved governor
+  - Modified core manifest performance governors to Extreme, with older governor names still accepted
+  - Removed raw governor lists from the frontend menus
