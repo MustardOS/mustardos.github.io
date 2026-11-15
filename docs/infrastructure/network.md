@@ -57,5 +57,5 @@ become available once an interface and address are ready.
     </a>
 </div>
 
-To join two devices for netplay or Game Link without Wi-Fi, see [Direct Link](/docs/infrastructure/direct-link). It
+To join two devices for netplay or Game Link without Wi-Fi, see [Device Link](/docs/infrastructure/device-link). It
 works with network adapters or a single USB-C cable.
